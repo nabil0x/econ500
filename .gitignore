@@ -1,6 +1,3 @@
-# Large PDFs (> 1MB)
-*.pdf
-
 # OS files
 .DS_Store
 Thumbs.db

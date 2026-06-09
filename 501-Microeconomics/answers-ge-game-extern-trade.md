@@ -1,6 +1,6 @@
 # General Equilibrium, Game Theory, Externalities & Trade — Exam Answers
 
-**Exam-ready answers** covering GE existence/uniqueness/stability, Edgeworth box (2×2×2 model), game theory & IO, externalities & public goods, and trade & tariffs.
+**Exam-ready answers** covering GE existence/uniqueness/stability, Edgeworth box ($2\times 2\times 2$ model), game theory & IO, externalities & public goods, and trade & tariffs.
 
 All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced Microeconomic Theory*, welfare sheet, GE illustration document, and static properties of GE document.
 
@@ -56,7 +56,7 @@ The three problems are best illustrated using a demand-supply diagram (partial e
 **(ii) Uniqueness:** If equilibrium exists, is there exactly one?
 
 - Multiple equilibria arise if D and S intersect more than once.
-- In terms of **excess demand** E(P) = QD(P) − QS(P): there are as many equilibria as the number of times E(P) intersects the vertical price-axis.
+- In terms of **excess demand** $E(P) = QD(P) - QS(P)$: there are as many equilibria as the number of times $E(P)$ intersects the vertical price-axis.
 - With a backward-bending supply curve (e.g., labour market), three intersections are possible.
 
 ```
@@ -73,7 +73,7 @@ The three problems are best illustrated using a demand-supply diagram (partial e
 
 - **Stable equilibrium:** D cuts S from above → excess demand drives price up, excess supply drives it down (negative slope of E(P) at equilibrium).
 - **Unstable equilibrium:** D cuts S from below → excess demand drives price down, excess supply drives it up (positive slope of E(P) at equilibrium).
-- Walrasian *tâtonnement*: auctioneer adjusts prices proportionally to excess demand. Stable if ∂E/∂P < 0.
+- Walrasian *tâtonnement*: auctioneer adjusts prices proportionally to excess demand. Stable if \partial E/\partial P < 0.
 
 ```
 Stable:              Unstable:
@@ -85,7 +85,7 @@ Stable:              Unstable:
    |/__________ Q      |/__________ Q
 ```
 
-**Exam Tip:** Draw all four cases: (1) unique stable, (2) unique unstable, (3) multiple equilibria (alternating stable/unstable), (4) no equilibrium. Always translate D-S into excess demand E(P) = QD − QS.
+**Exam Tip:** Draw all four cases: (1) unique stable, (2) unique unstable, (3) multiple equilibria (alternating stable/unstable), (4) no equilibrium. Always translate D-S into excess demand $E(P) = QD - QS$.
 
 ---
 
@@ -93,7 +93,7 @@ Stable:              Unstable:
 
 **Answer:**
 
-The three properties expressed via the **excess demand function** E(P) = QD(P) − QS(P): (Koutsoyiannis pp. 489-491)
+The three properties expressed via the **excess demand function** $E(P) = QD(P) - QS(P)$: (Koutsoyiannis pp. 489-491)
 
 **(i) Existence at a positive price**
 
@@ -130,7 +130,7 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 - Normal goods (downward-sloping D, upward-sloping S) guarantee dE/dP < 0 → uniqueness.
 - Giffen goods, backward-bending supply can create multiple crossings.
 
-**Exam Tip:** Always define E(P) = QD − QS first. Then: existence = E(P) = 0 at some P > 0; stability = sign of dE/dP at equilibrium; uniqueness = monotonicity of E(P).
+**Exam Tip:** Always define $E(P) = QD - QS$ first. Then: existence $= E(P) = 0$ at some $P > 0$; stability $= \text{sign of } dE/dP$ at equilibrium; uniqueness $= \text{monotonicity of } E(P)$.
 
 ---
 
@@ -140,13 +140,13 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 
 This question asks about the transmission mechanism: **external shock in product market → factor market → general equilibrium restored**. This is the core of Koutsoyiannis's graphical illustration (Chapter 22, Section D, pp. 491-495).
 
-**Step 1: Initial equilibrium.** Economy initially in GE with all markets cleared at Pₓ₀, Pᵧ₀, w₀, r₀.
+**Step 1: Initial equilibrium.** Economy initially in GE with all markets cleared at $P_{x0}$, $P_{y0}$, $w_0$, $r_0$.
 
-**Step 2: Exogenous taste change.** Consumers shift preferences toward X, away from Y (substitutes). Demand for X shifts right (D₀ → D₁), demand for Y shifts left.
+**Step 2: Exogenous taste change.** Consumers shift preferences toward X, away from Y (substitutes). Demand for X shifts right ($D_0 \to D_1$), demand for Y shifts left.
 
 **Step 3: Short-run product market response.**
-- Pₓ rises (P₀ → P₁), Qₓ increases (X₀ → X₁).
-- Pᵧ falls, Qᵧ decreases (Y₁ → Y₀).
+- $P_x$ rises ($P_0 \to P_1$), $Q_x$ increases ($X_0 \to X_1$).
+- $P_y$ falls, $Q_y$ decreases ($Y_1 \to Y_0$).
 - Excess profits in X industry; losses in Y industry.
 
 **Step 4: Firm-level adjustment.** Firms in X expand output along rising MC; firms in Y contract.
@@ -163,25 +163,25 @@ This question asks about the transmission mechanism: **external shock in product
 **Step 7: New factor price equalisation.** With X less capital-intensive than Y (K/L ratio smaller in X):
 - Demand for L by X > release of L from Y → w rises overall.
 - Release of K from Y > demand for K by X → r falls overall.
-- New equilibrium: w₂ > w₀, r₂ < r₀ (factor prices equalised across industries).
+- New equilibrium: $w_2 > w_0$, $r_2 < r_0$ (factor prices equalised across industries).
 
 **Step 8: Long-run product market adjustment.**
-- Entry into X shifts Sₓ down → Pₓ settles at Pₓ₂ (between P₀ and P₁).
-- Exit from Y shifts Sᵧ up → Pᵧ settles at Pᵧ₂ (between P₁ and P₀).
+- Entry into X shifts Sₓ down → Pₓ settles at $P_{x2}$ (between $P_0$ and $P_1$).
+- Exit from Y shifts Sᵧ up → Pᵧ settles at $P_{y2}$ (between $P_1$ and $P_0$).
 
-**Step 9: New GE.** All markets clear simultaneously with new set of prices (Pₓ₂, Pᵧ₂, w₂, r₂), new product mix (X₂ > X₀, Y₂ < Y₀), and all firms earning normal profits.
+**Step 9: New GE.** All markets clear simultaneously with new set of prices $(P_{x2}, P_{y2}, w_2, r_2)$, new product mix ($X_2 > X_0$, $Y_2 < Y_0$), and all firms earning normal profits.
 
 **Exam Tip:** The key insight is the *chain*: taste change → Pₓ ↑ → profits ↑ → factor demand ↑ → w ↑ → factor mobility → w/r equalisation → supply curves shift → new GE. Draw the 8-panel diagram from Koutsoyiannis (Figs 22.10-22.22). Mention increasing-cost industries.
 
 ---
 
-## Topic 6B — Edgeworth Box & 2×2×2 Model
+## Topic 6B — Edgeworth Box & $2\times 2\times 2$ Model
 
 ### Question 1
 
 **Answer:**
 
-**The 2×2×2 model** has: 2 factors (L, K), 2 commodities (X, Y), 2 consumers (A, B). (Koutsoyiannis pp. 496-499)
+**The $2\times 2\times 2$ model** has: 2 factors (L, K), 2 commodities (X, Y), 2 consumers (A, B). (Koutsoyiannis pp. 496-499)
 
 **Assumptions:**
 1. Fixed supplies of L and K; homogeneous, perfectly divisible.
@@ -212,7 +212,7 @@ The Edgeworth production box has dimensions equal to total K and L. X-isoquants 
           L_total
 ```
 
-- **Contract curve:** locus of tangency points of X and Y isoquants → MRTSˣ_LK = MRTSʸ_LK.
+- **Contract curve:** locus of tangency points of X and Y isoquants → $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK}$.
 - Points ON the contract curve are **Pareto-efficient in production**: impossible to increase output of one good without reducing the other.
 - Points OFF the curve (e.g., Z) are inefficient — reallocation can increase at least one output.
 - In perfect competition, profit maximisation requires each firm to set MRTS = w/r. Since w/r is same for both, equilibrium must be on the contract curve.
@@ -230,34 +230,34 @@ The production equilibrium is not unique (any point on contract curve is Pareto-
 
 **Answer:**
 
-This is the same mechanism as Topic 6A Q4 but asked specifically for the 2×2×2 framework. The answer follows the Koutsoyiannis path (pp. 491-495) using the 8-panel diagram.
+This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\times 2\times 2$ framework. The answer follows the Koutsoyiannis path (pp. 491-495) using the 8-panel diagram.
 
 **Shock:** Taste shift toward X (Dₓ ↑) and away from Y (Dᵧ ↓).
 
 **Product market:**
-- X industry: D₀ → D₁, Pₓ P₀ → P₁, Qₓ X₀ → X₁, excess profits.
-- Y industry: D₀ → D₁, Pᵧ falls, Qᵧ Y₁ → Y₀, losses.
+- X industry: $D_0 \to D_1$, $P_x$ $P_0 \to P_1$, $Q_x$ $X_0 \to X_1$, excess profits.
+- Y industry: $D_0 \to D_1$, $P_y$ falls, $Q_y$ $Y_1 \to Y_0$, losses.
 
 **Firm response:** X firms expand along MC (rising part of AC). Y firms contract.
 
 **Factor market effects:**
-- X: Dᴸ ↑ (L₀ → L₁), Dᴷ ↑ (K₀ → K₁), w↑, r↑.
-- Y: Dᴸ ↓, Dᴷ ↓, w↓, r↓.
+- $X: D^{L} \uparrow (L_{0} \to L_{1})$, $D^{K} \uparrow (K_{0} \to K_{1})$, $w\uparrow$, $r\uparrow$.
+- $Y: D^{L} \downarrow$, $D^{K} \downarrow$, $w\downarrow$, $r\downarrow$.
 - Wage differential → factor mobility from Y to X.
 
-**Factor mobility:** L and K migrate from Y to X → Sᴸ shifts right in X (lowers w), Sᴸ shifts left in Y (raises w). Same for K.
+**Factor mobility:** L and K migrate from Y to X → $S^L$ shifts right in X (lowers w), $S^L$ shifts left in Y (raises w). Same for K.
 
 **New factor equilibrium:** With X less capital-intensive than Y:
-- Net demand for L rises → w₂ > w₀.
-- Net demand for K falls → r₂ < r₀.
+- Net demand for L rises → $w_2 > w_0$.
+- Net demand for K falls → $r_2 < r_0$.
 - Factor prices equalised across industries at new levels.
 
 **Long-run product adjustment:**
-- Entry into X → Sₓ shifts right → Pₓ falls from P₁ to P₂.
-- Exit from Y → Sᵧ shifts left → Pᵧ rises from P₁ to P₂.
+- Entry into X → $S_x$ shifts right → $P_x$ falls from $P_1$ to $P_2$.
+- Exit from Y → $S_y$ shifts left → $P_y$ rises from $P_1$ to $P_2$.
 - Both industries are increasing-cost → LAC shifts (up for X due to higher w; down for Y due to lower r).
 
-**Final GE:** All four markets clear at (Pₓ₂, Pᵧ₂, w₂, r₂), product mix (X₂ > X₀, Y₂ < Y₀). Normal profits restored.
+**Final GE:** All four markets clear at $(P_{x2}, P_{y2}, w_2, r_2)$, product mix ($X_2 > X_0$, $Y_2 < Y_0$). Normal profits restored.
 
 **Exam Tip:** The examiner wants to see that you understand *why* factor prices don't return to original levels — it's the different factor intensities (Stolper-Samuelson intuition). X is labour-intensive → rising w benefits X and hurts Y; Y is capital-intensive → falling r benefits Y and hurts X.
 
@@ -271,21 +271,21 @@ The three static Pareto-efficiency properties of a GE state (Koutsoyiannis pp. 4
 
 **(a) Production equilibrium (efficiency in factor substitution)**
 
-- Condition: MRTSˣ_LK = MRTSʸ_LK = w/r.
+- Condition: $\text{MRTS}^{X}_{LK} = \text{MRTS}^{Y}_{LK} = w/r$.
 - Achieved on the Edgeworth contract curve of production.
 - Optimal allocation of K and L between X and Y.
 - PPC is derived by mapping the contract curve to product space.
 
 **(b) Consumption equilibrium (efficiency in distribution)**
 
-- Condition: MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ.
-- Achieved on the Edgeworth contract curve of consumption (within the consumption box of dimensions Xₑ, Yₑ).
-- Optimal distribution of Xₑ and Yₑ between A and B.
-- With perfect competition, the budget line slope = Pₓ/Pᵧ, and both consumers choose tangency points.
+- Condition: $\text{MRS}^{A}_{xy} = \text{MRS}^{B}_{xy} = P_x/P_y$.
+- Achieved on the Edgeworth contract curve of consumption (within the consumption box of dimensions $X_e$, $Y_e$).
+- Optimal distribution of $X_e$ and $Y_e$ between A and B.
+- With perfect competition, the budget line slope $= P_x/P_y$, and both consumers choose tangency points.
 
 **(c) Simultaneous equilibrium (efficiency in product-mix)**
 
-- Condition: MRPT_xy = MRSᴬ_xy = MRSᴮ_xy.
+- Condition: $\text{MRPT}_{xy} = \text{MRS}^{A}_{xy} = \text{MRS}^{B}_{xy}$.
 - In perfect competition: MRPT = MCₓ/MCᵧ = Pₓ/Pᵧ = MRS.
 - The production sector's plans are consistent with households' plans.
 - The output mix (Xₑ, Yₑ) is the one that consumers most prefer given production possibilities.
@@ -304,13 +304,13 @@ PPC (product transformation curve)
    O                         X
 
 Conditions at E:
-MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ
+$MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ$
 ```
 
 **The three Pareto conditions together:**
-1. MRSᴬ_xy = MRSᴮ_xy (efficient distribution of goods)
-2. MRTSˣ_LK = MRTSʸ_LK (efficient factor allocation)
-3. MRPT_xy = MRS_xy (efficient output mix)
+1. $\text{MRS}^A_{xy} = \text{MRS}^B_{xy}$ (efficient distribution of goods)
+2. $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK}$ (efficient factor allocation)
+3. $\text{MRPT}_{xy} = \text{MRS}_{xy}$ (efficient output mix)
 
 **Exam Tip:** State the three conditions explicitly. Show that condition (3) marries the production side (MRPT from PPC) with the consumption side (MRS from indifference curves). This is the *Fundamental Condition of Pareto Optimality*.
 
@@ -342,7 +342,7 @@ MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ
 
 **Answer:**
 
-**Assumptions of the 2×2×2 model** (Koutsoyiannis pp. 496-497):
+**Assumptions of the $2\times 2\times 2$ model** (Koutsoyiannis pp. 496-497):
 
 1. **2 factors:** L (labour) and K (capital), fixed supplies, homogeneous, perfectly divisible.
 2. **2 commodities:** X and Y, given technology, smooth convex isoquants (diminishing MRTS), CRTS, independent production functions.
@@ -353,11 +353,11 @@ MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ
 
 **How GE is reached:**
 
-1. **Production side:** Profit-maximising firms choose K/L mix such that MRTSˣ_LK = MRTSʸ_LK = w/r. This places production on the Edgeworth contract curve → efficient production.
-2. **Product transformation:** The contract curve maps to the PPC. Firms choose output where slope of PPC = MRPT = Pₓ/Pᵧ.
-3. **Consumption side:** Given (Xₑ, Yₑ) from production and prices Pₓ/Pᵧ, consumers maximise utility: MRSᴬ = MRSᴮ = Pₓ/Pᵧ. This places consumption on the Edgeworth contract curve of consumption.
-4. **Simultaneous equilibrium:** MRPT = MRSᴬ = MRSᴮ = Pₓ/Pᵧ ensures consistency between production and consumption plans.
-5. **Factor and commodity prices:** Determined (as ratios only, with numeraire) by the system of equations: MRTS conditions, marginal productivity conditions (w = MPPL·P, r = MPPK·P), and MRS conditions.
+1. **Production side:** Profit-maximising firms choose K/L mix such that $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK} = w/r$. This places production on the Edgeworth contract curve → efficient production.
+2. **Product transformation:** The contract curve maps to the PPC. Firms choose output where slope of $PPC = \text{MRPT} = P_x/P_y$.
+3. **Consumption side:** Given $(X_e, Y_e)$ from production and prices $P_x/P_y$, consumers maximise utility: $\text{MRS}^A = \text{MRS}^B = P_x/P_y$. This places consumption on the Edgeworth contract curve of consumption.
+4. **Simultaneous equilibrium:** $\text{MRPT} = \text{MRS}^A = \text{MRS}^B = P_x/P_y$ ensures consistency between production and consumption plans.
+5. **Factor and commodity prices:** Determined (as ratios only, with numeraire) by the system of equations: MRTS conditions, marginal productivity conditions ($w = \text{MPP}_L \cdot P$, $r = \text{MPP}_K \cdot P$), and MRS conditions.
 6. **Income distribution:** Determined by factor ownership distribution, which must be consistent with the equilibrium consumption pattern (indeterminate without additional assumptions).
 
 **Exam Tip:** The four markets (L, K, X, Y) must clear simultaneously. The system has 18 equations in 18 unknowns but one equation is redundant → prices determined only as ratios. Setting a numeraire resolves this.
@@ -369,16 +369,16 @@ MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ
 **Answer:**
 
 **Given:**
-- A: Uₐ = Xₐ·Yₐ (Cobb-Douglas)
+- $A: U_a = X_a \cdot Y_a$ (Cobb-Douglas)
 - B: U_B = X_B + Y_B (perfect substitutes — linear utility)
-- Endowments: Xₐ⁰ = 10, Yₐ⁰ = 50; X_B⁰ = 50, Y_B⁰ = 10
+- Endowments: $X_a^0 = 10$, $Y_a^0 = 50$; $X_B^0 = 50$, $Y_B^0 = 10$
 - Total X = 60, Total Y = 60
 
 **(a) Edgeworth box dimensions:** Width = 60 (total X), Height = 60 (total Y).
 
 **(b) Pareto efficiency condition:**
 
-For A: MRSₐ = MUₓ/MUᵧ = Yₐ/Xₐ (from Uₐ = Xₐ·Yₐ)
+For A: $MRS_a = MU_x/MU_y = Y_a/X_a$ (from $U_a = X_a \cdot Y_a$)
 For B: MRS_B = 1/1 = 1 (from U_B = X_B + Y_B, MU of each good = 1)
 
 Pareto efficiency requires MRSₐ = MRS_B (interior solutions):
@@ -389,16 +389,16 @@ If B is at a corner (consuming only one good), MRS_B may not equal 1 at the boun
 The **contract curve** is where MRSₐ = MRS_B. For interior allocations:
 Yₐ = Xₐ (for all allocations where B consumes both goods)
 
-But B's utility is X_B + Y_B. Since MRS_B = 1 always, if Pₓ ≠ Pᵧ, B consumes only the cheaper good. If Pₓ = Pᵧ, B is indifferent among any mix.
+But B's utility is X_B + Y_B. Since MRS_B = 1 always, if $P_x \ne P_y$, B consumes only the cheaper good. If $P_x = P_y$, B is indifferent among any mix.
 
-For interior Pareto efficiency: Yₐ = Xₐ, 0 ≤ Xₐ ≤ 60, 0 ≤ Yₐ ≤ 60.
+For interior Pareto efficiency: $Y_a = X_a$, $0 \le X_a \le 60$, $0 \le Y_a \le 60$.
 
-**(c) Check endowment point (Xₐ⁰=10, Yₐ⁰=50):**
+**(c) Check endowment point ($X_a^0=10$, $Y_a^0=50$):**
 
-MRSₐ at endowment = 50/10 = 5 ≠ 1 = MRS_B.
-Since MRSₐ > MRS_B (5 > 1), A values Y much more relative to X than B does. There exist trades making both better off: A should give up some Y for X from B. The endowment is **not Pareto-efficient**.
+$MRS_a$ at endowment $= 50/10 = 5 \ne 1 = MRS_B$.
+Since $MRS_a > MRS_B$ (5 > 1), A values Y much more relative to X than B does. There exist trades making both better off: A should give up some Y for X from B. The endowment is **not Pareto-efficient**.
 
-Uₐ(10,50) = 10×50 = 500
+$U_a(10,50) = 10 \times 50 = 500$
 U_B(50,10) = 50 + 10 = 60
 
 **(d) Is (Xₐ=80, Yₐ=50) feasible?** No — total X = 60, so Xₐ cannot be 80. This allocation is **outside the Edgeworth box** and infeasible.
@@ -417,21 +417,21 @@ Infeasible — total X endowment is only 60. Cannot be in the core (core allocat
 
 **Answer:**
 
-**The 2×2×2 Walrasian system** (Koutsoyiannis pp. 497-509):
+**The $2\times 2\times 2$ Walrasian system** (Koutsoyiannis pp. 497-509):
 
 **Unknowns (18):**
-- Quantities demanded of X and Y by A and B: 2×2 = 4
-- Quantities supplied of L and K by A and B: 2×2 = 4
-- Quantities demanded of L and K by X and Y firms: 2×2 = 4
+- Quantities demanded of X and Y by A and B: $2 \times 2 = 4$
+- Quantities supplied of L and K by A and B: $2 \times 2 = 4$
+- Quantities demanded of L and K by X and Y firms: $2 \times 2 = 4$
 - Quantities supplied of X and Y by firms: 2
 - Prices of X and Y: 2
 - Prices of L and K: 2
 - **Total: 18**
 
 **Equations (18):**
-- Demand functions of A and B for X and Y: 2×2 = 4
-- Supply functions of L and K by A and B: 2×2 = 4
-- Demand functions for L and K by firms: 2×2 = 4
+- Demand functions of A and B for X and Y: $2 \times 2 = 4$
+- Supply functions of L and K by A and B: $2 \times 2 = 4$
+- Demand functions for L and K by firms: $2 \times 2 = 4$
 - Supply functions of X and Y by firms: 2
 - Market-clearing equations for X and Y: 2
 - Market-clearing equations for L and K: 2
@@ -443,7 +443,7 @@ Equality of equations and unknowns is **neither necessary nor sufficient**. Thre
 
 1. **Walras' Law:** One equation is redundant — if n−1 markets clear, the nth must also clear. This reduces independent equations to 17 vs 18 unknowns.
 2. **Numeraire:** One price must be chosen as numeraire (set = 1), reducing unknowns to 17. Now 17 independent equations = 17 unknowns → system is determinate *in relative prices*.
-3. **Non-negativity:** Prices must be ≥ 0 and quantities ≥ 0. The equation-counting approach doesn't guarantee this.
+3. **Non-negativity:** Prices must be $\ge 0$ and quantities $\ge 0$. The equation-counting approach doesn't guarantee this.
 
 **Arrow-Debreu (1954) existence proof** requires:
 - Perfect competition
@@ -463,62 +463,62 @@ Under these conditions, a GE solution **does exist**. However, without these ass
 **Answer:**
 
 **Walras' Law** states that the sum of excess demands across all markets equals zero:
-∑ Pᵢ·EDᵢ = 0 for all i = 1, ..., n
+$\sum P_i \cdot ED_i = 0$ for all $i = 1, \ldots, n$
 
-If there are n goods and n−1 markets are in equilibrium, the nth market is automatically in equilibrium.
+If there are $n$ goods and $n-1$ markets are in equilibrium, the $n$th market is automatically in equilibrium.
 
-**Given:** Three-good world (Z₁, Z₂, Z₃). Equilibrium prices for Z₂ and Z₃ are given (P₂*, P₃*). We need to find Z₁ equilibrium.
+**Given:** Three-good world ($Z_1$, $Z_2$, $Z_3$). Equilibrium prices for $Z_2$ and $Z_3$ are given ($P_2^*$, $P_3^*$). We need to find $Z_1$ equilibrium.
 
 **Walras' Law approach:**
 
-Let excess demand for good i be EDᵢ(P₁, P₂, P₃) = QDᵢ − QSᵢ.
+Let excess demand for good i be $ED_i(P_1, P_2, P_3) = QD_i - QS_i$.
 
-Walras' Law: P₁·ED₁ + P₂·ED₂ + P₃·ED₃ = 0
+Walras' Law: $P_1 \cdot ED_1 + P_2 \cdot ED_2 + P_3 \cdot ED_3 = 0$
 
-If markets 2 and 3 clear: ED₂ = 0 and ED₃ = 0
-Then: P₁·ED₁ = 0 ⇒ ED₁ = 0 (since P₁ > 0)
+If markets 2 and 3 clear: $ED_2 = 0$ and $ED_3 = 0$
+Then: $P_1 \cdot ED_1 = 0 \Rightarrow ED_1 = 0$ (since $P_1 > 0$)
 
-Thus Z₁'s market is automatically in equilibrium when Z₂ and Z₃ are.
+Thus $Z_1$'s market is automatically in equilibrium when $Z_2$ and $Z_3$ are.
 
 **Solving price ratios:**
 
-With Walras' Law, one price is redundant. Set P₁ = 1 (numeraire).
+With Walras' Law, one price is redundant. Set $P_1 = 1$ (numeraire).
 
-Then solve for P₂/P₁ and P₃/P₁ from the equilibrium conditions:
-- MRSᵢ_12 = P₂/P₁ for all consumers (consumption equilibrium)
+Then solve for $P_2/P_1$ and $P_3/P_1$ from the equilibrium conditions:
+$- $MRS_{i,12} = P_2/P_1$ for all consumers (consumption equilibrium)$
 - MRTS_LK = w/r (production equilibrium, linking to factor prices)
-- P₂ = MC₂, P₃ = MC₃ (perfect competition pricing)
-
+- $P_2 = MC_2$, $P_3 = MC_3$ (perfect competition pricing)
+- $P_2 = MC_2$, $P_3 = MC_3$ (perfect competition pricing)
 **Example:** Suppose excess demand functions are:
-ED₁ = 10 − 2P₁ + P₂ − 3P₃
-ED₂ = −5 + P₁ − 4P₂ + 2P₃
-ED₃ = 8 − 3P₁ + P₂ − P₃
+$ED_{1} = 10 - 2P_{1} + P_{2} - 3P_{3}$
+$ED_{2} = -5 + P_{1} - 4P_{2} + 2P_{3}$
+$ED_{3} = 8 - 3P_{1} + P_{2} - P_{3}$
 
-Set P₁ = 1 (numeraire). Solve ED₂ = 0 and ED₃ = 0 for P₂, P₃:
-−5 + 1 − 4P₂ + 2P₃ = 0 → −4 − 4P₂ + 2P₃ = 0
-8 − 3 + P₂ − P₃ = 0 → 5 + P₂ − P₃ = 0 → P₃ = 5 + P₂
+Set $P_1 = 1$ (numeraire). Solve $ED_2 = 0$ and $ED_3 = 0$ for $P_2$, $P_3$:
+$-5 + 1 - 4P_{2} + 2P_{3} = 0 \to -4 - 4P_{2} + 2P_{3} = 0$
+$8 - 3 + P_{2} - P_{3} = 0 \to 5 + P_{2} - P_{3} = 0 \to P_{3} = 5 + P_{2}$
 
-Substitute: −4 − 4P₂ + 2(5 + P₂) = 0 → −4 − 4P₂ + 10 + 2P₂ = 0 → 6 − 2P₂ = 0 → P₂ = 3
-Then P₃ = 5 + 3 = 8
+Substitute: $-4 - 4P_{2} + 2(5 + P_{2}) = 0 \to -4 - 4P_{2} + 10 + 2P_{2} = 0 \to 6 - 2P_{2} = 0 \to P_{2} = 3$
+Then $P_3 = 5 + 3 = 8$
 
-Check ED₁: 10 − 2(1) + 3 − 3(8) = 10 − 2 + 3 − 24 = −13 ≠ 0.
+Check $ED_1$: $10 - 2(1) + 3 - 3(8) = 10 - 2 + 3 - 24 = -13 \neq 0$.
 
-Wait — the ED functions must be consistent. If they satisfy Walras' Law, ED₁ must be zero when ED₂ = ED₃ = 0. Let me verify:
+Wait — the ED functions must be consistent. If they satisfy Walras' Law, $ED_1$ must be zero when $ED_2 = ED_3 = 0$. Let me verify:
 
-At (P₁=1, P₂=3, P₃=8):
-ED₂ = −5 + 1 − 4(3) + 2(8) = −5 + 1 − 12 + 16 = 0 ✓
-ED₃ = 8 − 3(1) + 3 − 8 = 0 ✓
-ED₁ = 10 − 2(1) + 3 − 3(8) = 10 − 2 + 3 − 24 = −13
+At $(P_{1}=1, P_{2}=3, P_{3}=8)$:
+$ED_{2} = -5 + 1 - 4(3) + 2(8) = -5 + 1 - 12 + 16 = 0$ ✓
+$ED_{3} = 8 - 3(1) + 3 - 8 = 0$ ✓
+$ED_{1} = 10 - 2(1) + 3 - 3(8) = 10 - 2 + 3 - 24 = -13$
 
 These excess demands do NOT satisfy Walras' Law. The functions above are not well-specified.
 
-**Correct approach:** For a consistent Walrasian system, the excess demands must satisfy P₁·ED₁ + P₂·ED₂ + P₃·ED₃ = 0 identically. This is a property of the underlying utility-maximisation and profit-maximisation of agents.
+**Correct approach:** For a consistent Walrasian system, the excess demands must satisfy $P_1 \cdot ED_1 + P_2 \cdot ED_2 + P_3 \cdot ED_3 = 0$ identically. This is a property of the underlying utility-maximisation and profit-maximisation of agents.
 
-Given consistent ED functions: solve ED₂ = 0 and ED₃ = 0 for P₂, P₃ (with P₁ = 1). Then ED₁ = 0 automatically by Walras' Law.
+Given consistent ED functions: solve $ED_2 = 0$ and $ED_3 = 0$ for $P_2$, $P_3$ (with $P_1 = 1$). Then $ED_1 = 0$ automatically by Walras' Law.
 
-**Key insight:** In an n-good Walrasian system, you only need to solve n−1 market-clearing equations. The nth is automatically satisfied.
+**Key insight:** In an $n$-good Walrasian system, you only need to solve $n-1$ market-clearing equations. The $n$th is automatically satisfied.
 
-**Exam Tip:** State Walras' Law explicitly. Show that with n goods you solve n−1 markets. Set the numeraire good price = 1. Always verify the system is consistent — if ED functions don't satisfy Walras' Law, they're not derived from utility/profit maximisation.
+**Exam Tip:** State Walras' Law explicitly. Show that with $n$ goods you solve $n-1$ markets. Set the numeraire good price = 1. Always verify the system is consistent — if ED functions don't satisfy Walras' Law, they're not derived from utility/profit maximisation.
 
 ---
 
@@ -532,48 +532,48 @@ Given consistent ED functions: solve ED₂ = 0 and ED₃ = 0 for P₂, P₃ (wit
 
 **Bertrand duopoly with differentiated products:**
 
-Market: q₁ = 100 − 2p₁ + p₂, q₂ = 100 − 2p₂ + p₁
+Market: $q_{1} = 100 - 2p_{1} + p_{2}, q_{2} = 100 - 2p_{2} + p_{1}$
 MC = $10 for both firms.
 
 **Step 1: Profit functions.**
 
-π₁ = (p₁ − 10)(100 − 2p₁ + p₂)
-π₂ = (p₂ − 10)(100 − 2p₂ + p₁)
+$\pi_{1} = (p_{1} - 10)(100 - 2p_{1} + p_{2})$
+$\pi_{2} = (p_{2} - 10)(100 - 2p_{2} + p_{1})$
 
 **Step 2: First-order conditions (best responses).**
 
-∂π₁/∂p₁ = (1)(100 − 2p₁ + p₂) + (p₁ − 10)(−2) = 0
-100 − 2p₁ + p₂ − 2p₁ + 20 = 0
-120 − 4p₁ + p₂ = 0
-4p₁ = 120 + p₂
-p₁ = 30 + p₂/4 ← Best response function of Firm 1
+$\partial\pi_{1}/\partial p_{1} = (1)(100 - 2p_{1} + p_{2}) + (p_{1} - 10)(-2) = 0$
+$100 - 2p_{1} + p_{2} - 2p_{1} + 20 = 0$
+$120 - 4p_{1} + p_{2} = 0$
+$4p_{1} = 120 + p_{2}$
+p_{1} = 30 + p_{2}/4 ← Best response function of Firm 1
 
-Similarly: p₂ = 30 + p₁/4 ← Best response function of Firm 2
+Similarly: p_{2} = 30 + p_{1}/4 ← Best response function of Firm 2
 
 **Step 3: Solve Nash equilibrium.**
 
-Substitute BR₂ into BR₁:
-p₁ = 30 + (30 + p₁/4)/4
-p₁ = 30 + 7.5 + p₁/16
-p₁ − p₁/16 = 37.5
-(15/16)p₁ = 37.5
-p₁ = 37.5 × 16/15 = 40
+Substitute $BR_2$ into $BR_1$:
+$p_{1} = 30 + (30 + p_{1}/4)/4$
+$p_{1} = 30 + 7.5 + p_{1}/16$
+$p_1 - p_1/16 = 37.5$
+$(15/16)p_1 = 37.5$
+$p_{1} = 37.5 \times 16/15 = 40$
 
-p₂ = 30 + 40/4 = 30 + 10 = 40
+$p_{2} = 30 + 40/4 = 30 + 10 = 40$
 
-**Nash equilibrium:** (p₁*, p₂*) = (40, 40)
+**Nash equilibrium:** $(p_1^*, p_2^*) = (40, 40)$
 
 **Step 4: Quantities and profits.**
 
-q₁ = 100 − 2(40) + 40 = 100 − 80 + 40 = 60
-q₂ = 100 − 2(40) + 40 = 60
+$q_{1} = 100 - 2(40) + 40 = 100 - 80 + 40 = 60$
+$q_{2} = 100 - 2(40) + 40 = 60$
 
-π₁ = (40 − 10)(60) = 30 × 60 = 1800
-π₂ = (40 − 10)(60) = 1800
+$\pi_{1} = (40 - 10)(60) = 30 \times 60 = 1800$
+$\pi_{2} = (40 - 10)(60) = 1800$
 
 **Comparison with monopoly:** If they colluded at p = ? Joint profit max would solve different FOC. With differentiated products and symmetric costs, the collusive price would be higher (e.g., set industry MR = MC across both products).
 
-**Exam Tip:** Always derive best response functions from FOCs. The Nash equilibrium is the intersection of BR functions. For Bertrand with differentiated products, prices are strategic complements (BR slopes are positive: dp₁/dp₂ = ¼ > 0). Draw the BR diagram if asked.
+**Exam Tip:** Always derive best response functions from FOCs. The Nash equilibrium is the intersection of BR functions. For Bertrand with differentiated products, prices are strategic complements (BR slopes are positive: $dp_1/dp_2 = 1/4$ > 0). Draw the BR diagram if asked.
 
 ---
 
@@ -605,7 +605,7 @@ Confess     │ (-5, -5)     (0, -10)
 Don't       │ (-10, 0)     (-1, -1)
 ```
 
-The dominant strategy is **Confess** (better regardless of what the other does). Yet mutual confession (−5,−5) is worse than mutual non-confession (−1,−1). Hence the "dilemma."
+The dominant strategy is **Confess** (better regardless of what the other does). Yet mutual confession $(-5,-5)$ is worse than mutual non-confession $(-1,-1)$. Hence the "dilemma."
 
 **Implications for oligopoly:**
 
@@ -614,7 +614,7 @@ The dominant strategy is **Confess** (better regardless of what the other does).
 3. **Investment/R&D:** Each firm fears being left behind → overinvestment.
 4. **Tacit collusion is fragile:** The PD structure makes cooperation hard to sustain without repeated interaction.
 
-**Why oligopoly differs from PD:** In repeated games, punishment strategies (grim trigger, tit-for-tat) can sustain cooperation. If the game is infinitely repeated and players are sufficiently patient (discount factor δ > δ*), the cooperative outcome can be a subgame perfect Nash equilibrium (Folk Theorem).
+**Why oligopoly differs from PD:** In repeated games, punishment strategies (grim trigger, tit-for-tat) can sustain cooperation. If the game is infinitely repeated and players are sufficiently patient (discount factor $\delta > \delta^*$), the cooperative outcome can be a subgame perfect Nash equilibrium (Folk Theorem).
 
 **Exam Tip:** Draw the PD matrix. Emphasise that the dilemma arises from the structure of payoffs (defection dominates cooperation), not from irrationality. Link to oligopoly: undercutting is individually rational but collectively destructive.
 
@@ -633,7 +633,7 @@ Consider an incumbent monopolist (I) and a potential entrant (E).
 2. If OUT: I continues as monopolist; payoff: (0, 100) (E=0, I=100).
 3. If IN: I decides: Accommodate (share market) or Fight (price war).
    - Accommodate: (40, 40) (duopoly)
-   - Fight: (−10, −10) (both lose)
+   - Fight: $(-10, -10)$ (both lose)
 
 ```
 Decision tree (extensive form):
@@ -652,13 +652,13 @@ A   F
 **Backward induction solution:**
 
 1. At I's decision node (after E enters): Compare payoffs.
-   - Accommodate → π_I = 40
-   - Fight → π_I = −10
-   - Rational I chooses **Accommodate** (40 > −10).
+   - Accommodate → $\pi_I = 40$
+   - Fight → $\pi_I = -10$
+   - Rational I chooses **Accommodate** ($40 > -10$).
 
 2. At E's initial decision node: E anticipates I's response.
-   - Enter → I accommodates → π_E = 40
-   - Stay out → π_E = 0
+   - Enter → I accommodates → $\pi_E = 40$
+   - Stay out → $\pi_E = 0$
    - Rational E chooses **Enter** (40 > 0).
 
 **Subgame perfect Nash equilibrium (SPNE):** (Enter, Accommodate)
@@ -735,18 +735,17 @@ Suppose the cooperative outcome is actually a higher-payoff cell like (Up, Left)
 - Deviation from (Up, Left): Row gets 5 (by playing Down if Column plays Left) in deviation period, then 2 forever after.
 - Cooperation: Row gets 3 every period.
 
-**Sustaining condition (discount factor δ):**
-Cooperation PV = 3 + 3δ + 3δ² + ... = 3/(1−δ)
-Deviation PV = 5 + 2δ + 2δ² + ... = 5 + 2δ/(1−δ)
+**Sustaining condition (discount factor $\delta$):**
+Cooperation PV = $3 + 3\delta + 3\delta^2 + \ldots = 3/(1-\delta)$
 
-Cooperate if: 3/(1−δ) ≥ 5 + 2δ/(1−δ)
-3 ≥ 5(1−δ) + 2δ
-3 ≥ 5 − 5δ + 2δ
-3 ≥ 5 − 3δ
-3δ ≥ 2
-δ ≥ 2/3
+Cooperate if: $3/(1-\delta) \ge 5 + 2\delta/(1-\delta)$
+$3 \ge 5(1-\delta) + 2\delta$
+$3 \ge 5 - 5\delta + 2\delta$
+$3 \ge 5 - 3\delta$
+$3\delta \ge 2$
+$\delta \ge 2/3$
 
-So if players are sufficiently patient (δ ≥ ⅔), (Up, Left) can be sustained as SPNE with grim trigger, with (Down, Right) as the punishment.
+So if players are sufficiently patient ($\delta \ge \frac{2}{3}$), (Up, Left) can be sustained as SPNE with grim trigger, with (Down, Right) as the punishment.
 
 **Exam Tip:** If the matrix shows (Down, Right) as the mutual best response, it's the stage-game NE. In repeated play, cooperation on a Pareto-superior outcome can be sustained if the discount factor is high enough, with reversion to the stage-game NE as punishment.
 
@@ -860,30 +859,30 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 **Steel-fishery pollution externality:**
 
-A steel mill (S) produces steel and, as a byproduct, pollution (x) that harms a downstream fishery (F). The steel mill's cost function: C_S(S, x) (higher x reduces cost: ∂C_S/∂x < 0). The fishery's cost function: C_F(F, x) (higher x increases cost: ∂C_F/∂x > 0). The steel mill does not pay for the damage.
+A steel mill (S) produces steel and, as a byproduct, pollution (x) that harms a downstream fishery (F). The steel mill's cost function: C_S(S, x) (higher x reduces cost: \partial C_S/\partial x < 0). The fishery's cost function: C_F(F, x) (higher x increases cost: \partial C_F/\partial x > 0). The steel mill does not pay for the damage.
 
 **(i) Individual profit maximisation (unregulated)**
 
-Steel mill maximises: π_S = P_S·S − C_S(S, x)
+Steel mill maximises: $\pi_S = P_S \cdot S - C_S(S, x)$
 FOCs:
-∂π_S/∂S = P_S − ∂C_S/∂S = 0 → P_S = MC_S (private)
-∂π_S/∂x = −∂C_S/∂x = 0 → MC_S_x = 0 (since ∂C_S/∂x < 0, marginal benefit of pollution = 0 → use pollution until ∂C_S/∂x = 0)
+$\partial\pi_S/\partial S = P_S - \partial C_S/\partial S = 0 \to P_S = MC_S (private)$
+\partial\pi_S/\partial x = -\partial C_S/\partial x = 0 → MC_S_x = 0 (since \partial C_S/\partial x < 0, marginal benefit of pollution = 0 → use pollution until \partial C_S/\partial x = 0)
 
-Fishery maximises: π_F = P_F·F − C_F(F, x)
-FOC: ∂π_F/∂F = P_F − ∂C_F/∂F = 0 → P_F = MC_F
+Fishery maximises: $\pi_F = P_F \cdot F - C_F(F, x)$
+$FOC: \partial\pi_F/\partial F = P_F - \partial C_F/\partial F = 0 \to P_F = MC_F$
 
-The steel mill chooses pollution level x* where its marginal private benefit of pollution = 0, ignoring the cost imposed on the fishery. Result: **too much pollution** (x* > x° social optimum).
+The steel mill chooses pollution level x* where its marginal private benefit of pollution = 0, ignoring the cost imposed on the fishery. Result: **too much pollution** ($x^* > x^\circ$ social optimum).
 
 **(ii) Joint profit maximisation (merger)**
 
-Maximise joint profit: Π_J = P_S·S − C_S(S, x) + P_F·F − C_F(F, x)
+Maximise joint profit: $\Pi_J = P_S \cdot S - C_S(S, x) + P_F \cdot F - C_F(F, x)$
 
 FOCs:
-∂Π_J/∂S = P_S − ∂C_S/∂S = 0 → P_S = MC_S
-∂Π_J/∂F = P_F − ∂C_F/∂F = 0 → P_F = MC_F
-∂Π_J/∂x = −∂C_S/∂x − ∂C_F/∂x = 0 → −∂C_S/∂x = ∂C_F/∂x
+$\partialΠ_J/\partial S = P_S - \partial C_S/\partial S = 0 \to P_S = MC_S$
+$\partialΠ_J/\partial F = P_F - \partial C_F/\partial F = 0 \to P_F = MC_F$
+$\partialΠ_J/\partial x = -\partial C_S/\partial x - \partial C_F/\partial x = 0 \to -\partial C_S/\partial x = \partial C_F/\partial x$
 
-The joint optimum sets pollution at x° where the marginal benefit of pollution to the steel mill equals the marginal damage to the fishery. Since ∂C_F/∂x > 0, we need −∂C_S/∂x > 0 (steel mill benefits from pollution) equals marginal damage. **Less pollution** than unregulated case: x° < x*.
+The joint optimum sets pollution at x° where the marginal benefit of pollution to the steel mill equals the marginal damage to the fishery. Since \partial C_F/\partial x > 0, we need -\partial C_S/\partial x > 0 (steel mill benefits from pollution) equals marginal damage. **Less pollution** than unregulated case: $x^\circ < x^*$.
 
 ```
 MC ($)
@@ -914,13 +913,13 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 - Fishery can demand zero pollution (or sue for damages).
 - Steel mill can pay fishery to allow some pollution.
 - They negotiate to x° where marginal benefit = marginal damage.
-- Steel mill pays compensation between ∂C_F/∂x and −∂C_S/∂x per unit.
+- Steel mill pays compensation between \partial C_F/\partial x and -\partial C_S/\partial x per unit.
 
 **Case B: Steel mill has right to pollute.**
 - Steel mill can pollute x*.
 - Fishery can pay steel mill to reduce pollution.
 - They negotiate to x° where marginal benefit = marginal damage.
-- Fishery pays steel mill between −∂C_S/∂x and ∂C_F/∂x per unit of reduction.
+- Fishery pays steel mill between -\partial C_S/\partial x and \partial C_F/\partial x per unit of reduction.
 
 **Coase Theorem:** Regardless of initial allocation of property rights, bargaining leads to the efficient pollution level x° (provided zero transaction costs and well-defined rights). The distribution of wealth differs (who pays whom) but the quantity of pollution is the same.
 
@@ -941,7 +940,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Full information:** Two separate markets — peaches trade at $8,000-$10,000, lemons at $3,000-$5,000. Both types trade.
 
-**Asymmetric information:** Buyers know only the average quality. Willing to pay expected value = 0.5×$10,000 + 0.5×$5,000 = $7,500.
+**Asymmetric information:** Buyers know only the average quality. Willing to pay expected value = 0.5 × $10,000 + 0.5 × $5,000 = $7,500.
 
 **Result:** Peach owners value their cars at $8,000 (reservation price). The market price of $7,500 is below their reservation → peach owners **withdraw from market**. Only lemons remain.
 
@@ -976,7 +975,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 1. Nature chooses worker type (H or L) — worker knows own type, firm does not.
 2. Worker chooses education level e ∈ {0, 1} (or continuous).
 3. Firm observes e, updates beliefs about type, offers wage w(e).
-4. Payoffs: Worker gets w(e) − c(e); Firm gets productivity − w(e).
+4. Payoffs: Worker gets w(e) - c(e); Firm gets productivity - w(e).
 
 **Single-crossing property:** The marginal cost of education is lower for H types. This allows education to serve as a credible signal.
 
@@ -984,19 +983,19 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Separating equilibrium:**
 - H type acquires education (e=1), L type does not (e=0).
-- Firm's beliefs: μ(H|e=1) = 1, μ(H|e=0) = 0.
+- Firm's beliefs: $\mu(H|e=1) = 1$, $\mu(H|e=0) = 0$.
 - Firm offers high wage w_H to educated, low wage w_L to uneducated.
 - Conditions:
-  - H prefers e=1: w_H − c_H ≥ w_L (no incentive to deviate)
-  - L prefers e=0: w_L ≥ w_H − c_L (education too costly)
-  - ⇒ w_H − w_L ∈ [c_H, c_L] (the "signaling interval")
+  - H prefers e=1: $w_H - c_H \ge w_L$ (no incentive to deviate)
+  - L prefers e=0: $w_L \ge w_H - c_L$ (education too costly)
+  - $\Rightarrow w_H - w_L \in [c_H, c_L]$ (the "signaling interval")
 - Feasible if c_L > c_H (single-crossing holds).
 
 **Pooling equilibrium:**
 - Neither type acquires education (e=0 for both).
-- Firm's off-equilibrium beliefs: μ(H|e=1) ∈ [0, 1] (arbitrary, but must support equilibrium).
+- Firm's off-equilibrium beliefs: $\mu(H|e=1) \in [0, 1]$ (arbitrary, but must support equilibrium).
 - Both types get low wage w_L = average productivity.
-- Condition: w_L ≥ w_H − c_H (both find education not worthwhile given firm's pessimistic beliefs about educated workers).
+- Condition: w_L \ge w_H - c_H (both find education not worthwhile given firm's pessimistic beliefs about educated workers).
 
 **Key insight (Spence):** Education can serve as a signal of unobservable productivity even if it adds no human capital. The signal is effective because it is differentially costly (c_L > c_H). The separating equilibrium is Pareto-inferior to full information (wasteful education) but restores some information to the market.
 
@@ -1053,18 +1052,18 @@ Quantity Demanded
 
 **Answer:**
 
-**Short answer: Yes, consumption externalities affect the GE solution in the 2×2×2 model.**
+**Short answer: Yes, consumption externalities affect the GE solution in the $2\times 2\times 2$ model.**
 
 **Reasoning:**
 
-The 2×2×2 model explicitly **assumes away** consumption externalities — assumption 3 (Koutsoyiannis p. 497) states: "consumer choices are independent: the consumption patterns of A do not affect B's utility, and vice versa. Bandwagon, snob, Veblenesque and other 'external' effects are ruled out."
+The $2\times 2\times 2$ model explicitly **assumes away** consumption externalities — assumption 3 (Koutsoyiannis p. 497) states: "consumer choices are independent: the consumption patterns of A do not affect B's utility, and vice versa. Bandwagon, snob, Veblenesque and other 'external' effects are ruled out."
 
 **If consumption externalities are introduced:**
 
 1. **Pareto conditions break down:**
-   - The standard GE efficiency condition requires MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ.
-   - With externalities, MRSᴬ depends on B's consumption: MRSᴬ = MRSᴬ(Xᴀ, Yᴀ, Xʙ, Yʙ).
-   - The equality MRSᴬ = MRSᴮ is no longer sufficient for Pareto efficiency because each consumer's utility affects the other directly — not through prices alone.
+   - The standard GE efficiency condition requires $\text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$.
+   - With externalities, $\text{MRS}^A$ depends on B's consumption: $\text{MRS}^A = \text{MRS}^A(X_A, Y_A, X_B, Y_B)$.
+   - The equality $\text{MRS}^A = \text{MRS}^B$ is no longer sufficient for Pareto efficiency because each consumer's utility affects the other directly — not through prices alone.
 
 2. **Externality = missing market:**
    - The externality is an untraded interdependence — there is no market price for A's influence on B's utility.
@@ -1078,12 +1077,12 @@ The 2×2×2 model explicitly **assumes away** consumption externalities — assu
 
 4. **Mathematically:**
    - Utility: Uₐ = Uₐ(Xₐ, Yₐ, X_B, Y_B)
-   - MRSₐ = (∂Uₐ/∂Xₐ)/(∂Uₐ/∂Yₐ) but Pareto efficiency also requires considering ∂Uₐ/∂X_B.
+   - MRSₐ = (\partial Uₐ/\partial Xₐ)/(\partial Uₐ/\partial Yₐ) but Pareto efficiency also requires considering \partial Uₐ/\partial X_B.
    - The standard condition (MRSₐ = MRS_B = Pₓ/Pᵧ) is necessary but no longer sufficient for efficiency.
 
 **Conclusion:** The GE solution may still *exist* (Arrow-Debreu conditions may hold) but it will NOT be Pareto-optimal. The three marginal conditions (MRS equality, MRTS equality, MRPT = MRS) fail when externalities are present. This is why Koutsoyiannis (p. 26593-26594) concludes: "when externalities exist, the conditions for Pareto optimality are not fulfilled."
 
-**Exam Tip:** The textbook answer is that the 2×2×2 GE assumes NO consumption externalities. If introduced, the First Welfare Theorem fails. Mention Leibenstein's bandwagon/snob effects. Point to Koutsoyiannis Chapter 23 for detailed analysis.
+**Exam Tip:** The textbook answer is that the $2\times 2\times 2$ GE assumes NO consumption externalities. If introduced, the First Welfare Theorem fails. Mention Leibenstein's bandwagon/snob effects. Point to Koutsoyiannis Chapter 23 for detailed analysis.
 
 ---
 
@@ -1094,54 +1093,54 @@ The 2×2×2 model explicitly **assumes away** consumption externalities — assu
 **Answer:**
 
 **Given:**
-- Domestic demand: Q_d = 250,000 − 100P
-- Domestic supply: Q_s = 250P − 30,000
+- Domestic demand: $Q_d = 250,000 - 100P$
+- Domestic supply: $Q_s = 250P - 30,000$
 - World price: P_W = $600
 
 **Step 1: Autarky equilibrium.**
 
 Set Q_d = Q_s:
-250,000 − 100P = 250P − 30,000
+$250,000 - 100P = 250P - 30,000$
 280,000 = 350P
-P_autarky = $800
+$P_{\text{autarky}} = 800$
 
-Q_autarky = 250,000 − 100(800) = 250,000 − 80,000 = 170,000
+$Q_autarky = 250,000 - 100(800) = 250,000 - 80,000 = 170,000$
 
 **Step 2: Free trade (P_W = $600).**
 
 At P_W = $600:
-Q_d(600) = 250,000 − 100(600) = 250,000 − 60,000 = 190,000
-Q_s(600) = 250(600) − 30,000 = 150,000 − 30,000 = 120,000
+$Q_d(600) = 250,000 - 100(600) = 250,000 - 60,000 = 190,000$
+$Q_s(600) = 250(600) - 30,000 = 150,000 - 30,000 = 120,000$
 
-Since Q_d > Q_s: **imports** = Q_d − Q_s = 190,000 − 120,000 = **70,000 units**.
+Since $Q_d > Q_s$: **imports** $= Q_d - Q_s = 190,000 - 120,000$ **70,000 units**.
 No exports.
 
 **Step 3: Tariff of $50 (P_after tariff = $650).**
 
 At P = $650:
-Q_d = 250,000 − 100(650) = 250,000 − 65,000 = **185,000**
-Q_s = 250(650) − 30,000 = 162,500 − 30,000 = **132,500**
-Imports = 185,000 − 132,500 = **52,500**
-Tariff revenue = 50 × 52,500 = **$2,625,000**
+$Q_d = 250,000 - 100(650) = 250,000 - 65,000 = 185,000$
+$Q_s = 250(650) - 30,000 = 162,500 - 30,000 = $ **132,500**
+$Imports = 185,000 - 132,500 = $ **52,500**
+Tariff revenue = $50 \times 52,500$ = **$2,625,000**
 
 **Welfare effects (relative to free trade):**
 
-- **Consumer surplus (CS):** Change = −(area between P=$600 and P=$650 under D).
-  ΔCS = −[(P₂−P₁)(Q_d₁+Q_d₂)/2] (trapezoid formula)
-  ΔCS = −[50 × (190,000 + 185,000)/2] = −[50 × 187,500] = **−$9,375,000**
+- **Consumer surplus (CS):** Change = -(area between P=$600 and P=$650 under D).
+  $\Delta CS = -[(P_2 - P_1)(Q_{d1} + Q_{d2})/2]$ (trapezoid formula)
+  $\Delta CS = -[50 \times (190,000 + 185,000)/2] = -[50 \times 187,500] = -9,375,000$
 
 - **Producer surplus (PS):** Change = +(area between P=$600 and P=$650 above S).
-  ΔPS = +[50 × (120,000 + 132,500)/2] = +[50 × 126,250] = **+$6,312,500**
+  $\Delta PS = +[50 \times (120,000 + 132,500)/2] = +[50 \times 126,250] = 6,312,500$
 
-- **Tariff revenue:** = $50 × 52,500 = **+$2,625,000**
+- **Tariff revenue:** = $50 \times 52,500 = **+$2,625,000**
 
 - **Net welfare change (ΔW):**
   ΔW = ΔCS + ΔPS + Tariff Revenue
-  ΔW = −9,375,000 + 6,312,500 + 2,625,000 = **−$437,500**
+  $\Delta W = -9,375,000 + 6,312,500 + 2,625,000 = -437,500$
 
 The net welfare loss = **deadweight loss** from the tariff, comprising:
-- Production distortion (area a): ½ × 50 × (132,500 − 120,000) = ½ × 50 × 12,500 = $312,500
-- Consumption distortion (area b): ½ × 50 × (190,000 − 185,000) = ½ × 50 × 5,000 = $125,000
+- Production distortion (area a): $\frac{1}{2} \times 50 \times (132,500 - 120,000) = \frac{1}{2} \times 50 \times 12,500 = 312,500$
+- Consumption distortion (area b): $\frac{1}{2} \times 50 \times (190,000 - 185,000) = \frac{1}{2} \times 50 \times 5,000 = 125,000$
 - Total DWL = $312,500 + $125,000 = $437,500 ✓
 
 **Step 4: Voluntary Export Restraint (VER) of 20,000 units.**
@@ -1150,29 +1149,29 @@ A VER of 20,000 units restricts imports to 20,000. This is equivalent to a quota
 
 **Equilibrium under VER (20,000 imports):**
 
-At domestic price P: Q_d − Q_s = 20,000
-(250,000 − 100P) − (250P − 30,000) = 20,000
-280,000 − 350P = 20,000
-350P = 260,000
+At domestic price P: $Q_d - Q_s = 20,000$
+$(250,000 - 100P) - (250P - 30,000) = 20,000$
+$280,000 - 350P = 20,000$
+$350P = 260,000$
 P_VER = $742.86
 
 At P = $742.86:
-Q_d = 250,000 − 100(742.86) = 250,000 − 74,286 = **175,714**
-Q_s = 250(742.86) − 30,000 = 185,715 − 30,000 = **155,715**
-Imports = 175,714 − 155,715 = **20,000** ✓
+$Q_d = 250,000 - 100(742.86) = 250,000 - 74,286 = 175,714$
+$Q_s = 250(742.86) - 30,000 = 185,715 - 30,000 = $ **155,715**
+$Imports = 175,714 - 155,714 = $ **20,000** ✓
 
 **Welfare effects of VER vs free trade:**
 
-- ΔCS = −[(742.86 − 600) × (190,000 + 175,714)/2]
-  = −[142.86 × 182,857] = **−$26,122,450** (approx.)
+- $\Delta CS = -[(742.86 - 600) \times (190,000 + 175,714)/2]$
+  $= -[142.86 \times 182,857] = -26,122,450$ (approx.)
 
-- ΔPS = +[142.86 × (120,000 + 155,715)/2]
-  = +[142.86 × 137,857.5] = **+$19,693,875** (approx.)
+- $\Delta PS = +[142.86 \times (120,000 + 155,715)/2]$
+  $= +[142.86 \times 137,857.5] = 19,693,875$ (approx.)
 
-- **Quota rent (VER):** Under VER, the quota rent (= 142.86 × 20,000 = $2,857,200) goes to **foreign exporters** (not the domestic government), because the VER is administered by the exporting country.
+- **Quota rent (VER):** Under VER, the quota rent (= $142.86 \times 20,000 = $$2,857,200) goes to **foreign exporters** (not the domestic government), because the VER is administered by the exporting country.
 
-- ΔW = ΔCS + ΔPS + QuotaRent(to foreigners)
-  = −26,122,450 + 19,693,875 − 2,857,200 = **−$9,285,775**
+- $\Delta W = \Delta CS + \Delta PS + \text{QuotaRent(to foreigners)}$
+  $= -26,122,450 + 19,693,875 - 2,857,200 = -9,285,775$
 
 **VER is worse than tariff:** The tariff generates government revenue of $2,625,000; the VER transfers this revenue to foreign exporters. The net welfare loss is larger under VER.
 
@@ -1182,13 +1181,13 @@ Imports = 175,714 − 155,715 = **20,000** ✓
 | Q_d | 190,000 | 185,000 | 175,714 |
 | Q_s | 120,000 | 132,500 | 155,715 |
 | Imports | 70,000 | 52,500 | 20,000 |
-| ΔCS vs FT | — | −$9,375,000 | −$26,122,450 |
+| ΔCS vs FT | — | -$9,375,000 | -$26,122,450 |
 | ΔPS vs FT | — | +$6,312,500 | +$19,693,875 |
 | Govt Revenue | — | +$2,625,000 | $0 (rent to foreigners) |
-| ΔW vs FT | — | −$437,500 | −$9,285,775 |
+| ΔW vs FT | — | -$437,500 | -$9,285,775 |
 
 **Exam Tip:** The DWL of tariff = production distortion + consumption distortion triangles. The VER is equivalent to a tariff where the revenue goes to foreign exporters (making it more costly to the domestic economy). Always compute autarky first as the reference point.
 
 ---
 
-**End of document.** All ~26 questions across five topics covered: GE existence/uniqueness/stability, Edgeworth box & 2×2×2 model, game theory & IO, externalities & public goods, and trade & tariffs.
+**End of document.** All ~26 questions across five topics covered: GE existence/uniqueness/stability, Edgeworth box & $2\times 2\times 2$ model, game theory & IO, externalities & public goods, and trade & tariffs.

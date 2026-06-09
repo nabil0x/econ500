@@ -573,7 +573,7 @@ $$\int_{11,000}^{21,000} [D(Q) - S(Q)] dQ = 100,000$$
 
 **Deadweight loss = 100,000.**
 
-**Exam Tip:** For linear supply and demand, DWL is always the triangle $½ \times t \times \Delta Q$. The tax incidence depends on relative elasticities. Here both supply and demand slopes are equal ($\pm 1000$), so the tax burden is split evenly ($P$ rises by \$10 for buyers, falls by \$10 for sellers).
+**Exam Tip:** For linear supply and demand, DWL is always the triangle $\frac{1}{2} \times t \times \Delta Q$. The tax incidence depends on relative elasticities. Here both supply and demand slopes are equal ($\pm 1000$), so the tax burden is split evenly ($P$ rises by \$10 for buyers, falls by \$10 for sellers).
 
 | Measure | Without Tax | With Tax |
 |---------|-------------|----------|

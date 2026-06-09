@@ -16,11 +16,11 @@
 
 **Definitions:**
 
-| Measure | Definition | Formula (price decrease, p₁¹ < p₁⁰) |
+| Measure | Definition | Formula (price decrease, p_{1}^{1} < p_{1}^{0}) |
 |---------|-----------|--------------------------------------|
-| **CV** | Money taken from consumer *after* price fall to restore original utility u⁰ | CV = e(p¹, u¹) − e(p¹, u⁰) = w − e(p¹, u⁰) |
-| **EV** | Money given to consumer *before* price fall to make them as well off as after | EV = e(p⁰, u¹) − e(p⁰, u⁰) = e(p⁰, u¹) − w |
-| **CS** | Area under Marshallian demand between old and new price | CS = ∫_{p₁⁰}^{p₁¹} x₁(p₁, p̄₋₁, w) dp₁ |
+| **CV** | Money taken from consumer *after* price fall to restore original utility u^{0} | $CV = e(p^{1}, u^{1}) - e(p^{1}, u^{0}) = w - e(p^{1}, u^{0})$ |
+| **EV** | Money given to consumer *before* price fall to make them as well off as after | $EV = e(p^{0}, u^{1}) - e(p^{0}, u^{0}) = e(p^{0}, u^{1}) - w$ |
+| **CS** | Area under Marshallian demand between old and new price | $CS = \int_{p_{1}^{0}}^{p_{1}^{1}} x_{1}(p_{1}, \bar{p}_{-1}, w) dp_{1}$ |
 
 **Key distinctions:**
 
@@ -34,9 +34,9 @@
 
 ```
             CV              EV              CS
-Reference  u⁰ (original)   u¹ (new)        Mixed (observable)
-Prices     p¹ (new)        p⁰ (old)        p⁰ → p¹
-Demand     Hicksian (u⁰)   Hicksian (u¹)   Marshallian (w)
+Reference  $u^{0}$ (original)   $u^{1}$ (new)        Mixed (observable)
+Prices     $p^{1}$ (new)        $p^{0}$ (old)        $p^{0} \to p^{1}$
+Demand     Hicksian ($u^{0}$)   Hicksian ($u^{1}$)   Marshallian (w)
 ```
 
 > **Exam Tip:** Always state which utility level each measure is anchored to. CV = original utility; EV = new utility. This determines whether CV < CS < EV or reversed.
@@ -48,20 +48,20 @@ Demand     Hicksian (u⁰)   Hicksian (u¹)   Marshallian (w)
 
 **Answer:**
 
-**For a price decrease (p₁↓) with normal goods:**
+**For a price decrease (p_{1}\downarrow) with normal goods:**
 
-- **EV** uses Hicksian demand at *new* (higher) utility u¹ → Hicksian demand shifts right (income effect positive for normal goods) → largest area.
+- **EV** uses Hicksian demand at *new* (higher) utility $u^{1}$ → Hicksian demand shifts right (income effect positive for normal goods) → **largest** area.
 - **CS** uses Marshallian demand — lies between the two Hicksian curves → intermediate area.
-- **CV** uses Hicksian demand at *original* (lower) utility u⁰ → smallest area.
+- **CV** uses Hicksian demand at *original* (lower) utility $u^{0}$ → smallest area.
 
 ```
 EV > CS > CV
 ```
 
-**For a price increase (p₁↑) with normal goods:**
+**For a price increase (p_{1}\uparrow) with normal goods:**
 
-- **CV** is now measured at original utility u⁰ (consumer needs compensation after price rise to stay at u⁰). The Hicksian demand at u⁰ is to the right → largest area.
-- **EV** is measured at new (lower) utility u¹ → Hicksian demand at u¹ is to the left → smallest area.
+- **CV** is now measured at original utility $u^{0}$ (consumer needs compensation after price rise to stay at $u^{0}$). The Hicksian demand at $u^{0}$ is to the right → largest area.
+- **EV** is measured at new (lower) utility $u^{1}$ → Hicksian demand at $u^{1}$ is to the left → smallest area.
 
 ```
 EV < CS < CV
@@ -69,67 +69,67 @@ EV < CS < CV
 
 **Graphical logic:**
 
-| Scenario | p₁↓ (normal good) | p₁↑ (normal good) |
+| Scenario | p_{1}\downarrow (normal good) | p_{1}\uparrow (normal good) |
 |----------|------------------|------------------|
-| Hicksian(u⁰) | Left of Marshallian | Right of Marshallian |
-| Hicksian(u¹) | Right of Marshallian | Left of Marshallian |
+| Hicksian(u^{0}) | Left of Marshallian | Right of Marshallian |
+| Hicksian(u^{1}) | Right of Marshallian | Left of Marshallian |
 | Ordering | EV > CS > CV | CV > CS > EV |
 
 **Intuition:** For normal goods, a price fall increases real income → consumer would buy more if compensated → EV > CV. The gap between CV and EV reflects the income effect.
 
-> **Exam Tip:** Draw the three demand curves (h(p,u⁰), x(p,w), h(p,u¹)) intersecting at p⁰ and p¹. Shade areas in two colors for price decrease and price increase cases. This is a guaranteed diagram question.
+> **Exam Tip:** Draw the three demand curves (h(p,$u^{0}$, x(p,w), h(p,$u^{1}$) intersecting at $p^{0}$and $p^{1}$ Shade areas in two colors for price decrease and price increase cases. This is a guaranteed diagram question.
 
 ---
 
 ### Question 3
-**Cobb-Douglas u = x₁^½ x₂^½. Given {p⁰,m⁰} = {{4,4},300}, {p¹,m¹} = {{2,4},300}. Compute indirect utilities, costs, EV, CV, CS. Examine relationship → nature of commodities.** *(10/5 marks)*
+**Cobb-Douglas $u = x_1^{1/2} x_2^{1/2}$. Given $\{p^0, m^0\} = \{\{4,4\},300\}$, $\{p^1, m^1\} = \{\{2,4\},300\}$. Compute indirect utilities, costs, EV, CV, CS. Examine relationship → nature of commodities.** *(10/5 marks)*
 
 **Answer:**
 
 **Step 1 — Walrasian demands:**
 
-For u = x₁^α x₂^(1−α) with α = ½:
-- x₁(p, m) = αm/p₁ = 150/p₁
-- x₂(p, m) = (1−α)m/p₂ = 150/p₂
+For u = $x_{1}^{\alpha} x_{2}^{(1-\alpha)}$ with $\alpha = 1/2$:
+- $x_{1}(p, m) = \alpha m/p_{1} = 150/p_{1}$
+- $x_{2}(p, m) = (1-\alpha)m/p_{2} = 150/p_{2}$
 
 **Step 2 — Indirect utility:**
 
-v(p, m) = (αm/p₁)^α · ((1−α)m/p₂)^(1−α)
+$v(p, m) = (\alpha m/p_{1})^\alpha \cdot ((1-\alpha)m/p_{2})^{(1-\alpha)}$
 
-At p⁰ = (4, 4), m = 300:
-- x₁⁰ = 150/4 = 37.5, x₂⁰ = 150/4 = 37.5
-- v⁰ = (37.5)^½ · (37.5)^½ = 37.5
+At $p^{0} = (4, 4)$, $m = 300$:
+- $x_{1}^{0} = 150/4 = 37.5, x_{2}^{0} = 150/4 = 37.5$
+- $v^{0} = (37.5)^\frac{1}{2} \cdot (37.5)^\frac{1}{2} = 37.5$
 
-At p¹ = (2, 4), m = 300:
-- x₁¹ = 150/2 = 75, x₂¹ = 150/4 = 37.5
-- v¹ = (75)^½ · (37.5)^½ = √2812.5 ≈ 53.03
+At $p^{1} = (2, 4)$, $m = 300$:
+- $x_{1}^{1} = 150/2 = 75, x_{2}^{1} = 150/4 = 37.5$
+- $v^{1} = (75)^\frac{1}{2} \cdot (37.5)^\frac{1}{2} = \sqrt{2}812.5 \approx 53.03$
 
 **Step 3 — Expenditure function:**
 
-For u = x₁^½ x₂^½:
-- h₁ = u · (p₂/p₁)^½, h₂ = u · (p₁/p₂)^½
-- e(p, u) = p₁h₁ + p₂h₂ = 2u · √(p₁p₂)
+For u = $x_{1}^{1/2} x_{2}^{1/2}$:
+- $h_{1} = u \cdot (p_{2}/p_{1})^{1/2}, h_{2} = u \cdot (p_{1}/p_{2})^{1/2}$
+- $e(p, u) = p_{1}h_{1} + p_{2}h_{2} = 2u \cdot \sqrt{p_1 p_2}$
 
 **Step 4 — CV (price decrease):**
 
-CV = w − e(p¹, u⁰)
+CV = $w - e(p^{1}, u^{0})$
 
-e(p¹, u⁰) = e((2,4), 37.5) = 2 × 37.5 × √(2 × 4) = 75 × √8 = 75 × 2.828 = 212.1
+$e(p^{1}, u^{0}) = e((2,4), 37.5) = 2 \times 37.5 \times \sqrt{2 \times 4} = 75 \times \sqrt{8} = 75 \times 2.828 = 212.1$
 
-**CV = 300 − 212.1 = 87.9**
+**$CV = 300 - 212.1 = 87.9$**
 
 **Step 5 — EV:**
 
-EV = e(p⁰, u¹) − w
+EV = $e(p^{0}, u^{1}) - w$
 
-e(p⁰, u¹) = e((4,4), 53.03) = 2 × 53.03 × √(4 × 4) = 106.06 × 4 = 424.24
+$e(p^{0}, u^{1}) = e((4,4), 53.03) = 2 \times 53.03 \times \sqrt{4 \times 4} = 106.06 \times 4 = 424.24$
 
-**EV = 424.24 − 300 = 124.24**
+**$EV = 424.24 - 300 = 124.24$**
 
 **Step 6 — CS:**
 
-CS = ∫_{p₁=4}^{2} x₁(p₁, p₂, m) dp₁ = ∫₄² (150/p₁) dp₁ = 150[ln p₁]₄²
-= 150(ln 2 − ln 4) = 150 ln(0.5) = −150 ln 2 ≈ −103.98
+$$CS = \int_{p_{1}=4}^{2} x_{1}(p_{1}, p_{2}, m) dp_{1} = \int_{4}^{2} (150/p_{1}) dp_{1} = 150[ln p_{1}]_{4}^{2}$$
+$$= 150(ln 2 - ln 4) = 150 ln(0.5) = -150 ln 2 \approx -103.98$$
 
 **CS = 103.98** (absolute value since price fell)
 
@@ -143,9 +143,9 @@ CS = ∫_{p₁=4}^{2} x₁(p₁, p₂, m) dp₁ = ∫₄² (150/p₁) dp₁ = 15
 
 **EV > CS > CV ✓** — confirms both goods are **normal goods**.
 
-Since EV − CV = 124.24 − 87.9 = 36.34 > 0, there is a substantial income effect, consistent with Cobb-Douglas (unit income elasticity for both goods ⇒ both are normal).
+Since EV $-$ CV $= 124.24 - 87.9 = 36.34 > 0$, there is a substantial income effect, consistent with Cobb-Douglas (unit income elasticity for both goods \Rightarrow both are normal).
 
-> **Exam Tip:** Never forget to state that EV > CS > CV confirms normal goods. If the relation reversed (CV > CS > EV), goods would be inferior. Know the Cobb-Douglas expenditure function formula e(p,u) = 2u√(p₁p₂) for α = ½ — saves time.
+> **Exam Tip:** Never forget to state that EV $>$ CS $>$ CV confirms normal goods. If the relation reversed (CV $>$ CS $>$ EV), goods would be inferior. Know the Cobb-Douglas expenditure function formula $e(p,u) = 2u\sqrt{p_1 p_2}$ for $\alpha = \frac{1}{2}$ — saves time.
 
 ---
 
@@ -154,14 +154,14 @@ Since EV − CV = 124.24 − 87.9 = 36.34 > 0, there is a substantial income eff
 
 **Answer:**
 
-**Price Decrease (p₁↓):**
+**Price Decrease (p_{1}\downarrow):**
 
 ```
-p₁
+p_{1}
 ↑
-|  h(p, u¹) — Hicksian at new (higher) utility
+|  h(p, $u^{1}$ — Hicksian at new (higher) utility
 |  ↙  x(p,w) — Marshallian (observable)
-|  h(p, u⁰) — Hicksian at original (lower) utility
+|  h(p, $u^{0}$ — Hicksian at original (lower) utility
 |
 | p₁⁰ ———┼————┼——┼——
 |        │    │  │
@@ -173,19 +173,19 @@ p₁
 └──────────────────────────→ x₁
 ```
 
-- All three curves intersect at price p₁⁰ (original equilibrium)
-- At p₁¹ < p₁⁰, for a normal good: h(p,u¹) > x(p,w) > h(p,u⁰)
-- EV = area left of h(p, u¹) between p₁⁰ and p₁¹ → **largest**
-- CS = area left of x(p,w) between p₁⁰ and p₁¹ → **intermediate**
-- CV = area left of h(p, u⁰) between p₁⁰ and p₁¹ → **smallest**
+- All three curves intersect at price $p_{1}^{0}$ (original equilibrium)
+- At $p_{1}^{1} < p_{1}^{0}$, for a normal good: $h(p, u^{1}) > x(p,w) > h(p, u^{0})$
+- **EV** = area left of $h(p, u^{1})$ between $p_{1}^{0}$ and $p_{1}^{1}$ → **largest**
+- **CS** = area left of $x(p,w)$ between $p_{1}^{0}$ and $p_{1}^{1}$ → **intermediate**
+- **CV** = area left of $h(p, u^{0})$ between $p_{1}^{0}$ and $p_{1}^{1}$ → **smallest**
 
-**Price Increase (p₁↑):**
+**Price Increase (p_{1}\uparrow):**
 
 ```
-p₁
+p_{1}
 ↑
-|  h(p, u⁰) — Hicksian at original (higher) utility
-|  ↙  h(p, u¹) — Hicksian at new (lower) utility
+|  h(p, $u^{0}$ — Hicksian at original (higher) utility
+|  ↙  h(p, $u^{1}$ — Hicksian at new (lower) utility
 |  x(p,w) — Marshallian
 |
 | p₁¹ ———┼————┼——┼——
@@ -197,10 +197,10 @@ p₁
 └──────────────────────────→ x₁
 ```
 
-- At p₁¹ > p₁⁰, for a normal good: h(p,u⁰) > x(p,w) > h(p,u¹)
-- CV = area left of h(p, u⁰) → **largest**
-- CS = area left of x(p,w) → **intermediate**
-- EV = area left of h(p, u¹) → **smallest**
+- At $p_{1}^{1} > p_{1}^{0}$, for a normal good: $h(p, u^{0}) > x(p,w) > h(p, u^{1})$
+- **CV** = area left of $h(p, u^{0})$ → **largest**
+- CS = area left of $x(p,w)$ → **intermediate**
+- **EV** = area left of $h(p, u^{1})$ → **smallest**
 
 **Why the reversal?** The reference utility level flips. For a price *decrease*, EV references the better (new) state — bigger welfare gain. For a price *increase*, CV references the better (original) state — bigger compensation needed.
 
@@ -213,18 +213,18 @@ p₁
 
 **Answer:**
 
-**For a price decrease (p₁↓) with normal good:**
+**For a price decrease (p_{1}\downarrow) with normal good:**
 
-- **Good is normal** ⇒ ∂x₁/∂m > 0 ⇒ income effect is positive
+- **Good is normal** \Rightarrow $\partial x_1/\partial m > 0$ \Rightarrow income effect is positive
 - When price falls, real income rises → consumer buys more of the good due to income effect
-- **Marshallian demand** includes BOTH substitution and income effects → it is flatter (more elastic) than the Hicksian demand at u⁰
-- **CV** uses Hicksian demand at u⁰ (compensated, no income effect) → steeper → smaller area
+- **Marshallian demand** includes BOTH substitution and income effects → it is flatter (more elastic) than the Hicksian demand at $u^{0}$
+- **CV** uses Hicksian demand at $u^{0}$(compensated, no income effect) → steeper → smaller area
 - Therefore: **CS > CV** (CS overstates CV)
 
-- **EV** uses Hicksian demand at u¹ (higher utility level) → shifted right for normal goods → larger area
+- **EV** uses Hicksian demand at $u^{1}$(higher utility level) → shifted right for normal goods → larger area
 - Therefore: **EV > CS** (CS understates EV)
 
-**For a price increase (p₁↑) with normal good:**
+**For a price increase (p_{1}\uparrow) with normal good:**
 
 - Real income falls → consumer buys less due to income effect
 - Marshallian demand lies between the two Hicksian curves
@@ -235,8 +235,8 @@ p₁
 | Condition | Error (CS vs CV/EV) |
 |-----------|---------------------|
 | Zero income effect (quasilinear) | CS = CV = EV (exact) |
-| Small price change | CS ≈ CV ≈ EV (Willig bounds) |
-| Normal good, large price change | CS ≠ CV ≠ EV, ordering per above |
+| Small price change | CS \approx CV \approx EV (Willig bounds) |
+| Normal good, large price change | CS \ne CV \ne EV, ordering per above |
 | Inferior good | Reversed ordering |
 
 **Willig (1976) bounds:** For realistic income elasticities and price changes, the percentage error from using CS instead of CV or EV is typically < 5%.
@@ -319,7 +319,7 @@ Pigou identified the divergence between private net product and social net produ
 
 **Concept of Grand Utility Possibility Frontier:**
 
-In a 2×2×2 model (2 factors L,K; 2 goods X,Y; 2 consumers A,B):
+In a 2×2×2 model (2 factors $L$, $K$; 2 goods $X$, $Y$; 2 consumers $A$, $B$):
 
 1. **Production Possibility Curve (PPC):** Each point on the PPC is a Pareto-efficient output combination (MRPT_xy = MRS_xy).
 2. **Utility Possibility Frontier (UPF):** For a given product-mix (point on PPC), the UPF shows the maximum utility attainable by B given A's utility level, obtained by distributing X and Y between A and B efficiently (MRS^A_xy = MRS^B_xy).
@@ -343,9 +343,9 @@ The point of bliss is the tangency between the **GUPF** and the **highest attain
 ```
      U_B
      ↑
-     |       SWF₃ (unattainable)
-     |      SWF₂
-     |     SWF₁
+     |       SWF_{3} (unattainable)
+     |      SWF_{2}
+     |     SWF_{1}
      |    ╱
      |   ╱ ● E (Point of Bliss)
      |  ╱
@@ -355,8 +355,8 @@ The point of bliss is the tangency between the **GUPF** and the **highest attain
                       GUPF
 ```
 
-- **Point E:** Tangency between GUPF and SWF₂ → slope of GUPF = slope of social indifference contour
-  - ∂U_B/∂U_A (at the margin of GUPF) = ∂W/∂U_A / ∂W/∂U_B (marginal social rate of substitution between utilities)
+- **Point E:** Tangency between GUPF and $SWF_{2}$ → slope of GUPF = slope of social indifference contour
+  - $\partial U_B/\partial U_A$ (at the margin of GUPF) = $\partial W/\partial U_A / \partial W/\partial U_B$ (marginal social rate of substitution between utilities)
 - At E: **Pareto efficiency (all points on GUPF are Pareto-optimal) + distributional equity (determined by SWF shape)**
 
 **Does the Point of Bliss Ensure Maximum Social Welfare?**
@@ -365,10 +365,10 @@ The point of bliss is the tangency between the **GUPF** and the **highest attain
 |-------|-------------|
 | **YES — it identifies the constrained maximum** | Given resources and technology, no reallocation can reach a higher social indifference contour |
 | **NO — it does not by itself guarantee max SW** | The point of bliss depends on the *specific SWF* chosen. A different SWF (different value judgements about equity) yields a different optimum |
-| **Pareto optimality is NECESSARY but NOT SUFFICIENT** | All points on the GUPF satisfy Pareto optimality, but only E maximizes social welfare. Bergson showed that Pareto-optimal points like c and c₁ on the GUPF are on lower social indifference contours than point d |
+| **Pareto optimality is NECESSARY but NOT SUFFICIENT** | All points on the GUPF satisfy Pareto optimality, but only E maximizes social welfare. Bergson showed that Pareto-optimal points like c and c_{1} on the GUPF are on lower social indifference contours than point d |
 | **Requires explicit value judgements** | The SWF embodies ethical choices about interpersonal comparisons — these are value judgements, not objective facts |
 
-> **Exam Tip:** The key exam point is that Pareto optimality ≡ all points on GUPF ✓, but SW maximization requires a specific point on the GUPF chosen by value judgements via the SWF. Bergson > Pareto for sufficiency.
+> **Exam Tip:** The key exam point is that Pareto optimality \equiv all points on GUPF $\checkmark$, but SW maximization requires a specific point on the GUPF chosen by value judgements via the SWF. Bergson > Pareto for sufficiency.
 
 ---
 
@@ -387,7 +387,7 @@ Social welfare is the aggregate well-being of a society, encompassing the satisf
 
 - **Premise:** Growth of national output (GNP) increases employment and goods available for consumption → welfare rises.
 - **Implicit assumption:** The status quo of income distribution is acceptable/"ethical."
-- **Formula:** ∆W > 0 if ∆GNP > 0
+- **Formula:** \DeltaW > 0 if \DeltaGNP > 0
 
 | Strengths | Weaknesses |
 |-----------|------------|
@@ -400,11 +400,11 @@ Social welfare is the aggregate well-being of a society, encompassing the satisf
 **(ii) Bentham's Criterion (Jeremy Bentham)**
 
 - **Premise:** "Greatest good for the greatest number." Social welfare is the *sum* of individual utilities.
-- **Formula:** W = U_A + U_B + U_C; ∆W > 0 if (∆U_A + ∆U_B + ∆U_C) > 0
+- $**Formula:** W = U_A + U_B + U_C; \DeltaW > 0 if (\DeltaU_A + \DeltaU_B + \DeltaU_C) > 0$
 
 | Problem | Illustration |
 |---------|-------------|
-| **Interpersonal comparability of deservingness** | A change where ∆U_A = +200, ∆U_B = +50, ∆U_C = −100 gives ∆W = +150. But this assumes A&B's gains "outweigh" C's loss — a value judgement about who deserves more. |
+| **Interpersonal comparability of deservingness** | A change where \DeltaU_A = +200, \DeltaU_B = +50, \DeltaU_C = -100 gives \DeltaW = +150. But this assumes A&B's gains "outweigh" C's loss — a value judgement about who deserves more. |
 | **"Greatest good" vs "greatest number"** | Situation 1: U = (200, 50, 30), total = 280. Situation 2: U = (100, 80, 80), total = 260. Which is better? Bentham gives no clear rule when "greatest good" and "greatest number" conflict. |
 
 - *Criticism:* Implicitly assumes ability to add utilities across individuals — requires cardinal utility and interpersonal comparisons. Ignores distributional equity.
@@ -436,9 +436,9 @@ Social welfare is the aggregate well-being of a society, encompassing the satisf
 
 A social welfare function is a rule for ranking alternative social states based on the utility levels of individuals. It is analogous to an individual's utility function but operates in utility space:
 
-W = F(U₁, U₂, ..., Uₙ)
+$$W = F(U_{1}, U_{2}, ..., U_{n})$$
 
-where W is social welfare and Uᵢ is the utility of individual i.
+where $W$ is social welfare and $U_i$ is the utility of individual $i$.
 
 - **Introduced by:** Abram Bergson (1938), developed by Samuelson, Tinter, Arrow.
 - **Purpose:** To evaluate changes where some gain and some lose — situations where Pareto criterion cannot apply.
@@ -446,7 +446,7 @@ where W is social welfare and Uᵢ is the utility of individual i.
 
 **Derivation of Grand Utility Possibility Frontier (GUPF) and Point of Bliss:**
 
-*Step 1:* Start from the 2×2×2 model — two factors (L,K), two goods (X,Y), two consumers (A,B).
+*Step 1:* Start from the 2×2×2 model — two factors ($L$,$K$), two goods ($X$,$Y$), two consumers ($A$,$B$).
 
 *Step 2:* From each point on the Production Possibility Curve (PPC), construct a **Utility Possibility Frontier (UPF)** — the locus of efficient utility pairs (U_A, U_B) attainable by distributing the given output between A and B efficiently (MRS^A_xy = MRS^B_xy).
 
@@ -467,9 +467,9 @@ where W is social welfare and Uᵢ is the utility of individual i.
 ```
      U_B
      ↑
-     |       I₃ (higher SW — unattainable)
-     |      I₂
-     |     I₁
+     |       I_{3} (higher SW — unattainable)
+     |      I_{2}
+     |     I_{1}
      |    ╱
      |   ╱ ● E (point of bliss)
      |  ╱
@@ -488,7 +488,7 @@ Slope(GUPF) = Slope(Social Indifference Contour)  (distributional judgement — 
 
 **Mathematical condition at bliss point:**
 
-∂U_B/∂U_A (from GUPF) = (∂W/∂U_A) / (∂W/∂U_B) (from SWF)
+$\partial U_B/\partial U_A (from GUPF) = (\partial W/\partial U_A) / (\partial W/\partial U_B) (from SWF)$
 
 > **Exam Tip:** The bliss point is not unique — it depends on the specific SWF (different value judgements → different bliss points). Arrow's Impossibility Theorem later questioned whether a consistent SWF can be constructed from individual preferences.
 
@@ -543,9 +543,9 @@ Pigou's *The Economics of Welfare* (1932) laid the foundation of neoclassical we
 
 **Definition of Social Welfare Function (SWF):**
 
-W = F(U₁, U₂, ..., Uₙ)
+$$W = F(U_{1}, U_{2}, ..., U_{n})$$
 
-A SWF is a rule for aggregating individual utility levels into a measure of overall social welfare. It provides a *complete ranking* of all feasible social states. Each state is a vector of utilities (U₁,...,Uₙ) and the SWF assigns a real number W to that vector.
+A SWF is a rule for aggregating individual utility levels into a measure of overall social welfare. It provides a *complete ranking* of all feasible social states. Each state is a vector of utilities $(U_1,\ldots,U_n)$ and the SWF assigns a real number $W$ to that vector.
 
 - **Bergson-Samuelson SWF:** Individual utilities are arguments; the functional form embodies ethical/value judgements about distribution.
 - **Social indifference contours:** In two-person space (U_A, U_B), each contour connects utility pairs yielding the same W. Contours further northeast = higher welfare.
@@ -564,7 +564,7 @@ A SWF is a rule for aggregating individual utility levels into a measure of over
 
 ```
      Max  W = F(U_A, U_B)
-     s.t. (U_A, U_B) ∈ GUPF
+     s.t. (U_A, U_B) \in GUPF
 ```
 
 - At the optimum: Slope(GUPF) = Slope(Social Indifference Contour)
@@ -572,7 +572,7 @@ A SWF is a rule for aggregating individual utility levels into a measure of over
 **(3) Evaluating Pareto-incomparable changes**
 
 - Pareto criterion fails when some gain and others lose. The SWF resolves this by allowing trade-offs across individuals based on explicit value judgements:
-  - A change increasing U_A by +10 and decreasing U_B by −5 is SW-improving if W(·) places sufficient weight on A relative to B.
+  - A change increasing U_A by +10 and decreasing U_B by -5 is SW-improving if W(\cdot) places sufficient weight on A relative to B.
 
 **Advantages:**
 
@@ -693,7 +693,7 @@ From each point on the PPC, a UPF is derived. The envelope (GUPF) contains all P
      └────────────────→ U_A
 ```
 
-Points c, c₁, and d are all on the GUPF → all Pareto-optimal. But if d lies on a higher social indifference contour than c or c₁, then d yields higher social welfare. Hence, Pareto optimality alone cannot identify the social optimum.
+Points c, c_{1}, and d are all on the GUPF → all Pareto-optimal. But if d lies on a higher social indifference contour than c or c_{1}, then d yields higher social welfare. Hence, Pareto optimality alone cannot identify the social optimum.
 
 *Step 4 — Bergson's superiority:*
 
@@ -704,7 +704,7 @@ Points c, c₁, and d are all on the GUPF → all Pareto-optimal. But if d lies 
 
 **Conclusion:** Pareto optimality is *necessary* because any SW maximum must be efficient (otherwise resources are wasted — welfare could increase without harming anyone). But it is *not sufficient* because among the infinite set of Pareto-efficient allocations, only one (given the SWF) maximizes social welfare. Efficiency without equity does not guarantee maximum social welfare.
 
-> **Exam Tip:** The classic diagram shows the GUPF with social indifference curves. Point E (tangency) = SW maximum. Points c and c₁ on the GUPF are Pareto-optimal but on lower social indifference contours. This single diagram answers the entire question.
+> **Exam Tip:** The classic diagram shows the GUPF with social indifference curves. Point E (tangency) = SW maximum. Points c and c_{1} on the GUPF are Pareto-optimal but on lower social indifference contours. This single diagram answers the entire question.
 
 ---
 
@@ -731,7 +731,7 @@ A change from state A to state B improves social welfare if the gainers from the
 |-----------|----------|-----------|
 | **MU of money EQUAL across individuals** | YES | £1 of gain = £1 of loss in utility terms → Kaldor-Hicks gives correct welfare ordering |
 | **MU of money UNEQUAL across individuals** | NO | Example: Millionaire A gains £2000 (low MU gain); Poor B loses £1000 (high MU loss). Kaldor-Hicks says gainers can compensate → welfare improves. But total utility actually FALLS. |
-| **Potential ≠ Actual compensation** | AMBIGUOUS | If compensation is not actually paid, the distributional change is ignored — the outcome may worsen actual welfare despite potential Pareto improvement |
+| **Potential \ne Actual compensation** | AMBIGUOUS | If compensation is not actually paid, the distributional change is ignored — the outcome may worsen actual welfare despite potential Pareto improvement |
 | **Constant MU unrealistic** | NO | MU of money *declines* with income. This is a well-established empirical regularity |
 
 **The Critique (Robbins, Scitovsky):**
@@ -749,7 +749,7 @@ Can compensation be correct?
 └── Usable as: A rough efficiency check, but must be supplemented by explicit distributional judgements
 ```
 
-> **Exam Tip:** The key word is "potential" compensation. The examiner expects you to identify that potential ≠ actual compensation → income distribution effects are ignored. Also mention Scitovsky's paradox and the double test (Kaldor-Hicks + reversal test).
+> **Exam Tip:** The key word is "potential" compensation. The examiner expects you to identify that potential \ne actual compensation \to income distribution effects are ignored. Also mention Scitovsky's paradox and the double test (Kaldor-Hicks + reversal test).
 
 ---
 
@@ -761,9 +761,9 @@ Can compensation be correct?
 **Setup:**
 
 - 2 consumers: A and B
-- 2 goods: X and Y (fixed total supply: X̄, Ȳ)
+- 2 goods: X and Y (fixed total supply: $\bar{X}$, $\bar{Y}$)
 - A consumes (X_A, Y_A); B consumes (X_B, Y_B)
-- Feasibility: X_A + X_B = X̄, Y_A + Y_B = Ȳ
+- Feasibility: X_A + X_B = $\bar{X}$, Y_A + Y_B = $\bar{Y}$
 - Utility functions: U_A(X_A, Y_A), U_B(X_B, Y_B) — continuous, strictly increasing, quasiconcave
 
 **Definition of Pareto-Optimal Consumption:**
@@ -773,32 +773,32 @@ An allocation {(X_A, Y_A), (X_B, Y_B)} is Pareto-optimal in consumption if it is
 **Mathematical Formulation:**
 
 Maximize U_A(X_A, Y_A) subject to:
-1. U_B(X_B, Y_B) ≥ Ū_B (B's utility constraint)
+1. U_B(X_B, Y_B) \ge \bar{U}_B (B's utility constraint)
 2. X_A + X_B = X̄ (resource constraint for X)
 3. Y_A + Y_B = Ȳ (resource constraint for Y)
-4. X_A, Y_A, X_B, Y_B ≥ 0 (non-negativity)
+4. X_A, Y_A, X_B, Y_B \ge 0 (non-negativity)
 
 **Lagrangian:**
 
-ℒ = U_A(X_A, Y_A) + λ[U_B(X̄ − X_A, Ȳ − Y_A) − Ū_B]
+$\mathcal{L} = U_A(X_A, Y_A) + \lambda[U_B(\bar{X} - X_A, \bar{Y} - Y_A) - \bar{U}_B]$
 
 **First-order conditions:**
 
-∂ℒ/∂X_A = ∂U_A/∂X_A + λ · ∂U_B/∂X_B · (−1) = 0
-⇒ ∂U_A/∂X_A = λ · ∂U_B/∂X_B  ... (1)
+$\partial \mathcal{L}/\partial X_A = \partial U_A/\partial X_A + \lambda \cdot \partial U_B/\partial X_B \cdot (-1) = 0$
+$\Rightarrow \partial U_A/\partial X_A = \lambda \cdot \partial U_B/\partial X_B$ ... (1)
 
-∂ℒ/∂Y_A = ∂U_A/∂Y_A + λ · ∂U_B/∂Y_B · (−1) = 0
-⇒ ∂U_A/∂Y_A = λ · ∂U_B/∂Y_B  ... (2)
+$\partial \mathcal{L}/\partial Y_A = \partial U_A/\partial Y_A + \lambda \cdot \partial U_B/\partial Y_B \cdot (-1) = 0$
+$\Rightarrow \partial U_A/\partial Y_A = \lambda \cdot \partial U_B/\partial Y_B$ ... (2)
 
 **Dividing (1) by (2):**
 
-(∂U_A/∂X_A) / (∂U_A/∂Y_A) = (∂U_B/∂X_B) / (∂U_B/∂Y_B)
+$(\partial U_A/\partial X_A) / (\partial U_A/\partial Y_A) = (\partial U_B/\partial X_B) / (\partial U_B/\partial Y_B)$
 
 **Equivalently:**
 
 **MRS^A_xy = MRS^B_xy**
 
-where MRS^i_xy = MU_x^i / MU_y^i = (∂U_i/∂X_i) / (∂U_i/∂Y_i)
+where $MRS^i_{xy} = MU_x^i / MU_y^i = (\partial U_i/\partial X_i) / (\partial U_i/\partial Y_i)$
 
 **Interpretation:**
 
@@ -828,7 +828,7 @@ where MRS^i_xy = MU_x^i / MU_y^i = (∂U_i/∂X_i) / (∂U_i/∂Y_i)
 ---
 
 ### Question 4
-**Firm 1 external economies, firm 2 diseconomies. p₁ = p₂ = 15. C₁ = 0.1q₁² + 5q₁ − 0.1q₂², C₂ = 0.2q₂² + 7q₂ + 0.025q₁². Show Pareto optimality through taxes/subsidies. Find social dividend.** *(7 marks)*
+**Firm 1 external economies, firm 2 diseconomies. $p_1 = p_2 = 15$. $C_1 = 0.1q_1^2 + 5q_1 - 0.1q_2^2$, $C_2 = 0.2q_2^2 + 7q_2 + 0.025q_1^2$. Show Pareto optimality through taxes/subsidies. Find social dividend.** *(7 marks)*
 
 **Answer:**
 
@@ -836,35 +836,35 @@ where MRS^i_xy = MU_x^i / MU_y^i = (∂U_i/∂X_i) / (∂U_i/∂Y_i)
 
 | Firm | Cost function | Externality |
 |------|-------------|-------------|
-| Firm 1 | C₁ = 0.1q₁² + 5q₁ − 0.1q₂² | −0.1q₂² → C₁ ↓ as q₂↑ ⇒ **external economy from Firm 2 to Firm 1** |
-| Firm 2 | C₂ = 0.2q₂² + 7q₂ + 0.025q₁² | +0.025q₁² → C₂ ↑ as q₁↑ ⇒ **external diseconomy from Firm 1 to Firm 2** |
+| Firm 1 | $C_{1} = 0.1q_{1}^{2} + 5q_{1} - 0.1q_{2}^{2}$ | -0.1q_{2}^{2} \to C_{1} \downarrow as q_{2}\uparrow \Rightarrow **external economy from Firm 2 to Firm 1** |
+| Firm 2 | $C_{2} = 0.2q_{2}^{2} + 7q_{2} + 0.025q_{1}^{2}$ | +0.025q_{1}^{2} \to C_{2} \uparrow as q_{1}\uparrow \Rightarrow **external diseconomy from Firm 1 to Firm 2** |
 
 **Step 2 — Private optimum (each firm maximizes own profit, ignores externality):**
 
 Each firm equates private MC to price (p = 15):
 
-- MC₁ᵖʳⁱᵛ = ∂C₁/∂q₁ = 0.2q₁ + 5 = 15 ⇒ q₁ᵖʳⁱᵛ = 50
-- MC₂ᵖʳⁱᵛ = ∂C₂/∂q₂ = 0.4q₂ + 7 = 15 ⇒ q₂ᵖʳⁱᵛ = 20
+- $MC_{1}^{\text{priv}} = \partial C_{1}/\partial q_{1} = 0.2q_{1} + 5 = 15 \Rightarrow q_{1}^{\text{priv}} = 50$
+- $MC_{2}^{\text{priv}} = \partial C_{2}/\partial q_{2} = 0.4q_{2} + 7 = 15 \Rightarrow q_{2}^{\text{priv}} = 20$
 
 Private profits:
-- π₁ᵖʳⁱᵛ = 15(50) − [0.1(2500) + 5(50) − 0.1(400)] = 750 − [250 + 250 − 40] = 750 − 460 = **290**
-- π₂ᵖʳⁱᵛ = 15(20) − [0.2(400) + 7(20) + 0.025(2500)] = 300 − [80 + 140 + 62.5] = 300 − 282.5 = **17.5**
+**$\pi_{1}^{\text{priv}} = 15(50) - [0.1(2500) + 5(50) - 0.1(400)] = 750 - [250 + 250 - 40] = 750 - 460 = 290$**
+**$\pi_{2}^{\text{priv}} = 15(20) - [0.2(400) + 7(20) + 0.025(2500)] = 300 - [80 + 140 + 62.5] = 300 - 282.5 = 17.5$**
 - **Total private profit = 307.5**
 
 **Step 3 — Social optimum (maximize joint profit, internalize externalities):**
 
 Total cost (social cost) function:
-TC = C₁ + C₂ = (0.1q₁² + 5q₁ − 0.1q₂²) + (0.2q₂² + 7q₂ + 0.025q₁²)
-= 0.125q₁² + 0.1q₂² + 5q₁ + 7q₂
+$TC = C_{1} + C_{2} = (0.1q_{1}^{2} + 5q_{1} - 0.1q_{2}^{2}) + (0.2q_{2}^{2} + 7q_{2} + 0.025q_{1}^{2})$
+$= 0.125q_{1}^{2} + 0.1q_{2}^{2} + 5q_{1} + 7q_{2}$
 
 Social marginal costs:
 
-- SMC₁ = ∂TC/∂q₁ = 0.25q₁ + 5 = 15 ⇒ q₁* = **40**
-- SMC₂ = ∂TC/∂q₂ = 0.2q₂ + 7 = 15 ⇒ q₂* = **40**
+**$SMC_1 = \partial TC/\partial q_1 = 0.25q_1 + 5 = 15 \Rightarrow q_1^{*} = 40$**
+**$SMC_2 = \partial TC/\partial q_2 = 0.2q_2 + 7 = 15 \Rightarrow q_2^{*} = 40$**
 
 Social profits:
-- π₁* = 15(40) − [0.1(1600) + 5(40) − 0.1(1600)] = 600 − [160 + 200 − 160] = 600 − 200 = **400**
-- π₂* = 15(40) − [0.2(1600) + 7(40) + 0.025(1600)] = 600 − [320 + 280 + 40] = 600 − 640 = **−40**
+- $\pi_{1}* = 15(40) - [0.1(1600) + 5(40) - 0.1(1600)] = 600 - [160 + 200 - 160] = 600 - 200 = **400**$
+- $\pi_{2}* = 15(40) - [0.2(1600) + 7(40) + 0.025(1600)] = 600 - [320 + 280 + 40] = 600 - 640 = **-40**$
 - **Total social profit = 360**
 
 **Step 4 — Pigouvian taxes/subsidies:**
@@ -873,30 +873,30 @@ The divergence between private and social optimum arises from externalities. Use
 
 | Firm | Private → Social | Problem | Policy |
 |------|-----------------|---------|--------|
-| Firm 1 | 50 → 40 | Overproduces — imposes external cost on Firm 2 (diseconomy) | **Tax** = marginal external cost at q₁* = ∂C₂/∂q₁ = 0.05q₁ = 0.05(40) = **2 per unit** |
-| Firm 2 | 20 → 40 | Underproduces — provides external benefit to Firm 1 (economy) | **Subsidy** = marginal external benefit at q₂* = −∂C₁/∂q₂ = 0.2q₂ = 0.2(40) = **8 per unit** |
+| Firm 1 | 50 $\to$ 40 | Overproduces — imposes external cost on Firm 2 (diseconomy) | $**Tax** = marginal external cost at q_{1}^{*} = \partial C_{2}/\partial q_{1} = 0.05q_{1} = 0.05(40) = **2 per unit**$ |
+| Firm 2 | 20 $\to$ 40 | Underproduces — provides external benefit to Firm 1 (economy) | $**Subsidy** = marginal external benefit at q_{2}^{*} = -\partial C_{1}/\partial q_{2} = 0.2q_{2} = 0.2(40) = **8 per unit**$ |
 
 **Verification:**
 
 With tax on Firm 1 (t = 2):
-- MC₁ᵖʳⁱᵛ + t = 0.2q₁ + 5 + 2 = 0.2q₁ + 7 = 15 ⇒ q₁ = 40 ✓
+- $MC_{1}^{\text{priv}} + t = 0.2q_{1} + 5 + 2 = 0.2q_{1} + 7 = 15 \Rightarrow q_{1} = 40$ $\checkmark$
 
 With subsidy to Firm 2 (s = 8):
-- MC₂ᵖʳⁱᵛ − s = 0.4q₂ + 7 − 8 = 0.4q₂ − 1 = 15 ⇒ q₂ = 40 ✓
+- $MC_{2}^{\text{priv}} - s = 0.4q_{2} + 7 - 8 = 0.4q_{2} - 1 = 15 \Rightarrow q_{2} = 40$ $\checkmark$
 
 **Step 5 — Social dividend:**
 
-Social dividend = total profit at social optimum − total profit at private optimum
+$Social dividend = total profit at social optimum - total profit at private optimum$
 
 | | Private optimum | Social optimum |
 |---|---|---|
-| q₁ | 50 | 40 |
-| q₂ | 20 | 40 |
-| π₁ | 290 | 400 |
-| π₂ | 17.5 | −40 |
+| q_{1} | 50 | 40 |
+| q_{2} | 20 | 40 |
+| \pi_{1} | 290 | 400 |
+| \pi_{2} | 17.5 | -40 |
 | Total | **307.5** | **360** |
 
-**Social Dividend = 360 − 307.5 = 52.5**
+**$Social Dividend = 360 - 307.5 = 52.5$**
 
 The social dividend (52.5) represents the net gain to society from correcting the externality through Pigouvian taxation.
 
@@ -989,26 +989,26 @@ The social dividend (52.5) represents the net gain to society from correcting th
 
 A rule mapping individual utility levels to a measure of aggregate social welfare:
 
-W = F(U₁, U₂, ..., Uₙ)
+$$W = F(U_{1}, U_{2}, ..., U_{n})$$
 
 The SWF embodies society's value judgements about distributional equity. Different ethical philosophies imply different functional forms.
 
 **Utilitarian SWF (Bentham, classical):**
 
-W = U₁ + U₂ + ... + Uₙ = Σᵢ Uᵢ
+$W = U_{1} + U_{2} + ... + U_{n} = \sum_{i} U_{i}$
 
 | Property | Meaning |
 |----------|---------|
 | Form | Sum of utilities (additive) |
-| Social indifference curves | Linear with slope −1 in U-U space |
+| Social indifference curves | Linear with slope -1 in U-U space |
 | Equity concern | Only total utility matters — distribution irrelevant |
 | MU of income | Typically assumed constant (or declining but equal across individuals) |
 | Implication | A gain of 1 util to a rich person = a gain of 1 util to a poor person |
-| Weakness | Ignores inequality — a transfer from poor to rich with ∆W = 0 is "acceptable" as long as total utility unchanged |
+| Weakness | Ignores inequality — a transfer from poor to rich with \DeltaW = 0 is "acceptable" as long as total utility unchanged |
 
 **Rawlsian SWF (John Rawls, maximin criterion):**
 
-W = min{U₁, U₂, ..., Uₙ}
+$W = min{U_{1}, U_{2}, ..., U_{n}}$
 
 | Property | Meaning |
 |----------|---------|
@@ -1024,7 +1024,7 @@ W = min{U₁, U₂, ..., Uₙ}
 ```
      U_B
      ↑
-     |  Slope = −1  (Utilitarian)
+     $|  Slope = -1  (Utilitarian)$
      |  ⁄
      | ⁄            ┐
      |/             │ Rawlsian
@@ -1039,8 +1039,8 @@ W = min{U₁, U₂, ..., Uₙ}
 |---------|-------------|----------|
 | Principle | Maximize sum of utilities | Maximize minimum utility |
 | Distributional concern | None (sum-ranking) | Extreme (lexicographic priority to worst-off) |
-| Social indifference curve | Linear, slope −1 | L-shaped (right-angle) |
-| Transfer from rich to poor (same ∆U) | W unchanged | W unchanged |
+| Social indifference curve | Linear, slope -1 | L-shaped (right-angle) |
+| Transfer from rich to poor (same \DeltaU) | W unchanged | W unchanged |
 | Transfer from rich to poor (poor gains less) | W decreases | W unchanged (if min unchanged) |
 | Transfer from rich to poor (poor gains more) | W increases | W increases (if poor is the worst-off) |
 | Philosophical basis | Classical utilitarianism | Theory of Justice (1971) — "veil of ignorance" |
@@ -1050,11 +1050,11 @@ W = min{U₁, U₂, ..., Uₙ}
 
 | Type | Formula | Characteristic |
 |------|---------|---------------|
-| **Nash (Cobb-Douglas)** | W = Πᵢ Uᵢ | Social indifference curves are rectangular hyperbolas; moderate inequality aversion |
-| **Bergson-Samuelson** | W = F(U₁,...,Uₙ) | General form with unspecified weights; allows any degree of inequality aversion |
-| **Weighted utilitarian** | W = Σᵢ αᵢUᵢ with αᵢ > 0 | Unequal weights for different individuals |
+| **Nash (Cobb-Douglas)** | $W = \Pi_i U_i$ | Social indifference curves are rectangular hyperbolas; moderate inequality aversion |
+| **Bergson-Samuelson** | $W = F(U_{1},...,U_{n})$ | General form with unspecified weights; allows any degree of inequality aversion |
+| **Weighted utilitarian** | $W = \sum_i \alpha_i U_i$ with $\alpha_i > 0$ | Unequal weights for different individuals |
 
-> **Exam Tip:** Draw the social indifference curves for both types in U_A−U_B space. Utilitarian = straight line (perfect substitutes in utility). Rawlsian = right-angle (perfect complements in utility). The shape reveals the ethical stance.
+> **Exam Tip:** Draw the social indifference curves for both types in U_A-U_B space. Utilitarian = straight line (perfect substitutes in utility). Rawlsian = right-angle (perfect complements in utility). The shape reveals the ethical stance.
 
 ---
 
@@ -1089,20 +1089,20 @@ Tibor Scitovsky (1941) identified a fundamental flaw in the Kaldor-Hicks criteri
 ```
      U_B
      ↑
-     |    a₁ (new)
+     |    a_{1} (new)
      |   ╱
      |  ╱  a (initial)
      | ╱
      |╱
      └────────────────→ U_A
-          UPF₁ (initial)
-                UPF₂ (new)
+          UPF_{1} (initial)
+                UPF_{2} (new)
 ```
 
-If the two utility possibility curves (UPF₁ and UPF₂) intersect, Kaldor-Hicks can produce:
+If the two utility possibility curves (UPF_{1} and UPF_{2}) intersect, Kaldor-Hicks can produce:
 
-- Movement a → a₁: Passes K-H test (gainers can compensate losers → welfare improves)
-- Movement a₁ → a: Also passes K-H test (gainers at a₁ can compensate losers at a → welfare improves)
+- Movement a → a_{1}: Passes K-H test (gainers can compensate losers → welfare improves)
+- Movement a_{1} → a: Also passes K-H test (gainers at a_{1} can compensate losers at a → welfare improves)
 
 **Result:** A is better than B AND B is better than A — a logical contradiction. This is the **Scitovsky paradox**.
 
@@ -1120,8 +1120,8 @@ Scitovsky proposed a two-part criterion to resolve the paradox:
 | (ii) Reverse test | Losers' WTP to prevent < Gainers' WTA to accept | Losers cannot bribe gainers to reject change |
 
 In the figure above:
-- a → a₁: Passes (i) ✓ but fails (ii) because the losers at a₁ could bribe gainers to move back to a
-- Therefore a → a₁ is **not** a welfare improvement under the Scitovsky criterion
+- a → a_{1}: Passes (i) $\checkmark$ but fails (ii) because the losers at a_{1} could bribe gainers to move back to a
+- Therefore a → a_{1} is **not** a welfare improvement under the Scitovsky criterion
 
 A movement from a to d (where both are better off) passes both tests.
 
@@ -1129,7 +1129,7 @@ A movement from a to d (where both are better off) passes both tests.
 
 | Limitation | Explanation |
 |------------|-------------|
-| Potential ≠ actual compensation | If compensation is not paid, the losers are actually worse off — the criterion ignores this |
+| Potential $\ne$ actual compensation | If compensation is not paid, the losers are actually worse off — the criterion ignores this |
 | Ignores income distribution | The criterion accepts status quo distribution as neutral — biases results toward the rich |
 | Constant MU of money assumed | Unrealistic — MU of money falls with income |
 | Not a complete ordering | The criterion may still fail to rank some alternatives |
@@ -1152,15 +1152,15 @@ Under perfect competition, the following marginal conditions are automatically s
 
 | Condition | Market Mechanism |
 |-----------|-----------------|
-| MRS^A_xy = MRS^B_xy | All consumers face same prices → equate MRS to price ratio |
-| MRTS^X_LK = MRTS^Y_LK | All firms face same factor prices → equate MRTS to factor price ratio |
-| MRPT_xy = MRS_xy | P = MC for all firms → MRPT = MC_x/MC_y = P_x/P_y = MRS |
+| MRS^A_xy = MRS^B_xy | All consumers face same prices $\to$ equate MRS to price ratio |
+| MRTS^X_LK = MRTS^Y_LK | All firms face same factor prices $\to$ equate MRTS to factor price ratio |
+| MRPT_xy = MRS_xy | P = MC for all firms $\to$ MRPT = MC_x/MC_y = P_x/P_y = MRS |
 
 Result: **Every competitive equilibrium is Pareto-optimal** (First Welfare Theorem).
 
 **Why Perfect Competition Does NOT Ensure Maximum Social Welfare:**
 
-**(1) Pareto optimality ≠ SW maximization**
+**(1) Pareto optimality \ne SW maximization**
 
 All points on the GUPF are Pareto-optimal (including extremes where one person gets everything). But society's SWF selects only one point (tangency of SWF with GUPF). Competition ensures we are *somewhere* on the GUPF, but not necessarily at the bliss point.
 
@@ -1169,19 +1169,19 @@ All points on the GUPF are Pareto-optimal (including extremes where one person g
 The competitive equilibrium reached depends on the initial distribution of endowments. Different initial distributions → different competitive equilibria (all Pareto-optimal, but with different utility distributions).
 
 ```
-Initial endowments → Competitive equilibrium → Pareto-optimal ALWAYS
-                   → Which Pareto-optimal point? Depends on endowments
-                   → Social welfare? Depends on SWF and resulting distribution
+Initial endowments $\to$ Competitive equilibrium $\to$ Pareto-optimal ALWAYS
+                   $\to$ Which Pareto-optimal point? Depends on endowments
+                   $\to$ Social welfare? Depends on SWF and resulting distribution
 ```
 
 **(3) Market failures prevent even Pareto optimality**
 
 | Failure | Effect | Why competition fails |
 |---------|--------|----------------------|
-| Market power (monopoly) | P > MC → MRPT ≠ MRS | Non-price-taking behaviour |
-| Externalities | Private ≠ Social cost | Unpriced interdependencies |
-| Public goods | Non-rival, non-excludable | Free-rider problem → underprovision |
-| Increasing returns | Non-convex production set | Natural monopoly → P < MC at efficient scale |
+| Market power (monopoly) | $P > MC$ $\to$ $MRPT \ne MRS$ | Non-price-taking behaviour |
+| Externalities | Private $\ne$ Social cost | Unpriced interdependencies |
+| Public goods | Non-rival, non-excludable | Free-rider problem $\to$ underprovision |
+| Increasing returns | Non-convex production set | Natural monopoly $\to$ $P < MC$ at efficient scale |
 | Asymmetric information | Adverse selection, moral hazard | Market may unravel |
 
 **(4) Distributional equity**
@@ -1206,4 +1206,4 @@ Perfect competition is a **necessary condition** for welfare maximization in the
 
 The theoretical ideal combines: **Perfect competition (for efficiency) + Lump-sum transfers (for equity) + SWF (for distributional choice).**
 
-> **Exam Tip:** This is a common essay question. Structure: (1) Yes — competition ensures Pareto efficiency via the three marginal conditions. (2) No — Pareto ≠ SW maximum; initial endowments determine the equilibrium; market failures prevent efficiency; equity requires redistribution beyond markets. (3) Conclusion — necessary but not sufficient. Reference both Welfare Theorems.
+> **Exam Tip:** This is a common essay question. Structure: (1) Yes — competition ensures Pareto efficiency via the three marginal conditions. (2) No — Pareto \ne SW maximum; initial endowments determine the equilibrium; market failures prevent efficiency; equity requires redistribution beyond markets. (3) Conclusion — necessary but not sufficient. Reference both Welfare Theorems.

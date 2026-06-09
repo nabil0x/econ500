@@ -1,0 +1,95 @@
+Pigovian
+ Welfare Economics
+The gist of welfare economics is contained in the standard work of A C Pigou,-The Economics of welfare. A C Pigou is considered as the father of welfare economics. His views were first expressed in the book ‘Wealth and Welfare’ (1912). But, his entire views were explained in his book 
+‘The Economics of Welfare’ (1932) and it is known as the 
+Pigouvian
+ neoclassical welfare economics. 
+Pigou dealt with three things:
+ 
+(1) A definition of economic welfare
+(2) Spelling out the condition under which welfare is 
+maximised
+ and
+(3) Pronouncement of policy recommendations for increasing welfare.
+Prof. Pigou gave a clear meaning to the concept of welfare. He defined individual welfare as the sum of satisfactions obtained from the use of goods and services. Social welfare is the summation of all individual welfare in a society. Since general welfare is very wide and complicated, he limited his study to economic welfare. He defined economic welfare as that part of social welfare “that can be brought directly or indirectly into relation with the measuring rod of money.”
+Pigou regards economic welfare and national income as coordinate.
+He lays down two conditions for maximizations of welfare:
+(i) Given the taste and income distribution, an increase in national income represents an increase in welfare,
+(ii) For welfare 
+maximisation
+, the distribution of national income is equally important.
+If national income remains constant, transfer of income from rich to the poor would improve welfare. With income subject to diminishing marginal utility, transfers of income from the rich to the poor will increase social welfare by satisfying the more intense wants of the poor. Thus it is economic equality that 
+maximises
+ welfare.
+Prof. Pigou had a dual criterion for detecting the increase in social welfare. First, he measured the economic welfare of the society in money value and thus, given the supply of resources, an increase in national dividend meant an increase in social welfare.
+Second, Pigou favored an income 
+equalisation
+ policy and therefore, reorganization of the economy which increases the share of the poor without offsetting adversely “productive effort enterprise and development of capital equipment was to be taken as a gain in social welfare.”
+Pigou has made a distinction between private and social costs. The private marginal cost of a commodity is the cost of producing an additional unit. The social marginal 
+cost is the expense or damage to society as a consequence of producing that commodity. Private marginal benefit can be measured by the selling price of the commodity.
+Social marginal benefit refers to the total benefit that society gets from the production of an additional unit. By making a distinction between social and private valuations of economic activity, he paved the way for the analysis of external effects or externalities in social welfare economics.
+The presence of external effects in production was seen by Prof. Pigou in the divergence between social net product and private net product. He defined social net product “as the aggregate contribution made to the 
+national dividend” and the private net product as the contribution which is capable of being sold and the proceeds added to the earnings of the person responsible for investment.
+The divergence between the two products shows itself in the form of external effects of production associated with marginal increments of output. In some cases social net product is more than the private product while in others private product is greater than the social product. As an example of the former, Pigou pointed out to the greater social benefit from technical training of workers by a private firm.
+As an illustration of the latter he cited the fact that the smoke rising from the chimneys of private factory spoils the atmosphere of the locality and increases the laundry bills of the people of the 
+neighbourhood
+. But people are not compensated in any way by the factory owner.
+He was of the opinion that the state should equalize the private net product with social net product, if in an industry where private net product is more, it should be taxed, and if another industry shows a lesser private net product, it ought to be subsidized. Of course, Prof. Pigou 
+recognised
+ that the divergence between private net product and social net product cannot always be quantified and measured in terms of money.
+Prof. Pigou made the first attempt to lay down the conditions of social optimum which he termed “the ideal output” of the economic system as a whole. In his view, the social optimum prevails when marginal social products are equal in all industries and thus production of real wealth is 
+maximised
+.
+Assuming that all the productive resources are being employed and that there is no cost of movement between different occupations and places, it can be concluded that the national dividend is the largest when the values of the marginal social net products are equal in all industries. If this arrangement prevails, the society is having its” ideal output”.
+Pigovian
+ welfare conditions presuppose the existence of the following assumptions:
+1. It was assumed that everybody as consumer acts rationally to 
+maximise
+ his satisfaction.
+2. Pigou believed that utility is not measurable cardinally. But inter personal and intra personal comparisons of utilities are also possible so that it is possible to find out quantitatively whether welfare has increased or decreased.
+3. Pigou put forward a basic postulate that a man possesses equal capacity for satisfaction when placed in similar circumstances. Pigou held that different people derive the same satisfaction out of the same real income.
+4. Pigou also believed that the marginal utility of money income falls as money income increases. As a result, the marginal utility of an addition to the income of a poor man is greater as compared to the loss of utility from the loss of the same amount of income to a rich man.
+Evaluation:
+Pigou provided the first systematic theoretical base of welfare economics and integrated the normative problems with the positive ones. He provided a rationale for state intervention at places where private and social net product diverged. But his policy recommendations were all value based. As such his study was more normative than theoretical.
+Though Pigou’s Economics of Welfare was the first clear analysis of welfare economics, yet the 
+Pigovian
+ conditions of welfare have been 
+criticised
+ on the following grounds. Pigou lays emphasis on the 
+maximisation
+ of welfare, but he does not clarify the notion of 
+maximisation
+.
+Pigo
+u
+vian
+ assumption of equal capacity for satisfaction is scientifically untenable. This represents a broad value 
+judgment
+ in 
+favour
+ of equal distribution of wealth. The capacity for satisfaction of any individual is a subjective thing incapable of objective quantification.
+Another trouble with 
+Pigovian
+ welfare 
+economics
+ is the lack of 
+rigour
+ and operational content in the distinction 
+between private and social products. Pigou seems to have assumed that the divergence between the two is not inherent in the working of the free enterprise system. It is traceable to and can be corrected through governmental intervention. In the real world, structural failures resulting from immobility, indivisibility and imperfect knowledge are so numerous as to defy correction through social action.
+The classification of general welfare into ‘economic’ and ‘non-economic’ welfare has also been 
+criticised
+ as too superficial to be made the basis of all welfare analysis. The most destructive criticism of the 
+Pigovian
+ welfare economics was the unrealistic nature of the assumptions of cardinal additivity of the individual utility functions to 
+get the social welfare functions. Economists do not agree with this view because quantitative measurement of utility is not possible.
+Pigou’s welfare conditions are related to national income. But it is not easy to calculate national income. Again, social welfare does not increase by a mere increase in national income. It is possible that national income may increase due to inflationary rise in prices and poor may become worse off than before.
+Welfare economics is closely related to ethics but Pigou does not clarify it. Welfare economics is essentially a normative study in which value judgements and inter personal comparisons are made. By not relating these 
+concepts with his notion of welfare, Pigou’s economics of welfare is not considered as an objective study of the causes of welfare.
+Marshall’s view of Welfare 
+Marshall made the concept of 
+consumer’s
+ surplus as the central tool of his welfare analysis. Marshall considered the community’s welfare to be maximum when its satisfaction is maximum.
+There were two basic assumptions of this maximum welfare analysis of Dr. Marshall:
+1. Equal sums of money measure equal utilities to all and
+2. A fall in the price of the product results in a fall in output and hence loss of satisfaction.
+Marshall advocated that an industry which is working under increasing returns must produce beyond its equilibrium point and an industry working with diminishing returns should stop producing before their equilibrium output. For this he suggested the policy of giving a bounty to increasing returns industry and levying a tax on the industries subject to diminishing returns. The proceeds of the tax could be used for giving bounties. 

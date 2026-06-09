@@ -1,0 +1,2811 @@
+Advanced Microeconomic
+        Theory
+Chapter 1: Preferences and Utility
+
+
+
+
+          Advanced Microeconomic Theory
+                       Outline
+• Preference and Choice
+• Preference-Based Approach
+• Utility Function
+• Indifference Sets, Convexity, and Quasiconcavity
+• Special and Continuous Preference Relations
+• Social and Reference-Dependent Preferences
+• Hyperbolic and Quasi-Hyperbolic Discounting
+• Choice-Based Approach
+• Weak Axiom of Revealed Preference (WARP)
+• Consumption Sets and Constraints
+                     Advanced Microeconomic Theory   2
+Preference and Choice
+
+
+
+
+      Advanced Microeconomic Theory   3
+          Preference and Choice
+• We begin our analysis of individual decision-
+  making in an abstract setting.
+• Let 𝑋𝑋 ⊆ ℝ𝑁𝑁
+             + be a set of possible alternatives for a
+  particular decision maker.
+   – It might include the consumption bundles that an
+     individual is considering to buy.
+   – Example:
+                    𝑋𝑋 = {𝑥𝑥, 𝑦𝑦, 𝑧𝑧, … }
+          𝑋𝑋 = {Apple, Orange, Banana, … }
+
+                    Advanced Microeconomic Theory        4
+        Preference and Choice
+• Two ways to approach the decision making
+  process:
+  1) Preference-based approach: analyzing how the
+     individual uses his preferences to choose an
+     element(s) from the set of alternatives 𝑋𝑋.
+  2) Choice-based approach: analyzing the actual
+     choices the individual makes when he is called to
+     choose element(s) from the set of possible
+     alternatives.
+
+                   Advanced Microeconomic Theory     5
+         Preference and Choice
+• Advantages of the Choice-based approach:
+  – It is based on observables (actual choices) rather
+    than on unobservables (individual preferences)
+
+• Advantages of Preference-based approach:
+  – More tractable when the set of alternatives 𝑋𝑋 has
+    many elements.
+
+
+
+
+                    Advanced Microeconomic Theory        6
+         Preference and Choice
+• After describing both approaches, and the
+  assumptions on each approach, we want to
+  understand:
+  Rational Preferences ⟹ Consistent Choice behavior
+  Rational Preferences ⟸ Consistent Choice behavior
+
+
+
+
+                   Advanced Microeconomic Theory      7
+Preference-Based Approach
+
+
+
+
+        Advanced Microeconomic Theory   8
+       Preference-Based Approach
+• Preferences: “attitudes” of the decision-maker
+  towards a set of possible alternatives 𝑋𝑋.
+• For any 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋, how do you compare 𝑥𝑥 and 𝑦𝑦?
+    I prefer 𝑥𝑥 to 𝑦𝑦 (𝑥𝑥 ≻ 𝑦𝑦)
+    I prefer 𝑦𝑦 to 𝑥𝑥 (𝑦𝑦 ≻ 𝑥𝑥)
+    I am indifferent (𝑥𝑥 ∼ 𝑦𝑦)
+
+
+
+
+                     Advanced Microeconomic Theory     9
+        Preference-Based Approach
+By asking:                            We impose the assumption:
+
+Check one box                 Completeness: individuals must
+(i.e., not refrain from       compare any two alternatives,
+answering)                    even the ones they don’t know.
+Check only one box            The individual is capable of
+                              comparing any pair of
+                              alternatives.
+Don’t add any new box in      We don’t allow the individual to
+which the individual says, “I specify the intensity of his
+love 𝑥𝑥 and hate 𝑦𝑦”          preferences.
+
+                          Advanced Microeconomic Theory           10
+       Preference-Based Approach
+• Completeness:
+  – For any pair of alternatives 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋, the individual
+    decision maker:
+      𝑥𝑥 ≻ 𝑦𝑦, or
+      𝑦𝑦 ≻ 𝑥𝑥, or
+      both, i.e., 𝑥𝑥 ∼ 𝑦𝑦
+   (The decision maker is allowed to choose one, and
+    only one, of the above boxes).
+
+
+                       Advanced Microeconomic Theory       11
+       Preference-Based Approach
+• Not all binary relations satisfy Completeness.
+• Example:
+   – “Is the brother of”: John ⊁ Bob and Bob ⊁ John if
+     they are not brothers.
+   – “Is the father of”: John ⊁ Bob and Bob ⊁ John if
+     the two individuals are not related.
+
+• Not all pairs of alternatives are comparable
+  according to these two relations.
+
+                    Advanced Microeconomic Theory    12
+       Preference-Based Approach
+• Weak preferences:
+  – Consider the following questionnaire:
+  – For all 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋, where 𝑥𝑥 and 𝑦𝑦 are not necessarily
+    distinct, is 𝑥𝑥 at least as preferred to 𝑦𝑦?
+      Yes (𝑥𝑥 ≿ 𝑦𝑦)
+      No (𝑦𝑦 ≿ 𝑥𝑥)
+  – Respondents must answer yes, no, or both
+      Checking both boxes reveals that the individual is indifferent
+       between 𝑥𝑥 and 𝑦𝑦.
+      Note that the above statement relates to completeness, but
+       in the context of weak preference ≿ rather than strict
+       preference ≻.
+                       Advanced Microeconomic Theory                13
+        Preference-Based Approach
+• Reflexivity: every alternative 𝑥𝑥 is weakly
+  preferred to, at least, one alternative: itself.
+• A preference relation satisfies reflexivity if for any
+  alternative 𝑥𝑥 ∈ 𝑋𝑋, we have that:
+   1) 𝑥𝑥 ∼ 𝑥𝑥: any bundle is indifferent to itself.
+   2) 𝑥𝑥 ≿ 𝑥𝑥: any bundle is preferred or indifferent to
+      itself.
+   3) 𝑥𝑥 ⊁ 𝑥𝑥: any bundle belongs to at least one
+      indifference set, namely, the set containing itself
+      if nothing else.
+
+                     Advanced Microeconomic Theory      14
+        Preference-Based Approach
+• The preference relation ≿ is rational if it
+  possesses the following two properties:
+   a) Completeness: for all 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋,
+      either 𝑥𝑥 ≿ 𝑦𝑦, or 𝑦𝑦 ≿ 𝑥𝑥, or both.
+   b) Transitivity: for all 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ∈ 𝑋𝑋,
+      if 𝑥𝑥 ≿ 𝑦𝑦 and 𝑦𝑦 ≿ 𝑧𝑧, then it must be that 𝑥𝑥 ≿ 𝑧𝑧.
+
+
+
+                      Advanced Microeconomic Theory           15
+       Preference-Based Approach
+• Example 1.1.
+Consider the preference relation
+                               𝑁𝑁           𝑁𝑁
+       𝑥𝑥 ≿ 𝑦𝑦 if and only if ∑𝑖𝑖=1 𝑥𝑥𝑖𝑖 ≥ ∑𝑖𝑖=1 𝑦𝑦𝑖𝑖
+In words, the consumer prefers bundle 𝑥𝑥 to 𝑦𝑦 if the
+total number of goods in bundle 𝑥𝑥 is larger than in
+bundle 𝑦𝑦.
+
+Graphical interpretation in ℝ2 (diagonal above
+another diagonal). Hyperplanes for 𝑁𝑁 > 2.
+
+                    Advanced Microeconomic Theory       16
+         Preference-Based Approach
+• Example 1.1 (continues).
+• Completeness:
+   – either ∑𝑁𝑁       𝑥𝑥
+                 𝑖𝑖=1 𝑖𝑖  ≥   ∑    𝑁𝑁
+                                   𝑖𝑖=1 𝑦𝑦𝑖𝑖 (which implies 𝑥𝑥 ≿ 𝑦𝑦), or
+   – ∑𝑁𝑁   𝑦𝑦
+       𝑖𝑖=1 𝑖𝑖  ≥   ∑  𝑁𝑁
+                       𝑖𝑖=1 𝑥𝑥𝑖𝑖 (which implies 𝑦𝑦 ≿ 𝑥𝑥), or
+   – both, ∑𝑁𝑁 𝑖𝑖=1  𝑥𝑥𝑖𝑖 =  ∑   𝑁𝑁
+                                 𝑖𝑖=1 𝑦𝑦𝑖𝑖 (which implies 𝑥𝑥 ∼ 𝑦𝑦).
+
+
+• Transitivity:
+   – If 𝑥𝑥 ≿ 𝑦𝑦, ∑𝑁𝑁      𝑥𝑥
+                    𝑖𝑖=1 𝑖𝑖  ≥ ∑   𝑁𝑁
+                                   𝑖𝑖=1 𝑦𝑦𝑖𝑖 , and
+   – 𝑦𝑦 ≿ 𝑧𝑧, ∑𝑁𝑁      𝑦𝑦
+                 𝑖𝑖=1 𝑖𝑖    ≥ ∑ 𝑁𝑁
+                                𝑖𝑖=1 𝑧𝑧𝑖𝑖 ,
+   – Then it must be that ∑𝑁𝑁        𝑖𝑖=1 𝑖𝑖𝑥𝑥  ≥ ∑ 𝑁𝑁
+                                                    𝑖𝑖=1 𝑧𝑧𝑖𝑖 (which implies
+     𝑥𝑥 ≿ 𝑧𝑧, as required).
+                            Advanced Microeconomic Theory                  17
+         Preference-Based Approach
+• The assumption of transitivity is understood as
+  that preferences should not cycle.
+• Example violating transitivity:
+     𝑎𝑎𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 ≿ 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏 𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏𝑏 ≿ 𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜
+               𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎𝑎≿𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜 (by transitivity)
+  but 𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜 ≻ 𝑎𝑎𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝.
+• Otherwise, we could start the cycle all over again,
+  and extract infinite amount of money from
+  individuals with intransitive preferences.
+                         Advanced Microeconomic Theory       18
+     Preference-Based Approach
+• Sources of intransitivity:
+  a) Indistinguishable alternatives
+  b) Framing effects
+  c) Aggregation of criteria
+  d) Change in preferences
+
+
+
+
+                   Advanced Microeconomic Theory   19
+           Preference-Based Approach
+• Example 1.2 (Indistinguishable alternatives):
+   – Take 𝑋𝑋 = ℝ, such as a piece of pie.
+   – An individual is indifferent between 𝑥𝑥 and 𝑦𝑦 when 𝑥𝑥 − 𝑦𝑦 < 1 .
+       • This means that −1 < 𝑥𝑥 − 𝑦𝑦 < 1 or, after rearranging, 𝑦𝑦 − 1 < 𝑥𝑥 < 𝑦𝑦 +
+         1.
+       • In other words, when 𝑥𝑥 satisfies both:
+           – 𝑥𝑥 > 𝑦𝑦 − 1 and
+           – 𝑥𝑥 < 𝑦𝑦 + 1 ,
+           the individual is indifferent between 𝑥𝑥 and 𝑦𝑦.
+       • Intuitively, when alternatives are relatively similar (see figure), the
+         individual cannot tell them apart.
+                               x = y -1       x=y+1
+                 0
+                                        y                         x
+                     LCS, y ≻ x          IND, x ~ y              UCS, x ≻ y
+                                 Advanced Microeconomic Theory                     20
+        Preference-Based Approach
+• Example 1.2 (Indistinguishable alternatives):
+   – However, he strictly prefers 𝑥𝑥 to 𝑦𝑦 when 𝑥𝑥 ≥ 𝑦𝑦 + 1,
+     meaning that 𝑥𝑥 is at least one unit larger than 𝑦𝑦.
+      • See UCS at the right-hand of the figure.
+   – In contrast, he strictly prefers 𝑦𝑦 to 𝑥𝑥 when 𝑥𝑥 ≤ 𝑦𝑦 −
+     1, which means that 𝑦𝑦 is at least one unit larger
+     than 𝑥𝑥.
+      • See LCS at the left-hand of the figure.
+
+                           x = y -1             x=y+1
+          0
+                                       y                                x
+              LCS, y ≻ x          IND, x ~ y               UCS, x ≻ y
+                           Advanced Microeconomic Theory                    21
+        Preference-Based Approach
+• Example 1.2 (Indistinguishable alternatives):
+   – Completeness. The above preference relation is
+     complete:
+      • For a given bundle 𝑥𝑥, another bundle 𝑦𝑦 must lie in the UCS,
+        IND, or LCS of 𝑥𝑥 (see figure).
+   – Transitivity. It does not hold:
+      • Construct a counterexample, such as:
+              1.5~0.8 since 1.5 − 0.8 = 0.7 < 1
+              0.8~0.3 since 0.8 − 0.3 = 0.5 < 1
+      • By transitivity, we would have 1.5~0.3, but in fact 1.5 ≻ 0.3
+        (intransitive preference relation).
+
+                        Advanced Microeconomic Theory                   22
+      Preference-Based Approach
+• Other examples:
+  – similar shades of gray paint
+  – milligrams of sugar in your coffee
+
+
+
+
+                   Advanced Microeconomic Theory   23
+       Preference-Based Approach
+• Example 1.3 (Framing effects):
+  – Transitivity might be violated because of the way
+    in which alternatives are presented to the
+    individual decision-maker.
+  – What holiday package do you prefer?
+     a) A weekend in Paris for $574 at a four-star hotel.
+     b) A weekend in Paris at the four-star hotel for $574.
+     c) A weekend in Rome at the five-star hotel for $612.
+  – By transitivity, we should expect that if 𝑎𝑎 ∼ 𝑏𝑏 and
+    𝑏𝑏 ≻ 𝑐𝑐, then 𝑎𝑎 ≻ 𝑐𝑐.
+                    Advanced Microeconomic Theory           24
+      Preference-Based Approach
+• Example 1.3 (continued):
+  – However, this did not happen!
+  – More than 50% of the students responded 𝑐𝑐 ≻ 𝑎𝑎.
+  – Such intransitive preference relation is induced by
+    the framing of the options.
+
+
+
+
+                   Advanced Microeconomic Theory      25
+       Preference-Based Approach
+• Example 1.4 (Aggregation of criteria):
+  – Aggregation of several individual preferences
+    might violate transitivity.
+  – Consider 𝑋𝑋 = {𝑀𝑀𝑀𝑀𝑀𝑀, 𝑊𝑊𝑊𝑊𝑊𝑊, 𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈}
+  – When considering which university to attend, you
+    might compare:
+     a) Academic prestige (criterion #1)
+            ≻1 : 𝑀𝑀𝑀𝑀𝑀𝑀 ≻1 𝑊𝑊𝑊𝑊𝑊𝑊 ≻1 𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈.
+     b) City size/congestion (criterion #2)
+            ≻2 : 𝑊𝑊𝑊𝑊𝑊𝑊 ≻2 𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈. ≻2 𝑀𝑀𝑀𝑀𝑀𝑀
+     c) Proximity to family and friends (criterion #3)
+            ≻3 : 𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈. ≻3 𝑀𝑀𝑀𝑀𝑀𝑀 ≻3 𝑊𝑊𝑊𝑊𝑊𝑊         26
+                       Advanced Microeconomic Theory
+        Preference-Based Approach
+• Example 1.4 (continued):
+  – By majority of these considerations:
+    𝑀𝑀𝑀𝑀𝑀𝑀        ≻           𝑊𝑊𝑊𝑊𝑊𝑊         ≻          𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 𝑈𝑈𝑈𝑈𝑈𝑈𝑈𝑈        ≻           𝑀𝑀𝑀𝑀𝑀𝑀
+             criteria 1 & 3            criteria 1 & 2                       criteria 2 & 3
+
+  – Transitivity is violated due to a cycle.
+  – A similar argument can be used for the
+    aggregation of individual preferences in group
+    decision-making:
+      Every person in the group has a different (transitive)
+       preference relation but the group preferences are not
+       necessarily transitive (“Condorcet paradox”).
+                                Advanced Microeconomic Theory                                    27
+        Preference-Based Approach
+• Intransitivity due to a change in preferences
+   – When you start smoking
+      One cigarette ≿ No smoking ≿ Smoking heavily
+     By transitivity,
+              One cigarette ≿ Smoking heavily
+   – Once you started
+      Smoking heavily ≿ One cigarette ≿ No smoking
+     By transitivity,
+              Smoking heavily ≿ One cigarette
+   – But this contradicts the individual’s past
+     preferences when he started to smoke.
+                        Advanced Microeconomic Theory   28
+Utility Function
+
+
+
+
+   Advanced Microeconomic Theory   29
+                Utility Function
+• A function 𝑢𝑢: 𝑋𝑋 → ℝ is a utility function
+  representing preference relations ≿ if, for every
+  pair of alternatives 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋,
+             𝑥𝑥 ≿ 𝑦𝑦 ⟺ 𝑢𝑢(𝑥𝑥) ≥ 𝑢𝑢(𝑦𝑦)
+
+
+
+
+                   Advanced Microeconomic Theory      30
+                Utility Function
+• Two points:
+  1) Only the ranking of alternatives matters.
+      – That is, it does not matter if
+             𝑢𝑢 𝑥𝑥 = 14 or if 𝑢𝑢 𝑥𝑥 = 2000
+                𝑢𝑢 𝑦𝑦 = 10 or if 𝑢𝑢 𝑦𝑦 = 3
+
+      – We do not care about cardinality (the number
+        that the utility function associates with each
+        alternative) but instead care about ordinality
+        (ranking of utility values among alternatives).
+
+                    Advanced Microeconomic Theory         31
+              Utility Function
+2) If we apply any strictly increasing function 𝑓𝑓(�)
+   on 𝑢𝑢 𝑥𝑥 , i.e.,
+       𝑓𝑓: ℝ → ℝ such that 𝑣𝑣 𝑥𝑥 = 𝑓𝑓(𝑢𝑢 𝑥𝑥 )
+   the new function keeps the ranking of
+   alternatives intact and, therefore, the new
+   function still represents the same preference
+   relation.
+     – Example:
+                     𝑣𝑣 𝑥𝑥 = 3𝑢𝑢(𝑥𝑥)
+                  𝑣𝑣 𝑥𝑥 = 5𝑢𝑢 𝑥𝑥 + 8
+                   Advanced Microeconomic Theory        32
+Desirability
+
+
+
+
+ Advanced Microeconomic Theory   33
+                    Desirability
+• We can express desirability in different ways.
+   – Monotonicity
+   – Strong monotonicity
+   – Non-satiation
+   – Local non-satiation
+• In all the above definitions, consider that 𝑥𝑥 is an 𝑛𝑛-
+  dimensional bundle
+             𝑥𝑥 ∈ ℝ𝑛𝑛 , i.e., 𝑥𝑥 = 𝑥𝑥1 , 𝑥𝑥2 , … , 𝑥𝑥𝑁𝑁
+  where its 𝑘𝑘 𝑡𝑡𝑡 component represents the amount of
+  good (or service) 𝑘𝑘, 𝑥𝑥𝑘𝑘 ∈ ℝ+ .
+                      Advanced Microeconomic Theory          34
+                     Desirability
+• Monotonicity:
+  – A preference relation satisfies monotonicity if, for
+    all 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋, where 𝑥𝑥 ≠ 𝑦𝑦,
+     a) 𝑥𝑥𝑘𝑘 ≥ 𝑦𝑦𝑘𝑘 for every good 𝑘𝑘 implies 𝑥𝑥 ≿ 𝑦𝑦
+     b) 𝑥𝑥𝑘𝑘 > 𝑦𝑦𝑘𝑘 for every good 𝑘𝑘 implies 𝑥𝑥 ≻ 𝑦𝑦
+  – That is,
+      increasing the amounts of some commodities (without
+       reducing the amount of any other commodity) cannot
+       hurt, 𝑥𝑥 ≿ 𝑦𝑦 ; and
+      increasing the amounts of all commodities is strictly
+       preferred, 𝑥𝑥 ≻ 𝑦𝑦.
+                       Advanced Microeconomic Theory       35
+                  Desirability
+• Strong Monotonicity:
+  – A preference relation satisfies strong monotonicity
+    if, for all 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋, where 𝑥𝑥 ≠ 𝑦𝑦,
+          𝑥𝑥𝑘𝑘 ≥ 𝑦𝑦𝑘𝑘 for every good 𝑘𝑘 implies 𝑥𝑥 ≻ 𝑦𝑦
+               and 𝑥𝑥𝑙𝑙 ≥ 𝑦𝑦𝑙𝑙 for at least one good 𝑙𝑙
+  – That is, even if we increase the amounts of only
+    one of the commodities, we make the consumer
+    strictly better off.
+
+                   Advanced Microeconomic Theory       36
+                      Desirability
+• Relationship between monotonicity and utility
+  function:
+  – Monotonicity in preferences implies that the
+    utility function is weakly monotonic (weakly
+    increasing) in its arguments
+       That is, increasing some of its arguments weakly
+        increases the value of the utility function, and
+        increasing all its arguments strictly increases its value.
+
+  – For any scalar 𝛼𝛼 > 1,
+              𝑢𝑢(𝛼𝛼𝑥𝑥1 , 𝑥𝑥2 ) ≥ 𝑢𝑢(𝑥𝑥1 , 𝑥𝑥2 )
+             𝑢𝑢 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 > 𝑢𝑢(𝑥𝑥1 , 𝑥𝑥2 )
+                        Advanced Microeconomic Theory                37
+                     Desirability
+• Relationship between strong monotonicity and
+  utility function:
+  – Strong monotonicity in preferences implies that
+    the utility function is strictly monotonic (strictly
+    increasing) in all its arguments.
+      That is, increasing some of its arguments strictly
+       increases the value of the utility function.
+
+  – For any scalar 𝛼𝛼 > 1,
+              𝑢𝑢 𝛼𝛼𝑥𝑥1 , 𝑥𝑥2 > 𝑢𝑢(𝑥𝑥1 , 𝑥𝑥2 )
+
+                       Advanced Microeconomic Theory        38
+                    Desirability
+• Example 1.5: 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = min{𝑥𝑥1 , 𝑥𝑥2 }
+   – Monotone, since
+         min 𝑥𝑥1 + 𝛿𝛿, 𝑥𝑥2 + 𝛿𝛿 > min{𝑥𝑥1 , 𝑥𝑥2 }
+     for all 𝛿𝛿 > 0.
+   – Not strongly monotone, since
+           min 𝑥𝑥1 + 𝛿𝛿, 𝑥𝑥2 ≯ min{𝑥𝑥1 , 𝑥𝑥2 }
+     if min 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥2 .
+
+
+
+                      Advanced Microeconomic Theory   39
+                    Desirability
+• Example 1.6: 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥1 + 𝑥𝑥2
+   – Monotone, since
+           (𝑥𝑥1 + 𝛿𝛿) + (𝑥𝑥2 + 𝛿𝛿) > 𝑥𝑥1 + 𝑥𝑥2
+     for all 𝛿𝛿 > 0.
+   – Strongly monotone, since
+              (𝑥𝑥1 + 𝛿𝛿) + 𝑥𝑥2 > 𝑥𝑥1 + 𝑥𝑥2
+• Hence, strong monotonicity implies monotonicity,
+  but the converse is not necessarily true.
+
+                      Advanced Microeconomic Theory   40
+                   Desirability
+• Non-satiation (NS):
+  – A preference relation satisfies NS if, for every 𝑥𝑥 ∈
+    𝑋𝑋, there is another bundle in set 𝑋𝑋, 𝑦𝑦 ∈ 𝑋𝑋, which
+    is strictly preferred to 𝑥𝑥, i.e., 𝑦𝑦 ≻ 𝑥𝑥.
+      NS is too general, since we could think about a bundle
+       𝑦𝑦 containing extremely larger amounts of some goods
+       than 𝑥𝑥.
+      How far away are 𝑦𝑦 and 𝑥𝑥?
+
+
+
+
+                     Advanced Microeconomic Theory              41
+                    Desirability
+• Local non-satiation (LNS):
+  – A preference relation satisfies LNS if, for every
+    bundle 𝑥𝑥 ∈ 𝑋𝑋 and every 𝜀𝜀 > 0, there is another
+    bundle 𝑦𝑦 ∈ 𝑋𝑋 which is less than 𝜀𝜀-away from 𝑥𝑥,
+     𝑦𝑦 − 𝑥𝑥 < 𝜀𝜀, and for which 𝑦𝑦 ≻ 𝑥𝑥.
+      𝑦𝑦 − 𝑥𝑥 = 𝑦𝑦1 − 𝑥𝑥1 2 + 𝑦𝑦2 − 𝑥𝑥2 2 is the Euclidean
+       distance between 𝑥𝑥 and 𝑦𝑦, where 𝑥𝑥, 𝑦𝑦 ∈ ℝ2+ .
+      In words, for every bundle 𝑥𝑥, and for every distance 𝜀𝜀
+       from 𝑥𝑥, we can find a more preferred bundle 𝑦𝑦.
+
+
+                      Advanced Microeconomic Theory               42
+                   Desirability
+– A preference relation
+  satisfies 𝑦𝑦 ≻ 𝑥𝑥 even if            x2
+
+
+
+                                                                 }
+                                              ε -ball
+  bundle 𝑦𝑦 contains less
+  of good 2 (but more of                                             ε
+  good 1) than bundle 𝑥𝑥.            x2                             x
+                                     y2                                       y
+
+
+
+                                            Distance between x and y
+
+                                                               x1        y1            x1
+
+
+                     Advanced Microeconomic Theory                                43
+                    Desirability
+– A preference relation
+  satisfies 𝑦𝑦 ≻ 𝑥𝑥 even if
+  bundle 𝑦𝑦 contains less
+  of both goods than
+  bundle 𝑥𝑥.
+
+
+
+
+                      Advanced Microeconomic Theory   44
+                   Desirability
+• Violation of LNS
+ – LNS rules out the case
+   in which the decision-
+   maker regards all
+   goods as bads.
+ – Although 𝑦𝑦 ≻ 𝑥𝑥, 𝑦𝑦 is
+   unfeasible given that it
+   lies away from the
+   consumption set, i.e.,
+   𝑦𝑦 ∉ ℝ2+ .
+
+                     Advanced Microeconomic Theory   45
+                    Desirability
+• Violation of LNS                    x2
+
+
+ – LNS also rules out                                        y − x < ε , but y~x
+
+   “thick” indifference
+   sets.                                             ε   y
+                                                         x
+                                                     {
+ – Bundles 𝑦𝑦 and 𝑥𝑥 lie on
+   the same indifference
+   curve.
+ – Hence, decision maker                      Thick indifference curve
+   is indifferent between                                                               x1
+   𝑥𝑥 and 𝑦𝑦, i.e., 𝑦𝑦 ∼ 𝑥𝑥.
+                     Advanced Microeconomic Theory                                 46
+                   Desirability
+• Note:
+  – If a preference relation satisfies monotonicity, it
+    must also satisfy LNS.
+      Given a bundle 𝑥𝑥 = (𝑥𝑥1 , 𝑥𝑥2 ), increasing all of its
+       components yields a bundle (𝑥𝑥1 + 𝛿𝛿, 𝑥𝑥2 + 𝛿𝛿),
+       which is strictly preferred to bundle (𝑥𝑥1 , 𝑥𝑥2 ) by
+       monotonicity.
+      Hence, there is a bundle 𝑦𝑦 = (𝑥𝑥1 + 𝛿𝛿, 𝑥𝑥2 + 𝛿𝛿) such
+       that 𝑦𝑦 ≻ 𝑥𝑥 and 𝑦𝑦 − 𝑥𝑥 < 𝜀𝜀.
+
+
+                     Advanced Microeconomic Theory           47
+Indifference sets
+
+
+
+
+   Advanced Microeconomic Theory   48
+              Indifference sets
+• The indifference set of a bundle 𝑥𝑥 ∈ 𝑋𝑋 is the set
+  of all bundles 𝑦𝑦 ∈ 𝑋𝑋, such that 𝑦𝑦 ∼ 𝑥𝑥.
+             𝐼𝐼𝐼𝐼𝐼𝐼 𝑥𝑥 = {𝑦𝑦 ∈ 𝑋𝑋: 𝑦𝑦 ∼ 𝑥𝑥}
+• The upper-contour set of bundle 𝑥𝑥 is the set of all
+  bundles 𝑦𝑦 ∈ 𝑋𝑋, such that 𝑦𝑦 ≿ 𝑥𝑥.
+             𝑈𝑈𝑈𝑈𝑈𝑈 𝑥𝑥 = {𝑦𝑦 ∈ 𝑋𝑋: 𝑦𝑦 ≿ 𝑥𝑥}
+• The lower-contour set of bundle 𝑥𝑥 is the set of all
+  bundles 𝑦𝑦 ∈ 𝑋𝑋, such that 𝑥𝑥 ≿ 𝑦𝑦.
+             𝐿𝐿𝐶𝐶𝐶𝐶 𝑥𝑥 = {𝑦𝑦 ∈ 𝑋𝑋: 𝑥𝑥 ≿ 𝑦𝑦}
+                    Advanced Microeconomic Theory       49
+              Indifference sets
+• Therefore, 𝐼𝐼𝐼𝐼𝐼𝐼 𝑥𝑥 is the intersection of
+  𝑈𝑈𝑈𝑈𝑈𝑈 𝑥𝑥 and 𝐿𝐿𝐿𝐿𝐿𝐿 𝑥𝑥 , that is,
+           𝐼𝐼𝐼𝐼𝐼𝐼 𝑥𝑥 = 𝑈𝑈𝑈𝑈𝑈𝑈 𝑥𝑥 ∩ 𝐿𝐿𝐿𝐿𝐿𝐿 𝑥𝑥 .
+
+
+
+           LCS(x)   IND(x)              UCS(x)
+
+
+
+
+                    Advanced Microeconomic Theory   50
+     Indifference sets
+x2
+                Upper contour set (UCS)
+                    {y ∈ ℝ +2: y ≿ x}
+
+            x
+
+                                            Indifference set
+                                             {y ∈ ℝ +2: y ~ x}
+
+
+     Lower contour set (LCS)
+         {y ∈ ℝ +2: y ≾ x}
+
+
+                                                   x1
+            Advanced Microeconomic Theory                        51
+               Indifference sets
+• Strong monotonicity implies that indifference
+  curves must be negatively sloped.
+          x2
+
+
+               Region A              y >> x
+
+
+
+                          x
+                z << x             Region B
+
+
+
+                    Advanced Microeconomic Theory   x1   52
+               Indifference sets
+• Note:
+  – Strong monotonicity implies that indifference
+    curves must be negatively sloped.
+  – In contrast, if an individual preference relation
+    satisfies LNS, indifference curves can be upward
+    sloping.
+     • This can happen if, for instance, the individual regards
+       good 2 as desirable but good 1 as a bad.
+
+
+
+                      Advanced Microeconomic Theory               53
+Convexity of Preferences
+
+
+
+
+       Advanced Microeconomic Theory   54
+        Convexity of Preferences
+• Convexity 1: A preference relation satisfies
+  convexity if, for all 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋,
+          𝑥𝑥 ≿ 𝑦𝑦 ⟹ 𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑦𝑦 ≿ 𝑦𝑦
+  for all 𝛼𝛼 ∈ (0,1).
+
+
+
+
+                        Advanced Microeconomic Theory   55
+       Convexity of Preferences
+• Convexity 1
+
+
+
+
+                Advanced Microeconomic Theory   56
+        Convexity of Preferences
+• Convexity 2: A preference relation satisfies
+  convexity if, for every bundle 𝑥𝑥, its upper contour
+  set is convex.
+         𝑈𝑈𝑈𝑈𝑈𝑈 𝑥𝑥 = {𝑦𝑦 ∈ 𝑋𝑋: 𝑦𝑦 ≿ 𝑥𝑥} is convex
+• That is, for every two bundles 𝑦𝑦 and 𝑧𝑧,
+           𝑦𝑦 ≿ 𝑥𝑥
+         �          ⟹ 𝜆𝜆𝑦𝑦 + 1 − 𝜆𝜆 𝑧𝑧 ≿ 𝑥𝑥
+           𝑧𝑧 ≿ 𝑥𝑥
+  for any 𝜆𝜆 ∈ 0,1 .
+• Hence, points 𝑦𝑦, 𝑧𝑧, and their convex combination
+  belong to the UCS of 𝑥𝑥.
+                    Advanced Microeconomic Theory    57
+       Convexity of Preferences
+• Convexity 2
+
+
+
+
+                Advanced Microeconomic Theory   58
+        Convexity of Preferences
+• Strict convexity: A preference relation satisfies
+  strict convexity if, for every 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋 where 𝑥𝑥 ≠ 𝑦𝑦,
+
+                𝑥𝑥 ≿ 𝑧𝑧
+              �         ⟹ 𝜆𝜆𝑥𝑥 + 1 − 𝜆𝜆 𝑦𝑦 ≻ 𝑧𝑧
+               𝑦𝑦 ≿ 𝑧𝑧
+
+  for all 𝜆𝜆 ∈ 0,1 .
+
+
+
+
+                       Advanced Microeconomic Theory     59
+       Convexity of Preferences
+• Strictly convex preferences
+           x2
+                       x
+                 x                       λx + (1−λ)y ≻z
+
+
+
+                                                     UCS
+                      z
+                                                 y
+                                            y
+
+
+                                                     x1
+                     Advanced Microeconomic Theory         60
+        Convexity of Preferences
+• Convex but not strict convex preferences
+  – 𝜆𝜆𝑥𝑥 + 1 − 𝜆𝜆 𝑦𝑦~𝑧𝑧
+  – This type of preference
+    relation is represented
+    by linear utility
+    functions such as
+    𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑎𝑎𝑥𝑥1 + 𝑏𝑏𝑥𝑥2
+    where 𝑥𝑥1 and 𝑥𝑥2 are
+    regarded as substitutes.
+
+                       Advanced Microeconomic Theory   61
+         Convexity of Preferences
+• Convex but not strict convex preferences
+  – Other example: If a
+    preference relation is
+    represented by utility
+    functions such as
+  𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = min{𝑎𝑎𝑥𝑥1 , 𝑏𝑏𝑥𝑥2 }
+    where 𝑎𝑎, 𝑏𝑏 > 0, then
+    the pref. relation
+    satisfies convexity, but
+    not strict convexity.
+                         Advanced Microeconomic Theory   62
+          Convexity of Preferences
+• Example 1.7
+
+     𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2       Satisfies convexity Satisfies strict convexity
+    𝑎𝑎𝑥𝑥1 + 𝑏𝑏𝑥𝑥2                 √                        X
+  min{𝑎𝑎𝑥𝑥1 , 𝑏𝑏𝑥𝑥2 }             √                        X
+         1        1
+                                  √                        √
+    𝑎𝑎𝑥𝑥12 × 𝑏𝑏𝑥𝑥22
+    𝑎𝑎𝑥𝑥12 × 𝑏𝑏𝑥𝑥22               √                        √
+         1        1
+                                  √                        √
+    𝑎𝑎𝑥𝑥12 + 𝑏𝑏𝑥𝑥22
+    𝑎𝑎𝑥𝑥12 + 𝑏𝑏𝑥𝑥22               X                        X
+                           Advanced Microeconomic Theory                 63
+        Convexity of Preferences
+• Interpretation of convexity
+  1) Taste for
+     diversification:
+     – An individual with
+       convex preferences
+       prefers the convex
+       combination of
+       bundles 𝑥𝑥 and 𝑦𝑦,
+       than either of those
+       bundles alone.
+                    Advanced Microeconomic Theory   64
+        Convexity of Preferences
+• Interpretation of convexity
+  2) Diminishing marginal rate of substitution:
+                                𝜕𝜕𝜕𝜕/𝜕𝜕𝑥𝑥1
+                    𝑀𝑀𝑀𝑀𝑀𝑀1,2 ≡
+                                𝜕𝜕𝜕𝜕/𝜕𝜕𝑥𝑥2
+     – MRS describes the additional amount of good 1
+       that the consumer needs to receive in order to
+       keep her utility level unaffected, when the amount
+       of good 2 is reduced by one unit.
+     – Hence, a diminishing MRS implies that the
+       consumer needs to receive increasingly larger
+       amounts of good 1 in order to accept further
+       reductions of good 2.
+                    Advanced Microeconomic Theory       65
+        Convexity of Preferences
+• Diminishing marginal rate of substitution
+                  x2
+                          A
+
+       1 unit = ∇x2
+                              B
+
+
+
+                                   C
+
+       1 unit = ∇x2
+                                                   D
+
+
+
+
+                        ∇x1             ∇∇x1           x1
+
+                       Advanced Microeconomic Theory        66
+       Convexity of Preferences
+• Remark:
+  – Let us show that the slope of the indifference
+    curve is given by the MRS.
+  – Consider a continuous and differentiable utility
+    function 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 , … , 𝑥𝑥𝑛𝑛 .
+  – Totally differentiating, we obtain
+                𝜕𝜕𝜕𝜕          𝜕𝜕𝜕𝜕              𝜕𝜕𝜕𝜕
+        𝑑𝑑𝑑𝑑 =       𝑑𝑑𝑥𝑥1 +       𝑑𝑑𝑥𝑥2 + ⋯ +        𝑑𝑑𝑥𝑥𝑛𝑛
+               𝜕𝜕𝑥𝑥1         𝜕𝜕𝑥𝑥2             𝜕𝜕𝑥𝑥𝑛𝑛
+
+  – But since we move along the same indifference
+    curve, 𝑑𝑑𝑑𝑑 = 0.
+                      Advanced Microeconomic Theory            67
+     Convexity of Preferences
+– Inserting 𝑑𝑑𝑑𝑑 = 0,
+                  𝜕𝜕𝜕𝜕             𝜕𝜕𝜕𝜕
+               0=        𝑑𝑑𝑥𝑥𝑖𝑖 +        𝑑𝑑𝑥𝑥𝑗𝑗
+                  𝜕𝜕𝑥𝑥𝑖𝑖          𝜕𝜕𝑥𝑥𝑗𝑗
+                       𝜕𝜕𝜕𝜕       𝜕𝜕𝜕𝜕
+             or       − 𝑑𝑑𝑥𝑥𝑖𝑖 =        𝑑𝑑𝑥𝑥𝑗𝑗
+                       𝜕𝜕𝑥𝑥𝑖𝑖    𝜕𝜕𝑥𝑥𝑗𝑗
+– If we want to analyze the rate at which the
+  consumer substitutes units of good 𝑖𝑖 for good 𝑗𝑗,
+                    𝑑𝑑𝑥𝑥𝑗𝑗
+  we must solve for , to obtain
+                           𝑑𝑑𝑥𝑥𝑖𝑖
+                                     𝜕𝜕𝜕𝜕
+                      𝑑𝑑𝑥𝑥𝑗𝑗        𝜕𝜕𝑥𝑥𝑖𝑖
+                  −            =     𝜕𝜕𝜕𝜕    ≡ 𝑀𝑀𝑀𝑀𝑀𝑀𝑖𝑖,𝑗𝑗
+                      𝑑𝑑𝑥𝑥𝑖𝑖
+                                    𝜕𝜕𝑥𝑥𝑗𝑗
+                      Advanced Microeconomic Theory          68
+Quasiconcavity
+
+
+
+
+  Advanced Microeconomic Theory   69
+                   Quasiconcavity
+• A utility function 𝑢𝑢(�) is quasiconcave if, for every
+  bundle 𝑥𝑥 ∈ 𝑋𝑋, the set of all bundles for which the
+  consumer experiences a higher utility, i.e., the
+  𝑈𝑈𝑈𝑈𝑈𝑈 𝑥𝑥 = 𝑦𝑦 ∈ 𝑋𝑋 𝑢𝑢(𝑦𝑦) ≥ 𝑢𝑢(𝑥𝑥)} is convex.
+• The following three properties are equivalent:
+
+Convexity of preferences ⟺ 𝑈𝑈𝑈𝑈𝑈𝑈 𝑥𝑥 is convex ⟺ 𝑢𝑢 � is quasiconcave
+
+
+
+
+                         Advanced Microeconomic Theory             70
+               Quasiconcavity
+• Alternative definition of quasiconcavity:
+  – A utility function 𝑢𝑢(�) satisfies quasiconcavity if,
+    for every two bundles 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋, the utility of
+    consuming the convex combination of these two
+    bundles, 𝑢𝑢(𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑦𝑦), is weakly higher than
+    the minimal utility from consuming each bundle
+    separately, min 𝑢𝑢 𝑥𝑥 , 𝑢𝑢 𝑦𝑦 :
+       𝑢𝑢(𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑦𝑦) ≥ min 𝑢𝑢 𝑥𝑥 , 𝑢𝑢 𝑦𝑦
+
+
+                    Advanced Microeconomic Theory       71
+              Quasiconcavity
+• Quasiconcavity (second definition)
+
+
+
+
+                  Advanced Microeconomic Theory   72
+               Quasiconcavity
+• Strict quasiconcavity:
+  – A utility function 𝑢𝑢(�) satisfies strict
+    quasiconcavity if, for every two bundles 𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋,
+    the utility of consuming the convex combination
+    of these two bundles, 𝑢𝑢(𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑦𝑦), is
+    strictly higher than the minimal utility from
+    consuming each bundle separately,
+    min 𝑢𝑢 𝑥𝑥 , 𝑢𝑢 𝑦𝑦 :
+       𝑢𝑢 𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑦𝑦 > min 𝑢𝑢 𝑥𝑥 , 𝑢𝑢 𝑦𝑦
+
+                    Advanced Microeconomic Theory           73
+                Quasiconcavity
+• What if bundles 𝑥𝑥 and
+  𝑦𝑦 lie on the same                 x2
+  indifference curve?
+• Then, 𝑢𝑢 𝑥𝑥 = 𝑢𝑢(𝑦𝑦).                   x
+                                                     α x + (1 − α ) y
+• Since indifference curves
+  are strictly convex, 𝑢𝑢(�)                                   u (α x + (1 − α ) y )
+  satisfies quasiconcavity.                                 y u ( x) = u ( y)
+
+
+                                                                            x1
+
+                     Advanced Microeconomic Theory                              74
+                 Quasiconcavity
+• What if indifference
+  curves are linear?
+• 𝑢𝑢(�) satisfies the
+  definition of a
+  quasiconcavity since
+    𝑢𝑢 𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑦𝑦
+    = min 𝑢𝑢 𝑥𝑥 , 𝑢𝑢 𝑦𝑦
+
+• But 𝑢𝑢(�) does not satisfy
+  strict quasiconcavity.
+
+                      Advanced Microeconomic Theory   75
+                 Quasiconcavity
+• Relationship between concavity and
+  quasiconcavity:
+                          ⟹
+             Concavity        Quasiconcavity
+                           ⇍
+  – If a function 𝑓𝑓(�) is concave, then for any two points
+    𝑥𝑥, 𝑦𝑦 ∈ 𝑋𝑋,
+      𝑓𝑓 𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦 ≥ 𝛼𝛼𝛼𝛼 𝑥𝑥 + 1 − 𝛼𝛼 𝑓𝑓 𝑦𝑦
+                          ≥ min 𝑓𝑓 𝑥𝑥 , 𝑓𝑓 𝑦𝑦
+    for all 𝛼𝛼 ∈ 0,1 .
+      The first inequality follows from the definition of concavity,
+       while the second holds true for all concave functions.
+      Hence, quasiconcavity is a weaker condition than concavity.
+                         Advanced Microeconomic Theory                  76
+              Quasiconcavity
+• Concavity implies quasiconcavity
+
+
+
+
+                  Advanced Microeconomic Theory   77
+                Quasiconcavity
+• A concave 𝑢𝑢 � exhibits diminishing marginal
+  utility.
+  – That is, for an increase in the consumption bundle,
+    the increase in utility is smaller as we move away from
+    the origin.
+• The “jump” from one indifference curve to
+  another requires:
+  – a slight increase in the amount of 𝑥𝑥1 and 𝑥𝑥2 when we
+    are close to the origin
+  – a large increase in the amount of 𝑥𝑥1 and 𝑥𝑥2 as we get
+    further away from the origin
+
+                     Advanced Microeconomic Theory            78
+                  Quasiconcavity
+• Concave and quasiconcave utility function (3D)
+                        1 1
+        u ( x1 , x2 ) = x x
+                        4 4
+                       1 2
+
+
+
+
+          u
+                                                        x1
+                         x2
+
+                        Advanced Microeconomic Theory        79
+              Quasiconcavity
+• Concave and quasiconcave utility function (2D)
+
+
+
+
+                 y
+
+
+                       UCS ( x )
+                          x
+
+
+
+
+                     Advanced Microeconomic Theory   80
+                 Quasiconcavity
+• A convex 𝑢𝑢 � exhibits increasing marginal utility.
+   – That is, for an increase in the consumption bundle,
+     the increase in utility is larger as we move away from
+     the origin.
+• The “jump” from one indifference curve to
+  another requires:
+   – a large increase in the amount of 𝑥𝑥1 and 𝑥𝑥2 when we
+     are close to the origin, but…
+   – a small increase in the amount of 𝑥𝑥1 and 𝑥𝑥2 as we get
+     further away from the origin
+
+                      Advanced Microeconomic Theory           81
+                     Quasiconcavity
+• Convex but quasiconcave utility function (3D)
+
+                      6 6
+      v ( x1 , x2 ) = x x
+                      4 4
+                     1 2
+
+
+
+
+           v
+
+                                                             x1
+                            x2
+                             Advanced Microeconomic Theory        82
+                Quasiconcavity
+• Convex but quasiconcave utility function (2D)
+
+
+
+                                        x     UCS ( x )
+
+
+
+
+                     Advanced Microeconomic Theory        83
+                    Quasiconcavity
+• Note:
+                                                  6    6
+  – Utility function 𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥1 𝑥𝑥2 is a strictly
+                                                  4    4
+                                                                1   1
+    monotonic transformation of 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥1 𝑥𝑥2 ,        4   4
+
+      • That is, 𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 = 𝑓𝑓(𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 ), where 𝑓𝑓 𝑢𝑢 = 𝑢𝑢6 .
+
+
+  – Therefore, utility functions 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 and 𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2
+    represent the same preference relation.
+  – Both utility functions are quasiconcave although one
+    of them is concave and the other is convex.
+  – Hence, we normally require utility functions to satisfy
+    quasiconcavity alone.
+                           Advanced Microeconomic Theory                 84
+                Quasiconcavity
+• Example 1.8 (Testing properties of preference
+  relations):
+  – Consider an individual decision maker who consumes
+    bundles in ℝ𝐿𝐿+ .
+  – Informally, he “prefers more of everything”
+  – Formally, for two bundles 𝑥𝑥, 𝑦𝑦 ∈ ℝ𝐿𝐿+ , bundle 𝑥𝑥 is
+    weakly preferred to bundle 𝑦𝑦, 𝑥𝑥 ≿ 𝑦𝑦, iff bundle 𝑥𝑥
+    contains more units of every good than bundle 𝑦𝑦
+    does, i.e., 𝑥𝑥𝑘𝑘 ≥ 𝑦𝑦𝑘𝑘 for every good 𝑘𝑘.
+  – Let us check if this preference relation satisfies: (a)
+    completeness, (b) transitivity, (c) strong monotonicity,
+    (d) strict convexity, and (e) local non-satiation.
+                     Advanced Microeconomic Theory         85
+                Quasiconcavity
+• Example 1.8 (continued):
+  – Let us consider the case of only two goods, 𝐿𝐿 = 2.
+  – Then, an individual prefers a bundle 𝑥𝑥 = (𝑥𝑥1 , 𝑥𝑥2 )
+    to another bundle 𝑦𝑦 = (𝑦𝑦1 , 𝑦𝑦2 ) iff 𝑥𝑥 contains more
+    units of both goods than bundle 𝑦𝑦, i.e., 𝑥𝑥1 ≥ 𝑦𝑦1
+    and 𝑥𝑥2 ≥ 𝑦𝑦2 .
+  – For illustration purposes, let us take bundle such
+    as (2,1).
+
+                     Advanced Microeconomic Theory        86
+             Quasiconcavity
+• Example 1.8 (continued):
+
+
+
+
+                 Advanced Microeconomic Theory   87
+                Quasiconcavity
+• Example 1.8 (continued):
+ 1) UCS:
+    – The upper contour set of bundle (2,1) contains
+      bundles (𝑥𝑥1 , 𝑥𝑥2 ) with weakly more than 2 units
+      of good 1 and/or weakly more than 1 unit of
+      good 2:
+        𝑈𝑈𝑈𝑈𝑈𝑈 2,1 = {(𝑥𝑥1 , 𝑥𝑥2 ) ≿ (2,1) ⟺ 𝑥𝑥1 ≥ 2, 𝑥𝑥2 ≥ 1}
+
+    – The frontiers of the UCS region also represent
+      bundles preferred to (2,1).
+                     Advanced Microeconomic Theory          88
+               Quasiconcavity
+• Example 1.8 (continued):
+ 2) LCS:
+    – The bundles in the lower contour set of bundle
+      (2,1) contain fewer units of both goods:
+       𝐿𝐿𝐶𝐶𝐶𝐶 2,1 = {(2,1) ≿ (𝑥𝑥1 , 𝑥𝑥2 ) ⟺ 𝑥𝑥1 ≤ 2, 𝑥𝑥2 ≤ 1}
+
+    – The frontiers of the LCS region also represent
+      bundles with fewer unis of either good 1 or
+      good 2.
+
+                    Advanced Microeconomic Theory          89
+                 Quasiconcavity
+• Example 1.8 (continued):
+ 3) IND:
+    – The indifference set comprising bundles (𝑥𝑥1 , 𝑥𝑥2 )
+      for which the consumer is indifferent between
+      (𝑥𝑥1 , 𝑥𝑥2 ) and (2,1) is a singleton (itself):
+           𝐼𝐼𝐼𝐼𝐼𝐼 2,1 =       2,1 ∼ 𝑥𝑥1 , 𝑥𝑥2             = { 2,1 }
+    – There is no other bundle making the consumer
+      indifferent between (2,1) and such a bundle.
+    – There is no region for which the UCS and LCS
+      overlap. These sets only “touch” at bundle (2,1).
+
+                          Advanced Microeconomic Theory               90
+              Quasiconcavity
+• Example 1.8 (continued):
+ 4) Regions A and B:
+    – Region 𝐴𝐴 contains bundles with more units of
+      good 2 but fewer units of good 1 (the opposite
+      argument applies to region 𝐵𝐵).
+    – The consumer cannot compare bundles in
+      either of these regions against bundle 2,1 .
+    – For him to be able to rank one bundle against
+      another, one of the bundles must contain the
+      same or more units of all goods.
+                   Advanced Microeconomic Theory       91
+               Quasiconcavity
+• Example 1.8 (continued):
+ 5) Preference relation is not complete:
+    – Completeness requires for every pair 𝑥𝑥 and 𝑦𝑦,
+      either 𝑥𝑥 ≿ 𝑦𝑦 or 𝑦𝑦 ≿ 𝑥𝑥 (or both).
+    – Consider two bundles 𝑥𝑥, 𝑦𝑦 ∈ ℝ2+ with bundle 𝑥𝑥
+      containing more units of good 1 than bundle 𝑦𝑦
+      but fewer units of good 2, i.e., 𝑥𝑥1 > 𝑦𝑦1 and
+      𝑥𝑥2 < 𝑦𝑦2 (as in Region B)
+    – Then, we have neither 𝑥𝑥 ≿ 𝑦𝑦 (UCS) nor 𝑦𝑦 ≿ 𝑥𝑥
+      (LCS).
+
+                   Advanced Microeconomic Theory         92
+                Quasiconcavity
+• Example 1.8 (continued):
+ 6) Preference relation is transitive:
+    – Transitivity requires that, for any three bundles
+      𝑥𝑥, 𝑦𝑦 and 𝑧𝑧, if 𝑥𝑥 ≿ 𝑦𝑦 and 𝑦𝑦 ≿ 𝑧𝑧 then 𝑥𝑥 ≿ 𝑧𝑧.
+    – Now 𝑥𝑥 ≿ 𝑦𝑦 and 𝑦𝑦 ≿ 𝑧𝑧 means 𝑥𝑥𝑘𝑘 ≥ 𝑦𝑦𝑘𝑘 and
+      𝑦𝑦𝑘𝑘 ≥ 𝑧𝑧𝑘𝑘 for all 𝑘𝑘 goods.
+    – Then, 𝑥𝑥𝑘𝑘 ≥ 𝑧𝑧𝑘𝑘 implies 𝑥𝑥 ≿ 𝑧𝑧.
+
+
+                     Advanced Microeconomic Theory      93
+                Quasiconcavity
+• Example 1.8 (continued):
+ 7) Preference relation is strongly monotone:
+    – Strong monotonicity requires that if we
+      increase one of the goods in a given bundle 𝑦𝑦,
+      then the newly created bundle 𝑥𝑥 must be
+      strictly preferred to the original bundle.
+    – Now 𝑥𝑥 ≥ 𝑦𝑦 and 𝑥𝑥 ≠ 𝑦𝑦 implies that 𝑥𝑥𝑙𝑙 ≥ 𝑦𝑦𝑙𝑙 for
+      all good 𝑙𝑙 and 𝑥𝑥𝑘𝑘 > 𝑦𝑦𝑘𝑘 for at least one good 𝑘𝑘.
+    – Thus, 𝑥𝑥 ≥ 𝑦𝑦 and 𝑥𝑥 ≠ 𝑦𝑦 implies 𝑥𝑥 ≿ 𝑦𝑦 and not
+      𝑦𝑦 ≿ 𝑥𝑥.
+    – Thus, we can conclude that 𝑥𝑥 ≻ 𝑦𝑦.
+                     Advanced Microeconomic Theory            94
+               Quasiconcavity
+• Example 1.8 (continued):
+ 8) Preference relation is strictly convex:
+    – Strict convexity requires that if 𝑥𝑥 ≿ 𝑧𝑧 and 𝑦𝑦 ≿ 𝑧𝑧
+      and 𝑥𝑥 ≠ 𝑦𝑦, then 𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦 ≻ 𝑧𝑧 for all 𝛼𝛼 ∈
+       0,1 .
+    – Now 𝑥𝑥 ≿ 𝑧𝑧 and 𝑦𝑦 ≿ 𝑧𝑧 implies that 𝑥𝑥𝑙𝑙 ≥ 𝑦𝑦𝑙𝑙 and
+      𝑦𝑦𝑙𝑙 ≥ 𝑧𝑧𝑙𝑙 for all good 𝑙𝑙.
+    – 𝑥𝑥 ≠ 𝑧𝑧 implies, for some good 𝑘𝑘, we must have
+      𝑥𝑥𝑘𝑘 > 𝑧𝑧𝑘𝑘 .
+                    Advanced Microeconomic Theory         95
+               Quasiconcavity
+• Example 1.8 (continued):
+    – Hence, for any 𝛼𝛼 ∈ 0,1 , we must have that
+        𝛼𝛼𝑥𝑥𝑙𝑙 + 1 − 𝛼𝛼 𝑦𝑦𝑙𝑙 ≥ 𝑧𝑧𝑙𝑙 for every good 𝑙𝑙
+          𝛼𝛼𝑥𝑥𝑘𝑘 + 1 − 𝛼𝛼 𝑦𝑦𝑘𝑘 > 𝑧𝑧𝑘𝑘 for some 𝑘𝑘
+    – Thus, we have that 𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦 ≥ 𝑧𝑧 and
+      𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦 ≠ 𝑧𝑧, and so
+                   𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦 ≿ 𝑧𝑧
+               and not 𝑧𝑧 ≿ 𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦
+    – Therefore, 𝛼𝛼𝛼𝛼 + 1 − 𝛼𝛼 𝑦𝑦 ≻ 𝑧𝑧.
+                    Advanced Microeconomic Theory       96
+                Quasiconcavity
+• Example 1.8 (continued):
+ 9) Preference relation satisfies LNS:
+    – Take any bundle (𝑥𝑥1 , 𝑥𝑥2 ) and a scalar 𝜀𝜀 > 0.
+
+    – Let us define a new bundle (𝑦𝑦1 , 𝑦𝑦2 ) where
+                                          𝜀𝜀       𝜀𝜀
+                  𝑦𝑦1 , 𝑦𝑦2 ≡        𝑥𝑥1 + , 𝑥𝑥2 +
+                                          2        2
+       so that 𝑦𝑦1 > 𝑥𝑥1 and 𝑦𝑦2 > 𝑥𝑥2 .
+
+    – Hence, 𝑦𝑦 ≿ 𝑥𝑥 but not 𝑥𝑥 ≿ 𝑦𝑦, which implies 𝑦𝑦 ≻
+      𝑥𝑥.
+                     Advanced Microeconomic Theory        97
+               Quasiconcavity
+• Example 1.8 (continued):
+    – Let us know check if bundle 𝑦𝑦 is within an 𝜀𝜀-ball
+      around 𝑥𝑥.
+    – The Cartesian distance between 𝑥𝑥 and 𝑦𝑦 is
+                                    𝜀𝜀      2                   𝜀𝜀   2       𝜀𝜀
+        𝑥𝑥 − 𝑦𝑦 =   𝑥𝑥1 −     𝑥𝑥1 +             + 𝑥𝑥2 −   𝑥𝑥2 +          =
+                                    2                           2             2
+
+      which is smaller than 𝜀𝜀 for all 𝜀𝜀 > 0.
+
+
+
+                    Advanced Microeconomic Theory                            98
+Common Utility Functions
+
+
+
+
+       Advanced Microeconomic Theory   99
+        Common Utility Functions
+• Cobb-Douglas utility functions:
+  – In the case of two goods, 𝑥𝑥1 and 𝑥𝑥2 ,
+                                                              𝛽𝛽
+                   𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝐴𝐴𝑥𝑥1𝛼𝛼 𝑥𝑥2
+    where 𝐴𝐴, 𝛼𝛼, 𝛽𝛽 > 0.
+  – Applying logs on both sides
+         log 𝑢𝑢 = log 𝐴𝐴 + 𝛼𝛼 log 𝑥𝑥1 + 𝛽𝛽 log 𝑥𝑥2
+  – Hence, the exponents in the original 𝑢𝑢(�) can be
+    interpreted as elasticities:
+              𝜕𝜕𝜕𝜕 𝑥𝑥1 ,𝑥𝑥2         𝑥𝑥1                 𝛼𝛼−1 𝛽𝛽       𝑥𝑥1
+   𝜀𝜀𝑢𝑢,𝑥𝑥1 =                 �                 = 𝛼𝛼𝛼𝛼𝑥𝑥1 𝑥𝑥2 �              𝛽𝛽   = 𝛼𝛼
+                  𝜕𝜕𝑥𝑥1         𝑢𝑢 𝑥𝑥1 ,𝑥𝑥2                        𝐴𝐴𝑥𝑥1𝛼𝛼 𝑥𝑥2
+                              Advanced Microeconomic Theory                         100
+     Common Utility Functions
+– Intuitively, a one-percent increase in the amount
+  of good 𝑥𝑥1 increases individual utility by 𝛼𝛼
+  percent.
+– Similarly, 𝜀𝜀𝑢𝑢,𝑥𝑥2 = 𝛽𝛽.
+
+– Special cases:
+    𝛼𝛼 + 𝛽𝛽 = 1:           𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝐴𝐴𝑥𝑥1𝛼𝛼 𝑥𝑥21−𝛼𝛼
+                                                   𝛼𝛼 𝛽𝛽
+    𝐴𝐴 = 1:           𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2            = 𝑥𝑥1 𝑥𝑥2
+    𝐴𝐴 = 𝛼𝛼 = 𝛽𝛽 = 1: 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥1 𝑥𝑥2
+
+                     Advanced Microeconomic Theory           101
+     Common Utility Functions
+– Marginal utilities:
+                    𝜕𝜕𝜕𝜕          𝜕𝜕𝜕𝜕
+                         > 0 and       >0
+                   𝜕𝜕𝑥𝑥1         𝜕𝜕𝑥𝑥2
+– Diminishing MRS, since
+                               𝛼𝛼−1 𝛽𝛽
+                        𝛼𝛼𝛼𝛼𝑥𝑥1 𝑥𝑥2        𝛼𝛼𝑥𝑥2
+       𝑀𝑀𝑀𝑀𝑆𝑆𝑥𝑥1 ,𝑥𝑥2 =             𝛽𝛽−1
+                                         =
+                        𝛽𝛽𝛽𝛽𝑥𝑥1𝛼𝛼 𝑥𝑥2      𝛽𝛽𝑥𝑥1
+  which is decreasing in 𝑥𝑥1 .
+    Hence, indifference curves become flatter as 𝑥𝑥1
+     increases.
+
+                     Advanced Microeconomic Theory      102
+      Common Utility Functions
+• Cobb-Douglas preference
+           x2
+
+                   A
+        ∇∇
+        in x2
+                         B
+
+                                          C
+         ∇x2                                        D
+                                                        IC
+
+                1 unit                  1 unit
+                                                             x1
+                    Advanced Microeconomic Theory                 103
+       Common Utility Functions
+• Perfect substitutes:
+  – In the case of two goods, 𝑥𝑥1 and 𝑥𝑥2 ,
+                 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝐴𝐴𝑥𝑥1 + 𝐵𝐵𝑥𝑥2
+    where 𝐴𝐴, 𝐵𝐵 > 0.
+  – Hence, the marginal utility of every good is
+    constant:
+                         𝜕𝜕𝜕𝜕           𝜕𝜕𝜕𝜕
+                              = 𝐴𝐴 and       = 𝐵𝐵
+                        𝜕𝜕𝑥𝑥1          𝜕𝜕𝑥𝑥2
+                                                    𝐴𝐴
+  – 𝑀𝑀𝑀𝑀𝑀𝑀 is also constant, i.e., 𝑀𝑀𝑀𝑀𝑀𝑀𝑥𝑥1 ,𝑥𝑥2 =
+                                                    𝐵𝐵
+      Therefore, indifference curves are straight lines with a
+                   𝐴𝐴
+       slope of − . Advanced Microeconomic Theory
+                   𝐵𝐵                                           104
+      Common Utility Functions
+• Perfect substitutes
+        x2
+                           A
+        2A       slope = −
+                           B
+
+         A
+
+
+
+
+                                  B                2B   x1
+                   Advanced Microeconomic Theory             105
+    Common Utility Functions
+                                                    𝐴𝐴
+– Intuitively, the individual is willing to give up
+                                                    𝐵𝐵
+  units of 𝑥𝑥2 to obtain one more unit of 𝑥𝑥1 and keep
+  his utility level unaffected.
+– Unlike in the Cobb-Douglas case, such willingness
+  is independent in the relative abundance of the
+  two goods.
+– Examples: butter and margarine, coffee and black
+  tea, or two brands of unflavored mineral water
+
+                   Advanced Microeconomic Theory         106
+      Common Utility Functions
+• Perfect Complements:
+  – In the case of two goods, 𝑥𝑥1 and 𝑥𝑥2 ,
+            𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝐴𝐴 � min 𝛼𝛼𝑥𝑥1 , 𝛽𝛽𝑥𝑥2
+    where 𝐴𝐴, 𝛼𝛼, 𝛽𝛽 > 0.
+  – Intuitively, increasing one of the goods without
+    increasing the amount of the other good entails
+    no increase in utility.
+      The amounts of both goods must increase for the utility
+       to go up.
+  – The indifference curve is right angle with a kink at
+    𝛼𝛼𝑥𝑥1 = 𝛽𝛽𝑥𝑥2 .
+                     Advanced Microeconomic Theory          107
+            Common Utility Functions
+• Perfect complements
+    x2
+
+
+                                                                 α
+                                                          x2 =     x
+                                                                 β 1
+
+        α
+    2                                                  u2 = 2aα
+        β
+
+        α
+        β                                              u1 = aα
+
+
+               α
+                   β
+                           1                    2                  x1
+                       Advanced Microeconomic Theory                    108
+    Common Utility Functions
+                          𝛽𝛽    𝛽𝛽
+– The slope of a ray 𝑥𝑥2 = 𝑥𝑥1 , , indicates the rate
+                          𝛼𝛼    𝛼𝛼
+  at which goods 𝑥𝑥1 and 𝑥𝑥2 must be consumed in
+  order to achieve utility gains.
+– Special case: 𝛼𝛼 = 𝛽𝛽
+       𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝐴𝐴 � min 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2
+                    = 𝐴𝐴𝐴𝐴 � min 𝑥𝑥1 , 𝑥𝑥2
+                    = 𝐵𝐵 � min 𝑥𝑥1 , 𝑥𝑥2 if 𝐵𝐵 ≡ 𝐴𝐴𝐴𝐴
+– Examples: cars and gasoline, or peanut butter and
+  jelly. Other food recipes, which often require the
+  use of ingredients in a fixed proportion, are good
+  examples as well.
+                  Advanced Microeconomic Theory     109
+      Common Utility Functions
+• CES utility function:
+  – In the case of two goods, 𝑥𝑥1 and 𝑥𝑥2 ,
+                                                              𝜎𝜎
+                                     𝜎𝜎−1              𝜎𝜎−1 𝜎𝜎−1
+         𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑎𝑎𝑥𝑥1 + 𝑏𝑏𝑥𝑥2  𝜎𝜎                𝜎𝜎
+
+    where 𝜎𝜎 measures the elasticity of substitution
+    between goods 𝑥𝑥1 and 𝑥𝑥2 .
+  – In particular,
+                                  𝑥𝑥2
+                             𝜕𝜕               𝑀𝑀𝑀𝑀𝑆𝑆1,2
+                                  𝑥𝑥1
+                     𝜎𝜎 =                 �      𝑥𝑥2
+                            𝜕𝜕𝜕𝜕𝜕𝜕𝑆𝑆1,2
+                                                 𝑥𝑥1
+
+                       Advanced Microeconomic Theory               110
+       Common Utility Functions
+• CES preferences
+           x2
+
+
+
+
+                                                    σ = 0 Perfect complement
+
+
+                                                                 }
+                                                    σ = 0.2
+                                                     σ =1            Cobb-Douglas
+
+                                     σ=∞             σ =8
+                                           Perfect substitutes
+                                                                     x1
+                    Advanced Microeconomic Theory                                   111
+    Common Utility Functions
+– CES utility function is often presented as
+                                               1
+                                    𝜌𝜌      𝜌𝜌
+            𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 =      𝑎𝑎𝑥𝑥1 + 𝑏𝑏𝑥𝑥2 𝜌𝜌
+             𝜎𝜎−1
+  where 𝜌𝜌 ≡      .
+               𝜎𝜎
+
+
+
+
+                   Advanced Microeconomic Theory   112
+      Common Utility Functions
+• Quasilinear utility function:
+  – In the case of two goods, 𝑥𝑥1 and 𝑥𝑥2 ,
+               𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑣𝑣 𝑥𝑥1 + 𝑏𝑏𝑥𝑥2
+    where 𝑥𝑥2 enters linearly, 𝑏𝑏 > 0, and 𝑣𝑣(𝑥𝑥1 ) is a
+    nonlinear function of 𝑥𝑥1 .
+      For example, 𝑣𝑣 𝑥𝑥1 = 𝑎𝑎 ln 𝑥𝑥1 or 𝑣𝑣 𝑥𝑥1 = 𝑎𝑎𝑥𝑥1𝛼𝛼 , where
+       𝑎𝑎 > 0 and 𝛼𝛼 ≠ 1.
+
+  – The MRS is constant in the good that enters
+    linearly in the utility function (𝑥𝑥2 in our case).
+
+                       Advanced Microeconomic Theory                 113
+       Common Utility Functions
+• MRS of quasilinear preferences
+
+
+
+
+                    Advanced Microeconomic Theory   114
+     Common Utility Functions
+– For 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑣𝑣 𝑥𝑥1 + 𝑏𝑏𝑥𝑥2 , the marginal utilities are
+                   𝜕𝜕𝜕𝜕           𝜕𝜕𝜕𝜕    𝜕𝜕𝑣𝑣
+                        = 𝑏𝑏 and       =
+                  𝜕𝜕𝑥𝑥2          𝜕𝜕𝑥𝑥1   𝜕𝜕𝑥𝑥1
+  which implies
+                                                𝜕𝜕𝜕𝜕
+                                               𝜕𝜕𝑥𝑥1
+                        𝑀𝑀𝑀𝑀𝑀𝑀𝑥𝑥1 ,𝑥𝑥2 =
+                                                 𝑏𝑏
+which is constant in the good entering linearly, 𝑥𝑥2
+– Quasilinear preferences are often used to represent
+  the consumption of goods that are relatively
+  insensitive to income.
+– Examples: garlic, toothpaste, etc.
+                     Advanced Microeconomic Theory            115
+Properties of Preference
+       Relations
+
+
+
+
+       Advanced Microeconomic Theory   116
+Properties of Preference Relations
+• Homogeneity:
+  – A utility function is homogeneous of degree 𝑘𝑘 if
+    varying the amounts of all goods by a common
+    factor 𝛼𝛼 > 0 produces an increase in the utility
+    level by 𝛼𝛼 𝑘𝑘 .
+  – That is, for the case of two goods,
+              𝑢𝑢 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 = 𝛼𝛼 𝑘𝑘 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2
+    where 𝛼𝛼 > 0. This allows for:
+       𝛼𝛼 > 1 in the case of a common increase
+       0 < 𝛼𝛼 < 1 in the case of a common decrease
+
+                        Advanced Microeconomic Theory   117
+Properties of Preference Relations
+– Three properties:
+  1) The first-order derivative of a function
+     𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 which is homogeneous of degree 𝑘𝑘
+     is homogeneous of degree 𝑘𝑘 − 1.
+     Given 𝑢𝑢 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 = 𝛼𝛼 𝑘𝑘 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 , we can show
+      that
+         𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2          𝑘𝑘
+                                         𝜕𝜕𝜕𝜕 𝑥𝑥1 , 𝑥𝑥2
+                            � 𝛼𝛼 = 𝛼𝛼 �
+                𝜕𝜕𝑥𝑥𝑖𝑖                         𝜕𝜕𝑥𝑥𝑖𝑖
+      or re-arranging
+           𝑢𝑢′ 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 = 𝛼𝛼 𝑘𝑘−1 𝑢𝑢′ 𝑥𝑥1 , 𝑥𝑥2
+                      Advanced Microeconomic Theory               118
+Properties of Preference Relations
+ 2) The indifference curves of homogeneous
+    functions are radial expansions of one
+    another.
+    That is, if two bundles 𝑦𝑦 and 𝑧𝑧 lie on the same
+     indifference curve, i.e., 𝑢𝑢 𝑦𝑦 = 𝑢𝑢(𝑧𝑧), bundles 𝛼𝛼𝛼𝛼
+     and 𝛼𝛼𝛼𝛼 also lie on the same indifference curve,
+     i.e., 𝑢𝑢 𝛼𝛼𝛼𝛼 = 𝑢𝑢(𝛼𝛼𝛼𝛼).
+
+
+
+
+                   Advanced Microeconomic Theory          119
+Properties of Preference Relations
+• Homogenous preference
+          x2
+
+
+                     αy
+
+                y
+
+                                            αz      u2
+                                    z
+                                                    u1
+                                                     x1
+                    Advanced Microeconomic Theory         120
+Properties of Preference Relations
+ 3) The MRS of a homogeneous function is constant
+    for all points along each ray from the origin.
+     That is, the slope of the indifference curve at point 𝑦𝑦
+      coincides with the slope at a “scaled-up version” of
+      point 𝑦𝑦, 𝛼𝛼𝛼𝛼, where 𝛼𝛼 > 1.
+     The MRS at bundle 𝑥𝑥 = 𝑥𝑥1 , 𝑥𝑥2 is
+                                         𝜕𝜕𝜕𝜕(𝑥𝑥1 , 𝑥𝑥2 )
+                                              𝜕𝜕𝑥𝑥1
+                𝑀𝑀𝑀𝑀𝑆𝑆1,2 𝑥𝑥1 , 𝑥𝑥2    =
+                                         𝜕𝜕𝜕𝜕(𝑥𝑥1 , 𝑥𝑥2 )
+                                              𝜕𝜕𝑥𝑥2
+
+
+                       Advanced Microeconomic Theory             121
+Properties of Preference Relations
+    The MRS at (𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 ) is
+                                     𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2
+                                            𝜕𝜕𝑥𝑥1
+       𝑀𝑀𝑀𝑀𝑆𝑆1,2 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 =
+                                     𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2
+                                            𝜕𝜕𝑥𝑥2
+                                   𝜕𝜕𝜕𝜕 𝑥𝑥1 , 𝑥𝑥2      𝜕𝜕𝜕𝜕(𝑥𝑥1 , 𝑥𝑥2 )
+                           𝛼𝛼 𝑘𝑘−1
+                                        𝜕𝜕𝑥𝑥1               𝜕𝜕𝑥𝑥1
+                      =                             =
+                                   𝜕𝜕𝜕𝜕 𝑥𝑥1 , 𝑥𝑥2      𝜕𝜕𝜕𝜕(𝑥𝑥1 , 𝑥𝑥2 )
+                           𝛼𝛼 𝑘𝑘−1                          𝜕𝜕𝑥𝑥2
+                                        𝜕𝜕𝑥𝑥2
+   where the second equality uses the first property.
+
+    Hence, the MRS is unaffected along all the points
+     crossed by a ray from the origin.
+
+                           Advanced Microeconomic Theory                  122
+Properties of Preference Relations
+• Homotheticity:
+  – A utility function 𝑢𝑢(𝑥𝑥) is homothetic if it is a
+    monotonic transformation of a homogeneous
+    function.
+  – That is, 𝑢𝑢 𝑥𝑥 = 𝑔𝑔(𝑣𝑣 𝑥𝑥 ), where
+     • 𝑔𝑔: ℝ → ℝ is a strictly increasing function, and
+     • 𝑣𝑣: ℝ𝑛𝑛 → ℝ is homogeneous of degree 𝑘𝑘.
+
+
+
+
+                      Advanced Microeconomic Theory       123
+Properties of Preference Relations
+• Properties:
+  – If 𝑢𝑢 𝑥𝑥 is homothetic, and two bundles 𝑦𝑦 and 𝑧𝑧 lie
+    on the same indifference curve, i.e., 𝑢𝑢 𝑦𝑦 = 𝑢𝑢(𝑧𝑧),
+    bundles 𝛼𝛼𝛼𝛼 and 𝛼𝛼𝛼𝛼 also lie on the same
+    indifference curve, i.e., 𝑢𝑢 𝛼𝛼𝛼𝛼 = 𝑢𝑢(𝛼𝛼𝛼𝛼) for all 𝛼𝛼 >
+    0.
+      In particular,
+           𝑢𝑢 𝛼𝛼𝛼𝛼 = 𝑔𝑔(𝑣𝑣 𝛼𝛼𝛼𝛼 ) = 𝑔𝑔(𝛼𝛼 𝑘𝑘 𝑣𝑣 𝑦𝑦 )
+            𝑢𝑢 𝛼𝛼𝑧𝑧 = 𝑔𝑔(𝑣𝑣 𝛼𝛼𝑧𝑧 ) = 𝑔𝑔(𝛼𝛼 𝑘𝑘 𝑣𝑣 𝑧𝑧 )
+
+
+                       Advanced Microeconomic Theory       124
+Properties of Preference Relations
+ – The MRS of a homothetic function is homogeneous of
+   degree zero.
+ – In particular,
+                                       𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 ,𝛼𝛼𝑥𝑥2         𝜕𝜕𝜕𝜕 𝜕𝜕𝜕𝜕(𝛼𝛼𝑥𝑥1 ,𝛼𝛼𝑥𝑥2 )
+                                                                      �
+                                             𝜕𝜕𝑥𝑥1               𝜕𝜕𝑣𝑣       𝜕𝜕𝑥𝑥1
+    𝑀𝑀𝑀𝑀𝑆𝑆1,2 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 =          𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 ,𝛼𝛼𝑥𝑥2   =     𝜕𝜕𝜕𝜕 𝜕𝜕𝜕𝜕(𝛼𝛼𝑥𝑥1 ,𝛼𝛼𝑥𝑥2 )
+                                                                      �
+                                             𝜕𝜕𝑥𝑥2               𝜕𝜕𝑣𝑣       𝜕𝜕𝑥𝑥2
+  where 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 ≡ 𝑔𝑔(𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 ).
+                𝜕𝜕𝜕𝜕
+ – Canceling the terms yields
+                𝜕𝜕𝑣𝑣
+                 𝜕𝜕𝜕𝜕(𝛼𝛼𝑥𝑥1 ,𝛼𝛼𝑥𝑥2 )                𝜕𝜕𝜕𝜕(𝑥𝑥1 ,𝑥𝑥2 )
+                                           𝛼𝛼 𝑘𝑘−1 �
+                       𝜕𝜕𝑥𝑥1                            𝜕𝜕𝑥𝑥1
+                 𝜕𝜕𝜕𝜕(𝛼𝛼𝑥𝑥1 ,𝛼𝛼𝑥𝑥2 )   =            𝜕𝜕𝜕𝜕(𝑥𝑥1 ,𝑥𝑥2 )
+                                           𝛼𝛼 𝑘𝑘−1 �
+                       𝜕𝜕𝑥𝑥2                            𝜕𝜕𝑥𝑥2
+
+                          Advanced Microeconomic Theory                                     125
+Properties of Preference Relations
+– Canceling the 𝛼𝛼 𝑘𝑘−1 terms yields
+                                 𝜕𝜕𝜕𝜕(𝑥𝑥1 ,𝑥𝑥2 )
+                                     𝜕𝜕𝑥𝑥1
+                                 𝜕𝜕𝜕𝜕(𝑥𝑥1 ,𝑥𝑥2 )
+                                     𝜕𝜕𝑥𝑥2
+– In summary,
+                                    𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2
+                                          𝜕𝜕𝑥𝑥1
+       𝑀𝑀𝑀𝑀𝑀𝑀1,2 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2    =                    =
+                                    𝜕𝜕𝜕𝜕 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2
+                                          𝜕𝜕𝑥𝑥2
+          𝜕𝜕𝜕𝜕(𝑥𝑥1 , 𝑥𝑥2 )
+               𝜕𝜕𝑥𝑥1
+        =                  = 𝑀𝑀𝑀𝑀𝑀𝑀1,2 𝑥𝑥1 , 𝑥𝑥2
+          𝜕𝜕𝜕𝜕(𝑥𝑥1 , 𝑥𝑥2 )
+               𝜕𝜕𝑥𝑥2
+                         Advanced Microeconomic Theory     126
+Properties of Preference Relations
+• Homotheticity (graphical interpretation)
+  – A preference relation on 𝑋𝑋 = ℝ𝐿𝐿+ is homothetic if
+    all indifference sets are related to proportional
+    expansions along the rays.
+  – That is, if the consumer is indifferent between
+    bundles 𝑥𝑥 and 𝑦𝑦, i.e., 𝑥𝑥~𝑦𝑦, he must also be
+    indifferent between a common scaling in these
+    two bundles, i.e., 𝛼𝛼𝛼𝛼~𝛼𝛼𝛼𝛼, for every scalar 𝛼𝛼 > 0.
+
+
+                     Advanced Microeconomic Theory       127
+Properties of Preference Relations
+ – For a given ray from the origin, the slope of the
+   indifference curves (i.e., the MRS) that the ray crosses
+   coincides.
+     The ratio between the two goods 𝑥𝑥1 /𝑥𝑥2 remains
+      constant along all points in the ray.
+ – Intuitively, the rate at which a consumer is willing to
+   substitute one good for another (his MRS) only
+   depends on:
+    • the rate at which he consumes the two goods, i.e., 𝑥𝑥1 /𝑥𝑥2 ,
+      but does not depend on the utility level he obtains.
+ – But it is independent in the volume of goods he
+   consumes, and in the utility he achieves.
+                       Advanced Microeconomic Theory                  128
+Properties of Preference Relations
+• Homogeneity and homotheticity:
+  – Homogeneous functions are homothetic.
+      We only need to apply a monotonic transformation
+       𝑔𝑔(�) on 𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 , i.e., 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑔𝑔(𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 ).
+  – But homothetic functions are not necessarily
+    homogeneous.
+      Take a homogeneous (of degree two) function
+       𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥1 𝑥𝑥2 .
+      Apply a monotonic transformation 𝑔𝑔 𝑦𝑦 = 𝑦𝑦 + 𝑎𝑎,
+       where 𝑎𝑎 > 0, to obtain homothetic function
+                    𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑥𝑥1 𝑥𝑥2 + 𝑎𝑎
+                        Advanced Microeconomic Theory               129
+ Properties of Preference Relations
+ This function is not homogeneous, since increasing
+  all arguments by 𝛼𝛼 yields
+        𝑢𝑢 𝛼𝛼𝑥𝑥1 , 𝛼𝛼𝑥𝑥2 = 𝛼𝛼𝑥𝑥1 𝛼𝛼𝑥𝑥2 + 𝑎𝑎
+                        = 𝛼𝛼 2 𝑣𝑣 𝑥𝑥1 , 𝑥𝑥2 + 𝑎𝑎
+
+ Other monotonic transformations yielding non-
+  homogeneous utility functions are
+        𝑔𝑔 𝑦𝑦 = 𝑎𝑎𝑦𝑦 𝛾𝛾 + 𝑏𝑏𝑏𝑏, where 𝑎𝑎, 𝑏𝑏, 𝛾𝛾 > 0, or
+               𝑔𝑔 𝑦𝑦 = 𝑎𝑎 ln 𝑦𝑦, where 𝑎𝑎 > 0
+
+                      Advanced Microeconomic Theory        130
+ Properties of Preference Relations
+• Utility functions that satisfy homotheticity:
+   – Linear utility function 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝑎𝑎𝑥𝑥1 + 𝑏𝑏𝑥𝑥2 , where
+     𝑎𝑎, 𝑏𝑏 > 0
+       Goods 𝑥𝑥1 and 𝑥𝑥2 are perfect substitutes
+                            𝑎𝑎                           𝑎𝑎𝑎𝑎 𝑎𝑎
+       𝑀𝑀𝑀𝑀𝑀𝑀 𝑥𝑥1 , 𝑥𝑥2   = and 𝑀𝑀𝑀𝑀𝑀𝑀 𝑡𝑡𝑥𝑥1 , 𝑡𝑡𝑥𝑥2   = =
+                            𝑏𝑏                           𝑏𝑏𝑏𝑏 𝑏𝑏
+   – The Leontief utility function 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = 𝐴𝐴 �
+     min{𝑎𝑎𝑥𝑥1 , 𝑏𝑏𝑥𝑥2 }, where 𝐴𝐴 > 0
+       Goods 𝑥𝑥1 and 𝑥𝑥2 are perfect complements
+       We cannot define the MRS along all the points of the
+        indifference curves
+       However, the slope of the indifference curves coincide for
+        those points where these curves are crossed by a ray from
+        the origin.     Advanced Microeconomic Theory            131
+Properties of Preference Relations
+• Perfect complements and homotheticity
+         x2
+
+
+                                                             a
+                                                      x2 =     x1
+                                                             b
+
+
+                                                       u2 = 2 Aa
+
+                                                       u1 = Aa
+              a
+                  b
+                                                                    x1
+
+                      Advanced Microeconomic Theory                      132
+Properties of Preference Relations
+• Example 1.9 (Testing for quasiconcavity and
+  homotheticity):
+  – Let us determine if 𝑢𝑢 𝑥𝑥1 , 𝑥𝑥2 = ln(𝑥𝑥10.3 𝑥𝑥20.6 ) is
+    quasiconcave, homothetic, both or neither.
+  – Quasiconcavity:
+      Note that ln(𝑥𝑥10.3 𝑥𝑥20.6 ) is a monotonic transformation of
+       the Cobb-Douglas function 𝑥𝑥10.3 𝑥𝑥20.6 .
+      Since 𝑥𝑥10.3 𝑥𝑥20.6 is a Cobb-Douglas function, where 𝛼𝛼 +
+       𝛽𝛽 = 0.3 + 0.6 < 1, it must be a concave function.
+      Hence, 𝑥𝑥10.3 𝑥𝑥20.6 is also quasiconcave, which implies
+       ln(𝑥𝑥10.3 𝑥𝑥20.6 ) is quasiconcave (as quasiconcavity is
+       preserved through a monotonic transformation).
+                       Advanced Microeconomic Theory              133
+Properties of Preference Relations
+• Example 1.9 (continued):
+  – Homogeneity:
+      Increasing all arguments by a common factor 𝛼𝛼,
+
+          𝛼𝛼𝑥𝑥1 0.3 𝛼𝛼𝑥𝑥2 0.6 = 𝛼𝛼 0.3 𝑥𝑥10.3 𝛼𝛼 0.6 𝑥𝑥20.6 = 𝛼𝛼 0.9 𝑥𝑥10.3 𝑥𝑥20.6
+      Hence, 𝑥𝑥10.3 𝑥𝑥20.6 is homogeneous of degree 0.9
+
+  – Homotheticity:
+      Therefore, 𝑥𝑥10.3 𝑥𝑥20.6 is also homothetic.
+      As a consequence, its transformation, ln(𝑥𝑥10.3 𝑥𝑥20.6 ), is also
+       homothetic (as homotheticity is preserved through a
+       monotonic transformation).
+
+                            Advanced Microeconomic Theory                            134
+Properties of Preference Relations
+• Quasilinear preference relations:
+  – The preference relation on 𝑋𝑋 = (−∞, ∞)×ℝ𝐿𝐿−1
+                                             +    is
+    quasilinear with respect to good 1 if:
+    1) All indifference sets are parallel displacements of
+       each other along the axis of good 1.
+        That is, if 𝑥𝑥~𝑦𝑦, then (𝑥𝑥 + 𝛼𝛼𝑒𝑒1 )~(𝑦𝑦 + 𝛼𝛼𝑒𝑒1 ), where 𝑒𝑒1 =
+         (1,0, … , 0).
+    2) Good 1 is desirable.
+        That is, 𝑥𝑥 + 𝛼𝛼𝑒𝑒1 ≻ 𝑥𝑥 for all 𝑥𝑥 and 𝛼𝛼 > 0.
+
+
+                        Advanced Microeconomic Theory                   135
+Properties of Preference Relations
+• Quasilinear preference-I
+
+                                 x2
+
+
+
+
+     y       y + αe1                     y             y + αe1
+
+
+
+
+     x       x + αe1                      x            x + αe1
+
+
+                                                                 x1
+                       Advanced Microeconomic Theory                  136
+Properties of Preference Relations
+• Notes:
+  – No lower bound on the consumption of good 1,
+    i.e., 𝑥𝑥1 ∈ (−∞, ∞).
+  – If 𝑥𝑥 ≻ 𝑦𝑦, then (𝑥𝑥 + 𝛼𝛼𝑒𝑒1 ) ≻ (𝑦𝑦 + 𝛼𝛼𝑒𝑒1 ).
+
+
+
+
+                       Advanced Microeconomic Theory   137
+ Properties of Preference Relations
+• Quasilinear preference-II
+
+                             x2
+
+
+
+
+                                                   x             x + αe1
+
+
+
+
+                                       y               y + αe1
+
+
+                                                                           x1
+                   Advanced Microeconomic Theory                                138
+Properties of Preference Relations
+• The properties we considered so far are not
+  enough to guarantee that a preference relation
+  can be represented by a utility function.
+• Example:
+  – Lexicographic preferences cannot be represented by a
+    utility function.
+
+
+
+
+                    Advanced Microeconomic Theory     139
+     Lexicographic Preferences
+– A bundle 𝑥𝑥 = (𝑥𝑥1 , 𝑥𝑥2 ) is weakly preferred to
+  another bundle 𝑦𝑦 = (𝑦𝑦1 , 𝑦𝑦2 ), i.e., (𝑥𝑥1 , 𝑥𝑥2 ) ≿
+  (𝑦𝑦1 , 𝑦𝑦2 ), if and only if
+                   𝑥𝑥1 > 𝑦𝑦1 ,    or if
+               �
+                 𝑥𝑥1 = 𝑦𝑦1 and 𝑥𝑥2 > 𝑦𝑦2
+– Intuition:
+    The individual prefers bundle 𝑥𝑥 if it contains more of
+     good 1 than bundle 𝑦𝑦, i.e., 𝑥𝑥1 > 𝑦𝑦1 .
+    If, however, both bundles contain the same amount of
+     good 1, 𝑥𝑥1 = 𝑦𝑦1 , then the individual prefers bundle 𝑥𝑥 if
+     it contains more of the second good, i.e., 𝑥𝑥2 > 𝑦𝑦2 .
+                     Advanced Microeconomic Theory             140
+    Lexicographic Preferences
+– Indifference set cannot be drawn as an
+  indifference curve.
+    For a given bundle 𝑥𝑥 ′ = (𝑥𝑥1′ , 𝑥𝑥2′ ), there are no
+     more bundles for which the consumer is
+     indifferent.
+    Indifference sets are then singletons (sets
+     containing only one element).
+
+
+
+
+                     Advanced Microeconomic Theory            141
+      Lexicographic Preferences
+• Lexicographic preference relation
+             x2
+
+
+                   LCS
+
+
+
+            x '2                         x'         UCS
+
+
+
+
+                                     x '1                 x1
+                    Advanced Microeconomic Theory              142
+Continuous Preferences
+
+
+
+
+      Advanced Microeconomic Theory   143
+         Continuous Preferences
+• In order to guarantee that preference relations can
+  be represented by a utility function we need
+  continuity.
+• Continuity: A preference relation defined on 𝑋𝑋 is
+  continuous if it is preserved under limits.
+   – That is, for any sequence of pairs
+                 (𝑥𝑥 𝑛𝑛 , 𝑦𝑦 𝑛𝑛 ) ∞           𝑛𝑛   𝑛𝑛
+                                  𝑛𝑛=1 with 𝑥𝑥 ≿ 𝑦𝑦 for all 𝑛𝑛
+     and where lim 𝑥𝑥 𝑛𝑛 = 𝑥𝑥 and lim 𝑦𝑦 𝑛𝑛 = 𝑦𝑦, the
+                    𝑛𝑛→∞                   𝑛𝑛→∞
+     preference relation is maintained in the limiting points,
+     i.e., 𝑥𝑥 ≿ 𝑦𝑦.
+                      Advanced Microeconomic Theory        144
+      Continuous Preferences
+– Intuitively, there can be no sudden jumps (i.e.,
+  preference reversals) in an individual preference
+  over a sequence of bundles.
+
+
+
+
+                 Advanced Microeconomic Theory        145
+        Continuous Preferences
+• Lexicographic preferences are not continuous
+                                           𝑛𝑛            1
+  – Consider the sequence 𝑥𝑥 =           and 𝑦𝑦 𝑛𝑛 =        ,0
+                                                         𝑛𝑛
+    (0,1), where 𝑛𝑛 = {1,2,3, … }.
+  – The sequence 𝑦𝑦 𝑛𝑛 = (0,1) is constant in 𝑛𝑛.
+                          𝑛𝑛         1
+  – The sequence 𝑥𝑥 =                   ,0      is not:
+                                     𝑛𝑛
+      It starts at 𝑥𝑥 1 = 1,0 , and moves leftwards to 𝑥𝑥 2 =
+        1                1
+          , 0 , 𝑥𝑥 3 =     , 0 , etc.
+        2                3
+
+
+
+                         Advanced Microeconomic Theory           146
+           Continuous Preferences
+• Thus, the individual
+  prefers:                                 x2
+                                            1
+                                                           y n, ∀ n , y 1 = y 2 = … = y n
+
+  𝑥𝑥 1 = 1,0 ≻ 0,1 = 𝑦𝑦1
+           1
+  𝑥𝑥 2 =     ,0   ≻ 0,1 = 𝑦𝑦 2
+           2
+           1
+  𝑥𝑥 3 =     ,0   ≻ 0,1 = 𝑦𝑦 3
+           3                                                 lim x n = (0,0)
+                                                            n →∞
+                  ⋮
+• But,
+ lim 𝑥𝑥 𝑛𝑛 = 0,0 ≺ 0,1 = lim 𝑦𝑦 𝑛𝑛                        x4 x3      x2                     x1
+𝑛𝑛→∞                      𝑛𝑛→∞
+                                                0                    ½                      1 x1
+• Preference reversal!
+                                                          ¼ ⅓
+
+
+                          Advanced Microeconomic Theory                                     147
+Existence of Utility Function
+
+
+
+
+         Advanced Microeconomic Theory   148
+      Existence of Utility Function
+• If a preference relation satisfies monotonicity and
+  continuity, then there exists a utility function 𝑢𝑢(�)
+  representing such preference relation.
+• Proof:
+   – Take a bundle 𝑥𝑥 ≠ 0.
+   – By monotonicity, 𝑥𝑥 ≿ 0, where 0 = (0,0, … , 0).
+       That is, if bundle 𝑥𝑥 ≠ 0, it contains positive
+        amounts of at least one good and, it is preferred to
+        bundle 0.
+                     Advanced Microeconomic Theory        149
+   Existence of Utility Function
+– Let m ≡ max{𝑥𝑥1 , 𝑥𝑥2 , … , 𝑥𝑥𝑁𝑁 } be the number of units
+  of the most abundant good in bundle x.
+– Define bundle M as the bundle where all
+  components coincide with the highest component
+  of bundle x. That is,
+                 𝑀𝑀 = (𝑚𝑚, 𝑚𝑚, … , 𝑚𝑚).
+– Hence, by monotonicity, 𝑀𝑀 ≿ 𝑥𝑥.
+– Bundles 0 and 𝑀𝑀 are both on the main diagonal,
+  since each of them contains the same amount of
+  good 𝑥𝑥1 and 𝑥𝑥2 .
+                   Advanced Microeconomic Theory         150
+Existence of Utility Function
+ x2
+
+                                         45º, x1 = x2
+                                     M
+
+
+
+
+                                     x
+
+
+
+
+  0                                                     x1
+         Advanced Microeconomic Theory                       151
+   Existence of Utility Function
+– By continuity and monotonicity, there exists a
+  bundle that is indifferent to 𝑥𝑥 and which lies on
+  the main diagonal.
+– By monotonicity, this bundle is unique
+    Otherwise, modifying any of its components would
+     lead to higher/lower indifference curves.
+– Denote such bundle as
+              𝑡𝑡 𝑥𝑥 , 𝑡𝑡 𝑥𝑥 , … , 𝑡𝑡(𝑥𝑥)
+– Let 𝑢𝑢 𝑥𝑥 = 𝑡𝑡 𝑥𝑥 , which is a real number.
+
+                    Advanced Microeconomic Theory      152
+Existence of Utility Function
+  x2
+
+
+                                             45º, x1 = x2
+                                         M
+
+
+ t(x)
+
+                                         x
+
+
+
+
+    0                t(x)                                   x1
+         Advanced Microeconomic Theory                           153
+  Existence of Utility Function
+– Applying the same steps to another bundle 𝑦𝑦 ≠ 𝑥𝑥,
+  we obtain
+               𝑡𝑡 𝑦𝑦 , 𝑡𝑡 𝑦𝑦 , … , 𝑡𝑡(𝑦𝑦)
+
+ and let 𝑢𝑢 𝑦𝑦 = 𝑡𝑡 𝑦𝑦 , which is also a real number.
+
+
+
+
+                 Advanced Microeconomic Theory          154
+Existence of Utility Function
+   x2
+
+
+                                                 45º, x1 = x2
+                                             M
+         y
+
+  t(x)
+                                             x
+  t(y)
+
+
+
+
+     0         t(y)       t(x)                                  x1
+             Advanced Microeconomic Theory                           155
+   Existence of Utility Function
+– We know that
+           𝑥𝑥~ 𝑡𝑡 𝑥𝑥 , 𝑡𝑡 𝑥𝑥 , … , 𝑡𝑡(𝑥𝑥)
+           𝑦𝑦~ 𝑡𝑡 𝑦𝑦 , 𝑡𝑡 𝑦𝑦 , … , 𝑡𝑡(𝑦𝑦)
+                     𝑥𝑥 ≿ 𝑦𝑦
+– Hence, by transitivity, 𝑥𝑥 ≿ 𝑦𝑦 iff
+  𝑥𝑥~ 𝑡𝑡 𝑥𝑥 , 𝑡𝑡 𝑥𝑥 , … , 𝑡𝑡(𝑥𝑥) ≿ 𝑡𝑡 𝑦𝑦 , 𝑡𝑡 𝑦𝑦 , … , 𝑡𝑡 𝑦𝑦 ~𝑦𝑦
+– And by monotonicity,
+    𝑥𝑥 ≿ 𝑦𝑦 ⟺ 𝑡𝑡 𝑥𝑥 ≥ 𝑡𝑡 𝑦𝑦 ⟺ 𝑢𝑢(𝑥𝑥) ≥ 𝑢𝑢(𝑦𝑦)
+
+
+                     Advanced Microeconomic Theory           156
+  Existence of Utility Function
+– Note: A utility function can satisfy continuity but
+  still be non-differentiable.
+    For instance, the Leontief utility function,
+     𝐴𝐴min{𝑎𝑎𝑥𝑥1 ,𝑏𝑏𝑥𝑥2 }, is continuous but cannot be
+     differentiated at the kink.
+
+
+
+
+                    Advanced Microeconomic Theory        157
+Social and Reference-Dependent
+          Preferences
+
+
+
+
+          Advanced Microeconomic Theory   158
+              Social Preferences
+• We now examine social, as opposed to individual,
+  preferences.
+• Consider additively separable utility functions of
+  the form
+            𝑢𝑢𝑖𝑖 (𝑥𝑥𝑖𝑖 , 𝑥𝑥) = 𝑓𝑓(𝑥𝑥𝑖𝑖 ) + 𝑔𝑔𝑖𝑖 (𝑥𝑥)
+  where
+   – 𝑓𝑓(𝑥𝑥𝑖𝑖 ) captures individual 𝑖𝑖’s utility from the
+     monetary amount that he receives, 𝑥𝑥𝑖𝑖 ;
+   – 𝑔𝑔𝑖𝑖 (𝑥𝑥) measures the utility/disutility he derives from
+     the distribution of payoffs 𝑥𝑥 = (𝑥𝑥1 , 𝑥𝑥2 , . . . , 𝑥𝑥𝑁𝑁 )
+     among all 𝑁𝑁 individuals.
+                       Advanced Microeconomic Theory            159
+                 Social Preferences
+• Fehr and Schmidt (1999):
+  – For the case of two players,
+     𝑢𝑢𝑖𝑖 (𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 ) = 𝑥𝑥𝑖𝑖 − 𝛼𝛼𝑖𝑖 max 𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 , 0 − 𝛽𝛽𝑖𝑖 max 𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 , 0
+
+    where 𝑥𝑥𝑖𝑖 is player 𝑖𝑖's payoff and 𝑗𝑗 ≠ 𝑖𝑖.
+  – Parameter 𝛼𝛼𝑖𝑖 ≥ 0 represents player 𝑖𝑖’s disutility
+    from envy
+      When 𝑥𝑥𝑖𝑖 < 𝑥𝑥𝑗𝑗 , max 𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 , 0 = 𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 > 0 but
+       max 𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 , 0 = 0.
+      Hence, 𝑢𝑢𝑖𝑖 (𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 ) = 𝑥𝑥𝑖𝑖 − 𝛼𝛼𝑖𝑖 (𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 ).
+                            Advanced Microeconomic Theory                           160
+              Social Preferences
+– Parameter 𝛽𝛽𝑖𝑖 ≥ 0 captures player 𝑖𝑖's disutility
+  from guilt
+    When 𝑥𝑥𝑖𝑖 > 𝑥𝑥𝑗𝑗 , max 𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 , 0 = 𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 > 0 but
+     max 𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 , 0 = 0.
+    Hence, 𝑢𝑢𝑖𝑖 𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 = 𝑥𝑥𝑖𝑖 − 𝛽𝛽𝑖𝑖 (𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 ).
+
+– Players’ envy is stronger than their guilt, i.e., 𝛼𝛼𝑖𝑖 ≥
+  𝛽𝛽𝑖𝑖 for 0 ≤ 𝛽𝛽𝑖𝑖 < 1.
+    Intuitively, players (weakly) suffer more from inequality
+     directed at them than inequality directed at others.
+
+                          Advanced Microeconomic Theory             161
+            Social Preferences
+– Thus players exhibit “concerns for fairness” (or
+  “social preferences”) in the distribution of payoffs.
+– If 𝛼𝛼𝑖𝑖 = 𝛽𝛽𝑖𝑖 = 0 for every player 𝑖𝑖, individuals only
+  care about their material payoff 𝑢𝑢𝑖𝑖 (𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 ) = 𝑥𝑥𝑖𝑖 .
+    Preferences coincide with the individual
+     preferences.
+
+
+
+
+                     Advanced Microeconomic Theory                162
+                     Social Preferences
+– Let’s depict the indifference
+  curves of this utility function
+  by fixing the utility level at
+  𝑢𝑢 = 𝑢𝑢.
+– When 𝑥𝑥𝑖𝑖 > 𝑥𝑥𝑗𝑗 ,
+    𝑢𝑢 = 𝑥𝑥𝑖𝑖 − 𝛽𝛽𝑖𝑖 (𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 )
+    which, solving for 𝑥𝑥𝑗𝑗 , yields
+             𝑢𝑢     1−𝛽𝛽𝑖𝑖
+    𝑥𝑥𝑗𝑗 =        −        𝑥𝑥𝑖𝑖
+             𝛽𝛽𝑖𝑖    𝛽𝛽𝑖𝑖
+                       𝑖𝑖1−𝛽𝛽
+   with slope −           for all
+                  𝛽𝛽𝑖𝑖
+   points below the 45-degree
+   line.
+– See downward sloping
+  segment of ICs.
+                                  Advanced Microeconomic Theory   163
+                Social Preferences
+– Similarly, when 𝑥𝑥𝑖𝑖 < 𝑥𝑥𝑗𝑗 ,
+  𝑢𝑢 = 𝑥𝑥𝑖𝑖 − 𝛼𝛼𝑖𝑖 (𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 ),
+  which, solving for 𝑥𝑥𝑗𝑗 , yields
+             𝑢𝑢   1+𝛼𝛼𝑖𝑖
+    𝑥𝑥𝑗𝑗 = − +             𝑥𝑥𝑖𝑖
+            𝛼𝛼𝑖𝑖     𝛼𝛼𝑖𝑖
+                 1+𝛼𝛼𝑖𝑖
+    with slope            above 45-
+                  𝛼𝛼𝑖𝑖
+     degree line.
+– See upward sloping
+  segment of the ICs.
+– Note that (𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 )-pairs to
+  the northeast yield larger
+  utility levels for individual
+  𝑖𝑖.
+                          Advanced Microeconomic Theory   164
+           Social Preferences
+– Remark 1: If
+    the disutility from envy is positive, 𝛼𝛼𝑖𝑖 ∈ 0,1 ;
+    the disutility from guilt is negative, 𝛽𝛽𝑖𝑖 ∈ (−1,0];
+     and
+    the former dominates the latter in absolute value,
+      𝛼𝛼𝑖𝑖 ≥ 𝛽𝛽𝑖𝑖 ;
+ then Fehr and Schmidt's (1999) specification
+ would capture concerns for status acquisition.
+
+
+
+                   Advanced Microeconomic Theory         165
+            Social Preferences
+– Remark 2: If
+                                                       1
+    the disutility from envy is negative, 𝛼𝛼𝑖𝑖 ∈ − , 0 ;
+                                                       2
+                                                     1
+    the disutility from guilt is positive, 𝛽𝛽𝑖𝑖 ∈ 0, ; and
+                                                     2
+    the latter dominates the former in absolute value,
+      𝛼𝛼𝑖𝑖 < 𝛽𝛽𝑖𝑖 ;
+  then Fehr and Schmidt's (1999) specification would
+  now capture a preference for efficiency.
+
+  That is, a reduction in my own payoff is acceptable
+  only if the payoff other individuals receive increases
+  by a larger amount.
+                    Advanced Microeconomic Theory             166
+              Social Preferences
+• Bolton and Ockenfels (2000):
+  – Similar to Fehr and Schmidt (1999), but they allow
+    for nonlinearities
+                                         𝑥𝑥𝑖𝑖
+                         𝑢𝑢𝑖𝑖 𝑥𝑥𝑖𝑖 ,
+                                     𝑥𝑥𝑖𝑖 +𝑥𝑥𝑗𝑗
+
+    where 𝑢𝑢𝑖𝑖 (�)
+     • increases in 𝑥𝑥𝑖𝑖 (i.e., selfish component)
+     • decreases in the share of total payoffs that
+                                 𝑥𝑥
+       individual 𝑖𝑖 enjoys, 𝑖𝑖 (i.e., social preferences)
+                               𝑥𝑥𝑖𝑖 +𝑥𝑥𝑗𝑗
+
+                     Advanced Microeconomic Theory           167
+               Social Preferences
+– For instance,
+                                                                          1
+                              𝑥𝑥𝑖𝑖                               𝑥𝑥𝑖𝑖     2
+              𝑢𝑢𝑖𝑖 𝑥𝑥𝑖𝑖 ,               = 𝑥𝑥𝑖𝑖 − 𝛼𝛼
+                          𝑥𝑥𝑖𝑖 +𝑥𝑥𝑗𝑗                         𝑥𝑥𝑖𝑖 +𝑥𝑥𝑗𝑗
+
+– Letting 𝑢𝑢 = 𝑢𝑢 and solving for 𝑥𝑥𝑗𝑗 yields the indifference
+  curve
+                        𝑥𝑥𝑖𝑖 𝛼𝛼 2 − 𝑢𝑢 − 𝑥𝑥𝑖𝑖 2
+                𝑥𝑥𝑗𝑗 =
+                                 𝑢𝑢 − 𝑥𝑥𝑖𝑖 2
+  which produces nonlinear indifference curves
+  (nonlinear in 𝑥𝑥𝑖𝑖 ).
+
+                             Advanced Microeconomic Theory                    168
+               Social Preferences
+• Charness and Rabin (2002):
+  – Fehr and Schmidt’s (1999) preferences might not
+    explain individuals’ reactions in strategic settings.
+     • Example: inferring certain intentions from
+       individuals who acted before them.
+  – Utility function that rationalizes such behavior
+       𝑢𝑢𝑖𝑖 𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 = 𝑥𝑥𝑖𝑖 − 𝛼𝛼𝑖𝑖 − 𝜃𝜃𝛾𝛾𝑗𝑗 max 𝑥𝑥𝑗𝑗 − 𝑥𝑥𝑖𝑖 , 0
+                            −(𝛽𝛽𝑖𝑖 + 𝜃𝜃𝛾𝛾𝑗𝑗 ) max 𝑥𝑥𝑖𝑖 − 𝑥𝑥𝑗𝑗 , 0
+    where parameter 𝛾𝛾𝑗𝑗 only takes two possible
+    values, i.e., 𝛾𝛾𝑗𝑗 = {−1,0}.
+                         Advanced Microeconomic Theory               169
+            Social Preferences
+– If 𝛾𝛾𝑗𝑗 = −1, individual 𝑖𝑖 interprets that 𝑗𝑗 misbehaved,
+  and thus increases its envy parameter by 𝜃𝜃, or
+  reduces his guilt parameter by 𝜃𝜃.
+– If 𝛾𝛾𝑗𝑗 = 0, individual 𝑖𝑖 interprets that 𝑗𝑗 is well behaved,
+  implying that the utility function coincides with that in
+  Fehr and Schmidt's (1999) specification.
+– Intuitively, when individuals interpret that others
+  misbehaved, the envy (guilt) concerns analyzed above
+  are emphasized (attenuated, respectively).
+
+                     Advanced Microeconomic Theory             170
+                 Social Preferences
+• Andreoni and Miller (2002):
+  – A CES utility function
+                                                              1
+                                       𝜌𝜌                  𝜌𝜌 𝜌𝜌
+             𝑢𝑢𝑖𝑖 (𝑥𝑥𝑖𝑖 , 𝑥𝑥𝑗𝑗 ) = 𝛼𝛼𝑥𝑥𝑖𝑖 +      1 − 𝛼𝛼 𝑥𝑥𝑗𝑗
+    where 𝑥𝑥𝑖𝑖 and 𝑥𝑥𝑗𝑗 are the monetary payoff of individual 𝑖𝑖
+    rather than the amount of goods.
+
+  – If individual 𝑖𝑖 is completely selfish, i.e., 𝛼𝛼 = 1, 𝑢𝑢(𝑥𝑥𝑖𝑖 ) = 𝑥𝑥𝑖𝑖
+
+
+
+                           Advanced Microeconomic Theory              171
+           Social Preferences
+– If 𝛼𝛼 ∈ (0,1), parameter 𝜌𝜌 captures the elasticity of
+  substitution between individual 𝑖𝑖's and 𝑗𝑗's payoffs.
+    That is, if 𝑥𝑥𝑗𝑗 decreases by one percent, 𝑥𝑥𝑖𝑖 needs to
+     be increased by 𝜌𝜌 percent for individual 𝑖𝑖 to
+     maintain his utility level unaffected.
+
+
+
+
+                    Advanced Microeconomic Theory           172
+Hyperbolic and Quasi-
+Hyperbolic Discounting
+
+
+
+
+      Advanced Microeconomic Theory   173
+Exponential discounting (standard)
+• The discounted value of an amount of money $𝑥𝑥 received 𝑡𝑡
+  periods from today is
+                                            1
+                                                 𝑡𝑡
+                                                    𝑥𝑥
+                                     (1 + 𝑟𝑟)
+• We can find the “subjective discount rate” which measures how
+     1
+           𝑥𝑥 varies along time, relative to its initial value,
+  (1+𝑟𝑟)𝑡𝑡
+                  1
+        𝜕𝜕               𝑥𝑥                             1
+              (1 + 𝑟𝑟)𝑡𝑡      −ln(1 + 𝑟𝑟)
+                                                  (1   +   𝑟𝑟) 𝑡𝑡 𝑥𝑥
+                 𝜕𝜕𝑡𝑡       =                                        = −ln(1 + 𝑟𝑟)
+                1                             1
+                       𝑥𝑥                              𝑥𝑥
+            (1 + 𝑟𝑟)𝑡𝑡                  (1 + 𝑟𝑟)𝑡𝑡
+   which is constant in the time period 𝑡𝑡 when it is evaluated.
+• In other words, exponential discounting assumes that the
+  comparison of $𝑥𝑥 between period 0 and 𝑘𝑘 coincides with the
+  comparison between period             𝑡𝑡 and 𝑡𝑡 + 𝑘𝑘 since k periods mediated.
+                              Advanced Microeconomic Theory                        174
+Exponential discounting (standard)
+• Not generally confirmed in controlled experiments.
+• In particular, individuals exhibit present bias:
+  – When asked to choose between $100 today or $110
+    tomorrow, most individuals prefer $100 today.
+  – However, when the same individuals are asked
+    between $100 in, for instance, 60 days or $110 in 61
+    days, some reveal a preference for the $110 in 61
+    days.
+• Individuals show a large discount of future payoffs
+• Preferences are time-inconsistent
+                   Advanced Microeconomic Theory    175
+            Hyperbolic Discounting
+• This approach assumes that the discounted value of an amount
+   of money $𝑥𝑥 received 𝑡𝑡 periods from today is
+                                       1
+                                               𝑥𝑥
+                               (1 + 𝑟𝑟𝑟𝑟)𝛾𝛾/𝛼𝛼
+where 𝛾𝛾, 𝛼𝛼 > 0. In this setting, the subjective discount rate is
+                              1
+                    𝜕𝜕                  𝑥𝑥
+                        (1 + 𝑟𝑟𝑟𝑟)𝛾𝛾/𝛼𝛼
+                             𝜕𝜕𝜕𝜕                  −𝛾𝛾𝑟𝑟
+                                            =
+                            1                   𝛼𝛼(1 + 𝑟𝑟𝑟𝑟)
+                                       𝑥𝑥
+                       (1 + 𝑟𝑟𝑟𝑟)𝛾𝛾/𝛼𝛼
+which is decreasing in t.
+In most applications, 𝛾𝛾 = 𝛼𝛼, yielding a subjective discount rate of
+
+                                    −𝑟𝑟
+                                 (1 + 𝑟𝑟𝑟𝑟)
+                          Advanced Microeconomic Theory             176
+            Hyperbolic Discounting
+
+
+
+
+• Individuals with hyperbolic discounting exhibit present
+  bias: relative to standard (exponential) discounting
+   – They strongly discount payoffs in the nearby future, but
+   – They do not significantly discount two distant payoffs that are
+     close to each other.
+                          Advanced Microeconomic Theory                177
+    Quasi-Hyperbolic Discounting
+• In a discrete time context, individuals discount
+  future payoffs according to
+                          𝛽𝛽𝛿𝛿 𝑡𝑡
+for all 𝑡𝑡 ≥ 1, where parameter 𝛽𝛽 ≤ 1.
+   – When 𝛽𝛽 = 1, Quasi-hyperbolic discounting embodies
+     exponential discounting.
+   – The subjective discount rate is
+          ∆ 𝛽𝛽𝛿𝛿 𝑡𝑡 𝑥𝑥        𝑡𝑡+1            𝑡𝑡
+               ∆𝑡𝑡       𝛽𝛽𝛿𝛿      𝑥𝑥 −  𝛽𝛽𝛿𝛿    𝑥𝑥
+                 𝑡𝑡
+                       =              𝑡𝑡
+                                                    = 𝛿𝛿 − 1
+             𝛽𝛽𝛿𝛿 𝑥𝑥             𝛽𝛽𝛿𝛿 𝑥𝑥
+   which is constant in time, but still allows for present bias
+   to arise.
+                       Advanced Microeconomic Theory         178
+ Quasi-Hyperbolic Discounting
+– Consider an individual evaluating today whether to
+  invest in a firm.
+– He will need to incur a cost 𝑐𝑐 > 0 in period 𝑡𝑡, and
+  obtain a benefit 𝑏𝑏 > 0 with certainty 𝑛𝑛 periods into
+  the future (in period 𝑡𝑡 + 𝑛𝑛).
+– Under exponential discounting, he would invest if
+                  𝛿𝛿 𝑡𝑡 𝑐𝑐 < 𝛿𝛿 𝑡𝑡+𝑛𝑛 𝑏𝑏 or 𝑐𝑐 < 𝛿𝛿 𝑛𝑛 𝑏𝑏
+– If this individual is given the opportunity to reconsider
+  his investment when period 𝑡𝑡 arrives, he will not
+  reconsider his decision since 𝑐𝑐 < 𝛿𝛿 𝑛𝑛 𝑏𝑏 still holds.
+
+
+                    Advanced Microeconomic Theory           179
+ Quasi-Hyperbolic Discounting
+– Under quasi-hyperbolic discounting, he would invest if
+               𝛽𝛽𝛿𝛿 𝑡𝑡 𝑐𝑐 < 𝛽𝛽𝛿𝛿 𝑡𝑡+𝑛𝑛 𝑏𝑏 or 𝑐𝑐 < 𝛿𝛿 𝑛𝑛 𝑏𝑏
+  which is same decision rule as the above time-
+  consistent individual.
+– However, if this individual is given the opportunity to
+  reconsider his investment when period 𝑡𝑡 arrives, he
+  will invest only if
+                          𝑐𝑐 < 𝛽𝛽𝛿𝛿 𝑛𝑛 𝑏𝑏
+  which does not coincide with his decision rule 𝑡𝑡
+  periods ago.
+  – Hence, preference reversal occurs if
+                𝛽𝛽𝛿𝛿 𝑛𝑛 𝑏𝑏 < 𝑐𝑐 < 𝛿𝛿 𝑛𝑛 𝑏𝑏
+
+                   Advanced Microeconomic Theory        180
+Choice Based Approach
+
+
+
+
+      Advanced Microeconomic Theory   181
+         Choice Based Approach
+• We now focus on the actual choice behavior
+  rather than individual preferences.
+   – From the alternatives in set 𝐵𝐵, which one would
+     you choose?
+
+• A choice structure (ℬ, 𝑐𝑐(�)) contains two
+  elements:
+  1) ℬ is a family of nonempty subsets of 𝑋𝑋, so that
+     every element of ℬ is a set 𝐵𝐵 ⊂ 𝑋𝑋.
+
+                    Advanced Microeconomic Theory       182
+      Choice Based Approach
+– Example 1: In consumer theory, 𝐵𝐵 is a particular
+  set of all the affordable bundles for a consumer,
+  given his wealth and market prices.
+– Example 2: 𝐵𝐵 is a particular list of all the
+  universities where you were admitted, among all
+  universities in the scope of your imagination 𝑋𝑋,
+  i.e., 𝐵𝐵 ⊂ 𝑋𝑋.
+
+
+
+
+                 Advanced Microeconomic Theory        183
+        Choice Based Approach
+2) 𝑐𝑐(�) is a choice rule that selects, for each budget
+   set 𝐵𝐵, a subset of elements in 𝐵𝐵, with the
+   interpretation that 𝑐𝑐(𝐵𝐵) are the chosen elements
+   from 𝐵𝐵.
+   – Example 1: In consumer theory, 𝑐𝑐(𝐵𝐵) would be
+     the bundles that the individual chooses to buy,
+     among all bundles he can afford in budget set 𝐵𝐵;
+   – Example 2: In the example of the universities,
+     𝑐𝑐(𝐵𝐵) would contain the university that you
+     choose to attend.
+                    Advanced Microeconomic Theory         184
+     Choice Based Approach
+– Note:
+   If 𝑐𝑐(𝐵𝐵) contains a single element, 𝑐𝑐(⋅) is a
+    function;
+   If 𝑐𝑐(𝐵𝐵) contains more than one element, 𝑐𝑐(⋅) is
+    a correspondence.
+
+
+
+
+                 Advanced Microeconomic Theory      185
+        Choice Based Approach
+• Example 1.11 (Choice structures):
+  – Define the set of alternatives as
+                   𝑋𝑋 = {𝑥𝑥, 𝑦𝑦, 𝑧𝑧}
+  – Consider two different budget sets
+            𝐵𝐵1 = {𝑥𝑥, 𝑦𝑦} and 𝐵𝐵2 = {𝑥𝑥, 𝑦𝑦, 𝑧𝑧}
+  – Choice structure one (ℬ, 𝑐𝑐1 (�))
+            𝑐𝑐1 𝐵𝐵1 = 𝑐𝑐1 𝑥𝑥, 𝑦𝑦 = {𝑥𝑥}
+          𝑐𝑐1 𝐵𝐵2 = 𝑐𝑐1 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑥𝑥}
+
+                     Advanced Microeconomic Theory   186
+        Choice Based Approach
+• Example 1.11 (continued):
+  – Choice structure two (ℬ, 𝑐𝑐2 (�))
+            𝑐𝑐2 𝐵𝐵1 = 𝑐𝑐2 𝑥𝑥, 𝑦𝑦 = {𝑥𝑥}
+          𝑐𝑐2 𝐵𝐵2 = 𝑐𝑐2 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑦𝑦}
+  – Is such a choice rule consistent?
+      We need to impose a consistency requirement on
+       the choice-based approach, similar to rationality
+       assumption on the preference-based approach.
+
+
+                    Advanced Microeconomic Theory          187
+Consistency on Choices: the Weak
+  Axiom of Revealed Preference
+             (WARP)
+
+
+
+
+           Advanced Microeconomic Theory   188
+                          WARP
+• Weak Axiom of Revealed Preference (WARP):
+  The choice structure (ℬ, 𝑐𝑐(�)) satisfies the WARP
+  if:
+   1) for some budget set 𝐵𝐵 ∈ ℬ with 𝑥𝑥, 𝑦𝑦 ∈ 𝐵𝐵, we
+      have that element 𝑥𝑥 is chosen, 𝑥𝑥 ∈ 𝑐𝑐(𝐵𝐵), then
+   2) for any other budget set 𝐵𝐵′ ∈ ℬ where
+      alternatives 𝑥𝑥 and 𝑦𝑦 are also available, 𝑥𝑥, 𝑦𝑦 ∈ 𝐵𝐵′,
+      and where alternative 𝑦𝑦 is chosen, 𝑦𝑦 ∈ 𝑐𝑐(𝐵𝐵′),
+      then we must have that alternative 𝑥𝑥 is chosen
+      as well, 𝑥𝑥 ∈ 𝑐𝑐(𝐵𝐵𝐵).
+
+                      Advanced Microeconomic Theory         189
+                           WARP
+• Example 1.12 (Checking WARP in choice structures):
+  – Take budget set 𝐵𝐵 = {𝑥𝑥, 𝑦𝑦} with the choice rule of
+    𝑐𝑐 𝑥𝑥, 𝑦𝑦 = 𝑥𝑥.
+  – Then, for budget set 𝐵𝐵′ = {𝑥𝑥, 𝑦𝑦, 𝑧𝑧}, the “legal” choice
+    rules are either:
+                      𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑥𝑥}, or
+                      𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑧𝑧}, or
+                    𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑥𝑥, 𝑧𝑧}
+
+
+                       Advanced Microeconomic Theory         190
+                        WARP
+• Example 1.12 (continued):
+  – This implies that the individual decision-maker
+    cannot select
+
+                  𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑦𝑦}
+                𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑦𝑦, 𝑧𝑧}
+                𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑥𝑥, 𝑦𝑦}
+              𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑥𝑥, 𝑦𝑦, 𝑧𝑧}
+
+
+                    Advanced Microeconomic Theory     191
+                         WARP
+• Example 1.13 (More on choice structures
+  satisfying/violating WARP):
+  – Take budget set 𝐵𝐵 = {𝑥𝑥, 𝑦𝑦} with the choice rule of
+    𝑐𝑐 𝑥𝑥, 𝑦𝑦 = {𝑥𝑥, 𝑦𝑦}.
+  – Then, for budget set 𝐵𝐵𝐵 = {𝑥𝑥, 𝑦𝑦, 𝑧𝑧}, the “legal”
+    choices according to WARP are either:
+                   𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑥𝑥, 𝑦𝑦}, or
+                     𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑧𝑧}, or
+                 𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 = {𝑥𝑥, 𝑦𝑦, 𝑧𝑧}
+
+                     Advanced Microeconomic Theory          192
+                         WARP
+• Example 1.13 (continued):
+  – This implies that the decision-maker cannot select:
+                    𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑥𝑥}
+                    𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑦𝑦}
+                  𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑥𝑥, 𝑧𝑧}
+                  𝑐𝑐 𝑥𝑥, 𝑦𝑦, 𝑧𝑧 ≠ {𝑦𝑦, 𝑧𝑧}
+  – In summary, when both 𝑥𝑥 and 𝑦𝑦 are available in 𝐵𝐵
+    and 𝐵𝐵𝐵, as long as they are chosen in 𝐵𝐵, both of them
+    must be chosen in 𝐵𝐵𝐵.
+
+                     Advanced Microeconomic Theory     193
+                         WARP
+• Example 1.13 (continued):
+  – Choice rule satisfying WARP
+
+            B
+
+                  C(B)
+                                x
+                                    y
+
+
+                                               C(B’)
+
+
+
+
+                                                       B’
+                    Advanced Microeconomic Theory           194
+                           WARP
+• Example 1.13 (continued):
+  – Choice rule violating WARP
+
+            B
+                C(B)
+
+                                      x
+
+
+
+                                y
+                                                   C(B’)
+
+
+
+
+                                                           B’
+                       Advanced Microeconomic Theory            195
+Consumption Sets
+
+
+
+
+    Advanced Microeconomic Theory   196
+            Consumption Sets
+• Consumption set: a subset of the commodity
+  space ℝ𝑁𝑁 , denoted by 𝑥𝑥 ⊂ ℝ𝑁𝑁 , whose elements
+  are the consumption bundles that the individual
+  can conceivably consume, given the physical
+  constraints imposed by his environment.
+• Let us denote a commodity bundle 𝑥𝑥 as a vector
+  of 𝐿𝐿 components.
+
+
+
+                   Advanced Microeconomic Theory     197
+            Consumption Sets
+• Physical constraint on the labor market
+
+
+
+
+                   Advanced Microeconomic Theory   198
+             Consumption Sets
+• Consumption at two different locations
+
+             Beer in
+             Seattle
+             at noon
+
+
+
+
+                                  x
+
+
+
+                                                        Beer in
+                                                       Barcelona
+                                                        at noon
+                       Advanced Microeconomic Theory               199
+            Consumption Sets
+• Convex consumption sets:
+  – A consumption set 𝑋𝑋 is convex if, for two
+    consumption bundles 𝑥𝑥, 𝑥𝑥𝑥 ∈ 𝑋𝑋, the bundle
+               𝑥𝑥 ′′ = 𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑥𝑥 ′
+    is also an element of 𝑋𝑋 for any 𝛼𝛼 ∈ (0,1).
+  – Intuitively, a consumption set is convex if, for any
+    two bundles that belong to the set, we can
+    construct a straight line connecting them that lies
+    completely within the set.
+                    Advanced Microeconomic Theory      200
+ Consumption Sets: Economic Constraints
+
+• Assumptions on the price vector in ℝ𝑁𝑁 :
+  1) All commodities can be traded in a market, at
+     prices that are publicly observable.
+      – This is the principle of completeness of markets
+      – It discards the possibility that some goods cannot
+        be traded, such as pollution.
+  2) Prices are strictly positive for all 𝑁𝑁 goods, i.e.,
+     𝑝𝑝 ≫ 0 for every good 𝑘𝑘.
+      – Some prices could be negative, such as pollution.
+
+                     Advanced Microeconomic Theory          201
+Consumption Sets: Economic Constraints
+
+ 3) Price taking assumption: a consumer’s demand
+    for all 𝑁𝑁 goods represents a small fraction of the
+    total demand for the good.
+
+
+
+
+                   Advanced Microeconomic Theory      202
+ Consumption Sets: Economic Constraints
+
+• Bundle 𝑥𝑥 ∈ ℝ𝑁𝑁  + is affordable if
+            𝑝𝑝1 𝑥𝑥1 + 𝑝𝑝2 𝑥𝑥2 + ⋯ + 𝑝𝑝𝑁𝑁 𝑥𝑥𝑁𝑁 ≤ 𝑤𝑤
+  or, in vector notation, 𝑝𝑝 � 𝑥𝑥 ≤ 𝑤𝑤.
+• Note that 𝑝𝑝 � 𝑥𝑥 is the total cost of buying bundle
+  𝑥𝑥 = (𝑥𝑥1 , 𝑥𝑥2 , … , 𝑥𝑥𝑁𝑁 ) at market prices 𝑝𝑝 =
+  (𝑝𝑝1 , 𝑝𝑝2 , … , 𝑝𝑝𝑁𝑁 ), and 𝑤𝑤 is the total wealth of the
+  consumer.
+• When 𝑥𝑥 ∈ ℝ𝑁𝑁+ then the set of feasible consumption
+  bundles consists of the elements of the set:
+            𝐵𝐵𝑝𝑝,𝑤𝑤 = {𝑥𝑥 ∈ ℝ𝑁𝑁
+                             + : 𝑝𝑝 � 𝑥𝑥 ≤ 𝑤𝑤}
+                       Advanced Microeconomic Theory           203
+Consumption Sets: Economic Constraints
+• Example for two goods:
+             𝐵𝐵𝑝𝑝,𝑤𝑤 = {𝑥𝑥 ∈ ℝ2+ : 𝑝𝑝1 𝑥𝑥1 + 𝑝𝑝2 𝑥𝑥2 ≤ 𝑤𝑤}
+
+   The budget line is                   x2
+
+
+   𝑝𝑝1 𝑥𝑥1 + 𝑝𝑝2 𝑥𝑥2 = 𝑤𝑤 .
+                                       w                   p1
+   Hence, solving for the              p2              -
+                                                           p2
+                                                              (slope)
+
+   good on the vertical
+   axis, 𝑥𝑥2 , we obtain
+        𝑤𝑤 𝑝𝑝1                                                          {x ∈ℝ +2:p ∙x = w}
+   𝑥𝑥2 = − 𝑥𝑥1
+        𝑝𝑝2 𝑝𝑝2
+                                                                  w                                x1
+                                                                  p1
+
+                       Advanced Microeconomic Theory                                         204
+Consumption Sets: Economic Constraints
+• Example for three goods:
+     𝐵𝐵𝑝𝑝,𝑤𝑤 = {𝑥𝑥 ∈ ℝ3+ : 𝑝𝑝1 𝑥𝑥1 + 𝑝𝑝2 𝑥𝑥2 + 𝑝𝑝3 𝑥𝑥3 ≤ 𝑤𝑤}
+  – The surface 𝑝𝑝1 𝑥𝑥1 + 𝑝𝑝2 𝑥𝑥2 + 𝑝𝑝3 𝑥𝑥3 = 𝑤𝑤 is referred to
+    as the “Budget hyperplane”
+                                      x3
+
+
+
+
+                                                         x1
+
+
+
+
+                    x2
+                         Advanced Microeconomic Theory            205
+ Consumption Sets: Economic Constraints
+
+• Price vector 𝑝𝑝 is orthogonal (perpendicular) to
+  the budget line 𝐵𝐵𝑝𝑝,𝑤𝑤 .
+  – Note that 𝑝𝑝 � 𝑥𝑥 = 𝑤𝑤 holds for any bundle 𝑥𝑥 on the
+    budget line.
+  – Take any other bundle 𝑥𝑥′ which also lies on 𝐵𝐵𝑝𝑝,𝑤𝑤 .
+    Hence, 𝑝𝑝 � 𝑥𝑥′ = 𝑤𝑤.
+  – Then,
+                    𝑝𝑝 � 𝑥𝑥 ′ = 𝑝𝑝 � 𝑥𝑥 = 𝑤𝑤
+           𝑝𝑝 � 𝑥𝑥 ′ − 𝑥𝑥 = 0 or 𝑝𝑝 � ∆𝑥𝑥 = 0
+                    Advanced Microeconomic Theory        206
+Consumption Sets: Economic Constraints
+
+ – Since this is valid for any two bundles on the
+   budget line, then 𝑝𝑝 must be perpendicular to
+   ∆𝑥𝑥 on 𝐵𝐵𝑝𝑝,𝑤𝑤 .
+
+ – This implies that the price vector is perpendicular
+   (orthogonal) to 𝐵𝐵𝑝𝑝,𝑤𝑤 .
+
+
+
+
+                   Advanced Microeconomic Theory     207
+ Consumption Sets: Economic Constraints
+
+• The budget set 𝐵𝐵𝑝𝑝,𝑤𝑤 is convex.
+   – We need that, for any two bundles 𝑥𝑥, 𝑥𝑥𝑥 ∈ 𝐵𝐵𝑝𝑝,𝑤𝑤 ,
+     their convex combination
+               𝑥𝑥 ′′ = 𝛼𝛼𝑥𝑥 + 1 − 𝛼𝛼 𝑥𝑥𝑥
+     also belongs to the 𝐵𝐵𝑝𝑝,𝑤𝑤 , where 𝛼𝛼 ∈ (0,1).
+
+   – Since 𝑝𝑝 � 𝑥𝑥 ≤ 𝑤𝑤 and 𝑝𝑝 � 𝑥𝑥′ ≤ 𝑤𝑤, then
+             𝑝𝑝 � 𝑥𝑥 ′′ = 𝑝𝑝𝛼𝛼𝑥𝑥 + 𝑝𝑝 1 − 𝛼𝛼 𝑥𝑥𝑥
+                        = 𝛼𝛼𝑝𝑝𝑝𝑝 + 1 − 𝛼𝛼 𝑝𝑝𝑝𝑝𝑝 ≤ 𝑤𝑤
+
+                       Advanced Microeconomic Theory         208
+       Appendix 1.1:
+Rational Preference Relations
+      Satisfy the WARP
+
+
+
+          Advanced Microeconomic Theory   209
+   Rational Preferences and WARP
+• We can construct the preferences that the individual
+  “reveals” in his actual choices when he is confronted
+  to choose an element(s) from different budget sets.
+   1) If there is some budget set 𝐵𝐵 for which the
+      individual chooses 𝑥𝑥 ∈ 𝑐𝑐(𝐵𝐵), where 𝑥𝑥, 𝑦𝑦 ∈ 𝐵𝐵, then
+      we can say that alternative 𝑥𝑥 is revealed at least as
+      good as alternative 𝑦𝑦, and denote it as 𝑥𝑥 ≿∗ 𝑦𝑦.
+   2) If there is some budget set 𝐵𝐵 for which the
+      individual chooses 𝑥𝑥 ∈ 𝑐𝑐(𝐵𝐵) but 𝑦𝑦 ∉ 𝑐𝑐(𝐵𝐵) , where
+      𝑥𝑥, 𝑦𝑦 ∈ 𝐵𝐵, then we can say that alternative 𝑥𝑥 is
+      revealed preferred to alternative 𝑦𝑦, and denote it as
+      𝑥𝑥 ≻∗ 𝑦𝑦.
+                      Advanced Microeconomic Theory        210
+  Rational Preferences and WARP
+• Let 𝐶𝐶 ∗ (𝐵𝐵, ≿) be the set of optimal choices
+  generated by the preference relation ≿ when
+  facing a budget set 𝐵𝐵.
+• Using this notation, we can restate the WARP as
+  follows:
+  – If alternative 𝑥𝑥 is revealed at least as good as 𝑦𝑦,
+    then 𝑦𝑦 cannot be revealed preferred to 𝑥𝑥.
+  – That is, if 𝑥𝑥 ≿∗ 𝑦𝑦, then we cannot have 𝑦𝑦 ≻∗ 𝑥𝑥.
+
+                     Advanced Microeconomic Theory          211
+  Rational Preferences and WARP
+• Let us next show that:
+            Rational preference relation ⟹
+           Choice structure satisfying WARP
+• Proof:
+  – Suppose that for some budget set 𝐵𝐵 ∈ ℬ, we have
+    that 𝑥𝑥, 𝑦𝑦 ∈ 𝐵𝐵 and 𝑥𝑥 ∈ 𝐶𝐶 ∗ (𝐵𝐵, ≿).
+      That is, 𝑥𝑥 belongs to the set of optimal choices
+       given the preference relation ≿ when the decision
+       maker faces a budget set 𝐵𝐵.
+  – Hence, 𝑥𝑥 ∈ 𝐶𝐶 ∗ 𝐵𝐵′, ≿          ⟹ 𝑥𝑥 ≿ 𝑦𝑦 for all 𝑦𝑦 ∈ 𝐵𝐵.
+                     Advanced Microeconomic Theory                212
+ Rational Preferences and WARP
+– In order to check WARP, assume some other budget
+  set 𝐵𝐵′ ∈ ℬ with 𝑥𝑥, 𝑦𝑦 ∈ 𝐵𝐵′ and 𝑦𝑦 ∈ 𝐶𝐶 ∗ (𝐵𝐵′, ≿).
+    That is, 𝑦𝑦 belongs to the set of optimal choices given
+     the preference relation ≿ when the decision maker
+     faces budget set 𝐵𝐵𝐵.
+
+– Thus, 𝑦𝑦 ∈ 𝐶𝐶 ∗ 𝐵𝐵, ≿       ⟹ 𝑦𝑦 ≿ 𝑧𝑧 for all 𝑧𝑧 ∈ 𝐵𝐵′.
+
+
+
+
+                    Advanced Microeconomic Theory           213
+Rational Preferences and WARP
+– Combining the conclusions from the previous two
+  points, 𝑥𝑥 ≿ 𝑦𝑦 and 𝑦𝑦 ≿ 𝑧𝑧 , we can apply transitivity
+  (because the preference relation is rational), and
+  we obtain 𝑥𝑥 ≿ 𝑧𝑧.
+– Then 𝑥𝑥 ∈ 𝐶𝐶 ∗ 𝐵𝐵′, ≿ , and we find that
+                𝑥𝑥, 𝑦𝑦 ∈ 𝐶𝐶 ∗ 𝐵𝐵′, ≿
+  which proves that WARP is satisfied.
+
+
+
+                   Advanced Microeconomic Theory       214
+   Rational Preferences and WARP
+• Regarding:
+         Choice structure satisfying WARP ⟹
+             Rational preference relation
+
+• It is only true if the budget set 𝐵𝐵 contains three
+  or fewer elements (See MWG for a proof based
+  on Arrow (1959)).
+
+
+
+
+                    Advanced Microeconomic Theory       215
+

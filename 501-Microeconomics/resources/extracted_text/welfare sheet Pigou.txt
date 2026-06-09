@@ -1,0 +1,1626 @@
+_ N L/ VR, H R . e— — . a— —— i —
+
+WELFARE ECONOMICS
+
+A consumer is at equilibrium when he gets maximum satisfacion. A consumer gets
+maximum satisfaction when he equates the marginal utility denived from his consumption with the
+price of the commodity he consumed, or when the marginal utihities derived from two commodities
+are cqual or the marginal rate of substitution between two goods is equal to their price ratio.
+Gererally economists hold the view that when one’s sausfacuon increases, he 1s at a better welfare
+position than before. But the next question arises, as to the level of producuon or distnbution or
+consumption, at which the whole society’s welfare 1s better-off. We have discussed in the exchange
+chapter that perfectly competitive market situation is good for the society. The society 1s i a better
+position if the output is maximum. But, to certain economists, if a policy brings more benefit 1o the
+society, then the society will be better-off in terms of welfare. It is only in the last quarter of the
+nineteenth century, economists began to disinguish between economic theory and policy. It 1s also
+said that the happiness is the maximum when we are able to enjoy maximum satisfaction from zny
+activity, including consumption. Welfare is more in a state of affair in comparison with another state
+of affair and vice versa. The state of affair, which yields maximum welfare,"1s 2ccepted znd
+implemented by the authority for the best advantage of the society.
+
+Welfare economics is, thus, concemned with the evaluation of alternative economic situations.
+It is good for the society trying to reach the maximum well-being it can reach with the given factor
+endowments-and the state of technology. For-example, if there are two alternatives A & B to a . -
+particular factor endowment and if B'can yi€ld more Well-being than A, then 1t wi!l be good Yor the
+society to accept the B alternative and edopt it. To evaluate alternative economic situztions, a pumber of
+criteria have been developed by vanous cconomists like Pigou, Parc!o Kaldos, chks, Scitovsky, - -
+Bergson, Samuelson, Arrow and szls. e e :
+
+Scanned with CamScanner
+AW\ LY
+
+Welfare Economics = . 257
+
+examples of external diseconomies. But, the presence of public parks, street hghts and public roads are
+good examples of external economies. Externalitics, thus, exist when the mreans that influchee the gain or
+cost are not marketable. These means are called untraded interdependencies, which may be unidirectional
+or reciprocal. Hence, we can infer that externahties are market imperfectuons, where the market offers no
+price for the benefit or cost or for the service or disservice.  As there is market fatlure, t leads to
+misallocation of resources and thereby a situation where social well-being i1s not maximused.
+
+Externalities or the divergence between private and social cost and return are due to external
+economies i production. and in consumption, external discconomies in  production and
+consumption and the presence of public goods. Production and consumpuon of certain goods may
+result in an increase 1n welfare 1 comparison with the production cost or private cost. For example, 1if
+neighbours are allowed to see programmes in a TV purchased by an individual household then the
+total gain will be more than the pnivate cost. This 1s sumilar to production of lead-free petrol, which
+mcreases the overall benefits to the society. But, production and consumption of cigarettes cause a
+serious health problem and so the social cost is more than the individual cost or production cost.
+
+An improvement in social welfare takes place when the goods, which provide more social gains
+than private costs are produced more, at the expense of goods, which are having high diseconomies, and the
+poor are allowed to enjoy more share of the income than before. For example, construction of roads and
+rmigation facibuies in rural areas at the expense of production of unwanted goods or goods with high
+disexternalities is an improvement n the welfare of the rural mass. The next question to be answered 1S
+how it can be achieved. There are many ways to achieve this. Taxes may be imposed on goods, which
+have high diseconomues, and the tax money can be used for other social welfure programmes. High tax
+will certainly reduce the attraction of investmment in these types of goods. Thereby, the output of such types
+of goods can be reduced. Subsidy can also be provided to the producers of goods, which give more social
+benefits than private costs. It will favour an increase in the output of such commodities. Public goods can
+be supplied through public authonty and peopiec may be allowed to share the costs. Intermalising of
+externalities is another source to attain market perfection. Internalisation means inclusion of social cost in
+the producuon costprivate cost. When ownership nghts are well-defined, there is good chance for
+attaining market perfection (Coase Theorem).
+
+7.1.4 Pigou’s Ideal Output and Social Welfare
+
+Ideal output refers to that leve! of output at
+which the social welfare is maximum. Generally, the
+ideal output is reached automatcally under perfect
+competition. A firm is called optimum firm when its
+output is at the minimum average cost. - When the
+product transformation curve is introduced, the iso-
+revenue curve .is tangent to the product .
+transformation these have been discussed
+. But, now, it is
+nce curve and
+output for the
+by Baumol,
+e is available,
+
+-_G-dx
+
+Figure 7.1 .
+
+VoV oV o0 o g
+
+9
+
+2L 22 PPPPT TR0 G U D OC
+
+/A
+
+Scanned with CamScanner
+WD U @ O T O O T ——
+
+r
+
+256 Advanced Microeconomics
+
+7.1 Pigovian Welfare Economics
+
+The gist of welfare economics is contained in the standard work of A.C. Pigou, — ‘The
+Economics of Welfare’. A.C. Pigou is considered as the father of welfare economics. His views were
+first expressed in his book ‘Wealth and Welfare’ (1912). But, his entire views were explained in his
+book ‘The Economics of Welfare® (1932) and it is known as the Pigovian neo-classical welfare
+economics. The Pigovian Welfare economics can be discussed in the following lines.
+
+7.1.1 Meaning of Welfare
+
+Pigou’s approach to welfare economics is very pragmatic. To him, welfare depends upon
+one’s state of mind regarding the satisfaction or utilities received from his consumption. Individuals’
+welfare is determined on the basis of the extent to which an individual’s wants are satisfied. He limits
+his explanation only to that part of social welfare that can be brought directly or indirectly into
+relationship with the measuring rod of money. This is called economic welfare, i.e., welfare or
+satisfaction denved by an individual from the use of exchangeable goods and services. It means that
+he talks only about economic welfare. And so he says economic welfare is a part of total or general
+welfare and is a function of goods and their relative prices. Social welfare is calculated simply by
+summing up all individuals® welfare. But, he has failed to take into account other forms of welfare,
+
+which depends on many other elements like the working condition, security, housing status and
+human relationship.
+
+7.1.2 Welfare Conditions
+
+Pigou adopts a dual criteria for judging the changes happening in the social welfare. They are
+called dual conditions for maximum social welfare. They are as follows:
+
+(i) Maximisation of national income: According to Pigou, if national income increases
+
+without a corresponding change in the supply of factors, then there will be an increasce
+in the social welfare.
+
+(i1) Transfer of national income from the rich to the poor: Welfare is maximum when
+
+the share of the poor increases without affecting adversely the total income or the given
+national income.
+
+The second welfare criterion is based on the dual, Pigovian postulates of *equal capacity for
+satisfaction’ and diminishing marginal utility of income. In short, he assumes that people receive
+cqual satisfaction from equal real income and comparatively rich people have less capacity for
+
+enjoyment when compared to the poor. Therefore, every transfer in favour of the poor will add
+welfare to the existing well-being.
+
+._Ex(ernalities
+
+hll pomts out that maximum welfan: is not aclucvablc because of market failure. The m:
+
+Scanned with CamScanner
+
+Welfare Economics . a ] 257
+
+examples of external diseconomies. But, the presence of public parks, street lights and public roads are
+good examples of external economies. Externalities, thus, exist when the means that influehce the gain or
+cost are not marketable. These means are called untraded interdependencies, which may be unidirectional
+or reciprocal. Hence, we can infer that externalities are market imperfections, where the market offers no
+price for the benefit or cost or for the service or disservice. As there is market fatlure, it leads to
+misallocation of resources and thereby a situation where social well-being 1s not maximised.
+
+Externalities or the divergence between privare and social cost and return are due to u(ﬂ'nfl'
+economies in production and in consumption, external diseconomies in production and 10
+consumption and the presence of public goods. Production and consumption of certain goods may
+result in an increase in welfare in comparison with the production cost or private cost. For example, if
+neighbours are allowed to see programmes in a TV purchased by an individual household then the
+total gain will be more than the private cost. This 1s sumular to production of lead-free petrol, which
+increases the overall benefits to the society.  But, production and consumption of cigarettes cause @
+serious health problem and so the social cost is mere than the individual cost or production cost.
+
+An improvement in socral weltare takes place when the goods, which provide more social gains
+than private costs are produced more, at the expense of goods, which are having high diseconormes, and lh;
+poor are allowed to enjoy more share of the income than before. For example, construction of qudS an
+imgation facilities in rural arcas at the expense of production of unwanted goods or goods with high
+disexternalities 1s an improvement in the welfare of the rural mass. The next queston to be answered 15
+how 1t can be achieved. There are many ways 1o achieve this. Taxes muy be mmposed on goods.. wh
+have high diseconomies, and the tax moncy can be used for other social welfare programmes. High @ax
+will certainly reduce the attraction of investment in these types of goods. Thereby, the output of such types
+of goods can be reduced. Subsidy can also be provided to the producers of goods, which grve more -
+benefits than private costs. It will favour an increase in the output of such commodities. Public goods m“:_
+be supplied through public authority and people may be allowed to share the costs. Internalising ©
+externalities is another source to attain market perfecton. Internalisation means inclusion of social cost m
+
+~ the production costprivate cost. When ownership nghts are well-defined, there is good chance
+attaining market perfection (Coase Theorem).
+
+7.1.4 Pigou’s Ideal Output and Social Welfare
+
+Ideal output refers to that level of output at
+which the social welfare is maximum. Generlly, the
+ideal output is reached automaucally under perfect
+iti firm is called optimum firm when its
+cost. - When the
+| introduced, the iso-
+the product .
+e been discussed
+it, now, it s
+curve and
+utput for the
+
+Scanned with CamScanner
+Vodblblbéoeedeeis
+
+¢
+PSS
+
+T "l AAMIL/L/ T AMMBY I 4 W
+
+o
+258 Advanced Microeconomics
+“ondition 1s 2ttamed only when all these three lines/curves are tangent. 1t is noted that the ideal output
+5t level of output at which no reallocation of the economy’s resources among various uses would
+make the society better off than before. This situation is explamned with the help of a figure, figure
+
+71
+
+In figure 7.1, I,, 1, and I, represent community indifference curves. PL is the price line and
+
+TP 13 the product transformation line. The 1deal output is reached at the point E, where IC, is tangent
+
+to both PL (price line) and TP (product transformation line) lines. In other words, at point E, MRPTyy
+‘)
+
+- lT = MRS,,. It s so only when there are no externalities. If there are externalities, then 1t is not
+y
+
+possible 1o reach the point E. It is possible to reach either ‘A’ or ‘B’ depending upon, whiCh
+commodity comes under extermalities.  If *X” 1s under external economies, then A 1s the equilibrium
+pownt It is to the left of E and indifference curve is lower or to the lefl of I,. [t means lower welfare.
+1f Y s under external econormues, then B 1s the equilibrium point. However, it is noted that in the first
+
+situation, less quantity of X 1s produced whereas in the second situation, less quantity of Y 1s produced
+than the ideal level.
+
+7.2 Pareto’s Optimal Condition or the Pareto Optimality Criterion
+
+The Italian economist Vilfredo Pareto, a disciple of Leon Walras, has given the most
+mnocuous value systerm. in which economic efficiency can be objectively measured. This criterion 1S
+otherwise called Pareto unanimity criterion or Pareto unanimity rule or Pareto criterion or Paret®
+opumality. According to this cntenon, any change that makes at least one person better-off’ and no
+one worse-off 1s an improvement in social welfare. But, a change that makes no one better-ofl and at
+least one worse-off 1s a decrease in social welfare. In other words, when reallocation of resources 1S
+made, if there 15 a possibility for an individual to increase his welfare without affecting anyone, then
+the situation after reallocation is better than the situation before reallocation It may be explained 1n 3
+different way also. By Pareto optimality we mean a situation in which no one can be made betlcr-o_ff
+without making some one worse-off. It is the optimal situation and any shift or movement from this
+Situation s not optimal This situation is said to be Pareto-optimal or Pareto-efficient condition.
+
+To attain this Pareto—efficient situation in an economy, three marginal conditions have to be
+satisfied They are as follows
+
+(1) Efficiency of distnbution of commodities among consumers (consumption efficiency),
+(1) Efficiency in the allocation of factors among firms (production efTiciency), and
+
+(11) Efficiency in allocation of factors among commodities (efficiency in the product-mix oOf
+composition of output)
+
+7.2.1  Consumption Efficiency or Efficiency of Distribution of Commoditics among
+
+Consumers
+
+Consumption efficiency requires that it is impossible by a redistribution of a given sct of
+Foods to mcreass the utility of one individual without reducing utihty of the other. It is easy 10
+€xanune a community of two people. A & B who consume two commoditics, water (X) and 2
+Coe e ot all other poods (Y) In response to a drought in their economy in md 2010s, the
+2uthodty sancunces water raboming Initial consumption of A’ and *B’ was different. Now they
+Lave been aliotted equal amewnts of water and 1t is assured that there is no sale of water between
+
+Scanned with CamScanner
+= S a B YO 00/ // /I %4
+
+Welfare Economics . . 259
+
+individuals to avoid profiteenng. Edgeworth Box of Exchange
+This situation 1s not optimal as
+some reallocation or changes in
+policy improves onc of the two 'Y S a4 \ I TSN A 'S
+persons without affecting the other.
+The details arc given n the 1 ID, d
+following figure 7.2
+
+The box figure 7.2 is the  Goods
+Edgeworth's box diagram, used for
+explaining exchange between two 1 1A,
+indsviduals. A's nitial
+consumpuion, (before the
+mtroductuion of water rationing), of
+all other goods is Oa and B's s 0o'b.
+
+‘ Now, due to the drought n their o
+economy, water rationing 1s Water (In litres)
+
+introduced and no transfer of water
+
+or sale of water is allowed 1n the Figure 7.2
+
+system. Point “h’, n the figure,
+
+indicates the resulting allocation.
+
+The point 1s half way between point a and b and so it 1s easy to infer that each one is allocated equal
+amount of water. It 1s very important to note that the point ‘h’, 1s not on the contract curve. Contract
+curve refers to the curve joining all the tangency points between two indifference curves. It is the
+locus of Pareto-optimal or efficient distribution of goods between consumérs. Moving up or night
+means that A 1s better-off and moving down means B 1s better-off. Any point on the contract curve s
+better than any point off the curve. Only on the contract curve, the condition for equilibrium, ie.,
+
+Afl Other ""T"
+1
+
+MRSQY = MRS% is satisfied. The point ‘h’ is not on the contract curve. It means that there is a
+
+possibility for improvement in welfare. Allowing trade would enable one or both of the two
+individuals to be better-oft without any one being made worse-off. For example, if B.is allowed to
+sell ‘mn’ litres of water to A, in return for *hm’ units of all other goods, they, both would be happier,
+1.e., both A and B move from their ongmal indifference curves, I.o and Igo to a higher position at point
+n where I4, 1s tangent to ly,. It is very cledr that from the explanation that allowing people (o sell
+waler 1s beneficial to both persons — the seller and the buyer. If they are allowed to reach the pownt I,
+then B is much benefited at the cost of A and so it is not acceptable 1o A. Hence, movement n
+between point p and q are better welfare points than before .
+
+7.2.2 Production Efficicncy or Efficiency of Allocation of Factors among Firms .
+
+The consumption efficiency, discussed above, assumes that the commodities are fixed in
+supply. Here also, it is assumed that the quantities of the inputs devoled to the production of each
+commodity are fixed. Production efficiency requires that production reaches a level where 1t 1s not
+possible by a reallocation of factors Yo produce more, than changmg the combination of total output. .
+By reallocation of inputs, the combination of total output can be changed But not the total output. The
+argument is closcly analogous to the onc uscd for the analysts of consumption efficiency In
+consumption clficiency, 1t 1s necessary to.equate the marginal rate of substitution between X-und Y
+goods of A with that of B. la the same way for attaining producton efficiency, § 1s necessary ta attaud -
+
+a siuation where the marginal rate of teckmical substitution between two factors, 1. and K.of X
+
+T e
+
+Scanned with CamScanner
+'1.’, L)
+$1..
+
+-
+8 3
+
+nwer-ron
+
+260 Advanced Mlcroeconomlics
+
+commodity must be equal to that of Y commodity. To explain this puint, we use the same ldgeworth
+
+box figure, two iaputs, K and L and two commodities X and Y. ‘The production efliciency can easily
+be explamed with the help of figure 7.3,
+
+As discussed in the previous section, only points on the contract curve are Parcto-efficient.
+Hence, it s clear from figure 7.3, that point NI s not optimal or ineflicicnt  Point NE is incflicient
+because a reallocation of the given K and L. between X and Y goods, any point from a (o ¢ inclusive,
+leads to an increase in at least one commuodity without a reduction in the other.  For example, a
+movement from NE to point ‘a® means an Labour (L) Fdgewarth Box of Production o'
+crease i the production of Y goods. The . K
+firm producing Y commodity moves from Iy, '.\_IJ WNE e anfle ol
+w Ly a higher ssoquant.  The point NE .
+indicates no exchange position or position
+before reallocaton But, if they move from
+NE to ‘¢’ then firm producing X commodity
+increases its output without affecting the Copital Iy Capital
+output of Y. On the other hand, if they are » ! X | ®
+able to move to point b, both firms Iy,
+are  benefited. However, it is noted
+that any point on the contract
+curve satisfies the optimality condition.
+
+i e.MRTS{k =MRTSYk. It means that
+the marginal rate of technical substitution [ — L
+between labour and capital of X firm must be Labour (L)
+
+equal to the marginal rate of technical
+
+substitution between labour and capital of Y Figure 7.3
+
+firm. But, it should be noted that before the
+
+reallocation, NE is the point i1.e., X is in Ixo
+
+and Y is in Iy, and so they are not ready to move down from the point NE but ready to move up from
+
+this point. Hence, any point between a and c inclusive is acceptable to both the firms X and Y,
+depending on the bargaining power of individual firms.
+
+1y, 3 e
+
+I,
+
+7.23 Combining Consumpuon Efficiency and Production Efficiency or Efficiency
+in Product-mix or Eﬂ'clency in the Composition of OQutput
+
+The third possible way to maximise welfare is by changing the product-mix. When it is
+possible to maximise social welfare by merely changing the product-mix, then it is conducive to the
+whole socicty. The third marginal condition to reach maximum welfare is that the slope of the
+production possibility curve must be equal to the slope of the exchange curve. The slope of the
+production possibility curve (PPC) is called the marginal rate of product transformation curve between
+two goods X and Y (MRPTxy). The slope of the exchange curve is called the marginal rate of
+substitution between two goods X and Y. Symbolically,
+
+MRPTxy = MRS%, = MRSE,
+
+It is very clear from the above formula that the marginal condition for a Parcto-optimal
+composition of output requires that the MRPT between any two goods must be equal to the MRS
+
+Scanned with CamScanner
+
+PRTRRY pan
+
+T . e, WA T, W W, BT m
+WwWelfare Fconomics 201
+
+between the same goods, Like the other two marginal conditions, thus condition 15 8lso illustrated with
+the help of a figure 74
+
+As 1t 13 discussed in figure |1, production at any v4
+point inmide (he PPC is inefficient and only on the
+PPC it is efficient. When we combine production
+and consumption, Pareto-optimal -critenion would
+refer 10 a snuanon where 1t 13 pot posable to
+
+increasc the welfarc of one individual without
+reducing the welfare of any other individual, by
+producing more of one good and less of another
+
+Cand ¥
+good by reallocating resources. In figure 7.4, PT
+
+curve indicates the cconomy’s PPC and | curves
+represent  the  welfare  of the economy by
+
+indifference curves, Iy, 1) & I;. The point E in the
+figure 7 4 represents Parcto-optimal state from the
+view point of both production and consumption.
+But, the other points A, B and C arc not optimal Gond X
+from the point of view of the econormy as a whole,
+
+because as 1t 1s smd, the point C 13 inside the PT : Fipure: i 4 s"&
+
+curve and points A and B are related to a low indifference curve, where the slopes are not egual
+Further, it is obvious that movement from A to E or B to E increases the welfare of the economy a3 2 )
+
+whole. At the point E the marginal condition that MRPTxy = NTRS,(Ay = MRSE?y is satisfied (
+
+Though point D is at a still higher social indifference curve, I, that point 15 not atainable for the given 6“\
+resources. The maximum reachable points are indicated by the product transformaton curve PT. '
+Hence, E represents Parcto-opumality from the point of view of the economy as a whole. This gy
+condition must be fulfilled for each commodity both in production and in consumption. Ia the '
+problem of distribution of goods or exchange, the condition is that MRS, , must be equal for every e
+consumer and in the problem of allocation of inputs in prodaction, the condition is that MRTS, « must ‘
+be equalised in the production of each commodity. But for the production of an optimal product-mix,
+
+& 4
+
+X W
+
+&S e
+
+Tf?‘
+
+MRS in consumption must be equal to MRTS in production. ;-r-
+7.3 Value Judgement , ' -
+Value judgement literally means subjective estimation. Simply, we can say vatue juﬁgem:m '
+
+is some cthical belief and judging a situation or a state of affairs on the basis of the ethical belief. All
+
+cthical statements recommending, influencing or persuading are simply called value statements or“'-.
+judgements. They, generally, describe the facts in an emotive way and tend to influence people by ~
+
+simply altering their attitudes. As value judgements descnibé facts, but are prescriptive in nature, ll*zy”_a
+
+are, hence, qualitative statements. To attain the optimum position, every individual acts 235 the best W
+judge of his welfare. To reduce or avoid smoking, recently, the government of India has passed an
+Anti-smoking Act. But, from the point of view of smokers, their satisfaction is reduced by this Act.
+
+But, ethically and from the governmeny's and the society’s point of view it is avery good step. From
+
+the point of society, the governmem likes to kave a conducive environment ‘in placgs where pco;:!g~
+gather. Terms like poverty, eradication and inequality reduction are ‘good examples of value
+
+judgements. They increase the economic welfare or »\clfare of thg wholc soci¢ty, Hence, n c..n be
+
+Scanned with CamScanner
+262 Advanced Microeconomlics
+
+conclhuded that wellare proposiions mvolve value judgements. In other words, welfare economics
+mvolves value judgements and therehy interpersonal comparisons.
+
+Fconomiets differ in thewr ideas over this 1ssue. The important questions that anise are, should
+cconormists make use of valun judgements in welfare economica? and whether it is possible to measure
+welfare without doing interpersonal comparisons?
+
+It 15 generally accopted (hat as welfare 15 an ethical term, all welfare propositions arc
+ethical and involve value judgements For example, terms such as soclal, community, national,
+gatisfaction and unlity are highly emotive and 80 economics 15 not free from value judgements, As
+
+welfare economics 15 concerned with pohicy measures, 1t involves cthical terminology such as social
+wellare, social beneflit and social edvantage.
+
+The classical economists viewed welfare economics without using any value judgements. For
+example, according to classical economists, welfare of a nation varies directly with s level of
+production But, the neo-clarsical econormists like Marshall are concerned with the cardinal
+measurement of unlity and they think that interpersonal companson of utility 15 incvitable  Pigovian
+welfare economics 1s also based on thus principle But, Robbins in 1932 held the view that there 15 no
+necessity for interpersonal comparisons and welfare can be maximised by fulfilling Pareto-optimality
+conditions. It means that there 13 no necessity for making interpersonal comparisons 10 maximisc
+
+welfare.  On the basis of this view, Kaldor, Hicks and Scitovsky formulated the compensation
+
+principle
+
+Berpson, on the other hand, points out that the compensation principle itself has involved
+some value judgments. According to lum and Samuclson and Arrow, there is no welfare econormnics
+and no meaningful welfare proposition can be made without introducing value judgements. According to
+them the Pareto’s optimal criteria are not value-free.  Boulding’s view has put an end to this
+controversy. According to Boulding, the statement of Parcto that no body should cver be made worsc-ofl
+itself involves interpersonal comparisons and so the Parcto-optimality itsclf is a special case of
+interpersonal companson for maximising social welfare function. Hence, it is not possible to avoid
+interpersonal comparisons in welfare economics.
+
+7.4  Social Welfare Function or The Bergson Criterion
+
+A social welfare function (SWF) 1s simply a rule for measuring aggregate welfare from
+individuals’ welfare  So far we have discussed that a change is considered to be good when every one
+benefits without hurting any one. But, 1t is impossible to evaluate when a change brings benefits to
+some individuals at the cost of some others. In other words, the welfare cniteria so far discussed show
+that when a change in the economc policy benefits some persons and hurts some other persons, it is
+impossible to evaluate 1t without making some value judgement about the deservingness of the
+difterent indhividuals or groups. Abram Bergson has suggested an explicit sct of value judgements in
+the form of a social welfare function to measure the welfarc of different individuals and to find out the
+net results. A social welfare function 1s analogous to the individual consumer’s utility function. It
+provides a ranking of alternative states, in which different individuals enjoy different utility levels. It
+tnes to arrive at a social ordering of feasible social states from individuals’ ranking, 1n terms of their
+desirability.
+
+The concept of social welfare function was first introduced by Bergson and later on
+scientifically developed by Samuelson, Tinter and Arrow. Bergson takes an cconomy consisting of
+two individuals and explains the social welfare function by a set of social indifference contours. The
+
+Scanned with CamScanner
+
+- i §F SOVINI | A |
+Wellare Fconomlica 18
+
+social indifference contours are not smootl curves ke Yp
+the ordinary indifference curves but in meaning (hey uB
+aro the eame. A curve is a locus of pointa representing
+constant or same socinl utihty or welfare. Purther, like
+
+the ordinary indiflerence curve, the social indiflerence
+contour 1o the right side indicates higher wellaro than
+
+the leftward rocial andiflerence comtour Hence, o
+change, which could move tho society from a pomt on
+
+the lower indifference contour to a point on the higher
+inifference contour increases the social welfare and 1,
+vice versa. The detatls are illustrated in the fipure 7.5 1,
+
+As piven in the figure, the social ndifference curves I,
+
+arc not smooth. They have some ups and downs J » X
+depending upon the relationship between wellare and UA
+utilities of |nd|vuluztl\' A nr‘uI' B To the whole society, Figure 7.5
+
+2 movement from ‘a’ to ‘b’, has no net benelit. In
+
+other words, the movement from ato b or b to a leaves
+
+the level of social welfure unaltered. But, a movement fromatw coratodorbto c or c 1o d 15 an
+increase n the social welfare. But, however it 1s very difficult to compare different individuals and
+rank them.
+
+7.4.1 Maximisation of Social Welfare or Determination of the Point of Bliss
+
+The point at which the social welfare 13 maximum is called the bliss point. In this section, a
+discussion 1s carried out to examine (he conditions of social welfare maximusation. Here, to simplify
+the explanation, a two-factor, two-commodity, two-consumer model 15 used  Thus, there are two
+factors, Labour, L and Capital, K and their quantities are given. There are only two goods X & Y o
+produce (each firm produces only one commodity) and there are only two consumers A and B. The
+motive is utiity maximisation for consumers and profit maximisation for producers. There s no
+economucs of scale and the utiliues of consumers are independent.
+
+To find out the point of bliss we have to use two curves; viz., (1) social welfare function and
+(1) grand utility possibility frontier. The social Y,
+welfare functions arc used to find the situaton where
+the social welfare 15 maximum. The grand utility
+possibility fronuer shows the maximum utility
+attainable by B, given the utility enjoyed by A from
+any given product-muix, Each point on the PPC gives yp
+rise to a utility possibility frontier. The onyelope of
+the various utility possibmihity frontiers 15 the grand ug
+utility possibtlity frontier of the economy. Maximum
+social welfare is attained at o pont whore the grand
+utility possibility fronticr curve is tangent to_the
+
+! |
+
+highest possible social welfare function ot =social |
+
+indifference contour. In other words, social _wclﬁlrc is® 0 ll )
+maximum at the pomnt of tangency of the envelope uuliry O u} - u' . UKx
+possibility frontier w ith the highest possible social .. F -
+indifference contour. The tangency poumt i€ ealled the | . Figure 7.6
+
+Scanned with CamScanner
+Welfare Econcmics = c 265
+
+sveids makong imter-persomal compensons of wtilty. Most econommc changes are of the type Kaldor-
+Hicks visualised and g0 Kazldor-Hicks crenon s pracucally vald g
+
+First we shall explam the Kaldor-Hicks omenon with a2 camencal exampie, thens move 1o
+grapkical ilestration. Suppose, there 13 2 Plan to widen the roed m a villege, e progamme wil]
+eazble all villagers to emyoy benefes Lke publc tramsport B, 3 few land ocwoers bave to lose some
+grea of their land.  The gamers e asked the queshos bow much they are ready (0 pay o caTy-out the
+project At the same ime the losers are also asked the question bow much they e ready to pay for
+proventmg the project  If they are ready to pay coe lakh ropees aad the villagers are ready © poy
+more than oce la2ki rupess, then the Kaidor-Hicks amenon 13 satisfied and 50 the project s usufied.
+This crmterion ts (Dustrated with the beip of a figure 7.7
+
+The fizzre 7.7 1s drzwn to explain the change widh two VT
+odvidezls A and B a=d two bmadles of commodines, B
+X and Y. Tbe two umlty posshiliry carves AB and
+
+amalyss from point a, A's move romatwo bercor
+betwesn b 2nd ¢ 1s 2n improvement m social weifare,
+satisfymg the Pareto optimainty condmion. Azy pomt
+
+between ¢ 2nd b mclusive represers a change that
+benefits aticast one withoot burung the other or
+
+benefits both the individuals The same 1s the result if
+verne=t outside band c or b, and ¢ or
+v 1 a to 2, or a; to a cannot be evaluated
+by the Parctian camtenon beczuse nt improves A's
+welfzre or B's welfare zt the expense of Bor A. It can
+be evaluaizd in terms of Kaldor-Hicks amterion For Figure 7.7
+
+exampls, if 2 change is planned and there 15 2 move
+
+from 2 © a;, 1t is possible to compare welfare only with the help of Kaldor-Hicks ariterion. b is
+ic1al to A 2t the expense of B and so the gain is more than the loss, and then it is an improvement
+ifzre. It ts very mteresting to pote that there is a possibility for moving to point . Point
+‘a;” 15 benzfical to ‘A’ only under the Kaldor-Hicks condtion that *a,’ (new bundic) mmst be above
+the point ‘2’ (1nitial bundle). - . ) .
+
+Thus, Kaldor-Hicks cnitenion satisfied what the Paretian criterion did not satisfy. But it is also
+not free from limitztions. It failed to indicate 2 comxnon standard value and income distribution is
+completely ignored. This criterion because of its difficulty in zpplication loses its universal validity.
+Further, it talks about only potential compensation but nqt actual compensation. - .
+
+752 Scitovsky Criterion - )
+
+It was Tibor Scitovsky (1941) who pointed cut the limitations of the Kaldor-Hicks criterion.
+He pointed out that the Kaldor-Hicks crisenion leads to a contradiction. As given in figure 7.7, 2
+movement from ‘a’ to *a,” is an imprbvement, satisfying 't Kaldor-Hicks criterion. But, the counter
+move from ‘a,” 10 ‘a’ also passes the Kaldqr-Hicks cniterién and thereby shows an improvement in
+social welfare. In such a case, each situation would be better- than the other. This contradiction s -
+
+[ A U A L
+
+overcome this contradiction. Accordm'g.to #is cnterion,’a change is said to increase wekHate if, - .
+
+&?
+Se
+
+called Scitovsky paradox. Scrtovsky kas suggested znother cniterion called Scitovsky feversal test to ﬁ*;
+
+Scanned with CamScanner
+SN e0% 000 O _Yog 00
+
+264 Advanced Microeconomics
+
+point of bhss. In the figure 7.6 given below, the grand utility possibility frontier is combined with the
+social welfare function represented by a number of social indifference contours.
+
+The social welfare 1s maximum at the point E, which s called the point of bliss. The grand utility
+curve wu' is the locus of utility combinations which satisfy the marginal condition MRPT = MRS for
+each commodity-mix. The slope of this utility frontier must be equal to the slope of the social
+mdifference contour. The social indifTerence contour I, is tangent to the grand utility possibility frontier
+at the point E where the two slopes are equal.
+
+Now, we shall discuss why Bergson criterion is superior to Pareto optimality. It is first
+indicated that Pareto optimality is a necessary condition but not a sufTicient condition for welfare
+maximisation All the points on the grand unlity possibility frontier satisfy all the three conditions of
+Pareto-optimality.  But, Bergson says only the point E yields maximum social welfare and not all the
+pomnts on the uulity fronuer. For example, pomnt € and ¢; are on the utility frontier and so these points
+must give maxumum social welfare. But, 1t is not so because at point *d’, the social welfare is more than
+at point ¢ and ¢; as point *d’ is on the higher indifference contour. Hence, Pareto optimality is a
+necessary condition but not a sufficient condition.
+
+7.5 Compensation Principle or The Kaldor, Hicks and Scitovsky
+Compensation Criterion
+
+The compensation criteria were originated to provide a basis for making welfare comparisons
+| in situations where some gain and some others lose, when redistribution or reallocation occurs. When
+a change occurs 1n an economy and 1n the resultant situation some individuals gain and some others
+lose, 1t 1s difficult to find out, whether the benefit is maximised or not. To combat such a stalemate, a
+new sct of welfare cntena have been developed by econonmusts like Kaldor, Hicks and Scitovsky. All
+the three economusts mentioned above were able to explain maximisation of social welfare, without
+making value judgements. Tibor Scitovsky's model is somewhat different from the model developed
+by Nicholas Kaldor and John Hicks. But, both the models are based on compensation principle and so
+all the models are called in the name of compensation principle.
+
+7.5.1 The Kaldor-Hicks Criterion
+
+|
+
+It is very difficult to bring an economic change, which brings only favourable effects on.
+individual welfare. Any policy change aiming at greater economic development and economic 1
+welfare has resulted in some disadvantages to atleast a few. If efficiency used by Pareto is the system
+of companson of welfare, then there will be no economic policy changes. Hence, a model to measure - |
+the net welfare 1s developed by Kaldor and Hicks. The Kaldor-Hicks criterion says that a move from
+social state *A’ to another social state ‘B’ 1s considered as an improvement in social welfare, if the
+gainers from such a move have some extra gain, after compensating the loss incurred by losers. In
+other words, assume that an economic change is contemplated, which will benefit some and hurt
+others. Those persons who are benefited by the change are called gainers and persons hurt are losers. |
+If the gainers are ready to pay more for carrying out the change than the losers, who are ready to pay
+for preventing the change, then the change will constitute an improvement in social welfare because |
+the gainers could compensate the losers and still have some net gain. If the gainers can bribe the .
+losers for accepning the change, Kaldor-Hicks criterion is met and so the change is justified. Here, it is
+assumed that the marginal utility of money remains constant.
+
+<3 Kaldor-Hicks cniterion 1s, thas, applied to a situation. where an economic change benefits
+some peopic and hunts others.  In such a sstuatior, the Pareto cnterion cannot be applied since Pareto
+
+L (%6 o VY
+
+Scanned with CamScanner
+&
+
+S
+
+L - e
+Welfare Economics B el = - 26 A
+
+’_J
+
+avoids making inter-personal comparisons of utility. Most economic changes are of the type Kaldor.
+Hicks visualised and so Kaldor-Hicks cniterion is practically vald .
+
+')
+
+First we shall explain the Kaldor-Hicks criterion with a numencal example, then move g
+graphical illustration. Suppose, there is a plan to widen the road in a village, the programme wiy; -
+cnable all villagers to enjoy benefits like public transport. But, a few land owners have to lose some
+arca of their land. The gainers are asked the question how much they are ready to pay to carry-out the
+project. At the same time the losers are also asked the question how much they are ready to pay for
+preventuing the project. If they arc ready to pay one lakh rupees and the villagers are ready to pay
+more than one lakh rupees, then the Kaldor-Hicks cnternion is sausfied and so the project is justfied.
+This criterion is illustrated with the help of a figure 7.7
+
+4
+)
+
+/
+
+The figure 7.7 1s drawn to explain the change with two ~ Ya
+individuals A and B and two bundles of commodities,
+X and Y. The two utility possibility curves AB -and
+A,B, represent the two bundles of goods. Starting our
+analysis from point a, A’s move from a to b or c or
+between b and ¢ is an improvement in social welfare,
+satisfying the Pareto optimality condition. Any point
+between ¢ and b inclusive represents a change that
+benefits atleast one without hurting the other or
+benefits both the individuals. The same 1s the result if
+they move from a, to b, or ¢, or between b, and c;,.
+But, any movement outside b and ¢ or b, and ¢, or
+movement from a to a, or a, to a cannot be evaluated
+by the Paretian criterion because it improves A’s
+welfare or B's welfare at the expense of B or A. It can
+be evaluated in terms of Kaldor-Hicks criterion. For ) Figure 7.7
+
+example, if a change is planned and there is a move
+
+from a to a,, it is possible to compare welfare only with the help of Kaldor-Hicks criterion. It is
+beneficial to A at the expense of B and so the gain is more than the loss, and then it is an improvement
+in social welfare. It is very interesting to note that there is a possibility for moving to point d. Point
+‘a,” is beneficial to *A’ only under the Kaldor-Hicks condition that *a,” (new bundle) must be above
+the point *a’ (initial bundle). S -
+
+’!P»)
+
+iy
+‘o a o @
+
+L]
+
+) D
+:!
+/
+
+]
+
+§ §d 9 o ane
+
+P
+
+Thus, Kaldor-Hicks criterion satisfied what the Paretian criterion did not satisfy. But it is also
+not free from limitations. It failed to indicate a common standard value and income distribution. is
+completely ignored. This criterion because of its difficulty in application loses its umversal validity.
+Further, it talks about only potential compensation but nqt actual compensation. -
+
+7.5.2 Scitovsky Criterion - . .
+
+b P
+
+It was Tibor Scitovsky (1941) who pointed out the limitations of the Kaldor-Hicks criterion. i
+He pointed out that the Kaldor-Hicks crijerion leads to a contradiction. As given in figure 7.7, a
+
+movement from ‘a’ to *a,” is an imprbvement, satisfying tife Kaldor-Hicks criterion. But, the counter -
+move from *a,” to *a’ also passes the Kaldqr-Hicks criterion and thereby shows an improvement in >
+
+social welfare. In such a case. each situation'would be better- than the other. This contradiction s -
+1 called Scitovsky paradox. Scitovsky has suggested another criterion called Scitovsky teversaltestto & -
+overcome this contradiction. Accordin'g.to this cnterion,'a change is said to.increase weHare if, " .. =
+
+- o t* 4 . e N
+
+* ) \1 -
+3 > 1 > y o —
+
+Scanned with CamScanner
+TN WANYRATHN T ALL X P
+266
+p (1) Kaldor-Hicks criterion is satisfied and
+
+M (i) If the losers are incapable of bnbing the gainers for accepting the change.
+
+. Hence, a movement from point ‘a’ to point ‘¢’ is an improvement because both A and B can
+"Y—Q move further to potnt d. At point ‘d’ both are better off than before. But it is not ‘c’ to a;.
+
+Scitovsky, thus, solved the coatradiction of Kaldor-Hicks criterion and took ﬂier:"_’i“:y
+
+" -(,)\ economics to a new height. However, the compensation criterion is concerned with inyu‘: I,:;ativc
+
+aspect of social welfare, at the neglect of equity. The question of equity is concerned with 3 Fails to
+
+40\ preference of individuals in the whole economy. 4ll also leads to a contradictory outcome and | s, it
+
+~ covide any clear ordering of available economic alternatives. Another failure of thls_ model of
+P;(uﬂ\t\' constant marginal utility of money. But, it is a well known fact that the marginal utility
+
+'-\D :n;‘.ncy is not constant and so redistribution resulting in inequity cannot be properly measured unless
+
+we know the exact marginal utility of money to different individuals.
+
+Advanced Nllcroecclm"‘“ld
+
+Y 7.6 Inability to Obtain Optimum Welfare
+
+i ﬁ‘) It 1s generally accepted that competitive market leads to an efficient allocation of resou'l'cis:e‘
+
+- a given pont of time. Every competitive equilibrium is Pareto-optimal. It is the first wel ’ws
+
+- theorem called Invisible Hand Theory or Harmony Thesis. The second welfn_re theorem sta o
+"%@) that a Parcto optimum allocation of resources can be realised if onc uses a pricing mechanism
+
+fectly competitive markets.  The essential of competitive equilibrium is that at a sel»gf price (P,
+
+) p-. .. P, all markets are simultaneously cleared. Consumers’ and Producers’ equilibriums are
+
+mutually consistent with each other and in aggregate, all markets are cleared. Consumers4m-’-\mﬂ}15"
+
+their satisfaction and producers maximise their profit and at equilibrium their maximising points
+
+"™@ coincide. The maximum happiness point (point of bliss) is reached where slopes of the isoquant, ‘1’}"
+
+indifference cunve, the production possibility curve and the budget line are equalised. To say 10
+
+‘ "\v‘ simple terms, perfect competition can lead to a general equilibrium situation where the three marginal
+
+conditions of Pareto are satisfied. It is worthy to consider the following points here:
+
+w
+Y Q (i) Profit maximisation is achieved when the following condition is satisfied, i.e., MRTS.x = T
+r‘g for individual firm and for all firms h(RTSZ{K = N[RTSZK =
+r
+—
+
+| (1) Uulity maximisation is achicved only if and when MRSxy = E. for an individual and for the
+-~ y
+A B P,
+| - whole economy l\iRS" = b(RS“ ==
+W Py
+; (1i1) At the bliss point, the slope of the production possibility curve is equal to the slope of the
+-
+
+indifference curve, i e, MRPT, = —*.
+
+y
+
+(1v) A perfectly competitive market maximises 1ts profit by equalising its marginal cost to the
+market price. Thus we have, ) ’ E
+
+o— - .
+
+A 71T Xd W
+
+Scanned with CamScanner
+AN YY YW//VAY W A 4 DA
+
+|
+
+Welfare Economics ' 267
+
+From the above analysis, it is inferred that a perfectly competitive system ensures the
+attainment of maxaimum welfare. But, if perfect compeurion is absent, then maximum social welfare
+will not be achieved. Further, it is also assumed that there is no extemalities, no public goods, no
+increasing returns and no difficulty in drviding inputs. Though, for artaining maximum social welfare,
+the indifference curves and isoquants must be convex to the ongin and the production possibility
+curve is concave to the origin and the demand functions must be continuous as these conditions are
+not very important, no separate discussion about these is not carried out here. But the conditions
+mentioned first are discussed one by one 10 analysc how the absence of these conditions prevents the
+society from reaching the maximum social welfare level.
+
+7.6.1 Market Power or Absence of Perfect Competition
+
+The first welfare theorem holds that all consumers and firms arc only price takers and not
+price makers. If some individuals or firms influence the price or are price makers, then there will be
+no efficiency in resource allocation. It is because under perfect competiuon the pnice is equal to the
+marginal cost. But, a firm with market power may raise the price above the marginal cost by limiting
+its output. Market power arises in different contexts. One is monopoly, another is oligopoly and the
+other 1s monopolistic competition. Under monopoly, a single firm controls all matters related to
+production and selling. It is possible to raise the price above the marginal cost m the less extreme case
+of oligopoly. In monopolistic competiive market condition, though many firms produce a particular
+commodity, brands of a few companies are considered supenor. For example; in India though a
+number of firms produce suiting materials, Raymonds, Gwalior and Vimal are regarded by many
+consumers as distinct and so their prices are not equal to the marginal cost. Failure to equate price
+with the marginal cost results in inefTicient distribution of commodities, among consumers. The MRS
+of different consumers are not equal, the MRPT of different producers are not equal, the marginal
+rates of substitution between products and factors are not equal to their marginal rates of
+transformation and the pnce ratios of different products and factors are not equal to each other.
+Simply, if there is a market power, then Paretian optimum conditions cannot be achieved. A figure
+can help one to understand casily these ideas. (See figure 7.1). In the figure 7.1, all the conditions for
+maximum social welfare is achicved at the point E, but, points A and B are not opumal points. At
+point A, the good X is produced under monopoly condition while good Y is produced under perfectly
+competitive condition. But at point B, the good X is produced under perfect competition while the
+
+good Y is produced under monopoly. At point A, MRPTxy is less than / . Atpomt B, MRPT‘y
+
+is more than —= . But consumer equates MRS, With —= . Under ‘A’ situation, comriodity "X is
+
+y Yy
+produced under monopoly, MRPTxy< MRSty and under “B” situation, cornmodlry “Y" 15 produced }
+
+*1 ° under monopoly, MRPTxy > MRSxy. T‘hus except point E, all olhcr pobas indicate noa-Tulfilment of -
+Parcto optimality. . 5 -
+
+Scanned with CamScanner
+268 Advanced Microecono
+
+7.6.2 Externalities
+
+Another requirement for the validity of efficiency condition is that there are no exte
+effects in consumption or in production. In other words, neither external economies nor disecona
+occur in consumption and in production. By externalities, we mean the presence of certain fac
+outside the pricing system, which are not captured by the market process. Externalities are mx
+imperfections, where the market offers no price for service or disservice. The presence of extern
+_in consumption and production leads to Pareto non-optimality, mal-allocation of resources:
+consumption and production, to fall short of Pareto-optimaljty. In short, we can say externalities
+to divergence between social costs and social benefits and private costs and private benefits:
+condition for Pareto-optimality is that there should not be any divergence between these costs
+benefits.
+
+7.6.2.1 Externalities in Consumption 4
+
+‘
+EL
+
+It is assumed in perfect competition that utility is independent. In other words, for attais
+Pareto-optimality it should be assumed that there is no externalities in consumption. The utility Te
+
+)
+—
+
+Consumption of one person affects the utility of others positively or negatively. In consumyp
+bandwagon effect and Veblen effect influence considerably the utility of others. Practi¢
+speaking, smoking of one person affects the utility of non-smokers. Using un-leaded petrol
+maintaining clean environment around one’s house increases the utility of neighbours. Consumpti
+
+r
+it
+1
+:
+3
+v programmes on that TV. 3
+. &
+: If there i |s no externalities in consumption, the marginal rate of substitutions will be equali
+. MRS*,, = MRS"® xy- 1f externalities are present in consumption, these rates cannot be equalized an: "
+N Pareto-optimality cannot be achieved. One can easily understand the above discussed points wit
+1 help of the following figure 7.8. N
+'r Ya Ya : '3
+' (A) \ (B) __ » 4
+' .~ 3 1 ?
+‘ s, = |
+Good Y = Good Y L ;
+- -
+|
+| | L, F
+! H >x >x T
+o Q, Q " — Q .
+Good X Good X 2
+Figure 7.8 f— L
+
+To get a clear understanding about external discconomies in consumption it is necessany
+
+have an assumption that consumer A, is not affected by the consumption of B, but A's consump®
+
+- affects the utility of B as A is a smoker. If A increases his consumnption of cigarcttes ‘X, 3 will
+unhappy and 1f A decreases, B will be happy. We may take another example, if *A’ consumes n'!-"
+
+o
+
+Scanned with CamScanner
+\‘f-re Economics . ’ . ‘ 269
+
+for his house use, it increases the mosquito problem as the_waste water flows into an open
+“pround, in which mosquitoes thrive. On the other hand, if he reduces the use of water, the pit will dry
+and mosquito problem will be reduced and so B will be happy Whatever may be the example, it is
+erred that if the disutility creating consumpnon 1s reduced, then the social welfare will increase. In
+% above diagrams, the original positions are ‘a’ for A and ‘b’ for B. If ‘A’ reduces his consumption
+O(g to OQ),, then the utdity of B will increasc. Consumner ‘B’ 1s now in a higher indifTerence
+e I, , which is an upward shified indifference curve. It means that he gets more satisfaction
+wsthout any change in his budget or consumption. He consumes the same old quanuty of OQ, in
+nel (B). Though MRSs at a, and b, are not equal, the social welfare increases in the situation
+use of the decrease in the consumption of good Y, by consumer A.
+
+3 e
+
+In the same way, in the case of extenal economies in consumption, an increase in
+ption of ‘A’ increases the utility enjoyed by ‘B’. For example, if A keeps a light buming in
+snt of his house throughout the night 1t will benefit the opposite house owner who has no electricity
+anection and the others who use the path passing through (in front of) A’'s house. It can be
+xplained by taking a, as the initial position of A and b as the initial position of B in figure 7.8.
+
+2.2 Externalities in- Production
+
+.-.‘ - P ——
+
+' As in consumption, there are two types of externality in production — external economics
+d external diseconomies. External economies occurs when productive activities of firms and
+
+{
+“ trics benefit other firms and industries for which the contributing firms receive no payment. For
+: ple when water 1s pumped out by a coal mine, the cost of pumping water by an adjacent mine is
+.‘.. Or a new highway reduces the transport cost of individual firms. As these firms do not pay
+& !hxs service, the marginal social cost 1s lower than the private marginal cost and pnvate marginal
+ten fit is less than the social marginal benefit. The private marginal cost is lower than the social
+: inal cost and pnivate marginal benefit is higher than the social marginal benefit if there are
+. al diseconomies in production. For example, the production of alcohol and 1ts cost in terms of
+idents and other inconvenience it creates. The private cost, which does not include the social cost
+
+> environmental damages, accidents due to drunken drivers and the inconvenience related to it, is
+' s than the social cost, which takes all the social costs hsted above. And so the social benefit is less
+han private benefit if there is external diseconomies in production. Here, the marginal social cost
+i C) is equal 1o the marginal private cost (MC) plus the marginal extcmnl cost (MEC).
+1 bolically,
+
+MSCx = MCx + MECx
+
+The marginal social benefit (MSS) is cqunl to the margmm private benefit (MBy) plus the
+ginal external benefit (MEBx).
+
+bolically, , - o .
+MSBx = MBx + MEBx
+. Now for our discussion, take the pmducuon of unlcadcd petrol for external ‘economies and the
+
+her in this aspect. S
+
+oduction ‘of alcohol for cxternal dlsccqnomles ~ The followmg figure 7.9 cnhgh(cn the readers )
+
+Scanned with CamScanner
+Y, //70" 2% o o » @ "R DS
+
+Vielfare Economics . 7271
+
+Ge two firms must be egual It can be casily sdjusted and Ghe total peudact will bz completely
+czhausied |f there 3 oomstamt ptarmado-scale. (n the ofher band, both decweazsmg reoams esd
+mCreateng returns Create non-ptealey pedlems
+
+Is the case: oA decreasing roarns, e (0t2) prymem made o lower thas Gue total monee of
+
+ezl vilue of capa produced  Is other words, ttal prodect 18 A czhaesed by (actn peymenmd
+
+bus, there 5 a destnbutuonal problem 1 8 goneral epuddres frame work However, o o ot 8
+seTioms prodiers bt tegures unly wiyres mathemat sl calodatems as e ERr e rEATe Ty
+
+On the ofhier hand, myreamag rev=ns Vo wale creaes orr only Getrdrsmal proiems b dwo
+equzisty probiems berzuse long-rm marpeal om o
+product tram
+LAC 5 abve |MC ¢
+MC the (irm nas v ncw s dwaps B foally wads @ % Gllagnr oA Gn whyde racnm vyses Udess
+G boes moared by firms 8 orvered by gorvers
+
+rve o Siow ey everage w@ Durvr wl
+< 15 cmver v G origs wmmieed o Urcaie o S on g L3 we kmow, f
+
+L
+™ ooy ks The (rm has @ ogpaloze VAL, weali MV and an AL s shove
+
+T tutulars, Sut an FEPS wil 6o Y prsnd M
+
+sbady s given, the govemment will bave W wek o sidovonad wrars of rovemsw v, goy Ge
+sbudy PBat, 2 2 cxnpettive marie a s slous umpaciie  Ths stuston leads t© teastusbenoe 40
+e Parmtoaptimalay and therelyy, i e overall efficiency
+
+There will be no proviem, f we have an enanporant wcreaseng retsrasAc—wcile
+ImCreasing returms W0 scale o suong, the preeun prasdy
+pven in ligure 7 10 Howeves, twe) sstations snse, iz
+
+Bz, of e
+T (AVPS B
+
+] cawve will b conver
+
+(1) The curvatuse of the communny indiflcsence curve 1 grester Guan e corvatese of the
+comver pridbuium porsdyday curve snd
+
+(1) The curvatue of the PPC 13 greater (han the curvaters of the mdaferencs curve,
+
+¥ 4 Ya
+1
+\ Ay " (5
+‘«
+i Y i -~ [T
+\ o Y ~ | % lseva'lue #retncy
+\ \‘ g W\ . Line
+v .
+O » X /'L -
+
+’ Flgure 7.10
+
+In prarie) (Ay of figure 710, 5. 19 Whe eapushilir turn peort witiers e insrvatue product Lne 134, e
+production posaibility carve VI and (b commmnity wdifferenur carve 1o, ste langent  Here, the
+azimm social welfare ia no bonget aaur iaded witly mmarurmm vatue of gutpat ALpram 1, the value
+
+/ e .
+
+Scanned with CamScanner
+F— S — - TS G A
+
+h 270 Advanced Microeconomics
+
+. (A) (B)
+
+—~ Good Y
+]—Q Good Y AR=MR AR=MR
+I /]
+
+ey >X >X
+i 6 Q Q o L Q*  Q i
+'I:;‘) Good X Good X
+
+Figure 7.9
+
+[~y s .
+
+]'-‘J The two situations are explained in figure 7.9, panel (A) and (B). Panel (A) is meant for
+
+external economies and panel (B) for external diseconomies. The revenue curves are hornizontal, AR =
+
+; __o MR as there is perfect competition in the market. In panel (A) by equalizing private marginal cost
+
+with private marginal benefit only OQp quantity 1s produced. But, if social benefits are included
+
+-~ (SMS), then the ideal output is OQ*. It means that less quantity is produced than the ideal if external
+
+I-O economy prevails. In panel (B) by equalizing private marginal cost with private marginal benefit,
+
+OQp quantity is produced. But, the ideal output, based on social cost and social benefit should be only
+
+I:Q 0Q*. Thus, presence of external diseconomies creates a situation, where the actual quantity produced
+is more than the Paretian optimal output. -
+
+- The whole economy can be explained with the help of a figure (see figure 7.1). In figure 7.1,
+the economy’s ideal output (Pareto-optimal) is fixed at point E. But, for external economies,
+equilibrium will be reached at point A, where the quantity of commodity X produced is less than the
+ro ideal output. If there is external diseconomies, more of commodity X is produced and the equilibrium
+point is B. Hence, reallocation 1s necessary to satisfy the optimal condition.
+|
+
+For optimality, the marginal social cost must be equal to marginal social benefit.
+Symbolically, MSC = MSB. In a multi-product economy, equality must be maintained for all the
+i "*Q commodities produced. Symbolically, -
+
+MsSB, MSB, _MSB, _,
+[' MSC, MSCy MSC,
+T:”g But, in the real world because of the presence of externalities this condition may not be
+satisfied and so there is divergence between the ideal and the actual output.
+
+—“g 7.6.2.3 Decreasing and Increasing Returns to scale
+
+Ideal output is reached 1f constant returns to scale operates in the cconomy. But, if decreasing
+
+]"Q and increasing returns occur, then there will be some problems. Problems will be less for decreasing
+returns to scale than increasing returns to scale. Suppose, therc are two firms producing a commodity
+
+P by using only one factor, labour for reaching the 1deal output point, the marginal product of labour in
+
+Scanned with CamScanner
+
+N il B B A o o W o QYW =~ WS
+
+Welfare Economics . ! 271
+
+the two firms must be equal. It can be easily adjusted and the total product will be completely
+exhausted if there 15 constant retums-to-scale. On (he other hand, both decreasmg returms and
+increasing returns create non-optmality prob'
+
+In the case of decreasing returns, the tota) payment made 13 lower than the total imcoms or
+total value of output produced In other words, total product 13 not exhausted by factor payments
+Thus, there is a distnbutional problem in a general equ:l:brrum frame work. However, of 5 pot a
+serious problem but requires only tedious mathematical calculations as we miroduce non-lmeznty
+
+On the other hand, increasing returns to scale creates not anly distnbutional problems but 2lso
+equality problems because long-run marginal cost curve 13 below long-nun averags cost curve and
+product transformation curve is convex 10 the ongin =stead of comcave to the origim. As we know, if
+LAC 1s above LMC, the firm incurs loss. The firm has to cq_'x zz MC with MP and 23 AC 13 above
+MC the firm has to incur loss always. It finally leads to the collapse of the whole ra-ket symem. Usless
+the loss mcurred by firms is covered by government subsidies, such an owput will not be procduced. If
+subsidy 1s given, the government will have to seek for additional sources cf revernue to pay te
+subsidy. But, 1n a competitve market it 1s almost impossible. This smuation leads to dmurbance ©©
+the Pareto-optimality and thereby, to the overall efficiency
+
+There will be no problem, if we have an unmmportant increasing reterns-to-scale. Buy, of e
+increasing returns to scale is strong, the production possibility curve will be convex to the cngm as
+given in figure 7.10. However, two situanons arise, viz.,
+
+(1) The curvature of the community indifference curve is greater than the curvense of e
+convex producuon possibility curve and
+
+(11) The curvature of the PPC s greater than the curva:urv of the mdifference curve
+
+YA Ya
+P
+()
+L
+E
+
+L .
+
+o M T
+Flgure 7. 10 .
+
+In panel (/\) of figure 7.10, E 15 the cqulhbrmm pon.m where the xsovnlu--pmdun Ln' LM, the -~
+production possibility curve PT and th¢ community indifference curve lo, afe tangent  Here, !hc
+maximum social welfare 1s no longer assocn:ncd with maximum value ¢f gutput. Atpomnt E. the va'es
+
+Scanned with CamScanner
+272 Adyanced Microeconomics
+
+; P
+of output is at the minimum. Given % the value of output will be maximized at either P or T.
+
+Thus, in this situation, the social welfare is maximized but 1t is possible to get only a minimum value
+of output.
+
+In panel (B) at the point of tangency E, both the social welfare and the value of output are
+minimum. Welfare maximization is attained only at point P, where the highest possible community
+indifference curve I,, meets the PPC curve PT.
+
+7.6.2.4 Uncertainty
+
+Another reason for inability to obtain optimum welfare is uncertainty. Doubts arise about the
+efficiency of competition when there is uncertainty. What is meant by uncertainty? It is nothing but
+an economic state of affairs, where people don’t know precisely about the consequences of their
+actions. In competitive market. we assume, that there is certainty and every one knows everything in
+the market as well as in the matters related to production activities. It means, that there is perfect
+knowledge about the market, both supply and demand and the consequences of every action
+undertaken. The next question that anses is, whether there is uncertainty and whether markets will
+break-down. The answer i1s simply no because the nisk related to uncertainty can be reduced or
+climinated. If there is risk, then there will be possibility for trading off the risk by, selling insurance to
+cach other. The first Welfare Theorem tells that as long as a competitive insurance market exists,
+individuals bear nsk in Pareto-efficient amounts. Another method to reduce risk is diversification.
+Any project’s risk can be reduced by issuing shares and thereby diversifying the risk of one person to
+a large number of individuals. The stock market allows people to trade risk with one another,
+allowing a Pareto-efficient allocation of risk. Thus, the presence of uncertainty does not diminish the
+ability of competitive market in the efficient allocation of resources.
+
+7.6.2.5 Non-existence and Incomplete Markets -
+
+The next assumption made by economists related to maximization of welfare is that there is
+market for every commodity and the market is complete. If there is perfect market, then it will be
+ecasier to fulfil all the three marginal condrtions of Pareto. But, if a market for a commodity does not
+exist, we cannot expect the market to do the function of efficient allpcation. In reality, markets for
+certain commodities are not in operation. The best example is market for insurance. Though
+insurance is a very important commodity, in the world of uncertainty, we cannot purchase insurance
+against certain events. It is not possible to purchase insurance against becoming poor. No insurance
+firm is ready to supply poverty insurance. If the insurance is supplied, the policy owner will decide
+not to work hard and hence the insurance company will have to monitor him. Monitoring is very
+difficult or impossible and so there is no market for poverty insurance. It means that if there is no
+market, then there will be no possibihty for efficient allocation. On the basis this principle only it is
+inferred that maximum social welfare is not possible in the socialist economy where market does not
+do the allocation function.
+
+Another reason for the failure to obtain maximum welfare is incomplete market or incomplete
+information - one party in a transaction has information that is not available to another. It is called
+asymmetric information. Asymmetric information is not good for the thriving of private markets.
+Lack of information or incomplete information certainly affects resource allocation  Unless one
+knows exactly all details about the product he cannot maximize his wclfart The details about
+
+asymmetric information are discussed in chapter 9. '
+
+Scanned with CamScanner
+-
+Welfare Economics . ) 23 %
+7.6.2.6 Public Goods ’T 1
+
+Another cause of market failure i3 the exstence of public goods. Exstence of pubhic goods [ )
+results in the non-attainment of Pareto-optimality, under perfest competition. A public good is one, r'-
+whose consumption by one individual does not reduce 1ts utility to any other individual. In other o "‘
+words, a good 1s considered to be a public good. if 1ts use by an individual person or firm does not prece.
+reduce 1ts usage by other individuals or firms. For example, a brecze in the sea-shore  The tradrtional I ‘
+example is the light from the hight house. [ts use by one shrp does not reduce the amount of hight &
+available to other ships. Simply, consumption of a pubhic good 15 mon-rival i pature Another ¢
+character of public goods is that they are not subject to the exclusion principle or pon-excludability - !
+Exclusion principle refers to a system where those who have not paid are excluded from the g
+enjoyment of the service. But, public goods are oot subject to the exclusion principle, which means
+that their benefits are available to all, irespective of whether they pay for them or not. In other words, G
+in the case of public goods, the exclusion of non-payers from the benefits 1s unpossibie and 1n some -
+cases extremely costly For example, collecting money from the ship owners, who make use of the
+light from light house, is impossible but money can be collected from the persons who use the bndge 6?;
+by establishing a toll gate.
+
+If individuals can enjoy the benefit of a public good, without paying for it, they have every a
+incentive to nde free. A free rider is one who dertves or gets benefits of a commodity or a service
+without paying for it. When everyone tries for a free nde it will result 1n imbalance and market ‘
+farlure. Even 1f 1t 1s possible to exclude non-payers, it 1s not possible to reach the Parcto-optimality .
+
+point.
+
+7.6.2.7 Indivisibilities ,'
+The Pareto optimality 1s based on the assumption of complete divisibility of products and &.“_,‘_ |
+
+factors. In reality, they are not perfectly or infinitely divisible. In the production wprld, there are T '
+
+small firms and large firms. The economy has arttained the equality of the MRPT and the MRS of the
+
+two commodities among the consumers. In this situaton, the three marginal conditions of Parcto o~
+
+optimality are fulfilled. But, the usc-of resources 15 mefficient and social welfare 1s not maxurmzed - |
+
+due to the indivisibility of producuon methods and factors of production. The small firms cannot take .
+
+advantage ot the lower cost of the large-scale production techmiques. Large firms produce a greater p .
+
+amount of output with the same amount of resources and small firms produce less output with the [
+
+same amount of resources because of mapplicability of the large-scale production techniques. i, @ ’
+
+Thus, Pareto optimality is not possible to attain when —
+(1)  there is market power - - . o
+(i)  there are externalities in production and in éonsump(ion
+(iii)  there are strong econpmies of scale which result in convexity ia the PPC
+(iv)  there is uncertainty »
+(v)  there is ng market or mq-ompic(e market .- A
+(vi)  there are public goods. and B :
+
+. (vii)  there are indivisibilitics in the pro.duclion function’
+
+Scanned with CamScanner
+O
+
+RAN T W TTAN STV A
+
+» 274 _ Advanced Microeconomics
+
+-
+
+LLevb
+
+/
+
+ERRERK
+
+d |
+
+1
+¢ v
+
+¢l
+
+7.7 Theory of Second Best
+
+The theory of Second Best was propounded by R.G. Lipsey and Kelvin Lancaster (1956). So
+it i1s also called Lipsey Lancaster theorem. The theory says that if a constraint operates in the
+economy in the path of fulfilling the Pareto optimal conditions and the constraint cannot be overcome,
+then the best policy for social welfare maximization is to deviate from the optimal conditions, without
+fulfilling the remaining conditions. If all the Paretian optimality conditions are satisfied, then it will
+be the first best solution. But, in reality it is not possible as one or more of the Paretian marginal
+conditions cannot be satistied due to some political, social or economic constraints. If that is the real
+situation, then maximization of social welfare is unattainable. As the first best solution is not possible,
+it is better to search for the second best solution. This 1s the gist of the theory of Second Best.
+
+The economists have the view that when some constraints are operating in the economy, it is
+not necessary that the satisfaction of the remaining Pareto marginal conditions, improves social
+welfare. In other words, the theory states that if one or more of the first order conditions cannot be
+satisfied because of the presence of some constraints, it is neither necessary nor desirable to satisfy the
+remaining conditions. Simply, social welfare can be maximized by deviating from Pareto optimality
+conditions. By looking into the figure 7.11, one can easily understand the first best solution and the
+second best solution. Even if it is not possible to reach the ideal output or ideal consumption, it will
+be possible to know where to reach, to maximize the social welfare.
+
+In the absence of any constraint, the Y4
+first best solunion in the figure 7.11 is E*,
+where the society’s welfare 1s maximized.
+The highest possible indifference curve is I
+A constraint operates in the form of income
+line or budget line LM. In this situation, it is
+not possible to reach the maximum
+indifference curve 1. Hence, it i1s better to
+move inside the PPC curve PT. The Paretian
+optimality conditions are, not, satisfied at the
+point a, and the social welfare attained 1s
+shown by the community indifference curve
+I,. But, the social welfare at point E; is more
+than at the point a, because the welfare
+attained at point E; 1s represented by I,,
+which lies above Ip. Simply, the welfare
+
+N
+
+Good Y
+
+level at point E;, where Pareto optimality Good X
+conditions are not satisfied i1s more than at
+point a, where other but not all, Pareto Figure 7.11
+
+opumality conditions are satisfied. Hence, it
+
+1s true that it 1s not necessary to try to fulfil other marginal conditions, if there are some constraints in
+achieving the first best solution
+
+Now, take an example to explain this situation. In the economy, two goods "X’ and ‘Y” are
+produced. Commodity X is produced under monopoly conditions and the market for commodity Y is
+perfectly competiine.  Here, monopoly acts as a constraint in the way of ataining Paretian
+equilibrium. In such a situation, it1s good to the economy, maximizing social welfare to deviate more
+2nd more from perfect competition, in the rest of the economy. An attempt 1o ensure the fulfilment of
+
+Scanned with CamScanner
+
+- 4 I I S i/ SN AL A E. S B T N\ W
+
+Welfare Economics ) . 275
+
+Pareto optimal conditions causes a fall in social welfare. It is based on the argument that «f one
+commodity 1s produced by monopolist and another by a perfectly competiive producer then there 1s
+deviauon between MRS and MRTS (MRS > MRTS). Hence, an efficient output 1s not produced and
+allocation of resources is not optimal. But, 1f both the commoditics are produced under monopoly
+condition, then there will be a possibility for reaching the equality conditior, i.e., MRS = MRTS
+
+7.8 Arrow’s Impossibility Theorem
+
+The social welfare function developed by Bergson 1s a method for finding out the social
+welfare from individuals® welfare. The function tries to arrive at a social ordering of feasible social
+states from individuals’ ranking of these social states in terms of their desirability. The social renking
+of alternative economic situations can be made only by making interpersonal compansons of utility.
+Kenneth J. Arrow in his book ‘Social Choice and Individual Values' (1951) states that even if
+individual preference ranking or ordering, satisfies the property of consistency, it may not give us a
+consistent ranking for social preference. A consistent social ranking of economic situations may not
+exist, even if one uses the democratic principles of majority voting. Simply saying, there is
+impossibility of obtaining the social welfare function even if individual preferences are consistent. He
+suggests seven minimum conditions or cniteria, which social choices must satisfy in order to reflect
+preferences of individuals.
+
+) Completeness: The social ranking must rank all feasible economic situations.
+
+(ii) Consistent: The social ranking must be consistent Consistency refers to the
+requirement that individuals have preferences that are fully defined, 1e., every
+alternative is ranked in relation to every other. .
+
+(iii) Transitivity: The ranking must be transitive. In other words, soc:al choices mest
+satisfy the condition of transifivity. 1f a socicty prefers X to Y and Y to Z, then the
+society must prefer X to Z. The social preferences are commpletely ordered.
+
+(iv) Responsiveness: Social choices must be directly related to mdividual preference, LC..
+social choices must change in the same direction as individual choices. In other worn
+the social ranking must be b:sed on individual preferences and must respond xo
+individual’s preferences.
+
+(v) Non-dictation: The social mni:ing must not be imposad or dictated. It should not be
+imposed by one individual within the society as it depends on individua! preferences.
+
+(vi) Non-imposition: The social ranking must not be imposed by customs or forces from
+outside the society but derived from individual preferences. -
+
+(vii) Independence of Irrelevant Altermatives: If any one.altémative is excluded, 1 will
+not affect the ranking of the other alternatives. .
+
+A social welfare function exists only when the zbove mentioned axioms are fulfilled
+simultaneously. Arrow demonstrates that it is not possible to sausfy all these conditions but there is
+good chance for getting at least one condition violated. - It is very difficult to"obtain 2 transitne social
+choice for each set of individual preferences,” without violating at least one condinon. It is said that
+social choice is inconsistent or undemecratic. This view has tome to be known as the Amow's
+
+Impossibility Theorem. £ = . -
+
+Scanned with CamScanner
+i B 2 oV 028% . o0\
+
+276 Advanced Microeconomics
+
+The following example shows that such a all conditions-fulfilled social welfare function may
+not exist. Suppose, an economy consists of 3 individuals A, B and C and there are three alternative
+states of affairs X, Y and Z. The individuals’ rankings are as follows.
+
+A - X>Y>Z
+B —» Y>Z>X
+C - Z>X>Y
+
+It can now be numerically denoted by assigning 3 for their first choice, 2 for second choice
+and 1 for third rank.
+
+Table 7.1: Individual Preference
+
+. Alternative
+Individuals X Y Z
+A 3 2 1
+B 1 3 2
+C 2 3
+The table 7.1 and the figure 7.12 show that A YA )
+
+prefers X to Y to Z and B prefers Y to Z to X
+and C prefers Z to X to Y and each individual
+has consistent preference. But, the majority
+voung in a democratic state leads to 3
+intransitive social patterns. A and C prefer X
+to Y, A and B prefer Y to Z and B and C
+prefer Z to X. All the three alternatives X, Y 2 B
+& Z are preferred by two of the three
+individuals. This inference is known from the
+multi-peaked pattern of the curves indicating
+individuals® preference. It is very clear, that a 1 A
+democratic voting system has not given any
+equilibrium. It can easily be inferred that the
+democratic process of ranking leads to a o
+contradictory welfare situation. This is called (o) X Y Z >X
+
+\ voting paradox. The voting paradox arrives Alternatives
+
+whenever individual preference are not single
+
+peaked
+
+7.8.1 Criticisms
+
+' Ranks
+
+Figure 7.12
+Arrow’s impossibility theory is also not free from limitations. The important limitations are
+as follows:
+
+Arrow talks only about democratic voting, but fails to talk about a system where there is
+permission for buying and selling of votes as well as for taking a unanimous decision.
+
+Scanned with CamScanner
+RN\ /U W WA VLA M LS
+Welfare Economics . o 277 ﬁcw
+
+e Armow's way of explaining the mt;dcl is also very seriously criticized. It is nothing buta - ;,.r
+theorem of mathematical politics. ) i
+[
+
+e  Another limitation of Arrow’s theorem is that it is only a theorem of decision-making
+rather than a theorem of social welfare maximization. : ;
+o
+
+e Arrow's theorem is also not free from value judgements or inter-personal comparisons.
+8! P
+
+-
+7.9 Rawl’s Theory of Justice - 9
+
+Ly
+
+John Rawl, known mainly for his’theory of justice, is one of the most important political - §
+philosophers of the second half of the 20" century. His theory of Justice as faimess or simply theory o 4
+of justice, develops principles of justices to govern a modem social order. He has put fom’an_‘lAhls e
+ideas on social justice first in the book ‘A Theory of Justice” (1971), then 1n his second book ‘Political y
+Liberation’ (1996) and at last in the book ‘Justice s Faimness: A Restatement’ (2001). The theory of 5““ .
+justice provides a framework that explains the significance of political and personal liberties, of equal e)
+opportunity and cooperative arrangements that benefit more the less advantaged persons of society.
+Darrel Moellendorf considers Rawl's conception of justice as an associational conception because o
+Rawl's initial concern with justice is related to relationship between persons within an association é
+(society). There is a system of cooperation over time, from one generation to another. The membpers ;.
+of the society enter into the relation when they are born and exit from it only at death. ?
+
+Rawl developed a conception of justice from the perspective that persons are free and equal. a, p—
+Their freedom consists in their possession of two moral powers namely — (i) a capacity for a sense of ) (
+justice and (ii) a capacity for a conception of good. A sense of justice refers to the individual’s '
+capacity to understand, to apply and to act from the public conception of justice. This sense indicates 6'_:"ﬂ
+the willingness of individuals to act in relation to others. A conception of good is a conception of '
+what 1s valuable in human life. Persons have the above mentioned two moral powers and so they are G p—
+responsible for their actions. This is called political conception. -
+
+A political conception of justice involves three ideas, the original positiorL the veil of 5 -
+ignorance and the derivation of two principles of justice. Rawl, further, assumes that all ciuzens are ) ?
+reasonable in their behaviour. They are prepared to offer one another fair terms of social cooperation.
+
+They also agree to act on these terms, sometimes at the cost of their own interest, provided that others -
+also accept these terms. They do this freely and aré not dominated or manipulated by or-under the ' ‘
+pressure of an inferior political or social position. Rawl calls thus the criterion of reciprocity. They G.
+
+also recognize and are willing to bear the consequences of the burden of judgement. They also affirm T '
+
+the reasonable comprehensive doctrines. Rawl notes three features of the doctrine. They are, (1) it
+covers the major religious, philosophical and moral aspects of human life, an exeroise of theoretical ‘- -
+reason, (ii) it determines the values, to reard as highly significant arid how to weigh them against i .
+each other when they conflict, an exercise of practical reason and (iii) it evolves over time in the light ‘
+of what it sees as good and sufficient reason. Reasonable persons allow others freedom to explore B L 7
+religious and spiritual options even if these options differ from their own. : I
+@
+w
+
+7.9.1 Theory of Justice ’ . . A ‘- &
+
+terms of efficiency effect, by completely: 'ryeglccting equity or distributive justic®. The separation of
+efficiency and equity considerations in decisioh-making presumes that there isAaI\va)s a conflict
+between the objective of efficiency-and the goal of equity. But, in many situations, by mmproving
+. efficiency in the use of resources, equity .can also be improved and ‘an’improvemen in equity also
+
+All criteria of Pareto, Kaldor ard Hiéks and_Scito(sky, analyse the c(;xfct"pl of welfare m‘_i
+
+Scanned with CamScanner

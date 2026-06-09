@@ -6,14 +6,14 @@ All questions answered in examination revision style. Each file is self-containe
 
 | File | Topics | Questions | Size |
 |------|--------|-----------|------|
-| **`STUDY-ROADMAP.md`** | **ENTRY POINT** — exam strategy, study plan, file index | — | 5 KB |
-| `answers-consumer-theory.md` | Preference Approach, Utility Max, Demand Theory | 18 (10+8) | 36 KB |
-| `answers-demand-production.md` | Demand Estimation, Elasticities, Production, Profit, Competitive Industry | ~15 | 24 KB |
-| `answers-welfare.md` | CV/EV/CS, Social Welfare Criteria, Pareto Optimality, Welfare Theorems | 20 (5+7+8) | 61 KB |
-| `answers-ge-game-extern-trade.md` | General Equilibrium, Edgeworth Box, Game Theory, Externalities, Trade | 25 (4+8+6+6+1) | 58 KB |
-| `answers-cross-reference.md` | **Cross-relation** — technique, model, dependency, theme, source overlap maps | all 80+ | 32 KB |
-| `micro-questions-topic-wise-answered.md` | **Topic-wise index + inline answers** — matches the topic index 1:1 with answers after each question | 78 | 69 KB |
-| `micro-questions-year-wise-answered.md` | **Year-wise index + inline answers** — matches the year index 1:1 with answers by source document | ~80 | 50 KB |
+| [`STUDY-ROADMAP.md`](./STUDY-ROADMAP.md) | **ENTRY POINT** — exam strategy, study plan, file index | — | 5 KB |
+| [`answers-consumer-theory.md`](./answers-consumer-theory.md) | Preference Approach, Utility Max, Demand Theory | 18 (10+8) | 36 KB |
+| [`answers-demand-production.md`](./answers-demand-production.md) | Demand Estimation, Elasticities, Production, Profit, Competitive Industry | ~15 | 24 KB |
+| [`answers-welfare.md`](./answers-welfare.md) | CV/EV/CS, Social Welfare Criteria, Pareto Optimality, Welfare Theorems | 20 (5+7+8) | 61 KB |
+| [`answers-ge-game-extern-trade.md`](./answers-ge-game-extern-trade.md) | General Equilibrium, Edgeworth Box, Game Theory, Externalities, Trade | 25 (4+8+6+6+1) | 58 KB |
+| [`answers-cross-reference.md`](./answers-cross-reference.md) | **Cross-relation** — technique, model, dependency, theme, source overlap maps | all 80+ | 32 KB |
+| [`micro-questions-topic-wise-answered.md`](./micro-questions-topic-wise-answered.md) | **Topic-wise index + inline answers** — matches the topic index 1:1 with answers after each question | 78 | 69 KB |
+| [`micro-questions-year-wise-answered.md`](./micro-questions-year-wise-answered.md) | **Year-wise index + inline answers** — matches the year index 1:1 with answers by source document | ~80 | 50 KB |
 
 **Total: 5 answer files + 1 cross-reference + 2 answered indexes = 8 files — 330 KB**
 

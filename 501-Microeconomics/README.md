@@ -76,15 +76,15 @@ Start here for: exam strategy, 10-day study plan, topic prioritization, and file
 
 | Concept | Formula |
 |---------|---------|
-| Walrasian demand (CD) | x₁ = αm/p₁, x₂ = (1-α)m/p₂ |
-| Indirect utility (CD) | v(p,m) = m·(α/p₁)^α·((1-α)/p₂)^{1-α} |
-| Expenditure fn (CD) | e(p,u) = u · (p₁/α)^α · (p₂/(1-α))^{1-α} |
-| Roy's identity | x_k = -(∂v/∂p_k)/(∂v/∂w) |
-| Shephard's lemma | h_k = ∂e/∂p_k |
-| CV | e(p⁰, u⁰) − e(p¹, u⁰) |
-| EV | e(p⁰, u¹) − e(p⁰, u⁰) |
-| Elasticity | ε = (∂x/∂z)·(z/x) |
-| Lerner index | (P−MC)/P = −1/ε |
+| Walrasian demand (CD) | $x_1 = \alpha m / p_1,\; x_2 = (1-\alpha)m / p_2$ |
+| Indirect utility (CD) | $v(p,m) = m \cdot (\alpha/p_1)^\alpha \cdot ((1-\alpha)/p_2)^{1-\alpha}$ |
+| Expenditure fn (CD) | $e(p,u) = u \cdot (p_1/\alpha)^\alpha \cdot (p_2/(1-\alpha))^{1-\alpha}$ |
+| Roy's identity | $x_k = -(\partial v / \partial p_k) / (\partial v / \partial w)$ |
+| Shephard's lemma | $h_k = \partial e / \partial p_k$ |
+| CV | $e(p^0, u^0) - e(p^1, u^0)$ |
+| EV | $e(p^0, u^1) - e(p^0, u^0)$ |
+| Elasticity | $\varepsilon = (\partial x / \partial z) \cdot (z/x)$ |
+| Lerner index | $(P - MC)/P = -1/\varepsilon$ |
 
 ---
 

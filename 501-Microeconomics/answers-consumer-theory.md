@@ -17,6 +17,10 @@
 
 **Answer:**
 
+> **Marking Guide [14 marks]:** Definition of preference approach (2) | Completeness — explanation + violations (4) | Transitivity — explanation + violations (4) | Money-pump argument + reflexivity (2) | Structure & intuition for exam timing (2)
+>
+> ⭐ **High-Yield** — Rational preferences are the foundational assumption of all consumer theory. Every UMP/EMP problem presupposes them. Expect either a direct definition question or indirect testing via the Debreu existence theorem (Q5).
+
 The preference-based approach models consumer choice by assuming the consumer has a well-defined preference relation over the set of all possible consumption bundles $X = \mathbb{R}^N_+$ and chooses the most-preferred bundle from those that are affordable.
 
 **Core idea:** Preferences are primitive; choices are derived from them.
@@ -44,6 +48,10 @@ The preference-based approach models consumer choice by assuming the consumer ha
 
 **Exam Tip:** Completeness is the most frequently challenged assumption — real people often cannot compare unfamiliar bundles. Transitivity is needed for the utility representation. Always state both when defining rational preferences. (10-mark questions expect you to discuss each assumption + give examples of violations.)
 
+> **Professor's Corner:** The difference between a B and an A answer is the *violation examples*. A students give the Condorcet paradox and money-pump argument; B students merely restate the definitions. For completeness, mention the "brother of" counterexample. Also note that transitivity + completeness together imply reflexivity — a subtle point that impresses examiners.
+>
+> → *See also: DP 2 (demand elasticities build on rational choice); WF 5B.Q5 (welfare theorems assume rational preferences)*
+
 ---
 
 ### Question 2
@@ -51,6 +59,10 @@ The preference-based approach models consumer choice by assuming the consumer ha
 **Define indifference set. Examine: if preference satisfies strong monotonicity, ICs must be downward sloping. (10/7)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** IND set definition & notation (2) | Upper/lower contour sets (2) | Strong monotonicity — precise definition (3) | Proof by contradiction (4) | Diagram of regions A & B (2) | What SM rules out (1)
+>
+> ⭐ **High-Yield** — The proof that SM ⇒ downward-sloping ICs is a classic contradiction argument that reappears in production theory (MRTS slope). The IND/UCS/LCS definitions are essential vocabulary for all subsequent questions.
 
 **Indifference set** of a bundle $x$ is the set of all bundles $y$ such that the consumer is indifferent between them:
 
@@ -80,6 +92,10 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 
 **Exam Tip:** Strong monotonicity is sufficient but not necessary for downward-sloping ICs. LNS alone does NOT guarantee downward-sloping ICs (e.g., if one good is a bad). For 7-mark answers: define IND set first, then prove the implication with a diagram showing regions A (strictly better) and B (strictly worse).
 
+> **Professor's Corner:** Most students forget to define the IND set before launching into the proof — this costs 2 marks. Top answers draw the north-east/south-west quadrants and label the contradiction explicitly. Also note that the proof shows SM ⇒ strictly downward sloping, whereas mere monotonicity gives weakly downward sloping (allowing vertical/horizontal segments).
+>
+> → *See also: Section 1A Q7 (SM ⇒ M ⇒ LNS chain); CT 1B.Q4 (Walrasian demand properties build on LNS)*
+
 ---
 
 ### Question 3
@@ -87,6 +103,10 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 **What are the twin definitions of convexity? How differ from strong convexity? Graphical. (10/4)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Definition 1 — convexity of preferences (3) | Definition 2 — convex UCS (3) | Equivalence (2) | Strong convexity (2) | Comparison table (2) | Diagram of IC shapes (2)
+>
+> ⭐ **High-Yield** — Convexity is the second-most tested preference property after rationality. It connects directly to quasiconcavity (Q4), dMRS/dx < 0 (Q9), and uniqueness of Walrasian demand (1B Q4). Expect at least one question on it.
 
 **Definition 1 (Convexity of preferences):** For all $x, y \in X$, if $x \succeq y$ then for any $\alpha \in (0,1)$:
 
@@ -118,6 +138,10 @@ $$\lambda x + (1-\lambda) y \succ z$$
 
 **Exam Tip:** For 4-mark questions: give both definitions, state they are equivalent, then contrast with strong convexity in one sentence. Drawing the IC shapes (strictly bowed vs. linear segments) is worth extra marks.
 
+> **Professor's Corner:** The most common error is conflating convex preferences with convex UCS — they are the same condition stated differently. Students who can articulate *why* they're equivalent (geometrically: a chord between any two points in UCS stays in UCS) earn top marks. For strong convexity, the key is strictness: the chord lies in the interior of UCS, not on its boundary. Know the CD vs linear vs Leontief convexity classification cold.
+>
+> → *See also: Section 1A Q4 (equivalence proofs); Section 1A Q9 (dMRS/dx connection); DP 3A.Q4 (EoS and convexity in production)*
+
 ---
 
 ### Question 4
@@ -125,6 +149,10 @@ $$\lambda x + (1-\lambda) y \succ z$$
 **Show: Convexity of preference $\iff$ UCS(x) convex $\iff$ $u(\cdot)$ quasiconcave. (5)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Chain statement (1) | Convex ⇔ UCS convex — definitional (2) | UCS convex ⇔ quasiconcave — forward proof (4) | UCS convex ⇔ quasiconcave — reverse proof (3) | Bordered Hessian reference (2) | Chain completion & intuition (2)
+>
+> ⭐ **High-Yield** — The convexity ⇔ quasiconcavity equivalence is the single most tested equivalence in 501 Micro prelims. Every student who fails this question does so because they cannot articulate both directions of the proof. Master the $\min\{u(x),u(y)\}$ trick.
 
 We prove the chain of equivalences:
 
@@ -157,6 +185,10 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 **Exam Tip:** This is a standard equivalence proof. For 5 marks: state each equivalence clearly, prove the key direction (UCS convex $\iff$ quasiconcave), and show the chain. No need for diagrams.
 
+> **Professor's Corner:** The forward direction ($\Rightarrow$) is the cleaner proof and most students get it. The reverse direction ($\Leftarrow$) trips people up — you need to *start* with quasiconcavity of $u$ and *deduce* that UCS is convex. The key move: take any $z$, any $x,y\in UCS(z)$, note $\min\{u(x),u(y)\}\ge u(z)$, apply quasiconcavity. Students who write "$u(\lambda x+(1-\lambda)y) \ge \min\{u(x),u(y)\} \ge u(z)$" in one line get full marks. Also note the bordered Hessian condition for $n>2$ — this is A+ territory.
+>
+> → *See also: Section 1A Q3 (convexity definitions); Section 1A Q9 (dMRS/dx equivalence)*
+
 ---
 
 ### Question 5
@@ -164,6 +196,10 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 **Prove: Monotonicity + continuity → utility function exists. (5)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Theorem statement (2) | 45° diagonal projection idea (3) | Construction of $t(x)$ via $A$ and $B$ sets (4) | Continuity argument for intersection (3) | Conclusion: $u(x)=t(x)$ (2)
+>
+> ⭐ **High-Yield** — The Debreu existence proof is the crowning theoretical result of Section 1A. It combines completeness, transitivity, continuity, and monotonicity into one construction. Often appears as a 5-mark "sketch the proof" question or as the starting point for a discussion on representability.
 
 **Theorem (Debreu):** If a preference relation $\succeq$ satisfies monotonicity and continuity on $X = \mathbb{R}^N_+$, then there exists a continuous utility function $u: X \to \mathbb{R}$ representing $\succeq$.
 
@@ -191,6 +227,10 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 **Exam Tip:** This is a classic existence proof. For 5 marks: explain the intuition (projection onto diagonal), state monotonicity is used to order bundles on the diagonal, continuity guarantees the intersection exists. Memorize the structure: $\mathbf{0} \to M \to t(x) \to u(x)=t(x)$.
 
+> **Professor's Corner:** The most common mistake is using continuity *before* establishing that $A$ and $B$ are closed. You need to argue: (i) by monotonicity, bundles on the diagonal are ordered, (ii) the sets $A$ (points ≤ $x$) and $B$ (points ≥ $x$) partition $[0,m]$, (iii) continuity of $\succeq$ implies both are closed, hence their non-empty intersection gives $t(x)$. A students list these three steps explicitly. Also mention that Lexicographic preferences violate continuity and thus cannot be represented — this shows you understand why continuity is necessary.
+>
+> → *See also: Section 1A Q1 (rational preferences are the starting point); WF 5B.Q5 (welfare theorems assume utility representation)*
+
 ---
 
 ### Question 6
@@ -198,6 +238,10 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 **Define utility function. Explain desirability by monotonicity and strong monotonicity. (10/5)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Utility function definition & notation (2) | Ordinality & monotonic transformations (3) | Monotonicity — conditions (a) & (b) (3) | Strong monotonicity (3) | Comparison table & IC implications (3)
+>
+> → *See also: Section 1A Q5 (Debreu existence — utility as representation); Section 1A Q7 (hierarchical chain SM ⇒ M ⇒ LNS)*
 
 **Utility function:** A function $u: X \to \mathbb{R}$ that represents preference relation $\succeq$ if, for every $x, y \in X$:
 
@@ -235,6 +279,10 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 
 **Exam Tip:** For 10-mark questions: define utility, give examples of transforms, then systematically define and distinguish monotonicity and strong monotonicity with examples. For 5-mark questions: more concise, focus on the utility-desirability link.
 
+> **Professor's Corner:** The key distinction students miss: under *monotonicity*, increasing only good 1 (holding others constant) yields only weak improvement ($x \succeq y$), not strict improvement. Under *strong monotonicity*, it's strictly better ($x \succ y$). This matters for LNS — monotonicity is sufficient to guarantee LNS, but strong monotonicity is not required. The Leontief utility function is the canonical example that satisfies monotonicity but violates strong monotonicity — state this explicitly.
+>
+> → *See also: Section 1A Q2 (strong monotonicity ⇒ downward-sloping ICs); DP 3A.Q2 (production set monotonicity parallels)*
+
 ---
 
 ### Question 7
@@ -242,6 +290,10 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 **Show: Strong Monotonicity $\Rightarrow$ Monotonicity $\Rightarrow$ LNS. (5)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** SM ⇒ M proof (4) | M ⇒ LNS proof with $\varepsilon$-ball (5) | Chain statement (2) | Converse non-implications with counterexample (3)
+>
+> ⭐ **High-Yield** — The SM ⇒ M ⇒ LNS hierarchy is one of the most frequently examined proof chains. LNS is the workhorse assumption of modern micro theory (Walras' Law, UMP interior solutions). Expect this as a short-proof question.
 
 We prove two implications:
 
@@ -269,6 +321,10 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 
 **Exam Tip:** This is a hierarchical relationship. For 5 marks: prove each arrow cleanly. Draw an $\varepsilon$-ball diagram for the LNS proof. Mention that LNS is the weakest and most commonly used assumption in modern micro theory.
 
+> **Professor's Corner:** Three common mistakes: (1) For SM ⇒ M, students forget to handle the $x = y$ case — you need to note that if all components are equal, $x \sim y$, which is consistent with $x \succeq y$. (2) For M ⇒ LNS, using $\delta = \varepsilon/2$ with only one good increasing doesn't work under plain monotonicity (you'd only get weak preference). The trick is to increase *all* goods by $\delta = \varepsilon/\sqrt{N}$. (3) Few students mention that the converse M ⇒ SM does NOT hold — the Leontief counterexample is essential.
+>
+> → *See also: Section 1A Q6 (monotonicity definitions); Section 1B Q4 (Walras' Law depends on LNS)*
+
 ---
 
 ### Question 8
@@ -276,6 +332,10 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 **Examine: (i) Homogeneity (ii) Homotheticity. (5/4)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Homogeneity definition & degree (2) | Properties (MRS, derivatives) (3) | Examples (2) | Homotheticity definition (2) | Key properties — Engel curves, shares, MRS (3) | Homogeneous ⊂ Homothetic + counterexample (2)
+>
+> → *See also: Section 1B Q5 (demand-side implications of homotheticity); DP 3A.Q4 (EoS and homotheticity in production)*
 
 **(i) Homogeneity:**
 
@@ -323,6 +383,10 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 
 **Exam Tip:** For 5/4 marks: define each, state the key property (MRS constant on rays), give examples, and show the homogeneous $\subset$ homothetic relationship. Provide a counterexample of a homothetic but non-homogeneous function.
 
+> **Professor's Corner:** The counterexample $u = xy + a$ (homothetic but not homogeneous) is the make-or-break example — examiners specifically look for it. Also note: homogeneity of Walrasian demand ($x(ap,aw)=x(p,w)$) is HD(0) and requires no preference assumptions (it's a property of the budget set, not preferences). Homotheticity of *preferences* is an assumption. A students distinguish these sharply.
+>
+> → *See also: Section 1B Q5 (demand-focus version of this question); DP 3A.Q4 (EoS — different homotheticity in production)*
+
 ---
 
 ### Question 9
@@ -330,6 +394,10 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 **Prove quasi-concave utility $U(X,Y) \iff dMRS/dX < 0$. (8)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** MRS formula & IC slope (2) | Bordered Hessian quasiconcavity condition (3) | $dMRS/dx$ derivation — implicit differentiation (5) | Sign equivalence proof (2) | Interpretation (2)
+>
+> ⭐ **High-Yield** — This is the most technically demanding proof in Section 1A. The equivalence between quasiconcavity and diminishing MRS ties preference theory (convexity) to calculus (bordered Hessian). Expect this as an 8-mark proof or as embedded reasoning in a UMP question.
 
 We prove: quasiconcavity of utility (convex preferences) is equivalent to diminishing MRS along an indifference curve.
 
@@ -404,6 +472,10 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 
 **Exam Tip:** For 8 marks, show the derivation cleanly. Focus on the equivalence chain: $dMRS/dx < 0 \Rightarrow$ numerator $< 0 \Rightarrow$ bordered Hessian condition $\Rightarrow$ quasiconcavity. Do NOT skip the implicit differentiation step. Knowing the bordered Hessian expression adds sophistication.
 
+> **Professor's Corner:** This derivation separates A students from the rest. The critical insight: $dMRS/dx$ shares a numerator with the bordered Hessian determinant (up to sign). Most students can compute $dMRS/dx$ but cannot connect it to the quasiconcavity condition. The chain is: $dMRS/dx < 0$ ⇔ $u_x^2 u_{yy} - 2u_x u_y u_{xy} + u_y^2 u_{xx} < 0$ ⇔ bordered Hessian $> 0$ ⇔ strict quasiconcavity. Memorize the numerator form — it reappears in duality theory. Also note: for $n > 2$, the bordered Hessian condition is more complex (principal minors alternate in sign); the two-good case is a simplification.
+>
+> → *See also: Section 1A Q4 (quasiconcavity ⇔ convex UCS); Section 1A Q10 (specific application)*
+
 ---
 
 ### Question 10
@@ -411,6 +483,8 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 **Does $U = X + \log(Y)$ have convex indifference curves? Provide proof. (∼3)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** MRS computation (3) | $dMRS/dx$ derivation along IC (5) | Sign conclusion & interpretation (3) | Bordered Hessian verification (3)
 
 **Step 1: Compute MRS.**
 - $u(x,y) = x + \ln y$
@@ -445,6 +519,10 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 
 **Exam Tip:** Short question (∼3 marks). Compute MRS, show $dMRS/dx < 0$. The key insight is that $MRS = y$, which is decreasing along the IC because $y$ falls as $x$ rises.
 
+> **Professor's Corner:** This is a neat application of Q9's general result. The elegant shortcut: since $MRS = y$ and $dy/dx = -y$ along the IC, $dMRS/dx = -y < 0$ immediately. No need for the full bordered Hessian — though including it as verification shows depth. Note also that the quasilinear form $x + \ln y$ has zero income effect for $y$ — this becomes important in 1B Q7 and welfare analysis (WF Q5 where CV = EV = CS for quasilinear utilities).
+>
+> → *See also: Section 1A Q9 (general dMRS/dx equivalence); Section 1B Q7 (demand for quasilinear); WF Q5 (Willig bounds — quasilinear gives CV = EV = CS)*
+
 ---
 
 # Section 1B — Utility Maximization & Demand
@@ -456,6 +534,10 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 **Cobb-Douglas: Derive Walrasian demand, examine properties. (7)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Lagrangian setup & FOCs (3) | Tangency condition (2) | Demand derivation (3) | Homogeneity & Walras' Law checks (3) | Own-price/cross-price/income effects (3)
+>
+> ⭐ **High-Yield** — Cobb-Douglas is THE canonical utility function. Its closed-form solutions for Walrasian demand, indirect utility, Hicksian demand, and expenditure function are the backbone of Section 1B. Expect one full question set (Q1-Q3) as a block worth ~20 marks across parts (a), (b), (c).
 
 Consider $u(x_1, x_2) = x_1^\alpha x_2^\beta$, with $\alpha, \beta > 0$. Budget: $p_1 x_1 + p_2 x_2 = w$.
 
@@ -514,6 +596,10 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 
 **Exam Tip:** For 7 marks, derive fully, then systematically check each property. The constant expenditure share property is unique to Cobb-Douglas and is a key exam point. Note: when $\alpha + \beta = 1$ (common normalization), shares are $\alpha$ and $\beta$.
 
+> **Professor's Corner:** Three pitfalls: (1) Students forget to verify Walras' Law explicitly — substitute demands back into the budget to confirm. (2) The cross-price effect being zero ($\partial x_1/\partial p_2 = 0$) is a special feature of Cobb-Douglas (log utilities are additively separable), NOT a general property. (3) Normalizing $\alpha + \beta = 1$ saves time, but state it explicitly; unnormalized answers are equally correct. The constant share property is the single most testable result — memorise $s_k = \alpha_k/(\sum \alpha)$.
+>
+> → *See also: Section 1B Q2 (indirect utility); Section 1B Q3 (EMP/Hicksian); WF Q3 (CD welfare computation)*
+
 ---
 
 ### Question 2
@@ -521,6 +607,10 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 **Cobb-Douglas: Get indirect utility, explain properties, verify Roy's identity. (7)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Indirect utility derivation from Walrasian demands (3) | Properties: HD(0), monotonicity, quasiconvexity (3) | Roy's identity statement (2) | Verification for goods 1 & 2 (4) | Interpretation & duality insight (2)
+>
+> ⭐ **High-Yield** — Roy's identity bridges UMP and observable demand: it recovers Walrasian demand from indirect utility without re-solving optimization. This is the first duality result in the course and is frequently tested as a verification question.
 
 **Step 1: Indirect utility function.**
 
@@ -571,6 +661,10 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 
 **Exam Tip:** For 7 marks, show the derivation from substitution, state properties, then verify Roy's identity explicitly. The normalization $\alpha+\beta=1$ simplifies notation. Roy's identity is often tested: memorize the formula $x_k = -(\partial v/\partial p_k)/(\partial v/\partial w)$.
 
+> **Professor's Corner:** Roy's identity is free marks if you can compute derivatives cleanly. The most common error: forgetting the minus sign. Second: miscomputing $\partial v/\partial p_k$ (it's $-\alpha v/p_1$, not $-\alpha B w^{\alpha+\beta} p_1^{-\alpha-1} p_2^{-\beta}$ — factor $v$ out for elegance). A students simplify to $-\alpha v/p_1$ and then cancel $v$ with the denominator's $v$. Also note: Roy's identity holds for any indirect utility function satisfying standard properties — Cobb-Douglas is just the verification.
+>
+> → *See also: Section 1B Q1 (Walrasian demand); Section 1B Q3 (EMP parallels with Shephard's lemma); DP 3B.Q1 (Hotelling's lemma — producer-side analog)*
+
 ---
 
 ### Question 3
@@ -578,6 +672,10 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 **Cobb-Douglas: Solve expenditure minimization, examine compensated demand. (6)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** EMP setup & Lagrangian (2) | FOCs & tangency condition (2) | Hicksian demand derivation (3) | Expenditure function derivation (3) | Properties & duality checks (2) | Shephard's lemma verification (2)
+>
+> ⭐ **High-Yield** — EMP/Hicksian demand is the mirror image of UMP/Walrasian demand. Together they form the duality core of consumer theory. Shephard's lemma is the EMP analog of Roy's identity — expect them to appear together in a question pairing.
 
 **EMP setup:** Minimize $p_1 x_1 + p_2 x_2$ subject to $u(x_1, x_2) = x_1^\alpha x_2^\beta \ge \bar{u}$.
 
@@ -642,6 +740,10 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 
 **Exam Tip:** For 6 marks: set up EMP, derive FOCs, show tangency yields same ratio as UMP, solve for Hicksian demands, then compute expenditure function. Emphasize the duality relationship. With $\alpha+\beta=1$ the algebra simplifies significantly — use it.
 
+> **Professor's Corner:** The single most important insight: the tangency condition from EMP yields the SAME ratio $x_2/x_1 = (\beta/\alpha)(p_1/p_2)$ as UMP — duality in action. The expenditure share is the same whether you're maximizing utility or minimizing expenditure. For Shephard's lemma verification: $\partial e/\partial p_1 = \bar{u}(\alpha/p_1)^\alpha (\beta/p_2)^\beta \cdot \alpha \cdot (1/\alpha) \dots$ — simplify carefully; the $\alpha$ cancels to give $\bar{u} \cdot (\alpha/\beta)^\beta \cdot (p_2/p_1)^\beta = h_1$. Practice this cancellation.
+>
+> → *See also: Section 1B Q1 (UMP duality partner); Section 1B Q2 (Roy's identity analog); WF Q1-Q3 (CV/EV directly use expenditure functions)*
+
 ---
 
 ### Question 4
@@ -649,6 +751,10 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 **Examine properties of Walrasian demand $x(p,w)$. When can UMP sufficient condition be violated? (10)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** HD(0) property (2) | Walras' Law via LNS (2) | Convexity/uniqueness (2) | Other properties (2) | Three violation cases: non-monotonicity, non-quasiconcavity, zero gradient (4) | Summary table (2)
+>
+> ⭐ **High-Yield** — This question synthesizes everything from Section 1A into the UMP. The violation cases (especially non-quasiconcave preferences leading to corner solutions) are frequently tested and separate A from B students.
 
 **Properties of Walrasian demand $x(p,w)$:**
 
@@ -698,6 +804,10 @@ The Kuhn-Tucker conditions are necessary for a max. They are sufficient when:
 
 **Exam Tip:** For 10 marks: list and explain each property with economic intuition. For the sufficient condition part: draw the three-violations diagram (non-monotone, non-quasiconcave, corner solution). The Kuhn-Tucker sufficient conditions are: (1) $u$ quasiconcave, (2) $u$ monotone, (3) $\nabla u \neq 0$.
 
+> **Professor's Corner:** This is a synthesis question—it tests whether you understand the *boundaries* of UMP applicability. Top answers identify the three sufficient conditions explicitly (quasiconcavity, monotonicity/LNS, non-zero gradient) and match each to its violation scenario. The Giffen good paradox is NOT a violation—it satisfies all sufficient conditions but the income effect is large and negative. Don't confuse Giffen behavior with non-quasiconcavity. The corner solution case ($x_1 = 0$) is the most commonly tested on exams.
+>
+> → *See also: Section 1A Q1 (rationality assumptions); Section 1A Q7 (LNS chain); DP 2.Q1 (Giffen goods in demand estimation)*
+
 ---
 
 ### Question 5
@@ -706,7 +816,9 @@ The Kuhn-Tucker conditions are necessary for a max. They are sufficient when:
 
 **Answer:**
 
-*[Note: This question appears to be a demand-focused version of Q8 from Section 1A. The answer below focuses on the demand-side implications.]*
+> **Marking Guide [14 marks]:** Homogeneity HD(0) of Walrasian demand (2) | HD properties of $v(p,w)$, $e(p,u)$, $h(p,u)$ (2) | Homotheticity definition (2) | Demand implications table — Engel curves, shares, elasticities (4) | Examples & non-examples (2) | Homogeneous vs homothetic relationship (2)
+>
+> *[Note: This question appears to be a demand-focused version of Q8 from Section 1A. The answer below focuses on the demand-side implications.]*
 
 **(i) Homogeneity of Walrasian demand:**
 
@@ -761,6 +873,10 @@ A preference relation is homothetic if all indifference sets are related to prop
 
 **Exam Tip:** For 10 marks, treat this as a demand-focused question. Link homogeneity of demand (the property) to homotheticity of preferences (the assumption). Show the income-linearity property of demand under homotheticity. Use Engel curve diagrams to distinguish homothetic (line through origin) from non-homothetic preferences.
 
+> **Professor's Corner:** This is the demand-side complement to Section 1A Q8 — together they form a complete picture. The key insight: HD(0) of Walrasian demand is a *property* of any solution to UMP (no preference assumptions needed—it follows from budget-set homogeneity). Homotheticity is an *assumption* about preferences. Watch for the question "Is Walrasian demand always homogeneous of degree zero?" — answer yes, trivially, because $B(p,w) = B(ap,aw)$. The income-linearity result $x(p,w) = w \cdot x(p,1)$ under homotheticity is the most testable corollary.
+>
+> → *See also: Section 1A Q8 (utility-side definitions); DP 3A.Q4 (EoS in production homotheticity)*
+
 ---
 
 ### Question 6
@@ -768,6 +884,10 @@ A preference relation is homothetic if all indifference sets are related to prop
 **Negroni cocktail: $U = \min(G,V,C)$. Find Marshallian demand for Gin, Hicksian demand for Campari, expenditure function. (∼11)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Leontief setup & fixed-proportion insight (2) | Marshallian demand derivation for Gin (3) | Hicksian demand for Campari — EMP setup (3) | Expenditure function (2) | Duality checks (2) | Summary table (2)
+>
+> ⭐ **High-Yield** — Leontief is the second most tested functional form after Cobb-Douglas. The fixed-proportion structure tests whether you understand the *non-substitutability* case. It's the polar opposite of Cobb-Douglas and perfect substitutes, making it essential comparative material.
 
 Leontief (perfect complements) utility: $u(G, V, C) = \min(G, V, C)$
 
@@ -836,6 +956,10 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 
 **Exam Tip:** For ∼11 marks, this is a substantial question. Structure as three clear parts. The key insight for Leontief: at optimum, all goods consumed in fixed proportion so the utility value directly equals quantity consumed. Marshallian demand depends on all prices; Hicksian demand is constant. Draw the right-angle IC diagram.
 
+> **Professor's Corner:** The Leontief case is the only functional form where Hicksian demand is *price-independent* ($h_k = \bar{u}$). This is because there is zero substitution possibility — the compensated law of demand gives $\partial h_k/\partial p_k = 0$. A students note this explicitly. Also note the duality checks: $e(p, v(p,w)) = w$ works out cleanly because $v(p,w) = w/\sum p_k$ and $e(p,u) = u\sum p_k$. The symmetry of this is elegant and examiners love it.
+>
+> → *See also: Section 1B Q1-Q3 (CD — the substitution case); DP 3A.Q6 (production-complements analog: sausage maker)*
+
 ---
 
 ### Question 7
@@ -843,6 +967,8 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 **$U = X + \ln(Y)$. Find demands. With limited $I$, which goods? Why? (3)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** MRS & tangency condition (3) | Marshallian demand derivation (3) | Corner solution condition $I \ge p_x$ (3) | Income elasticity characterization (3) | Quasilinearity & zero income effect (2)
 
 **Utility:** $u(x, y) = x + \ln(y)$, with $x, y \ge 0$.
 
@@ -884,6 +1010,10 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 
 **Exam Tip:** For 3 marks: derive demands, note $y$ is constant in $I$ (income-inelastic), $x$ absorbs all extra income. Mention quasilinearity and zero income effect for $y$. The condition $I \ge p_x$ for interior $x$ is a common exam oversight.
 
+> **Professor's Corner:** The condition $I \ge p_x$ is the most commonly missed point — exam questions frequently ask "with limited income, which goods are consumed?" Students who just write $x = I/p_x - 1$ without discussing the corner get partial marks. The deeper insight: quasilinear utility ($x + f(y)$) has zero income effect for the $y$ good. This implies CV = EV = CS in welfare analysis (see WF Q5). Also note the contrast with Cobb-Douglas where all income effects are proportional.
+>
+> → *See also: Section 1A Q10 (quasilinear IC shape proof); WF Q5 (Willig bounds — quasilinear gives CV = EV = CS)*
+
 ---
 
 ### Question 8
@@ -891,6 +1021,10 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 **$U(X,Y) = X - 3Y$. $P_X=20$, $P_Y=40$, $I=400$. Utility-maximizing quantities. (3)**
 
 **Answer:**
+
+> **Marking Guide [14 marks]:** Linear utility recognition & MU computation (2) | $MU_y < 0$ — identifying the bad (3) | Corner solution derivation (3) | Verification: tangency yields minimum (4) | Conclusion & alternative interpretation (2)
+>
+> ⭐ **High-Yield** — The "good with a bad" corner solution is a classic exam trick. Students trained to mechanically solve Lagrangian FOCs miss the key insight: $MU_y < 0$ means the tangency condition identifies a minimum, not a maximum. Always check marginal utility signs before optimizing.
 
 **Utility:** $u(x, y) = x - 3y$
 
@@ -930,6 +1064,10 @@ Since $MRS \neq p_x/p_y$, and $MU_y < 0$, the tangency condition would yield a m
 **Alternative interpretation:** If $y$ is actually a good (and the $-3$ coefficient represents a strong dislike), the optimum is to consume only $x$. If $y$ is a bad (pollution), the consumer would pay to reduce it, but here cannot — so chooses zero.
 
 **Exam Tip:** For 3 marks: the critical insight is that $MU_y < 0$, so $y$ is a bad. The optimum is a corner solution with $y = 0$ and all income spent on $x$. Do not solve the Lagrangian — the FOCs identify a minimum, not a maximum, because the utility function is not quasiconcave in the standard sense (linear with a negative coefficient).
+
+> **Professor's Corner:** This is a "trap" question designed to catch mechanical Lagrangian solvers. The first thing to check in any UMP is: *are marginal utilities positive?* If $MU_k < 0$, good $k$ is a bad — set $k=0$ immediately and spend all income on goods with positive MU. Two deeper points: (1) the MRS is $-\frac{1}{3}$, less than the price ratio $1/2$ in absolute value — this means the indifference curves are flatter than the budget line, so the optimum is a corner at $x$-axis; (2) if the coefficient on $y$ were positive (e.g., $u = x + 3y$), you'd compare MRS = $1/3$ to $p_x/p_y = 1/2$ and since $1/3 < 1/2$, the consumer would still specialize in $x$ (cheaper in terms of marginal utility per dollar).
+>
+> → *See also: Section 1B Q7 (corner condition in quasilinear); Section 1A Q3 (convexity non-strict for linear utility)*
 
 ---
 

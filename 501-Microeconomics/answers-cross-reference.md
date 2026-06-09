@@ -558,3 +558,173 @@ WelfareChange                                  X
 - Most recurring technique: Lagrangian optimization (~25 questions)
 - Most cross-source question: "Pareto necessary not sufficient" (3 sources)
 - Longest prerequisite chain: Preferences -> UMP -> Walrasian -> Indirect Utility -> Roy's -> EMP -> Hicksian -> Expenditure -> Welfare (9 steps)
+
+---
+
+## G. Cross-File Bridge Maps
+
+> **Purpose:** Source-organized navigation between answer files during revision. For each file, shows which questions in *other* files are connected and the *strength* of each connection.
+>
+> **Bridge strength key:**
+> - 🔴 **Prerequisite** — must study this first (concept directly used)
+> - 🟡 **Supporting** — helps understanding (parallel or analogous concept)
+> - 🟢 **Extension** — advanced connection (builds on or applies this)
+>
+> **File tags:** `CT` = Consumer Theory | `DP` = Demand & Production | `WF` = Welfare | `GE` = GE/Game/Extern/Trade
+
+### G1. Consumer Theory → Other Files
+
+| CT Question | → File | Strength | Why |
+|---|---|---|---|
+| **CT 1A.Q1-Q7** (preference foundations) | GE 8.Q5-Q6 (network externalities) | 🟢 Extension | Preference completeness/transitivity + independence assumptions that externalities violate |
+| **CT 1A.Q8** (homogeneity/homotheticity) | DP 3A.Q5 (cost function HD(1)) | 🟡 Supporting | Same homogeneity-degree concept across functions (consumption → production) |
+| | DP 3B.Q1 (profit function HD(1)) | 🟡 Supporting | |
+| | DP 3A.Q4 (elasticity of substitution) | 🟢 Extension | Homotheticity + σ classification jointly determine production structure |
+| **CT 1B.Q1** (CD Walrasian demand) | DP 2.Q1 (constant elasticity demand) | 🟡 Supporting | Same log-linear form: exponent = elasticity, constant-share property |
+| | WF Q3 (CD welfare computation) | 🟡 Supporting | Same CD parameters α=β=½ reused in EV/CV/CS computation |
+| **CT 1B.Q2** (indirect utility + Roy's ID) | WF Q1-Q5 (CV/EV/CS welfare measures) | 🔴 Prerequisite | Indirect utility → expenditure function (duality) → welfare measures |
+| **CT 1B.Q3** (EMP + Hicksian + Shephard's) | WF Q3 (CD EV/CV/CS computation) | 🔴 Prerequisite | Expenditure function e(p,u) directly defines EV = e(p¹,u¹) − e(p¹,u⁰) |
+| **CT 1B.Q4** (Walrasian demand properties) | DP 2.Q1-Q3 (demand analysis) | 🟡 Supporting | HD(0), Walras' Law, convexity — properties reused in elasticity analysis |
+| | GE 6B.Q6 (exchange economy) | 🟡 Supporting | Walrasian demand is the building block of GE demand aggregation |
+| | DP 3C.Q2 / GE 6B.Q8 (Walras' Law) | 🔴 Prerequisite | Walras' Law is the central accounting identity of GE |
+| **CT 1B.Q5** (homothetic demand focus) | DP 3A.Q4 (elasticity of substitution) | 🟢 Extension | Engel aggregation + linear Engel curves ⇒ constant expenditure shares |
+| | GE 6B.Q2 (factor intensities) | 🟢 Extension | Homotheticity underlies CRTS and factor-price equalisation logic |
+| **CT 1B.Q6** (Leontief: Negroni cocktail) | DP 3A.Q6 (Leontief: sausage maker) | 🟢 Extension | Same fixed-proportions math; consumption ↔ production duality |
+| **CT 1B.Q7** (quasilinear: zero income effect) | WF Q5 (Willig bounds: CV = EV = CS) | 🔴 Prerequisite | Zero income effect ⇒ all three welfare measures coincide exactly |
+| **CT 1B.Q8** (corner solution with a "bad") | DP 3A.Q3 (non-convex production set) | 🟢 Extension | Corner solutions appear wherever standard sufficient conditions fail |
+
+### G2. Demand & Production → Other Files
+
+| DP Question | → File | Strength | Why |
+|---|---|---|---|
+| **DP 2.Q1** (constant elasticity demand) | CT 1B.Q1 (CD Walrasian demand) | 🟡 Supporting | Same exponent-as-elasticity interpretation; log-linear functional form |
+| | WF Q3 (CD welfare computation) | 🟡 Supporting | Price elasticity magnitudes determine DWL size in welfare analysis |
+| **DP 2.Q3** (Lerner Index) | GE 7.Q1 (Bertrand duopoly: P=40 > MC) | 🟢 Extension | Lerner Index = (P−MC)/P = 1/|ε| measures market power |
+| | WF 5B.Q8 (competition → SW max?) | 🟢 Extension | Lerner Index ≠ 0 ⇒ market power ⇒ FWT may fail |
+| **DP 3C.Q1** (competitive eq + $20 tax) | GE 9.Q1 (tariff DWL) | 🟡 Supporting | Same DWL formula: ½ × tax × ΔQ applied to trade policy |
+| | GE 6A.Q1 (GE vs PE definition) | 🟡 Supporting | DP 3C.Q1 IS the partial equilibrium benchmark that GE generalises |
+| **DP 3C.Q2** (3-good Walras' Law) | GE 6B.Q8 (3-good Walras' Law) | 🟡 Supporting | Identical question cross-listed in both files |
+| **DP 3A.Q4** (elasticity of substitution σ) | CT 1A.Q8 (homotheticity) | 🟡 Supporting | σ = 0,1,∞ correspond to specific homothetic forms |
+| | GE 6B.Q1 (Edgeworth production box) | 🟡 Supporting | σ determines isoquant curvature → contract curve shape |
+| **DP 3A.Q5** (cost function properties) | CT 1B.Q3 (expenditure function properties) | 🟢 Extension | Both concave in prices; both satisfy Shephard's Lemma — dual structure |
+| **DP 3A.Q6** (Leontief: sausage maker) | CT 1B.Q6 (Leontief: Negroni cocktail) | 🟢 Extension | Fixed-proportions: consumption and production use identical math |
+| | GE 6B.Q1 (Edgeworth production box) | 🟡 Supporting | Leontief isoquants are L-shaped → MRTS not defined at kink |
+| **DP 3B.Q1** (profit function + Hotelling's) | CT 1B.Q3 (expenditure function + Shephard's) | 🟢 Extension | Hotelling = supply-side Shephard; both are envelope theorem applications |
+| **DP 3B.Q2** (MRPT = MCₓ/MCᵧ) | GE 6B.Q3 (product-mix efficiency) | 🔴 Prerequisite | MRPT = price-ratio IS the product-mix efficiency condition |
+
+### G3. Welfare → Other Files
+
+| WF Question | → File | Strength | Why |
+|---|---|---|---|
+| **WF Q1-Q5** (CV, EV, CS) | CT 1B.Q2 (indirect utility) | 🔴 Prerequisite | EV = e(p¹,u¹) − e(p¹,u⁰); both require expenditure function from EMP |
+| | CT 1B.Q3 (EMP + expenditure function) | 🔴 Prerequisite | Same CD parameters α=β=½ reused directly |
+| **WF Q3** (CD EV/CV/CS: 124.24 > 103.98 > 87.9) | CT 1B.Q1-Q3 (CD UMP → EMP → duality) | 🔴 Prerequisite | The numerical welfare numbers come directly from CD expenditure function |
+| **WF Q5** (Willig bounds: quasilinear CV=EV=CS) | CT 1B.Q7 (quasilinear demand: zero income effect) | 🔴 Prerequisite | Zero income effect is the mathematical reason CV = EV = CS |
+| **WF 5A.Q1** (Pigou: 3 issues) | GE 8.Q1 (tragedy of the commons) | 🔴 Prerequisite | The third Pigouvian pillar (externalities) IS Topics 8.1–8.2 |
+| | GE 8.Q2 (steel-fishery pollution) | 🔴 Prerequisite | Steel-fishery = concrete numerical example of Pigou's third issue |
+| | GE 8.Q6 (consumption externalities) | 🔴 Prerequisite | Bandwagon/snob = consumption-side externality |
+| **WF 5A.Q2/Q4** (GUPF, point of bliss) | GE 6B.Q3 (three Pareto conditions) | 🟡 Supporting | GUPF is the envelope of all UPFs; each UPF requires all three efficiency conditions |
+| **WF 5B.Q1** (Pareto necessary not sufficient) | GE 6B.Q3 (Pareto efficiency conditions) | 🔴 Prerequisite | The answer assumes you know the three marginal conditions from GE |
+| **WF 5B.Q3** (2-person Pareto consumption) | GE 6B.Q6 (exchange economy Edgeworth box) | 🔴 Prerequisite | Same Lagrangian: MRS^A = MRS^B with fixed supply constraint |
+| **WF 5B.Q4** (external economies: Pigouvian tax) | GE 8.Q2 (steel-fishery: Coase vs Pigou) | 🟡 Supporting | WF 5B.Q4 = general case; GE 8.Q2 = specific numerical instance |
+| **WF 5B.Q5** (First & Second Welfare Theorems) | GE 8.Q6 (FWT fails with externalities) | 🔴 Prerequisite | FWT is the benchmark; consumption externalities are the counterexample |
+| | GE 7.Q1 (Bertrand: market power breaks FWT) | 🟡 Supporting | Market power (P > MC) is another FWT violation |
+| | WF 5B.Q8 (competition → SW max?) | 🟡 Supporting | FWT + SWT answer "efficiency yes, equity no" |
+| **WF 5B.Q8** (does competition maximize SW?) | GE 6B.Q5 (2×2×2 assumptions for GE → SW) | 🔴 Prerequisite | The 2×2×2 assumptions ARE the sufficient conditions |
+| | WF 5B.Q1 (Pareto necessary not sufficient) | 🔴 Prerequisite | Competition gives Pareto optimality; SWF gives social optimum |
+
+### G4. GE / Game Theory / Externalities / Trade → Other Files
+
+| GE Question | → File | Strength | Why |
+|---|---|---|---|
+| **GE 6A.Q1** (GE vs PE definition) | DP 3C.Q1 (competitive eq: partial equilibrium) | 🟡 Supporting | PE is GE with ceteris paribus; DP 3C is the reference case |
+| **GE 6A.Q2-Q3** (E(P) analysis) | DP 3C.Q2 / GE 6B.Q8 (Walras' Law) | 🟡 Supporting | Excess demand must satisfy Walras' Law; Z(p) homogeneity used |
+| **GE 6B.Q1** (production Edgeworth box) | DP 3A.Q1-Q7 (production theory) | 🔴 Prerequisite | Isocosts, isoquants, MRTS, returns to scale — all from DP 3A |
+| | DP 3A.Q4 (elasticity of substitution) | 🟡 Supporting | σ determines isoquant curvature → contract curve shape |
+| **GE 6B.Q2** (taste shock → factor transmission) | DP 3A (factor intensities) | 🔴 Prerequisite | Factor intensity ranking determines w/r outcome |
+| **GE 6B.Q3** (three Pareto conditions) | WF 5B.Q3 (consumption Pareto: MRS equality) | 🔴 Prerequisite | Condition (i) MRS^A = MRS^B is derived in WF 5B.Q3 |
+| | WF 5B.Q5 (First Welfare Theorem) | 🟡 Supporting | The three conditions ARE the conditions for CE → Pareto optimality |
+| **GE 6B.Q5** (2×2×2 assumptions + how GE reached) | WF 5A.Q7 (2×2×2 assumptions for SW max) | 🟡 Supporting | Same assumption set; WF version adds SWF value judgements |
+| **GE 6B.Q6** (exchange economy: CD + linear) | WF 5B.Q3 (Pareto consumption condition) | 🔴 Prerequisite | MRS_A = MRS_B is the same condition; GE 6B.Q6 adds numerical example |
+| **GE 6B.Q7** (Walrasian equation counting) | DP 3C.Q2 (Walras' Law 3-good) | 🟡 Supporting | Walras' Law ⇒ n−1 independent equations; numeraire ⇒ solution |
+| **GE 7.Q1** (Bertrand duopoly: P=40, P>MC) | WF 5B.Q8 (competition → SW max?) | 🟢 Extension | Even Bertrand "competition" gives P > MC with differentiated goods |
+| | DP 2.Q3 (Lerner Index) | 🟢 Extension | Market power measured by Lerner Index = (P−MC)/P = 1/|ε| |
+| **GE 8.Q1-Q2** (Commons, steel-fishery) | WF 5A.Q1 (Pigou three issues: externalities) | 🔴 Prerequisite | These are the concrete applications of Pigou's externality analysis |
+| | WF 5B.Q4 (Pigouvian tax calculation) | 🟡 Supporting | Tax = marginal external damage; subsidy = marginal external benefit |
+| **GE 8.Q5-Q6** (bandwagon/snob, FWT fails) | CT 1A.Q1-Q7 (preference axioms) | 🟢 Extension | Bandwagon/snob effects violate independence assumption in 2×2×2 |
+| **GE 9.Q1** (tariff/VER DWL) | DP 3C.Q1 (tax DWL = ½ × t × ΔQ) | 🟡 Supporting | Same DWL formula; VER worse because quota rent goes abroad |
+
+### G5. Cross-File Dependency Flow Diagram
+
+```
+PREFERENCES (CT 1A)
+    |
+    v
+UTILITY MAXIMIZATION (CT 1B.Q1-Q3)
+    |                    |
+    |                    v
+    |           EXPENDITURE FUNCTION
+    |                    |
+    v                    v
+DEMAND ANALYSIS (DP 2)  WELFARE ANALYSIS (WF Q1-Q5)
+    |
+    v
+PRODUCTION THEORY (DP 3A)
+    |
+    v
+PROFIT / COST (DP 3B)
+    |
+    v
+COMPETITIVE EQ (DP 3C) -----> WALRAS' LAW (DP 3C.Q2 = GE 6B.Q8)
+    |                              |
+    v                              v
+GE CONCEPTS (GE 6A) <------ EXCESS DEMAND ANALYSIS
+    |
+    v
+2x2x2 MODEL (GE 6B) -----> THREE PARETO CONDITIONS
+    |                              |
+    v                              v
+EXCHANGE ECONOMY            WELFARE THEOREMS (WF 5B.Q5)
+    |                              |
+    v                              v
+PARETO EFFICIENCY ----> FIRST WELFARE THEOREM
+    |
+    v
+SECOND WELFARE THEOREM ---> MARKET FAILURES
+    |                    |         |
+    v                    v         v
+EXTERNALITIES (GE 8)  GAME TH  TRADE (GE 9)
+    |                  (GE 7)     |
+    v                    |         v
+PIGOUVIAN TAXES      OLIGOPOLY  TARIFF DWL
+(WF 5B.Q4)           P > MC
+```
+
+### G6. Exam Strategy: 5 Cross-File Question Clusters
+
+Each cluster forms ~14–42 marks and shows the examiner integrated understanding. Pick any subset in your 5 chosen questions.
+
+**Cluster 1: "Foundations → Welfare" (28 marks)**
+- CT 1A.Q1 (preference approach: completeness + transitivity) + WF 5B.Q1 (Pareto necessary not sufficient)
+- *Bridge:* Individual preference axioms → social welfare aggregation → Pareto vs SWF
+- *What it signals:* Shows you know welfare economics builds on preference theory
+
+**Cluster 2: "Duality Chain" (28 marks)**
+- CT 1B.Q1-Q3 (UMP → EMP → duality) + WF Q3 (CD welfare: EV/CV/CS computation)
+- *Bridge:* Same CD parameters; longest duality chain in the course (9 steps)
+- *What it signals:* Shows you see duality as the organizing principle, not isolated techniques
+
+**Cluster 3: "GE → Welfare Theorems" (28 marks)**
+- GE 6B.Q3 (three Pareto efficiency conditions) + WF 5B.Q5 (First & Second Welfare Theorems)
+- *Bridge:* The three marginal conditions ARE the conditions under which CE → Pareto optimality
+- *What it signals:* Shows you understand efficiency is a GE concept, not a partial one
+
+**Cluster 4: "Market Failure Trilogy" (42 marks)**
+- GE 8.Q2 (steel-fishery: externality + Coase) + WF 5B.Q4 (Pigouvian tax) + WF 5B.Q8 (does competition maximize SW?)
+- *Bridge:* Externality identified → corrective policy designed → welfare conclusion qualified
+- *What it signals:* Connects positive (what happens) to normative (what should be done)
+
+**Cluster 5: "Tax/Regulation Incidence" (28 marks)**
+- DP 3C.Q1 (competitive eq + $20 tax) + GE 9.Q1 (tariff DWL=$437k, VER DWL=$9.3M)
+- *Bridge:* Same DWL = ½ × distortion × ΔQ in domestic and trade contexts
+- *What it signals:* Recognises the same welfare tool applied to different policy instruments

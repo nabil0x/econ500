@@ -1,127 +1,97 @@
 # Microeconomics — Econ 501
 
-> **Source:** MainQ.pdf (Pages 1, 2, 13)
-> **Cross-links:** [Study Hub](../README.md) | [Macroeconomics](../macroeconomics/README.md)
+> **M.Sc. Advanced Microeconomic Theory**
+> All questions answered, cross-referenced, and study-planned.
 
 ---
 
-## Tutorial 1 — Consumer Theory & Preferences
+## 🚀 Entry Point
 
-**Time:** 1 hour | **Answer any 2**
+**→ [`STUDY-ROADMAP.md`](./STUDY-ROADMAP.md)**
 
-### Question 1
-a) What is preference based approach of consumer's behavior? Explain and interpret the assumptions of preference based approach. (10)
-
-b) Define indifference set. Examine that if a preference relation satisfies strong monotonicity, its indifference curves must be downward sloping. (10)
+Start here for: exam strategy, 10-day study plan, topic prioritization, and file-by-file navigation.
 
 ---
 
-### Question 2
-a) What are the twin definitions of convexity? In what respect they are different from strong convexity? Examine graphically. (10)
+## What's Here
 
-b) Show that: Convexity of preference ⇔ USC(x) is convex ⇔ u(.) is quasiconcave (5)
+### Answer Files (Detailed — ~80 questions)
 
-c) Prove that, if a preference relation satisfies monotonicity and continuity, then there exist a utility function u(.) representing such preference relation. (5)
+| File | Covers | Questions |
+|------|--------|-----------|
+| [`answers-consumer-theory.md`](./answers-consumer-theory.md) | Preference axioms, convexity, monotonicity, UMP/EMP, duality | 18 |
+| [`answers-demand-production.md`](./answers-demand-production.md) | Elasticities, production sets, cost/profit functions, competitive equilibrium | ~15 |
+| [`answers-welfare.md`](./answers-welfare.md) | CV/EV/CS, Pigou, Pareto optimality, welfare theorems, Hicks-Kaldor | 20 |
+| [`answers-ge-game-extern-trade.md`](./answers-ge-game-extern-trade.md) | GE existence/stability, Edgeworth box, game theory, externalities, tariffs | 25 |
 
----
+### Question Indexes (Find Questions Fast)
 
-### Question 3 — Cobb-Douglas Utility Function
-Consider: u(x₁, x₂) = Kx₁^α x₂^β for some α ∈ (0,1) and K > 0
+| File | Organization |
+|------|-------------|
+| [`micro-questions-topic-wise.md`](./micro-questions-topic-wise.md) | All questions by topic (9 groups) |
+| [`micro-questions-year-wise.md`](./micro-questions-year-wise.md) | All questions by source exam paper |
+| [`micro-questions-topic-wise-answered.md`](./micro-questions-topic-wise-answered.md) | Topic index + **inline answers** |
+| [`micro-questions-year-wise-answered.md`](./micro-questions-year-wise-answered.md) | Year index + **inline answers** |
 
-i) Derive the Walrasian demand functions and examine their properties. (7)
+### Cross-Reference & Strategy
 
-ii) How do you get the indirect utility functions? Explain their properties and also verify Roy's identity. (7)
+| File | What It Does |
+|------|-------------|
+| [`answers-cross-reference.md`](./answers-cross-reference.md) | Technique map, model traces, dependency chains, source overlap, quick ref table |
+| [`ANSWERS-INDEX.md`](./ANSWERS-INDEX.md) | Master table of all answer files with sizes and status |
 
-iii) Solve the expenditure minimization problem and examine the characteristics of the compensated demand function. (6)
+### Core Concepts
 
----
-
-### Question 4
-a) Define utility function. Explain the desirability of consumer's preference by the axiom of monotonicity and strong monotonicity. (10)
-
-b) Show that: Strong Monotonicity ⇒ Monotonicity ⇒ LNS (5)
-
-c) Examine properties of preference relations: i) Homogeneity ii) Homotheticity (5)
-
----
-
-> **📄 Supplementary reading:** [Welfare Change Reference Notes](./welfare-change-reference.md) — full CV/EV/CS theory from a 21-page paper. Covers definitions, graphical analysis, EV > CS > CV proof, quasilinear case, Willig approximations, and Vartia's algorithm.
-> **📁 Paper PDF:** [WelfareChange (CV, EV and CS).pdf](./WelfareChange%20(CV%2C%20EV%20and%20CS).pdf)
-
-## Tutorial 2 — Welfare & Production
-
-**Time:** 50 minutes | **Answer any one**
-
-### Question 1
-a) Distinguish between Compensating Variation (CV) and Equivalent Variation (EV). In what respect they are different from the consumer's surplus (CS)? (10)
-
-b) Illustrate that for a decrease in price of a commodity (when both goods are normal): **EV > CS > CV**. For price increase, explain the relationship. (10)
+| File | Content |
+|------|---------|
+| [`basics.md`](./basics.md) | Key definitions: Walrasian/Hicksian demand, CV/EV/CS, Roy's, Shephard's, Pareto |
+| [`welfare-change-reference.md`](./welfare-change-reference.md) | CV/EV/CS theory from the WelfareChange paper |
 
 ---
 
-### Question 2
-a) Define production function, production set, transformation function and transformation frontier. (10)
+## Source Materials
 
-b) Graphically explain the properties of the production set. (10)
-
----
-
-### Question 3
-a) Define profit function. If the production set Y is closed and have free disposal, then what properties does the profit function satisfy? (10)
-
-b) Consider a consumer with utility: u(x₁, x₂) = x₁^½ x₂^½. Given {p⁰, m⁰} = {{4,4}, 300} and {p¹, m¹} = {{2,4}, 300}. Compute indirect utilities and costs. Calculate EV, CV, and CS. Based on their relationship, examine the nature of the commodities. (10)
-
----
-
-### Question 4
-a) Consider a utility maximization problem. If the utility function is continuous and preferences satisfy LNS over X = ℝ⁺ᴸ, then examine properties satisfied by Walrasian demand x(p,w). In what situations can the sufficient condition of UMP be violated? (10)
-
-b) Examine: i) Homogeneity ii) Homotheticity (10)
+| Resource | Location |
+|----------|----------|
+| **Textbooks** (2 full textbooks extracted) | `resources/extracted_text/` (525K+ words) |
+| **Chapter PDFs** (Preferences, Demand, Production) | `resources/extracted_text/` |
+| **Welfare sheets** (CV/EV/CS reference) | `resources/extracted_text/` |
+| **Professor question sets** (17 + 49 questions) | `resources/extracted_text/` |
+| **Original exam papers** (Batch 46–48) | `../batch-finals/batch-47/micro-501.md` etc. |
+| **Resource index** | `resources/README.md` |
 
 ---
 
-## General Equilibrium (Page 13)
+## Exam Sources (Batch Finals)
 
-**Time:** 45 minutes | **Answer any ONE**
-
-### Question 1
-a) Define general equilibrium. In what respect it differs from partial equilibrium? Examine with examples. (8)
-
-b) Graphically explain the problems of existence, uniqueness and stability in connection to general equilibrium. (12)
-
----
-
-### Question 2
-a) Explain with assumptions of a 2×2×2 model, the production equilibrium in a simple general equilibrium model through Edgeworth box diagram. (10)
-
-b) Graphically explain how an external shock in the product market affects the factor market and the mechanism through which equilibrium is restored in both markets. (10)
+| Year | Level | File |
+|------|-------|------|
+| 2020 | 4th Year Hons (401) | `../batch-finals/batch-46/micro-401.md` |
+| 2022 | MSc (501) | `../batch-finals/batch-47/micro-501.md` |
+| 2023 | MSc (501) | `../batch-finals/batch-48/micro-501.md` |
 
 ---
 
-### Question 3
-a) Define social welfare. Critically examine three key issues that Pigou dealt with in analyzing social welfare. (10)
+## Quick Reference Formulas
 
-b) Derive the grand utility possibility frontier and determine the 'point of bliss'. Does such a point ensure maximum social welfare? Justify. (10)
+| Concept | Formula |
+|---------|---------|
+| Walrasian demand (CD) | x₁ = αm/p₁, x₂ = (1-α)m/p₂ |
+| Indirect utility (CD) | v(p,m) = m·(α/p₁)^α·((1-α)/p₂)^{1-α} |
+| Expenditure fn (CD) | e(p,u) = u · (p₁/α)^α · (p₂/(1-α))^{1-α} |
+| Roy's identity | x_k = -(∂v/∂p_k)/(∂v/∂w) |
+| Shephard's lemma | h_k = ∂e/∂p_k |
+| CV | e(p⁰, u⁰) − e(p¹, u⁰) |
+| EV | e(p⁰, u¹) − e(p⁰, u⁰) |
+| Elasticity | ε = (∂x/∂z)·(z/x) |
+| Lerner index | (P−MC)/P = −1/ε |
 
 ---
 
-### Question 4
-a) "Pareto optimality is a necessary but not sufficient condition for social welfare maximization" — justify considering a 2×2×2 model. (10)
+## Cross-Links
 
-b) Explain the underlying assumption about the marginal utility of money for being the basis of Bentham → Kaldor compensation. Can the compensation be correct? (10)
-
----
-
-## Key Concepts
-
-| Concept | Definition |
-|---------|------------|
-| **Preference-based approach** | Consumer behavior derived from preference relations (not cardinal utility) |
-| **Walrasian demand** | Demand that maximizes utility given prices and wealth |
-| **Hicksian demand** | Demand that minimizes expenditure given prices and utility |
-| **CV** | Compensating variation — money needed after price change to maintain original utility |
-| **EV** | Equivalent variation — money needed before price change to reach new utility |
-| **Roy's identity** | x(p,w) = -∂v/∂p / ∂v/∂w |
-| **Shephard's lemma** | h(p,u) = ∂e/∂p |
-| **Pareto optimality** | No one can be made better off without making someone worse off |
-| **Grand utility frontier** | The set of all Pareto optimal utility combinations |
+- [Study Hub (root README)](../README.md)
+- [Macroeconomics](../macroeconomics/README.md)
+- [Health Economics](../health-economics/README.md)
+- [Development Economics (503)](../503-Development/README.md)
+- [Political Economy (512)](../512-Political-Economy/README.md)

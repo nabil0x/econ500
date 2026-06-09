@@ -1,9 +1,12 @@
 # Microeconomics — Answer Index
 
+> **🚀 Start here:** [`STUDY-ROADMAP.md`](./STUDY-ROADMAP.md) — 10-day study plan, exam pattern analysis, and quick file reference.
+
 All questions answered in examination revision style. Each file is self-contained for effortless review by an examiner.
 
 | File | Topics | Questions | Size |
 |------|--------|-----------|------|
+| **`STUDY-ROADMAP.md`** | **ENTRY POINT** — exam strategy, study plan, file index | — | 5 KB |
 | `answers-consumer-theory.md` | Preference Approach, Utility Max, Demand Theory | 18 (10+8) | 36 KB |
 | `answers-demand-production.md` | Demand Estimation, Elasticities, Production, Profit, Competitive Industry | ~15 | 24 KB |
 | `answers-welfare.md` | CV/EV/CS, Social Welfare Criteria, Pareto Optimality, Welfare Theorems | 20 (5+7+8) | 61 KB |

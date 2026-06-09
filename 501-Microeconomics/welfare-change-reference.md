@@ -1,5 +1,7 @@
 # Welfare Change: CV, EV & Consumer Surplus — Reference Notes
 
+> ⚠️ **DEPRECATED** — This paper summary is superseded by the comprehensive exam-quality coverage in [`answers-welfare.md`](./answers-welfare.md). Use that file for revision.
+
 > **Source:** *Measuring Welfare Change* — Academic paper (21 pages, 2005)
 > **File:** [WelfareChange (CV, EV and CS).pdf](./WelfareChange%20(CV%2C%20EV%20and%20CS).pdf)
 > **Related:** [Full Study Notes →](./README.md#tutorial-2--welfare--production) | [Basics →](./basics.md)

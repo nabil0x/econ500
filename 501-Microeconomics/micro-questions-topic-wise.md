@@ -1,5 +1,7 @@
 # Microeconomics — Questions by Topic
 
+> ⚠️ **DEPRECATED** — Use the answered version instead: [`micro-questions-topic-wise-answered.md`](./micro-questions-topic-wise-answered.md) which has the same index plus inline answers.
+
 > All microeconomic theory questions from every source, organized by topic.
 > **Cross-links:** [Year-wise Index](./micro-questions-year-wise.md) | [Full Notes](./README.md) | [Basics](./basics.md) | [Resources](./resources/README.md)
 

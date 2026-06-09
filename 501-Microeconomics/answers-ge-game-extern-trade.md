@@ -10,7 +10,11 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Definition (3) | Comparison table (4) | Examples (3) | Intuition (2) | Exam structure (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Foundational concept: every GE exam begins here. Must command the distinction.
 
 **General equilibrium (GE)** is a state in which *all* markets and *all* decision-making units are in simultaneous equilibrium. A GE exists if every market is cleared at a positive price, with each consumer maximising utility and each firm maximising profit. (Koutsoyiannis p. 486)
 
@@ -28,9 +32,15 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 **Exam Tip:** Always contrast GE with PE in three dimensions: scope (one market vs all), feedback (none vs full interdependence), and determinacy (relative vs absolute prices). Mention Walras, Arrow-Debreu.
 
+> **Professor's Corner:** A-grade answers name Arrow-Debreu (1954) as the existence proof reference and explain *why* relative prices suffice (numeraire). B-grade answers stop at the comparison table without theory anchoring. Show you understand that GE is a fixed point of the excess demand mapping, not just a laundry list of differences.
+
+→ *See also: Topic 6B Q4 (GE definition recap), Topic 6B Q7 (Walrasian system — 18 equations)*
+
 ---
 
 ### Question 2
+
+> **Marking Guide [14 marks]:** Existence definition (2) | Uniqueness explanation (2) | Stability analysis (4) | Diagram(s) (4) | Synthesis & intuition (2)
 
 **Answer:**
 
@@ -87,9 +97,15 @@ Stable:              Unstable:
 
 **Exam Tip:** Draw all four cases: (1) unique stable, (2) unique unstable, (3) multiple equilibria (alternating stable/unstable), (4) no equilibrium. Always translate D-S into excess demand $E(P) = QD - QS$.
 
+> **Professor's Corner:** A-grade answers label each equilibrium's stability type and explain the Walrasian tâtonnement mechanism explicitly ("price rises when E(P) > 0, falls when E(P) < 0"). The best answers note that backward-bending supply curves generate multiple equilibria and connect this to Giffen goods/labour supply.
+
+→ *See also: Topic 6A Q3 (excess demand formulation), Topic 6A Q4 (transmission mechanism)*
+
 ---
 
 ### Question 3
+
+> **Marking Guide [14 marks]:** Define E(P) (2) | Existence via IVT (4) | Stability from slope sign (4) | Uniqueness from monotonicity (2) | Synthesis (2)
 
 **Answer:**
 
@@ -132,9 +148,15 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 
 **Exam Tip:** Always define $E(P) = QD - QS$ first. Then: existence $= E(P) = 0$ at some $P > 0$; stability $= \text{sign of } dE/dP$ at equilibrium; uniqueness $= \text{monotonicity of } E(P)$.
 
+> **Professor's Corner:** The mathematical version (Q3) is preferred by theory-heavy examiners. A-grade answers invoke the Intermediate Value Theorem for existence and connect dE/dP sign to the Walrasian stability condition. The strongest answers note that Arrow-Debreu requires E(P) to be continuous, homogeneous of degree zero, and satisfy Walras' Law — go beyond Koutsoyiannis here.
+
+→ *See also: Topic 6B Q8 (Walras' Law and numeraire)*
+
 ---
 
 ### Question 4
+
+> **Marking Guide [14 marks]:** Initial equilibrium (2) | Taste shock & product market (3) | Factor market transmission (4) | Factor mobility & price equalisation (3) | New GE (2)
 
 **Answer:**
 
@@ -173,13 +195,21 @@ This question asks about the transmission mechanism: **external shock in product
 
 **Exam Tip:** The key insight is the *chain*: taste change → Pₓ ↑ → profits ↑ → factor demand ↑ → w ↑ → factor mobility → w/r equalisation → supply curves shift → new GE. Draw the 8-panel diagram from Koutsoyiannis (Figs 22.10-22.22). Mention increasing-cost industries.
 
+> **Professor's Corner:** A-grade answers emphasise that factor intensities determine the final w/r outcome (Stolper-Samuelson logic). The very best answers note that if both industries had the same K/L ratio, factor prices would return to original levels — the permanent change in factor prices is driven by *different* factor intensities. This shows you understand the mechanism, not just the sequence.
+
+→ *See also: Topic 6B Q2 (same mechanism in 2×2×2 framework)*
+
 ---
 
 ## Topic 6B — Edgeworth Box & $2\times 2\times 2$ Model
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Model definition & dimensions (2) | Six assumptions listed (4) | Edgeworth box diagram (3) | Contract curve & MRTS condition (3) | GE of production condition (2)
+
 **Answer:**
+
+⭐ **High-Yield** — The 2×2×2 model is the backbone of GE exam questions. Assumptions are frequently tested directly.
 
 **The $2\times 2\times 2$ model** has: 2 factors (L, K), 2 commodities (X, Y), 2 consumers (A, B). (Koutsoyiannis pp. 496-499)
 
@@ -224,9 +254,15 @@ The production equilibrium is not unique (any point on contract curve is Pareto-
 
 **Exam Tip:** Always label the Edgeworth box with Oₓ (SW) and Oᵧ (NE). Show that at off-contract-curve points, a reallocation can increase both outputs (the "lens" between two isoquants). The contract curve maps to the **production possibility curve (PPC)** in product space.
 
+> **Professor's Corner:** A-grade answers explicitly state that the Edgeworth production box contract curve is the locus of MRTS equated to w/r, AND that any point on the contract curve is Pareto-efficient but not unique — competition selects the specific point. Top answers note that CRTS makes the contract curve a straight line from Oₓ to Oᵧ only if isoquants are homothetic with identical returns.
+
+→ *See also: Topic 6B Q3 (three Pareto conditions), Topic 6B Q5 (how GE is reached)*
+
 ---
 
 ### Question 2
+
+> **Marking Guide [14 marks]:** Shock & product market (2) | Firm response (2) | Factor market effects (4) | Factor mobility (3) | Long-run adjustment & new GE (3)
 
 **Answer:**
 
@@ -235,8 +271,8 @@ This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\time
 **Shock:** Taste shift toward X (Dₓ ↑) and away from Y (Dᵧ ↓).
 
 **Product market:**
-- X industry: $D_0 \to D_1$, $P_x$ $P_0 \to P_1$, $Q_x$ $X_0 \to X_1$, excess profits.
-- Y industry: $D_0 \to D_1$, $P_y$ falls, $Q_y$ $Y_1 \to Y_0$, losses.
+- X industry: $D_0 \to D_1$, $P_x: P_0 \to P_1$, $Q_x: X_0 \to X_1$, excess profits.
+- Y industry: $D_0 \to D_1$, $P_y$ falls, $Q_y: Y_1 \to Y_0$, losses.
 
 **Firm response:** X firms expand along MC (rising part of AC). Y firms contract.
 
@@ -261,11 +297,19 @@ This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\time
 
 **Exam Tip:** The examiner wants to see that you understand *why* factor prices don't return to original levels — it's the different factor intensities (Stolper-Samuelson intuition). X is labour-intensive → rising w benefits X and hurts Y; Y is capital-intensive → falling r benefits Y and hurts X.
 
+> **Professor's Corner:** This is the same mechanism as 6A Q4 — if you already answered that, reference it and compress. A-grade answers connect to the Rybczynski theorem: changing output mix at constant factor prices requires factor reallocation that changes factor prices when intensities differ.
+
+→ *See also: Topic 6A Q4 (same chain — Koutsoyiannis 8-panel diagram)*
+
 ---
 
 ### Question 3
 
+> **Marking Guide [14 marks]:** Production efficiency — MRTS condition & contract curve (4) | Consumption efficiency — MRS condition (4) | Simultaneous equilibrium — MRPT = MRS (4) | Diagram & synthesis (2)
+
 **Answer:**
+
+⭐ **High-Yield** — The three Pareto conditions are the core of welfare economics in GE. Direct exam question or essay component.
 
 The three static Pareto-efficiency properties of a GE state (Koutsoyiannis pp. 497-504):
 
@@ -304,7 +348,7 @@ PPC (product transformation curve)
    O                         X
 
 Conditions at E:
-$MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ$
+$\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 ```
 
 **The three Pareto conditions together:**
@@ -314,9 +358,15 @@ $MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ$
 
 **Exam Tip:** State the three conditions explicitly. Show that condition (3) marries the production side (MRPT from PPC) with the consumption side (MRS from indifference curves). This is the *Fundamental Condition of Pareto Optimality*.
 
+> **Professor's Corner:** A-grade answers show the two welfare theorems: (1) every competitive equilibrium is Pareto-efficient, (2) every Pareto-efficient allocation can be decentralised as a competitive equilibrium with appropriate lump-sum transfers. This is the link between the three marginal conditions and the First Welfare Theorem. Top answers note that condition (3) requires no consumption externalities (see Topic 8 Q6).
+
+→ *See also: Topic 6B Q1 (Edgeworth box for production), Topic 8 Q6 (why externalities break Pareto conditions)*
+
 ---
 
 ### Question 4
+
+> **Marking Guide [14 marks]:** GE definition (2) | Comparison table (6) | Worked example (4) | Intuition (2)
 
 **Answer:**
 
@@ -336,9 +386,15 @@ $MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ$
 
 **Exam Tip:** Use the coffee/tea example or the X/Y example from Koutsoyiannis. Emphasise that GE captures feedback loops that PE misses.
 
+> **Professor's Corner:** Since this duplicates 6A Q1, abbreviate here and cross-reference. A-grade answers show the coffee/tea example as a chain of feedback loops (not just two markets). Examiners reward showing you know how to compress a repeated answer.
+
+→ *See also: Topic 6A Q1 (full GE vs PE treatment)*
+
 ---
 
 ### Question 5
+
+> **Marking Guide [14 marks]:** Assumptions (4) | Production side reaching GE (3) | PPC & MRPT (2) | Consumption side (3) | Simultaneous equilibrium condition (2)
 
 **Answer:**
 
@@ -362,15 +418,23 @@ $MRPT_xy = MRSᴬ_xy = MRSᴮ_xy = Pₓ/Pᵧ$
 
 **Exam Tip:** The four markets (L, K, X, Y) must clear simultaneously. The system has 18 equations in 18 unknowns but one equation is redundant → prices determined only as ratios. Setting a numeraire resolves this.
 
+> **Professor's Corner:** A-grade answers distinguish this "how GE is reached" question from the "assumptions only" version in Q1. The six steps map to the three Pareto conditions — show you see the connection. Top answers note that step 6 (income distribution) is indeterminate without specifying factor ownership shares, which connects to the Second Welfare Theorem.
+
+→ *See also: Topic 6B Q1 (model assumptions), Topic 6B Q3 (Pareto conditions), Topic 6B Q7 (18 equations)*
+
 ---
 
 ### Question 6
 
+> **Marking Guide [14 marks]:** Setup & box dimensions (2) | MRS derivation & Pareto condition (4) | Contract curve equation (2) | Endowment check & inefficiency (3) | Infeasibility identification (1) | Core reasoning (2)
+
 **Answer:**
 
+⭐ **High-Yield** — Numerical Edgeworth box problems are a staple of GE exams. Practice this exact type.
+
 **Given:**
-- $A: U_a = X_a \cdot Y_a$ (Cobb-Douglas)
-- B: U_B = X_B + Y_B (perfect substitutes — linear utility)
+- A: $U_a = X_a \cdot Y_a$ (Cobb-Douglas)
+- B: $U_B = X_B + Y_B$ (perfect substitutes — linear utility)
 - Endowments: $X_a^0 = 10$, $Y_a^0 = 50$; $X_B^0 = 50$, $Y_B^0 = 10$
 - Total X = 60, Total Y = 60
 
@@ -411,11 +475,19 @@ Infeasible — total X endowment is only 60. Cannot be in the core (core allocat
 
 **Exam Tip:** For Cobb-Douglas vs linear utility, the contract curve is derived by equating MRS. Check corner solutions — B's linear utility often leads to corner consumption. Always verify feasibility first.
 
+> **Professor's Corner:** A-grade answers check corner solutions explicitly. With B's linear utility, if P_x ≠ P_y, B consumes only the cheaper good — the contract curve is then the edge of the box (not Y_a = X_a). Top answers note that the endowment MRS_a = 5 ≠ MRS_B = 1 means gains from trade exist, and compute the competitive equilibrium prices using the condition that A's MRS = P_x/P_y at the contract curve.
+
+→ *See also: Topic 6B Q3 (Pareto conditions), Topic 6B Q8 (Walras' Law — solving price ratios)*
+
 ---
 
 ### Question 7
 
+> **Marking Guide [14 marks]:** Unknowns classification (4) | Equations classification (4) | Walras' Law redundancy (3) | Numeraire solution (2) | Arrow-Debreu conditions (1)
+
 **Answer:**
+
+⭐ **High-Yield** — Classic "counting equations and unknowns" question. Expect this as a short answer or exam component.
 
 **The $2\times 2\times 2$ Walrasian system** (Koutsoyiannis pp. 497-509):
 
@@ -456,11 +528,19 @@ Under these conditions, a GE solution **does exist**. However, without these ass
 
 **Exam Tip:** The examiner expects you to know that equation-counting is insufficient. Mention Walras' Law, the numeraire device, and the Arrow-Debreu conditions. The system determines relative prices only — absolute prices require money.
 
+> **Professor's Corner:** A-grade answers explain *why* equation counting is neither necessary nor sufficient: the equations are not independent (Walras' Law) and non-negativity constraints aren't captured. Top answers cite the Arrow-Debreu fixed-point proof and note that without CRTS/convexity, existence fails even with 18=18.
+
+→ *See also: Topic 6B Q8 (Walras' Law detail and numerical example)*
+
 ---
 
 ### Question 8
 
+> **Marking Guide [14 marks]:** Walras' Law statement (2) | Three-good illustration (3) | Price ratio solution & numeraire (5) | Numerical example (2) | Key insight (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Walras' Law is a guaranteed feature of any GE exam. Know the theorem, the numeraire trick, and a numerical example.
 
 **Walras' Law** states that the sum of excess demands across all markets equals zero:
 $\sum P_i \cdot ED_i = 0$ for all $i = 1, \ldots, n$
@@ -485,9 +565,8 @@ Thus $Z_1$'s market is automatically in equilibrium when $Z_2$ and $Z_3$ are.
 With Walras' Law, one price is redundant. Set $P_1 = 1$ (numeraire).
 
 Then solve for $P_2/P_1$ and $P_3/P_1$ from the equilibrium conditions:
-$- $MRS_{i,12} = P_2/P_1$ for all consumers (consumption equilibrium)$
-- MRTS_LK = w/r (production equilibrium, linking to factor prices)
-- $P_2 = MC_2$, $P_3 = MC_3$ (perfect competition pricing)
+- $\text{MRS}_{i,12} = P_2/P_1$ for all consumers (consumption equilibrium)
+- $\text{MRTS}_{LK} = w/r$ (production equilibrium, linking to factor prices)
 - $P_2 = MC_2$, $P_3 = MC_3$ (perfect competition pricing)
 **Example:** Suppose excess demand functions are:
 $ED_{1} = 10 - 2P_{1} + P_{2} - 3P_{3}$
@@ -520,13 +599,21 @@ Given consistent ED functions: solve $ED_2 = 0$ and $ED_3 = 0$ for $P_2$, $P_3$ 
 
 **Exam Tip:** State Walras' Law explicitly. Show that with $n$ goods you solve $n-1$ markets. Set the numeraire good price = 1. Always verify the system is consistent — if ED functions don't satisfy Walras' Law, they're not derived from utility/profit maximisation.
 
+> **Professor's Corner:** The numerical example with inconsistent ED functions (intentionally shown) is a teaching feature — A-grade students spot the inconsistency and explain what it means. In exams, always verify your ED functions satisfy Walras' Law before solving. The numeraire choice is arbitrary but P₁ = 1 is conventional.
+
+→ *See also: Topic 6B Q7 (18 equations system), Topic 6A Q3 (excess demand)*
+
 ---
 
 ## Topic 7 — Game Theory & IO
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Nash equilibrium definition (2) | Profit functions (2) | FOC & best responses (4) | Solve NE prices (3) | Quantities, profits & comparison (2) | Diagram (1)
+
 **Answer:**
+
+⭐ **High-Yield** — Bertrand differentiated duopoly is the most common game theory calculation on graduate exams.
 
 **Nash equilibrium:** A set of strategies (one for each player) such that no player can unilaterally deviate and improve their payoff. Each player's strategy is a **best response** to the other's.
 
@@ -575,11 +662,19 @@ $\pi_{2} = (40 - 10)(60) = 1800$
 
 **Exam Tip:** Always derive best response functions from FOCs. The Nash equilibrium is the intersection of BR functions. For Bertrand with differentiated products, prices are strategic complements (BR slopes are positive: $dp_1/dp_2 = 1/4$ > 0). Draw the BR diagram if asked.
 
+> **Professor's Corner:** A-grade answers highlight strategic complements (upward-sloping BRs) vs strategic substitutes (downward-sloping, as in Cournot). Top answers compute the collusive outcome to show that NE prices (40,40) are below monopoly levels, or discuss how the degree of product differentiation affects pricing. If products were identical (substitute d = ∞), price = MC.
+
+→ *See also: Topic 7 Q2 (PD — why collusion is fragile)*
+
 ---
 
 ### Question 2
 
+> **Marking Guide [14 marks]:** PD definition (2) | Correct payoff matrix (2) | Dominant strategy check (3) | Dilemma explanation (2) | Oligopoly implications (3) | Repeated games & Folk Theorem (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Prisoners' Dilemma is the most frequently cited game in oligopoly theory. Know the matrix cold.
 
 **Prisoners' Dilemma (PD):** A game where individually rational choices lead to a collectively worse outcome. (Koutsoyiannis pp. 412-413)
 
@@ -589,23 +684,12 @@ $\pi_{2} = (40 - 10)(60) = 1800$
                     Prisoner B
                 Confess     Don't Confess
 Prisoner A  ┌──────────────────────────────
-Confess     │ (10, 10)     (0, 20)
-Don't       │ (20, 0)      (0, 0)
+Confess     │  (5, 5)       (0, 10)
+Don't       │ (10, 0)       (1, 1)
 ```
 
-- **Dominant strategy** for each: Confess (10 < 20 if other doesn't; 10 < 0 ... wait, confess gives 10 vs 0 for don't confess when other doesn't confess)
-
-Actually, the standard PD payoffs (negative numbers = prison years, more negative = worse):
-
-```
-                    Prisoner B
-                Confess     Don't Confess
-Prisoner A  ┌──────────────────────────────
-Confess     │ (-5, -5)     (0, -10)
-Don't       │ (-10, 0)     (-1, -1)
-```
-
-The dominant strategy is **Confess** (better regardless of what the other does). Yet mutual confession $(-5,-5)$ is worse than mutual non-confession $(-1,-1)$. Hence the "dilemma."
+- **Dominant strategy** for each: **Confess** (5 < 10 if other confesses; 0 < 1 if other does not confess).
+- Yet mutual confession (5,5) is worse than mutual non-confession (1,1). Hence the "dilemma."
 
 **Implications for oligopoly:**
 
@@ -618,11 +702,19 @@ The dominant strategy is **Confess** (better regardless of what the other does).
 
 **Exam Tip:** Draw the PD matrix. Emphasise that the dilemma arises from the structure of payoffs (defection dominates cooperation), not from irrationality. Link to oligopoly: undercutting is individually rational but collectively destructive.
 
+> **Professor's Corner:** A-grade answers name the Folk Theorem explicitly: in infinitely repeated PD, any feasible, individually rational payoff can be sustained if δ is high enough. The discount factor threshold δ* = (π_defect − π_coop)/(π_defect − π_punish). Top answers note that trigger strategies require observability — if firms can secretly undercut, cooperation breaks down even with high δ.
+
+→ *See also: Topic 7 Q4 (grim trigger in repeated games), Topic 7 Q5 (backward induction paradox)*
+
 ---
 
 ### Question 3
 
+> **Marking Guide [14 marks]:** Game structure & tree (4) | Backward induction — I's node (3) | Backward induction — E's node (3) | SPNE identification (2) | Non-credible threat discussion (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Extensive form entry games are the standard tool for teaching subgame perfection and credible threats.
 
 **Market entry game (extensive form):**
 
@@ -668,11 +760,19 @@ Payoffs: (40, 40)
 
 **Exam Tip:** Always solve by backward induction (rollback). Underline that subgame perfection eliminates non-credible threats. The key insight: accommodation is the subgame perfect response, so entry occurs.
 
+> **Professor's Corner:** A-grade answers discuss how the incumbent can make the fight threat credible: excess capacity investment, burning bridges, or reputation building in multimarket contact. Top answers connect this to the chain-store paradox (Selten, 1978) — in a finite sequence of entry games, backward induction predicts entry everywhere despite intuition suggesting reputation deters entry.
+
+→ *See also: Topic 7 Q5 (backward induction paradox), Topic 7 Q6 (centipede game)*
+
 ---
 
 ### Question 4
 
+> **Marking Guide [14 marks]:** Stage-game NE identification (3) | Grim trigger strategy definition (2) | PV of cooperation (3) | PV of deviation (3) | Discount factor threshold (3)
+
 **Answer:**
+
+⭐ **High-Yield** — Repeated game with grim trigger is the standard way to sustain collusion. Expect δ* calculations.
 
 **Question:** Show that "Down/Right" is SPNE if the stage game is infinitely repeated with grim trigger strategies.
 
@@ -749,11 +849,19 @@ So if players are sufficiently patient ($\delta \ge \frac{2}{3}$), (Up, Left) ca
 
 **Exam Tip:** If the matrix shows (Down, Right) as the mutual best response, it's the stage-game NE. In repeated play, cooperation on a Pareto-superior outcome can be sustained if the discount factor is high enough, with reversion to the stage-game NE as punishment.
 
+> **Professor's Corner:** A-grade answers compute δ* = (π_dev − π_coop)/(π_dev − π_pun) cleanly. The intuition: δ must be high enough that the long-run loss from punishment outweighs the short-run gain from deviation. Top answers note that if the punishment is the stage-game NE (as here), the condition is δ ≥ (π_dev − π_coop)/(π_dev − π_NE). When π_dev = 5, π_coop = 3, π_NE = 2, δ* = (5-3)/(5-2) = 2/3.
+
+→ *See also: Topic 7 Q2 (PD and Folk Theorem), Topic 7 Q5 (backward induction unraveling)*
+
 ---
 
 ### Question 5
 
+> **Marking Guide [14 marks]:** Paradox definition (2) | Finitely repeated PD unraveling (4) | Why multiple NE helps (4) | Reputation/bounded rationality (2) | Synthesis (2)
+
 **Answer:**
+
+⭐ **High-Yield** — The unraveling paradox is a favourite exam topic connecting game theory to real-world cooperation.
 
 **Paradox of backward induction:** In finite-horizon games of perfect information, backward induction predicts cooperation unravels from the end. For example, in a finitely repeated Prisoners' Dilemma:
 
@@ -778,9 +886,15 @@ Yes. The paradox arises when the stage game has a **unique** Nash equilibrium. I
 
 **Exam Tip:** The paradox is that rationality (backward induction) leads to inefficient outcomes. Multiple equilibria can help by providing punishment strategies that make cooperation sustainable. Mention the Folk Theorem connection.
 
+> **Professor's Corner:** A-grade answers distinguish the backward induction paradox (unique stage-game NE unravels) from the resolution (multiple NE allow punishment). Top answers cite Kreps-Milgrom-Roberts-Wilson (1982): even a tiny probability of a "cooperative type" sustains cooperation in finitely repeated PD — incomplete information limits unraveling.
+
+→ *See also: Topic 7 Q4 (grim trigger — δ* calculation), Topic 7 Q6 (centipede — same paradox)*
+
 ---
 
 ### Question 6
+
+> **Marking Guide [14 marks]:** Game description (2) | Game tree diagram (3) | Backward induction steps (4) | Paradox statement (2) | Overcoming mechanisms (3)
 
 **Answer:**
 
@@ -833,13 +947,21 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 **Exam Tip:** Draw the game tree. Show backward induction step-by-step. The paradox: individually rational choices (taking) produce collectively inferior outcome. Incomplete information and social preferences can resolve this.
 
+> **Professor's Corner:** A-grade answers connect the centipede to the backward induction paradox in Q5 — both show the same unraveling logic. Top answers cite experimental evidence: McKelvey & Palfrey (1992) find substantial passing, consistent with Kreps' incomplete information model but not with pure backward induction.
+
+→ *See also: Topic 7 Q5 (backward induction paradox — same logic)*
+
 ---
 
 ## Topic 8 — Externalities, Public Goods & Information
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Definition & mechanism (4) | Worked example — fishing (4) | Solutions: property rights/taxes/regulation (4) | Link to externalities (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Tragedy of the Commons is the canonical negative externality example. Connects property rights, externalities, and Coase.
 
 **Tragedy of the Commons** (Hardin, 1968): When a resource is owned in common (no one has exclusive property rights), each individual acting rationally in their self-interest depletes the resource, ultimately destroying it for everyone.
 
@@ -851,22 +973,30 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 **Exam Tip:** Link to externalities: it's a negative production externality where each user's action reduces others' available resource. The private cost < social cost. Coase Theorem suggests assigning property rights.
 
+> **Professor's Corner:** A-grade answers formalise: each user maximises MB_i(q_i) − MC(q_i) ignoring Σ_{j≠i} MC(q_j). The Nash equilibrium over-extracts. Top answers solve a simple numerical version (e.g., V = 100 − Q, MC = 10 per user, symmetric) to show the wedge between private and social optimum.
+
+→ *See also: Topic 8 Q2 (steel-fishery externality — formal FOC derivation)*
+
 ---
 
 ### Question 2
 
+> **Marking Guide [14 marks]:** Setup (2) | Unregulated FOCs (4) | Joint profit FOC & social optimum (4) | Coase Theorem & bargaining (2) | Diagram & DWL (2)
+
 **Answer:**
+
+⭐ **High-Yield** — The steel-fishery model is the canonical production externality. Every externality question builds on this framework.
 
 **Steel-fishery pollution externality:**
 
-A steel mill (S) produces steel and, as a byproduct, pollution (x) that harms a downstream fishery (F). The steel mill's cost function: C_S(S, x) (higher x reduces cost: \partial C_S/\partial x < 0). The fishery's cost function: C_F(F, x) (higher x increases cost: \partial C_F/\partial x > 0). The steel mill does not pay for the damage.
+A steel mill (S) produces steel and, as a byproduct, pollution ($x$) that harms a downstream fishery (F). The steel mill's cost function: $C_S(S, x)$ (higher $x$ reduces cost: $\partial C_S/\partial x < 0$). The fishery's cost function: $C_F(F, x)$ (higher $x$ increases cost: $\partial C_F/\partial x > 0$). The steel mill does not pay for the damage.
 
 **(i) Individual profit maximisation (unregulated)**
 
 Steel mill maximises: $\pi_S = P_S \cdot S - C_S(S, x)$
 FOCs:
-$\partial\pi_S/\partial S = P_S - \partial C_S/\partial S = 0 \to P_S = MC_S (private)$
-\partial\pi_S/\partial x = -\partial C_S/\partial x = 0 → MC_S_x = 0 (since \partial C_S/\partial x < 0, marginal benefit of pollution = 0 → use pollution until \partial C_S/\partial x = 0)
+$\partial\pi_S/\partial S = P_S - \partial C_S/\partial S = 0 \to P_S = MC_S$ (private)
+$\partial\pi_S/\partial x = -\partial C_S/\partial x = 0$ → steel mill uses pollution until its marginal private benefit $-\partial C_S/\partial x = 0$ (since $\partial C_S/\partial x < 0$, more pollution lowers cost, so the mill pollutes until the cost saving is exhausted)
 
 Fishery maximises: $\pi_F = P_F \cdot F - C_F(F, x)$
 $FOC: \partial\pi_F/\partial F = P_F - \partial C_F/\partial F = 0 \to P_F = MC_F$
@@ -925,11 +1055,19 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Exam Tip:** Draw the marginal benefit (to steel mill) and marginal cost (to fishery) diagram. The social optimum equates MB = MC. Show the DWL from excessive pollution in the unregulated case. State Coase Theorem explicitly.
 
+> **Professor's Corner:** A-grade answers show both unregulated FOCs and the joint optimum, then note that a Pigouvian tax τ = ∂C_F/∂x at x° achieves the social optimum. Top answers contrast Coase (bargaining, zero transaction costs) with Pigou (tax, works with transaction costs) and note that the distribution of rights affects wealth but not efficiency.
+
+→ *See also: Topic 8 Q1 (Tragedy of Commons — same externality logic)*
+
 ---
 
 ### Question 3
 
+> **Marking Guide [14 marks]:** Asymmetric info definition (2) | Lemons setup (3) | Adverse selection mechanism (4) | Equilibrium calculation (3) | General principle & solutions (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Akerlof's "Market for Lemons" (1970, Nobel Prize) is the foundational model of asymmetric information.
 
 **Asymmetric information → market disappearance (Market for Lemons, Akerlof, 1970):**
 
@@ -954,11 +1092,19 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Exam Tip:** This is the "Market for Lemons" (Akerlof, 1970, Nobel Prize). The key intuition: asymmetric information can destroy markets. Solutions: signalling (warranties, certifications), screening, reputation mechanisms.
 
+> **Professor's Corner:** A-grade answers compute the equilibrium explicitly: willingness-to-pay = E[V] = 0.5×10,000 + 0.5×5,000 = 7,500 < 8,000 (peach reservation) → adverse selection. Top answers show that if the proportion of lemons is high enough, even the lemon market collapses (complete market failure). Mention Akerlof's proof that adverse selection can cause complete market breakdown.
+
+→ *See also: Topic 8 Q4 (Spence signalling — market solution to lemons)*
+
 ---
 
 ### Question 4
 
+> **Marking Guide [14 marks]:** Setup & assumptions (2) | Signaling game structure (3) | Separating equilibrium conditions (4) | Pooling equilibrium (3) | Welfare analysis (2)
+
 **Answer:**
+
+⭐ **High-Yield** — Spence (1973, Nobel Prize 2001) is the classic signalling model. Tests separating vs pooling equilibrium logic.
 
 **Spence's education signaling model** (Spence, 1973; Munoz-Garcia pp. 573-578):
 
@@ -1006,9 +1152,15 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Exam Tip:** Draw the game tree (Nature → Worker → Firm). Explain single-crossing condition. State that education is a signal, NOT human capital in this model. Mention that Spence won the Nobel Prize (2001) for this.
 
+> **Professor's Corner:** A-grade answers derive both separating conditions: $w_H - w_L \in [c_H, c_L]$ — education must be cheap enough for H to acquire but too costly for L to mimic. Top answers discuss welfare: separating equilibria are Pareto-inferior to full information (wasteful signalling), and the Intuitive Criterion (Cho-Kreps) may eliminate some pooling equilibria.
+
+→ *See also: Topic 8 Q3 (lemons — the problem signalling solves)*
+
 ---
 
 ### Question 5
+
+> **Marking Guide [14 marks]:** Definition (2) | Bandwagon effect — positive externality (4) | Snob effect — negative externality (4) | Veblen effect (2) | Diagram (2)
 
 **Answer:**
 
@@ -1046,9 +1198,15 @@ Quantity Demanded
 
 **Exam Tip:** Define consumption externality as utility interdependence: Uᵢ = Uᵢ(Cᵢ, Cⱼ). Bandwagon = positive interdependence (want to match others). Snob = negative interdependence (want to be different). Mention Leibenstein (1950) "Bandwagon, Snob, and Veblen Effects in the Theory of Consumers' Demand."
 
+> **Professor's Corner:** A-grade answers note that bandwagon effects make demand more elastic (network effects reinforce price changes) while snob effects make it less elastic. Top answers connect to GE — these externalities violate the independence assumption in the 2×2×2 model (see Q6), causing the First Welfare Theorem to fail.
+
+→ *See also: Topic 8 Q6 (consumption externalities and GE)*
+
 ---
 
 ### Question 6
+
+> **Marking Guide [14 marks]:** Direct answer (2) | Assumption breakdown (3) | Pareto condition failure (4) | Welfare Theorem failure (3) | Mathematical formulation (2)
 
 **Answer:**
 
@@ -1080,9 +1238,13 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
    - MRSₐ = (\partial Uₐ/\partial Xₐ)/(\partial Uₐ/\partial Yₐ) but Pareto efficiency also requires considering \partial Uₐ/\partial X_B.
    - The standard condition (MRSₐ = MRS_B = Pₓ/Pᵧ) is necessary but no longer sufficient for efficiency.
 
-**Conclusion:** The GE solution may still *exist* (Arrow-Debreu conditions may hold) but it will NOT be Pareto-optimal. The three marginal conditions (MRS equality, MRTS equality, MRPT = MRS) fail when externalities are present. This is why Koutsoyiannis (p. 26593-26594) concludes: "when externalities exist, the conditions for Pareto optimality are not fulfilled."
+**Conclusion:** The GE solution may still *exist* (Arrow-Debreu conditions may hold) but it will NOT be Pareto-optimal. The three marginal conditions (MRS equality, MRTS equality, MRPT = MRS) fail when externalities are present. This is why Koutsoyiannis (Ch. 23) concludes: "when externalities exist, the conditions for Pareto optimality are not fulfilled."
 
 **Exam Tip:** The textbook answer is that the $2\times 2\times 2$ GE assumes NO consumption externalities. If introduced, the First Welfare Theorem fails. Mention Leibenstein's bandwagon/snob effects. Point to Koutsoyiannis Chapter 23 for detailed analysis.
+
+> **Professor's Corner:** A-grade answers show the mathematical breakdown: $U_A = U_A(X_A, Y_A, X_B, Y_B)$ means Pareto efficiency requires $MRS^A = MRS^B$ AND additional conditions on cross-partials. This violates the First Welfare Theorem. Top answers note that externalities are a missing market problem — adding markets for interdependent utility would restore efficiency (but is impractical).
+
+→ *See also: Topic 8 Q5 (bandwagon/snob effects), Topic 6B Q3 (Pareto conditions without externalities)*
 
 ---
 
@@ -1090,12 +1252,16 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Autarky equilibrium (2) | Free trade imports (2) | Tariff welfare effects — CS, PS, revenue (4) | DWL calculation (2) | VER analysis (2) | Comparison table (2)
+
 **Answer:**
+
+⭐ **High-Yield** — The only trade question on the exam. Must be fully prepared as a guaranteed pick if choosing this set.
 
 **Given:**
 - Domestic demand: $Q_d = 250,000 - 100P$
 - Domestic supply: $Q_s = 250P - 30,000$
-- World price: P_W = $600
+- World price: $P_W = 600$
 
 **Step 1: Autarky equilibrium.**
 
@@ -1104,7 +1270,7 @@ $250,000 - 100P = 250P - 30,000$
 280,000 = 350P
 $P_{\text{autarky}} = 800$
 
-$Q_autarky = 250,000 - 100(800) = 250,000 - 80,000 = 170,000$
+$Q_{\text{autarky}} = 250,000 - 100(800) = 250,000 - 80,000 = 170,000$
 
 **Step 2: Free trade (P_W = $600).**
 
@@ -1119,8 +1285,8 @@ No exports.
 
 At P = $650:
 $Q_d = 250,000 - 100(650) = 250,000 - 65,000 = 185,000$
-$Q_s = 250(650) - 30,000 = 162,500 - 30,000 = $ **132,500**
-$Imports = 185,000 - 132,500 = $ **52,500**
+$Q_s = 250(650) - 30,000 = 162,500 - 30,000 = 132,500$
+$Imports = 185,000 - 132,500 = 52,500$
 Tariff revenue = $50 \times 52,500$ = **$2,625,000**
 
 **Welfare effects (relative to free trade):**
@@ -1157,8 +1323,8 @@ P_VER = $742.86
 
 At P = $742.86:
 $Q_d = 250,000 - 100(742.86) = 250,000 - 74,286 = 175,714$
-$Q_s = 250(742.86) - 30,000 = 185,715 - 30,000 = $ **155,715**
-$Imports = 175,714 - 155,714 = $ **20,000** ✓
+$Q_s = 250(742.86) - 30,000 = 185,715 - 30,000 = 155,715$
+$Imports = 175,714 - 155,714 = 20,000$ ✓
 
 **Welfare effects of VER vs free trade:**
 
@@ -1187,6 +1353,10 @@ $Imports = 175,714 - 155,714 = $ **20,000** ✓
 | ΔW vs FT | — | -$437,500 | -$9,285,775 |
 
 **Exam Tip:** The DWL of tariff = production distortion + consumption distortion triangles. The VER is equivalent to a tariff where the revenue goes to foreign exporters (making it more costly to the domestic economy). Always compute autarky first as the reference point.
+
+> **Professor's Corner:** A-grade answers show the DWL decomposition diagrammatically (two triangles) and compute both components. Top answers note that the VER is strictly worse than a tariff because the quota rent goes abroad — a tariff with the same import level would generate government revenue, making it less costly. This is the key welfare insight for trade policy comparisons.
+
+→ *See also: Topic 8 Q2 (Coase Theorem — property rights allocation similar to tariff vs VER distribution)*
 
 ---
 

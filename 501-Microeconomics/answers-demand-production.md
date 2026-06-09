@@ -12,6 +12,10 @@
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Elasticity Concepts (3) | Sign Classification (3) | Revenue Test (3) | Numerical Application (3) | Economic Intuition (2)
+
+> ⭐ **High-Yield** — Constant elasticity (log-linear) demand is the most common functional form in empirical demand estimation. Mastering the interpretation of exponents as elasticities is essential.
+
 Demand function: $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$
 
 **(i) Cross-price elasticity with Z**
@@ -43,17 +47,16 @@ $\delta = 0.8 > 0 \Rightarrow \frac{\partial X}{\partial P_Z} > 0$.
 
 **(iv) If $P_W$ falls 5%, by what % does $Q_d$ change?**
 
-$\varepsilon_{X,P_W} = \varepsilon$.
+$\varepsilon_{X,P_W} = \varepsilon$ (the exponent on $P_W$ in the demand function).
 
-Given $\varepsilon = ?$ — if we assume a value from typical data or the question context...
+Given $\% \Delta P_W = -5\%$, the percentage change in quantity demanded is:
 
-If $\varepsilon = 0.5$ (example), then:
-$\% \Delta Q_d = \varepsilon \times (\% \Delta P_W) = 0.5 \times (-5\%) = -2.5\%$.
+$$\% \Delta Q_d = \varepsilon \times (\% \Delta P_W) = \varepsilon \times (-5\%)$$
 
-If $\varepsilon = -0.2$, then:
-$\% \Delta Q_d = -0.2 \times (-5\%) = +1.0\%$.
-
-**Answer depends on sign of $\varepsilon$:** if $\varepsilon > 0$, P_W fall → Q_d fall; if $\varepsilon < 0$, P_W fall → Q_d rise.
+**The answer depends entirely on the sign and magnitude of $\varepsilon$:**
+- If $\varepsilon > 0$ (W is a substitute), $P_W \downarrow \;\Rightarrow\; Q_d \downarrow$ by $5\varepsilon\%$.
+- If $\varepsilon < 0$ (W is a complement), $P_W \downarrow \;\Rightarrow\; Q_d \uparrow$ by $5|\varepsilon|\%$.
+- If $\varepsilon = 0$ (W is unrelated), $Q_d$ is unchanged.
 
 **Exam Tip:** Always check the sign of the cross-price elasticity. A fall in the price of a complement ($\varepsilon < 0$) raises demand; a fall in the price of a substitute ($\varepsilon > 0$) lowers demand.
 
@@ -76,9 +79,15 @@ Here own-price elasticity $\gamma = -0.4$, so $|\gamma| = 0.4 < 1$ → inelastic
 
 **Exam Tip:** The Total Revenue Test is a staple. Elastic → price and revenue move opposite. Inelastic → same direction.
 
+> **Professor's Corner:** Top marks require explicitly linking each exponent to its elasticity interpretation and classifying goods correctly by sign. The most common mistake is confusing $\alpha$ (the scale/intercept parameter) with the income elasticity $\eta$. For part (iv), never guess a value for $\varepsilon$ — state that the answer depends on its sign and explain both cases.
+>
+> → *See also: Consumer Theory Q1 (Walrasian demand properties), Topic 2 Q3 (Lerner Index application)*
+
 ---
 
 ### Question 2
+
+> **Marking Guide [14 marks]:** Sign Identification (4) | Law of Demand (4) | Economic Interpretation (3) | Misspecification Diagnosis (3)
 
 Burger King demand: $Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I$
 
@@ -90,9 +99,17 @@ For a normal demand function, own-price coefficient must be **negative**.
 
 **Exam Tip:** Always check the sign of the own-price coefficient first. Positive own-price coefficient = misspecified model.
 
+> **Professor's Corner:** This is a 30-second question once you spot the sign error. The examiner is testing whether you blindly apply formulas or first verify the data make sense. The model is unusable — you'd reject this regression before doing any elasticity calculations. Mention that a positive own-price coefficient might indicate omitted variable bias or simultaneous equations bias.
+>
+> → *See also: Topic 2 Q3 (correctly specified log-linear demand)*
+
 ---
 
 ### Question 3
+
+> **Marking Guide [14 marks]:** Cross-price Elasticities (4) | Income Elasticity Classification (2) | Advertising Elasticity (2) | Lerner Index Derivation (3) | Competitive Response (3)
+
+> ⭐ **High-Yield** — Integrates elasticity interpretation, the Lerner Index (monopoly pricing), and competitive strategy. The profit-maximising price formula $P = MC/(1+1/\varepsilon)$ is a staple exam question.
 
 Corrected demand: $Q = 150 P_B^{-1.5} P_{r1}^{0.75} P_{r2}^{-0.25} I^{0.8} A^{0.05}$
 
@@ -143,6 +160,10 @@ $$\text{Markup} = \frac{P - MC}{P} = \frac{3 - 1}{3} = \frac{2}{3} \text{ (or } 
 
 **Exam Tip:** The Lerner Index formula $P = \frac{MC}{1 + 1/\varepsilon}$ only works when $\varepsilon < -1$ (elastic region). If $-1 < \varepsilon < 0$, $MR$ would be negative and the formula gives a nonsensical negative price.
 
+> **Professor's Corner:** Part (vi) is the strongest discriminator — most students stop at computing the 7.5% demand drop for Whoppers but fail to compute the required price offset. The key insight is that you use the *own-price elasticity* to determine how much price must change to restore quantity. This tests whether you truly understand elasticities as tools, not just classification labels.
+>
+> → *See also: Topic 2 Q1 (constant elasticity concepts), Topic 3C Q1 (tax incidence with elasticities)*
+
 **(vi) McDonald's lowers Big Mac price 10%. By what % must BK lower its price to not lose customers?**
 
 Big Mac is r1 (substitute). $\varepsilon_{Q,P_{r1}} = 0.75$.
@@ -165,6 +186,8 @@ $$\frac{\% \Delta Q}{\% \Delta P_B} = -1.5 \Rightarrow \% \Delta P_B = \frac{\% 
 
 ### Question 1
 
+> **Marking Guide [14 marks]:** Production Function (3) | Production Set (3) | Transformation Function (3) | Transformation Frontier (2) | MRPT Definition & Formula (3)
+
 Define:
 
 | Term | Definition |
@@ -179,9 +202,17 @@ $$MRPT_{k,l}(y) = \frac{\partial F(y)/\partial y_k}{\partial F(y)/\partial y_l} 
 
 Measures how much output $l$ must be reduced to increase output $k$ by one unit.
 
+> **Professor's Corner:** The MRPT definition is the production-side analogue of the MRS in consumption. Examiners frequently ask for the relationship $MRPT_{k,l} = MC_k/MC_l$ — know this duality cold. A common mistake is confusing MRPT with MRTS (factor substitution) versus MRPT (output transformation).
+>
+> → *See also: Topic 3B Q2 (MRPT = MC_x/MC_y proof)*
+
 ---
 
 ### Question 2 & 3
+
+> **Marking Guide [14 marks]:** Property Definitions (6) | Graphical Interpretations (4) | Convexity Understanding (2) | Fixed-Cost Exception (2)
+
+> ⭐ **High-Yield** — The 11 properties of a production set form the axiomatic foundation of producer theory. Convexity and returns-to-scale properties are the most frequently examined.
 
 **Properties of the production set** (graphically):
 
@@ -203,9 +234,17 @@ Measures how much output $l$ must be reduced to increase output $k$ by one unit.
 
 **Exam Tip:** Differentiate between **convex production set** (which implies diminishing returns / DRS) and **convex isoquants** (which imply diminishing MRTS). They are related but not identical.
 
+> **Professor's Corner:** A top answer doesn't just list the 11 properties — it groups them: (i) basic feasibility (non-empty, closed, inaction), (ii) physical constraints (no free lunch, irreversibility), (iii) disposal (free disposal), (iv) scalability (RTS properties), (v) aggregation (additivity), (vi) curvature (convexity). The fixed-cost exception to convexity is a favourite exam nuance.
+>
+> → *See also: Topic 3B Q1 (profit function convexity — the dual of this)*
+
 ---
 
 ### Question 4
+
+> **Marking Guide [14 marks]:** Definition & Formula (3) | Perfect Substitutes Derivation (4) | Leontief Derivation (4) | Comparison Table (3)
+
+> ⭐ **High-Yield** — The polar cases ($\sigma = \infty$ and $\sigma = 0$) and the Cobb-Douglas benchmark ($\sigma = 1$) are almost guaranteed exam questions. The CES generalisation $\sigma = 1/(1-\rho)$ is the capstone.
 
 **Elasticity of Substitution (EoS)** — $\sigma$ measures the proportionate change in the $K/L$ ratio relative to the proportionate change in $MRTS_{L,K}$ along an isoquant:
 
@@ -240,9 +279,15 @@ $\% \Delta (K/L) = 0 \Rightarrow \sigma = 0$
 | Leontief (fixed proportions) | 0 |
 | CES | $1/(1-\rho)$ |
 
+> **Professor's Corner:** The derivation for linear ($\sigma = \infty$) is immediate from constant $MRTS$; the Leontief case ($\sigma = 0$) follows from the fact that $K/L$ is fixed at the kink. For Cobb-Douglas, derive quickly: $MRTS = (\alpha/\beta)(K/L)^{-1}$, so $\ln(K/L) = \text{constant} - \ln(MRTS)$, thus $\sigma = 1$. A common mistake is writing $\sigma = 1/(1-\rho)$ but forgetting that $\rho \le 1$ for well-behaved CES.
+>
+> → *See also: Topic 3A Q7(vii) (Cobb-Douglas EoS verification)*
+
 ---
 
 ### Question 5
+
+> **Marking Guide [14 marks]:** Property Definitions (6) | Intuitive Matching (4) | Concavity Insight (2) | Shephard's Lemma (2)
 
 **Four properties of cost functions** — match to intuitive explanations:
 
@@ -262,9 +307,17 @@ $\% \Delta (K/L) = 0 \Rightarrow \sigma = 0$
 
 **Exam Tip:** Property 3 (concavity in $w$) is the most commonly tested. It implies $\frac{\partial^2 c}{\partial w_k^2} \leq 0$ → conditional factor demand slopes downward.
 
+> **Professor's Corner:** The cost function concavity result is the dual of profit function convexity. Top students explicitly link Shephard's Lemma to the envelope theorem: $\partial c(w,q)/\partial w_k = z_k(w,q)$. The intuitive matching questions test whether you can translate mathematical properties into plain English — practising this skill is worth 4 marks.
+>
+> → *See also: Topic 3B Q1 (profit function — the dual), Topic 3A Q7 (conditional factor demand application)*
+
 ---
 
 ### Question 6
+
+> **Marking Guide [14 marks]:** Production Function (2) | Conditional Factor Demand (2) | Cost Function (3) | Profit Maximisation (4) | MR=MC Alternative (3)
+
+> ⭐ **High-Yield** — The Leontief production function in a profit-maximisation context. Links production theory to pricing decisions.
 
 **Sausage maker:** 3 oz pork + 2 oz veal → 5 oz sausage.
 
@@ -309,9 +362,17 @@ $TR = P \cdot Q = Q^{5/6} \cdot 200^{1/6}$, $MR = \frac{5}{6} Q^{-1/6} \cdot 200
 
 $MC = 5$. Set MR = MC → $Q^* = 200(6)^{-6} = 200/46656 \approx 0.00429$. $P^* = 6$.
 
+> **Professor's Corner:** The direct $\pi(P)$ maximisation method is faster here and avoids inverting the demand function. However, the MR=MC method is more general and works when the demand function cannot be explicitly inverted. A common mistake is forgetting that the cost function $c(Q) = Q(3p_P + 2p_V)$ uses the *conditional* factor demands, not the production function directly.
+>
+> → *See also: Consumer Theory Q6 (Negroni — Leontief in consumption), Topic 2 Q3(v) (Lerner Index pricing)*
+
 ---
 
 ### Question 7
+
+> **Marking Guide [14 marks]:** SR Production (2) | SR Factor Demand & Cost (3) | Shutdown & Supply (2) | Returns to Scale (2) | EoS (1) | LR Factor Demand (2) | LR Cost & Supply (2)
+
+> ⭐ **High-Yield** — This is the most comprehensive production question, covering every major concept: SR vs LR, conditional factor demands, cost functions, shutdown, supply, RTS, EoS, and duality. Master this and you master production theory.
 
 $Q = (KL)^{1/3}$, short-run $K = 64$.
 
@@ -402,9 +463,15 @@ $$Q^S(P) = \frac{P^2}{9wr}$$
 
 **Exam Tip:** For DRS, LR supply slopes upward. For CRS, LR supply is horizontal at $P = MC$. For IRS, the firm would not have a well-defined supply curve (natural monopoly).
 
+> **Professor's Corner:** Part (iv) on the shutdown price is subtle — $\min AVC = 0$ means the firm never shuts down for any positive price (it always covers variable costs at some output). A top answer notes that with fixed costs sunk in the SR, any $P > 0$ justifies production. Part (x) derives the LR supply — note it's upward-sloping (DRS) and homogeneous of degree zero in $(w,r)$ as required. The LR conditional factor demands satisfy Shephard's Lemma — verify this for bonus marks.
+>
+> → *See also: Topic 3C Q1 (industry supply from firm supply)*
+
 ---
 
 ### Question 8
+
+> **Marking Guide [14 marks]:** Economies of Scale Identification (5) | Fixed Cost Spreading (4) | Marginal vs Average Cost (3) | Real-World Application (2)
 
 **Starbucks Jumbo (62 oz) vs Trenta (31 oz). Will Jumbo cost twice as much, more, or less?**
 
@@ -420,6 +487,10 @@ The firm's average cost declines with output → the marginal cost of the second
 
 **Exam Tip:** This tests whether you understand economies of scale intuitively. The key is identifying that fixed costs (labor, rent, equipment) are spread over more output.
 
+> **Professor's Corner:** This is an intuitive application question — no math required, but the examiner wants to see you use economic reasoning, not common sense. Frame your answer around average cost declining with output: the second 31 oz has lower AC than the first because fixed costs are already covered. A top answer adds that marginal cost is below average cost when there are economies of scale.
+>
+> → *See also: Topic 3A Q7(vii) (DRS — the opposite case)*
+
 ---
 
 ## Topic 3B — Profit Function
@@ -427,6 +498,10 @@ The firm's average cost declines with output → the marginal cost of the second
 ---
 
 ### Question 1
+
+> **Marking Guide [14 marks]:** Definition (2) | Property Listing (4) | Hotelling's Lemma (4) | Convexity Intuition (2) | Law of Supply (2)
+
+> ⭐ **High-Yield** — The profit function is the dual of the cost function. Its convexity in prices (not concavity!) is a classic exam trap. Hotelling's Lemma is the production-side analogue of Roy's Identity.
 
 **Profit function:** $\pi(p) = \max_{y \in Y} p \cdot y$
 
@@ -447,9 +522,17 @@ If $Y$ is **closed** and satisfies **free disposal**, the profit function satisf
 
 **Exam Tip:** The profit function is convex (not concave!) in prices. This is the opposite of the cost function (concave in input prices). Don't confuse them.
 
+> **Professor's Corner:** The convexity of $\pi(p)$ reflects the firm's ability to adjust its production plan as prices change — the firm benefits more from extreme price vectors because it can specialise. A top answer explains the economic intuition: a price-taking firm can reallocate resources toward relatively more expensive outputs, so profit grows more than linearly in prices. Contrast this with the cost function, where substitution mitigates cost increases, hence concavity.
+>
+> → *See also: Topic 3A Q5 (cost function concavity — the dual), Topic 3B Q2 (MRPT application)*
+
 ---
 
 ### Question 2
+
+> **Marking Guide [14 marks]:** Setup & Differentiation (4) | Profit FOCs (4) | Substitution (3) | Intuitive Explanation (3)
+
+> ⭐ **High-Yield** — This duality result connects production theory (MRPT) with cost theory (MC ratio) and is the foundation for the product-mix efficiency condition in GE.
 
 **Show: $MRPT_{x,y} = MC_x / MC_y$.**
 
@@ -484,6 +567,10 @@ $$MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 
 **Exam Tip:** This is a key duality result linking production theory with cost theory. The MRPT equals the ratio of marginal costs, which also equals the ratio of output prices under profit maximization.
 
+> **Professor's Corner:** A complete answer has two parts: (i) the technical derivation via total differentiation of $F(y)=0$ and the PMP first-order conditions, and (ii) the intuitive explanation — if $MRPT > MC_x/MC_y$, reallocating resources from $y$ to $x$ raises revenue more than it raises cost. The connection to the GE efficiency condition $MRPT = MRS$ (product-mix efficiency) is what separates A from B answers.
+>
+> → *See also: Topic 3A Q1 (MRPT definition), Topic 3A Q5 (cost function properties)*
+
 ---
 
 ## Topic 3C — Competitive Industry
@@ -491,6 +578,10 @@ $$MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 ---
 
 ### Question 1
+
+> **Marking Guide [14 marks]:** SR Firm Supply (2) | Market Equilibrium (3) | Tax Incidence Computation (4) | DWL Calculation (3) | Welfare Summary (2)
+
+> ⭐ **High-Yield** — Competitive equilibrium with taxation is the most commonly examined numerical question in this topic. Tax incidence and DWL are almost guaranteed.
 
 1,000 identical firms. $C_{SR}(q) = 0.5q^2 + 2q + 80$.
 
@@ -575,6 +666,10 @@ $$\int_{11,000}^{21,000} [D(Q) - S(Q)] dQ = 100,000$$
 
 **Exam Tip:** For linear supply and demand, DWL is always the triangle $\frac{1}{2} \times t \times \Delta Q$. The tax incidence depends on relative elasticities. Here both supply and demand slopes are equal ($\pm 1000$), so the tax burden is split evenly ($P$ rises by \$10 for buyers, falls by \$10 for sellers).
 
+> **Professor's Corner:** The most common mistake is forgetting the shutdown condition — check $P \ge \min AVC$ before using $P = MC$ as the supply curve. Another frequent error: computing DWL as $\frac{1}{2} \times t \times Q_{after}$ instead of $\frac{1}{2} \times t \times \Delta Q$. The per-firm loss of $-\$19.5$ after tax is a key insight — firms produce despite losses because $P_s = 13 > \min AVC = 2$ (they are covering variable costs and contributing to fixed costs in the SR).
+>
+> → *See also: Topic 3A Q7(iv) (shutdown condition), Topic 3C Q2 (Walras' Law — GE extension)*
+
 | Measure | Without Tax | With Tax |
 |---------|-------------|----------|
 | $P$ (buyer) | 23 | 33 |
@@ -588,6 +683,10 @@ $$\int_{11,000}^{21,000} [D(Q) - S(Q)] dQ = 100,000$$
 ---
 
 ### Question 2
+
+> **Marking Guide [14 marks]:** Walras' Law Statement (2) | Algebraic Substitution (5) | Price Ratio Derivation (5) | Consistency Check (2)
+
+> ⭐ **High-Yield** — Walras' Law is the central organising principle of general equilibrium. Knowing how to use it to find equilibrium price ratios is essential for GE questions.
 
 **Three-good world:** Walras' law: $p \cdot Z(p) = 0$ for all $p$.
 
@@ -646,6 +745,8 @@ $Z_1 = -4 + \frac{6r_3 - r_2}{1} = -4 + 6\cdot\frac{13}{17} - \frac{10}{17} = -4
 
 **Exam Tip:** In a 3-good Walrasian system, you only need to solve 2 market-clearing equations. The third is automatically satisfied by Walras' law. Normalize $p_1 = 1$ (numeraire) to simplify.
 
----
+> **Professor's Corner:** Top answers follow a clear three-step process: (1) write Walras' Law explicitly, (2) solve any two market-clearing conditions for price ratios, (3) verify the third market clears automatically. The most common error is algebraic: sign mistakes when substituting $Z_2$ and $Z_3$ into the Walras' Law identity. Always check your solution by verifying $Z_1 = 0$ with the computed ratios.
+>
+> → *See also: GE answers Q8 (Walras' Law in GE context), Topic 3C Q1 (partial equilibrium — the contrast)*
 
 > **End of answers.** Covers all questions from Topics 2, 3A, 3B, 3C.

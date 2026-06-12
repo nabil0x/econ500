@@ -65,6 +65,8 @@
     log.pageStats[path].visits += 1;
     saveLog(log);
 
+    trackUniquePage(path);
+
     // Track current page entry in session
     const pages = getPageList();
     pages.push({ path, title, enteredAt: now });
@@ -75,6 +77,31 @@
 
     // Mark entry for time-on-page
     window.__visitorPageEnter = now;
+  }
+
+  /** Resume tracking after tab refocus — reset timer, do NOT increment visits */
+  function resumeTracking() {
+    window.__visitorPageEnter = Date.now();
+  }
+
+  /* ── Unique pages ──────────────────────────────────────────── */
+  function trackUniquePage(path) {
+    try {
+      var key = 'masters_unique_pages';
+      var list = JSON.parse(localStorage.getItem(key)) || [];
+      if (list.indexOf(path) === -1) {
+        list.push(path);
+        localStorage.setItem(key, JSON.stringify(list));
+      }
+    } catch (_) {}
+  }
+
+  function getUniquePageCount() {
+    try {
+      return (JSON.parse(localStorage.getItem('masters_unique_pages')) || []).length;
+    } catch (_) {
+      return 0;
+    }
   }
 
   function finalizePage() {
@@ -117,6 +144,7 @@
 
     const totalAllMs = entries.reduce((s, e) => s + e.totalMs, 0);
     const totalAllVisits = entries.reduce((s, e) => s + e.visits, 0);
+    const uniquePages = getUniquePageCount();
 
     const sessionPages = pages.length;
     const sessionDuration = sessionStart ? (Date.now() - sessionStart) : 0;
@@ -131,6 +159,7 @@
       entries,
       totalAllMs,
       totalAllVisits,
+      uniquePages,
       sessionPages,
       sessionDuration,
       currentPageDuration,
@@ -233,9 +262,9 @@
     '    <span class="vl-stat-value">' + formatDurationShort(stats.currentPageDuration) + '</span>' +
     '  </div>' +
     '  <div class="vl-stat-row">' +
-    '    <span class="vl-stat-label">All time</span>' +
+      '    <span class="vl-stat-label">All time</span>' +
     '    <span class="vl-stat-value">' +
-           stats.totalAllVisits + ' visits · ' + formatDurationShort(stats.totalAllMs) +
+           stats.uniquePages + ' unique pages · ' + formatDurationShort(stats.totalAllMs) +
     '    </span>' +
     '  </div>' +
     '</div>' +
@@ -279,9 +308,8 @@
     if (document.visibilityState === 'hidden') {
       finalizePage();
     } else if (document.visibilityState === 'visible') {
-      // Re-track when coming back
       if (!window.__visitorPageEnter) {
-        trackPage();
+        resumeTracking();
       }
     }
   });

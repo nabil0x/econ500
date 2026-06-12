@@ -27,7 +27,7 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 ⭐ **High-Yield** — Foundational concept: every GE exam begins here. Must command the distinction.
 
-> **Formal Definition 1 — General Equilibrium (GE)**
+> **Formal Definition 1 — [General Equilibrium (GE)](GLOSSARY.md#term-ge)**
 >
 > **A state in which all markets and all decision-making units are simultaneously in equilibrium:** every market is cleared at positive prices, every consumer maximises utility given their budget, and every firm maximises profit given its technology (Koutsoyiannis, Ch.22, p.486; Munoz-Garcia, §6.1, p.330).
 >
@@ -65,7 +65,7 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 **Answer:**
 
-> **Formal Definition 2 — Existence, Uniqueness, and Stability of Equilibrium**
+> **Formal Definition 2 — Existence, Uniqueness, and Stability of [Equilibrium](GLOSSARY.md#term-ge)**
 >
 > **Existence:** An equilibrium exists if there is a price vector $p^* \gg 0$ such that aggregate excess demand $z(p^*) = 0$ (Arrow-Debreu, 1954). Sufficient conditions include continuity of excess demand, homogeneity of degree zero, Walras' Law, and boundary behaviour ($z_i(p) \to +\infty$ as $p_i \to 0$) (Munoz-Garcia, §6.2, p.336).
 >
@@ -142,7 +142,7 @@ Stable:              Unstable:
 
 **Answer:**
 
-> **Formal Definition 3 — Excess Demand Function**
+> **Formal Definition 3 — [Excess Demand Function](GLOSSARY.md#term-excess-demand)**
 >
 > **The excess demand function for good $i$ is the difference between quantity demanded and quantity supplied at price $p$:** $z_i(p) = D_i(p) - S_i(p)$ (Koutsoyiannis, p.489). In a pure exchange economy, $z_i(p) = \sum_h x_i^h(p) - \sum_h \omega_i^h$, where $x_i^h$ is consumer $h$'s demand and $\omega_i^h$ is their endowment.
 >
@@ -206,7 +206,7 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 
 **Answer:**
 
-> **Formal Definition 4 — Transmission Mechanism (Product Market → Factor Market → GE)**
+> **Formal Definition 4 — Transmission Mechanism (Product Market → Factor Market → [GE](GLOSSARY.md#term-ge))**
 >
 > **The transmission mechanism describes how an exogenous shock propagates through interdependent markets to restore a new general equilibrium** (Koutsoyiannis, Ch.22, §D, pp.491–495). The canonical sequence is:
 >
@@ -216,7 +216,7 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 > 4. **Factor mobility** → L and K migrate between industries → factor prices equalise at new levels
 > 5. **Long-run product adjustment** → entry/exit shifts supply curves → all markets clear at new prices
 >
-> **Key insight:** The final factor price change depends on **relative factor intensities** (Stolper-Samuelson logic). If the expanding industry is labour-intensive, $w$ rises and $r$ falls. Factor mobility is the "transmission belt" connecting product and factor markets.
+> **Key insight:** The final factor price change depends on **relative [factor intensities](GLOSSARY.md#term-factor-intensity)** ([Stolper-Samuelson](GLOSSARY.md#term-stolper-samuelson) logic). If the expanding industry is labour-intensive, $w$ rises and $r$ falls. Factor mobility is the "transmission belt" connecting product and factor markets.
 >
 > → *See also: Topic 6A Q2 (existence/stability framework), Topic 6B Q2 (Stolper-Samuelson)*
 
@@ -271,7 +271,7 @@ This question asks about the transmission mechanism: **external shock in product
 
 ⭐ **High-Yield** — The 2×2×2 model is the backbone of GE exam questions. Assumptions are frequently tested directly.
 
-> **Formal Definition 5 — The $2\times 2\times 2$ Model, Edgeworth Box, Contract Curve, and PPC**
+> **Formal Definition 5 — The $2\times 2\times 2$ Model, [Edgeworth Box](GLOSSARY.md#term-edgeworth-box), [Contract Curve](GLOSSARY.md#term-contract-curve), and [PPC](GLOSSARY.md#term-ppc)**
 >
 > **The $2\times 2\times 2$ model is the canonical general equilibrium framework:** two factors (labour L, capital K), two commodities (X, Y), and two consumers (A, B), all under perfect competition (Koutsoyiannis, Ch.22, §E, pp.496–499; Munoz-Garcia, §6.3, p.353).
 >
@@ -340,7 +340,7 @@ The production equilibrium is not unique (any point on contract curve is Pareto-
 
 **Answer:**
 
-> **Formal Definition 6 — Stolper-Samuelson Theorem**
+> **Formal Definition 6 — [Stolper-Samuelson Theorem](GLOSSARY.md#term-stolper-samuelson)**
 >
 > **An increase in the relative price of a good raises the real return to the factor used intensively in its production and lowers the real return to the other factor** (Stolper & Samuelson, 1941; Koutsoyiannis, p.505; Munoz-Garcia, §6.6, p.404).
 >
@@ -350,7 +350,7 @@ The production equilibrium is not unique (any point on contract curve is Pareto-
 >
 > **Magnification effect:** The change in factor prices is *magnified* relative to the change in output prices (the Jones algebra): $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$ in proportional terms.
 >
-> **Key insight:** Trade benefits the abundant factor and harms the scarce factor — the central distributional result of the Heckscher-Ohlin model.
+> **Key insight:** Trade benefits the abundant factor and harms the scarce factor — the central distributional result of the Heckscher-Ohlin model. *(See: [Stolper-Samuelson Theorem](GLOSSARY.md#term-stolper-samuelson))*
 >
 > → *See also: Topic 6A Q4 (transmission mechanism), Topic 6B Q2 (same mechanism)*
 
@@ -399,7 +399,7 @@ This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\time
 
 ⭐ **High-Yield** — The three Pareto conditions are the core of welfare economics in GE. Direct exam question or essay component.
 
-> **Formal Definition 7 — The Three Pareto Efficiency Conditions, MRPT, and the Welfare Theorems**
+> **Formal Definition 7 — The Three [Pareto Efficiency](GLOSSARY.md#term-pareto-efficient) Conditions, [MRPT](GLOSSARY.md#term-mrpt), and the [Welfare Theorems](GLOSSARY.md#term-welfare-theorems)**
 >
 > **For a general equilibrium to be Pareto-optimal, three marginal conditions must hold simultaneously** (Koutsoyiannis, Ch.23, pp.524–532; Munoz-Garcia, §6.5, p.380):
 >
@@ -511,7 +511,7 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 5. **Ownership:** Consumers own factors; full employment; all income spent.
 6. **Perfect competition:** All agents are price-takers facing same (Pₓ, Pᵧ, w, r).
 
-> **Formal Definition 8 — The Walrasian System and Numeraire**
+> **Formal Definition 8 — The [Walrasian System](GLOSSARY.md#term-walrasian-system) and [Numeraire](GLOSSARY.md#term-numeraire)**
 >
 > **The Walrasian system describes general equilibrium as a system of simultaneous equations equating supply and demand in every market** (Koutsoyiannis, pp.497–509). In the $2\times 2\times 2$ model, there are 18 equations in 18 unknowns:
 >
@@ -552,7 +552,7 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ⭐ **High-Yield** — Numerical Edgeworth box problems are a staple of GE exams. Practice this exact type.
 
-> **Formal Definition 9 — The Core of an Economy and Gains from Trade**
+> **Formal Definition 9 — The Core of an Economy and [Gains from Trade](GLOSSARY.md#term-ge)**
 >
 > **The core is the set of all feasible allocations that cannot be improved upon by any coalition of agents** (Munoz-Garcia, §6.3, p.354). Formally, an allocation $(x^A, x^B)$ is in the core if it is:
 > - **Feasible:** $x^A + x^B \leq \omega^A + \omega^B$
@@ -622,7 +622,7 @@ Infeasible — total X endowment is only 60. Cannot be in the core (core allocat
 
 ⭐ **High-Yield** — Classic "counting equations and unknowns" question. Expect this as a short answer or exam component.
 
-> **Formal Definition 10 — Walras' Law**
+> **Formal Definition 10 — [Walras' Law](GLOSSARY.md#term-walras-law)**
 >
 > **Walras' Law states that the sum of the values of excess demands across all markets is identically zero** (Koutsoyiannis, p.508; Munoz-Garcia, §6.1, p.333):
 >
@@ -689,7 +689,7 @@ Under these conditions, a GE solution **does exist**. However, without these ass
 
 ⭐ **High-Yield** — Walras' Law is a guaranteed feature of any GE exam. Know the theorem, the numeraire trick, and a numerical example.
 
-> **Formal Definition 11 — Walras' Law (Mathematical Formulation)**
+> **Formal Definition 11 — [Walras' Law](GLOSSARY.md#term-walras-law) (Mathematical Formulation)**
 >
 > **Formal statement:** For any price vector $p \in \mathbb{R}^n_{++}$, the value of aggregate excess demand is zero:
 >
@@ -776,7 +776,7 @@ Given consistent ED functions: solve $ED_2 = 0$ and $ED_3 = 0$ for $P_2$, $P_3$ 
 
 ⭐ **High-Yield** — Bertrand differentiated duopoly is the most common game theory calculation on graduate exams.
 
-> **Formal Definition 12 — Nash Equilibrium and Best Response**
+> **Formal Definition 12 — [Nash Equilibrium](GLOSSARY.md#term-nash-equilibrium) and Best Response
 >
 > **Nash Equilibrium:** A strategy profile $(s_1^*, s_2^*, \dots, s_n^*)$ such that no player can gain by unilaterally deviating (Nash, 1950; Fudenberg & Tirole, 1991, Ch.1):
 >
@@ -853,7 +853,7 @@ $\pi_{2} = (40 - 10)(60) = 1800$
 
 ⭐ **High-Yield** — Prisoners' Dilemma is the most frequently cited game in oligopoly theory. Know the matrix cold.
 
-> **Formal Definition 13 — Dominant Strategy and the Prisoner's Dilemma**
+> **Formal Definition 13 — [Dominant Strategy](GLOSSARY.md#term-dominant-strategy) and the [Prisoner's Dilemma](GLOSSARY.md#term-pd)**
 >
 > **Dominant strategy:** A strategy $s_i^*$ is dominant if it yields a strictly higher payoff than any other strategy **regardless** of what opponents do (Fudenberg & Tirole, §1.1):
 >
@@ -912,7 +912,7 @@ Don't       │ (10, 0)       (1, 1)
 
 ⭐ **High-Yield** — Extensive form entry games are the standard tool for teaching subgame perfection and credible threats.
 
-> **Formal Definition 14 — Subgame Perfect Nash Equilibrium (SPNE) and Backward Induction**
+> **Formal Definition 14 — [Subgame Perfect Nash Equilibrium (SPNE)](GLOSSARY.md#term-spne) and [Backward Induction](GLOSSARY.md#term-backward-induction)**
 >
 > **Subgame Perfect Nash Equilibrium:** A strategy profile that induces a Nash equilibrium in every subgame of the original game (Selten, 1965; Fudenberg & Tirole, §3.5). It is a refinement of NE that **eliminates non-credible threats**.
 >
@@ -985,7 +985,7 @@ Payoffs: (40, 40)
 
 ⭐ **High-Yield** — Repeated game with grim trigger is the standard way to sustain collusion. Expect δ* calculations.
 
-> **Formal Definition 15 — Grim Trigger Strategy**
+> **Formal Definition 15 — [Grim Trigger Strategy](GLOSSARY.md#term-grim-trigger)**
 >
 > **A grim trigger strategy in a repeated game prescribes cooperation as long as all players have cooperated in every previous period; if any player ever deviates, punishment (reversion to the stage-game Nash equilibrium) is triggered forever** (Friedman, 1971; Fudenberg & Tirole, §5.1).
 >
@@ -1090,7 +1090,7 @@ So if players are sufficiently patient ($\delta \ge \frac{2}{3}$), (Up, Left) ca
 
 ⭐ **High-Yield** — The unraveling paradox is a favourite exam topic connecting game theory to real-world cooperation.
 
-> **Formal Definition 16 — Backward Induction Paradox (Unraveling)**
+> **Formal Definition 16 — [Backward Induction](GLOSSARY.md#term-backward-induction) Paradox (Unraveling)**
 >
 > **The backward induction paradox (unraveling) refers to the result that in any finite-horizon game with a unique stage-game Nash equilibrium, backward induction predicts defection in every period — even when both players would prefer mutual cooperation** (Koutsoyiannis, p.413; Fudenberg & Tirole, §5.1).
 >
@@ -1141,7 +1141,7 @@ Yes. The paradox arises when the stage game has a **unique** Nash equilibrium. I
 
 **Answer:**
 
-> **Formal Definition 17 — Centipede Game**
+> **Formal Definition 17 — [Centipede Game](GLOSSARY.md#term-centipede)**
 >
 > **The centipede game (Rosenthal, 1981) is a sequential-move game where two players alternately choose to "Take" (end the game) or "Pass" (increase the pot for the next player)** (Munoz-Garcia, §10.4, p.650).
 >
@@ -1153,7 +1153,7 @@ Yes. The paradox arises when the stage game has a **unique** Nash equilibrium. I
 >
 > **Experimental evidence (McKelvey & Palfrey, 1992):** Subjects Pass far more often than backward induction predicts, especially in early rounds. The Kreps incomplete-information model (a small chance of an "altruistic" type) explains the observed pattern well.
 >
-> **Key insight:** The centipede game is the canonical illustration of the gap between theoretical backward induction and actual human behaviour.
+> **Key insight:** The [centipede game](GLOSSARY.md#term-centipede) is the canonical illustration of the gap between theoretical [backward induction](GLOSSARY.md#term-backward-induction) and actual human behaviour.
 >
 > → *See also: Topic 7 Q5 (backward induction paradox — same logic)*
 
@@ -1222,7 +1222,7 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 ⭐ **High-Yield** — Tragedy of the Commons is the canonical negative externality example. Connects property rights, externalities, and Coase.
 
-> **Formal Definition 18 — Tragedy of the Commons**
+> **Formal Definition 18 — [Tragedy of the Commons](GLOSSARY.md#term-tragedy-commons)**
 >
 > **The Tragedy of the Commons (Hardin, 1968) describes how a shared resource is over-exploited when each user acts independently according to their self-interest, contrary to the common good** (Munoz-Garcia, §8.3, p.552).
 >
@@ -1264,7 +1264,7 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 ⭐ **High-Yield** — The steel-fishery model is the canonical production externality. Every externality question builds on this framework.
 
-> **Formal Definition 19 — Production Externality, Coase Theorem, and Pigouvian Tax**
+> **Formal Definition 19 — [Production Externality](GLOSSARY.md#term-negative-externality), [Coase Theorem](GLOSSARY.md#term-coase), and [Pigouvian Tax](GLOSSARY.md#term-pigouvian-tax)**
 >
 > **Production externality:** An uncompensated spillover effect of one firm's production on another's cost or profit function (Koutsoyiannis, Ch.23; Munoz-Garcia, §8.1, p.531). A steel mill's pollution $x$ reduces the fishery's profits: $\partial \pi_F / \partial x < 0$, a **negative production externality**.
 >
@@ -1362,7 +1362,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ⭐ **High-Yield** — Akerlof's "Market for Lemons" (1970, Nobel Prize) is the foundational model of asymmetric information.
 
-> **Formal Definition 20 — Asymmetric Information and Adverse Selection (The Lemons Problem)**
+> **Formal Definition 20 — [Asymmetric Information](GLOSSARY.md#term-asymmetric-info) and [Adverse Selection](GLOSSARY.md#term-adverse-selection) (The [Lemons Problem](GLOSSARY.md#term-lemons))
 >
 > **Asymmetric information:** A situation where one party to a transaction has superior information about a relevant characteristic (Akerlof, 1970; Munoz-Garcia, §8.4, p.564). Here, sellers know product quality but buyers do not.
 >
@@ -1413,7 +1413,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ⭐ **High-Yield** — Spence (1973, Nobel Prize 2001) is the classic signalling model. Tests separating vs pooling equilibrium logic.
 
-> **Formal Definition 21 — Signalling (Spence, 1973) and Separating vs Pooling Equilibrium**
+> **Formal Definition 21 — [Signalling](GLOSSARY.md#term-signaling) ([Spence](GLOSSARY.md#term-spence), 1973) and [Separating](GLOSSARY.md#term-separating-equil) vs [Pooling Equilibrium](GLOSSARY.md#term-pooling-equil)**
 >
 > **Spence's job-market signalling model:** Workers have private productivity types (High $H$ or Low $L$). Education $e$ is costly ($c_H < c_L$ — the single-crossing property) but does not enhance productivity — it serves as a **signal** of type (Spence, 1973, Nobel Prize 2001; Munoz-Garcia, §8.5, pp.573–578).
 >
@@ -1489,7 +1489,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Answer:**
 
-> **Formal Definition 22 — Bandwagon, Snob, and Veblen Effects**
+> **Formal Definition 22 — [Bandwagon](GLOSSARY.md#term-bandwagon), [Snob](GLOSSARY.md#term-snob), and Veblen Effects
 >
 > **Consumption externalities:** Situations where one consumer's utility depends on others' consumption, violating the independence assumption of standard demand theory (Leibenstein, 1950; Koutsoyiannis, Ch.8).
 >
@@ -1549,7 +1549,7 @@ Quantity Demanded
 
 **Answer:**
 
-> **Formal Definition 23 — Missing Market (Externality as Market Failure)**
+> **Formal Definition 23 — [Missing Market](GLOSSARY.md#term-negative-externality) (Externality as Market Failure)
 >
 > **A missing market exists when there is no market in which a good or bad can be traded, even though it has value to economic agents** (Munoz-Garcia, §8.1, p.530). Externalities are fundamentally a missing-market problem: the price mechanism fails to price the spillover effect.
 >
@@ -1612,7 +1612,7 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
 
 ⭐ **High-Yield** — The only trade question on the exam. Must be fully prepared as a guaranteed pick if choosing this set.
 
-> **Formal Definition 24 — Tariff, Deadweight Loss of a Tariff, and Voluntary Export Restraint**
+> **Formal Definition 24 — Tariff, [Deadweight Loss](GLOSSARY.md#term-dwl) of a Tariff, and [Voluntary Export Restraint](GLOSSARY.md#term-ver)
 >
 > **Tariff:** A tax on imported goods that raises the domestic price above the world price. Welfare effects decompose into consumer surplus loss (transfer to producers + tariff revenue + deadweight loss), producer surplus gain (transfer from consumers), and tariff revenue (collected by government).
 >
@@ -1624,7 +1624,7 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
 >
 > **Voluntary Export Restraint (VER):** A quota imposed by the exporting country, equivalent to a tariff whose revenue is captured by foreign exporters (Koutsoyiannis, Ch.18). Welfare loss under VER is **larger** than under an equivalent tariff because the quota rent ($\tau \cdot Q_{\text{imports}}$) goes abroad rather than to domestic government revenue.
 >
-> **Key insight:** A tariff at least preserves some of the welfare loss as domestic government revenue; a VER transfers that same surplus to foreign producers, making it strictly worse for the importing country.
+> **Key insight:** A tariff at least preserves some of the welfare loss as domestic government revenue; a [VER](GLOSSARY.md#term-ver) transfers that same surplus to foreign producers, making it strictly worse for the importing country.
 >
 > → *See also: Topic 8 Q2 (Pigouvian tax — similar welfare triangle logic)*
 

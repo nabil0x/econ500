@@ -27,7 +27,7 @@
 
 > ⭐ **High-Yield** — Constant elasticity (log-linear) demand is the most common functional form in empirical demand estimation. Mastering the interpretation of exponents as elasticities is essential.
 
-> **Formal Definition 1 — Elasticity of Demand**
+> **Formal Definition 1 — [Elasticity of Demand](GLOSSARY.md#term-elasticity)**
 >
 > **Point Elasticity:** For infinitesimal changes, the price elasticity of demand is defined as the proportionate change in quantity demanded resulting from a very small proportionate change in price (Koutsoyiannis, p.46):
 >
@@ -71,7 +71,7 @@ Given $\alpha = -0.5, \gamma = -0.4, \delta = 0.8$:
 
 **(iii) Is Z a gross substitute or complement for X?**
 
-> **Formal Definition 2 — Gross Substitutes vs Gross Complements**
+> **Formal Definition 2 — [Gross Substitutes vs Gross Complements](GLOSSARY.md#term-pd)** *(see: Price Elasticity)*
 >
 > Two goods are **gross substitutes** if an increase in the price of one good raises the Walrasian (uncompensated) demand for the other: $\partial X_i / \partial P_j > 0$.
 >
@@ -102,7 +102,7 @@ $$\% \Delta Q_d = \varepsilon \times (\% \Delta P_W) = \varepsilon \times (-5\%)
 
 **Exam Tip:** Always check the sign of the cross-price elasticity. A fall in the price of a complement ($\varepsilon < 0$) raises demand; a fall in the price of a substitute ($\varepsilon > 0$) lowers demand.
 
-> **Formal Definition 3 — Own-Price Elasticity of Demand**
+> **Formal Definition 3 — [Own-Price Elasticity of Demand](GLOSSARY.md#term-elasticity)**
 >
 > The own-price elasticity measures the percentage change in quantity demanded of good $k$ resulting from a 1% change in its own price $p_k$ (Munoz-Garcia, p.93):
 >
@@ -165,7 +165,7 @@ Since $|\gamma| = 0.4 < 1$, a price cut lowers total revenue. For contrast, if d
 
 Burger King demand: $Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I$
 
-> **Formal Definition 4 — Law of Demand**
+> **Formal Definition 4 — [Law of Demand](GLOSSARY.md#term-slutsky-equation)** *(see: Slutsky Equation)*
 >
 > The Law of Demand states that, for a normal good, the quantity demanded varies inversely with its own price, ceteris paribus (Koutsoyiannis, p.44–45). For a Walrasian (uncompensated) demand function satisfying the Weak Axiom of Revealed Preference (WARP):
 >
@@ -218,7 +218,7 @@ In an exam setting, identifying these econometric issues scores points beyond me
 
 Corrected demand: $Q = 150 P_B^{-1.5} P_{r1}^{0.75} P_{r2}^{-0.25} I^{0.8} A^{0.05}$
 
-> **Formal Definition 5 — Cross-Price Elasticity of Demand**
+> **Formal Definition 5 — [Cross-Price Elasticity of Demand](GLOSSARY.md#term-elasticity)**
 >
 > The cross-price elasticity measures the percentage change in quantity demanded of good $i$ resulting from a 1% change in the price of good $j$ (Munoz-Garcia, p.93; Koutsoyiannis, eq. 2.7, p.49):
 >
@@ -240,7 +240,7 @@ French fries are a **complement** to Whoppers. Cross-price elasticity should be 
 
 The magnitude $|0.75| > |{-0.25}|$ indicates the substitution relationship with r1 is stronger than the complement relationship with r2. This makes economic sense: customers view chicken sandwiches as closer alternatives to burgers than fries are as complements.
 
-> **Formal Definition 6 — Income Elasticity of Demand**
+> **Formal Definition 6 — [Income Elasticity of Demand](GLOSSARY.md#term-elasticity)**
 >
 > Measures the percentage change in quantity demanded from a 1% change in income (Koutsoyiannis, eq. 2.6, p.49):
 >
@@ -275,7 +275,7 @@ Whopper quantity **increases by 12.5%**.
 
 **(v) If MC = \$1.00, what is profit-maximizing price?**
 
-> **Formal Definition 7 — Lerner Index of Market Power**
+> **Formal Definition 7 — [Lerner Index of Market Power](GLOSSARY.md#term-lerner-index)**
 >
 > The Lerner Index measures the firm's price markup over marginal cost as a fraction of price (Munoz-Garcia, §7.2.3, p.497–499):
 >
@@ -1410,7 +1410,7 @@ Because excess demand functions are homogeneous of degree zero ($Z(\lambda p) = 
 
 **Why only relative prices matter:** If all prices double, every consumer's budget constraint $p \cdot x_i = p \cdot e_i$ scales proportionally, leaving the feasible set unchanged. Real allocations depend only on relative prices, not on the nominal scale.
 
-> **Key insight:** The numeraire indeterminacy is not a flaw — it reflects the economic reality that only relative prices allocate resources. Money (as a medium of exchange, not just a numeraire) is needed to pin down the absolute price level, which is why monetary theory must be integrated into GE models to determine nominal prices.
+> **Key insight:** The [numeraire](GLOSSARY.md#term-numeraire) indeterminacy is not a flaw — it reflects the economic reality that only relative prices allocate resources. Money (as a medium of exchange, not just a numeraire) is needed to pin down the absolute price level, which is why monetary theory must be integrated into [GE](GLOSSARY.md#term-ge) models to determine nominal prices.
 
 **Connection to the GE Existence Proof**
 

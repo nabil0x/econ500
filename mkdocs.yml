@@ -92,8 +92,6 @@ markdown_extensions:
 # =====================================================================
 nav:
   - Home: index.md
-  - 🧠 XENI Framework: xeni-framework.md
-
   # ─── MICROECONOMICS (501) ─────────────────────────────────────────
   - 📐 Microeconomics (501):
     - Overview: 501-Microeconomics/README.md

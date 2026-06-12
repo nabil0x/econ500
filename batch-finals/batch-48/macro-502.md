@@ -3,6 +3,7 @@
 > **Exam:** M.Sc. Final Examination 2023
 > **Time:** 4 Hours | **Full Marks:** 70
 > **Instructions:** Answer any five questions. All parts consecutively.
+> **✅ Solved answers:** [`../../macroeconomics/answers-macroeconomics.md`](../../macroeconomics/answers-macroeconomics.md) (Batch 48 Q1–Q5 covered)
 
 ---
 

@@ -14,6 +14,7 @@
 | **Microeconomics** | Econ 501 | Consumer Theory, Welfare, Production, General Equilibrium | Pages 1, 2, 13 |
 | **Macroeconomics** | Econ 501 | Solow, Ramsey, Endogenous Growth | Pages 3, 4, 12 |
 | **Development** | Econ 503 | 4 topics + Batch 47/48 questions | Pages 5, 9 |
+| **Econometrics** | Econ 504 | Endogeneity, IV, logit/probit, time series, panel data | Batch 48 |
 | **Political Economy** | Econ 512 | 8 topics + Batch 47 questions | Pages 7, 11 |
 | **Health Economics** | Econ 507 | Health care markets, CDA, insurance, CEA/CUA | Batch 46/47/48 |
 | **Exam Guides** | — | Theorists, Frameworks, Statistics | — |
@@ -44,6 +45,7 @@
 > **Source:** MainQ.pdf Pages 3 (Ramsey-Cass-Koopmans), 4 (Solow), 12 (Endogenous Growth)
 
 | [Basics →](./macroeconomics/basics.md) | Foundational concepts | 🎯 Practice: [Batch 46](../batch-finals/batch-46/macro-402.md) · [47](../batch-finals/batch-47/macro-502.md) · [48](../batch-finals/batch-48/macro-502.md) |
+| [**Answers** →](./macroeconomics/answers-macroeconomics.md) | **25 solved questions** ✅ NEW | Solow, Ramsey, Endogenous Growth, Batch 47/48 |
 | # | Topic | Full Notes |
 |---|-------|------------|
 | 1 | Solow Growth Model | [README](./macroeconomics/README.md) |
@@ -62,6 +64,7 @@
 > **Source:** MainQ.pdf Pages 5 (2nd Tutorial), 9 (3rd Tutorial)
 
 | [Course Basics →](./503-Development/basics.md) | Development theories & debates | 🎯 Practice: [Batch 47](../batch-finals/batch-47/dev-503.md) · [48](../batch-finals/batch-48/dev-503.md) |
+| [**Answers** →](./503-Development/answers-development.md) | **21 solved questions** ✅ NEW | Kabeer, Venezuela, LFS, Trade, Batch 47/48 |
 
 ### Topics
 
@@ -88,6 +91,7 @@
 > **Source:** MainQ.pdf Pages 7 (Tutorial 1 / Exam 2), 11 (Exam 3 — Modernization Theory)
 
 | [Course Basics →](./512-Political-Economy/basics.md) | Grand theories & policy debates | 🎯 Practice: [Batch 47](../batch-finals/batch-47/political-512.md) |
+| [**Answers** →](./512-Political-Economy/answers-political-economy.md) | **18 solved questions** ✅ NEW | Food/Ag, Export Models, MT, WC, Batch 47 |
 
 ### Topics
 
@@ -139,7 +143,7 @@
 | Batch | Year | Level | Key Subjects | Link |
 |-------|------|-------|-------------|------|
 | **47** 🥇 | 2022 | **MSc** | Micro 501, Macro 502, Dev 503, Health 507, Political 512 | [Open](./batch-finals/batch-47/README.md) |
-| **48** 🥇 | 2023 | **MSc** | Micro 501, Macro 502, Dev 503, Health 507 | [Open](./batch-finals/batch-48/README.md) |
+| **48** 🥇 | 2023 | **MSc** | Micro 501, Macro 502, Dev 503, Econometrics 504, Health 507 | [Open](./batch-finals/batch-48/README.md) |
 | 46 | 2020 | Hons (UG) | Micro 401, Macro 402, Health 404 | [Open](./batch-finals/batch-46/README.md) |
 
 > **Tip:** Start with Batches 47 & 48 for MSc-level practice. Use Batch 46 for additional drill.

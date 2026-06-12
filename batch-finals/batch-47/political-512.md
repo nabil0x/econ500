@@ -3,6 +3,7 @@
 > **Exam:** M.Sc. Final Examination | **Date:** November 24, 2024
 > **Time:** 4 Hours | **Full Marks:** 70
 > **Instructions:** Answer FIVE questions. All parts consecutively.
+> **✅ Solved answers:** [`../../512-Political-Economy/answers-political-economy.md`](../../512-Political-Economy/answers-political-economy.md) (Batch 47 Q1–Q8 covered)
 
 ---
 

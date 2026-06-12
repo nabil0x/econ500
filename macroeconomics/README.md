@@ -2,6 +2,7 @@
 
 > **Source:** MainQ.pdf (Pages 3, 4, 12)
 > **Cross-links:** [Study Hub](../README.md) | [Microeconomics](../microeconomics/README.md) | [Development Economics](../503-Development/README.md)
+> **📖 Answers:** [`answers-macroeconomics.md`](./answers-macroeconomics.md) — 25 solved questions covering all 3 tutorials + Batch 47 & 48
 
 ---
 

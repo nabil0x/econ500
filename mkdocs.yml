@@ -1,50 +1,65 @@
 # Masters Exam Study Hub — MkDocs Configuration
-site_name: Masters Exam Study Hub
-site_description: MSc Economics exam preparation — Microeconomics, Macroeconomics, Development, Political Economy, Health Economics
-site_author: Econ 501/503/507/512
-repo_url: https://github.com/USERNAME/REPONAME
-repo_name: Study Hub
+site_name: Economics Mastery
+site_description: Free MSc Economics exam resources — Department of Economics, Jahangirnagar University. Solved past papers, exam guides, and interactive study tools for Microeconomics, Macroeconomics, Development, Political Economy & Health Economics.
+site_author: Department of Economics, Jahangirnagar University
+site_url: https://lilalab.pro.bd/
+repo_url: https://github.com/nabil0x/econ500
+repo_name: econ500
 
 theme:
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: teal
+      scheme: ju
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: teal
+      scheme: ju-dark
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
   font:
-    text: Merriweather
+    text: DM Sans
     code: JetBrains Mono
+  logo: assets/ju-logo.svg
+  favicon: assets/ju-logo.svg
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
     - navigation.top
     - search.highlight
     - search.suggest
     - content.code.copy
     - content.tabs.link
+    - header.autohide
   icon:
     repo: fontawesome/brands/github
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/USERNAME/REPONAME
+      link: https://github.com/nabil0x/econ500
+      name: GitHub
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com
+      name: Facebook
   analytics:
     provider: google
     property: G-XXXXXXXXXX
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/visitor-logger.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/visitor-logger.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - search
@@ -72,17 +87,8 @@ markdown_extensions:
   - md_in_html
   - def_list
 
-extra_css:
-  - stylesheets/extra.css
-  - stylesheets/visitor-logger.css
-
-extra_javascript:
-  - javascripts/mathjax.js
-  - javascripts/visitor-logger.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
 # =====================================================================
-# NAVIGATION — All 73 Markdown Files Organized by Course
+# NAVIGATION
 # =====================================================================
 nav:
   - Home: index.md

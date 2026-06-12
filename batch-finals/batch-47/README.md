@@ -3,7 +3,7 @@
 > **Level:** M.Sc.
 > **University:** Jahangirnagar University, Department of Economics
 > **Source PDF:** `Final Batch 47.pdf` (14 pages, CamScanner)
-> **Cross-links:** [Batch Index](../README.md) | [Study Hub](../../README.md)
+> **Cross-links:** [Batch Index](../README.md) | [Study Hub](../../index.md)
 
 ---
 

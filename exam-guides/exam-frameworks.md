@@ -2,7 +2,7 @@
 
 > **Course:** All subjects (501 Micro, 501 Macro, 503 Development, 512 Political Economy)
 > **Use:** Structured outlines for common question types — adapt to specific questions
-> [Back to Study Hub](../README.md)
+> [Back to Study Hub](../index.md)
 
 ---
 

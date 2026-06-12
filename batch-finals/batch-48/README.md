@@ -4,7 +4,7 @@
 > **University:** Jahangirnagar University, Department of Economics
 > **Source PDF:** `Fihnal Batch 48.pdf` (11 pages, CamScanner)
 > **Original Title:** "48 Masters Final (501, 502, 504, 507, 510)"
-> **Cross-links:** [Batch Index](../README.md) | [Study Hub](../../README.md)
+> **Cross-links:** [Batch Index](../README.md) | [Study Hub](../../index.md)
 
 ---
 

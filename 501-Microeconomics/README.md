@@ -112,7 +112,7 @@ Start here for: exam strategy, 10-day study plan, topic prioritization, and file
 
 > **Full resource index:** [`resources/README.md`](./resources/README.md) — includes extracted plain-text versions for all PDFs
 >
-> **Extracted text:** [`resources/extracted_text/`](./resources/extracted_text/) — 525K+ words of searchable plain text
+> **Extracted text:** listed in [`resources/README.md`](./resources/README.md) — 525K+ words of searchable plain text
 
 ---
 
@@ -144,7 +144,7 @@ Start here for: exam strategy, 10-day study plan, topic prioritization, and file
 
 ## Cross-Links
 
-- [Study Hub (root README)](../README.md)
+- [Study Hub](../index.md)
 - [Macroeconomics](../macroeconomics/README.md)
 - [Health Economics](../health-economics/README.md)
 - [Development Economics (503)](../503-Development/README.md)

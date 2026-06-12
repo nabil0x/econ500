@@ -855,6 +855,8 @@ $$Q^S(P) = \frac{P^2}{9wr}$$
 
 ---
 
+<a id="q-prodset-08"></a>
+
 ### Question 8 {#q-prodset-07}
 
 > **Marking Guide [14 marks]:** Economies of Scale Identification (5) | Fixed Cost Spreading (4) | Marginal vs Average Cost (3) | Real-World Application (2)

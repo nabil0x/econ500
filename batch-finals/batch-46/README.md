@@ -3,7 +3,7 @@
 > **Level:** 4th Year (Hons.)
 > **University:** Jahangirnagar University, Department of Economics
 > **Source PDF:** `Final batch 46.pdf` (13 pages)
-> **Cross-links:** [Batch Index](../README.md) | [Study Hub](../../README.md)
+> **Cross-links:** [Batch Index](../README.md) | [Study Hub](../../index.md)
 
 ---
 

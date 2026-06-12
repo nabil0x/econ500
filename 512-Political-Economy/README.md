@@ -72,10 +72,10 @@ b) Examine 4 critiques of Modernization theory. (12 marks)
 
 | This Topic | Connects To (503) | Why |
 |------------|-------------------|-----|
-| Washington Consensus | [Bangladesh Trade](../../503-Development/bangladesh-trade/README.md) | Trade liberalization impacts, tariff structure |
-| Food Crisis | [LFS Data](../../503-Development/labour-force-survey/README.md) | Income, consumption, employment patterns |
-| Cash Crops | [Bangladesh Trade](../../503-Development/bangladesh-trade/README.md) | Export dependency, value addition |
-| RMG Sector | [Bangladesh Trade](../../503-Development/bangladesh-trade/README.md) | Same sector, different analytical lens |
+| Washington Consensus | [Bangladesh Trade](../503-Development/bangladesh-trade/README.md) | Trade liberalization impacts, tariff structure |
+| Food Crisis | [LFS Data](../503-Development/labour-force-survey/README.md) | Income, consumption, employment patterns |
+| Cash Crops | [Bangladesh Trade](../503-Development/bangladesh-trade/README.md) | Export dependency, value addition |
+| RMG Sector | [Bangladesh Trade](../503-Development/bangladesh-trade/README.md) | Same sector, different analytical lens |
 
 ---
 

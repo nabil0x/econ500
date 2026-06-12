@@ -2,7 +2,7 @@
 
 > **Course:** All subjects (501 Micro, 501 Macro, 503 Development, 512 Political Economy, Health)
 > **Use:** Quick revision — each theorist with their core contribution and which topic they belong to
-> [Back to Study Hub](../README.md)
+> [Back to Study Hub](../index.md)
 
 ---
 

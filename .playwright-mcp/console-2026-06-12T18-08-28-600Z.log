@@ -1,0 +1,3 @@
+[    3384ms] [LOG] Enabled live reload @ http://127.0.0.1:8899/:4746
+[    3451ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.github.com/repos/USERNAME/REPONAME:0
+[    3456ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.github.com/repos/USERNAME/REPONAME/releases/latest:0

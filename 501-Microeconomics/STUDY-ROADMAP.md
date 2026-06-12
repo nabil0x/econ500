@@ -7,15 +7,15 @@
 ## Table of Contents
 
 1. [How to Use This Repository](#how-to-use-this-repository)
-2. [Exam Pattern](#exam-pattern-msc-501--70-marks-answer-any-5-from-8)
+2. [Exam Pattern](#exam-pattern-msc-501-70-marks-answer-any-5-from-8)
 3. [Study Path — 10-Day Plan](#study-path-10-day-plan)
-   - [Phase 1: Consumer Theory](#phase-1--consumer-theory-days-13)
-   - [Phase 2: Production & Supply](#phase-2--production--supply-days-455)
-   - [Phase 3: Welfare](#phase-3--welfare-days-557)
-   - [Phase 4: General Equilibrium](#phase-4--general-equilibrium-days-89)
-   - [Phase 5: Review](#phase-5--review-day-10)
-4. [Quick Reference — Where to Find Things](#quick-reference--where-to-find-things)
-5. [Exam Day Checklist](#exam-day-checklist--most-repeated-questions)
+   - [Phase 1: Consumer Theory](#phase-1-consumer-theory-days-13)
+   - [Phase 2: Production & Supply](#phase-2-production-supply-days-455)
+   - [Phase 3: Welfare](#phase-3-welfare-days-557)
+   - [Phase 4: General Equilibrium](#phase-4-general-equilibrium-days-89)
+   - [Phase 5: Review](#phase-5-review-day-10)
+4. [Quick Reference — Where to Find Things](#quick-reference-where-to-find-things)
+5. [Exam Day Checklist](#exam-day-checklist-most-repeated-questions)
 6. [File Index](#file-index)
 
 ---
@@ -54,7 +54,7 @@
 | **Cross-Ref** | [`answers-cross-reference.md`](./answers-cross-reference.md) | Technique, model, source maps |
 | **Master Index** | [`ANSWERS-INDEX.md`](./ANSWERS-INDEX.md) | All files in one table |
 | **Basics** | [`basics.md`](./basics.md) | Key definitions & formulas |
-| **Raw Sources** | [`resources/extracted_text/`](./resources/extracted_text/) | Full textbook extracts (525K+ words) |
+| **Raw Sources** | [`resources/README.md`](./resources/README.md) | Full textbook extracts (525K+ words) |
 
 ---
 
@@ -113,7 +113,7 @@
 | 8 | GE existence, uniqueness, stability | [`answers-ge-game-extern-trade.md`](./answers-ge-game-extern-trade.md) 6A.Q1–Q4 | Diagram: stability from slopes |
 | 9 | Edgeworth box + 2×2×2 model | [`answers-ge-game-extern-trade.md`](./answers-ge-game-extern-trade.md) 6B.Q1–Q8 | Exchange economy numerical |
 
-**See also**: GE extracted text files in [`resources/extracted_text/`](./resources/extracted_text/)
+**See also**: GE extracted text files listed in [`resources/README.md`](./resources/README.md)
 
 ### Phase 5 — Review (Day 10)
 
@@ -141,10 +141,10 @@
 | Detailed answer: GE + Game + Trade | [`answers-ge-game-extern-trade.md`](./answers-ge-game-extern-trade.md) |
 | Cross-reference map | [`answers-cross-reference.md`](./answers-cross-reference.md) |
 | Key definitions & formulas | [`basics.md`](./basics.md) |
-| Raw textbook material | [`resources/extracted_text/`](./resources/extracted_text/) |
+| Raw textbook material | [`resources/README.md`](./resources/README.md) |
 | Original exam papers | [`../batch-finals/batch-47/micro-501.md`](../batch-finals/batch-47/micro-501.md), [`../batch-finals/batch-48/micro-501.md`](../batch-finals/batch-48/micro-501.md), [`../batch-finals/batch-46/micro-401.md`](../batch-finals/batch-46/micro-401.md) |
 | Resource index | [`resources/README.md`](./resources/README.md) |
-| Main hub | [`../README.md`](../README.md) |
+| Main hub | [`../index.md`](../index.md) |
 
 ---
 
@@ -187,7 +187,7 @@ These have appeared in **2+ sources** — highest probability:
 | 12 | [`basics.md`](./basics.md) | Key definitions, formulas, concepts |
 | 13 | [`welfare-change-reference.md`](./welfare-change-reference.md) | CV/EV/CS reference notes |
 | 14 | [`resources/README.md`](./resources/README.md) | Resource materials index |
-| 15 | [`resources/extracted_text/`](./resources/extracted_text/) | 18 extracted source files (textbooks + chapters + notes) |
+| 15 | [`resources/README.md`](./resources/README.md) | 18 extracted source files (textbooks + chapters + notes) |
 | 16 | [`README.md`](./README.md) | Course README with formulas and cross-links |
 
 ---

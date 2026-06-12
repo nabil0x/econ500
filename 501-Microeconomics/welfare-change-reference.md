@@ -4,7 +4,7 @@
 
 > **Source:** *Measuring Welfare Change* — Academic paper (21 pages, 2005)
 > **File:** [WelfareChange (CV, EV and CS).pdf](./WelfareChange%20(CV%2C%20EV%20and%20CS).pdf)
-> **Related:** [Full Study Notes →](./README.md#tutorial-2--welfare--production) | [Basics →](./basics.md)
+> **Related:** [Full Study Notes →](./README.md#welfare-references) | [Basics →](./basics.md)
 
 ---
 

@@ -53,16 +53,16 @@
   --ju-green-800: #1B5E20;
   --ju-green-700: #2E7D32;
   --ju-green-600: #388E3C;
-  --ju-green-500: #4CAF50;
+  --ju-green-500: #66BB6A;
   --ju-green-100: #1A3A1C;
   --ju-green-50:  #0F2011;
-  --ju-gold-700:  #FF8F00;
-  --ju-gold-500:  #FFB300;
+  --ju-gold-700:  #FFA000;
+  --ju-gold-500:  #FFC107;
   --ju-gold-100:  #3D2E00;
   --ju-cream:     #1A1A1A;
   --ju-cream-50:  #222222;
 
-  --md-primary-fg-color:        var(--ju-green-700);
+  --md-primary-fg-color:        var(--ju-green-600);
   --md-primary-fg-color--light: var(--ju-green-500);
   --md-primary-fg-color--dark:  var(--ju-green-900);
   --md-primary-bg-color:        #FFFFFF;
@@ -70,16 +70,16 @@
   --md-accent-fg-color--light:  var(--ju-gold-700);
   --md-accent-bg-color:         #FFFFFF;
 
-  --md-default-bg-color:        #121212;
-  --md-default-fg-color:        #E5E7EB;
-  --md-default-fg-color--light: #9CA3AF;
-  --md-default-fg-color--lighter: #374151;
-  --md-default-fg-color--lightest: #1F2937;
+  --md-default-bg-color:        #1A1B1E;
+  --md-default-fg-color:        #F3F4F6;
+  --md-default-fg-color--light: #D1D5DB;
+  --md-default-fg-color--lighter: #4B5563;
+  --md-default-fg-color--lightest: #2D2F34;
 
   --md-typeset-a-color:         var(--ju-green-500);
 
-  --ju-card-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-  --ju-card-shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.45);
+  --ju-card-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --ju-card-shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.55);
   --ju-radius: 16px;
   --ju-radius-sm: 10px;
 }
@@ -944,18 +944,18 @@ body {
 }
 
 [data-md-color-scheme="ju-dark"] .ju-course-card {
-  background: #1A1A1A;
-  border-color: #2A2A2A;
+  background: var(--md-default-fg-color--lightest);
+  border-color: var(--md-default-fg-color--lighter);
 }
 
 [data-md-color-scheme="ju-dark"] .ju-batch-card {
-  background: #1A1A1A;
-  border-color: #2A2A2A;
+  background: var(--md-default-fg-color--lightest);
+  border-color: var(--md-default-fg-color--lighter);
 }
 
 [data-md-color-scheme="ju-dark"] .ju-guide-card {
-  background: #1A1A1A;
-  border-color: #2A2A2A;
+  background: var(--md-default-fg-color--lightest);
+  border-color: var(--md-default-fg-color--lighter);
 }
 
 /* ══════════════════════════════════════════════════════════════════
@@ -1186,9 +1186,13 @@ body {
 }
 
 [data-md-color-scheme="ju-dark"] .ju-start-strip a {
-  border-color: rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, #25272c, #1c1f24);
-  color: #f3f4f6 !important;
+  border-color: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(180deg, #fff, #f3f6f1);
+  color: #102321 !important;
+}
+
+[data-md-color-scheme="ju-dark"] .ju-start-strip small {
+  color: #4b5c58;
 }
 
 .ju-start-strip span {
@@ -1318,13 +1322,17 @@ body {
 }
 
 [data-md-color-scheme="ju-dark"] .ju-link-list a {
-  background: #1a1d22;
-  color: #bff1dd !important;
+  background: #f3f6f1;
+  color: #1b4f42 !important;
 }
 
 .ju-link-list a:hover {
   background: #e4eee7;
   text-decoration: none;
+}
+
+[data-md-color-scheme="ju-dark"] .ju-link-list a:hover {
+  background: #fff;
 }
 
 .ju-paper-grid {
@@ -1422,8 +1430,8 @@ body {
 }
 
 [data-md-color-scheme="ju-dark"] .ju-study-note {
-  background: #25272c;
-  color: #f3f4f6;
+  background: #f7f3ea;
+  color: #1a2f31;
 }
 
 @media (max-width: 960px) {

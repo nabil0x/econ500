@@ -51,10 +51,10 @@
 
 | This Topic | Connects To (512) | Why |
 |------------|-------------------|-----|
-| Bangladesh Trade (RMG concentration) | [RMG Sector](../../512-Political-Economy/rmg-sector/README.md) | Value addition erosion, import vs export dynamics |
-| Bangladesh Trade (tariff regime) | [Washington Consensus](../../512-Political-Economy/washington-consensus/README.md) | Trade liberalization policies and impacts |
-| LFS (employment data) | [Food Crisis](../../512-Political-Economy/food-crisis/README.md) | Income distribution and consumption patterns |
-| LFS (agriculture employment 45%) | [Cash Crops](../../512-Political-Economy/cash-crops/README.md) | Agriculture vs export-oriented development |
+| Bangladesh Trade (RMG concentration) | [RMG Sector](../512-Political-Economy/rmg-sector/README.md) | Value addition erosion, import vs export dynamics |
+| Bangladesh Trade (tariff regime) | [Washington Consensus](../512-Political-Economy/washington-consensus/README.md) | Trade liberalization policies and impacts |
+| LFS (employment data) | [Food Crisis](../512-Political-Economy/food-crisis/README.md) | Income distribution and consumption patterns |
+| LFS (agriculture employment 45%) | [Cash Crops](../512-Political-Economy/cash-crops/README.md) | Agriculture vs export-oriented development |
 
 ---
 
@@ -86,8 +86,8 @@ Located in parent directories:
 
 ## 🎯 MSc Final Examination Questions
 
-> **Source:** [Batch 47 (2022)](../../batch-finals/batch-47/dev-503.md) and [Batch 48 (2023)](../../batch-finals/batch-48/dev-503.md) — MSc Final Exams, Jahangirnagar University
-> **Cross-links:** [Batch Finals Hub](../../batch-finals/README.md) | [Master Study Notes](../../MASTER_STUDY_NOTES.md)
+> **Source:** [Batch 47 (2022)](../batch-finals/batch-47/dev-503.md) and [Batch 48 (2023)](../batch-finals/batch-48/dev-503.md) — MSc Final Exams, Jahangirnagar University
+> **Cross-links:** [Batch Finals Hub](../batch-finals/README.md) | [Master Study Notes](../MASTER_STUDY_NOTES.md)
 
 ### Batch 47 (2022) — Theories & Policy Debates
 
@@ -219,4 +219,3 @@ Located in parent directories:
 | **Granger causality** | A time-series concept: X Granger-causes Y if past values of X improve predictions of Y beyond past Y alone |
 | **Fixed Effects (LSDV)** | Panel data method that controls for time-invariant unobserved heterogeneity using individual-specific intercepts |
 | **Random Effects** | Panel data method that assumes individual effects are uncorrelated with regressors, estimated via GLS |
-

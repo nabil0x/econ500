@@ -2,7 +2,7 @@
 
 > **Course:** Both 503 & 512
 > **Use:** Last-minute revision — all essential numbers in one place
-> [Back to Study Hub](../README.md)
+> [Back to Study Hub](../index.md)
 
 ---
 

@@ -1,357 +1,523 @@
 /**
- * Visitor Logger — Tracks page visits, time-on-page, scroll depth
- * Persists stats in localStorage. Shows a stylish floating widget.
+ * Study Logger v2 — Global analytics + Local session study time
+ *
+ * GLOBAL:  Logs page views to Supabase → shows top 20 pages across all visitors
+ * LOCAL:   Tracks study time per session using the Page Visibility API
+ *
+ * Architecture:
+ *   Browser ↔ Supabase REST API (anon key, RLS-protected)
+ *   Browser → localStorage (session state, no sensitive data)
  *
  * "Study what you track." — every economist ever
+ *
+ * ── Supabase Setup (run in Supabase SQL Editor) ─────────────────
+ * See file: SUPABASE_SETUP.md
+ * After setup, paste your Supabase URL + anon key into CONFIG below.
+ * ────────────────────────────────────────────────────────────────
  */
 (function () {
   'use strict';
 
-  /* ── Constants ─────────────────────────────────────────────── */
-  const STORAGE_KEY = 'masters_visitor_log';
-  const SESSION_PAGES = 'masters_visitor_pages';
-  const SESSION_START = 'masters_visitor_start';
+  /* ══════════════════════════════════════════════════════════════
+   *  CONFIG — Replace with YOUR Supabase project credentials
+   * ══════════════════════════════════════════════════════════════
+   *  1. Go to https://supabase.com → your project → Settings → API
+   *  2. Copy "Project URL"  → supabaseUrl
+   *  3. Copy "anon public"  → supabaseKey
+   * ══════════════════════════════════════════════════════════════ */
+  var CONFIG = {
+    supabaseUrl: 'https://YOUR_PROJECT.supabase.co',
+    supabaseKey: 'your-anon-key-here',
+  };
 
-  /* ── Storage helpers ────────────────────────────────────────── */
-  function getLog() {
-    try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { pageStats: {} };
-    } catch {
-      return { pageStats: {} };
+  /* ══════════════════════════════════════════════════════════════
+   *  SUPABASE CLIENT — zero dependencies, pure fetch
+   * ══════════════════════════════════════════════════════════════ */
+
+  /** POST a row to a table */
+  function sbInsert(table, row) {
+    return fetch(CONFIG.supabaseUrl + '/rest/v1/' + table, {
+      method: 'POST',
+      headers: {
+        'apikey': CONFIG.supabaseKey,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal',
+      },
+      body: JSON.stringify(row),
+    });
+  }
+
+  /** Call an RPC (PostgreSQL function) */
+  function sbRpc(fn, params) {
+    return fetch(CONFIG.supabaseUrl + '/rest/v1/rpc/' + fn, {
+      method: 'POST',
+      headers: {
+        'apikey': CONFIG.supabaseKey,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(params || {}),
+    });
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+   *  LOCAL STORAGE HELPERS
+   * ══════════════════════════════════════════════════════════════ */
+  function lsGet(key, def) {
+    try { var v = JSON.parse(localStorage.getItem(key)); return v !== null && v !== undefined ? v : def; }
+    catch (e) { return def; }
+  }
+
+  function lsSet(key, val) {
+    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+  }
+
+  function lsRemove(key) {
+    try { localStorage.removeItem(key); } catch (e) {}
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+   *  MIGRATE: clear old storage keys from v1
+   * ══════════════════════════════════════════════════════════════ */
+  lsRemove('masters_visitor_log');
+  lsRemove('masters_visitor_pages');
+  lsRemove('masters_visitor_start');
+  lsRemove('masters_unique_pages');
+
+  /* ══════════════════════════════════════════════════════════════
+   *  SESSION
+   *  Persisted in localStorage so it survives page navigations
+   *  within the MkDocs SPA shell.
+   * ══════════════════════════════════════════════════════════════ */
+  var SESSION_KEY = 'sl_v2_session';
+
+  function getSession() {
+    var s = lsGet(SESSION_KEY, null);
+    if (!s || !s.id) {
+      s = {
+        id:         crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2, 10),
+        startTime:  Date.now(),
+        totalStudyMs: 0,
+        pages:      [],
+      };
+      lsSet(SESSION_KEY, s);
     }
+    return s;
   }
 
-  function saveLog(log) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(log));
+  function saveSession(s) { lsSet(SESSION_KEY, s); }
+
+  /* ══════════════════════════════════════════════════════════════
+   *  STATE (volatile — reset on each page navigation)
+   * ══════════════════════════════════════════════════════════════ */
+  var gPageEnterTime = null;    // timestamp when current page became visible
+  var gCurrentPage   = null;    // current pathname
+  var gLastLogTime   = 0;       // debounce for Supabase inserts
+
+  /* ══════════════════════════════════════════════════════════════
+   *  GLOBAL: LOG PAGE VIEW → SUPABASE
+   *  Debounced (2 s) so quick navigations don't spam.
+   * ══════════════════════════════════════════════════════════════ */
+  function logPageView(path, title) {
+    var now = Date.now();
+    if ((now - gLastLogTime) < 2000) return;
+    gLastLogTime = now;
+
+    var session = getSession();
+
+    sbInsert('page_visits', {
+      path:       path,
+      title:      title,
+      referrer:   document.referrer || null,
+      session_id: session.id,
+      user_agent: navigator.userAgent,
+    }).catch(function () { /* analytics never breaks the site */ });
   }
 
-  function getPageList() {
-    try {
-      return JSON.parse(sessionStorage.getItem(SESSION_PAGES)) || [];
-    } catch {
-      return [];
-    }
-  }
+  /* ══════════════════════════════════════════════════════════════
+   *  GLOBAL: FETCH TOP 20 PAGES
+   *  Cached for 60 s so repeated widget refreshes don't hammer API.
+   * ══════════════════════════════════════════════════════════════ */
+  var topCache = null;
 
-  function savePageList(pages) {
-    sessionStorage.setItem(SESSION_PAGES, JSON.stringify(pages));
-  }
-
-  function getSessionStart() {
-    try {
-      return JSON.parse(sessionStorage.getItem(SESSION_START));
-    } catch {
-      return null;
-    }
-  }
-
-  function setSessionStart() {
-    if (!sessionStorage.getItem(SESSION_START)) {
-      sessionStorage.setItem(SESSION_START, JSON.stringify(Date.now()));
-    }
-  }
-
-  /* ── Core tracking ──────────────────────────────────────────── */
-  function trackPage() {
-    const now = Date.now();
-    const log = getLog();
-    const path = window.location.pathname;
-    const title = document.title;
-
-    // Initialise page stat entry
-    if (!log.pageStats[path]) {
-      log.pageStats[path] = { visits: 0, totalMs: 0, title: title };
-    }
-    log.pageStats[path].visits += 1;
-    saveLog(log);
-
-    trackUniquePage(path);
-
-    // Track current page entry in session
-    const pages = getPageList();
-    pages.push({ path, title, enteredAt: now });
-    savePageList(pages);
-
-    // Session start
-    setSessionStart();
-
-    // Mark entry for time-on-page
-    window.__visitorPageEnter = now;
-  }
-
-  /** Resume tracking after tab refocus — reset timer, do NOT increment visits */
-  function resumeTracking() {
-    window.__visitorPageEnter = Date.now();
-  }
-
-  /* ── Unique pages ──────────────────────────────────────────── */
-  function trackUniquePage(path) {
-    try {
-      var key = 'masters_unique_pages';
-      var list = JSON.parse(localStorage.getItem(key)) || [];
-      if (list.indexOf(path) === -1) {
-        list.push(path);
-        localStorage.setItem(key, JSON.stringify(list));
-      }
-    } catch (_) {}
-  }
-
-  function getUniquePageCount() {
-    try {
-      return (JSON.parse(localStorage.getItem('masters_unique_pages')) || []).length;
-    } catch (_) {
-      return 0;
-    }
-  }
-
-  function finalizePage() {
-    const entered = window.__visitorPageEnter;
-    if (!entered) return;
-
-    const now = Date.now();
-    const elapsed = now - entered;
-    const path = window.location.pathname;
-
-    const log = getLog();
-    if (log.pageStats[path]) {
-      log.pageStats[path].totalMs += elapsed;
-      saveLog(log);
+  function fetchTopPages() {
+    // Return cache if fresh (< 60 s)
+    if (topCache && (Date.now() - topCache.ts) < 60000) {
+      return Promise.resolve(topCache.data);
     }
 
-    // Update last page in session list with duration
-    const pages = getPageList();
-    if (pages.length > 0) {
-      const last = pages[pages.length - 1];
-      last.durationMs = (now - last.enteredAt);
+    return sbRpc('get_top_pages', { limit_count: 20 })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Supabase RPC error: ' + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var arr = data || [];
+        topCache = { data: arr, ts: Date.now() };
+        return arr;
+      })
+      .catch(function (err) {
+        // If cache exists, serve stale rather than nothing
+        if (topCache) return topCache.data;
+        console.warn('Study Logger: fetchTopPages failed', err);
+        return [];
+      });
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+   *  LOCAL: STUDY TIME TRACKING
+   *
+   *  Study time = time the tab is VISIBLE (Page Visibility API).
+   *  Hidden / idle time is NOT counted.
+   *
+   *  Flow:
+   *    navigate → startPageTracking()     sets pageEnterTime = now
+   *    tab hide → finalizePageTracking()  adds (now - enter) to total, saves last entry
+   *    tab show → resumePageTracking()    resets pageEnterTime = now
+   *    navigate → startPageTracking()     finalizes previous, resets for new
+   * ══════════════════════════════════════════════════════════════ */
+
+  /** Start tracking a new page (call on navigation / load) */
+  function startPageTracking(path, title) {
+    // Finalise whichever page we were on before
+    finalizePageTracking();
+
+    var session = getSession();
+    gPageEnterTime = Date.now();
+    gCurrentPage = path;
+
+    // Record page entry in session
+    session.pages.push({
+      path:       path,
+      title:      title,
+      enteredAt:  gPageEnterTime,
+      studyMs:    0,
+    });
+    saveSession(session);
+
+    // Fire-and-forget global log
+    logPageView(path, title);
+  }
+
+  /** Finalise the current page: accumulate visible time */
+  function finalizePageTracking() {
+    if (gPageEnterTime === null || !gCurrentPage) return;
+
+    var now = Date.now();
+    var visibleDelta = now - gPageEnterTime;
+
+    var session = getSession();
+    if (session.pages.length > 0) {
+      var last = session.pages[session.pages.length - 1];
+      last.studyMs += visibleDelta;
       last.scrollDepth = Math.round(
         ((window.scrollY + window.innerHeight) / Math.max(document.documentElement.scrollHeight, 1)) * 100
       );
-      savePageList(pages);
     }
+    session.totalStudyMs += visibleDelta;
+    saveSession(session);
 
-    window.__visitorPageEnter = null;
+    gPageEnterTime = null;
+    gCurrentPage = null;
   }
 
-  /* ── Stats computation ──────────────────────────────────────── */
-  function computeStats() {
-    const log = getLog();
-    const pages = getPageList();
-    const sessionStart = getSessionStart();
+  /** Resume after tab becomes visible again */
+  function resumePageTracking() {
+    gPageEnterTime = Date.now();
+    // Update the session record so currentPageStart is in sync
+    var session = getSession();
+    saveSession(session);
+  }
 
-    const entries = Object.entries(log.pageStats || {})
-      .map(([path, stat]) => ({ path, ...stat }))
-      .sort((a, b) => b.totalMs - a.totalMs);
+  /* ══════════════════════════════════════════════════════════════
+   *  LOCAL: COMPUTE SESSION STATS
+   * ══════════════════════════════════════════════════════════════ */
+  function computeSessionStats() {
+    var session = getSession();
+    var now = Date.now();
 
-    const totalAllMs = entries.reduce((s, e) => s + e.totalMs, 0);
-    const totalAllVisits = entries.reduce((s, e) => s + e.visits, 0);
-    const uniquePages = getUniquePageCount();
+    var currentMs = gPageEnterTime !== null ? (now - gPageEnterTime) : 0;
+    var totalMs   = session.totalStudyMs + currentMs;
 
-    const sessionPages = pages.length;
-    const sessionDuration = sessionStart ? (Date.now() - sessionStart) : 0;
-    const currentPageDuration = window.__visitorPageEnter
-      ? (Date.now() - window.__visitorPageEnter)
-      : 0;
+    // Aggregate per-path
+    var pathMap = {};
+    session.pages.forEach(function (p) {
+      if (!pathMap[p.path]) {
+        pathMap[p.path] = { path: p.path, title: p.title, studyMs: 0 };
+      }
+      pathMap[p.path].studyMs += p.studyMs || 0;
+    });
 
-    // Top pages by time
-    const top5 = entries.slice(0, 5);
+    var breakdown = Object.keys(pathMap)
+      .map(function (k) { return pathMap[k]; })
+      .sort(function (a, b) { return b.studyMs - a.studyMs; });
 
     return {
-      entries,
-      totalAllMs,
-      totalAllVisits,
-      uniquePages,
-      sessionPages,
-      sessionDuration,
-      currentPageDuration,
-      top5,
+      totalStudyMs:   totalMs,
+      currentPageMs:  currentMs,
+      pagesVisited:   session.pages.length,
+      uniquePages:    breakdown.length,
+      pageBreakdown:  breakdown,
+      sessionStart:   session.startTime,
     };
   }
 
-  /* ── UI ──────────────────────────────────────────────────────── */
-  function formatDuration(ms) {
+  /* ══════════════════════════════════════════════════════════════
+   *  UI FORMATTERS
+   * ══════════════════════════════════════════════════════════════ */
+  function fmt(ms) {
     if (ms < 1000) return '0s';
-    const sec = Math.floor(ms / 1000);
+    var sec = Math.floor(ms / 1000);
     if (sec < 60) return sec + 's';
-    const min = Math.floor(sec / 60);
-    const s = sec % 60;
-    if (min < 60) return min + 'm ' + s + 's';
-    const hr = Math.floor(min / 60);
-    const m = min % 60;
-    return hr + 'h ' + m + 'm';
+    var min = Math.floor(sec / 60);
+    var s = sec % 60;
+    if (min < 60) return (min < 10 ? '0' : '') + min + 'm ' + (s < 10 ? '0' : '') + s + 's';
+    var hr = Math.floor(min / 60);
+    var m = min % 60;
+    return hr + 'h ' + (m < 10 ? '0' : '') + m + 'm';
   }
 
-  function formatDurationShort(ms) {
+  function fmtShort(ms) {
     if (ms < 1000) return '0s';
-    const sec = Math.floor(ms / 1000);
+    var sec = Math.floor(ms / 1000);
     if (sec < 60) return sec + 's';
-    const min = Math.floor(sec / 60);
+    var min = Math.floor(sec / 60);
     if (min < 60) return min + 'm';
-    const hr = Math.floor(min / 60);
-    const m = min % 60;
-    return hr + 'h ' + m + 'm';
+    var hr = Math.floor(min / 60);
+    return hr + 'h ' + (min % 60) + 'm';
   }
 
-  function truncate(str, len) {
-    return str.length > len ? str.slice(0, len) + '…' : str;
+  function trunc(str, n) {
+    return str.length > n ? str.slice(0, n) + '\u2026' : str;
   }
 
-  var WIDGET_OPEN = false;
+  function esc(str) {
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(str));
+    return d.innerHTML;
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+   *  WIDGET — DOM BUILDING
+   * ══════════════════════════════════════════════════════════════ */
+
+  var STATE = { open: false, tab: 'popular' };
 
   function buildWidget() {
-    // ── Container ──
-    var container = document.createElement('div');
-    container.id = 'vl-container';
-
-    // ── Toggle button ──
-    var toggle = document.createElement('button');
-    toggle.id = 'vl-toggle';
-    toggle.setAttribute('aria-label', 'Toggle visitor stats');
+    var root   = ce('div', 'vl-root');
+    var toggle = ce('button', 'vl-toggle');
+    toggle.setAttribute('aria-label', 'Toggle study logger');
     toggle.innerHTML =
-      '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>';
-    toggle.addEventListener('click', function () {
-      WIDGET_OPEN = !WIDGET_OPEN;
-      container.classList.toggle('vl-open', WIDGET_OPEN);
-      if (WIDGET_OPEN) refreshPanel();
-    });
+      '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/>' +
+      '</svg>';
+    toggle.addEventListener('click', toggleWidget);
 
-    // ── Panel ──
-    var panel = document.createElement('div');
-    panel.id = 'vl-panel';
+    var panel     = ce('div', 'vl-panel');
+    var header    = ce('div', 'vl-header');
+    var titleSpan = ce('span', 'vl-title');
+    titleSpan.textContent = '\uD83D\uDCCA Study Logger';
+    var closeBtn  = ce('button', 'vl-close-btn');
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.textContent = '\u2715';
+    closeBtn.addEventListener('click', closeWidget);
 
-    var header = document.createElement('div');
-    header.className = 'vl-header';
-    header.innerHTML =
-      '<span class="vl-header-title">📊 Study Logger</span>' +
-      '<button class="vl-close" aria-label="Close">✕</button>';
-    header.querySelector('.vl-close').addEventListener('click', function () {
-      WIDGET_OPEN = false;
-      container.classList.remove('vl-open');
-    });
+    var tabs  = ce('div', 'vl-tabs');
+    var tabP  = ce('button', 'vl-tab', 'vl-tab--active');
+    tabP.setAttribute('data-tab', 'popular');
+    tabP.textContent = '\uD83C\uDF0D Popular';
+    var tabS  = ce('button', 'vl-tab');
+    tabS.setAttribute('data-tab', 'session');
+    tabS.textContent = '\uD83D\uDCDA My Session';
+    tabs.addEventListener('click', onTabClick);
+    tabs.appendChild(tabP);
+    tabs.appendChild(tabS);
 
-    var body = document.createElement('div');
-    body.className = 'vl-body';
+    var body = ce('div', 'vl-body');
     body.id = 'vl-body';
 
+    header.appendChild(titleSpan);
+    header.appendChild(closeBtn);
     panel.appendChild(header);
+    panel.appendChild(tabs);
     panel.appendChild(body);
-    container.appendChild(toggle);
-    container.appendChild(panel);
-    document.body.appendChild(container);
+    root.appendChild(toggle);
+    root.appendChild(panel);
+    document.body.appendChild(root);
 
-    // Periodically refresh panel & track time
+    // Periodic refresh while open
     setInterval(function () {
-      if (WIDGET_OPEN) refreshPanel();
-    }, 5000);
+      if (STATE.open) render();
+    }, 10000);
   }
 
-  function refreshPanel() {
+  function ce(tag, cls1, cls2) {
+    var el = document.createElement(tag);
+    if (cls1) el.className = cls1;
+    if (cls2) el.classList.add(cls2);
+    return el;
+  }
+
+  /* ── Widget event handlers ──────────────────────────────────── */
+  function toggleWidget() {
+    STATE.open = !STATE.open;
+    document.querySelector('.vl-root').classList.toggle('vl-open', STATE.open);
+    if (STATE.open) render();
+  }
+
+  function closeWidget() {
+    STATE.open = false;
+    document.querySelector('.vl-root').classList.remove('vl-open');
+  }
+
+  function onTabClick(e) {
+    var tab = e.target.closest('.vl-tab');
+    if (!tab) return;
+    var name = tab.getAttribute('data-tab');
+    if (name === STATE.tab) return;
+    STATE.tab = name;
+
+    document.querySelectorAll('.vl-tab').forEach(function (t) {
+      t.classList.toggle('vl-tab--active', t.getAttribute('data-tab') === name);
+    });
+    render();
+  }
+
+  /* ══════════════════════════════════════════════════════════════
+   *  RENDER
+   * ══════════════════════════════════════════════════════════════ */
+  function render() {
     var body = document.getElementById('vl-body');
     if (!body) return;
-    var stats = computeStats();
+    body.innerHTML = '';
+    if (STATE.tab === 'popular') renderPopular(body);
+    else renderSession(body);
+  }
 
-    body.innerHTML =
-      '<div class="vl-section">' +
-      '  <div class="vl-stat-row">' +
-      '    <span class="vl-stat-label">This session</span>' +
-      '    <span class="vl-stat-value">' +
-           stats.sessionPages + ' pages · ' + formatDurationShort(stats.sessionDuration) +
-    '    </span>' +
-    '  </div>' +
-    '  <div class="vl-stat-row">' +
-    '    <span class="vl-stat-label">Current page</span>' +
-    '    <span class="vl-stat-value">' + formatDurationShort(stats.currentPageDuration) + '</span>' +
-    '  </div>' +
-    '  <div class="vl-stat-row">' +
-      '    <span class="vl-stat-label">All time</span>' +
-    '    <span class="vl-stat-value">' +
-           stats.uniquePages + ' unique pages · ' + formatDurationShort(stats.totalAllMs) +
-    '    </span>' +
-    '  </div>' +
-    '</div>' +
-    '<div class="vl-section">' +
-    '  <div class="vl-section-title">Top pages</div>';
+  /* ── Popular tab ───────────────────────────────────────────── */
+  function renderPopular(body) {
+    body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
 
-    var maxTime = stats.top5.length > 0 ? stats.top5[0].totalMs : 1;
-    stats.top5.forEach(function (page) {
-      var pct = Math.min((page.totalMs / maxTime) * 100, 100);
-      body.innerHTML +=
-        '<div class="vl-page-row">' +
-        '  <div class="vl-page-info">' +
-        '    <span class="vl-page-name">' + truncate(page.title || page.path, 28) + '</span>' +
-        '    <span class="vl-page-time">' + formatDurationShort(page.totalMs) + '</span>' +
-        '  </div>' +
-        '  <div class="vl-bar-track">' +
-        '    <div class="vl-bar-fill" style="width:' + pct + '%"></div>' +
-        '  </div>' +
-        '</div>';
+    fetchTopPages().then(function (pages) {
+      if (!pages || pages.length === 0) {
+        body.innerHTML = '<div class="vl-empty">No visits recorded yet.</div>';
+        return;
+      }
+
+      var max = pages[0].visit_count;
+      var h   = '<div class="vl-scroll">';
+
+      pages.forEach(function (p, i) {
+        var pct = Math.min((p.visit_count / max) * 100, 100);
+        h +=
+          '<div class="vl-row">' +
+          '  <div class="vl-row-info">' +
+          '    <span class="vl-rank">' + (i + 1) + '</span>' +
+          '    <span class="vl-name">' + trunc(esc(p.title || p.path), 28) + '</span>' +
+          '    <span class="vl-count">' + p.visit_count + '</span>' +
+          '  </div>' +
+          '  <div class="vl-bar"><div class="vl-fill" style="width:' + pct + '%"></div></div>' +
+          '</div>';
+      });
+
+      h += '</div>';
+      body.innerHTML = h;
     });
+  }
 
-    if (stats.top5.length === 0) {
-      body.innerHTML += '<div class="vl-empty">No pages tracked yet — start studying!</div>';
+  /* ── Session tab ───────────────────────────────────────────── */
+  function renderSession(body) {
+    var s = computeSessionStats();
+
+    var h =
+      '<div class="vl-scroll">' +
+
+      // Main timer — big and prominent
+      '<div class="vl-timer">' +
+      '  <div class="vl-timer-value">' + fmt(s.totalStudyMs) + '</div>' +
+      '  <div class="vl-timer-label">study time this session</div>' +
+      '</div>' +
+
+      // Stats row
+      '<div class="vl-mini-stats">' +
+      '  <div class="vl-mini">' +
+      '    <span class="vl-mini-value">' + fmtShort(s.currentPageMs) + '</span>' +
+      '    <span class="vl-mini-label">current page</span>' +
+      '  </div>' +
+      '  <div class="vl-mini">' +
+      '    <span class="vl-mini-value">' + s.pagesVisited + '</span>' +
+      '    <span class="vl-mini-label">pages visited</span>' +
+      '  </div>' +
+      '  <div class="vl-mini">' +
+      '    <span class="vl-mini-value">' + s.uniquePages + '</span>' +
+      '    <span class="vl-mini-label">unique pages</span>' +
+      '  </div>' +
+      '</div>';
+
+    // Per-page breakdown
+    if (s.pageBreakdown.length > 0) {
+      h += '<div class="vl-divider"></div>' +
+           '<div class="vl-subtitle">Time by page</div>';
+
+      var maxTime = s.pageBreakdown[0].studyMs || 1;
+      var show = s.pageBreakdown.slice(0, 10);
+      show.forEach(function (p) {
+        var pct = Math.min((p.studyMs / maxTime) * 100, 100);
+        h +=
+          '<div class="vl-row">' +
+          '  <div class="vl-row-info">' +
+          '    <span class="vl-name">' + trunc(esc(p.title || p.path), 28) + '</span>' +
+          '    <span class="vl-time">' + fmtShort(p.studyMs) + '</span>' +
+          '  </div>' +
+          '  <div class="vl-bar"><div class="vl-fill vl-fill--session" style="width:' + pct + '%"></div></div>' +
+          '</div>';
+      });
     }
 
-    body.innerHTML += '</div>';
+    h += '</div>';
+    body.innerHTML = h;
   }
 
-  /* ── Lifecycle hooks ────────────────────────────────────────── */
+  /* ══════════════════════════════════════════════════════════════
+   *  LIFECYCLE
+   * ══════════════════════════════════════════════════════════════ */
 
-  // Track on initial page load
-  if (document.readyState === 'complete') {
-    trackPage();
-  } else {
-    window.addEventListener('load', trackPage);
+  // 1. Initial page load
+  function boot() {
+    startPageTracking(window.location.pathname, document.title);
   }
+  if (document.readyState === 'complete') boot();
+  else window.addEventListener('load', boot);
 
-  // Finalize on page unload / visibility change
-  window.addEventListener('beforeunload', finalizePage);
+  // 2. Visibility — count only visible time as study time
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === 'hidden') {
-      finalizePage();
-    } else if (document.visibilityState === 'visible') {
-      if (!window.__visitorPageEnter) {
-        resumeTracking();
-      }
+      finalizePageTracking();
+    } else {
+      resumePageTracking();
     }
   });
 
-  // Track scroll depth during page stay
-  var scrollTimer = null;
-  window.addEventListener('scroll', function () {
-    if (scrollTimer) clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(function () {
-      if (window.__visitorPageEnter) {
-        const pages = getPageList();
-        if (pages.length > 0) {
-          const last = pages[pages.length - 1];
-          last.scrollDepth = Math.round(
-            ((window.scrollY + window.innerHeight) / Math.max(document.documentElement.scrollHeight, 1)) * 100
-          );
-          savePageList(pages);
-        }
-      }
-    }, 500);
-  });
+  // 3. Unload — save any pending time
+  window.addEventListener('beforeunload', finalizePageTracking);
 
-  // MkDocs Material navigation hook: re-track on page change
+  // 4. MkDocs SPA navigation — detect content swaps via MutationObserver
   document.addEventListener('DOMContentLoaded', function () {
-    // Observe the main content area for changes (MkDocs swaps content via XHR)
-    var contentEl = document.querySelector('article.md-content__inner') ||
-                     document.querySelector('.md-content') ||
-                     document.querySelector('main');
-    if (contentEl) {
-      var observer = new MutationObserver(function () {
-        // Debounce: page transition settled
+    var el = document.querySelector('article.md-content__inner') ||
+             document.querySelector('.md-content') ||
+             document.querySelector('main');
+
+    if (el) {
+      var obs = new MutationObserver(function () {
         setTimeout(function () {
           if (document.title && document.visibilityState === 'visible') {
-            finalizePage();
-            trackPage();
+            startPageTracking(window.location.pathname, document.title);
           }
         }, 300);
       });
-      observer.observe(contentEl, { childList: true, subtree: true });
+      obs.observe(el, { childList: true, subtree: true });
     }
 
-    // Build the widget UI
+    // Build widget
     buildWidget();
   });
 })();

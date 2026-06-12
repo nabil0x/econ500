@@ -2,7 +2,7 @@
 
 > **Purpose:** Past final exam papers organized by batch year for exam practice
 > **Structure:** Each batch folder contains subject-wise question files
-> **Cross-links:** [Study Hub](../README.md)
+> **Cross-links:** [Study Hub](../index.md)
 
 ---
 

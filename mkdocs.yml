@@ -8,8 +8,20 @@ repo_name: Study Hub
 theme:
   name: material
   palette:
-    primary: indigo
-    accent: teal
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
     text: Merriweather
     code: JetBrains Mono

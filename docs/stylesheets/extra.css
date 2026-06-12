@@ -142,6 +142,25 @@ body {
   font-weight: 600;
 }
 
+/* ── Dark mode overrides ───────────────────────────────── */
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background-color: var(--md-accent-fg-color--lightest);
+  border-left-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: var(--md-default-fg-color--lighter);
+}
+
 /* ── Print support ─────────────────────────────────────── */
 @media print {
   .md-header, .md-tabs, .md-sidebar, .md-footer {

@@ -7,6 +7,17 @@
 
 ---
 
+## ✅ Answer Files — Quick Navigation
+
+| File | Topics | Key Glossary Terms |
+|------|--------|-------------------|
+| [Consumer Theory](./answers-consumer-theory.md) | Preferences, Utility, UMP, EMP, Duality | [Rationality](GLOSSARY.md#term-rationality) • [Utility Function](GLOSSARY.md#term-utility-function) • [UMP](GLOSSARY.md#term-ump) • [EMP](GLOSSARY.md#term-emp) • [Duality](GLOSSARY.md#term-duality) |
+| [Demand & Production](./answers-demand-production.md) | Elasticities, Production, Costs, Profit | [Elasticity](GLOSSARY.md#term-elasticity) • [Production Function](GLOSSARY.md#term-production-function) • [Cost Function](GLOSSARY.md#term-cost-function) • [Profit Max](GLOSSARY.md#term-profit-maximization) |
+| [Welfare](./answers-welfare.md) | CV, EV, CS, Pareto, Welfare Theorems | [CV](GLOSSARY.md#term-cv) • [EV](GLOSSARY.md#term-ev) • [CS](GLOSSARY.md#term-cs) • [Pareto Efficiency](GLOSSARY.md#term-pareto-efficient) • [FWT](GLOSSARY.md#term-fwt) |
+| [GE, Game Theory & Trade](./answers-ge-game-extern-trade.md) | GE, Game Theory, Externalities, Trade | [GE](GLOSSARY.md#term-ge) • [Nash Equilibrium](GLOSSARY.md#term-nash-equilibrium) • [Pigouvian Tax](GLOSSARY.md#term-pigouvian-tax) • [Stolper-Samuelson](GLOSSARY.md#term-stolper-samuelson) |
+
+---
+
 # Section 1A — Preference-Based Approach
 
 ---

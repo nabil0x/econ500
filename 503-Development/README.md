@@ -2,6 +2,7 @@
 
 > **Focus:** Theories and empirical evidence on economic development, with emphasis on Bangladesh
 > **Tutorial Questions:** 2nd tutorial (Naila Kabeer, patriarchy, women's agency; Venezuela collapse) | 3rd tutorial (Macro overview, Trade challenges, Iran oil strategy) | Source: MainQ.pdf (Pages 5, 9)
+> **📖 Answers:** [`answers-development.md`](./answers-development.md) — 21 solved questions covering all tutorials + Batch 47 & 48
 
 ---
 

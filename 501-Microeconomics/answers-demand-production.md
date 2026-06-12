@@ -10,7 +10,7 @@
 
 ---
 
-### Question 1
+### Question 1 {#q-demand-01}
 
 > **Marking Guide [14 marks]:** Elasticity Concepts (3) | Sign Classification (3) | Revenue Test (3) | Numerical Application (3) | Economic Intuition (2)
 
@@ -85,7 +85,7 @@ Here own-price elasticity $\gamma = -0.4$, so $|\gamma| = 0.4 < 1$ → inelastic
 
 ---
 
-### Question 2
+### Question 2 {#q-demand-02}
 
 > **Marking Guide [14 marks]:** Sign Identification (4) | Law of Demand (4) | Economic Interpretation (3) | Misspecification Diagnosis (3)
 
@@ -105,7 +105,7 @@ For a normal demand function, own-price coefficient must be **negative**.
 
 ---
 
-### Question 3
+### Question 3 {#q-demand-03}
 
 > **Marking Guide [14 marks]:** Cross-price Elasticities (4) | Income Elasticity Classification (2) | Advertising Elasticity (2) | Lerner Index Derivation (3) | Competitive Response (3)
 
@@ -184,7 +184,7 @@ $$\frac{\% \Delta Q}{\% \Delta P_B} = -1.5 \Rightarrow \% \Delta P_B = \frac{\% 
 
 ---
 
-### Question 1
+### Question 1 {#q-prodset-01}
 
 > **Marking Guide [14 marks]:** Production Function (3) | Production Set (3) | Transformation Function (3) | Transformation Frontier (2) | MRPT Definition & Formula (3)
 
@@ -208,7 +208,7 @@ Measures how much output $l$ must be reduced to increase output $k$ by one unit.
 
 ---
 
-### Question 2 & 3
+### Question 2 & 3 {#q-prodset-02}
 
 > **Marking Guide [14 marks]:** Property Definitions (6) | Graphical Interpretations (4) | Convexity Understanding (2) | Fixed-Cost Exception (2)
 
@@ -240,7 +240,7 @@ Measures how much output $l$ must be reduced to increase output $k$ by one unit.
 
 ---
 
-### Question 4
+### Question 4 {#q-prodset-03}
 
 > **Marking Guide [14 marks]:** Definition & Formula (3) | Perfect Substitutes Derivation (4) | Leontief Derivation (4) | Comparison Table (3)
 
@@ -285,7 +285,7 @@ $\% \Delta (K/L) = 0 \Rightarrow \sigma = 0$
 
 ---
 
-### Question 5
+### Question 5 {#q-prodset-04}
 
 > **Marking Guide [14 marks]:** Property Definitions (6) | Intuitive Matching (4) | Concavity Insight (2) | Shephard's Lemma (2)
 
@@ -313,7 +313,7 @@ $\% \Delta (K/L) = 0 \Rightarrow \sigma = 0$
 
 ---
 
-### Question 6
+### Question 6 {#q-prodset-05}
 
 > **Marking Guide [14 marks]:** Production Function (2) | Conditional Factor Demand (2) | Cost Function (3) | Profit Maximisation (4) | MR=MC Alternative (3)
 
@@ -368,7 +368,7 @@ $MC = 5$. Set MR = MC → $Q^* = 200(6)^{-6} = 200/46656 \approx 0.00429$. $P^* 
 
 ---
 
-### Question 7
+### Question 7 {#q-prodset-06}
 
 > **Marking Guide [14 marks]:** SR Production (2) | SR Factor Demand & Cost (3) | Shutdown & Supply (2) | Returns to Scale (2) | EoS (1) | LR Factor Demand (2) | LR Cost & Supply (2)
 
@@ -469,7 +469,7 @@ $$Q^S(P) = \frac{P^2}{9wr}$$
 
 ---
 
-### Question 8
+### Question 8 {#q-prodset-07}
 
 > **Marking Guide [14 marks]:** Economies of Scale Identification (5) | Fixed Cost Spreading (4) | Marginal vs Average Cost (3) | Real-World Application (2)
 
@@ -497,7 +497,7 @@ The firm's average cost declines with output → the marginal cost of the second
 
 ---
 
-### Question 1
+### Question 1 {#q-profit-01}
 
 > **Marking Guide [14 marks]:** Definition (2) | Property Listing (4) | Hotelling's Lemma (4) | Convexity Intuition (2) | Law of Supply (2)
 
@@ -528,7 +528,7 @@ If $Y$ is **closed** and satisfies **free disposal**, the profit function satisf
 
 ---
 
-### Question 2
+### Question 2 {#q-profit-02}
 
 > **Marking Guide [14 marks]:** Setup & Differentiation (4) | Profit FOCs (4) | Substitution (3) | Intuitive Explanation (3)
 
@@ -577,7 +577,7 @@ $$MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 
 ---
 
-### Question 1
+### Question 1 {#q-compet-01}
 
 > **Marking Guide [14 marks]:** SR Firm Supply (2) | Market Equilibrium (3) | Tax Incidence Computation (4) | DWL Calculation (3) | Welfare Summary (2)
 
@@ -682,7 +682,7 @@ $$\int_{11,000}^{21,000} [D(Q) - S(Q)] dQ = 100,000$$
 
 ---
 
-### Question 2
+### Question 2 {#q-compet-02}
 
 > **Marking Guide [14 marks]:** Walras' Law Statement (2) | Algebraic Substitution (5) | Price Ratio Derivation (5) | Consistency Check (2)
 

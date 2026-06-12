@@ -9,7 +9,7 @@
 
 ---
 
-### Question 1
+### Question 1 {#q-welfare-01}
 **Distinguish Compensating Variation (CV) and Equivalent Variation (EV). How are they different from Consumer's Surplus (CS)?** *(10/4 marks)*
 
 **Answer:**
@@ -50,7 +50,7 @@ Demand     Hicksian ($u^{0}$)   Hicksian ($u^{1}$)   Marshallian (w)
 
 ---
 
-### Question 2
+### Question 2 {#q-welfare-02}
 **For price decrease (normal goods): EV > CS > CV. For price increase, explain.** *(10/5 marks)*
 
 **Answer:**
@@ -95,7 +95,7 @@ EV < CS < CV
 
 ---
 
-### Question 3
+### Question 3 {#q-welfare-03}
 **Cobb-Douglas $u = x_1^{1/2} x_2^{1/2}$. Given $\{p^0, m^0\} = \{\{4,4\},300\}$, $\{p^1, m^1\} = \{\{2,4\},300\}$. Compute indirect utilities, costs, EV, CV, CS. Examine relationship → nature of commodities.** *(10/5 marks)*
 
 **Answer:**
@@ -170,7 +170,7 @@ Since EV $-$ CV $= 124.24 - 87.9 = 36.34 > 0$, there is a substantial income eff
 
 ---
 
-### Question 4
+### Question 4 {#q-welfare-04}
 **EV > CS > CV diagram (price decrease) and EV < CS < CV (price increase) — graphical analysis.** *(Practice Mid)*
 
 **Answer:**
@@ -235,7 +235,7 @@ p_{1}
 
 ---
 
-### Question 5
+### Question 5 {#q-welfare-05}
 **Show: Marshallian CS overstates CV and understates EV for normal goods.** *(WelfareChange paper §4)*
 
 **Answer:**
@@ -282,7 +282,7 @@ p_{1}
 
 ---
 
-### Question 1
+### Question 1 {#q-socwel-01}
 **Define social welfare. Critically examine three key issues Pigou dealt with.** *(10 marks)*
 
 **Answer:**
@@ -352,7 +352,7 @@ Pigou identified the divergence between private net product and social net produ
 
 ---
 
-### Question 2
+### Question 2 {#q-socwel-02}
 **Derive grand utility possibility frontier, determine 'point of bliss'. Does it ensure maximum SW?** *(10/6 marks)*
 
 **Answer:**
@@ -419,7 +419,7 @@ The point of bliss is the tangency between the **GUPF** and the **highest attain
 
 ---
 
-### Question 3
+### Question 3 {#q-socwel-03}
 **Define social welfare. Explain criteria: i) Growth of GNP ii) Bentham iii) Cardinalist.** *(Professor Q1)*
 
 **Answer:**
@@ -480,7 +480,7 @@ Social welfare is the aggregate well-being of a society, encompassing the satisf
 
 ---
 
-### Question 4
+### Question 4 {#q-socwel-04}
 **Define social welfare function. Derive grand utility possibility frontier, point of bliss.** *(Professor Q4, 49Qs Q4)*
 
 **Answer:**
@@ -554,7 +554,7 @@ $\partial U_B/\partial U_A (from GUPF) = (\partial W/\partial U_A) / (\partial W
 
 ---
 
-### Question 5
+### Question 5 {#q-socwel-05}
 **Critically explain three key things Pigou dealt with in social welfare analysis.** *(Professor Q5, 49Qs Q5)*
 
 **Answer:**
@@ -602,7 +602,7 @@ Pigou's *The Economics of Welfare* (1932) laid the foundation of neoclassical we
 
 ---
 
-### Question 6
+### Question 6 {#q-socwel-06}
 **Define social welfare function. How could it be used as a criterion to measure SW?** *(Professor Given Q4)*
 
 **Answer:**
@@ -666,7 +666,7 @@ A SWF is a rule for aggregating individual utility levels into a measure of over
 
 ---
 
-### Question 7
+### Question 7 {#q-socwel-07}
 **What are the major assumptions of SW maximization in a 2×2×2 model?** *(Professor Given Q5)*
 
 **Answer:**
@@ -735,7 +735,7 @@ The 2×2×2 general equilibrium model for social welfare maximization rests on t
 
 ---
 
-### Question 1
+### Question 1 {#q-pareto-01}
 **"Pareto optimality necessary but not sufficient for SW maximization" — justify with 2×2×2 model.** *(10/7 marks)*
 
 **Answer:**
@@ -793,7 +793,7 @@ Points c, c_{1}, and d are all on the GUPF → all Pareto-optimal. But if d lies
 
 ---
 
-### Question 2
+### Question 2 {#q-pareto-02}
 **Explain assumptions about MU of money for Hicks-Kaldor compensation. Can compensation be correct?** *(10/7 marks)*
 
 **Answer:**
@@ -844,7 +844,7 @@ Can compensation be correct?
 
 ---
 
-### Question 3
+### Question 3 {#q-pareto-03}
 **2-person 2-good fixed supply: show Pareto optimality for consumption with equations.** *(7 marks)*
 
 **Answer:**
@@ -924,7 +924,7 @@ where $MRS^i_{xy} = MU_x^i / MU_y^i = (\partial U_i/\partial X_i) / (\partial U_
 
 ---
 
-### Question 4
+### Question 4 {#q-pareto-04}
 **Firm 1 external economies, firm 2 diseconomies. $p_1 = p_2 = 15$. $C_1 = 0.1q_1^2 + 5q_1 - 0.1q_2^2$, $C_2 = 0.2q_2^2 + 7q_2 + 0.025q_1^2$. Show Pareto optimality through taxes/subsidies. Find social dividend.** *(7 marks)*
 
 **Answer:**
@@ -1008,7 +1008,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 
 ---
 
-### Question 5
+### Question 5 {#q-pareto-05}
 **State and explain First and Second Welfare Theorems with implications.** *(8 marks)*
 
 **Answer:**
@@ -1091,7 +1091,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 
 ---
 
-### Question 6
+### Question 6 {#q-pareto-06}
 **What is social welfare function? Utilitarian vs Rawlsian.** *(6 marks)*
 
 **Answer:**
@@ -1175,7 +1175,7 @@ $W = min{U_{1}, U_{2}, ..., U_{n}}$
 
 ---
 
-### Question 7
+### Question 7 {#q-pareto-07}
 **Explain Hicks-Kaldor compensation principle. How did Scitovsky correct the contradiction?** *(8 marks)*
 
 **Answer:**
@@ -1263,7 +1263,7 @@ A movement from a to d (where both are better off) passes both tests.
 
 ---
 
-### Question 8
+### Question 8 {#q-pareto-08}
 **Does perfect competition ensure welfare maximization? Examine.** *(Professor Given Q8)*
 
 **Answer:**

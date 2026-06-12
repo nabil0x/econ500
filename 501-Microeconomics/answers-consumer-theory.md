@@ -11,7 +11,7 @@
 
 ---
 
-### Question 1
+### Question 1 {#q-cons-01}
 
 **What is the preference-based approach of consumer's behavior? Explain and interpret the assumptions. (10/7 marks)**
 
@@ -54,7 +54,7 @@ The preference-based approach models consumer choice by assuming the consumer ha
 
 ---
 
-### Question 2
+### Question 2 {#q-cons-02}
 
 **Define indifference set. Examine: if preference satisfies strong monotonicity, ICs must be downward sloping. (10/7)**
 
@@ -98,7 +98,7 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 
 ---
 
-### Question 3
+### Question 3 {#q-cons-03}
 
 **What are the twin definitions of convexity? How differ from strong convexity? Graphical. (10/4)**
 
@@ -144,7 +144,7 @@ $$\lambda x + (1-\lambda) y \succ z$$
 
 ---
 
-### Question 4
+### Question 4 {#q-cons-04}
 
 **Show: Convexity of preference $\iff$ UCS(x) convex $\iff$ $u(\cdot)$ quasiconcave. (5)**
 
@@ -191,7 +191,7 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 ---
 
-### Question 5
+### Question 5 {#q-cons-05}
 
 **Prove: Monotonicity + continuity → utility function exists. (5)**
 
@@ -233,7 +233,7 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 ---
 
-### Question 6
+### Question 6 {#q-cons-06}
 
 **Define utility function. Explain desirability by monotonicity and strong monotonicity. (10/5)**
 
@@ -285,7 +285,7 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 
 ---
 
-### Question 7
+### Question 7 {#q-cons-07}
 
 **Show: Strong Monotonicity $\Rightarrow$ Monotonicity $\Rightarrow$ LNS. (5)**
 
@@ -327,7 +327,7 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 
 ---
 
-### Question 8
+### Question 8 {#q-cons-08}
 
 **Examine: (i) Homogeneity (ii) Homotheticity. (5/4)**
 
@@ -389,7 +389,7 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 
 ---
 
-### Question 9
+### Question 9 {#q-cons-09}
 
 **Prove quasi-concave utility $U(X,Y) \iff dMRS/dX < 0$. (8)**
 
@@ -478,7 +478,7 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 
 ---
 
-### Question 10
+### Question 10 {#q-cons-10}
 
 **Does $U = X + \log(Y)$ have convex indifference curves? Provide proof. (∼3)**
 
@@ -529,7 +529,7 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 
 ---
 
-### Question 1
+### Question 1 {#q-cons-1b-01}
 
 **Cobb-Douglas: Derive Walrasian demand, examine properties. (7)**
 
@@ -602,7 +602,7 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 
 ---
 
-### Question 2
+### Question 2 {#q-cons-1b-02}
 
 **Cobb-Douglas: Get indirect utility, explain properties, verify Roy's identity. (7)**
 
@@ -667,7 +667,7 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 
 ---
 
-### Question 3
+### Question 3 {#q-cons-1b-03}
 
 **Cobb-Douglas: Solve expenditure minimization, examine compensated demand. (6)**
 
@@ -746,7 +746,7 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 
 ---
 
-### Question 4
+### Question 4 {#q-cons-1b-04}
 
 **Examine properties of Walrasian demand $x(p,w)$. When can UMP sufficient condition be violated? (10)**
 
@@ -810,7 +810,7 @@ The Kuhn-Tucker conditions are necessary for a max. They are sufficient when:
 
 ---
 
-### Question 5
+### Question 5 {#q-cons-1b-05}
 
 **Examine: (i) Homogeneity (ii) Homotheticity. (10)**
 
@@ -879,7 +879,7 @@ A preference relation is homothetic if all indifference sets are related to prop
 
 ---
 
-### Question 6
+### Question 6 {#q-cons-1b-06}
 
 **Negroni cocktail: $U = \min(G,V,C)$. Find Marshallian demand for Gin, Hicksian demand for Campari, expenditure function. (∼11)**
 
@@ -962,7 +962,7 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 
 ---
 
-### Question 7
+### Question 7 {#q-cons-1b-07}
 
 **$U = X + \ln(Y)$. Find demands. With limited $I$, which goods? Why? (3)**
 
@@ -1016,7 +1016,7 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 
 ---
 
-### Question 8
+### Question 8 {#q-cons-1b-08}
 
 **$U(X,Y) = X - 3Y$. $P_X=20$, $P_Y=40$, $I=400$. Utility-maximizing quantities. (3)**
 

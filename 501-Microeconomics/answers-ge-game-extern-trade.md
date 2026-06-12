@@ -8,7 +8,7 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 ## Topic 6A — GE: Existence, Uniqueness, Stability
 
-### Question 1
+### Question 1 {#q-ge-01}
 
 > **Marking Guide [14 marks]:** Definition (3) | Comparison table (4) | Examples (3) | Intuition (2) | Exam structure (2)
 
@@ -38,7 +38,7 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 ---
 
-### Question 2
+### Question 2 {#q-ge-02}
 
 > **Marking Guide [14 marks]:** Existence definition (2) | Uniqueness explanation (2) | Stability analysis (4) | Diagram(s) (4) | Synthesis & intuition (2)
 
@@ -103,7 +103,7 @@ Stable:              Unstable:
 
 ---
 
-### Question 3
+### Question 3 {#q-ge-03}
 
 > **Marking Guide [14 marks]:** Define E(P) (2) | Existence via IVT (4) | Stability from slope sign (4) | Uniqueness from monotonicity (2) | Synthesis (2)
 
@@ -154,7 +154,7 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 
 ---
 
-### Question 4
+### Question 4 {#q-ge-04}
 
 > **Marking Guide [14 marks]:** Initial equilibrium (2) | Taste shock & product market (3) | Factor market transmission (4) | Factor mobility & price equalisation (3) | New GE (2)
 
@@ -203,7 +203,7 @@ This question asks about the transmission mechanism: **external shock in product
 
 ## Topic 6B — Edgeworth Box & $2\times 2\times 2$ Model
 
-### Question 1
+### Question 1 {#q-edge-01}
 
 > **Marking Guide [14 marks]:** Model definition & dimensions (2) | Six assumptions listed (4) | Edgeworth box diagram (3) | Contract curve & MRTS condition (3) | GE of production condition (2)
 
@@ -260,7 +260,7 @@ The production equilibrium is not unique (any point on contract curve is Pareto-
 
 ---
 
-### Question 2
+### Question 2 {#q-edge-02}
 
 > **Marking Guide [14 marks]:** Shock & product market (2) | Firm response (2) | Factor market effects (4) | Factor mobility (3) | Long-run adjustment & new GE (3)
 
@@ -303,7 +303,7 @@ This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\time
 
 ---
 
-### Question 3
+### Question 3 {#q-edge-03}
 
 > **Marking Guide [14 marks]:** Production efficiency — MRTS condition & contract curve (4) | Consumption efficiency — MRS condition (4) | Simultaneous equilibrium — MRPT = MRS (4) | Diagram & synthesis (2)
 
@@ -364,7 +364,7 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ---
 
-### Question 4
+### Question 4 {#q-edge-04}
 
 > **Marking Guide [14 marks]:** GE definition (2) | Comparison table (6) | Worked example (4) | Intuition (2)
 
@@ -392,7 +392,7 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ---
 
-### Question 5
+### Question 5 {#q-edge-05}
 
 > **Marking Guide [14 marks]:** Assumptions (4) | Production side reaching GE (3) | PPC & MRPT (2) | Consumption side (3) | Simultaneous equilibrium condition (2)
 
@@ -424,7 +424,7 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ---
 
-### Question 6
+### Question 6 {#q-edge-06}
 
 > **Marking Guide [14 marks]:** Setup & box dimensions (2) | MRS derivation & Pareto condition (4) | Contract curve equation (2) | Endowment check & inefficiency (3) | Infeasibility identification (1) | Core reasoning (2)
 
@@ -481,7 +481,7 @@ Infeasible — total X endowment is only 60. Cannot be in the core (core allocat
 
 ---
 
-### Question 7
+### Question 7 {#q-edge-07}
 
 > **Marking Guide [14 marks]:** Unknowns classification (4) | Equations classification (4) | Walras' Law redundancy (3) | Numeraire solution (2) | Arrow-Debreu conditions (1)
 
@@ -534,7 +534,7 @@ Under these conditions, a GE solution **does exist**. However, without these ass
 
 ---
 
-### Question 8
+### Question 8 {#q-edge-08}
 
 > **Marking Guide [14 marks]:** Walras' Law statement (2) | Three-good illustration (3) | Price ratio solution & numeraire (5) | Numerical example (2) | Key insight (2)
 
@@ -607,7 +607,7 @@ Given consistent ED functions: solve $ED_2 = 0$ and $ED_3 = 0$ for $P_2$, $P_3$ 
 
 ## Topic 7 — Game Theory & IO
 
-### Question 1
+### Question 1 {#q-game-01}
 
 > **Marking Guide [14 marks]:** Nash equilibrium definition (2) | Profit functions (2) | FOC & best responses (4) | Solve NE prices (3) | Quantities, profits & comparison (2) | Diagram (1)
 
@@ -668,7 +668,7 @@ $\pi_{2} = (40 - 10)(60) = 1800$
 
 ---
 
-### Question 2
+### Question 2 {#q-game-02}
 
 > **Marking Guide [14 marks]:** PD definition (2) | Correct payoff matrix (2) | Dominant strategy check (3) | Dilemma explanation (2) | Oligopoly implications (3) | Repeated games & Folk Theorem (2)
 
@@ -708,7 +708,7 @@ Don't       │ (10, 0)       (1, 1)
 
 ---
 
-### Question 3
+### Question 3 {#q-game-03}
 
 > **Marking Guide [14 marks]:** Game structure & tree (4) | Backward induction — I's node (3) | Backward induction — E's node (3) | SPNE identification (2) | Non-credible threat discussion (2)
 
@@ -766,7 +766,7 @@ Payoffs: (40, 40)
 
 ---
 
-### Question 4
+### Question 4 {#q-game-04}
 
 > **Marking Guide [14 marks]:** Stage-game NE identification (3) | Grim trigger strategy definition (2) | PV of cooperation (3) | PV of deviation (3) | Discount factor threshold (3)
 
@@ -855,7 +855,7 @@ So if players are sufficiently patient ($\delta \ge \frac{2}{3}$), (Up, Left) ca
 
 ---
 
-### Question 5
+### Question 5 {#q-game-05}
 
 > **Marking Guide [14 marks]:** Paradox definition (2) | Finitely repeated PD unraveling (4) | Why multiple NE helps (4) | Reputation/bounded rationality (2) | Synthesis (2)
 
@@ -892,7 +892,7 @@ Yes. The paradox arises when the stage game has a **unique** Nash equilibrium. I
 
 ---
 
-### Question 6
+### Question 6 {#q-game-06}
 
 > **Marking Guide [14 marks]:** Game description (2) | Game tree diagram (3) | Backward induction steps (4) | Paradox statement (2) | Overcoming mechanisms (3)
 
@@ -955,7 +955,7 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 ## Topic 8 — Externalities, Public Goods & Information
 
-### Question 1
+### Question 1 {#q-extern-01}
 
 > **Marking Guide [14 marks]:** Definition & mechanism (4) | Worked example — fishing (4) | Solutions: property rights/taxes/regulation (4) | Link to externalities (2)
 
@@ -979,7 +979,7 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 ---
 
-### Question 2
+### Question 2 {#q-extern-02}
 
 > **Marking Guide [14 marks]:** Setup (2) | Unregulated FOCs (4) | Joint profit FOC & social optimum (4) | Coase Theorem & bargaining (2) | Diagram & DWL (2)
 
@@ -1061,7 +1061,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ---
 
-### Question 3
+### Question 3 {#q-extern-03}
 
 > **Marking Guide [14 marks]:** Asymmetric info definition (2) | Lemons setup (3) | Adverse selection mechanism (4) | Equilibrium calculation (3) | General principle & solutions (2)
 
@@ -1098,7 +1098,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ---
 
-### Question 4
+### Question 4 {#q-extern-04}
 
 > **Marking Guide [14 marks]:** Setup & assumptions (2) | Signaling game structure (3) | Separating equilibrium conditions (4) | Pooling equilibrium (3) | Welfare analysis (2)
 
@@ -1158,7 +1158,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ---
 
-### Question 5
+### Question 5 {#q-extern-05}
 
 > **Marking Guide [14 marks]:** Definition (2) | Bandwagon effect — positive externality (4) | Snob effect — negative externality (4) | Veblen effect (2) | Diagram (2)
 
@@ -1204,7 +1204,7 @@ Quantity Demanded
 
 ---
 
-### Question 6
+### Question 6 {#q-extern-06}
 
 > **Marking Guide [14 marks]:** Direct answer (2) | Assumption breakdown (3) | Pareto condition failure (4) | Welfare Theorem failure (3) | Mathematical formulation (2)
 
@@ -1250,7 +1250,7 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
 
 ## Topic 9 — Trade & Tariffs
 
-### Question 1
+### Question 1 {#q-trade-01}
 
 > **Marking Guide [14 marks]:** Autarky equilibrium (2) | Free trade imports (2) | Tariff welfare effects — CS, PS, revenue (4) | DWL calculation (2) | VER analysis (2) | Comparison table (2)
 

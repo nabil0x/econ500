@@ -21,8 +21,15 @@
 | 17 | `Welfare Economics.pptx` | Slides | Welfare economics slides |
 | 18 | `welfare sheet.pdf` | Sheet | Welfare reference sheet (scanned) |
 | 19 | `welfare sheet Pigou.pdf` | Sheet | Pigouvian welfare sheet (scanned) |
+| 20 | `master-notes-501/1-8.pdf` | Solved Tutorial | Q1-8 consumer theory (scanned) |
+| 21 | `master-notes-501/9,10,11.pdf` | Solved Tutorial | Q9: concavity, Q10: utility functions, Q11: homogeneity |
+| 22 | `master-notes-501/12-17.pdf` | Solved Tutorial | Q12-17 demand/production/welfare (scanned) |
+| 23 | `master-notes-501/501 18-22.pdf` | Solved Tutorial | Q18-22 welfare/GE (scanned) |
+| 24 | `master-notes-501/501_chapter 1 solve_1st tt.pdf` | Solved Tutorial | Ch.1 tutorial test (scanned) |
+| 25 | `master-notes-501/Social welfare 1-17.pdf` | Solved Tutorial | 11 long-form welfare/GE answers with figures |
+| 26 | `master-notes-501/Welfare Q no5 ans.pdf` | Solved Tutorial | Alternative Pigou answer |
 
-> **Tip:** Two chapters are also part of *WelfareChange (CV, EV and CS).pdf* — the reference notes at `../welfare-change-reference.md` cover CV/EV/CS in detail.
+> **Tip:** Two chapters are also part of *WelfareChange (CV, EV and CS).pdf* — the reference notes at `../welfare-change-reference.md` cover CV/EV/CS in detail. The `master-notes-501/` files are student's personal solved tutorial sheets — all extractable content is already covered in the existing answer files (see [master-notes-501/README.md](./master-notes-501/README.md) for full content match).
 
 ---
 
@@ -50,5 +57,8 @@ All PDFs, DOCX, and PPTX files have been extracted to plain text in the `./extra
 | `Micro questions Given by professor.docx.txt` | 297 | Questions | 17 professor questions (clear text) |
 | `Micro  questions 49 given by professor.docx.txt` | 203 | Questions | 10-question subset (clear text) |
 | `Practice questions for mid 1 and 2.txt` | 570 | Scanned | Handwritten Bengali+English (limited OCR) |
+| `Masters_Notes_501/9,10,11.txt` | 2,136 | Solved Tutorial | Q9-11: concavity, utility functions, homogeneity |
+| `Masters_Notes_501/Social welfare 1-17.txt` | 11,000 | Solved Tutorial | 11 long-form welfare/GE answers |
+| `Masters_Notes_501/Welfare Q no5 ans.txt` | 422 | Solved Tutorial | Alternative Pigou answer |
 
 > **Usage:** When writing answers to micro questions, reference these extracted texts as the primary source material. The two textbooks (Koutsoyiannis, Munoz-Garcia) and four chapter PDFs provide the theoretical backbone.

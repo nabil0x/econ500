@@ -1,6 +1,6 @@
 # 📚 Masters Exam Study Hub
 
-> **Courses:** Microeconomics (Econ 501) · Macroeconomics (Econ 501) · Development Economics (Econ 503) · Political Economy (Econ 512) · Health Economics (Econ 507)
+> **Courses:** Microeconomics (Econ 501) · Macroeconomics (Econ 502) · Development Economics (Econ 503) · Political Economy (Econ 512) · Health Economics (Econ 507)
 > **Structure:** Each topic has its own page with key arguments, definitions, statistics, and cross-links
 > **🎯 [Browse Previous Final Exams by Batch →](./batch-finals/README.md)**
 
@@ -11,7 +11,7 @@
 | Course | Code | Topics |
 |--------|------|--------|
 | **Microeconomics** | Econ 501 | Consumer Theory, Welfare, Production, General Equilibrium |
-| **Macroeconomics** | Econ 501 | Solow, Ramsey, Endogenous Growth |
+| **Macroeconomics** | Econ 502 | Solow, Ramsey, Endogenous Growth |
 | **Development** | Econ 503 | Naila Kabeer, Venezuela, Labour Force Survey, Bangladesh Trade |
 | **Political Economy** | Econ 512 | Modernization, Dependency, Washington Consensus, Agriculture, Food Crisis, Dairy, RMG |
 | **Health Economics** | Econ 507 | Health care markets, CDA, insurance, CEA/CUA |
@@ -39,7 +39,7 @@
 
 ---
 
-## 📈 ECON 501 — Macroeconomics
+## 📈 ECON 502 — Macroeconomics
 
 | Resource | Link |
 |----------|------|

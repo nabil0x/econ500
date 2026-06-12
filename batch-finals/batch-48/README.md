@@ -15,9 +15,9 @@
 | 501 | Advanced Microeconomic Theory | 1-4 | [micro-501.md](./micro-501.md) |
 | 502 | Advanced Macroeconomic Theory | 5-6 | [macro-502.md](./macro-502.md) |
 | 503 | Development Economics | 7-8 | [dev-503.md](./dev-503.md) |
+| 504 | Econometrics | 7-8 | [econometrics-504.md](./econometrics-504.md) |
 | 507 | Health Economics | 9 | [health-507.md](./health-507.md) |
-
-*(Other courses in PDF: 504 Econometrics, 510 Labor Economics — excluded)*
+| 510 | Labor Economics | 10-11 | [labor-510.md](./labor-510.md) |
 
 ---
 
@@ -28,4 +28,6 @@
 | **Micro 501** | Quasi-concave utility, Demand estimation & elasticities, Cost functions, Production & returns to scale, Competitive industry equilibrium, Taxation & welfare, General equilibrium, Hicks-Kaldor compensation, Grand utility frontier, Free trade & tariffs |
 | **Macro 502** | Solow model (capital-augmenting tech, BGP), Romer endogenous growth, Ramsey-Cass-Koopmans (Euler equation, phase diagram), Overlapping Generations, RBC, New Keynesian (DSGE, NK IS/PC, Taylor rule) |
 | **Dev 503** | Endogeneity & IV, Logit/Probit/Multinomial logit, Distributed lag models (Koyck, Almon), Unit root tests (ADF, PP, KPSS, Zivot-Andrews), Cointegration & ARDL, ARIMA & Box-Jenkins, VAR & Granger causality, Panel data (FE/RE) |
+| **Econ 504** | Endogeneity & IV, Quantile regression, Logit/Probit/Multinomial logit, Distributed lag (Koyck, Adaptive Expectations, Almon), Unit root tests, Cointegration & ARDL, ARIMA/Box-Jenkins, VAR & Granger causality, Panel data (FE/RE) |
 | **Health 507** | ACA & dependent coverage, Long COVID productivity, LAFPP, Supported employment & disability, Minimum wage & child health, Adverse selection, Emergency department triage, School meals & child weight |
+| **Labor 510** | Circular flow & labor demand, Overtime & wage elasticity, Monopsony in labor market, Minimum wage & employment, Education investment (benefit-cost, NPV), Signaling vs screening |

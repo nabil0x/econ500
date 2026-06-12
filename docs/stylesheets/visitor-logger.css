@@ -226,45 +226,56 @@
 }
 
 /* ── Dark mode overrides ──────────────────────────────────── */
-[data-md-color-scheme="slate"] #vl-panel {
-  background: rgba(30, 33, 41, 0.78);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-              0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+[data-md-color-scheme="ju-dark"] #vl-toggle {
+  background: #242725;
+  color: var(--md-default-fg-color, #ece7dc);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset,
+              0 10px 24px rgba(0, 0, 0, 0.32);
 }
 
-[data-md-color-scheme="slate"] .vl-header {
+[data-md-color-scheme="ju-dark"] #vl-panel {
+  background: rgba(29, 31, 30, 0.92);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38),
+              0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+}
+
+[data-md-color-scheme="ju-dark"] .vl-header {
   border-bottom-color: rgba(255, 255, 255, 0.06);
 }
 
-[data-md-color-scheme="slate"] .vl-header-title {
-  color: var(--md-primary-fg-color--light, #7f8cdb);
+[data-md-color-scheme="ju-dark"] .vl-header-title {
+  color: var(--md-default-fg-color, #ece7dc);
 }
 
-[data-md-color-scheme="slate"] .vl-stat-label {
-  color: var(--md-default-fg-color--light, #aaa);
+[data-md-color-scheme="ju-dark"] .vl-stat-label {
+  color: var(--md-default-fg-color--light, #b6b0a5);
 }
 
-[data-md-color-scheme="slate"] .vl-stat-value {
-  color: var(--md-primary-fg-color--light, #7f8cdb);
+[data-md-color-scheme="ju-dark"] .vl-stat-value {
+  color: var(--md-typeset-a-color, #9bc5b4);
 }
 
-[data-md-color-scheme="slate"] .vl-page-name {
-  color: var(--md-default-fg-color, #ddd);
+[data-md-color-scheme="ju-dark"] .vl-page-name {
+  color: var(--md-default-fg-color, #ece7dc);
 }
 
-[data-md-color-scheme="slate"] .vl-page-time {
-  color: var(--md-accent-fg-color, #80cbc4);
+[data-md-color-scheme="ju-dark"] .vl-page-time {
+  color: var(--md-typeset-a-color, #9bc5b4);
 }
 
-[data-md-color-scheme="slate"] .vl-bar-track {
+[data-md-color-scheme="ju-dark"] .vl-bar-track {
   background: rgba(255, 255, 255, 0.08);
 }
 
-[data-md-color-scheme="slate"] .vl-empty {
-  color: var(--md-default-fg-color--light, #888);
+[data-md-color-scheme="ju-dark"] .vl-bar-fill {
+  background: var(--md-typeset-a-color, #9bc5b4);
 }
 
-[data-md-color-scheme="slate"] .vl-close:hover {
+[data-md-color-scheme="ju-dark"] .vl-empty {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-close:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 

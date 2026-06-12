@@ -1,0 +1,51 @@
+7. Critically explain the three key things that Pigou dealt with in analyzing social welfare.
+
+Answer: Arthur Cecil Pigou, the "father of welfare economics," structured his analysis in his seminal
+work, The Economics of Welfare (1932), around three core pillars.
+
+1. The Definition of Economic Welfare
+
+Pigou established a clear meaning for welfare by distinguishing between individual and social levels:
+
+•   Individual vs. Social Welfare: He defined individual welfare as the sum of satisfactions from
+    goods and services, while social welfare is the total summation of all individual welfares in a
+    society.
+
+•   The "Measuring Rod of Money": Because general welfare is too complex to analyze, Pigou
+    narrowed his focus to economic welfare. This is defined as the part of social welfare that can be
+    related, directly or indirectly, to the "measuring rod of money".
+
+•   Critical Perspective: Pigou regarded economic welfare and national income as coordinate.
+    However, critics argue this classification is too superficial to serve as a comprehensive basis for
+    welfare analysis.
+2. Conditions for Welfare Maximization
+
+Pigou identified two primary conditions that must be met to maximize social welfare:
+
+•   National Income Growth: An increase in national income represents an increase in welfare,
+    provided tastes and income distribution remain constant.
+
+•   Income Equalization: Pigou argued that because money is subject to diminishing marginal utility,
+    transferring income from the rich to the poor increases total welfare by satisfying the more intense
+    needs of the poor. He concluded that economic equality is what maximizes welfare.
+•   Critical Perspective: This "social optimum" (or "ideal output") occurs when marginal social
+    products are equal across all industries. Critics contend that the assumption of "equal capacity for
+    satisfaction" is scientifically untenable and represents a broad value judgment rather than an
+    objective fact.
+
+3. Policy Recommendations for Increasing Welfare
+
+Pigou provided a rationale for state intervention to improve social well-being:
+
+•   Divergence of Private and Social Net Products: He distinguished between the private net
+    product (proceeds added to the investor's earnings) and the social net product (the aggregate
+    contribution to the national dividend).
+
+•   Taxes and Subsidies: When the social net product is greater than the private product (e.g.,
+    technical training of workers), the state should provide a subsidy. Conversely, when the private
+    product is greater and causes damage to society (e.g., factory smoke spoiling a neighborhood’s
+    atmosphere), the state should impose a tax.
+•   Critical Perspective: This approach has been criticized for lacking rigour and operational content.
+    Furthermore, in the real world, structural failures like imperfect knowledge and immobility often
+    "defy correction through social action".
+

@@ -1040,6 +1040,11 @@ body {
   letter-spacing: 0;
 }
 
+[data-md-color-scheme="ju-dark"] .ju-home-hero h1 {
+  color: #fff;
+  border: 0;
+}
+
 .ju-hero-lede {
   max-width: 44rem;
   margin: 1.1rem 0 1.45rem;

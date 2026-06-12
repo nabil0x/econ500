@@ -2,6 +2,7 @@
 
 > **Focus:** Theories of development, underdevelopment, and international political economy
 > **Tutorial Questions:** 3rd tutorial (Modernization theory, Washington Consensus, Rostow vs Dependency) | Tutorial 1 / Exam 2 (Meat demand, WTO AoA, Export-oriented model) | Exam 3 (Modernization theory origins & critiques) | Source: MainQ.pdf (Pages 7, 11)
+> **📖 Answers:** [`answers-political-economy.md`](./answers-political-economy.md) — 18 solved questions covering all tutorials + Batch 47
 
 ---
 

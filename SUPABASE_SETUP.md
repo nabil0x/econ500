@@ -202,35 +202,28 @@ $$;
 GRANT EXECUTE ON FUNCTION public.get_study_ms_per_day TO anon;
 
 -- ═══════════════════════════════════════════════════════════════
--- RPC: get_course_breakdown — study time grouped by course
+-- RPC: get_course_breakdown — visits grouped by course
 -- Course is derived from URL path prefix (501-Microeconomics/...)
+-- NOTE: study time by course is not available (study_sessions has no path-level data)
 -- ═══════════════════════════════════════════════════════════════
 CREATE OR REPLACE FUNCTION public.get_course_breakdown()
-RETURNS TABLE (course TEXT, total_ms BIGINT, total_visits BIGINT)
+RETURNS TABLE (course TEXT, total_visits BIGINT)
 LANGUAGE sql STABLE
 AS $$
-  WITH course_pages AS (
-    SELECT
-      pv.path,
-      CASE
-        WHEN pv.path LIKE '/501-Microeconomics/%' OR pv.path LIKE '/microeconomics/%' THEN 'Microeconomics'
-        WHEN pv.path LIKE '/503-Development/%'     OR pv.path LIKE '/development/%'   THEN 'Development'
-        WHEN pv.path LIKE '/512-Political-Economy/%' THEN 'Political Economy'
-        WHEN pv.path LIKE '/health-economics/%'      THEN 'Health Economics'
-        WHEN pv.path LIKE '/macroeconomics/%'         THEN 'Macroeconomics'
-        WHEN pv.path LIKE '/econometrics/%'           THEN 'Econometrics'
-        ELSE 'Other'
-      END AS course_name
-    FROM public.page_visits pv
-  )
   SELECT
-    cp.course_name AS course,
-    COALESCE(SUM(ss.total_study_ms), 0)::BIGINT AS total_ms,
-    COUNT(DISTINCT cp.path)::BIGINT AS total_visits
-  FROM course_pages cp
-  LEFT JOIN public.study_sessions ss ON 1=1
-  GROUP BY cp.course_name
-  ORDER BY total_ms DESC;
+    CASE
+      WHEN pv.path LIKE '/501-Microeconomics/%' OR pv.path LIKE '/microeconomics/%' THEN 'Microeconomics'
+      WHEN pv.path LIKE '/503-Development/%'     OR pv.path LIKE '/development/%'   THEN 'Development'
+      WHEN pv.path LIKE '/512-Political-Economy/%' THEN 'Political Economy'
+      WHEN pv.path LIKE '/health-economics/%'      THEN 'Health Economics'
+      WHEN pv.path LIKE '/macroeconomics/%'         THEN 'Macroeconomics'
+      WHEN pv.path LIKE '/econometrics/%'           THEN 'Econometrics'
+      ELSE 'Other'
+    END AS course,
+    COUNT(DISTINCT pv.path)::BIGINT AS total_visits
+  FROM public.page_visits pv
+  GROUP BY course
+  ORDER BY total_visits DESC;
 $$;
 GRANT EXECUTE ON FUNCTION public.get_course_breakdown TO anon;
 
@@ -251,6 +244,72 @@ AS $$
   LIMIT limit_count;
 $$;
 GRANT EXECUTE ON FUNCTION public.get_most_studied_pages TO anon;
+
+-- ═══════════════════════════════════════════════════════════════
+-- RPC: get_my_clicks — all clicks for a given session/user
+-- Returns the 50 most recent click events for one session_id.
+-- ═══════════════════════════════════════════════════════════════
+CREATE OR REPLACE FUNCTION public.get_my_clicks(p_session_id TEXT)
+RETURNS TABLE (path TEXT, target TEXT, category TEXT, created_at TIMESTAMPTZ)
+LANGUAGE sql STABLE
+AS $$
+  SELECT ce.path, ce.target, ce.category, ce.created_at
+  FROM public.click_events ce
+  WHERE ce.session_id = p_session_id
+  ORDER BY ce.created_at DESC
+  LIMIT 50;
+$$;
+GRANT EXECUTE ON FUNCTION public.get_my_clicks TO anon;
+
+-- ═══════════════════════════════════════════════════════════════
+-- RPC: get_my_click_stats — aggregated click stats for one session
+-- Returns total clicks + unique pages clicked for a session_id.
+-- ═══════════════════════════════════════════════════════════════
+CREATE OR REPLACE FUNCTION public.get_my_click_stats(p_session_id TEXT)
+RETURNS TABLE (total_clicks BIGINT, unique_pages_clicked BIGINT)
+LANGUAGE sql STABLE
+AS $$
+  SELECT
+    COUNT(*)::BIGINT AS total_clicks,
+    COUNT(DISTINCT ce.path)::BIGINT AS unique_pages_clicked
+  FROM public.click_events ce
+  WHERE ce.session_id = p_session_id;
+$$;
+GRANT EXECUTE ON FUNCTION public.get_my_click_stats TO anon;
+
+-- ═══════════════════════════════════════════════════════════════
+-- RPC: get_my_top_pages — most-clicked pages for a single session
+-- ═══════════════════════════════════════════════════════════════
+CREATE OR REPLACE FUNCTION public.get_my_top_pages(p_session_id TEXT, limit_count INT DEFAULT 10)
+RETURNS TABLE (path TEXT, click_count BIGINT)
+LANGUAGE sql STABLE
+AS $$
+  SELECT ce.path, COUNT(*)::BIGINT AS click_count
+  FROM public.click_events ce
+  WHERE ce.session_id = p_session_id
+  GROUP BY ce.path
+  ORDER BY click_count DESC
+  LIMIT limit_count;
+$$;
+GRANT EXECUTE ON FUNCTION public.get_my_top_pages TO anon;
+
+-- ═══════════════════════════════════════════════════════════════
+-- RPC: get_most_clicked_pages — top pages by click count (all users)
+-- ═══════════════════════════════════════════════════════════════
+CREATE OR REPLACE FUNCTION public.get_most_clicked_pages(limit_count INT DEFAULT 10)
+RETURNS TABLE (path TEXT, click_count BIGINT, sample_target TEXT)
+LANGUAGE sql STABLE
+AS $$
+  SELECT
+    ce.path,
+    COUNT(*)::BIGINT AS click_count,
+    MODE() WITHIN GROUP (ORDER BY ce.target) AS sample_target
+  FROM public.click_events ce
+  GROUP BY ce.path
+  ORDER BY click_count DESC
+  LIMIT limit_count;
+$$;
+GRANT EXECUTE ON FUNCTION public.get_most_clicked_pages TO anon;
 ```
 
 ---

@@ -164,17 +164,14 @@
 
 | Theme | Appears In |
 |-------|-----------|
-| **Export dependency / resource curse** | Venezuela, Iran, Bangladesh Trade (503); RMG, Cash Crops, Food Crisis (512) |
-| **State vs market** | Venezuela governance (503); Modernization, Dependency, WC (512) |
+| **Export dependency / resource curse** | Venezuela, Bangladesh Trade (503); RMG, Cash Crops, Food Crisis (512) |
+| **State vs market** | Venezuela (503); Modernization, Dependency, Washington Consensus (512) |
 | **Role of IFIs (WB/IMF)** | Trade policy (503); Washington Consensus, Agriculture (512) |
-| **Food security & land use** | — (503); Free Trade, Food Crisis, Dairy, Napier grass (512) |
+| **Food security and land use** | Free Trade, Food Crisis, Dairy (512) |
 | **Value addition / industrialization** | Bangladesh Trade (503); RMG Sector (512) |
-| **Gender & development** | Naila Kabeer (503) |
-| **Inequality** | LFS wage data (503); Washington Consensus, Food Crisis (512) |
-| **Domestic vs external demand** | Iran, Venezuela (503); UNCTAD report, export-oriented model (512) |
-| **Growth & convergence** | Solow, Ramsey models (Macro); Bangladesh as outlier (503) |
-| **Pareto optimality & welfare** | General Equilibrium (Micro); social welfare, compensation (Micro) |
-| **General equilibrium thinking** | Micro GE (interconnected markets) → Macro GE (Solow steady state) → Development GE (sectoral linkages) |
+| **Gender and development** | Naila Kabeer (503) |
+| **Growth and convergence** | Solow, Ramsey (Macro); Bangladesh as outlier (503) |
+| **Pareto optimality and welfare** | General Equilibrium (Micro) |
 
 ---
 

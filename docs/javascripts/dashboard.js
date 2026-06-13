@@ -140,17 +140,15 @@
           '<div id="ds-session-section"></div>' +
         '</div>' +
 
-        /* ════ Raw Data Logger (collapsible) ════ */
+        /* ════ Live Data Feed ════ */
         '<div class="ds-section ds-debug">' +
-          '<button class="ds-debug-toggle" id="ds-debug-toggle" aria-expanded="false">' +
-            '\u{1F50D} Debug: Raw Database Records' +
-            '<span class="ds-debug-arrow">\u25B6</span>' +
-          '</button>' +
-          '<div class="ds-debug-body" id="ds-debug-body" hidden>' +
-            '<p class="ds-debug-hint">Last 10 records from each table. ' +
-            'Use this to verify that the logger is capturing data.</p>' +
-            '<div id="ds-debug-tables"></div>' +
+          '<div class="ds-debug-header">' +
+            '<span class="ds-debug-header-label">\u{1F4CA} Live Data Feed</span>' +
+            '<span class="ds-debug-header-badge" id="ds-debug-badge"></span>' +
           '</div>' +
+          '<p class="ds-debug-hint">Live records pulled from the database. ' +
+          'Expand a table to inspect raw rows.</p>' +
+          '<div id="ds-debug-tables"></div>' +
         '</div>' +
 
       '</div>';
@@ -416,12 +414,13 @@
     });
   }
 
-  /* ── Render debug logger (raw table data) ───────────── */
+  /* ── Render live data feed (per-table collapsible) ──── */
   function renderDebugLogger() {
     var target = document.getElementById('ds-debug-tables');
+    var badge  = document.getElementById('ds-debug-badge');
     if (!target) return;
 
-    target.innerHTML = '<div class="ds-loader">\u23F3 Loading raw data\u2026</div>';
+    target.innerHTML = '<div class="ds-loader">\u23F3 Loading\u2026</div>';
 
     if (typeof sbSelect !== 'function') {
       target.innerHTML = '<div class="ds-empty">sbSelect not available</div>';
@@ -445,48 +444,89 @@
     })).then(function (results) {
       clear(target);
 
+      var totalRecords = 0;
+
       results.forEach(function (rows, idx) {
         var table = tables[idx];
-        var block = el('div', 'ds-debug-table');
-        var heading = el('div', 'ds-debug-table-title');
-        heading.textContent = table.label + ' (' + rows.length + ' records)';
-        block.appendChild(heading);
+        var count = rows.length;
+        totalRecords += count;
+
+        /* ── Per-table collapsible block ── */
+        var block = el('div', 'ds-dt');
+
+        var toggle = el('button', 'ds-dt-toggle');
+        toggle.setAttribute('aria-expanded', 'false');
+
+        var statusDot = el('span', 'ds-dt-status');
+        statusDot.setAttribute('data-status', count > 0 ? 'has-data' : 'empty');
+
+        var labelSpan = el('span', 'ds-dt-label');
+        labelSpan.textContent = table.label;
+
+        var countSpan = el('span', 'ds-dt-count');
+        countSpan.textContent = count + ' record' + (count !== 1 ? 's' : '');
+
+        var arrow = el('span', 'ds-dt-arrow');
+        arrow.textContent = '\u25B6';
+
+        toggle.appendChild(statusDot);
+        toggle.appendChild(labelSpan);
+        toggle.appendChild(countSpan);
+        toggle.appendChild(arrow);
+        block.appendChild(toggle);
+
+        /* ── Collapsible body ── */
+        var body = el('div', 'ds-dt-body');
+        var scrollWrap = el('div', 'ds-dt-scroll');
 
         if (!rows.length) {
           var empty = el('div', 'ds-empty');
           empty.textContent = 'No records yet';
-          block.appendChild(empty);
-          target.appendChild(block);
-          return;
+          scrollWrap.appendChild(empty);
+        } else {
+          var tbl = el('table', 'ds-dt-table');
+
+          var thead = el('thead');
+          var headerRow = el('tr');
+          table.cols.forEach(function (c) {
+            var th = el('th');
+            th.textContent = c;
+            headerRow.appendChild(th);
+          });
+          thead.appendChild(headerRow);
+          tbl.appendChild(thead);
+
+          var tbody = el('tbody');
+          rows.forEach(function (row) {
+            var tr = el('tr');
+            table.cols.forEach(function (c) {
+              var td = el('td');
+              var val = row[c];
+              td.textContent = val != null ? String(val) : '\u2014';
+              td.title = val != null ? String(val) : '';
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+          tbl.appendChild(tbody);
+          scrollWrap.appendChild(tbl);
         }
 
-        var tbl = el('table', 'ds-debug-table-elem');
-        var thead = el('thead');
-        var headerRow = el('tr');
-        table.cols.forEach(function (c) {
-          var th = el('th');
-          th.textContent = c;
-          headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        tbl.appendChild(thead);
-
-        var tbody = el('tbody');
-        rows.forEach(function (row) {
-          var tr = el('tr');
-          table.cols.forEach(function (c) {
-            var td = el('td');
-            var val = row[c];
-            td.textContent = val != null ? String(val) : '\u2014';
-            td.title = val != null ? String(val) : '';
-            tr.appendChild(td);
-          });
-          tbody.appendChild(tr);
-        });
-        tbl.appendChild(tbody);
-        block.appendChild(tbl);
+        body.appendChild(scrollWrap);
+        block.appendChild(body);
         target.appendChild(block);
+
+        /* ── Toggle handler ── */
+        toggle.addEventListener('click', function () {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          body.classList.toggle('ds-dt-open');
+          arrow.textContent = expanded ? '\u25B6' : '\u25BC';
+        });
       });
+
+      /* Update header badge */
+      if (badge) badge.textContent = totalRecords + ' total records';
     });
   }
 
@@ -496,18 +536,6 @@
 
     /* Render debug logger after main dashboard */
     renderDebugLogger();
-
-    /* Toggle for debug logger */
-    var toggle = document.getElementById('ds-debug-toggle');
-    var body   = document.getElementById('ds-debug-body');
-    if (toggle && body) {
-      toggle.addEventListener('click', function () {
-        var expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        body.hidden = expanded;
-        toggle.querySelector('.ds-debug-arrow').textContent = expanded ? '\u25B6' : '\u25BC';
-      });
-    }
 
     /* Responsive chart: redraw on resize */
     var canvas = document.getElementById('ds-chart-canvas');

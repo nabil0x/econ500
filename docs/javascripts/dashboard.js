@@ -1,17 +1,16 @@
 /**
- * Study Dashboard — Full-page analytics dashboard
+ * Study Dashboard v3 — Full-page analytics dashboard
  * Renders into <div id="study-dashboard"> element on the MkDocs study-dashboard page.
  *
  * Dependencies:
  *   - window.__studyLogger (from docs/javascripts/visitor-logger.js)
- *     provides sbRpc(fn, params) and lsGet(key, def)
+ *     provides sbRpc(fn, params), sbSelect(table, opts), lsGet(key, def),
+ *     sessionId, visitorId
  *   - Canvas 2D API (no external libraries)
  *
  * Class naming convention (CSS handled separately):
- *   ds-grid, ds-card, ds-card-value, ds-card-label,
- *   ds-chart-container, ds-section, ds-section-title,
- *   ds-row, ds-row-label, ds-row-value,
- *   ds-bar-track, ds-bar-fill
+ *   ds-container, ds-header-bar, ds-grid, ds-card, ds-section,
+ *   ds-row, ds-bar-track, ds-bar-fill, ds-chart-container, etc.
  */
 (function () {
   'use strict';
@@ -44,6 +43,13 @@
     });
   }
 
+  /* ── STATE ──────────────────────────────────────────── */
+  var STATE = {
+    days: 30,
+    sessionId: (logger.sessionId) || null,
+    visitorId: (logger.visitorId) || null,
+  };
+
   /* ── DOM helpers ────────────────────────────────────── */
   function el(tag, className) {
     var e = document.createElement(tag);
@@ -56,8 +62,9 @@
   }
 
   function esc(str) {
+    if (str == null) return '';
     var d = document.createElement('div');
-    d.appendChild(document.createTextNode(str));
+    d.appendChild(document.createTextNode(String(str)));
     return d.innerHTML;
   }
 
@@ -66,7 +73,12 @@
   }
 
   function showLoading(parent) {
-    parent.innerHTML = '<div class="ds-loading">\u23F3 Loading\u2026</div>';
+    if (parent) parent.innerHTML = '<div class="ds-loader">\u23F3 Loading\u2026</div>';
+  }
+
+  function setText(id, val) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = val;
   }
 
   /* ── Format helpers ─────────────────────────────────── */
@@ -86,78 +98,140 @@
     return days[d.getDay()];
   }
 
+  function truncPath(p) {
+    if (!p) return '/';
+    var s = p.replace(/^\/econ500\//, '');
+    if (s.length > 35) s = s.slice(0, 32) + '...';
+    return s || '/';
+  }
+
+  function shortId(id) {
+    if (!id) return '\u2014';
+    return id.length > 10 ? id.slice(0, 10) + '\u2026' : id;
+  }
+
+  function fmtTime(iso) {
+    if (!iso) return '\u2014';
+    try {
+      var d = new Date(iso);
+      return d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+    } catch (e) { return String(iso); }
+  }
+
   /* ── Build dashboard skeleton ───────────────────────── */
   function buildSkeleton() {
     var html =
       '<div class="ds-container">' +
 
-        /* ════ Stats Grid ════ */
+        /* ════ 1. Header Bar + Range Selector ════ */
+        '<div class="ds-header-bar">' +
+          '<div class="ds-header-text">' +
+            '<h2>Study Analytics</h2>' +
+            '<p>Your study activity across all economics courses</p>' +
+          '</div>' +
+          '<div class="ds-range-selector">' +
+            '<button class="ds-range-btn" data-days="7">7d</button>' +
+            '<button class="ds-range-btn ds-range-btn--active" data-days="30">30d</button>' +
+            '<button class="ds-range-btn" data-days="90">90d</button>' +
+          '</div>' +
+        '</div>' +
+
+        /* ════ 2. Overview Stats Grid ════ */
         '<div class="ds-section">' +
           '<h2 class="ds-section-title">Overview</h2>' +
-          '<div class="ds-grid">' +
+          '<div id="ds-overview-grid" class="ds-grid">' +
             '<div class="ds-card">' +
-              '<div class="ds-card-value" id="ds-val-clicks">—</div>' +
+              '<div class="ds-card-value" id="ds-val-clicks">\u2014</div>' +
               '<div class="ds-card-label">Total Clicks</div>' +
             '</div>' +
             '<div class="ds-card">' +
-              '<div class="ds-card-value" id="ds-val-hours">—</div>' +
+              '<div class="ds-card-value" id="ds-val-hours">\u2014</div>' +
               '<div class="ds-card-label">Study Hours</div>' +
             '</div>' +
             '<div class="ds-card">' +
-              '<div class="ds-card-value" id="ds-val-streak">—</div>' +
+              '<div class="ds-card-value" id="ds-val-streak">\u2014</div>' +
               '<div class="ds-card-label">Day Streak</div>' +
             '</div>' +
             '<div class="ds-card">' +
-              '<div class="ds-card-value" id="ds-val-today">—</div>' +
+              '<div class="ds-card-value" id="ds-val-today">\u2014</div>' +
               '<div class="ds-card-label">Today\u2019s Minutes</div>' +
+            '</div>' +
+            '<div class="ds-card">' +
+              '<div class="ds-card-value" id="ds-val-active">\u2014</div>' +
+              '<div class="ds-card-label">Active Visitors</div>' +
             '</div>' +
           '</div>' +
         '</div>' +
 
-        /* ════ 7-Day Activity Chart ════ */
+        /* ════ 3. Study Pulse (7-day bar chart) ════ */
         '<div class="ds-section">' +
-          '<h2 class="ds-section-title">7-Day Activity</h2>' +
+          '<h2 class="ds-section-title">Study Pulse (7-Day)</h2>' +
           '<div class="ds-chart-container">' +
             '<canvas id="ds-chart-canvas" height="200"></canvas>' +
           '</div>' +
         '</div>' +
 
-        /* ════ Course Breakdown ════ */
+        /* ════ 4. Course Breakdown + Topic Drill-down ════ */
         '<div class="ds-section">' +
           '<h2 class="ds-section-title">Course Breakdown</h2>' +
           '<div id="ds-course-section"></div>' +
+          '<p class="ds-hint">Click a course to drill into topics.</p>' +
         '</div>' +
 
-        /* ════ Most Studied Pages ════ */
+        /* ════ 5. Insights Panel ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Insights</h2>' +
+          '<div id="ds-insights-section"></div>' +
+        '</div>' +
+
+        /* ════ 6. Content Type Breakdown ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Content Type Performance</h2>' +
+          '<div id="ds-content-types-section"></div>' +
+        '</div>' +
+
+        /* ════ 7. Most Studied Pages (v2) ════ */
         '<div class="ds-section">' +
           '<h2 class="ds-section-title">Most Studied Pages</h2>' +
           '<div id="ds-pages-section"></div>' +
         '</div>' +
 
-        /* ════ Session History ════ */
+        /* ════ 8. Most Clicked Pages (v3) ════ */
         '<div class="ds-section">' +
-          '<h2 class="ds-section-title">Recent Session</h2>' +
-          '<div id="ds-session-section"></div>' +
+          '<h2 class="ds-section-title">Most Clicked Pages</h2>' +
+          '<div id="ds-topclicks-section"></div>' +
         '</div>' +
 
-        /* ════ My Click Activity ════ */
+        /* ════ 9. Top Search Queries ════ */
         '<div class="ds-section">' +
-          '<h2 class="ds-section-title">\u{1F4A5} My Click Activity</h2>' +
+          '<h2 class="ds-section-title">Top Search Queries</h2>' +
+          '<div id="ds-search-section"></div>' +
+        '</div>' +
+
+        /* ════ 10. Hourly Study Pattern ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Hourly Study Pattern</h2>' +
+          '<div id="ds-hourly-section"></div>' +
+        '</div>' +
+
+        /* ════ 11. My Click Activity (per-session) ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">My Click Activity</h2>' +
           '<div id="ds-myclicks-stats" class="ds-clicks-stats"></div>' +
           '<div id="ds-myclicks-pages"></div>' +
           '<div id="ds-myclicks-log"></div>' +
         '</div>' +
 
-        /* ════ Most Clicked Pages ════ */
+        /* ════ 12. Recent Session (from localStorage) ════ */
         '<div class="ds-section">' +
-          '<h2 class="ds-section-title">\u{1F4CA} Most Clicked Pages</h2>' +
-          '<div id="ds-topclicks-section"></div>' +
+          '<h2 class="ds-section-title">Recent Session</h2>' +
+          '<div id="ds-session-section"></div>' +
         '</div>' +
 
-        /* ════ Live Data Feed ════ */
+        /* ════ 13. Live Data Feed ════ */
         '<div class="ds-section ds-debug">' +
           '<div class="ds-debug-header">' +
-            '<span class="ds-debug-header-label">\u{1F4CA} Live Data Feed</span>' +
+            '<span class="ds-debug-header-label">\uD83D\uDCCA Live Data Feed</span>' +
             '<span class="ds-debug-header-badge" id="ds-debug-badge"></span>' +
           '</div>' +
           '<p class="ds-debug-hint">Live records pulled from the database. ' +
@@ -170,20 +244,35 @@
     container.innerHTML = html;
   }
 
-  /* ── Render stats grid ──────────────────────────────── */
-  function renderStats(data) {
-    setText('ds-val-clicks', data.totalClicks != null ? String(data.totalClicks) : '\u2014');
-    setText('ds-val-hours', data.totalHours != null ? String(data.totalHours) : '\u2014');
-    setText('ds-val-streak', data.streak != null ? String(data.streak) : '\u2014');
-    setText('ds-val-today', data.todayMinutes != null ? String(data.todayMinutes) : '\u2014');
+  /* ════════════════════════════════════════════════════════
+   *  RENDER FUNCTIONS
+   * ════════════════════════════════════════════════════════ */
+
+  /* ── 2. Overview stats grid ─────────────────────────── */
+  function renderOverview(summary, totalClicks, streak, todayMs, activeVisitors) {
+    /* summary: from get_dashboard_summary → [{metric_name, metric_value}] */
+    var totalStudyMs = 0;
+    if (summary && summary.length) {
+      for (var i = 0; i < summary.length; i++) {
+        if (summary[i].metric_name === 'total_study_ms') {
+          totalStudyMs = summary[i].metric_value || 0;
+        }
+      }
+    }
+
+    var activeCount = 0;
+    if (activeVisitors && activeVisitors.length > 0) {
+      activeCount = activeVisitors[0].active_visitors || 0;
+    }
+
+    setText('ds-val-clicks', totalClicks != null ? String(totalClicks) : '\u2014');
+    setText('ds-val-hours', totalStudyMs > 0 ? fmtHours(totalStudyMs) + 'h' : '\u2014');
+    setText('ds-val-streak', streak != null ? String(streak) : '\u2014');
+    setText('ds-val-today', todayMs != null ? fmtMinutes(todayMs) : '\u2014');
+    setText('ds-val-active', String(activeCount));
   }
 
-  function setText(id, val) {
-    var el = document.getElementById(id);
-    if (el) el.textContent = val;
-  }
-
-  /* ── Draw 7-day bar chart (Canvas 2D) ───────────────── */
+  /* ── 3. Draw 7-day bar chart (Canvas 2D) ────────────── */
   var chartDataCache = null;
 
   function drawChart(data) {
@@ -195,7 +284,7 @@
     var chartData = (data || []).map(function (d) {
       return {
         day:     dayName(d.date),
-        minutes: Math.round((d.study_ms || 0) / 60000),
+        minutes: Math.round((d.total_ms || 0) / 60000),
       };
     });
 
@@ -287,129 +376,241 @@
   }
 
   function redrawChart() {
-    /* Re-read canvas size and redraw from cache */
     var canvas = document.getElementById('ds-chart-canvas');
     if (!canvas) return;
     drawChart(chartDataCache);
   }
 
-  /* ── Render course breakdown ────────────────────────── */
-  function renderCourses(data) {
+  /* ── 4. Course breakdown + topic drill-down ─────────── */
+  function renderCourses(courses) {
     var section = document.getElementById('ds-course-section');
     if (!section) return;
     clear(section);
 
-    var courses = data || [];
-    if (!courses.length) {
+    var data = courses || [];
+    if (!data.length) {
       showEmpty(section);
       return;
     }
 
-    /* Sort by visit count descending */
-    courses.sort(function (a, b) {
-      return (b.total_visits || 0) - (a.total_visits || 0);
+    /* Sort by total_study_ms descending */
+    data.sort(function (a, b) {
+      return (b.total_study_ms || 0) - (a.total_study_ms || 0);
     });
 
-    var maxVal = Math.max.apply(null, courses.map(function (c) { return c.total_visits || 0; })) || 1;
+    var maxStudy = Math.max.apply(null, data.map(function (c) { return c.total_study_ms || 0; })) || 1;
 
-    courses.forEach(function (c) {
-      var pct = Math.min(((c.total_visits || 0) / maxVal) * 100, 100);
-      var row = el('div', 'ds-row');
+    data.forEach(function (c) {
+      var courseName = c.course || 'Unknown';
+      var studyMs = c.total_study_ms || 0;
+      var sessions = c.session_count || 0;
+      var pct = Math.min((studyMs / maxStudy) * 100, 100);
+
+      var row = el('div', 'ds-topic-course');
+      row.setAttribute('data-course', courseName);
+
       row.innerHTML =
-        '<span class="ds-row-label">' + esc(c.course_name || c.course || 'Unknown') + '</span>' +
-        '<span class="ds-row-value">' + (c.total_visits || 0) + ' visits</span>' +
+        '<span class="ds-topic-course-icon">\u25B6</span>' +
+        '<span class="ds-topic-course-name">' + esc(courseName) + '</span>' +
+        '<span class="ds-topic-course-hours">' + fmtHours(studyMs) + 'h</span>' +
+        '<span class="ds-row-value">' + sessions + ' session' + (sessions !== 1 ? 's' : '') + '</span>' +
         '<div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>';
+
       section.appendChild(row);
+
+      /* Hidden topic list container for this course */
+      var topicList = el('div', 'ds-topic-list');
+      topicList.setAttribute('data-course', courseName);
+      topicList.style.display = 'none';
+      section.appendChild(topicList);
     });
   }
 
-  /* ── Render my click activity ───────────────────────── */
-  function renderMyClicks(stats, topPages, recentClicks) {
-    var statsEl = document.getElementById('ds-myclicks-stats');
-    var pagesEl = document.getElementById('ds-myclicks-pages');
-    var logEl   = document.getElementById('ds-myclicks-log');
-    if (!statsEl) return;
+  /* Topic cache to avoid re-fetching */
+  var topicCache = {};
 
-    /* Stats row */
-    var totalClicks = (stats && stats.total_clicks) || 0;
-    var uniquePages = (stats && stats.unique_pages_clicked) || 0;
-    statsEl.innerHTML =
-      '<div class="ds-clicks-stat">' +
-        '<span class="ds-clicks-stat-value">' + totalClicks + '</span>' +
-        '<span class="ds-clicks-stat-label">your total clicks</span>' +
-      '</div>' +
-      '<div class="ds-clicks-stat">' +
-        '<span class="ds-clicks-stat-value">' + uniquePages + '</span>' +
-        '<span class="ds-clicks-stat-label">unique pages clicked</span>' +
-      '</div>';
+  function expandCourse(courseEl, courseName) {
+    var icon = courseEl.querySelector('.ds-topic-course-icon');
+    var topicList = courseEl.nextElementSibling;
 
-    /* Top pages for this user */
-    if (!pagesEl) return;
-    clear(pagesEl);
-    var pages = topPages || [];
-    if (pages.length > 0) {
-      var maxClicks = pages[0].click_count || 1;
-      var h = '<div class="ds-section-subtitle">Your most-clicked pages</div>';
-      pages.forEach(function (p) {
-        var pct = Math.min(((p.click_count || 0) / maxClicks) * 100, 100);
-        h +=
-          '<div class="ds-row">' +
-          '  <span class="ds-row-label">' + esc(p.path || 'Unknown') + '</span>' +
-          '  <span class="ds-row-value">' + p.click_count + ' clicks</span>' +
-          '  <div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>' +
-          '</div>';
-      });
-      pagesEl.innerHTML = h;
+    if (!topicList || !topicList.classList.contains('ds-topic-list')) return;
+
+    /* Toggle expand/collapse */
+    var isExpanded = topicList.style.display !== 'none';
+
+    if (isExpanded) {
+      topicList.style.display = 'none';
+      if (icon) icon.textContent = '\u25B6';
+      courseEl.classList.remove('ds-topic-course--expanded');
+      return;
     }
 
-    /* Recent click log */
-    if (!logEl) return;
-    clear(logEl);
-    var clicks = recentClicks || [];
-    if (clicks.length > 0) {
-      var logH = '<div class="ds-section-subtitle">Recent clicks</div><div class="ds-clicks-log">';
-      clicks.forEach(function (c) {
-        logH +=
-          '<div class="ds-click-entry">' +
-          '  <span class="ds-click-path" title="' + esc(c.path || '') + '">' + esc(truncPath(c.path)) + '</span>' +
-          '  <span class="ds-click-arrow">\u2192</span>' +
-          '  <span class="ds-click-target" title="' + esc(c.target || '') + '">' + esc(truncPath(c.target)) + '</span>' +
-          (c.category ? '  <span class="ds-click-tag">' + esc(c.category) + '</span>' : '') +
-          '  <span class="ds-click-time">' + fmtTime(c.created_at) + '</span>' +
-          '</div>';
+    /* Expand */
+    topicList.style.display = 'block';
+    if (icon) icon.textContent = '\u25BC';
+    courseEl.classList.add('ds-topic-course--expanded');
+
+    /* Fetch topics if not cached */
+    if (topicCache[courseName]) {
+      renderTopicItems(topicList, topicCache[courseName]);
+      return;
+    }
+
+    topicList.innerHTML = '<div class="ds-loader">\u23F3 Loading\u2026</div>';
+
+    rpc('get_study_ms_by_topic', { p_course: courseName, days: STATE.days })
+      .then(function (data) {
+        var topics = data || [];
+        topicCache[courseName] = topics;
+        renderTopicItems(topicList, topics);
+      })
+      .catch(function () {
+        topicList.innerHTML = '<div class="ds-empty">Could not load topics.</div>';
       });
-      logH += '</div>';
-      logEl.innerHTML = logH;
+  }
+
+  function renderTopicItems(topicList, topics) {
+    clear(topicList);
+
+    if (!topics.length) {
+      topicList.innerHTML = '<div class="ds-empty">No topic data for this course.</div>';
+      return;
+    }
+
+    var maxStudy = Math.max.apply(null, topics.map(function (t) { return t.total_study_ms || 0; })) || 1;
+
+    topics.forEach(function (t) {
+      var topicName = t.topic || 'Unknown';
+      var studyMs = t.total_study_ms || 0;
+      var sessions = t.session_count || 0;
+      var pct = Math.min((studyMs / maxStudy) * 100, 100);
+
+      var item = el('div', 'ds-topic-item');
+      item.setAttribute('data-topic', topicName);
+      item.innerHTML =
+        '<span class="ds-topic-name">' + esc(topicName) + '</span>' +
+        '<span class="ds-topic-value">' + fmtHours(studyMs) + 'h</span>' +
+        '<span class="ds-row-value">' + sessions + '</span>' +
+        '<div class="ds-bar-track"><div class="ds-bar-fill ds-topic-bar" style="width:' + pct.toFixed(1) + '%"></div></div>';
+
+      topicList.appendChild(item);
+    });
+  }
+
+  function handleTopicDrillDown(e) {
+    /* Course click */
+    var courseEl = e.target.closest('.ds-topic-course');
+    if (courseEl) {
+      var courseName = courseEl.getAttribute('data-course');
+      if (courseName) expandCourse(courseEl, courseName);
+      return;
+    }
+
+    /* Topic item click — toggle active */
+    var topicItem = e.target.closest('.ds-topic-item');
+    if (topicItem) {
+      topicItem.classList.toggle('ds-topic-item--active');
     }
   }
 
-  /* ── Render most clicked pages (all users) ──────────── */
-  function renderMostClickedPages(data) {
-    var section = document.getElementById('ds-topclicks-section');
+  /* ── 5. Insights panel ──────────────────────────────── */
+  var insightLabels = {
+    most_studied_course: 'Most Studied Course',
+    neglected_course: 'Needs Attention',
+    study_time_total_hours: 'Total Study Time',
+    week_trend_pct: 'Weekly Trend',
+  };
+
+  var insightIcons = {
+    most_studied_course: '\uD83C\uDF1F',
+    neglected_course: '\u26A0\uFE0F',
+    study_time_total_hours: '\u23F1\uFE0F',
+    week_trend_pct: '\uD83D\uDCC8',
+  };
+
+  function getInsightValue(insight) {
+    var key = insight.insight_key;
+    var val = insight.insight_value;
+
+    if (key === 'study_time_total_hours') {
+      var num = parseFloat(val);
+      if (!isNaN(num)) return num.toFixed(1) + 'h';
+    }
+    if (key === 'week_trend_pct') {
+      var num = parseFloat(val);
+      if (!isNaN(num)) return (num > 0 ? '+' : '') + num.toFixed(1) + '%';
+    }
+    return val || '\u2014';
+  }
+
+  function renderInsights(insights) {
+    var section = document.getElementById('ds-insights-section');
     if (!section) return;
     clear(section);
 
-    var pages = data || [];
-    if (!pages.length) {
+    var data = insights || [];
+    if (!data.length) {
       showEmpty(section);
       return;
     }
 
-    var maxClicks = pages[0].click_count || 1;
-    pages.forEach(function (p, i) {
-      var pct = Math.min(((p.click_count || 0) / maxClicks) * 100, 100);
+    var grid = el('div', 'ds-insights-grid');
+
+    data.forEach(function (insight) {
+      var type = insight.insight_type || 'info';
+      var key = insight.insight_key || '';
+      var label = insightLabels[key] || key.replace(/_/g, ' ');
+      var value = getInsightValue(insight);
+      var icon = insightIcons[key] || '\u2139\uFE0F';
+
+      var typeClass = 'ds-insight--info';
+      if (type === 'positive') typeClass = 'ds-insight--positive';
+      else if (type === 'warning') typeClass = 'ds-insight--warning';
+
+      var card = el('div', 'ds-insight-card ' + typeClass);
+      card.innerHTML =
+        '<span class="ds-insight-icon">' + icon + '</span>' +
+        '<span class="ds-insight-text">' + esc(value) + '</span>' +
+        '<span class="ds-insight-label">' + esc(label) + '</span>';
+
+      grid.appendChild(card);
+    });
+
+    section.appendChild(grid);
+  }
+
+  /* ── 6. Content type breakdown ──────────────────────── */
+  function renderContentTypes(data) {
+    var section = document.getElementById('ds-content-types-section');
+    if (!section) return;
+    clear(section);
+
+    var types = data || [];
+    if (!types.length) {
+      showEmpty(section);
+      return;
+    }
+
+    /* Sort by visits descending */
+    types.sort(function (a, b) {
+      return (b.visits || 0) - (a.visits || 0);
+    });
+
+    var maxVisits = types[0].visits || 1;
+
+    types.forEach(function (t) {
+      var pct = Math.min(((t.visits || 0) / maxVisits) * 100, 100);
       var row = el('div', 'ds-row');
       row.innerHTML =
-        '<span class="ds-rank">' + (i + 1) + '</span>' +
-        '<span class="ds-row-label">' + esc(p.path || 'Unknown') + '</span>' +
-        '<span class="ds-row-value">' + p.click_count + ' clicks</span>' +
+        '<span class="ds-row-label">' + esc(t.content_type || 'Unknown') + '</span>' +
+        '<span class="ds-row-value">' + (t.visits || 0) + ' visits</span>' +
         '<div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>';
       section.appendChild(row);
     });
   }
 
-  /* ── Render most studied pages ──────────────────────── */
-  function renderPages(data) {
+  /* ── 7. Most studied pages (v2) ─────────────────────── */
+  function renderMostStudiedPages(data) {
     var section = document.getElementById('ds-pages-section');
     if (!section) return;
     clear(section);
@@ -425,18 +626,188 @@
       row.innerHTML =
         '<span class="ds-rank">' + (i + 1) + '</span>' +
         '<span class="ds-row-label">' + esc(p.title || p.path || 'Unknown') + '</span>' +
-        '<span class="ds-row-value">' + (p.unique_sessions || p.visit_count || 0) + ' sessions</span>';
+        '<span class="ds-row-value">' + (p.sessions_count || 0) + ' sessions</span>';
       section.appendChild(row);
     });
   }
 
-  /* ── Render session history (from localStorage) ────── */
+  /* ── 8. Most clicked pages (v3) ─────────────────────── */
+  function renderMostClickedPages(data) {
+    var section = document.getElementById('ds-topclicks-section');
+    if (!section) return;
+    clear(section);
+
+    var pages = data || [];
+    if (!pages.length) {
+      showEmpty(section);
+      return;
+    }
+
+    var maxClicks = pages[0].click_count || 1;
+
+    pages.forEach(function (p, i) {
+      var pct = Math.min(((p.click_count || 0) / maxClicks) * 100, 100);
+      var row = el('div', 'ds-row');
+      var topicTag = p.topic ? '<span class="ds-click-tag">' + esc(p.topic) + '</span>' : '';
+      row.innerHTML =
+        '<span class="ds-rank">' + (i + 1) + '</span>' +
+        '<span class="ds-row-label">' + esc(truncPath(p.path)) + '</span>' +
+        topicTag +
+        '<span class="ds-row-value">' + (p.click_count || 0) + ' clicks</span>' +
+        '<div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>';
+      section.appendChild(row);
+    });
+  }
+
+  /* ── 9. Top search queries ──────────────────────────── */
+  function renderTopSearchQueries(data) {
+    var section = document.getElementById('ds-search-section');
+    if (!section) return;
+    clear(section);
+
+    var queries = data || [];
+    if (!queries.length) {
+      showEmpty(section);
+      return;
+    }
+
+    queries.forEach(function (q, i) {
+      var row = el('div', 'ds-row');
+      row.innerHTML =
+        '<span class="ds-rank">' + (i + 1) + '</span>' +
+        '<span class="ds-row-label">' + esc(q.query || 'Unknown') + '</span>' +
+        '<span class="ds-row-value">' + (q.search_count || 0) + '</span>';
+      section.appendChild(row);
+    });
+  }
+
+  /* ── 10. Hourly study pattern ───────────────────────── */
+  function renderHourlyPattern(data) {
+    var section = document.getElementById('ds-hourly-section');
+    if (!section) return;
+    clear(section);
+
+    var hours = data || [];
+    if (!hours.length) {
+      showEmpty(section);
+      return;
+    }
+
+    /* Build lookup: hour → avg_study_ms */
+    var lookup = {};
+    var maxAvg = 0;
+    for (var i = 0; i < hours.length; i++) {
+      var h = hours[i];
+      var hour = h.hour_of_day;
+      if (hour >= 0 && hour <= 23) {
+        var avg = h.avg_study_ms || 0;
+        lookup[hour] = avg;
+        if (avg > maxAvg) maxAvg = avg;
+      }
+    }
+
+    /* Calculate level for each hour (0-5) */
+    function getLevel(avg) {
+      if (maxAvg === 0) return 0;
+      var ratio = avg / maxAvg;
+      if (ratio === 0) return 0;
+      if (ratio <= 0.2) return 1;
+      if (ratio <= 0.4) return 2;
+      if (ratio <= 0.6) return 3;
+      if (ratio <= 0.8) return 4;
+      return 5;
+    }
+
+    var grid = el('div', 'ds-hourly-grid');
+
+    for (var hour = 0; hour < 24; hour++) {
+      var avg = lookup[hour] || 0;
+      var level = getLevel(avg);
+      var cell = el('div', 'ds-hourly-cell');
+      cell.setAttribute('data-level', String(level));
+      cell.textContent = hour;
+      grid.appendChild(cell);
+    }
+
+    section.appendChild(grid);
+
+    /* Label below grid */
+    var label = el('div', 'ds-hourly-label');
+    label.textContent = 'Hour of Day (0\u201323) \u2014 darker = more study time';
+    section.appendChild(label);
+  }
+
+  /* ── 11. My click activity ──────────────────────────── */
+  function renderMyClicks(stats, topPages, recentClicks) {
+    var statsEl = document.getElementById('ds-myclicks-stats');
+    var pagesEl = document.getElementById('ds-myclicks-pages');
+    var logEl   = document.getElementById('ds-myclicks-log');
+
+    /* Stats row */
+    var totalClicks = (stats && stats.total_clicks) || 0;
+    var uniquePages = (stats && stats.unique_pages_clicked) || 0;
+
+    if (statsEl) {
+      statsEl.innerHTML =
+        '<div class="ds-clicks-stat">' +
+          '<span class="ds-clicks-stat-value">' + totalClicks + '</span>' +
+          '<span class="ds-clicks-stat-label">your total clicks</span>' +
+        '</div>' +
+        '<div class="ds-clicks-stat">' +
+          '<span class="ds-clicks-stat-value">' + uniquePages + '</span>' +
+          '<span class="ds-clicks-stat-label">unique pages clicked</span>' +
+        '</div>';
+    }
+
+    /* Top pages for this user */
+    if (pagesEl) {
+      clear(pagesEl);
+      var pages = topPages || [];
+      if (pages.length > 0) {
+        var maxClicks = pages[0].click_count || 1;
+        var h = '<div class="ds-section-subtitle">Your most-clicked pages</div>';
+        pages.forEach(function (p) {
+          var pct = Math.min(((p.click_count || 0) / maxClicks) * 100, 100);
+          h +=
+            '<div class="ds-row">' +
+            '  <span class="ds-row-label">' + esc(truncPath(p.path)) + '</span>' +
+            '  <span class="ds-row-value">' + p.click_count + ' clicks</span>' +
+            '  <div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>' +
+            '</div>';
+        });
+        pagesEl.innerHTML = h;
+      }
+    }
+
+    /* Recent click log */
+    if (logEl) {
+      clear(logEl);
+      var clicks = recentClicks || [];
+      if (clicks.length > 0) {
+        var logH = '<div class="ds-section-subtitle">Recent clicks</div><div class="ds-clicks-log">';
+        clicks.forEach(function (c) {
+          logH +=
+            '<div class="ds-click-entry">' +
+            '  <span class="ds-click-path" title="' + esc(c.path || '') + '">' + esc(truncPath(c.path)) + '</span>' +
+            '  <span class="ds-click-arrow">\u2192</span>' +
+            '  <span class="ds-click-target" title="' + esc(c.target || '') + '">' + esc(truncPath(c.target)) + '</span>' +
+            (c.category ? '  <span class="ds-click-tag">' + esc(c.category) + '</span>' : '') +
+            '  <span class="ds-click-time">' + fmtTime(c.created_at) + '</span>' +
+            '</div>';
+        });
+        logH += '</div>';
+        logEl.innerHTML = logH;
+      }
+    }
+  }
+
+  /* ── 12. Session from localStorage ──────────────────── */
   function renderSession() {
     var section = document.getElementById('ds-session-section');
     if (!section) return;
     clear(section);
 
-    var session = lsGet('sl_v2_session', null);
+    var session = lsGet('sl_v3_session', null);
     if (!session || !session.startTime) {
       showEmpty(section);
       return;
@@ -446,12 +817,11 @@
     var totalMs = session.totalStudyMs || 0;
     var pages  = session.pages || [];
 
-    var info = el('div', 'ds-session-info');
+    var info = el('div');
     info.innerHTML =
-      '<div class="ds-session-line"><span class="ds-session-label">Started:</span> ' + esc(start.toLocaleString()) + '</div>' +
-      '<div class="ds-session-line"><span class="ds-session-label">Study Time:</span> ' + fmtHours(totalMs) + 'h</div>' +
-      '<div class="ds-session-line"><span class="ds-session-label">Pages Visited:</span> ' + pages.length + '</div>';
-
+      '<div class="ds-row"><span class="ds-row-label">Started:</span><span class="ds-row-value">' + esc(start.toLocaleString()) + '</span></div>' +
+      '<div class="ds-row"><span class="ds-row-label">Study Time:</span><span class="ds-row-value">' + fmtHours(totalMs) + 'h</span></div>' +
+      '<div class="ds-row"><span class="ds-row-label">Pages Visited:</span><span class="ds-row-value">' + pages.length + '</span></div>';
     section.appendChild(info);
 
     /* Show unique pages from this session (up to 5) */
@@ -469,87 +839,126 @@
         }
       });
 
-      var list = el('ul', 'ds-session-pages');
       unique.forEach(function (p) {
-        var li = el('li');
-        li.textContent = (p.title || p.path || 'Unknown') + ' \u2014 ' + fmtMinutes(p.studyMs || 0) + 'm';
-        list.appendChild(li);
+        var row = el('div', 'ds-row');
+        row.innerHTML =
+          '<span class="ds-row-label">' + esc(p.title || p.path || 'Unknown') + '</span>' +
+          '<span class="ds-row-value">' + fmtMinutes(p.studyMs || 0) + 'm</span>';
+        section.appendChild(row);
       });
-      section.appendChild(list);
     }
   }
 
-  /* ── Main render ────────────────────────────────────── */
-  function renderDashboard() {
-    buildSkeleton();
+  /* ════════════════════════════════════════════════════════
+   *  MAIN FETCH + RENDER
+   * ════════════════════════════════════════════════════════ */
 
-    /* Show loading indicators in dynamic sections */
+  function loadAll() {
+    /* Show loading in dynamic sections */
     showLoading(document.getElementById('ds-course-section'));
+    showLoading(document.getElementById('ds-insights-section'));
+    showLoading(document.getElementById('ds-content-types-section'));
     showLoading(document.getElementById('ds-pages-section'));
-    showLoading(document.getElementById('ds-session-section'));
-    showLoading(document.getElementById('ds-myclicks-stats'));
     showLoading(document.getElementById('ds-topclicks-section'));
+    showLoading(document.getElementById('ds-search-section'));
+    showLoading(document.getElementById('ds-hourly-section'));
+    showLoading(document.getElementById('ds-myclicks-stats'));
+    showLoading(document.getElementById('ds-session-section'));
 
-    /* Get session ID for per-user queries */
-    var sessionId = (logger.sessionId) || null;
+    /* Clear topic cache on range change */
+    topicCache = {};
 
-    /* Fire all RPCs in parallel */
-    Promise.all([
+    /* ── Fire all RPCs in parallel ── */
+    var sid = STATE.sessionId;
+
+    var pAll = Promise.all([
+
+      /* v3 RPCs */
+      rpc('get_dashboard_summary', { days: STATE.days }).catch(function () { return []; }),
+      rpc('get_study_ms_per_day', { days: 7 }).catch(function () { return []; }),
+      rpc('get_study_ms_by_course', { days: STATE.days }).catch(function () { return []; }),
+      rpc('get_study_insights', { days: STATE.days }).catch(function () { return []; }),
+      rpc('get_content_type_performance', { days: STATE.days }).catch(function () { return []; }),
+      rpc('get_most_clicked_pages', { limit_count: 10, days: STATE.days }).catch(function () { return []; }),
+      rpc('get_top_search_queries', { limit_count: 10, days: STATE.days }).catch(function () { return []; }),
+      rpc('get_study_hourly_pattern', { days: STATE.days }).catch(function () { return []; }),
+      rpc('get_active_visitors_now', { minutes_window: 5 }).catch(function () { return []; }),
+
+      /* Legacy v2 RPCs */
       rpc('get_total_clicks').catch(function () { return null; }),
-      rpc('get_total_study_ms').catch(function () { return null; }),
       rpc('get_study_streak').catch(function () { return null; }),
       rpc('get_study_ms_today').catch(function () { return null; }),
-      rpc('get_study_ms_per_day', { days: 7 }).catch(function () { return []; }),
-      rpc('get_course_breakdown').catch(function () { return []; }),
       rpc('get_most_studied_pages', { limit_count: 10 }).catch(function () { return []; }),
-      /* Per-user click stats */
-      sessionId ? rpc('get_my_click_stats', { p_session_id: sessionId }).catch(function () { return null; }) : Promise.resolve(null),
-      sessionId ? rpc('get_my_top_pages', { p_session_id: sessionId, limit_count: 5 }).catch(function () { return []; }) : Promise.resolve([]),
-      sessionId ? rpc('get_my_clicks', { p_session_id: sessionId }).catch(function () { return []; }) : Promise.resolve([]),
-      /* All-user click ranking */
-      rpc('get_most_clicked_pages', { limit_count: 10 }).catch(function () { return []; }),
-    ]).then(function (results) {
-      renderStats({
-        totalClicks:  results[0],
-        totalHours:   results[1] != null ? fmtHours(results[1]) : null,
-        streak:       results[2],
-        todayMinutes: results[3] != null ? fmtMinutes(results[3]) : null,
-      });
 
-      drawChart(results[4]);
+      /* Per-session click stats */
+      sid ? rpc('get_my_click_stats', { p_session_id: sid }).catch(function () { return null; }) : Promise.resolve(null),
+      sid ? rpc('get_my_top_pages', { p_session_id: sid, limit_count: 5 }).catch(function () { return []; }) : Promise.resolve([]),
+      sid ? rpc('get_my_clicks', { p_session_id: sid }).catch(function () { return []; }) : Promise.resolve([]),
+    ]);
 
-      renderCourses(results[5]);
-      renderPages(results[6]);
+    pAll.then(function (results) {
+      /* results index:
+          0  get_dashboard_summary
+          1  get_study_ms_per_day
+          2  get_study_ms_by_course
+          3  get_study_insights
+          4  get_content_type_performance
+          5  get_most_clicked_pages
+          6  get_top_search_queries
+          7  get_study_hourly_pattern
+          8  get_active_visitors_now
+          9  get_total_clicks
+          10 get_study_streak
+          11 get_study_ms_today
+          12 get_most_studied_pages
+          13 get_my_click_stats
+          14 get_my_top_pages
+          15 get_my_clicks
+      */
+
+      /* 2. Overview */
+      renderOverview(results[0], results[9], results[10], results[11], results[8]);
+
+      /* 3. Chart */
+      drawChart(results[1]);
+
+      /* 4. Courses */
+      renderCourses(results[2]);
+
+      /* 5. Insights */
+      renderInsights(results[3]);
+
+      /* 6. Content types */
+      renderContentTypes(results[4]);
+
+      /* 7. Most studied pages */
+      renderMostStudiedPages(results[12]);
+
+      /* 8. Most clicked pages */
+      renderMostClickedPages(results[5]);
+
+      /* 9. Top search queries */
+      renderTopSearchQueries(results[6]);
+
+      /* 10. Hourly pattern */
+      renderHourlyPattern(results[7]);
+
+      /* 11. My click activity */
+      renderMyClicks(results[13], results[14], results[15]);
+
+      /* 12. Session */
       renderSession();
 
-      /* Click activity sections */
-      renderMyClicks(results[7], results[8], results[9]);
-      renderMostClickedPages(results[10]);
+    }).catch(function (err) {
+      /* Global catch — never break the page */
+      console.warn('Dashboard: error loading data', err);
     });
   }
 
-  /* ── Bubble helpers ──────────────────────────────────── */
-  function truncPath(p) {
-    if (!p) return '/';
-    var s = p.replace(/^\/econ500\//, '');
-    if (s.length > 35) s = s.slice(0, 32) + '...';
-    return s || '/';
-  }
+  /* ════════════════════════════════════════════════════════
+   *  LIVE DATA FEED (per-table collapsible) — copied from v2
+   * ════════════════════════════════════════════════════════ */
 
-  function shortId(id) {
-    if (!id) return '\u2014';
-    return id.length > 10 ? id.slice(0, 10) + '\u2026' : id;
-  }
-
-  function fmtTime(iso) {
-    if (!iso) return '\u2014';
-    try {
-      var d = new Date(iso);
-      return d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
-    } catch (e) { return String(iso); }
-  }
-
-  /* ── Render live data feed (per-table collapsible) ──── */
   function renderDebugLogger() {
     var target = document.getElementById('ds-debug-tables');
     var badge  = document.getElementById('ds-debug-badge');
@@ -637,7 +1046,7 @@
               if (row.category) content += '<span class="ds-bubble-tag">' + esc(row.category) + '</span>';
               content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field ds-bubble-time">' + fmtTime(row.created_at) + '</span>';
             } else if (table.name === 'study_sessions') {
-              content += '<span class="ds-bubble-field ds-bubble-id">\u{1F4CB} ' + esc(shortId(row.session_id)) + '</span>';
+              content += '<span class="ds-bubble-field ds-bubble-id">\uD83D\uDCCB ' + esc(shortId(row.session_id)) + '</span>';
               content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field">' + esc(row.date || '') + '</span>';
               content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field ds-bubble-ms">' + fmtMinutes(row.total_study_ms || 0) + ' min</span>';
               content += '<span class="ds-bubble-tag">' + (row.pages_studied || 0) + ' pages</span>';
@@ -668,9 +1077,53 @@
     });
   }
 
-  /* ── Boot ────────────────────────────────────────────── */
+  /* ════════════════════════════════════════════════════════
+   *  RANGE SELECTOR HANDLER
+   * ════════════════════════════════════════════════════════ */
+
+  function initRangeSelector() {
+    var selector = document.querySelector('.ds-range-selector');
+    if (!selector) return;
+
+    selector.addEventListener('click', function (e) {
+      var btn = e.target.closest('.ds-range-btn');
+      if (!btn) return;
+
+      var days = parseInt(btn.getAttribute('data-days'), 10);
+      if (isNaN(days) || days === STATE.days) return;
+
+      /* Update active button */
+      var allBtns = selector.querySelectorAll('.ds-range-btn');
+      for (var i = 0; i < allBtns.length; i++) {
+        allBtns[i].classList.remove('ds-range-btn--active');
+      }
+      btn.classList.add('ds-range-btn--active');
+
+      /* Update state and re-fetch */
+      STATE.days = days;
+      loadAll();
+    });
+  }
+
+  /* ════════════════════════════════════════════════════════
+   *  BOOT
+   * ════════════════════════════════════════════════════════ */
+
   function boot() {
-    renderDashboard();
+    /* Build skeleton once */
+    buildSkeleton();
+
+    /* Set up range selector */
+    initRangeSelector();
+
+    /* Set up topic drill-down via event delegation */
+    var courseSection = document.getElementById('ds-course-section');
+    if (courseSection) {
+      courseSection.addEventListener('click', handleTopicDrillDown);
+    }
+
+    /* Load and render all data */
+    loadAll();
 
     /* Render debug logger after main dashboard */
     renderDebugLogger();

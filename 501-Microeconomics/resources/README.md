@@ -3,7 +3,7 @@
 | # | File | Type | Content |
 |---|------|------|---------|
 | 1 | `A_Koutsoyiannis_Modern_Microeconomics_Se (1).pdf` | Textbook | Modern Microeconomics — Koutsoyiannis (full text) |
-| 2 | `Felix_Munoz-Garcia_-_Advanced_Microeconomic_Theory_...pdf` | Textbook | Advanced Micro Theory — Munoz-Garcia (MIT Press) |
+| 2 | `Felix_Munoz-Garcia_-_Advanced_Microeconomic_Theory__An_Intuitive_Approach_with_Examples-The_MIT_Press_(2017)[1].pdf` | Textbook | Advanced Micro Theory — Munoz-Garcia (MIT Press) |
 | 3 | `chapter-1-preference-and-choice.pdf` | Chapter | Preferences, utility, choice theory |
 | 4 | `chapter-2-demand-theory.pdf` | Chapter | Demand theory |
 | 5 | `chapter-3-demand-theory-applications.pdf` | Chapter | Demand applications |
@@ -16,7 +16,7 @@
 | 12 | `Practice questions for mid 1 and 2.pdf` | Questions | Midterm practice (scanned) |
 | 13 | `A Graphical Illustration of the Path to General Equilibrium.docx.pdf` | Paper | GE path illustration |
 | 14 | `Static Properties of a General Equilibrium State.docx.pdf` | Paper | GE static properties |
-| 15 | `WelfareChange (CV, EV and CS).pdf` | Paper | CV/EV/CS measurement (see [reference notes](../welfare-change-reference.md)) |
+| 15 | ~~`WelfareChange (CV, EV and CS).pdf`~~ | Paper | ⛔ File unavailable — superseded by [reference notes](../welfare-change-reference.md) |
 | 16 | `Welfare Economics 1.docx` | Notes | Welfare economics notes |
 | 17 | `Welfare Economics.pptx` | Slides | Welfare economics slides |
 | 18 | `welfare sheet.pdf` | Sheet | Welfare reference sheet (scanned) |
@@ -29,7 +29,7 @@
 | 25 | `master-notes-501/Social welfare 1-17.pdf` | Solved Tutorial | 11 long-form welfare/GE answers with figures |
 | 26 | `master-notes-501/Welfare Q no5 ans.pdf` | Solved Tutorial | Alternative Pigou answer |
 
-> **Tip:** Two chapters are also part of *WelfareChange (CV, EV and CS).pdf* — the reference notes at `../welfare-change-reference.md` cover CV/EV/CS in detail. The `master-notes-501/` files are student's personal solved tutorial sheets — all extractable content is already covered in the existing answer files (see [master-notes-501/README.md](./master-notes-501/README.md) for full content match).
+> **Tip:** The reference notes at `../welfare-change-reference.md` cover CV/EV/CS in detail (the source PDF is unavailable). The `master-notes-501/` files are student's personal solved tutorial sheets — all extractable content is already covered in the existing answer files (see [master-notes-501/README.md](./master-notes-501/README.md) for full content match).
 
 ---
 

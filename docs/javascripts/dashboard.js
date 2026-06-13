@@ -140,6 +140,20 @@
           '<div id="ds-session-section"></div>' +
         '</div>' +
 
+        /* ════ My Click Activity ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">\u{1F4A5} My Click Activity</h2>' +
+          '<div id="ds-myclicks-stats" class="ds-clicks-stats"></div>' +
+          '<div id="ds-myclicks-pages"></div>' +
+          '<div id="ds-myclicks-log"></div>' +
+        '</div>' +
+
+        /* ════ Most Clicked Pages ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">\u{1F4CA} Most Clicked Pages</h2>' +
+          '<div id="ds-topclicks-section"></div>' +
+        '</div>' +
+
         /* ════ Live Data Feed ════ */
         '<div class="ds-section ds-debug">' +
           '<div class="ds-debug-header">' +
@@ -291,19 +305,104 @@
       return;
     }
 
-    /* Sort by study time descending */
+    /* Sort by visit count descending */
     courses.sort(function (a, b) {
-      return (b.total_study_ms || 0) - (a.total_study_ms || 0);
+      return (b.total_visits || 0) - (a.total_visits || 0);
     });
 
-    var maxVal = Math.max.apply(null, courses.map(function (c) { return c.total_study_ms || 0; })) || 1;
+    var maxVal = Math.max.apply(null, courses.map(function (c) { return c.total_visits || 0; })) || 1;
 
     courses.forEach(function (c) {
-      var pct = Math.min(((c.total_study_ms || 0) / maxVal) * 100, 100);
+      var pct = Math.min(((c.total_visits || 0) / maxVal) * 100, 100);
       var row = el('div', 'ds-row');
       row.innerHTML =
         '<span class="ds-row-label">' + esc(c.course_name || c.course || 'Unknown') + '</span>' +
-        '<span class="ds-row-value">' + fmtHours(c.total_study_ms) + 'h / ' + (c.total_visits || 0) + ' visits</span>' +
+        '<span class="ds-row-value">' + (c.total_visits || 0) + ' visits</span>' +
+        '<div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>';
+      section.appendChild(row);
+    });
+  }
+
+  /* ── Render my click activity ───────────────────────── */
+  function renderMyClicks(stats, topPages, recentClicks) {
+    var statsEl = document.getElementById('ds-myclicks-stats');
+    var pagesEl = document.getElementById('ds-myclicks-pages');
+    var logEl   = document.getElementById('ds-myclicks-log');
+    if (!statsEl) return;
+
+    /* Stats row */
+    var totalClicks = (stats && stats.total_clicks) || 0;
+    var uniquePages = (stats && stats.unique_pages_clicked) || 0;
+    statsEl.innerHTML =
+      '<div class="ds-clicks-stat">' +
+        '<span class="ds-clicks-stat-value">' + totalClicks + '</span>' +
+        '<span class="ds-clicks-stat-label">your total clicks</span>' +
+      '</div>' +
+      '<div class="ds-clicks-stat">' +
+        '<span class="ds-clicks-stat-value">' + uniquePages + '</span>' +
+        '<span class="ds-clicks-stat-label">unique pages clicked</span>' +
+      '</div>';
+
+    /* Top pages for this user */
+    if (!pagesEl) return;
+    clear(pagesEl);
+    var pages = topPages || [];
+    if (pages.length > 0) {
+      var maxClicks = pages[0].click_count || 1;
+      var h = '<div class="ds-section-subtitle">Your most-clicked pages</div>';
+      pages.forEach(function (p) {
+        var pct = Math.min(((p.click_count || 0) / maxClicks) * 100, 100);
+        h +=
+          '<div class="ds-row">' +
+          '  <span class="ds-row-label">' + esc(p.path || 'Unknown') + '</span>' +
+          '  <span class="ds-row-value">' + p.click_count + ' clicks</span>' +
+          '  <div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>' +
+          '</div>';
+      });
+      pagesEl.innerHTML = h;
+    }
+
+    /* Recent click log */
+    if (!logEl) return;
+    clear(logEl);
+    var clicks = recentClicks || [];
+    if (clicks.length > 0) {
+      var logH = '<div class="ds-section-subtitle">Recent clicks</div><div class="ds-clicks-log">';
+      clicks.forEach(function (c) {
+        logH +=
+          '<div class="ds-click-entry">' +
+          '  <span class="ds-click-path" title="' + esc(c.path || '') + '">' + esc(truncPath(c.path)) + '</span>' +
+          '  <span class="ds-click-arrow">\u2192</span>' +
+          '  <span class="ds-click-target" title="' + esc(c.target || '') + '">' + esc(truncPath(c.target)) + '</span>' +
+          (c.category ? '  <span class="ds-click-tag">' + esc(c.category) + '</span>' : '') +
+          '  <span class="ds-click-time">' + fmtTime(c.created_at) + '</span>' +
+          '</div>';
+      });
+      logH += '</div>';
+      logEl.innerHTML = logH;
+    }
+  }
+
+  /* ── Render most clicked pages (all users) ──────────── */
+  function renderMostClickedPages(data) {
+    var section = document.getElementById('ds-topclicks-section');
+    if (!section) return;
+    clear(section);
+
+    var pages = data || [];
+    if (!pages.length) {
+      showEmpty(section);
+      return;
+    }
+
+    var maxClicks = pages[0].click_count || 1;
+    pages.forEach(function (p, i) {
+      var pct = Math.min(((p.click_count || 0) / maxClicks) * 100, 100);
+      var row = el('div', 'ds-row');
+      row.innerHTML =
+        '<span class="ds-rank">' + (i + 1) + '</span>' +
+        '<span class="ds-row-label">' + esc(p.path || 'Unknown') + '</span>' +
+        '<span class="ds-row-value">' + p.click_count + ' clicks</span>' +
         '<div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>';
       section.appendChild(row);
     });
@@ -388,6 +487,11 @@
     showLoading(document.getElementById('ds-course-section'));
     showLoading(document.getElementById('ds-pages-section'));
     showLoading(document.getElementById('ds-session-section'));
+    showLoading(document.getElementById('ds-myclicks-stats'));
+    showLoading(document.getElementById('ds-topclicks-section'));
+
+    /* Get session ID for per-user queries */
+    var sessionId = (logger.sessionId) || null;
 
     /* Fire all RPCs in parallel */
     Promise.all([
@@ -398,6 +502,12 @@
       rpc('get_study_ms_per_day', { days: 7 }).catch(function () { return []; }),
       rpc('get_course_breakdown').catch(function () { return []; }),
       rpc('get_most_studied_pages', { limit_count: 10 }).catch(function () { return []; }),
+      /* Per-user click stats */
+      sessionId ? rpc('get_my_click_stats', { p_session_id: sessionId }).catch(function () { return null; }) : Promise.resolve(null),
+      sessionId ? rpc('get_my_top_pages', { p_session_id: sessionId, limit_count: 5 }).catch(function () { return []; }) : Promise.resolve([]),
+      sessionId ? rpc('get_my_clicks', { p_session_id: sessionId }).catch(function () { return []; }) : Promise.resolve([]),
+      /* All-user click ranking */
+      rpc('get_most_clicked_pages', { limit_count: 10 }).catch(function () { return []; }),
     ]).then(function (results) {
       renderStats({
         totalClicks:  results[0],
@@ -411,6 +521,10 @@
       renderCourses(results[5]);
       renderPages(results[6]);
       renderSession();
+
+      /* Click activity sections */
+      renderMyClicks(results[7], results[8], results[9]);
+      renderMostClickedPages(results[10]);
     });
   }
 

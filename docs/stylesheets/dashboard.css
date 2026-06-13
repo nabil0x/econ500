@@ -1,0 +1,307 @@
+/* ───────────────────────────────────────────────────────────────
+ * Study Dashboard — Full-Page Stats View
+ * Responsive grid layout matching the glassmorphism aesthetic
+ * of the visitor-logger widget.
+ * ─────────────────────────────────────────────────────────────── */
+
+/* ── Dashboard container ───────────────────────────────────── */
+.ds-dashboard {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+.ds-header {
+  margin-bottom: 24px;
+}
+
+.ds-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color, #333);
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.ds-header p {
+  font-size: 0.88rem;
+  color: var(--md-default-fg-color--light, #888);
+  margin: 0;
+}
+
+/* ── Stats grid ─────────────────────────────────────────────── */
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.ds-card {
+  background: var(--md-default-bg-color, #fff);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.ds-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+}
+
+.ds-card-icon {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.ds-card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color, #3f51b5);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.ds-card-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light, #888);
+  margin-top: 4px;
+}
+
+/* ── Section wrappers ───────────────────────────────────────── */
+.ds-section {
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--md-default-bg-color, #fff);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.ds-section-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color, #333);
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Chart container ────────────────────────────────────────── */
+.ds-chart-container {
+  width: 100%;
+  position: relative;
+}
+
+.ds-chart-container canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+/* ── Data rows (course breakdown, top pages, etc.) ──────────── */
+.ds-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ds-row:last-child {
+  border-bottom: none;
+}
+
+.ds-row-label {
+  flex: 1;
+  font-size: 0.88rem;
+  color: var(--md-default-fg-color, #444);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.ds-row-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color, #3f51b5);
+  font-variant-numeric: tabular-nums;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+.ds-row-bar {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.ds-bar-track {
+  height: 6px;
+  background: rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ds-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--md-primary-fg-color, #3f51b5), var(--md-accent-fg-color, #009688));
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  min-width: 2px;
+}
+
+/* ── Empty & loading states ─────────────────────────────────── */
+.ds-empty {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--md-default-fg-color--light, #999);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.ds-loader {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light, #999);
+  animation: ds-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes ds-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* ── Dark mode overrides ────────────────────────────────────── */
+[data-md-color-scheme="ju-dark"] .ds-dashboard {
+  /* inherits page bg from theme */
+}
+
+[data-md-color-scheme="ju-dark"] .ds-header h1 {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-header p {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-card {
+  background: rgba(29, 31, 30, 0.92);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20),
+              0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+[data-md-color-scheme="ju-dark"] .ds-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-card-value {
+  color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-card-label {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-section {
+  background: rgba(29, 31, 30, 0.92);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.20),
+              0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+[data-md-color-scheme="ju-dark"] .ds-section-title {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-row {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-row-label {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-row-value {
+  color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bar-fill {
+  background: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-empty {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-loader {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+/* ── Responsive: tablet ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ds-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ds-dashboard {
+    padding: 20px 12px;
+  }
+
+  .ds-header h1 {
+    font-size: 1.35rem;
+  }
+
+  .ds-card-value {
+    font-size: 1.6rem;
+  }
+
+  .ds-section {
+    padding: 18px 16px;
+  }
+}
+
+/* ── Responsive: mobile ─────────────────────────────────────── */
+@media (max-width: 480px) {
+  .ds-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ds-dashboard {
+    padding: 16px 10px;
+  }
+
+  .ds-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .ds-card {
+    padding: 16px 12px;
+  }
+
+  .ds-card-value {
+    font-size: 1.4rem;
+  }
+
+  .ds-section {
+    padding: 16px 12px;
+    margin-top: 24px;
+  }
+
+  .ds-section-title {
+    font-size: 0.95rem;
+  }
+}

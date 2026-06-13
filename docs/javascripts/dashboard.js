@@ -1,0 +1,430 @@
+/**
+ * Study Dashboard — Full-page analytics dashboard
+ * Renders into <div id="study-dashboard"> element on the MkDocs study-dashboard page.
+ *
+ * Dependencies:
+ *   - window.__studyLogger (from docs/javascripts/visitor-logger.js)
+ *     provides sbRpc(fn, params) and lsGet(key, def)
+ *   - Canvas 2D API (no external libraries)
+ *
+ * Class naming convention (CSS handled separately):
+ *   ds-grid, ds-card, ds-card-value, ds-card-label,
+ *   ds-chart-container, ds-section, ds-section-title,
+ *   ds-row, ds-row-label, ds-row-value,
+ *   ds-bar-track, ds-bar-fill
+ */
+(function () {
+  'use strict';
+
+  /* ── Guard: only render on the dashboard page ──────── */
+  var container = document.getElementById('study-dashboard');
+  if (!container) return;
+
+  /* ── Guard: check dependency ────────────────────────── */
+  var logger = window.__studyLogger;
+  if (!logger || typeof logger.sbRpc !== 'function') {
+    container.innerHTML = '<p class="ds-error">Dashboard requires <code>visitor-logger.js</code> to be loaded.</p>';
+    return;
+  }
+
+  var sbRpc = logger.sbRpc;
+  var lsGet = logger.lsGet || function (key, def) {
+    try {
+      var v = JSON.parse(localStorage.getItem(key));
+      return v !== null && v !== undefined ? v : def;
+    } catch (e) { return def; }
+  };
+
+  /* ── RPC wrapper ───────────────────────────────────── */
+  function rpc(fn, params) {
+    return sbRpc(fn, params).then(function (res) {
+      if (!res.ok) throw new Error('RPC ' + fn + ': ' + res.status);
+      return res.json();
+    });
+  }
+
+  /* ── DOM helpers ────────────────────────────────────── */
+  function el(tag, className) {
+    var e = document.createElement(tag);
+    if (className) e.className = className;
+    return e;
+  }
+
+  function clear(el) {
+    el.innerHTML = '';
+  }
+
+  function esc(str) {
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(str));
+    return d.innerHTML;
+  }
+
+  function showEmpty(parent) {
+    parent.innerHTML = '<div class="ds-empty">\uD83D\uDCD6 No data yet. Start studying to see your stats!</div>';
+  }
+
+  function showLoading(parent) {
+    parent.innerHTML = '<div class="ds-loading">\u23F3 Loading\u2026</div>';
+  }
+
+  /* ── Format helpers ─────────────────────────────────── */
+  function fmtHours(ms) {
+    if (ms == null || ms === 0) return '0';
+    return (ms / 3600000).toFixed(1);
+  }
+
+  function fmtMinutes(ms) {
+    if (ms == null || ms === 0) return '0';
+    return Math.round(ms / 60000);
+  }
+
+  function dayName(dateStr) {
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var d = new Date(dateStr + 'T00:00:00');
+    return days[d.getDay()];
+  }
+
+  /* ── Build dashboard skeleton ───────────────────────── */
+  function buildSkeleton() {
+    var html =
+      '<div class="ds-container">' +
+
+        /* ════ Stats Grid ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Overview</h2>' +
+          '<div class="ds-grid">' +
+            '<div class="ds-card">' +
+              '<div class="ds-card-value" id="ds-val-clicks">—</div>' +
+              '<div class="ds-card-label">Total Clicks</div>' +
+            '</div>' +
+            '<div class="ds-card">' +
+              '<div class="ds-card-value" id="ds-val-hours">—</div>' +
+              '<div class="ds-card-label">Study Hours</div>' +
+            '</div>' +
+            '<div class="ds-card">' +
+              '<div class="ds-card-value" id="ds-val-streak">—</div>' +
+              '<div class="ds-card-label">Day Streak</div>' +
+            '</div>' +
+            '<div class="ds-card">' +
+              '<div class="ds-card-value" id="ds-val-today">—</div>' +
+              '<div class="ds-card-label">Today\u2019s Minutes</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+
+        /* ════ 7-Day Activity Chart ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">7-Day Activity</h2>' +
+          '<div class="ds-chart-container">' +
+            '<canvas id="ds-chart-canvas" height="200"></canvas>' +
+          '</div>' +
+        '</div>' +
+
+        /* ════ Course Breakdown ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Course Breakdown</h2>' +
+          '<div id="ds-course-section"></div>' +
+        '</div>' +
+
+        /* ════ Most Studied Pages ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Most Studied Pages</h2>' +
+          '<div id="ds-pages-section"></div>' +
+        '</div>' +
+
+        /* ════ Session History ════ */
+        '<div class="ds-section">' +
+          '<h2 class="ds-section-title">Recent Session</h2>' +
+          '<div id="ds-session-section"></div>' +
+        '</div>' +
+
+      '</div>';
+
+    container.innerHTML = html;
+  }
+
+  /* ── Render stats grid ──────────────────────────────── */
+  function renderStats(data) {
+    setText('ds-val-clicks', data.totalClicks != null ? String(data.totalClicks) : '\u2014');
+    setText('ds-val-hours', data.totalHours != null ? String(data.totalHours) : '\u2014');
+    setText('ds-val-streak', data.streak != null ? String(data.streak) : '\u2014');
+    setText('ds-val-today', data.todayMinutes != null ? String(data.todayMinutes) : '\u2014');
+  }
+
+  function setText(id, val) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = val;
+  }
+
+  /* ── Draw 7-day bar chart (Canvas 2D) ───────────────── */
+  var chartDataCache = null;
+
+  function drawChart(data) {
+    var canvas = document.getElementById('ds-chart-canvas');
+    if (!canvas) return;
+
+    chartDataCache = data;
+
+    var chartData = (data || []).map(function (d) {
+      return {
+        day:     dayName(d.date),
+        minutes: Math.round((d.study_ms || 0) / 60000),
+      };
+    });
+
+    var ctx = canvas.getContext('2d');
+    var dpr = window.devicePixelRatio || 1;
+
+    /* Size canvas to parent width */
+    var parent = canvas.parentElement;
+    var logicalW = parent.clientWidth || 600;
+    var logicalH = 200;
+    canvas.width  = logicalW * dpr;
+    canvas.height = logicalH * dpr;
+    canvas.style.width  = logicalW + 'px';
+    canvas.style.height = logicalH + 'px';
+    ctx.scale(dpr, dpr);
+
+    /* Clear */
+    ctx.clearRect(0, 0, logicalW, logicalH);
+
+    /* Empty state */
+    if (!chartData.length) {
+      ctx.fillStyle = '#999';
+      ctx.font = '14px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('No activity data yet', logicalW / 2, logicalH / 2);
+      return;
+    }
+
+    /* Layout */
+    var pad = { top: 24, right: 12, bottom: 28, left: 12 };
+    var chartW = logicalW - pad.left - pad.right;
+    var chartH = logicalH - pad.top - pad.bottom;
+    var baseY  = logicalH - pad.bottom;
+
+    var maxVal = Math.max.apply(null, chartData.map(function (d) { return d.minutes; })) || 1;
+    var count  = chartData.length;
+    var gap    = 6;
+    var barW   = Math.max((chartW - gap * (count - 1)) / count, 4);
+
+    /* Baseline */
+    ctx.save();
+    ctx.strokeStyle = 'rgba(128,128,128,0.25)';
+    ctx.lineWidth   = 1;
+    ctx.beginPath();
+    ctx.moveTo(pad.left, baseY + 0.5);
+    ctx.lineTo(logicalW - pad.right, baseY + 0.5);
+    ctx.stroke();
+    ctx.restore();
+
+    /* Draw bars */
+    chartData.forEach(function (d, i) {
+      var x    = pad.left + i * (barW + gap);
+      var barH = (d.minutes / maxVal) * chartH;
+      var y    = baseY - barH;
+
+      /* Gradient: top = accent (#009688), bottom = primary (#3f51b5) */
+      var grad = ctx.createLinearGradient(x, baseY, x, y);
+      grad.addColorStop(0, '#3f51b5');
+      grad.addColorStop(1, '#009688');
+
+      /* Rounded top corners */
+      var radius = Math.min(4, barW / 2);
+      ctx.beginPath();
+      ctx.moveTo(x, baseY);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.lineTo(x + barW - radius, y);
+      ctx.quadraticCurveTo(x + barW, y, x + barW, y + radius);
+      ctx.lineTo(x + barW, baseY);
+      ctx.closePath();
+      ctx.fillStyle = grad;
+      ctx.fill();
+
+      /* Value label above bar */
+      ctx.fillStyle = '#666';
+      ctx.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      ctx.fillText(d.minutes, x + barW / 2, y - 2);
+
+      /* Day label below */
+      ctx.fillStyle = '#888';
+      ctx.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+      ctx.fillText(d.day, x + barW / 2, baseY + 6);
+    });
+  }
+
+  function redrawChart() {
+    /* Re-read canvas size and redraw from cache */
+    var canvas = document.getElementById('ds-chart-canvas');
+    if (!canvas) return;
+    drawChart(chartDataCache);
+  }
+
+  /* ── Render course breakdown ────────────────────────── */
+  function renderCourses(data) {
+    var section = document.getElementById('ds-course-section');
+    if (!section) return;
+    clear(section);
+
+    var courses = data || [];
+    if (!courses.length) {
+      showEmpty(section);
+      return;
+    }
+
+    /* Sort by study time descending */
+    courses.sort(function (a, b) {
+      return (b.total_study_ms || 0) - (a.total_study_ms || 0);
+    });
+
+    var maxVal = Math.max.apply(null, courses.map(function (c) { return c.total_study_ms || 0; })) || 1;
+
+    courses.forEach(function (c) {
+      var pct = Math.min(((c.total_study_ms || 0) / maxVal) * 100, 100);
+      var row = el('div', 'ds-row');
+      row.innerHTML =
+        '<span class="ds-row-label">' + esc(c.course_name || c.course || 'Unknown') + '</span>' +
+        '<span class="ds-row-value">' + fmtHours(c.total_study_ms) + 'h / ' + (c.total_visits || 0) + ' visits</span>' +
+        '<div class="ds-bar-track"><div class="ds-bar-fill" style="width:' + pct.toFixed(1) + '%"></div></div>';
+      section.appendChild(row);
+    });
+  }
+
+  /* ── Render most studied pages ──────────────────────── */
+  function renderPages(data) {
+    var section = document.getElementById('ds-pages-section');
+    if (!section) return;
+    clear(section);
+
+    var pages = data || [];
+    if (!pages.length) {
+      showEmpty(section);
+      return;
+    }
+
+    pages.forEach(function (p, i) {
+      var row = el('div', 'ds-row');
+      row.innerHTML =
+        '<span class="ds-rank">' + (i + 1) + '</span>' +
+        '<span class="ds-row-label">' + esc(p.title || p.path || 'Unknown') + '</span>' +
+        '<span class="ds-row-value">' + (p.unique_sessions || p.visit_count || 0) + ' sessions</span>';
+      section.appendChild(row);
+    });
+  }
+
+  /* ── Render session history (from localStorage) ────── */
+  function renderSession() {
+    var section = document.getElementById('ds-session-section');
+    if (!section) return;
+    clear(section);
+
+    var session = lsGet('sl_v2_session', null);
+    if (!session || !session.startTime) {
+      showEmpty(section);
+      return;
+    }
+
+    var start  = new Date(session.startTime);
+    var totalMs = session.totalStudyMs || 0;
+    var pages  = session.pages || [];
+
+    var info = el('div', 'ds-session-info');
+    info.innerHTML =
+      '<div class="ds-session-line"><span class="ds-session-label">Started:</span> ' + esc(start.toLocaleString()) + '</div>' +
+      '<div class="ds-session-line"><span class="ds-session-label">Study Time:</span> ' + fmtHours(totalMs) + 'h</div>' +
+      '<div class="ds-session-line"><span class="ds-session-label">Pages Visited:</span> ' + pages.length + '</div>';
+
+    section.appendChild(info);
+
+    /* Show unique pages from this session (up to 5) */
+    if (pages.length > 0) {
+      var heading = el('div', 'ds-section-subtitle');
+      heading.textContent = 'Pages in this session:';
+      section.appendChild(heading);
+
+      var seen   = {};
+      var unique = [];
+      pages.forEach(function (p) {
+        if (!seen[p.path] && unique.length < 5) {
+          seen[p.path] = true;
+          unique.push(p);
+        }
+      });
+
+      var list = el('ul', 'ds-session-pages');
+      unique.forEach(function (p) {
+        var li = el('li');
+        li.textContent = (p.title || p.path || 'Unknown') + ' \u2014 ' + fmtMinutes(p.studyMs || 0) + 'm';
+        list.appendChild(li);
+      });
+      section.appendChild(list);
+    }
+  }
+
+  /* ── Main render ────────────────────────────────────── */
+  function renderDashboard() {
+    buildSkeleton();
+
+    /* Show loading indicators in dynamic sections */
+    showLoading(document.getElementById('ds-course-section'));
+    showLoading(document.getElementById('ds-pages-section'));
+    showLoading(document.getElementById('ds-session-section'));
+
+    /* Fire all RPCs in parallel */
+    Promise.all([
+      rpc('get_total_clicks').catch(function () { return null; }),
+      rpc('get_total_study_ms').catch(function () { return null; }),
+      rpc('get_study_streak').catch(function () { return null; }),
+      rpc('get_study_ms_today').catch(function () { return null; }),
+      rpc('get_study_ms_per_day', { days: 7 }).catch(function () { return []; }),
+      rpc('get_course_breakdown').catch(function () { return []; }),
+      rpc('get_most_studied_pages', { limit_count: 10 }).catch(function () { return []; }),
+    ]).then(function (results) {
+      renderStats({
+        totalClicks:  results[0],
+        totalHours:   results[1] != null ? fmtHours(results[1]) : null,
+        streak:       results[2],
+        todayMinutes: results[3] != null ? fmtMinutes(results[3]) : null,
+      });
+
+      drawChart(results[4]);
+
+      renderCourses(results[5]);
+      renderPages(results[6]);
+      renderSession();
+    });
+  }
+
+  /* ── Boot ────────────────────────────────────────────── */
+  function boot() {
+    renderDashboard();
+
+    /* Responsive chart: redraw on resize */
+    var canvas = document.getElementById('ds-chart-canvas');
+    if (canvas) {
+      if (window.ResizeObserver) {
+        var ro = new ResizeObserver(function () { redrawChart(); });
+        ro.observe(canvas.parentElement);
+      } else {
+        var timer;
+        window.addEventListener('resize', function () {
+          clearTimeout(timer);
+          timer = setTimeout(redrawChart, 200);
+        });
+      }
+    }
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    boot();
+  } else {
+    document.addEventListener('DOMContentLoaded', boot);
+  }
+})();

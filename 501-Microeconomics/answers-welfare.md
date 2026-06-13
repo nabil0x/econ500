@@ -36,7 +36,7 @@
 > **CS** is the area under the Marshallian (uncompensated) demand curve between old and new prices: $CS = \int_{p^0}^{p^1} x(p,w)\,dp$. CV and EV are exact welfare measures derived from Hicksian (compensated) demand; CS is observable but theoretically approximate unless income effects are zero.
 >
 > **Key insight:** [CV](GLOSSARY.md#term-cv) anchors on original utility at new prices; [EV](GLOSSARY.md#term-ev) anchors on new utility at old prices. For normal goods with a price decrease: $EV > [CS](GLOSSARY.md#term-cs) > CV$ (see FD2).
-> → *See also: Topic 4 Q2, Q3, Q4*
+> → *See also: [Topic 4 Q2](#q-welfare-02), [Q3](#q-welfare-03), [Q4](#q-welfare-04)*
 
 **Definitions:**
 
@@ -68,7 +68,7 @@ Demand     Hicksian ($u^{0}$)   Hicksian ($u^{1}$)   Marshallian (w)
 > **Professor's Corner:** Top students immediately draw the three demand curves and anchor CV to $u^{0}$ and EV to $u^{1}$. The most common mistake: confusing which reference utility belongs to which measure. CV = back to original utility; EV = forward to new utility — memorise this pairing.
 
 ⭐ **High-Yield** — CV/EV/CS definitions are foundational for all welfare measurement. Nearly every welfare question builds on these concepts.
-→ *See also: answers-ge-game-extern-trade Q8, answers-demand-production Q4*
+→ *See also: [answers-ge-game-extern-trade Q8](./answers-ge-game-extern-trade.md#q-edge-08) (Walras' Law), [answers-demand-production Q4](./answers-demand-production.md#q-prodset-03) (EoS)*
 
 ---
 
@@ -88,7 +88,7 @@ Demand     Hicksian ($u^{0}$)   Hicksian ($u^{1}$)   Marshallian (w)
 > **For a price increase ($p \uparrow$):** CV > CS > EV — the ordering reverses because the reference utility level flips. The gap $|EV - CV|$ measures the **income effect**: a larger gap implies a stronger income effect. When the income effect is zero (quasilinear utility), all three measures coincide.
 >
 > **Key insight:** Marshallian demand lies between the two [Hicksian demands](GLOSSARY.md#term-hicksian-demand) for normal goods. For inferior goods, the ordering reverses again — the Hicksian at $u^1$ shifts left instead of right.
-> → *See also: Topic 4 Q1, Q4*
+> → *See also: [Topic 4 Q1](#q-welfare-01), [Q4](#q-welfare-04)*
 
 **For a price decrease (p_{1}\downarrow) with normal goods:**
 
@@ -124,7 +124,7 @@ EV < CS < CV
 > **Professor's Corner:** The diagram is the centrepiece of this topic. Strong answers add the inferior goods case (reversed ordering) for bonus marks. The key mechanism: Hicksian demand at higher utility shifts right for normal goods — this generates EV > CS > CV.
 
 ⭐ **High-Yield** — The EV > CS > CV ordering is one of the most tested relationships. Know the diagram AND the intuition behind it.
-→ *See also: Topic 4 Q1, Q3, Q4*
+→ *See also: [Topic 4 Q1](#q-welfare-01), [Q3](#q-welfare-03), [Q4](#q-welfare-04)*
 
 ---
 
@@ -146,7 +146,7 @@ EV < CS < CV
 > $$e(p, u) = u \left(\frac{p_1}{\alpha}\right)^\alpha \left(\frac{p_2}{1-\alpha}\right)^{1-\alpha}$$
 >
 > **Key insight:** The [expenditure function](GLOSSARY.md#term-expenditure-function) is the dual of the [indirect utility function](GLOSSARY.md#term-indirect-utility): $e(p, v(p, w)) = w$ and $v(p, e(p, u)) = u$. It is the essential building block for computing [CV](GLOSSARY.md#term-cv) and [EV](GLOSSARY.md#term-ev).
-> → *See also: answers-consumer-theory Q2*
+> → *See also: [answers-consumer-theory Q2](./answers-consumer-theory.md#q-cons-1b-02) (indirect utility + Roy's)*
 
 **Step 1 — Walrasian demands:**
 
@@ -212,7 +212,7 @@ Since EV $-$ CV $= 124.24 - 87.9 = 36.34 > 0$, there is a substantial income eff
 > **Professor's Corner:** Derive the expenditure function first — it saves half the computation. Always check EV > CS > CV as a sanity check on your arithmetic: if your numbers violate this ordering for normal goods, recalculate.
 
 ⭐ **High-Yield** — The Cobb-Douglas welfare computation is a classic exam question. The expenditure function shortcut is essential for timed exams.
-→ *See also: answers-consumer-theory Q2 (CD demand), Topic 4 Q1, Q2*
+→ *See also: [answers-consumer-theory Q2](./answers-consumer-theory.md#q-cons-1b-02) (CD demand), [answers-consumer-theory Q3](./answers-consumer-theory.md#q-cons-1b-03) (CD expenditure function), WF Q1–Q2*
 
 ---
 
@@ -277,7 +277,7 @@ p_{1}
 
 > **Professor's Corner:** The key graphical insight: Marshallian demand lies between the two Hicksian curves for normal goods. Show this clearly and label the EV, CS, CV regions with distinct shading or patterns.
 
-→ *See also: Topic 4 Q1, Q2*
+→ *See also: [Topic 4 Q1](#q-welfare-01), [Q2](#q-welfare-02)*
 
 ---
 
@@ -299,7 +299,7 @@ p_{1}
 > **Special cases:** (i) Zero income effect (quasilinear utility) → $CS = CV = EV$ exactly; (ii) Small price change → all three approximately equal; (iii) Inferior good → ordering reverses.
 >
 > **Key insight:** Willig bounds provide a practical justification for using [CS](GLOSSARY.md#term-cs) in applied cost-benefit analysis despite its theoretical inferiority. The approximation error grows with the income elasticity and the size of the price change.
-> → *See also: Topic 4 Q1, Q3*
+> → *See also: [Topic 4 Q1](#q-welfare-01), [Q3](#q-welfare-03)*
 
 **For a price decrease (p_{1}\downarrow) with normal good:**
 
@@ -333,7 +333,7 @@ p_{1}
 
 > **Professor's Corner:** Mentioning Willig bounds (typically <5% error) distinguishes A-grade answers from B. The special case of quasilinear utility (CS = CV = EV) is a common exam follow-up — always have this ready.
 
-→ *See also: Topic 4 Q1, Q3*
+→ *See also: [Topic 4 Q1](#q-welfare-01), [Q3](#q-welfare-03)*
 
 ---
 
@@ -357,7 +357,7 @@ p_{1}
 > $$t = MSC - MPC \quad \text{at the socially optimal output}$$
 >
 > **Key insight:** [Pigou's](GLOSSARY.md#term-pigouvian-tax) framework assumes cardinal, interpersonally comparable utility — a limitation later critiqued by Robbins and superseded by the Pareto-Bergson approach. Modern externality analysis ([Coase](GLOSSARY.md#term-coase), 1960) offers an alternative: bargaining can solve externalities without government intervention when property rights are well-defined.
-> → *See also: Topic 5A Q5, Topic 5B Q4*
+> → *See also: [Topic 5A Q5](#q-socwel-05), [Topic 5B Q4](#q-pareto-04)*
 
 **Definition of Social Welfare:**
 
@@ -418,7 +418,7 @@ Pigou identified the divergence between private net product and social net produ
 > **Professor's Corner:** Strong answers identify Pigou's implicit cardinal utility assumption and link it to Robbins' ordinalist critique. Structure as three clear pillars — this shows the examiner you understand the architecture of Pigou's framework.
 
 ⭐ **High-Yield** — Pigou questions appear in multiple forms (Q1, Q5). Prepare one comprehensive answer you can adapt.
-→ *See also: Topic 5A Q5 (condensed Pigou)*
+→ *See also: [Topic 5A Q5](#q-socwel-05) (condensed Pigou)*
 
 ---
 
@@ -438,7 +438,7 @@ Pigou identified the divergence between private net product and social net produ
 > The **Point of Bliss** is the tangency between the GUPF and the highest attainable Bergson–Samuelson social indifference contour: $\text{slope(GUPF)} = \text{MRS}_{U_AU_B}^F$.
 >
 > **Key insight:** All points on the [GUPF](GLOSSARY.md#term-gupf) are [Pareto-optimal](GLOSSARY.md#term-po), but only the [point of bliss](GLOSSARY.md#term-point-of-bliss) maximizes social welfare — the [SWF](GLOSSARY.md#term-swf) embodies the value judgement that selects among them.
-> → *See also: Topic 5A Q4*
+> → *See also: [Topic 5A Q4](#q-socwel-04)*
 
 **Concept of Grand Utility Possibility Frontier:**
 
@@ -496,7 +496,7 @@ The point of bliss is the tangency between the **GUPF** and the **highest attain
 > **Professor's Corner:** The distinction between UPF (one product-mix) and GUPF (envelope of all UPFs) is where students lose marks. Show this clearly — the GUPF is the outer boundary of all possible UPFs.
 
 ⭐ **High-Yield** — The GUPF/bliss point diagram is one of the most important in welfare economics. Master the 4-step derivation.
-→ *See also: Topic 5A Q4 (SWF/GUPF), Topic 5B Q1 (Pareto sufficiency)*
+→ *See also: [Topic 5A Q4](#q-socwel-04) (SWF/GUPF), [Topic 5B Q1](#q-pareto-01) (Pareto sufficiency)*
 
 ---
 
@@ -516,7 +516,7 @@ The point of bliss is the tangency between the **GUPF** and the **highest attain
 > The **Cardinalist criterion** (Pigou) adds diminishing marginal utility of income to argue for redistribution: transferring income from rich (low $MU_m$) to poor (high $MU_m$) raises total welfare, assuming identical utility functions across individuals.
 >
 > **Key insight:** Both criteria require cardinal utility and interpersonal comparability — assumptions rejected by the ordinalist revolution (Robbins, 1932). [Bentham's](GLOSSARY.md#term-bentham) sum-ranking is equity-neutral; the [Cardinalist](GLOSSARY.md#term-cardinalist) criterion explicitly favours equality but depends on empirically unverifiable assumptions.
-> → *See also: Topic 5B Q6*
+> → *See also: [Topic 5B Q6](#q-pareto-06)*
 
 **Definition of Social Welfare:**
 
@@ -568,7 +568,7 @@ Social welfare is the aggregate well-being of a society, encompassing the satisf
 
 > **Professor's Corner:** Organise your answer by the efficiency-equity axis — this is the framework the examiner uses to mark. The Cardinalist criterion's weakness (identical utility functions assumed) is the most common missed point.
 
-→ *See also: Topic 5B Q6 (Utilitarian vs Rawlsian)*
+→ *See also: [Topic 5B Q6](#q-pareto-06) (Utilitarian vs Rawlsian)*
 
 ---
 
@@ -588,7 +588,7 @@ Social welfare is the aggregate well-being of a society, encompassing the satisf
 > **Arrow's Impossibility Theorem** (1951) asks whether a SWF can be constructed by aggregating individual preference orderings alone. Arrow proved that no such function can simultaneously satisfy: (1) Universal domain, (2) Pareto principle, (3) Independence of irrelevant alternatives, and (4) Non-dictatorship.
 >
 > **Key insight:** Bergson's [SWF](GLOSSARY.md#term-swf) (used in optimization) assumes a social planner with explicit value judgements; Arrow's SWF (preference aggregation) proves impossibility. These are fundamentally different concepts — conflating them is a common exam mistake.
-> → *See also: Topic 5A Q6, Topic 5B Q6*
+> → *See also: [Topic 5A Q6](#q-socwel-06), [Topic 5B Q6](#q-pareto-06)*
 
 **Definition of Social Welfare Function (SWF):**
 
@@ -653,7 +653,7 @@ $\partial U_B/\partial U_A (from GUPF) = (\partial W/\partial U_A) / (\partial W
 > **Professor's Corner:** The key insight: Pareto optimality ≡ points on GUPF (all efficient); SW maximisation = a specific point at tangency with the SWF. These are NOT the same — this distinction is the heart of welfare economics.
 
 ⭐ **High-Yield** — SWF definition and GUPF derivation appear in multiple question formats. The 4-step derivation is essential.
-→ *See also: Topic 5A Q2 (GUPF/bliss), Topic 5B Q1 (Pareto sufficiency)*
+→ *See also: [Topic 5A Q2](#q-socwel-02) (GUPF/bliss), [Topic 5B Q1](#q-pareto-01) (Pareto sufficiency)*
 
 ---
 
@@ -701,7 +701,7 @@ Pigou's *The Economics of Welfare* (1932) laid the foundation of neoclassical we
 
 > **Professor's Corner:** For the condensed version (Q5), the examiner wants synthesis, not repetition. Show you can identify the three pillars without the full detail of Q1. Strong answers add a brief evaluation of Pigou's overall legacy.
 
-→ *See also: Topic 5A Q1 (full Pigou)*
+→ *See also: [Topic 5A Q1](#q-socwel-01) (full Pigou)*
 
 ---
 
@@ -721,7 +721,7 @@ Pigou's *The Economics of Welfare* (1932) laid the foundation of neoclassical we
 > **Properties:** (i) Contours further northeast represent higher welfare; (ii) Convexity to origin implies diminishing marginal social utility (preference for equity); (iii) Shape reflects the ethical weights assigned to each individual — utilitarian contours have slope $-1$ (perfect substitutes in utility), Rawlsian contours are L-shaped (perfect complements).
 >
 > **Key insight:** The social optimum occurs where a social indifference contour is tangent to the [GUPF](GLOSSARY.md#term-gupf) — the slope of the contour equals the slope of the GUPF at that point.
-> → *See also: Topic 5B Q6*
+> → *See also: [Topic 5B Q6](#q-pareto-06)*
 
 **Definition of Social Welfare Function (SWF):**
 
@@ -776,7 +776,7 @@ A SWF is a rule for aggregating individual utility levels into a measure of over
 
 > **Professor's Corner:** The [Bergson-Samuelson SWF](GLOSSARY.md#term-bergson-samuelson) (used in optimisation) and Arrow's SWF (impossibility theorem) are different concepts. Many students conflate them — the examiner watches for this distinction.
 
-→ *See also: Topic 5A Q4 (SWF/GUPF), Topic 5B Q6 (Utilitarian vs Rawlsian)*
+→ *See also: [Topic 5A Q4](#q-socwel-04) (SWF/GUPF), [Topic 5B Q6](#q-pareto-06) (Utilitarian vs Rawlsian)*
 
 ---
 
@@ -800,7 +800,7 @@ A SWF is a rule for aggregating individual utility levels into a measure of over
 > **First Welfare Theorem:** Under local non-satiation, perfect competition, complete markets, and no externalities or public goods, every competitive equilibrium satisfies all three conditions and is therefore Pareto-optimal.
 >
 > **Key insight:** These conditions are necessary but not sufficient for [social welfare](GLOSSARY.md#term-social-welfare) maximization — they guarantee efficiency but say nothing about distributional equity.
-> → *See also: Topic 5B Q1, Topic 5B Q5*
+> → *See also: [Topic 5B Q1](#q-pareto-01), [Topic 5B Q5](#q-pareto-05)*
 
 The 2×2×2 general equilibrium model for social welfare maximization rests on the following assumptions:
 
@@ -856,7 +856,7 @@ The 2×2×2 general equilibrium model for social welfare maximization rests on t
 
 > **Professor's Corner:** The crucial distinction students miss: assumptions for Pareto optimality (sections A-C) vs. additional assumptions for SW maximisation (section D). The latter embodies value judgements — this is the key insight.
 
-→ *See also: Topic 5B Q1 (Pareto sufficiency), Topic 5B Q5 (Welfare Theorems)*
+→ *See also: [Topic 5B Q1](#q-pareto-01) (Pareto sufficiency), [Topic 5B Q5](#q-pareto-05) (Welfare Theorems)*
 
 ---
 
@@ -880,7 +880,7 @@ The 2×2×2 general equilibrium model for social welfare maximization rests on t
 > A **Pareto improvement** is a reallocation that makes at least one individual better off without harming anyone else. If a Pareto improvement exists, the original allocation is Pareto-inefficient.
 >
 > **Key insight:** [Pareto optimality](GLOSSARY.md#term-po) is a minimal efficiency condition — it does not consider distributional equity. An allocation where one person has everything and others have nothing can be Pareto-optimal. The [SWF](GLOSSARY.md#term-swf) is needed to select among Pareto-optimal points.
-> → *See also: Topic 5B Q3, Topic 5A Q1*
+> → *See also: [Topic 5B Q3](#q-pareto-03), [Topic 5A Q1](#q-socwel-01)*
 
 **Statement:** A situation can be Pareto-optimal without maximizing social welfare. All SW maxima must be Pareto-optimal, but not all Pareto-optimal points are SW maxima.
 
@@ -929,7 +929,7 @@ Points c, c_{1}, and d are all on the GUPF → all Pareto-optimal. But if d lies
 > **Professor's Corner:** The GUPF-SWF tangency diagram is the single most important diagram in welfare economics. Master it cold. The phrase "all points on GUPF are Pareto-optimal, but only one maximizes SW" is the key punchline.
 
 ⭐ **High-Yield** — This is the quintessential welfare economics essay question. The GUPF-SWF diagram answers the entire question in one image.
-→ *See also: Topic 5A Q2 (GUPF/bliss), Topic 5A Q4 (SWF)*
+→ *See also: [Topic 5A Q2](#q-socwel-02) (GUPF/bliss), [Topic 5A Q4](#q-socwel-04) (SWF)*
 
 ---
 
@@ -951,7 +951,7 @@ Points c, c_{1}, and d are all on the GUPF → all Pareto-optimal. But if d lies
 > **Robbins' Critique** (1932): Interpersonal comparisons of utility have no scientific basis. Since Kaldor-Hicks uses money valuations (which depend on income), it implicitly embeds interpersonal comparisons that the criterion claimed to avoid.
 >
 > **Key insight:** The [Scitovsky paradox](GLOSSARY.md#term-scitovsky) (see FD17) reveals a further flaw: [Kaldor-Hicks](GLOSSARY.md#term-hicks-kaldor) can produce contradictory rankings $(A \succ B \text{ and } B \succ A)$ when utility possibility curves intersect.
-> → *See also: Topic 5B Q7*
+> → *See also: [Topic 5B Q7](#q-pareto-07)*
 
 **The Hicks-Kaldor Compensation Criterion:**
 
@@ -993,7 +993,7 @@ Can compensation be correct?
 
 > **Professor's Corner:** The word "potential" is the single most important term in this question. Potential ≠ actual compensation — this is the most common trap. Strong answers also note that Kaldor-Hicks accepts the status quo distribution as neutral.
 
-→ *See also: Topic 5B Q7 (Scitovsky paradox)*
+→ *See also: [Topic 5B Q7](#q-pareto-07) (Scitovsky paradox)*
 
 ---
 
@@ -1015,7 +1015,7 @@ Can compensation be correct?
 > $$\mathcal{C} = \{ (X_A, Y_A) \mid \text{MRS}^A_{XY}(X_A, Y_A) = \text{MRS}^B_{XY}(\bar{X} - X_A, \bar{Y} - Y_A) \}$$
 >
 > **Key insight:** If [MRS](GLOSSARY.md#term-mrs)$^A \neq$ MRS$^B$, mutually beneficial trade is possible — the consumer with the higher MRS values $X$ more and will trade $Y$ for $X$ until MRS equalize. The [contract curve](GLOSSARY.md#term-contract-curve) contains infinitely many Pareto-optimal points, each with a different utility distribution.
-> → *See also: answers-ge-game-extern-trade Q2*
+> → *See also: [answers-ge-game-extern-trade Q2](./answers-ge-game-extern-trade.md#q-edge-02) (Stolper-Samuelson / taste shock)*
 
 **Setup:**
 
@@ -1086,7 +1086,7 @@ where $MRS^i_{xy} = MU_x^i / MU_y^i = (\partial U_i/\partial X_i) / (\partial U_
 
 > **Professor's Corner:** Write the Lagrangian cleanly then explain the economics: if MRS differ, both can gain from trade until MRS equalise. The contract curve is not unique — this connects to the Pareto-but-not-SW-max point.
 
-→ *See also: answers-ge-game-extern-trade Q2 (Edgeworth box), Topic 5B Q1*
+→ *See also: [answers-ge-game-extern-trade Q2](./answers-ge-game-extern-trade.md#q-edge-02) (Edgeworth box / taste shock), [WF 5B.Q1](./answers-welfare.md#q-pareto-01)*
 
 ---
 
@@ -1106,7 +1106,7 @@ where $MRS^i_{xy} = MU_x^i / MU_y^i = (\partial U_i/\partial X_i) / (\partial U_
 > $$\text{Private: } \frac{\partial C_i(q_i)}{\partial q_i} = p \quad \text{vs} \quad \text{Social: } \frac{\partial}{\partial q_i}\sum_j C_j(q_1, \dots, q_n) = p$$
 >
 > **Pigouvian solution:** Tax the firm generating the external diseconomy (negative externality) and subsidize the firm generating the external economy (positive externality), each at the marginal external effect evaluated at the social optimum.
-> → *See also: Topic 5A Q1, Topic 5A Q5*
+> → *See also: [Topic 5A Q1](#q-socwel-01), [Topic 5A Q5](#q-socwel-05)*
 
 **Step 1 — Identify externalities:**
 
@@ -1181,7 +1181,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 > **Professor's Corner:** The solution is algorithmic: private optimum → social optimum → tax/subsidy = marginal external effect → social dividend. The negative profit for Firm 2 at social optimum is realistic and shows the need for the subsidy.
 
 ⭐ **High-Yield** — Numerical externality questions are guaranteed in exams. The 5-step structure is essential for timed answers.
-→ *See also: answers-ge-game-extern-trade Q5 (externalities)*
+→ *See also: [answers-ge-game-extern-trade Q5](./answers-ge-game-extern-trade.md#q-extern-05) (bandwagon/snob effects)*
 
 ---
 
@@ -1202,7 +1202,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 > $$\text{1st: CE} \xrightarrow{\text{local non-satiation}} \text{PO} \qquad \text{2nd: PO} \xrightarrow{\text{convexity + transfers}} \text{CE}$$
 >
 > **Key insight:** The two theorems together imply that efficiency and equity can be separated — the government can redistribute endowments (equity) via lump-sum transfers and let competitive markets achieve efficiency. *(See: [FWT](GLOSSARY.md#term-fwt), [SWT](GLOSSARY.md#term-swt))*
-> → *See also: Topic 5B Q8, Topic 5A Q7*
+> → *See also: [Topic 5B Q8](#q-pareto-08), [Topic 5A Q7](#q-socwel-07)*
 
 **First Welfare Theorem (Invisible Hand Theorem):**
 
@@ -1276,7 +1276,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 > **Professor's Corner:** Strong answers distinguish the direction of each theorem (CE → PO vs PO → CE) and the key assumption (local non-satiation vs convexity). The Second Theorem is more relevant for policy — it justifies redistribution without sacrificing efficiency.
 
 ⭐ **High-Yield** — The two Welfare Theorems are the foundation of modern welfare economics. Expect at least one question on them.
-→ *See also: Topic 5B Q8 (competition vs welfare), Topic 5A Q7 (assumptions)*
+→ *See also: [Topic 5B Q8](#q-pareto-08) (competition vs welfare), [Topic 5A Q7](#q-socwel-07) (assumptions)*
 
 ---
 
@@ -1298,7 +1298,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 > $$W_R = \min_i U_i \quad \Rightarrow \quad \text{society is infinitely averse to inequality}$$
 >
 > **Key insight:** The shape of the social indifference curve reveals the entire ethical stance. [Utilitarian](GLOSSARY.md#term-utilitarian) = sum-ranking (equity-blind); [Rawlsian](GLOSSARY.md#term-rawlsian) = maximin (extreme equity focus). The [Bergson-Samuelson](GLOSSARY.md#term-bergson-samuelson) [SWF](GLOSSARY.md#term-swf) nests both as special cases.
-> → *See also: Topic 5A Q3, Topic 5A Q6*
+> → *See also: [Topic 5A Q3](#q-socwel-03), [Topic 5A Q6](#q-socwel-06)*
 
 **Social Welfare Function (SWF):**
 
@@ -1373,7 +1373,7 @@ $W = min{U_{1}, U_{2}, ..., U_{n}}$
 
 > **Professor's Corner:** The shape of the social indifference curves IS the answer. Utilitarian = straight line (perfect substitutes in utility). Rawlsian = L-shaped (perfect complements). The graph reveals the entire ethical stance.
 
-→ *See also: Topic 5A Q3 (welfare criteria), Topic 5A Q6 (SWF as criterion)*
+→ *See also: [Topic 5A Q3](#q-socwel-03) (welfare criteria), [Topic 5A Q6](#q-socwel-06) (SWF as criterion)*
 
 ---
 
@@ -1398,7 +1398,7 @@ $W = min{U_{1}, U_{2}, ..., U_{n}}$
 > A change passes the Scitovsky criterion only if (i) the forward Kaldor-Hicks test passes AND (ii) the reversal test fails. This eliminates contradictory rankings by ensuring consistency.
 >
 > **Key insight:** The double test is necessary for a consistent welfare ranking when utility possibility curves intersect. However, it does not address the deeper issue of income distribution bias inherent in money-metric welfare criteria. *(See: [Scitovsky](GLOSSARY.md#term-scitovsky))*
-> → *See also: Topic 5B Q2*
+> → *See also: [Topic 5B Q2](#q-pareto-02)*
 
 **Hicks-Kaldor Compensation Principle:**
 
@@ -1477,7 +1477,7 @@ A movement from a to d (where both are better off) passes both tests.
 > **Professor's Corner:** The Scitovsky paradox (intersecting UPFs → contradictory rankings) is the classic exam point. Show the intersecting UPF diagram clearly. The double test resolves it by requiring both forward and reverse conditions.
 
 ⭐ **High-Yield** — The Scitovsky paradox is a guaranteed exam question. Know the intersecting UPF diagram and the double test.
-→ *See also: Topic 5B Q2 (MU of money assumptions)*
+→ *See also: [Topic 5B Q2](#q-pareto-02) (MU of money assumptions)*
 
 ---
 
@@ -1503,7 +1503,7 @@ A movement from a to d (where both are better off) passes both tests.
 > | Non-convexities | Increasing returns | No competitive equilibrium |
 >
 > **Key insight:** Even without market failures, [competitive equilibrium](GLOSSARY.md#term-ce) need not maximize social welfare — distribution depends on initial endowments. The [2nd Welfare Theorem](GLOSSARY.md#term-swt) shows lump-sum transfers can correct this, but such transfers are rarely feasible in practice.
-> → *See also: Topic 5B Q5, Topic 5A Q7*
+> → *See also: [Topic 5B Q5](#q-pareto-05), [Topic 5A Q7](#q-socwel-07)*
 
 **Short Answer:** Perfect competition ensures *Pareto efficiency* (First Welfare Theorem) but does NOT guarantee *social welfare maximization*, which also requires distributional equity.
 
@@ -1572,4 +1572,20 @@ The theoretical ideal combines: **Perfect competition (for efficiency) + Lump-su
 > **Professor's Corner:** This is the synthesis question that ties together all of welfare economics. Structure: Yes (efficiency via 3 marginal conditions) → No (initial endowments, market failures, equity) → Conclusion (necessary but not sufficient). Reference both Welfare Theorems explicitly.
 
 ⭐ **High-Yield** — This is the capstone question that ties together all welfare economics topics. The synthesis table makes for a strong conclusion.
-→ *See also: Topic 5B Q1 (Pareto sufficiency), Topic 5B Q5 (Welfare Theorems)*
+→ *See also: [Topic 5B Q1](#q-pareto-01) (Pareto sufficiency), [Topic 5B Q5](#q-pareto-05) (Welfare Theorems)*
+
+---
+
+## 🔗 See also
+
+| File | Related Content |
+|------|----------------|
+| [Answers: Consumer Theory](./answers-consumer-theory.md) | UMP/EMP duality (CT 1B.Q1–Q3) — *expenditure function from EMP directly defines EV/CV; quasilinear demand (CT 1B.Q7) → zero income effect → CV=EV=CS* |
+| [Answers: Demand & Production](./answers-demand-production.md) | DWL computation (DP 3C.Q1) — *same ½ × t × ΔQ formula*; Lerner Index (DP 2.Q3) — *market power measure* |
+| [Answers: GE, Game Theory & Trade](./answers-ge-game-extern-trade.md) | Pareto conditions (GE 6B.Q3), Welfare Theorems context (GE 8.Q6 — FWT fails), tariff DWL (GE 9.Q1) |
+| [Formula Reference](./basics.md) | Welfare measurement, CV/EV/CS formulas, FWT/SWT statements |
+| [Welfare Change Reference](./welfare-change-reference.md) | Original CV/EV/CS theory paper summary |
+| [Equation Explainer](./EQUATION-EXPLAINER.md) | Welfare equations in plain English |
+| [Cross-Reference Map](./answers-cross-reference.md) | Welfare → other files bridge map (Section G3), dependency chains |
+| [Study Roadmap](./STUDY-ROADMAP.md) | 10-day study plan (welfare covered Days 5–7) |
+| [Glossary](./GLOSSARY.md) | All welfare concepts (CV, EV, CS, DWL, FWT, SWT, GUPF, KH, Scitovsky)

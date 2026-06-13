@@ -86,7 +86,7 @@ The preference-based approach models consumer choice by assuming the consumer ha
 
 > **Professor's Corner:** The difference between a B and an A answer is the *violation examples*. A students give the Condorcet paradox and money-pump argument; B students merely restate the definitions. For completeness, mention the "brother of" counterexample. Also note that transitivity + completeness together imply reflexivity — a subtle point that impresses examiners.
 >
-> → *See also: DP 2 (demand elasticities build on rational choice); WF 5B.Q5 (welfare theorems assume rational preferences)*
+> → *See also: [DP 2](./answers-demand-production.md) (demand elasticities build on rational choice); [WF 5B.Q5](./answers-welfare.md#q-pareto-05) (welfare theorems assume rational preferences)*
 
 ---
 
@@ -125,7 +125,7 @@ The preference-based approach models consumer choice by assuming the consumer ha
 >
 > **Classification:** [Strong monotonicity](GLOSSARY.md#term-strong-mono) is stronger than [monotonicity](GLOSSARY.md#term-monotonicity) (which requires $x_k > y_k$ for ALL $k$ for $x \succ y$). [Leontief](GLOSSARY.md#term-leontief) utility satisfies monotonicity but violates strong monotonicity.
 >
-> → *See also: FD10 (LNS), Q2 (downward-sloping IC proof)*
+> → *See also: FD10 (LNS), [Q2](./answers-consumer-theory.md#q-cons-02) (downward-sloping IC proof)*
 
 **Indifference set** of a bundle $x$ is the set of all bundles $y$ such that the consumer is indifferent between them:
 
@@ -157,7 +157,7 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 
 > **Professor's Corner:** Most students forget to define the IND set before launching into the proof — this costs 2 marks. Top answers draw the north-east/south-west quadrants and label the contradiction explicitly. Also note that the proof shows SM ⇒ strictly downward sloping, whereas mere monotonicity gives weakly downward sloping (allowing vertical/horizontal segments).
 >
-> → *See also: Section 1A Q7 (SM ⇒ M ⇒ LNS chain); CT 1B.Q4 (Walrasian demand properties build on LNS)*
+> → *See also: [Section 1A Q7](./answers-consumer-theory.md#q-cons-07) (SM ⇒ M ⇒ LNS chain); [CT 1B.Q4](./answers-consumer-theory.md#q-cons-1b-04) (Walrasian demand properties build on LNS)*
 
 ---
 
@@ -217,7 +217,7 @@ $$\lambda x + (1-\lambda) y \succ z$$
 
 > **Professor's Corner:** The most common error is conflating convex preferences with convex UCS — they are the same condition stated differently. Students who can articulate *why* they're equivalent (geometrically: a chord between any two points in UCS stays in UCS) earn top marks. For strong convexity, the key is strictness: the chord lies in the interior of UCS, not on its boundary. Know the CD vs linear vs Leontief convexity classification cold.
 >
-> → *See also: Section 1A Q4 (equivalence proofs); Section 1A Q9 (dMRS/dx connection); DP 3A.Q4 (EoS and convexity in production)*
+> → *See also: [Section 1A Q4](./answers-consumer-theory.md#q-cons-04) (equivalence proofs); [Section 1A Q9](./answers-consumer-theory.md#q-cons-09) (dMRS/dx connection); [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (EoS and convexity in production)*
 
 ---
 
@@ -280,7 +280,7 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 > **Professor's Corner:** The forward direction ($\Rightarrow$) is the cleaner proof and most students get it. The reverse direction ($\Leftarrow$) trips people up — you need to *start* with quasiconcavity of $u$ and *deduce* that UCS is convex. The key move: take any $z$, any $x,y\in UCS(z)$, note $\min\{u(x),u(y)\}\ge u(z)$, apply quasiconcavity. Students who write "$u(\lambda x+(1-\lambda)y) \ge \min\{u(x),u(y)\} \ge u(z)$" in one line get full marks. Also note the bordered Hessian condition for $n>2$ — this is A+ territory.
 >
-> → *See also: Section 1A Q3 (convexity definitions); Section 1A Q9 (dMRS/dx equivalence)*
+> → *See also: [Section 1A Q3](./answers-consumer-theory.md#q-cons-03) (convexity definitions); [Section 1A Q9](./answers-consumer-theory.md#q-cons-09) (dMRS/dx equivalence)*
 
 ---
 
@@ -344,7 +344,7 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 > **Professor's Corner:** The most common mistake is using continuity *before* establishing that $A$ and $B$ are closed. You need to argue: (i) by monotonicity, bundles on the diagonal are ordered, (ii) the sets $A$ (points ≤ $x$) and $B$ (points ≥ $x$) partition $[0,m]$, (iii) continuity of $\succeq$ implies both are closed, hence their non-empty intersection gives $t(x)$. A students list these three steps explicitly. Also mention that Lexicographic preferences violate continuity and thus cannot be represented — this shows you understand why continuity is necessary.
 >
-> → *See also: Section 1A Q1 (rational preferences are the starting point); WF 5B.Q5 (welfare theorems assume utility representation)*
+> → *See also: [Section 1A Q1](./answers-consumer-theory.md#q-cons-01) (rational preferences are the starting point); [WF 5B.Q5](./answers-welfare.md#q-pareto-05) (welfare theorems assume utility representation)*
 
 ---
 
@@ -356,7 +356,7 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 > **Marking Guide [14 marks]:** Utility function definition & notation (2) | Ordinality & monotonic transformations (3) | Monotonicity — conditions (a) & (b) (3) | Strong monotonicity (3) | Comparison table & IC implications (3)
 >
-> → *See also: Section 1A Q5 (Debreu existence — utility as representation); Section 1A Q7 (hierarchical chain SM ⇒ M ⇒ LNS)*
+> → *See also: [Section 1A Q5](./answers-consumer-theory.md#q-cons-05) (Debreu existence — utility as representation); [Section 1A Q7](./answers-consumer-theory.md#q-cons-07) (hierarchical chain SM ⇒ M ⇒ LNS)*
 >
 > **Formal Definition 9 — [Utility Function](GLOSSARY.md#term-utility-function)**
 >
@@ -408,7 +408,7 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 
 > **Professor's Corner:** The key distinction students miss: under *monotonicity*, increasing only good 1 (holding others constant) yields only weak improvement ($x \succeq y$), not strict improvement. Under *strong monotonicity*, it's strictly better ($x \succ y$). This matters for LNS — monotonicity is sufficient to guarantee LNS, but strong monotonicity is not required. The Leontief utility function is the canonical example that satisfies monotonicity but violates strong monotonicity — state this explicitly.
 >
-> → *See also: Section 1A Q2 (strong monotonicity ⇒ downward-sloping ICs); DP 3A.Q2 (production set monotonicity parallels)*
+> → *See also: [Section 1A Q2](./answers-consumer-theory.md#q-cons-02) (strong monotonicity ⇒ downward-sloping ICs); [DP 3A.Q2](./answers-demand-production.md#q-prodset-02) (production set monotonicity parallels)*
 
 ---
 
@@ -467,7 +467,7 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 
 > **Professor's Corner:** Three common mistakes: (1) For SM ⇒ M, students forget to handle the $x = y$ case — you need to note that if all components are equal, $x \sim y$, which is consistent with $x \succeq y$. (2) For M ⇒ LNS, using $\delta = \varepsilon/2$ with only one good increasing doesn't work under plain monotonicity (you'd only get weak preference). The trick is to increase *all* goods by $\delta = \varepsilon/\sqrt{N}$. (3) Few students mention that the converse M ⇒ SM does NOT hold — the Leontief counterexample is essential.
 >
-> → *See also: Section 1A Q6 (monotonicity definitions); Section 1B Q4 (Walras' Law depends on LNS)*
+> → *See also: [Section 1A Q6](./answers-consumer-theory.md#q-cons-06) (monotonicity definitions); [Section 1B Q4](./answers-consumer-theory.md#q-cons-1b-04) (Walras' Law depends on LNS)*
 
 ---
 
@@ -479,7 +479,7 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 
 > **Marking Guide [14 marks]:** Homogeneity definition & degree (2) | Properties (MRS, derivatives) (3) | Examples (2) | Homotheticity definition (2) | Key properties — Engel curves, shares, MRS (3) | Homogeneous ⊂ Homothetic + counterexample (2)
 >
-> → *See also: Section 1B Q5 (demand-side implications of homotheticity); DP 3A.Q4 (EoS and homotheticity in production)*
+> → *See also: [Section 1B Q5](./answers-consumer-theory.md#q-cons-1b-05) (demand-side implications of homotheticity); [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (EoS and homotheticity in production)*
 >
 > **Formal Definition 11 — [Homogeneous Function](GLOSSARY.md#term-homogeneity)**
 >
@@ -559,7 +559,7 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 
 > **Professor's Corner:** The counterexample $u = xy + a$ (homothetic but not homogeneous) is the make-or-break example — examiners specifically look for it. Also note: homogeneity of Walrasian demand ($x(ap,aw)=x(p,w)$) is HD(0) and requires no preference assumptions (it's a property of the budget set, not preferences). Homotheticity of *preferences* is an assumption. A students distinguish these sharply.
 >
-> → *See also: Section 1B Q5 (demand-focus version of this question); DP 3A.Q4 (EoS — different homotheticity in production)*
+> → *See also: [Section 1B Q5](./answers-consumer-theory.md#q-cons-1b-05) (demand-focus version of this question); [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (EoS — different homotheticity in production)*
 
 ---
 
@@ -676,7 +676,7 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 
 > **Professor's Corner:** This derivation separates A students from the rest. The critical insight: $dMRS/dx$ shares a numerator with the bordered Hessian determinant (up to sign). Most students can compute $dMRS/dx$ but cannot connect it to the quasiconcavity condition. The chain is: $dMRS/dx < 0$ ⇔ $u_x^2 u_{yy} - 2u_x u_y u_{xy} + u_y^2 u_{xx} < 0$ ⇔ bordered Hessian $> 0$ ⇔ strict quasiconcavity. Memorize the numerator form — it reappears in duality theory. Also note: for $n > 2$, the bordered Hessian condition is more complex (principal minors alternate in sign); the two-good case is a simplification.
 >
-> → *See also: Section 1A Q4 (quasiconcavity ⇔ convex UCS); Section 1A Q10 (specific application)*
+> → *See also: [Section 1A Q4](./answers-consumer-theory.md#q-cons-04) (quasiconcavity ⇔ convex UCS); [Section 1A Q10](./answers-consumer-theory.md#q-cons-10) (specific application)*
 
 ---
 
@@ -737,9 +737,9 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 
 **Exam Tip:** Short question (∼3 marks). Compute MRS, show $dMRS/dx < 0$. The key insight is that $MRS = y$, which is decreasing along the IC because $y$ falls as $x$ rises.
 
-> **Professor's Corner:** This is a neat application of Q9's general result. The elegant shortcut: since $MRS = y$ and $dy/dx = -y$ along the IC, $dMRS/dx = -y < 0$ immediately. No need for the full bordered Hessian — though including it as verification shows depth. Note also that the quasilinear form $x + \ln y$ has zero income effect for $y$ — this becomes important in 1B Q7 and welfare analysis (WF Q5 where CV = EV = CS for quasilinear utilities).
+> **Professor's Corner:** This is a neat application of Q9's general result. The elegant shortcut: since $MRS = y$ and $dy/dx = -y$ along the IC, $dMRS/dx = -y < 0$ immediately. No need for the full bordered Hessian — though including it as verification shows depth. Note also that the quasilinear form $x + \ln y$ has zero income effect for $y$ — this becomes important in [1B Q7](./answers-consumer-theory.md#q-cons-1b-07) and welfare analysis ([WF Q5](./answers-welfare.md#q-welfare-05) where CV = EV = CS for quasilinear utilities).
 >
-> → *See also: Section 1A Q9 (general dMRS/dx equivalence); Section 1B Q7 (demand for quasilinear); WF Q5 (Willig bounds — quasilinear gives CV = EV = CS)*
+> → *See also: [Section 1A Q9](./answers-consumer-theory.md#q-cons-09) (general dMRS/dx equivalence); [Section 1B Q7](./answers-consumer-theory.md#q-cons-1b-07) (demand for quasilinear); [WF Q5](./answers-welfare.md#q-welfare-05) (Willig bounds — quasilinear gives CV = EV = CS)*
 
 ---
 
@@ -845,7 +845,7 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 
 > **Professor's Corner:** Three pitfalls: (1) Students forget to verify Walras' Law explicitly — substitute demands back into the budget to confirm. (2) The cross-price effect being zero ($\partial x_1/\partial p_2 = 0$) is a special feature of Cobb-Douglas (log utilities are additively separable), NOT a general property. (3) Normalizing $\alpha + \beta = 1$ saves time, but state it explicitly; unnormalized answers are equally correct. The constant share property is the single most testable result — memorise $s_k = \alpha_k/(\sum \alpha)$.
 >
-> → *See also: Section 1B Q2 (indirect utility); Section 1B Q3 (EMP/Hicksian); WF Q3 (CD welfare computation)*
+> → *See also: [Section 1B Q2](./answers-consumer-theory.md#q-cons-1b-02) (indirect utility); [Section 1B Q3](./answers-consumer-theory.md#q-cons-1b-03) (EMP/Hicksian); [WF Q3](./answers-welfare.md#q-welfare-03) (CD welfare computation)*
 
 ---
 
@@ -936,7 +936,7 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 
 > **Professor's Corner:** Roy's identity is free marks if you can compute derivatives cleanly. The most common error: forgetting the minus sign. Second: miscomputing $\partial v/\partial p_k$ (it's $-\alpha v/p_1$, not $-\alpha B w^{\alpha+\beta} p_1^{-\alpha-1} p_2^{-\beta}$ — factor $v$ out for elegance). A students simplify to $-\alpha v/p_1$ and then cancel $v$ with the denominator's $v$. Also note: Roy's identity holds for any indirect utility function satisfying standard properties — Cobb-Douglas is just the verification.
 >
-> → *See also: Section 1B Q1 (Walrasian demand); Section 1B Q3 (EMP parallels with Shephard's lemma); DP 3B.Q1 (Hotelling's lemma — producer-side analog)*
+> → *See also: [Section 1B Q1](./answers-consumer-theory.md#q-cons-1b-01) (Walrasian demand); [Section 1B Q3](./answers-consumer-theory.md#q-cons-1b-03) (EMP parallels with Shephard's lemma); [DP 3B.Q1](./answers-demand-production.md#q-profit-01) (Hotelling's lemma — producer-side analog)*
 
 ---
 
@@ -1069,7 +1069,7 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 
 > **Professor's Corner:** The single most important insight: the tangency condition from EMP yields the SAME ratio $x_2/x_1 = (\beta/\alpha)(p_1/p_2)$ as UMP — duality in action. The expenditure share is the same whether you're maximizing utility or minimizing expenditure. For Shephard's lemma verification: $\partial e/\partial p_1 = \bar{u}(\alpha/p_1)^\alpha (\beta/p_2)^\beta \cdot \alpha \cdot (1/\alpha) \dots$ — simplify carefully; the $\alpha$ cancels to give $\bar{u} \cdot (\alpha/\beta)^\beta \cdot (p_2/p_1)^\beta = h_1$. Practice this cancellation.
 >
-> → *See also: Section 1B Q1 (UMP duality partner); Section 1B Q2 (Roy's identity analog); WF Q1-Q3 (CV/EV directly use expenditure functions)*
+> → *See also: [Section 1B Q1](./answers-consumer-theory.md#q-cons-1b-01) (UMP duality partner); [Section 1B Q2](./answers-consumer-theory.md#q-cons-1b-02) (Roy's identity analog); [WF Q1](./answers-welfare.md#q-welfare-01)–[Q3](./answers-welfare.md#q-welfare-03) (CV/EV directly use expenditure functions)*
 
 ---
 
@@ -1160,7 +1160,7 @@ The Kuhn-Tucker conditions are necessary for a max. They are sufficient when:
 
 > **Professor's Corner:** This is a synthesis question—it tests whether you understand the *boundaries* of UMP applicability. Top answers identify the three sufficient conditions explicitly (quasiconcavity, monotonicity/LNS, non-zero gradient) and match each to its violation scenario. The [Giffen good](GLOSSARY.md#term-giffen) paradox is NOT a violation—it satisfies all sufficient conditions but the income effect is large and negative. Don't confuse Giffen behavior with non-quasiconcavity. The corner solution case ($x_1 = 0$) is the most commonly tested on exams.
 >
-> → *See also: Section 1A Q1 (rationality assumptions); Section 1A Q7 (LNS chain); DP 2.Q1 ([Giffen goods](GLOSSARY.md#term-giffen) in demand estimation)*
+> → *See also: [Section 1A Q1](./answers-consumer-theory.md#q-cons-01) (rationality assumptions); [Section 1A Q7](./answers-consumer-theory.md#q-cons-07) (LNS chain); [DP 2.Q1](./answers-demand-production.md#q-demand-01) ([Giffen goods](GLOSSARY.md#term-giffen) in demand estimation)*
 
 ---
 
@@ -1246,9 +1246,9 @@ A preference relation is homothetic if all indifference sets are related to prop
 
 **Exam Tip:** For 10 marks, treat this as a demand-focused question. Link homogeneity of demand (the property) to homotheticity of preferences (the assumption). Show the income-linearity property of demand under homotheticity. Use Engel curve diagrams to distinguish homothetic (line through origin) from non-homothetic preferences.
 
-> **Professor's Corner:** This is the demand-side complement to Section 1A Q8 — together they form a complete picture. The key insight: HD(0) of Walrasian demand is a *property* of any solution to UMP (no preference assumptions needed—it follows from budget-set homogeneity). Homotheticity is an *assumption* about preferences. Watch for the question "Is Walrasian demand always homogeneous of degree zero?" — answer yes, trivially, because $B(p,w) = B(ap,aw)$. The income-linearity result $x(p,w) = w \cdot x(p,1)$ under homotheticity is the most testable corollary.
+> **Professor's Corner:** This is the demand-side complement to [Section 1A Q8](./answers-consumer-theory.md#q-cons-08) — together they form a complete picture. The key insight: HD(0) of Walrasian demand is a *property* of any solution to UMP (no preference assumptions needed—it follows from budget-set homogeneity). Homotheticity is an *assumption* about preferences. Watch for the question "Is Walrasian demand always homogeneous of degree zero?" — answer yes, trivially, because $B(p,w) = B(ap,aw)$. The income-linearity result $x(p,w) = w \cdot x(p,1)$ under homotheticity is the most testable corollary.
 >
-> → *See also: Section 1A Q8 (utility-side definitions); DP 3A.Q4 (EoS in production homotheticity)*
+> → *See also: [Section 1A Q8](./answers-consumer-theory.md#q-cons-08) (utility-side definitions); [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (EoS in production homotheticity)*
 
 ---
 
@@ -1348,7 +1348,7 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 
 > **Professor's Corner:** The Leontief case is the only functional form where Hicksian demand is *price-independent* ($h_k = \bar{u}$). This is because there is zero substitution possibility — the compensated law of demand gives $\partial h_k/\partial p_k = 0$. A students note this explicitly. Also note the duality checks: $e(p, v(p,w)) = w$ works out cleanly because $v(p,w) = w/\sum p_k$ and $e(p,u) = u\sum p_k$. The symmetry of this is elegant and examiners love it.
 >
-> → *See also: Section 1B Q1-Q3 (CD — the substitution case); DP 3A.Q6 (production-complements analog: sausage maker)*
+> → *See also: [Section 1B Q1](./answers-consumer-theory.md#q-cons-1b-01)–[Q3](./answers-consumer-theory.md#q-cons-1b-03) (CD — the substitution case); [DP 3A.Q6](./answers-demand-production.md#q-prodset-05) (production-complements analog: sausage maker)*
 
 ---
 
@@ -1432,7 +1432,7 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 
 > **Professor's Corner:** The condition $I \ge p_x$ is the most commonly missed point — exam questions frequently ask "with limited income, which goods are consumed?" Students who just write $x = I/p_x - 1$ without discussing the corner get partial marks. The deeper insight: quasilinear utility ($x + f(y)$) has zero income effect for the $y$ good. This implies CV = EV = CS in welfare analysis (see WF Q5). Also note the contrast with Cobb-Douglas where all income effects are proportional.
 >
-> → *See also: Section 1A Q10 (quasilinear IC shape proof); WF Q5 (Willig bounds — quasilinear gives CV = EV = CS)*
+> → *See also: [Section 1A Q10](./answers-consumer-theory.md#q-cons-10) (quasilinear IC shape proof); [WF Q5](./answers-welfare.md#q-welfare-05) (Willig bounds — quasilinear gives CV = EV = CS)*
 
 ---
 
@@ -1454,7 +1454,7 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 >
 > **Key insight:** Always check the sign of marginal utilities before solving the [UMP](GLOSSARY.md#term-ump). A [Lagrangian](GLOSSARY.md#term-lagrangian) tangency condition with a bad identifies a minimum, not a maximum. This is a classic exam trap.
 >
-> → *See also: FD29 (Corner Solution), 1B‑Q8 (worked example)*
+> → *See also: FD29 (Corner Solution), [1B‑Q8](./answers-consumer-theory.md#q-cons-1b-08) (worked example)*
 
 **Utility:** $u(x, y) = x - 3y$
 
@@ -1497,8 +1497,21 @@ Since $MRS \neq p_x/p_y$, and $MU_y < 0$, the tangency condition would yield a m
 
 > **Professor's Corner:** This is a "trap" question designed to catch mechanical Lagrangian solvers. The first thing to check in any UMP is: *are marginal utilities positive?* If $MU_k < 0$, good $k$ is a bad — set $k=0$ immediately and spend all income on goods with positive MU. Two deeper points: (1) the MRS is $-\frac{1}{3}$, less than the price ratio $1/2$ in absolute value — this means the indifference curves are flatter than the budget line, so the optimum is a corner at $x$-axis; (2) if the coefficient on $y$ were positive (e.g., $u = x + 3y$), you'd compare MRS = $1/3$ to $p_x/p_y = 1/2$ and since $1/3 < 1/2$, the consumer would still specialize in $x$ (cheaper in terms of marginal utility per dollar).
 >
-> → *See also: Section 1B Q7 (corner condition in quasilinear); Section 1A Q3 (convexity non-strict for linear utility)*
+> → *See also: [Section 1B Q7](./answers-consumer-theory.md#q-cons-1b-07) (corner condition in quasilinear); [Section 1A Q3](./answers-consumer-theory.md#q-cons-03) (convexity non-strict for linear utility)*
 
 ---
+
+## 🔗 See also
+
+| File | Related Content |
+|------|----------------|
+| [Answers: Demand & Production](./answers-demand-production.md) | Elasticities (DP 2), production theory (DP 3A), profit function (DP 3B), competitive equilibrium (DP 3C) — *consumer demand is input to market demand* |
+| [Answers: Welfare](./answers-welfare.md) | CV/EV/CS (WF Q1–Q5), Pareto optimality (WF 5B) — *welfare analysis builds directly on UMP/EMP duality from CT 1B* |
+| [Answers: GE, Game Theory & Trade](./answers-ge-game-extern-trade.md) | Walras' Law (GE 6A.Q2), exchange economy (GE 6B.Q6) — *Walrasian demand is the building block of GE* |
+| [Formula Reference](./basics.md) | Compact UMP/EMP duality, CD formulas, properties checklist |
+| [Equation Explainer](./EQUATION-EXPLAINER.md) | Plain-English explanations of Lagrangian, Roy's, Shephard's, Slutsky |
+| [Cross-Reference Map](./answers-cross-reference.md) | Technique map, dependency chains, prerequisite links |
+| [Study Roadmap](./STUDY-ROADMAP.md) | 10-day study plan prioritizing consumer theory topics |
+| [Glossary](./GLOSSARY.md) | All abbreviations and terms with anchor links to questions |
 
 *End of answers. Total: 18 questions answered.*

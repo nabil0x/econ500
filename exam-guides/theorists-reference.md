@@ -10,19 +10,19 @@
 
 | Theorist | Core Idea | Key Work | Topic |
 |----------|-----------|----------|-------|
-| **Léon Walras** | General equilibrium theory — all markets clear simultaneously; Walras' law | *Elements of Pure Economics* (1874) | [General Equilibrium](../microeconomics/README.md) |
-| **Vilfredo Pareto** | Pareto optimality — cannot make one better off without making another worse off; Pareto improvement | *Manual of Political Economy* (1906) | [General Equilibrium](../microeconomics/README.md) |
-| **Arthur C. Pigou** | Social welfare analysis — key issues: distribution, efficiency, externalities; Pigouvian taxes | *The Economics of Welfare* (1920) | [General Equilibrium](../microeconomics/README.md) |
-| **Jeremy Bentham** | Utilitarian social welfare — sum of utilities; assumes diminishing marginal utility of money | — | [General Equilibrium](../microeconomics/README.md) |
-| **Nicholas Kaldor** | Kaldor-Hicks compensation — a change is efficient if gainers can *potentially* compensate losers | — | [General Equilibrium](../microeconomics/README.md) |
-| **John Hicks** | Compensating Variation (CV) vs Equivalent Variation (EV); Hicksian demand; Slutsky-Hicks decomposition | *Value and Capital* (1939) | [Consumer Theory](../microeconomics/README.md) |
-| **Eugen Slutsky** | Slutsky equation — decompose price effect into substitution + income effects | — | [Consumer Theory](../microeconomics/README.md) |
-| **Gérard Debreu** | Existence of general equilibrium under convexity assumptions; representation theorems | *Theory of Value* (1959) | [General Equilibrium](../microeconomics/README.md) |
-| **Kenneth Arrow** | Arrow-Debreu model; impossibility theorem (social choice); general equilibrium existence | — | [General Equilibrium](../microeconomics/README.md) |
-| **Roy (René Roy)** | Roy's identity — derive demand from indirect utility function | — | [Consumer Theory](../microeconomics/README.md) |
-| **Harold Hotelling** | Hotelling's lemma — derive supply from profit function | — | [Production Theory](../microeconomics/README.md) |
-| **Lionel McKenzie** | Existence and stability of general equilibrium | — | [General Equilibrium](../microeconomics/README.md) |
-| **Charles Cobb & Paul Douglas** | Cobb-Douglas production function Y = AK^α L^β; constant returns if α+β=1 | — | [Production](../microeconomics/README.md) |
+| **Léon Walras** | General equilibrium theory — all markets clear simultaneously; Walras' law | *Elements of Pure Economics* (1874) | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Vilfredo Pareto** | Pareto optimality — cannot make one better off without making another worse off; Pareto improvement | *Manual of Political Economy* (1906) | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Arthur C. Pigou** | Social welfare analysis — key issues: distribution, efficiency, externalities; Pigouvian taxes | *The Economics of Welfare* (1920) | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Jeremy Bentham** | Utilitarian social welfare — sum of utilities; assumes diminishing marginal utility of money | — | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Nicholas Kaldor** | Kaldor-Hicks compensation — a change is efficient if gainers can *potentially* compensate losers | — | [General Equilibrium](../501-Microeconomics/README.md) |
+| **John Hicks** | Compensating Variation (CV) vs Equivalent Variation (EV); Hicksian demand; Slutsky-Hicks decomposition | *Value and Capital* (1939) | [Consumer Theory](../501-Microeconomics/README.md) |
+| **Eugen Slutsky** | Slutsky equation — decompose price effect into substitution + income effects | — | [Consumer Theory](../501-Microeconomics/README.md) |
+| **Gérard Debreu** | Existence of general equilibrium under convexity assumptions; representation theorems | *Theory of Value* (1959) | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Kenneth Arrow** | Arrow-Debreu model; impossibility theorem (social choice); general equilibrium existence | — | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Roy (René Roy)** | Roy's identity — derive demand from indirect utility function | — | [Consumer Theory](../501-Microeconomics/README.md) |
+| **Harold Hotelling** | Hotelling's lemma — derive supply from profit function | — | [Production Theory](../501-Microeconomics/README.md) |
+| **Lionel McKenzie** | Existence and stability of general equilibrium | — | [General Equilibrium](../501-Microeconomics/README.md) |
+| **Charles Cobb & Paul Douglas** | Cobb-Douglas production function Y = AK^α L^β; constant returns if α+β=1 | — | [Production](../501-Microeconomics/README.md) |
 
 ---
 

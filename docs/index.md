@@ -7,6 +7,7 @@
       <a href="#start" class="ju-action ju-action-primary">Start revision</a>
       <a href="./batch-finals/" class="ju-action ju-action-secondary">Open past papers</a>
       <a href="./exam-guides/exam-frameworks/" class="ju-action ju-action-ghost">Answer frameworks</a>
+      <a href="./study-dashboard/" class="ju-action ju-action-ghost">📊 Study Dashboard</a>
     </div>
   </div>
   <div class="ju-hero-panel" aria-label="Resource summary">
@@ -177,6 +178,8 @@
     <span>Key figures for Bangladesh, development, health, and policy examples.</span>
   </a>
 </div>
+
+<h2 id="key-cross-cutting-themes">🔗 Key Cross-Cutting Themes</h2>
 
 <details class="ju-theme-drawer">
   <summary>Cross-course themes worth revising together</summary>

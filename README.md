@@ -26,12 +26,12 @@
 
 > **Source:** MainQ.pdf Pages 1 (Tutorial 1), 2 (Tutorial 2), 13 (General Equilibrium)
 
-| [Basics →](./microeconomics/basics.md) | Foundational concepts | 🎯 Practice: [Batch 46](../batch-finals/batch-46/micro-401.md) · [47](../batch-finals/batch-47/micro-501.md) · [48](../batch-finals/batch-48/micro-501.md) |
+| [Basics →](./501-Microeconomics/basics.md) | Foundational concepts | 🎯 Practice: [Batch 46](../batch-finals/batch-46/micro-401.md) · [47](../batch-finals/batch-47/micro-501.md) · [48](../batch-finals/batch-48/micro-501.md) |
 | # | Topic | Full Notes |
 |---|-------|------------|
-| 1 | Consumer Theory & Preferences | [README](./microeconomics/README.md) |
-| 2 | Welfare & Production | [README](./microeconomics/README.md) |
-| 3 | General Equilibrium | [README](./microeconomics/README.md) |
+| 1 | Consumer Theory & Preferences | [README](./501-Microeconomics/README.md) |
+| 2 | Welfare & Production | [README](./501-Microeconomics/README.md) |
+| 3 | General Equilibrium | [README](./501-Microeconomics/README.md) |
 
 **Tutorial Questions Covered:**
 - **Tutorial 1:** Preference-based approach, convexity, Cobb-Douglas demand, indirect utility, Roy's identity, expenditure minimization, monotonicity, homogeneity

@@ -142,10 +142,16 @@ Start here for: exam strategy, 10-day study plan, topic prioritization, and file
 
 ---
 
-## Cross-Links
+## Cross-Course Links
 
-- [Study Hub](../index.md)
-- [Macroeconomics](../macroeconomics/README.md)
-- [Health Economics](../health-economics/README.md)
-- [Development Economics (503)](../503-Development/README.md)
-- [Political Economy (512)](../512-Political-Economy/README.md)
+Microeconomics concepts appear across multiple courses. Follow these links to see how micro theory applies:
+
+| Course | Key Micro Concepts Used | Link |
+|--------|------------------------|------|
+| **Macroeconomics (502)** | Cobb-Douglas production ($Y = K^\alpha(AL)^{1-\alpha}$), optimization (Ramsey), GE stability (Solow steady state), Pareto optimality (Golden Rule) | [`../macroeconomics/README.md`](../macroeconomics/README.md) · [`../macroeconomics/basics.md`](../macroeconomics/basics.md) |
+| **Development Economics (503)** | General equilibrium (structural transformation), market failure (resource curse), comparative advantage (trade), production theory (dual economy), welfare measurement (CBA) | [`../503-Development/README.md`](../503-Development/README.md) · [`../503-Development/basics.md`](../503-Development/basics.md) |
+| **Political Economy (512)** | Comparative advantage (free trade debate), DWL of tariffs (trade policy), market failure (state intervention), Pareto optimality (efficiency of free trade), game theory/PD (trade negotiations) | [`../512-Political-Economy/README.md`](../512-Political-Economy/README.md) · [`../512-Political-Economy/basics.md`](../512-Political-Economy/basics.md) |
+| **Health Economics (507)** | Asymmetric information (Lemons Principle, SID), adverse selection (insurance), expected utility (CDA), utility maximization (Grossman model), cost minimization (CEA/CUA) | [`../health-economics/README.md`](../health-economics/README.md) · [`../health-economics/basics.md`](../health-economics/basics.md) |
+| **Batch Finals** | Practice applying micro theory to exam questions | [`../batch-finals/batch-47/micro-501.md`](../batch-finals/batch-47/micro-501.md) · [`../batch-finals/batch-48/micro-501.md`](../batch-finals/batch-48/micro-501.md) |
+| **Exam Guides** | Theorists, frameworks, and statistics references | [`../exam-guides/theorists-reference.md`](../exam-guides/theorists-reference.md) · [`../exam-guides/exam-frameworks.md`](../exam-guides/exam-frameworks.md) |
+| **Study Hub** | Project home — cross-cutting themes table | [`../index.md`](../index.md)

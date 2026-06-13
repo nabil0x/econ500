@@ -472,83 +472,83 @@ WelfareChange                                  X
 
 | # | Question | Topic | Technique | Key Formula / Concept | Related Questions |
 |---|----------|-------|-----------|----------------------|-------------------|
-| CT 1A.Q1 | Preference-based approach | Foundations | Definition | Completeness + transitivity | CT 1A.Q5 |
-| CT 1A.Q2 | Indifference set + downward slope | Foundations | Proof (contradiction) | SM => ICs slope down | CT 1A.Q6, Q7 |
-| CT 1A.Q3 | Twin convexity definitions | Foundations | Graphical + table | UCS convex = convex preferences | CT 1A.Q4, Q9, Q10 |
-| CT 1A.Q4 | Convex <=> UCS <=> quasiconcave | Foundations | Proof chain | Bordered Hessian | CT 1A.Q3, Q9 |
+| CT 1A.Q1 | Preference-based approach | Foundations | Definition | Completeness + transitivity | [CT 1A.Q5](./answers-consumer-theory.md#q-cons-05) |
+| CT 1A.Q2 | Indifference set + downward slope | Foundations | Proof (contradiction) | SM => ICs slope down | [CT 1A.Q6](./answers-consumer-theory.md#q-cons-06), [Q7](./answers-consumer-theory.md#q-cons-07) |
+| CT 1A.Q3 | Twin convexity definitions | Foundations | Graphical + table | UCS convex = convex preferences | [CT 1A.Q4](./answers-consumer-theory.md#q-cons-04), [Q9](./answers-consumer-theory.md#q-cons-09), [Q10](./answers-consumer-theory.md#q-cons-10) |
+| CT 1A.Q4 | Convex <=> UCS <=> quasiconcave | Foundations | Proof chain | Bordered Hessian | [CT 1A.Q3](./answers-consumer-theory.md#q-cons-03), [Q9](./answers-consumer-theory.md#q-cons-09) |
 | CT 1A.Q5 | Existence of utility function | Foundations | Diagonal projection | Debreu: monotonicity + continuity | -- |
-| CT 1A.Q6 | Utility + monotonicity | Foundations | Definition + examples | SM vs M comparison table | CT 1A.Q7 |
-| CT 1A.Q7 | SM => M => LNS | Foundations | Proof chain | epsilon-ball diagram | CT 1A.Q6, 1B.Q4 |
-| CT 1A.Q8 | Homogeneity / homotheticity | Foundations | Definition + examples | MRS constant on rays | CT 1B.Q5, DP 3A.Q4 |
-| CT 1A.Q9 | Quasiconcave <=> dMRS/dx < 0 | Foundations | Bordered Hessian derivation | dMRS/dx = -[bordered Hessian]/u_y^3 | CT 1A.Q3, Q10 |
-| CT 1A.Q10 | U = X + lnY convex ICs? | Foundations | MRS computation | dMRS/dx = -y < 0 | CT 1A.Q9, CT 1B.Q7 |
-| CT 1B.Q1 | CD: Walrasian demand | UMP | Lagrangian | x_k = alpha_k * w / (sum alpha) * p_k | CT 1B.Q2, Q3 |
-| CT 1B.Q2 | CD: Indirect utility + Roy's | UMP | Substitution + derivative | x_k = -(dv/dp_k)/(dv/dw) | CT 1B.Q1, Q3 |
-| CT 1B.Q3 | CD: EMP + Hicksian + Shephard's | EMP | Lagrangian | h_k = u * (...); e = u * (p/alpha)^alpha | CT 1B.Q1, Q2, WF Q3 |
-| CT 1B.Q4 | Walrasian demand properties | UMP | List + examples | HD(0), Walras' Law, convexity | DP 2, GE 6B |
-| CT 1B.Q5 | Homogeneity / homotheticity (demand focus) | UMP | Engel curves + shares | x(p,w) = x(p,1) * w | CT 1A.Q8, DP 3A |
-| CT 1B.Q6 | Negroni (min) | UMP + EMP | Fixed proportions | x_k = w/sum(p); h_k = u | DP 3A.Q6 |
-| CT 1B.Q7 | U = X + lnY demands | UMP | MRS tangency | y* = p_x/p_y; x* = I/p_x - 1 | CT 1A.Q10, WF Q5 |
-| CT 1B.Q8 | U = X - 3Y corner solution | UMP | Corner solution intuition | MU_y < 0 => y = 0 | CT 1A.Q3 |
-| DP 2.Q1 | Constant elasticity demand | Elasticities | Log derivatives | epsilon = exponents | DP 2.Q3 |
-| DP 2.Q2 | BK demand misspecification | Elasticities | Sign check | Positive own-price coefficient | DP 2.Q3 |
-| DP 2.Q3 | Corrected BK demand | Elasticities | Lerner Index | P = MC/(1+1/epsilon) | DP 2.Q1, DP 3C |
-| DP 3A.Q1 | Production function definitions | Production | Definitions | Production set, MRPT | DP 3A.Q2 |
-| DP 3A.Q2-Q3 | Production set properties | Production | Graphic + list | 11 properties; convexity w/ fixed costs | DP 3B.Q1 |
-| DP 3A.Q4 | Elasticity of substitution | Production | Formula | sigma = infty (linear), 0 (Leontief), 1 (CD) | CT 1A.Q8, DP 3A.Q7 |
-| DP 3A.Q5 | Cost function properties | Production | Matching | Homog(1), concave in w, Shephard's | DP 3B.Q1 |
-| DP 3A.Q6 | Sausage maker (Leontief) | Production | Fixed proportions + numerical | Q = min(P/3, V/2); P* = 6 | CT 1B.Q6 |
-| DP 3A.Q7 | Q = (KL)^{1/3} full solution | Production | Lagrangian + SR/LR | SR: Q=4L^{1/3}; LR: Q^S = P^2/9wr | DP 3A.Q4, Q5, 3C |
+| CT 1A.Q6 | Utility + monotonicity | Foundations | Definition + examples | SM vs M comparison table | [CT 1A.Q7](./answers-consumer-theory.md#q-cons-07) |
+| CT 1A.Q7 | SM => M => LNS | Foundations | Proof chain | epsilon-ball diagram | [CT 1A.Q6](./answers-consumer-theory.md#q-cons-06), [CT 1B.Q4](./answers-consumer-theory.md#q-cons-1b-04) |
+| CT 1A.Q8 | Homogeneity / homotheticity | Foundations | Definition + examples | MRS constant on rays | [CT 1B.Q5](./answers-consumer-theory.md#q-cons-1b-05), [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) |
+| CT 1A.Q9 | Quasiconcave <=> dMRS/dx < 0 | Foundations | Bordered Hessian derivation | dMRS/dx = -[bordered Hessian]/u_y^3 | [CT 1A.Q3](./answers-consumer-theory.md#q-cons-03), [Q10](./answers-consumer-theory.md#q-cons-10) |
+| CT 1A.Q10 | U = X + lnY convex ICs? | Foundations | MRS computation | dMRS/dx = -y < 0 | [CT 1A.Q9](./answers-consumer-theory.md#q-cons-09), [CT 1B.Q7](./answers-consumer-theory.md#q-cons-1b-07) |
+| CT 1B.Q1 | CD: Walrasian demand | UMP | Lagrangian | x_k = alpha_k * w / (sum alpha) * p_k | [CT 1B.Q2](./answers-consumer-theory.md#q-cons-1b-02), [Q3](./answers-consumer-theory.md#q-cons-1b-03) |
+| CT 1B.Q2 | CD: Indirect utility + Roy's | UMP | Substitution + derivative | x_k = -(dv/dp_k)/(dv/dw) | [CT 1B.Q1](./answers-consumer-theory.md#q-cons-1b-01), [Q3](./answers-consumer-theory.md#q-cons-1b-03) |
+| CT 1B.Q3 | CD: EMP + Hicksian + Shephard's | EMP | Lagrangian | h_k = u * (...); e = u * (p/alpha)^alpha | [CT 1B.Q1](./answers-consumer-theory.md#q-cons-1b-01), [Q2](./answers-consumer-theory.md#q-cons-1b-02), [WF Q3](./answers-welfare.md#q-welfare-03) |
+| CT 1B.Q4 | Walrasian demand properties | UMP | List + examples | HD(0), Walras' Law, convexity | [DP 2](./answers-demand-production.md#q-demand-01), [GE 6B](./answers-ge-game-extern-trade.md#q-edge-01) |
+| CT 1B.Q5 | Homogeneity / homotheticity (demand focus) | UMP | Engel curves + shares | x(p,w) = x(p,1) * w | [CT 1A.Q8](./answers-consumer-theory.md#q-cons-08), [DP 3A](./answers-demand-production.md#q-prodset-01) |
+| CT 1B.Q6 | Negroni (min) | UMP + EMP | Fixed proportions | x_k = w/sum(p); h_k = u | [DP 3A.Q6](./answers-demand-production.md#q-prodset-05) |
+| CT 1B.Q7 | U = X + lnY demands | UMP | MRS tangency | y* = p_x/p_y; x* = I/p_x - 1 | [CT 1A.Q10](./answers-consumer-theory.md#q-cons-10), [WF Q5](./answers-welfare.md#q-welfare-05) |
+| CT 1B.Q8 | U = X - 3Y corner solution | UMP | Corner solution intuition | MU_y < 0 => y = 0 | [CT 1A.Q3](./answers-consumer-theory.md#q-cons-03) |
+| DP 2.Q1 | Constant elasticity demand | Elasticities | Log derivatives | epsilon = exponents | [DP 2.Q3](./answers-demand-production.md#q-demand-03) |
+| DP 2.Q2 | BK demand misspecification | Elasticities | Sign check | Positive own-price coefficient | [DP 2.Q3](./answers-demand-production.md#q-demand-03) |
+| DP 2.Q3 | Corrected BK demand | Elasticities | Lerner Index | P = MC/(1+1/epsilon) | [DP 2.Q1](./answers-demand-production.md#q-demand-01), [DP 3C](./answers-demand-production.md#q-compet-01) |
+| DP 3A.Q1 | Production function definitions | Production | Definitions | Production set, MRPT | [DP 3A.Q2](./answers-demand-production.md#q-prodset-02) |
+| DP 3A.Q2-Q3 | Production set properties | Production | Graphic + list | 11 properties; convexity w/ fixed costs | [DP 3B.Q1](./answers-demand-production.md#q-profit-01) |
+| DP 3A.Q4 | Elasticity of substitution | Production | Formula | sigma = infty (linear), 0 (Leontief), 1 (CD) | [CT 1A.Q8](./answers-consumer-theory.md#q-cons-08), [DP 3A.Q7](./answers-demand-production.md#q-prodset-07) |
+| DP 3A.Q5 | Cost function properties | Production | Matching | Homog(1), concave in w, Shephard's | [DP 3B.Q1](./answers-demand-production.md#q-profit-01) |
+| DP 3A.Q6 | Sausage maker (Leontief) | Production | Fixed proportions + numerical | Q = min(P/3, V/2); P* = 6 | [CT 1B.Q6](./answers-consumer-theory.md#q-cons-1b-06) |
+| DP 3A.Q7 | Q = (KL)^{1/3} full solution | Production | Lagrangian + SR/LR | SR: Q=4L^{1/3}; LR: Q^S = P^2/9wr | [DP 3A.Q4](./answers-demand-production.md#q-prodset-03), [Q5](./answers-demand-production.md#q-prodset-05), [3C](./answers-demand-production.md#q-compet-01) |
 | DP 3A.Q8 | Starbucks cup scale economies | Production | Intuition | Economies of scale => less than 2x | -- |
-| DP 3B.Q1 | Profit function properties | Profit | Definition + list | Homog(1), convex, Hotelling's | DP 3A.Q5, DP 3B.Q2 |
-| DP 3B.Q2 | MRPT = MC_x/MC_y | Profit | Proof | duality: production <-> cost | DP 3A.Q5, GE 6B.Q3 |
-| DP 3C.Q1 | Competitive industry + tax | Competitive eq | Numerical + DWL | P*=23, P_b=33, P_s=13, DWL=100k | GE 9.Q1 |
-| DP 3C.Q2 | Three-good Walras + Z_1 | GE | Walras' Law | Z_1 = -4 + (6p_3 - p_2)/p_1 | GE 6B.Q8 |
-| WF Q1 | CV/EV/CS definitions | Welfare | Definitions + table | CV = e(p^1,u^1)-e(p^1,u^0) | WF Q2-Q5 |
-| WF Q2 | EV > CS > CV ordering | Welfare | Income effect logic | Normal goods: EV > CS > CV | WF Q3, Q4 |
-| WF Q3 | CD EV/CV/CS computation | Welfare | Numerical | EV=124.24 > CS=103.98 > CV=87.9 | CT 1B.Q2-Q3, WF Q2 |
-| WF Q4 | EV/CS/CV diagram (price decrease/increase) | Welfare | Graphical | Three demand curves intersecting | WF Q2, Q3 |
-| WF Q5 | CS overstates CV, understates EV | Welfare | Willig bounds | Quasilinear: exact; otherwise bounded | CT 1B.Q7, WF Q2 |
-| WF 5A.Q1 | Pigou three issues | SW criteria | Essay | Economic welfare, dual conditions, externalities | WF 5A.Q5, WF 5B.Q4 |
-| WF 5A.Q2 | GUPF + point of bliss | SW criteria | Graphical | GUPF envelope; SWF tangency | WF 5A.Q4, WF 5B.Q1 |
-| WF 5A.Q3 | Welfare criteria: GNP, Bentham, Cardinalist | SW criteria | Essay | Efficiency vs equity evaluation | WF 5A.Q1 |
-| WF 5A.Q4 | SWF + GUPF derivation | SW criteria | Graphical + math | MRPT = MRS = SWF slope | WF 5A.Q2, Q6 |
-| WF 5A.Q5 | Pigou three issues (repeat) | SW criteria | Essay | Same as 5A.Q1 | WF 5A.Q1 |
-| WF 5A.Q6 | SWF as welfare criterion | SW criteria | Essay | Complete ranking + limitations | WF 5A.Q4, WF 5B.Q6 |
-| WF 5A.Q7 | 2x2x2 assumptions for SW max | SW criteria | List | 3 efficiency + competition + SWF | GE 6B.Q5, WF 5B.Q5 |
-| WF 5B.Q1 | Pareto necessary not sufficient | Pareto + WT | GUPF diagram | Bergson > Pareto for sufficiency | WF 5A.Q2, WF 5B.Q8 |
-| WF 5B.Q2 | MU of money + Kaldor-Hicks | Pareto + WT | Essay | Potential comp; Scitovsky reversal | WF 5B.Q7 |
-| WF 5B.Q3 | 2-person Pareto consumption | Pareto + WT | Lagrangian | MRS^A = MRS^B | GE 6B.Q6 |
-| WF 5B.Q4 | External economies/diseconomies | Pareto + WT | Numerical + Pigouvian tax | Tax firm1=2, subsidize firm2=8; social dividend=52.5 | GE 8.Q2 |
-| WF 5B.Q5 | First and Second Welfare Theorems | Pareto + WT | Essay | FWT: CE => PO; SWT: PO => CE w/ transfers | WF 5B.Q1, Q8 |
-| WF 5B.Q6 | Utilitarian vs Rawlsian SWF | Pareto + WT | Comparison | W = sum(U_i) vs W = min(U_i) | WF 5A.Q6 |
-| WF 5B.Q7 | Kaldor-Hicks + Scitovsky correction | Pareto + WT | Essay + diagram | Forward + reversal test | WF 5B.Q2 |
-| WF 5B.Q8 | Does perfect competition ensure SW max? | Pareto + WT | Synthesis essay | Necessary but not sufficient | WF 5B.Q1, Q5 |
-| GE 6A.Q1 | Define GE vs PE | GE | Comparison table | Interdependence vs ceteris paribus | GE 6A.Q2-Q4, GE 6B.Q4 |
-| GE 6A.Q2 | Existence, uniqueness, stability | GE | Graphic + E(P) analysis | dE/dP < 0 stable; multiple Zeros = multiple eq | GE 6A.Q3 |
-| GE 6A.Q3 | Existence/stability/uniqueness via E(P) | GE | Excess demand analysis | IVT for existence; monotonicity for uniqueness | GE 6A.Q2 |
-| GE 6A.Q4 | Taste shock transmission | GE | 8-panel diagram | Product -> factor -> mobility -> new GE | GE 6B.Q2 |
-| GE 6B.Q1 | 2x2x2 production Edgeworth box | GE | Edgeworth box | MRTS^X = MRTS^Y = w/r | DP 3A |
-| GE 6B.Q2 | Taste shock in 2x2x2 | GE | 8-panel + factor intensities | Stolper-Samuelson intuition | GE 6A.Q4 |
-| GE 6B.Q3 | Three Pareto efficiency conditions | GE | List + PPC diagram | (i) MRS (ii) MRTS (iii) MRPT = MRS | WF 5B.Q3, Q5 |
-| GE 6B.Q4 | GE vs PE (repeat) | GE | Comparison | Same as 6A.Q1 | GE 6A.Q1 |
-| GE 6B.Q5 | 2x2x2 assumptions + how GE reached | GE | List + steps | 18 equations, Walras, numeraire | GE 6B.Q7, WF 5A.Q7 |
-| GE 6B.Q6 | Exchange economy (CD + linear) | GE | Edgeworth box numerical | Contract curve Y_A = X_A; endowment not PO | WF 5B.Q3 |
-| GE 6B.Q7 | Walrasian system + existence | GE | Equation counting | 18 eq, Walras => 17 indep, numeraire => unique | WF 5B.Q5 |
-| GE 6B.Q8 | Three-good Walras' law | GE | Walras' law | Same as DP 3C.Q2 | DP 3C.Q2 |
-| GE 7.Q1 | Bertrand duopoly | Game theory | BR functions | p1 = 30 + p2/4; NE: (40,40) | GE 7.Q2 |
-| GE 7.Q2 | Prisoners' Dilemma + oligopoly | Game theory | Payoff matrix | Dominant strategy; tacit collusion fragile | GE 7.Q4, Q5 |
-| GE 7.Q3 | Market entry game | Game theory | Extensive form, backward induction | SPNE: (Enter, Accommodate) | GE 7.Q4 |
-| GE 7.Q4 | Infinitely repeated grim trigger | Game theory | Discount factor threshold | delta >= 2/3 sustains cooperation | GE 7.Q2, Q5 |
-| GE 7.Q5 | Paradox of backward induction | Game theory | Essay + multiple NE | Finite PD unraveling; multiple eq help | GE 7.Q6 |
-| GE 7.Q6 | Centipede game | Game theory | Extensive form + backward induction | (1,0) prediction vs experimental (2,2) | GE 7.Q5 |
-| GE 8.Q1 | Tragedy of the Commons | Externalities | Intuition | Private cost < social cost => overuse | GE 8.Q2 |
-| GE 8.Q2 | Steel-fishery pollution | Externalities | Numerical + Coase | x* > x_social; Coase: bargaining => efficiency | WF 5B.Q4 |
-| GE 8.Q3 | Market for Lemons | Asymmetric info | Intuition + numerical | Adverse selection destroys high-quality market | GE 8.Q4 |
-| GE 8.Q4 | Spence education signaling | Asymmetric info | PBE separating/pooling | w_H - w_L in [c_H, c_L]; single-crossing | GE 8.Q3 |
-| GE 8.Q5 | Bandwagon / Snob effects | Externalities | Definition + diagrams | Positive vs negative consumption externality | GE 8.Q6 |
-| GE 8.Q6 | Consumption externality + GE | Externalities | Essay | FWT fails; MRS_A != MRS_B sufficient | GE 8.Q5, WF 5B.Q5 |
-| GE 9.Q1 | Tariff + VER welfare | Trade | Numerical DWL | DWL_tariff = 437,500; DWL_VER = 9,285,775 | DP 3C.Q1 |
+| DP 3B.Q1 | Profit function properties | Profit | Definition + list | Homog(1), convex, Hotelling's | [DP 3A.Q5](./answers-demand-production.md#q-prodset-05), [DP 3B.Q2](./answers-demand-production.md#q-profit-02) |
+| DP 3B.Q2 | MRPT = MC_x/MC_y | Profit | Proof | duality: production <-> cost | [DP 3A.Q5](./answers-demand-production.md#q-prodset-05), [GE 6B.Q3](./answers-ge-game-extern-trade.md#q-edge-03) |
+| DP 3C.Q1 | Competitive industry + tax | Competitive eq | Numerical + DWL | P*=23, P_b=33, P_s=13, DWL=100k | [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) |
+| DP 3C.Q2 | Three-good Walras + Z_1 | GE | Walras' Law | Z_1 = -4 + (6p_3 - p_2)/p_1 | [GE 6B.Q8](./answers-ge-game-extern-trade.md#q-edge-08) |
+| WF Q1 | CV/EV/CS definitions | Welfare | Definitions + table | CV = e(p^1,u^1)-e(p^1,u^0) | [WF Q2](./answers-welfare.md#q-welfare-02)–[Q5](./answers-welfare.md#q-welfare-05) |
+| WF Q2 | EV > CS > CV ordering | Welfare | Income effect logic | Normal goods: EV > CS > CV | [WF Q3](./answers-welfare.md#q-welfare-03), [Q4](./answers-welfare.md#q-welfare-04) |
+| WF Q3 | CD EV/CV/CS computation | Welfare | Numerical | EV=124.24 > CS=103.98 > CV=87.9 | [CT 1B.Q2](./answers-consumer-theory.md#q-cons-1b-02)–[Q3](./answers-consumer-theory.md#q-cons-1b-03), [WF Q2](./answers-welfare.md#q-welfare-02) |
+| WF Q4 | EV/CS/CV diagram (price decrease/increase) | Welfare | Graphical | Three demand curves intersecting | [WF Q2](./answers-welfare.md#q-welfare-02), [Q3](./answers-welfare.md#q-welfare-03) |
+| WF Q5 | CS overstates CV, understates EV | Welfare | Willig bounds | Quasilinear: exact; otherwise bounded | [CT 1B.Q7](./answers-consumer-theory.md#q-cons-1b-07), [WF Q2](./answers-welfare.md#q-welfare-02) |
+| WF 5A.Q1 | Pigou three issues | SW criteria | Essay | Economic welfare, dual conditions, externalities | [WF 5A.Q5](./answers-welfare.md#q-socwel-05), [WF 5B.Q4](./answers-welfare.md#q-pareto-04) |
+| WF 5A.Q2 | GUPF + point of bliss | SW criteria | Graphical | GUPF envelope; SWF tangency | [WF 5A.Q4](./answers-welfare.md#q-socwel-04), [WF 5B.Q1](./answers-welfare.md#q-pareto-01) |
+| WF 5A.Q3 | Welfare criteria: GNP, Bentham, Cardinalist | SW criteria | Essay | Efficiency vs equity evaluation | [WF 5A.Q1](./answers-welfare.md#q-socwel-01) |
+| WF 5A.Q4 | SWF + GUPF derivation | SW criteria | Graphical + math | MRPT = MRS = SWF slope | [WF 5A.Q2](./answers-welfare.md#q-socwel-02), [Q6](./answers-welfare.md#q-socwel-06) |
+| WF 5A.Q5 | Pigou three issues (repeat) | SW criteria | Essay | Same as 5A.Q1 | [WF 5A.Q1](./answers-welfare.md#q-socwel-01) |
+| WF 5A.Q6 | SWF as welfare criterion | SW criteria | Essay | Complete ranking + limitations | [WF 5A.Q4](./answers-welfare.md#q-socwel-04), [WF 5B.Q6](./answers-welfare.md#q-pareto-06) |
+| WF 5A.Q7 | 2x2x2 assumptions for SW max | SW criteria | List | 3 efficiency + competition + SWF | [GE 6B.Q5](./answers-ge-game-extern-trade.md#q-edge-05), [WF 5B.Q5](./answers-welfare.md#q-pareto-05) |
+| WF 5B.Q1 | Pareto necessary not sufficient | Pareto + WT | GUPF diagram | Bergson > Pareto for sufficiency | [WF 5A.Q2](./answers-welfare.md#q-socwel-02), [WF 5B.Q8](./answers-welfare.md#q-pareto-08) |
+| WF 5B.Q2 | MU of money + Kaldor-Hicks | Pareto + WT | Essay | Potential comp; Scitovsky reversal | [WF 5B.Q7](./answers-welfare.md#q-pareto-07) |
+| WF 5B.Q3 | 2-person Pareto consumption | Pareto + WT | Lagrangian | MRS^A = MRS^B | [GE 6B.Q6](./answers-ge-game-extern-trade.md#q-edge-06) |
+| WF 5B.Q4 | External economies/diseconomies | Pareto + WT | Numerical + Pigouvian tax | Tax firm1=2, subsidize firm2=8; social dividend=52.5 | [GE 8.Q2](./answers-ge-game-extern-trade.md#q-extern-02) |
+| WF 5B.Q5 | First and Second Welfare Theorems | Pareto + WT | Essay | FWT: CE => PO; SWT: PO => CE w/ transfers | [WF 5B.Q1](./answers-welfare.md#q-pareto-01), [Q8](./answers-welfare.md#q-pareto-08) |
+| WF 5B.Q6 | Utilitarian vs Rawlsian SWF | Pareto + WT | Comparison | W = sum(U_i) vs W = min(U_i) | [WF 5A.Q6](./answers-welfare.md#q-socwel-06) |
+| WF 5B.Q7 | Kaldor-Hicks + Scitovsky correction | Pareto + WT | Essay + diagram | Forward + reversal test | [WF 5B.Q2](./answers-welfare.md#q-pareto-02) |
+| WF 5B.Q8 | Does perfect competition ensure SW max? | Pareto + WT | Synthesis essay | Necessary but not sufficient | [WF 5B.Q1](./answers-welfare.md#q-pareto-01), [Q5](./answers-welfare.md#q-pareto-05) |
+| GE 6A.Q1 | Define GE vs PE | GE | Comparison table | Interdependence vs ceteris paribus | [GE 6A.Q2](./answers-ge-game-extern-trade.md#q-ge-02)–[Q4](./answers-ge-game-extern-trade.md#q-ge-04), [GE 6B.Q4](./answers-ge-game-extern-trade.md#q-edge-04) |
+| GE 6A.Q2 | Existence, uniqueness, stability | GE | Graphic + E(P) analysis | dE/dP < 0 stable; multiple Zeros = multiple eq | [GE 6A.Q3](./answers-ge-game-extern-trade.md#q-ge-03) |
+| GE 6A.Q3 | Existence/stability/uniqueness via E(P) | GE | Excess demand analysis | IVT for existence; monotonicity for uniqueness | [GE 6A.Q2](./answers-ge-game-extern-trade.md#q-ge-02) |
+| GE 6A.Q4 | Taste shock transmission | GE | 8-panel diagram | Product -> factor -> mobility -> new GE | [GE 6B.Q2](./answers-ge-game-extern-trade.md#q-edge-02) |
+| GE 6B.Q1 | 2x2x2 production Edgeworth box | GE | Edgeworth box | MRTS^X = MRTS^Y = w/r | [DP 3A](./answers-demand-production.md#q-prodset-01) |
+| GE 6B.Q2 | Taste shock in 2x2x2 | GE | 8-panel + factor intensities | Stolper-Samuelson intuition | [GE 6A.Q4](./answers-ge-game-extern-trade.md#q-ge-04) |
+| GE 6B.Q3 | Three Pareto efficiency conditions | GE | List + PPC diagram | (i) MRS (ii) MRTS (iii) MRPT = MRS | [WF 5B.Q3](./answers-welfare.md#q-pareto-03), [Q5](./answers-welfare.md#q-pareto-05) |
+| GE 6B.Q4 | GE vs PE (repeat) | GE | Comparison | Same as 6A.Q1 | [GE 6A.Q1](./answers-ge-game-extern-trade.md#q-ge-01) |
+| GE 6B.Q5 | 2x2x2 assumptions + how GE reached | GE | List + steps | 18 equations, Walras, numeraire | [GE 6B.Q7](./answers-ge-game-extern-trade.md#q-edge-07), [WF 5A.Q7](./answers-welfare.md#q-socwel-07) |
+| GE 6B.Q6 | Exchange economy (CD + linear) | GE | Edgeworth box numerical | Contract curve Y_A = X_A; endowment not PO | [WF 5B.Q3](./answers-welfare.md#q-pareto-03) |
+| GE 6B.Q7 | Walrasian system + existence | GE | Equation counting | 18 eq, Walras => 17 indep, numeraire => unique | [WF 5B.Q5](./answers-welfare.md#q-pareto-05) |
+| GE 6B.Q8 | Three-good Walras' law | GE | Walras' law | Same as DP 3C.Q2 | [DP 3C.Q2](./answers-demand-production.md#q-compet-02) |
+| GE 7.Q1 | Bertrand duopoly | Game theory | BR functions | p1 = 30 + p2/4; NE: (40,40) | [GE 7.Q2](./answers-ge-game-extern-trade.md#q-game-02) |
+| GE 7.Q2 | Prisoners' Dilemma + oligopoly | Game theory | Payoff matrix | Dominant strategy; tacit collusion fragile | [GE 7.Q4](./answers-ge-game-extern-trade.md#q-game-04), [Q5](./answers-ge-game-extern-trade.md#q-game-05) |
+| GE 7.Q3 | Market entry game | Game theory | Extensive form, backward induction | SPNE: (Enter, Accommodate) | [GE 7.Q4](./answers-ge-game-extern-trade.md#q-game-04) |
+| GE 7.Q4 | Infinitely repeated grim trigger | Game theory | Discount factor threshold | delta >= 2/3 sustains cooperation | [GE 7.Q2](./answers-ge-game-extern-trade.md#q-game-02), [Q5](./answers-ge-game-extern-trade.md#q-game-05) |
+| GE 7.Q5 | Paradox of backward induction | Game theory | Essay + multiple NE | Finite PD unraveling; multiple eq help | [GE 7.Q6](./answers-ge-game-extern-trade.md#q-game-06) |
+| GE 7.Q6 | Centipede game | Game theory | Extensive form + backward induction | (1,0) prediction vs experimental (2,2) | [GE 7.Q5](./answers-ge-game-extern-trade.md#q-game-05) |
+| GE 8.Q1 | Tragedy of the Commons | Externalities | Intuition | Private cost < social cost => overuse | [GE 8.Q2](./answers-ge-game-extern-trade.md#q-extern-02) |
+| GE 8.Q2 | Steel-fishery pollution | Externalities | Numerical + Coase | x* > x_social; Coase: bargaining => efficiency | [WF 5B.Q4](./answers-welfare.md#q-pareto-04) |
+| GE 8.Q3 | Market for Lemons | Asymmetric info | Intuition + numerical | Adverse selection destroys high-quality market | [GE 8.Q4](./answers-ge-game-extern-trade.md#q-extern-04) |
+| GE 8.Q4 | Spence education signaling | Asymmetric info | PBE separating/pooling | w_H - w_L in [c_H, c_L]; single-crossing | [GE 8.Q3](./answers-ge-game-extern-trade.md#q-extern-03) |
+| GE 8.Q5 | Bandwagon / Snob effects | Externalities | Definition + diagrams | Positive vs negative consumption externality | [GE 8.Q6](./answers-ge-game-extern-trade.md#q-extern-06) |
+| GE 8.Q6 | Consumption externality + GE | Externalities | Essay | FWT fails; MRS_A != MRS_B sufficient | [GE 8.Q5](./answers-ge-game-extern-trade.md#q-extern-05), [WF 5B.Q5](./answers-welfare.md#q-pareto-05) |
+| GE 9.Q1 | Tariff + VER welfare | Trade | Numerical DWL | DWL_tariff = 437,500; DWL_VER = 9,285,775 | [DP 3C.Q1](./answers-demand-production.md#q-compet-01) |
 
 ---
 

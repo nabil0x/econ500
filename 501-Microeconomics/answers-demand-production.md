@@ -155,7 +155,7 @@ Since $|\gamma| = 0.4 < 1$, a price cut lowers total revenue. For contrast, if d
 >
 > where $\theta_y$ is the budget share of good $y$ and $\varepsilon^h$ is the Hicksian elasticity. This decomposition shows why cross-price effects are ambiguous in sign: the substitution effect (always positive for substitutes) and income effect (sign depends on whether $X$ is normal/inferior) pull in opposite directions. Using constant elasticity forms as in this question sidesteps the ambiguity because the income effect is already embedded in the reduced-form exponent.
 >
-> → *See also: Consumer Theory Q1 (Walrasian demand properties), Topic 2 Q3 (Lerner Index application)*
+> → *See also: [Consumer Theory Q1](./answers-consumer-theory.md#q-cons-01) (Walrasian demand properties), [Topic 2 Q3](#q-demand-03) (Lerner Index application)*
 
 ---
 
@@ -206,7 +206,7 @@ In an exam setting, identifying these econometric issues scores points beyond me
 >
 > **A-answer distinguishing insight:** The strongest answers connect this to the *identification problem* in demand estimation (Koutsoyiannis, p.55–57). A regression of quantity on price alone cannot recover the demand curve because observed price–quantity pairs trace out both supply and demand shifts over time. The positive coefficient on $P_B$ may reflect the upward-sloping *supply* curve, not the demand curve at all. This is why modern demand estimation uses instrumental variables — instruments that shift supply but not demand (e.g., input costs) to trace out the demand curve. A student who mentions IV identification at this point demonstrates genuine mastery.
 >
-> → *See also: Topic 2 Q3 (correctly specified log-linear demand), Consumer Theory Q4 (Slutsky equation)*
+> → *See also: [Topic 2 Q3](#q-demand-03) (correctly specified log-linear demand), [Consumer Theory Q4](./answers-consumer-theory.md#q-cons-04) (Slutsky equation)*
 
 ---
 
@@ -325,7 +325,7 @@ Markup = 25%. As $\varepsilon \to -\infty$, $P \to MC$ (perfect competition).
 >
 > **A-answer distinguishing insight:** The strongest answers also note the *strategic pricing* dimension. BK's optimal price of \$3.00 was derived assuming no competitive response. But if McDonald's cuts the Big Mac price by 10%, BK faces reduced demand and must cut its own price by 5% just to hold quantity constant — reducing its profit margin. This illustrates *strategic complementarity* in pricing: when products are gross substitutes, a competitor's price cut forces your hand. Connect this to the Bertrand model (Munoz-Garcia, Ch.9): when firms compete in prices with differentiated substitutes, reaction functions slope upward. A price cut by McDonald's shifts BK's residual demand curve leftward, and the profit-maximising response (by the Lerner Index applied to the *new* demand level) may involve a price cut larger or smaller than 5% depending on whether the elasticity changes.
 >
-> → *See also: Topic 2 Q1 (constant elasticity concepts), Topic 3C Q1 (tax incidence with elasticities), GE Game Extern Trade Topic 4 (Bertrand competition)*
+> → *See also: [Topic 2 Q1](#q-demand-01) (constant elasticity concepts), [Topic 3C Q1](#q-compet-01) (tax incidence with elasticities), [GE Game Extern Trade Topic 4](./answers-ge-game-extern-trade.md#q-game-01) (Bertrand competition)*
 
 **(vi) McDonald's lowers Big Mac price 10%. By what % must BK lower its price to not lose customers?**
 
@@ -392,7 +392,7 @@ $$MRPT_{k,l} = \frac{MC_k}{MC_l}$$
 
 > **Professor's Corner:** The MRPT definition is the production-side analogue of the MRS in consumption. Examiners frequently ask for the relationship $MRPT_{k,l} = MC_k/MC_l$ — know this duality cold. A common mistake is confusing MRPT (output transformation) with MRTS (factor substitution). In general equilibrium, MRPT = MRS is the condition for **production efficiency** (the first welfare theorem requires $MRPT_{AB}^F = MRS_{AB}^C$ for all firms $F$ and consumers $C$).
 >
-> → *See also: Topic 3B Q2 (MRPT = MC_x/MC_y proof), Topic 4 GE (production efficiency condition)*
+> → *See also: [Topic 3B Q2](#q-profit-02) (MRPT = MC_x/MC_y proof), [Topic 4 GE](./answers-ge-game-extern-trade.md#q-edge-03) (production efficiency condition)*
 
 ---
 
@@ -439,7 +439,7 @@ With fixed costs, convexity fails — the production set becomes non-convex near
 
 > **Professor's Corner:** A top answer doesn't just list the 11 properties — it groups them: (i) basic feasibility (non-empty, closed, inaction), (ii) physical constraints (no free lunch, irreversibility), (iii) disposal (free disposal), (iv) scalability (RTS properties), (v) aggregation (additivity), (vi) curvature (convexity). The fixed-cost exception to convexity is a favourite exam nuance. For graduate-level answers, note that **free disposal** plus **convexity** implies that conditional factor demands are well-behaved (downward-sloping), linking directly to the cost function properties in Q5.
 >
-> → *See also: Topic 3B Q1 (profit function convexity — the dual of this), Topic 3A Q5 (cost function concavity — related to production set convexity)*
+> → *See also: [Topic 3B Q1](#q-profit-01) (profit function convexity — the dual of this), [Topic 3A Q5](#q-prodset-04) (cost function concavity — related to production set convexity)*
 
 ---
 
@@ -541,7 +541,7 @@ This intermediate value (between 0 and 1) indicates moderate substitution possib
 
 > **Professor's Corner:** The derivation for linear ($\sigma = \infty$) is immediate from constant $MRTS$; the Leontief case ($\sigma = 0$) follows from the fact that $K/L$ is fixed at the kink. For Cobb-Douglas, the log-differentiation proof above is exam-ready. The CES derivation unifying all three polar cases is the capstone — master it for distinction-level answers. A common mistake is writing $\sigma = 1/(1-\rho)$ but forgetting that $\rho \le 1$ for well-behaved CES and that $\rho \to 0$ (not $\rho = 0$) gives Cobb-Douglas.
 >
-> → *See also: Topic 3A Q7(vii) (Cobb-Douglas EoS verification), Topic 1A Q7 (CES utility — same $\sigma$ concept in consumption)*
+> → *See also: [Topic 3A Q7(vii)](#q-prodset-06) (Cobb-Douglas EoS verification), [Topic 1A Q7](./answers-consumer-theory.md#q-cons-07) (CES utility — same $\sigma$ concept in consumption)*
 
 ---
 
@@ -635,7 +635,7 @@ $$\frac{\partial c}{\partial r} = 2 \cdot \frac{1}{2} \sqrt{\frac{w}{r}} \cdot Q
 
 > **Professor's Corner:** The cost function concavity result is the dual of profit function convexity. Top students explicitly link Shephard's Lemma to the envelope theorem: $\partial c(w,q)/\partial w_k = z_k(w,q)$. The intuitive matching questions test whether you can translate mathematical properties into plain English — practising this skill is worth 4 marks. For distinction-level answers, note the parallel between Shephard's Lemma in production and the **compensated demand / expenditure function relationship** in consumer theory ($\partial e(p,u)/\partial p_k = h_k(p,u)$).
 >
-> → *See also: Topic 3B Q1 (profit function — the dual), Topic 3A Q7 (conditional factor demand application), Topic 1B Q4 (EMP duality — Shephard's Lemma in consumption)*
+> → *See also: [Topic 3B Q1](#q-profit-01) (profit function — the dual), [Topic 3A Q7](#q-prodset-06) (conditional factor demand application), [Topic 1B Q4](./answers-consumer-theory.md#q-cons-1b-04) (EMP duality — Shephard's Lemma in consumption)*
 
 ---
 
@@ -717,7 +717,7 @@ $MC = 5$. Set MR = MC → $Q^* = 200(6)^{-6} = 200/46656 \approx 0.00429$. $P^* 
 
 > **Professor's Corner:** The direct $\pi(P)$ maximisation method is faster here and avoids inverting the demand function. However, the MR=MC method is more general and works when the demand function cannot be explicitly inverted. A common mistake is forgetting that the cost function $c(Q) = Q(3p_P + 2p_V)$ uses the *conditional* factor demands, not the production function directly.
 >
-> → *See also: Consumer Theory Q6 (Negroni — Leontief in consumption), Topic 2 Q3(v) (Lerner Index pricing)*
+> → *See also: [Consumer Theory Q6](./answers-consumer-theory.md#q-cons-06) (Negroni — Leontief in consumption), [Topic 2 Q3(v)](#q-demand-03) (Lerner Index pricing)*
 
 ---
 
@@ -851,7 +851,7 @@ $$Q^S(P) = \frac{P^2}{9wr}$$
 
 > **Professor's Corner:** Part (iv) on the shutdown price is subtle — $\min AVC = 0$ means the firm never shuts down for any positive price (it always covers variable costs at some output). A top answer notes that with fixed costs sunk in the SR, any $P > 0$ justifies production. Part (x) derives the LR supply — note it's upward-sloping (DRS) and homogeneous of degree zero in $(w,r)$ as required. The LR conditional factor demands satisfy Shephard's Lemma — we verified this above. The Lagrangian derivation in (viii) explicitly shows $\lambda = MC$, linking cost minimization to profit maximization. In general equilibrium, the condition $MRTS_L^A = MRTS_L^B$ across firms ensures **production efficiency** (the first welfare theorem) — this firm's input mix choice is a building block of that result.
 >
-> → *See also: Topic 3C Q1 (industry supply from firm supply), Topic 4 GE (production efficiency condition), Topic 3A Q5 (Shephard's Lemma general proof)*
+> → *See also: [Topic 3C Q1](#q-compet-01) (industry supply from firm supply), [Topic 4 GE](./answers-ge-game-extern-trade.md#q-edge-03) (production efficiency condition), [Topic 3A Q5](#q-prodset-04) (Shephard's Lemma general proof)*
 
 ---
 
@@ -904,7 +904,7 @@ The Jumbo's AC (\$3.11/oz) is 34% lower than the Trenta's AC (\$4.73/oz). The to
 
 > **Professor's Corner:** This is an intuitive application question — no math required, but the examiner wants to see you use economic reasoning, not common sense. Frame your answer around average cost declining with output: the second 31 oz has lower AC than the first because fixed costs are already covered. A top answer adds that marginal cost is below average cost when there are economies of scale. The numerical example above shows why the Jumbo costs less than twice as much — fixed cost spreading is the key mechanism. Link this to the DRS case in Q7(vii) where AC rises and MC > AC.
 >
-> → *See also: Topic 3A Q7(vii) (DRS — the opposite case), Topic 4 GE (natural monopoly and the failure of the first welfare theorem)*
+> → *See also: [Topic 3A Q7(vii)](#q-prodset-06) (DRS — the opposite case), Topic 4 GE (natural monopoly and the failure of the first welfare theorem)*
 
 ---
 
@@ -987,7 +987,7 @@ As a support function of a convex set, $\pi(p)$ inherits convexity automatically
 
 > **Professor's Corner:** The convexity of $\pi(p)$ reflects the firm's ability to adjust its production plan as prices change — the firm benefits more from extreme price vectors because it can specialise. A top answer explains the economic intuition: a price-taking firm can reallocate resources toward relatively more expensive outputs, so profit grows more than linearly in prices. Contrast this with the cost function, where substitution mitigates cost increases, hence concavity.
 >
-> → *See also: Topic 3A Q5 (cost function concavity — the dual), Topic 3B Q2 (MRPT application)*
+> → *See also: [Topic 3A Q5](#q-prodset-04) (cost function concavity — the dual), [Topic 3B Q2](#q-profit-02) (MRPT application)*
 
 ---
 
@@ -1044,7 +1044,7 @@ This chain of equalities — **$MRPT = MRS$** — is the **product-mix efficienc
 
 > **Professor's Corner:** A complete answer has two parts: (i) the technical derivation via total differentiation of $F(y)=0$ and the PMP first-order conditions, and (ii) the intuitive explanation — if $MRPT > MC_x/MC_y$, reallocating resources from $y$ to $x$ raises revenue more than it raises cost. The connection to the GE efficiency condition $MRPT = MRS$ (product-mix efficiency) is what separates A from B answers.
 >
-> → *See also: Topic 3A Q1 (MRPT definition), Topic 3A Q5 (cost function properties)*
+> → *See also: [Topic 3A Q1](#q-prodset-01) (MRPT definition), [Topic 3A Q5](#q-prodset-04) (cost function properties)*
 
 ---
 
@@ -1143,7 +1143,7 @@ $$\int_{11,000}^{21,000} [D(Q) - S(Q)] dQ = 100,000$$
 
 > **Professor's Corner:** The most common mistake is forgetting the shutdown condition — check $P \ge \min AVC$ before using $P = MC$ as the supply curve. Another frequent error: computing DWL as $\frac{1}{2} \times t \times Q_{after}$ instead of $\frac{1}{2} \times t \times \Delta Q$. The per-firm loss of $-\$19.5$ after tax is a key insight — firms produce despite losses because $P_s = 13 > \min AVC = 2$ (they are covering variable costs and contributing to fixed costs in the SR).
 >
-> → *See also: Topic 3A Q7(iv) (shutdown condition), Topic 3C Q2 (Walras' Law — GE extension)*
+> → *See also: [Topic 3A Q7(iv)](#q-prodset-06) (shutdown condition), [Topic 3C Q2](#q-compet-02) (Walras' Law — GE extension)*
 
 | Measure | Without Tax | With Tax |
 |---------|-------------|----------|
@@ -1326,7 +1326,7 @@ Simplifying gives 100,000, matching our earlier result.
 
 > **Professor's Corner:** The elasticity-form DWL formula is the gold standard for welfare analysis in public finance. It shows that DWL depends on (i) the square of the tax rate, (ii) the relative elasticities, and (iii) the size of the market. This is why economists recommend broad-based, low-rate taxes — they minimise the quadratic distortion. The formula also explains why DWL is larger in the LR: LR elasticities are typically larger than SR elasticities, amplifying the quantity response.
 >
-> → *See also: Welfare answers Q4 (DWL of taxation), Topic 3C Q2 (Walras' Law)*
+> → *See also: [Welfare answers Q4](./answers-welfare.md#q-welfare-04) (DWL of taxation), [Topic 3C Q2](#q-compet-02) (Walras' Law)*
 
 ---
 
@@ -1429,6 +1429,21 @@ The proof constructs a continuous mapping from the price simplex to itself, usin
 
 > **Professor's Corner:** Top answers follow a clear three-step process: (1) write Walras' Law explicitly, (2) solve any two market-clearing conditions for price ratios, (3) verify the third market clears automatically. The most common error is algebraic: sign mistakes when substituting $Z_2$ and $Z_3$ into the Walras' Law identity. Always check your solution by verifying $Z_1 = 0$ with the computed ratios.
 >
-> → *See also: GE answers Q8 (Walras' Law in GE context), Topic 3C Q1 (partial equilibrium — the contrast)*
+> → *See also: [GE answers Q8](./answers-ge-game-extern-trade.md#q-edge-08) (Walras' Law in GE context), [Topic 3C Q1](#q-compet-01) (partial equilibrium — the contrast)*
+
+---
+
+## 🔗 See also
+
+| File | Related Content |
+|------|----------------|
+| [Answers: Consumer Theory](./answers-consumer-theory.md) | Walrasian demand (CT 1B.Q1), indirect utility (CT 1B.Q2), EMP (CT 1B.Q3), homogeneity (CT 1B.Q4–Q5) — *foundation for all demand analysis* |
+| [Answers: Welfare](./answers-welfare.md) | CV/EV/CS (WF Q1–Q5), tax incidence & DWL (WF 5B.Q4), competition → SW max (WF 5B.Q8) — *DWL and producer surplus used in welfare assessment* |
+| [Answers: GE, Game Theory & Trade](./answers-ge-game-extern-trade.md) | Walras' Law (GE 6B.Q8) — *same question cross-listed*; tariff DWL (GE 9.Q1) — *same DWL = ½ × t × ΔQ applied to trade* |
+| [Formula Reference](./basics.md) | Production & costs, Lerner index, returns to scale, profit function |
+| [Equation Explainer](./EQUATION-EXPLAINER.md) | Elasticities, production, cost minimization explained in plain English |
+| [Cross-Reference Map](./answers-cross-reference.md) | Technique map, production chain, cost-profit duality |
+| [Study Roadmap](./STUDY-ROADMAP.md) | 10-day study plan (production covered Days 4–5) |
+| [Glossary](./GLOSSARY.md) | All abbreviations (EoS, MRTS, MRPT, CRTS/DRTS/IRTS, Lerner) |
 
 > **End of answers.** Covers all questions from Topics 2, 3A, 3B, 3C.

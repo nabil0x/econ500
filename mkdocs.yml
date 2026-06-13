@@ -94,6 +94,7 @@ markdown_extensions:
 # =====================================================================
 nav:
   - Home: index.md
+  - 📊 Study Dashboard: study-dashboard.md
   # ─── MICROECONOMICS (501) ─────────────────────────────────────────
   - 📐 Microeconomics (501):
     - Overview: 501-Microeconomics/README.md
@@ -105,6 +106,8 @@ nav:
     - Exam Simulations: 501-Microeconomics/EXAM-SIMULATIONS.md
     - Basics & Formulas: 501-Microeconomics/basics.md
     - Welfare Change Reference: 501-Microeconomics/welfare-change-reference.md
+    - Equation Explainer: 501-Microeconomics/EQUATION-EXPLAINER.md
+    - 📖 Glossary (Detailed): 501-Microeconomics/GLOSSARY-DETAILED.md
     - ✅ Answer Files:
       - Consumer Theory: 501-Microeconomics/answers-consumer-theory.md
       - Demand & Production: 501-Microeconomics/answers-demand-production.md
@@ -119,16 +122,19 @@ nav:
     - 📋 ANSWERS Index: 501-Microeconomics/ANSWERS-INDEX.md
     - 📖 Glossary: 501-Microeconomics/GLOSSARY.md
     - 📦 Resources Index: 501-Microeconomics/resources/README.md
+    - 📦 Master Notes Index: 501-Microeconomics/resources/master-notes-501/README.md
 
   # ─── MACROECONOMICS (502) ─────────────────────────────────────────
   - 📈 Macroeconomics (502):
     - Overview: macroeconomics/README.md
     - Basics: macroeconomics/basics.md
+    - ✅ Answers: macroeconomics/answers-macroeconomics.md
 
   # ─── DEVELOPMENT ECONOMICS (503) ─────────────────────────────────
   - 🌱 Development (503):
     - Overview: 503-Development/README.md
     - Course Basics: 503-Development/basics.md
+    - ✅ Answers: 503-Development/answers-development.md
     - 📝 Topics:
       - Naila Kabeer:
         - Basics: 503-Development/naila-kabeer/basics.md
@@ -147,6 +153,7 @@ nav:
   - 🏛️ Political Economy (512):
     - Overview: 512-Political-Economy/README.md
     - Course Basics: 512-Political-Economy/basics.md
+    - ✅ Answers: 512-Political-Economy/answers-political-economy.md
     - 📝 Topics:
       - Modernization Theory:
         - Basics: 512-Political-Economy/modernization-theory/basics.md
@@ -184,16 +191,26 @@ nav:
     - Batch 47 (2022 MSc):
       - Overview: batch-finals/batch-47/README.md
       - Micro 501: batch-finals/batch-47/micro-501.md
+      - Micro 501 Tutorial: batch-finals/batch-47/micro-501-tutorial.md
       - Macro 502: batch-finals/batch-47/macro-502.md
+      - Macro 502 Tutorial: batch-finals/batch-47/macro-502-tutorial.md
       - Dev 503: batch-finals/batch-47/dev-503.md
       - Health 507: batch-finals/batch-47/health-507.md
+      - Health 507 Tutorial: batch-finals/batch-47/health-507-tutorial.md
       - Political 512: batch-finals/batch-47/political-512.md
+      - Econometrics 504: batch-finals/batch-47/econometrics-504.md
+      - Econometrics 504 Tutorial: batch-finals/batch-47/econometrics-504-tutorial.md
+      - Environmental 506: batch-finals/batch-47/environmental-506.md
+      - Labor 510: batch-finals/batch-47/labor-510.md
+      - Labor 510 Tutorial: batch-finals/batch-47/labor-510-tutorial.md
     - Batch 48 (2023 MSc):
       - Overview: batch-finals/batch-48/README.md
       - Micro 501: batch-finals/batch-48/micro-501.md
       - Macro 502: batch-finals/batch-48/macro-502.md
       - Dev 503: batch-finals/batch-48/dev-503.md
       - Health 507: batch-finals/batch-48/health-507.md
+      - Econometrics 504: batch-finals/batch-48/econometrics-504.md
+      - Labor 510: batch-finals/batch-48/labor-510.md
     - Batch 46 (2020 Hons):
       - Overview: batch-finals/batch-46/README.md
       - Micro 401: batch-finals/batch-46/micro-401.md

@@ -186,9 +186,14 @@ These have appeared in **2+ sources** — highest probability:
 | 11 | [`micro-questions-year-wise-answered.md`](./micro-questions-year-wise-answered.md) | Year index + inline answers |
 | 12 | [`basics.md`](./basics.md) | Key definitions, formulas, concepts |
 | 13 | [`welfare-change-reference.md`](./welfare-change-reference.md) | CV/EV/CS reference notes |
-| 14 | [`resources/README.md`](./resources/README.md) | Resource materials index |
-| 15 | [`resources/README.md`](./resources/README.md) | 18 extracted source files (textbooks + chapters + notes) |
-| 16 | [`README.md`](./README.md) | Course README with formulas and cross-links |
+| 14 | [`EXAM-CHEAT-SHEET.md`](./EXAM-CHEAT-SHEET.md) | Condensed formulas and key results |
+| 15 | [`EXAM-ANSWER-TEMPLATE.md`](./EXAM-ANSWER-TEMPLATE.md) | Answer structure templates |
+| 16 | [`EXAM-PRIORITY-MATRIX.md`](./EXAM-PRIORITY-MATRIX.md) | Question priority ranking matrix |
+| 17 | [`EXAM-SIMULATIONS.md`](./EXAM-SIMULATIONS.md) | Mock exam simulations |
+| 18 | [`EXAM-COMMON-MISTAKES.md`](./EXAM-COMMON-MISTAKES.md) | Frequent exam errors |
+| 19 | [`resources/README.md`](./resources/README.md) | Resource materials index |
+| 20 | [`resources/README.md`](./resources/README.md) | 18 extracted source files (textbooks + chapters + notes) |
+| 21 | [`README.md`](./README.md) | Course README with formulas and cross-links |
 
 ---
 

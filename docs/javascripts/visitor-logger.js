@@ -75,6 +75,22 @@ function sbRpc(fn, params) {
   });
 }
 
+/** SELECT rows from a table via Supabase REST API */
+function sbSelect(table, opts) {
+  var params = [];
+  if (opts && opts.select) params.push('select=' + encodeURIComponent(opts.select));
+  if (opts && opts.order)  params.push('order=' + encodeURIComponent(opts.order));
+  if (opts && opts.limit)  params.push('limit=' + encodeURIComponent(opts.limit));
+  var qs = params.length ? '?' + params.join('&') : '';
+  return fetch(CONFIG.supabaseUrl + '/rest/v1/' + table + qs, {
+    method: 'GET',
+    headers: {
+      'apikey': CONFIG.supabaseKey,
+      'Accept': 'application/json',
+    },
+  });
+}
+
 /* ══════════════════════════════════════════════════════════════
  *  SESSION
  *  Persisted in localStorage so it survives page navigations
@@ -148,6 +164,7 @@ function getTodayStats() {
 window.__studyLogger = {
   sbInsert: sbInsert,
   sbRpc: sbRpc,
+  sbSelect: sbSelect,
   getSession: getSession,
   getCourseFromPath: getCourseFromPath,
   getTodayStats: getTodayStats,

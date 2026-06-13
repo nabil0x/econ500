@@ -250,6 +250,130 @@
   color: var(--md-default-fg-color--light, #b6b0a5);
 }
 
+/* ── Debug Logger (collapsible raw data table) ──────────────── */
+.ds-debug {
+  margin-top: 32px;
+}
+
+.ds-debug-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light, #666);
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.ds-debug-toggle:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.ds-debug-arrow {
+  font-size: 0.75rem;
+  margin-left: 8px;
+  transition: transform 0.2s;
+}
+
+.ds-debug-body {
+  margin-top: 12px;
+}
+
+.ds-debug-hint {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light, #888);
+  margin: 0 0 12px;
+  font-style: italic;
+}
+
+.ds-debug-table {
+  margin-bottom: 16px;
+}
+
+.ds-debug-table:last-child {
+  margin-bottom: 0;
+}
+
+.ds-debug-table-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color, #444);
+  margin-bottom: 6px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ds-debug-table-elem {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.ds-debug-table-elem th {
+  text-align: left;
+  padding: 4px 8px;
+  font-weight: 700;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light, #888);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+}
+
+.ds-debug-table-elem td {
+  padding: 3px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  color: var(--md-default-fg-color, #444);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.ds-debug-table-elem tbody tr:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Dark mode overrides */
+[data-md-color-scheme="ju-dark"] .ds-debug-toggle {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-debug-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-debug-table-title {
+  color: var(--md-default-fg-color, #ece7dc);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-debug-table-elem th {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-debug-table-elem td {
+  color: var(--md-default-fg-color, #ece7dc);
+  border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-debug-table-elem tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
 /* ── Responsive: tablet ─────────────────────────────────────── */
 @media (max-width: 768px) {
   .ds-grid {

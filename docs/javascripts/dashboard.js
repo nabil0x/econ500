@@ -27,7 +27,8 @@
     return;
   }
 
-  var sbRpc = logger.sbRpc;
+  var sbRpc   = logger.sbRpc;
+  var sbSelect = logger.sbSelect;
   var lsGet = logger.lsGet || function (key, def) {
     try {
       var v = JSON.parse(localStorage.getItem(key));
@@ -137,6 +138,19 @@
         '<div class="ds-section">' +
           '<h2 class="ds-section-title">Recent Session</h2>' +
           '<div id="ds-session-section"></div>' +
+        '</div>' +
+
+        /* ════ Raw Data Logger (collapsible) ════ */
+        '<div class="ds-section ds-debug">' +
+          '<button class="ds-debug-toggle" id="ds-debug-toggle" aria-expanded="false">' +
+            '\u{1F50D} Debug: Raw Database Records' +
+            '<span class="ds-debug-arrow">\u25B6</span>' +
+          '</button>' +
+          '<div class="ds-debug-body" id="ds-debug-body" hidden>' +
+            '<p class="ds-debug-hint">Last 10 records from each table. ' +
+            'Use this to verify that the logger is capturing data.</p>' +
+            '<div id="ds-debug-tables"></div>' +
+          '</div>' +
         '</div>' +
 
       '</div>';
@@ -402,9 +416,98 @@
     });
   }
 
+  /* ── Render debug logger (raw table data) ───────────── */
+  function renderDebugLogger() {
+    var target = document.getElementById('ds-debug-tables');
+    if (!target) return;
+
+    target.innerHTML = '<div class="ds-loader">\u23F3 Loading raw data\u2026</div>';
+
+    if (typeof sbSelect !== 'function') {
+      target.innerHTML = '<div class="ds-empty">sbSelect not available</div>';
+      return;
+    }
+
+    var tables = [
+      { name: 'page_visits',   label: 'Page Visits',   cols: ['id','path','title','created_at'] },
+      { name: 'click_events',  label: 'Click Events',  cols: ['id','path','target','category','created_at'] },
+      { name: 'study_sessions', label: 'Study Sessions', cols: ['id','session_id','date','total_study_ms','pages_studied','created_at'] },
+    ];
+
+    Promise.all(tables.map(function (t) {
+      return sbSelect(t.name, {
+        select: t.cols.join(','),
+        order: 'created_at.desc',
+        limit: 10,
+      })
+        .then(function (res) { return res.ok ? res.json() : []; })
+        .catch(function () { return []; });
+    })).then(function (results) {
+      clear(target);
+
+      results.forEach(function (rows, idx) {
+        var table = tables[idx];
+        var block = el('div', 'ds-debug-table');
+        var heading = el('div', 'ds-debug-table-title');
+        heading.textContent = table.label + ' (' + rows.length + ' records)';
+        block.appendChild(heading);
+
+        if (!rows.length) {
+          var empty = el('div', 'ds-empty');
+          empty.textContent = 'No records yet';
+          block.appendChild(empty);
+          target.appendChild(block);
+          return;
+        }
+
+        var tbl = el('table', 'ds-debug-table-elem');
+        var thead = el('thead');
+        var headerRow = el('tr');
+        table.cols.forEach(function (c) {
+          var th = el('th');
+          th.textContent = c;
+          headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        tbl.appendChild(thead);
+
+        var tbody = el('tbody');
+        rows.forEach(function (row) {
+          var tr = el('tr');
+          table.cols.forEach(function (c) {
+            var td = el('td');
+            var val = row[c];
+            td.textContent = val != null ? String(val) : '\u2014';
+            td.title = val != null ? String(val) : '';
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+        tbl.appendChild(tbody);
+        block.appendChild(tbl);
+        target.appendChild(block);
+      });
+    });
+  }
+
   /* ── Boot ────────────────────────────────────────────── */
   function boot() {
     renderDashboard();
+
+    /* Render debug logger after main dashboard */
+    renderDebugLogger();
+
+    /* Toggle for debug logger */
+    var toggle = document.getElementById('ds-debug-toggle');
+    var body   = document.getElementById('ds-debug-body');
+    if (toggle && body) {
+      toggle.addEventListener('click', function () {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        body.hidden = expanded;
+        toggle.querySelector('.ds-debug-arrow').textContent = expanded ? '\u25B6' : '\u25BC';
+      });
+    }
 
     /* Responsive chart: redraw on resize */
     var canvas = document.getElementById('ds-chart-canvas');

@@ -1130,7 +1130,7 @@ Assume $u(\cdot)$ is continuous, preferences satisfy LNS on $X = \mathbb{R}^L_+$
 **4. Other properties (follow from above):**
 - $x(p,w)$ is continuous in $(p,w)$ if $u$ is continuous and strictly quasiconcave.
 - For normal goods: $\partial x_k/\partial w > 0$; for inferior goods: $\partial x_k/\partial w < 0$.
-- Usual goods: $\partial x_k/\partial p_k < 0$; Giffen goods: $\partial x_k/\partial p_k > 0$.
+- Usual goods: $\partial x_k/\partial p_k < 0$; [Giffen goods](GLOSSARY.md#term-giffen): $\partial x_k/\partial p_k > 0$.
 
 **When can UMP sufficient conditions be violated?**
 
@@ -1158,9 +1158,9 @@ The Kuhn-Tucker conditions are necessary for a max. They are sufficient when:
 
 **Exam Tip:** For 10 marks: list and explain each property with economic intuition. For the sufficient condition part: draw the three-violations diagram (non-monotone, non-quasiconcave, corner solution). The Kuhn-Tucker sufficient conditions are: (1) $u$ quasiconcave, (2) $u$ monotone, (3) $\nabla u \neq 0$.
 
-> **Professor's Corner:** This is a synthesis question—it tests whether you understand the *boundaries* of UMP applicability. Top answers identify the three sufficient conditions explicitly (quasiconcavity, monotonicity/LNS, non-zero gradient) and match each to its violation scenario. The Giffen good paradox is NOT a violation—it satisfies all sufficient conditions but the income effect is large and negative. Don't confuse Giffen behavior with non-quasiconcavity. The corner solution case ($x_1 = 0$) is the most commonly tested on exams.
+> **Professor's Corner:** This is a synthesis question—it tests whether you understand the *boundaries* of UMP applicability. Top answers identify the three sufficient conditions explicitly (quasiconcavity, monotonicity/LNS, non-zero gradient) and match each to its violation scenario. The [Giffen good](GLOSSARY.md#term-giffen) paradox is NOT a violation—it satisfies all sufficient conditions but the income effect is large and negative. Don't confuse Giffen behavior with non-quasiconcavity. The corner solution case ($x_1 = 0$) is the most commonly tested on exams.
 >
-> → *See also: Section 1A Q1 (rationality assumptions); Section 1A Q7 (LNS chain); DP 2.Q1 (Giffen goods in demand estimation)*
+> → *See also: Section 1A Q1 (rationality assumptions); Section 1A Q7 (LNS chain); DP 2.Q1 ([Giffen goods](GLOSSARY.md#term-giffen) in demand estimation)*
 
 ---
 

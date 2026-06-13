@@ -149,7 +149,7 @@
 | **L** | Labour | Human factor of production; earned wage $w$; supplied by households, demanded by firms | [DP 3A](./answers-demand-production.md) |
 <a id="term-les"></a>
 <a id="term-linear-expenditure"></a>
-| **LES** | Linear Expenditure System (Stone-Geary) | $u = \prod(x_i - \gamma_i)^{\alpha_i}$; adds subsistence consumption $\gamma_i$ to CD; linear Engel curves | [CT 1B extension](./answers-consumer-theory.md), [§4](#term-bh) |
+| **LES** | Linear Expenditure System (Stone-Geary) | $u = \prod(x_i - \gamma_i)^{\alpha_i}$; adds subsistence consumption $\gamma_i$ to CD; linear Engel curves | [CT 1B extension](./answers-consumer-theory.md), [§1](#term-bh) |
 <a id="term-lr"></a>
 <a id="term-long-run"></a>
 | **LR** | Long Run | All factors variable; no fixed costs; firms can enter/exit | [DP 3A.Q7](./answers-demand-production.md#q-prodset-07), [DP 3C](./answers-demand-production.md) |
@@ -175,7 +175,6 @@
 <a id="term-producer-surplus"></a>
 | **PS** | Producer Surplus | Revenue minus variable cost: $PS = TR - TVC$; area above supply curve below price | [DP 3C.Q1](./answers-demand-production.md#q-compet-01), [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) |
 <a id="term-rts"></a>
-<a id="term-returns-to-scale"></a>
 | **RTS** | Returns to Scale | How output responds to proportional input increase: CRTS ($=$), IRTS ($>$), DRTS ($<$); determined by sum of output elasticities | [DP 3A.Q1](./answers-demand-production.md#q-prodset-01), [§2.4](#term-returns-to-scale) |
 <a id="term-smc"></a>
 | **SMC** | Social Marginal Cost | Total marginal cost to society: $SMC = PMC + MED$ (private + external damage); $SMC = PMC - MEB$ for positive externalities | [GE 8.Q2](./answers-ge-game-extern-trade.md#q-extern-02), [basics.md](./basics.md) |

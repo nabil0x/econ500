@@ -153,6 +153,6 @@ NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooper
 - Private goods: $MRS_i=MRT$ for each $i$ (individual condition)
 - Public goods: sum of MRS = MRT (aggregate condition)
 
-**Lindahl prices:** Personalized prices $p_G^i$ s.t. $MRS^i=p_G^i$ and $\sum_ip_G^i=MC_G$
+**[Lindahl prices](GLOSSARY.md#term-lindahl):** Personalized prices $p_G^i$ s.t. $MRS^i=p_G^i$ and $\sum_ip_G^i=MC_G$
 
 **Free rider problem:** Non-excludability $\Rightarrow$ each agent under-contributes to public good; Nash equilibrium voluntary contributions fall short of Samuelson optimum.

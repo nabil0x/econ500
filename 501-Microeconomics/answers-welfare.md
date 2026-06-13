@@ -729,7 +729,7 @@ $$W = F(U_{1}, U_{2}, ..., U_{n})$$
 
 A SWF is a rule for aggregating individual utility levels into a measure of overall social welfare. It provides a *complete ranking* of all feasible social states. Each state is a vector of utilities $(U_1,\ldots,U_n)$ and the SWF assigns a real number $W$ to that vector.
 
-- **Bergson-Samuelson SWF:** Individual utilities are arguments; the functional form embodies ethical/value judgements about distribution.
+- **[Bergson-Samuelson SWF](GLOSSARY.md#term-bergson-samuelson):** Individual utilities are arguments; the functional form embodies ethical/value judgements about distribution.
 - **Social indifference contours:** In two-person space (U_A, U_B), each contour connects utility pairs yielding the same W. Contours further northeast = higher welfare.
 
 **Using the SWF as a Welfare Criterion:**
@@ -772,9 +772,9 @@ A SWF is a rule for aggregating individual utility levels into a measure of over
 | Arrow's Impossibility | Arrow (1951) proved no SWF can simultaneously satisfy universal domain, Pareto, independence of irrelevant alternatives, and non-dictatorship |
 | Interpersonal comparisons | Any SWF that ranks states where some gain/lose requires interpersonal utility comparisons |
 
-> **Exam Tip:** Distinguish between a *Bergson-Samuelson* SWF (assumes a social planner with given value judgements) and *Arrow's* social welfare function (attempts to aggregate individual preferences). Bergson's is used in welfare maximization; Arrow's leads to impossibility.
+> **Exam Tip:** Distinguish between a *[Bergson-Samuelson](GLOSSARY.md#term-bergson-samuelson)* SWF (assumes a social planner with given value judgements) and *Arrow's* social welfare function (attempts to aggregate individual preferences). Bergson's is used in welfare maximization; Arrow's leads to impossibility.
 
-> **Professor's Corner:** The Bergson-Samuelson SWF (used in optimisation) and Arrow's SWF (impossibility theorem) are different concepts. Many students conflate them — the examiner watches for this distinction.
+> **Professor's Corner:** The [Bergson-Samuelson SWF](GLOSSARY.md#term-bergson-samuelson) (used in optimisation) and Arrow's SWF (impossibility theorem) are different concepts. Many students conflate them — the examiner watches for this distinction.
 
 → *See also: Topic 5A Q4 (SWF/GUPF), Topic 5B Q6 (Utilitarian vs Rawlsian)*
 
@@ -1297,7 +1297,7 @@ The social dividend (52.5) represents the net gain to society from correcting th
 >
 > $$W_R = \min_i U_i \quad \Rightarrow \quad \text{society is infinitely averse to inequality}$$
 >
-> **Key insight:** The shape of the social indifference curve reveals the entire ethical stance. [Utilitarian](GLOSSARY.md#term-utilitarian) = sum-ranking (equity-blind); [Rawlsian](GLOSSARY.md#term-rawlsian) = maximin (extreme equity focus). The Bergson-Samuelson [SWF](GLOSSARY.md#term-swf) nests both as special cases.
+> **Key insight:** The shape of the social indifference curve reveals the entire ethical stance. [Utilitarian](GLOSSARY.md#term-utilitarian) = sum-ranking (equity-blind); [Rawlsian](GLOSSARY.md#term-rawlsian) = maximin (extreme equity focus). The [Bergson-Samuelson](GLOSSARY.md#term-bergson-samuelson) [SWF](GLOSSARY.md#term-swf) nests both as special cases.
 > → *See also: Topic 5A Q3, Topic 5A Q6*
 
 **Social Welfare Function (SWF):**
@@ -1366,7 +1366,7 @@ $W = min{U_{1}, U_{2}, ..., U_{n}}$
 | Type | Formula | Characteristic |
 |------|---------|---------------|
 | **Nash (Cobb-Douglas)** | $W = \Pi_i U_i$ | Social indifference curves are rectangular hyperbolas; moderate inequality aversion |
-| **Bergson-Samuelson** | $W = F(U_{1},...,U_{n})$ | General form with unspecified weights; allows any degree of inequality aversion |
+| **[Bergson-Samuelson](GLOSSARY.md#term-bergson-samuelson)** | $W = F(U_{1},...,U_{n})$ | General form with unspecified weights; allows any degree of inequality aversion |
 | **Weighted utilitarian** | $W = \sum_i \alpha_i U_i$ with $\alpha_i > 0$ | Unequal weights for different individuals |
 
 > **Exam Tip:** Draw the social indifference curves for both types in U_A-U_B space. Utilitarian = straight line (perfect substitutes in utility). Rawlsian = right-angle (perfect complements in utility). The shape reveals the ethical stance.

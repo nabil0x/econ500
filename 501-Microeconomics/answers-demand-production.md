@@ -179,7 +179,7 @@ Burger King demand: $Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I$
 
 $\frac{\partial Q}{\partial P_B} = 1.3 > 0$ → the demand curve slopes **upward** (Giffen-like). This violates the Law of Demand.
 
-**Why this cannot be a Giffen good:** A Giffen good (an inferior good whose income effect dominates the substitution effect) still has a downward-sloping *compensated* demand curve, even though its Walrasian demand is upward-sloping (Munoz-Garcia, §2.6, p.120). The key distinction: the *own-price coefficient* in a regression like this should still be **negative** as a statistical matter — a positive coefficient on $P_B$ when estimating a demand function using observational data is a **symptom of model misspecification**, not a genuine Giffen effect.
+**Why this cannot be a [Giffen](GLOSSARY.md#term-giffen) good:** A Giffen good (an inferior good whose income effect dominates the substitution effect) still has a downward-sloping *compensated* demand curve, even though its Walrasian demand is upward-sloping (Munoz-Garcia, §2.6, p.120). The key distinction: the *own-price coefficient* in a regression like this should still be **negative** as a statistical matter — a positive coefficient on $P_B$ when estimating a demand function using observational data is a **symptom of model misspecification**, not a genuine Giffen effect.
 
 For a properly specified demand function, own-price coefficient must be **negative**.
 
@@ -412,9 +412,9 @@ $$MRPT_{k,l} = \frac{MC_k}{MC_l}$$
 | 4 | **Possibility of inaction** | $0 \in Y$ — firm can shut down (use no inputs, produce no output). | Origin is in $Y$ |
 | 5 | **Free disposal** | $y \in Y$ and $y' \leq y \Rightarrow y' \in Y$. Can throw away inputs/outputs at no cost. | If $y$ is feasible, any point southwest of $y$ is also feasible |
 | 6 | **Irreversibility** | $y \in Y, y \neq 0 \Rightarrow -y \notin Y$. Cannot reverse production (unlike pure exchange). | $Y$ and $-Y$ do not overlap |
-| 7 | **Non-increasing RTS** | $y \in Y \Rightarrow \alpha y \in Y$ for $\alpha \in [0,1]$. Can scale down. | Cone containing origin |
+| 7 | **Non-increasing [RTS](GLOSSARY.md#term-rts)** | $y \in Y \Rightarrow \alpha y \in Y$ for $\alpha \in [0,1]$. Can scale down. | Cone containing origin |
 | 8 | **Non-decreasing RTS** | $y \in Y \Rightarrow \alpha y \in Y$ for $\alpha \geq 1$. Can scale up. | Cone expanding outward |
-| 9 | **CRS** | $y \in Y \Rightarrow \alpha y \in Y$ for $\alpha \geq 0$. | Full cone through origin |
+| 9 | **[CRS](GLOSSARY.md#term-crs)** | $y \in Y \Rightarrow \alpha y \in Y$ for $\alpha \geq 0$. | Full cone through origin |
 | 10 | **Additivity / Free entry** | $y, y' \in Y \Rightarrow y + y' \in Y$. Independent production plans can be combined. | $Y + Y \subseteq Y$ |
 | 11 | **Convexity** | $y, y' \in Y, \alpha \in [0,1] \Rightarrow \alpha y + (1-\alpha)y' \in Y$. Balanced combinations are feasible. | Straight line between any two points in $Y$ stays in $Y$ |
 
@@ -432,7 +432,7 @@ The properties above are drawn from the axiomatic foundations of producer theory
 **Convexity violation with fixed costs:**
 With fixed costs, convexity fails — the production set becomes non-convex near the origin. For example, if the firm must spend \$100 on a license before producing any output, then the point $(y_1, y_2) = (-\$100, 0)$ is feasible (pay license, produce nothing) and the origin $(0,0)$ is feasible (inaction), but their convex combination $( -\$50, 0)$ is **not** feasible — you cannot "half-pay" the license. This non-convexity explains why natural monopolies (high fixed costs) cannot sustain competitive pricing.
 
-**Exam Tip:** Differentiate between **convex production set** (which implies diminishing returns / DRS) and **convex isoquants** (which imply diminishing MRTS). They are related but not identical:
+**Exam Tip:** Differentiate between **convex production set** (which implies diminishing returns / [DRS](GLOSSARY.md#term-drs)) and **convex isoquants** (which imply diminishing MRTS). They are related but not identical:
 - Convex production set → diminishing RTS (output grows less than proportionally to inputs)
 - Convex isoquants → diminishing MRTS (isoquants bow toward the origin)
 - A production set can have convex isoquants but still violate production set convexity (e.g., with fixed costs)
@@ -617,7 +617,7 @@ These properties imply that **conditional factor demands slope downward** (an in
 
 #### Worked example — verifying Shephard's Lemma for Cobb-Douglas
 
-Take $Q = K^{1/3}L^{1/3}$ from Q7. The LR conditional factor demands are:
+Take $Q = K^{1/3}L^{1/3}$ from Q7. The [LR](GLOSSARY.md#term-lr) conditional factor demands are:
 
 $$L(w,r,Q) = \left(\frac{r}{w}\right)^{1/2} Q^{3/2}, \quad K(w,r,Q) = \left(\frac{w}{r}\right)^{1/2} Q^{3/2}$$
 
@@ -725,7 +725,7 @@ $MC = 5$. Set MR = MC → $Q^* = 200(6)^{-6} = 200/46656 \approx 0.00429$. $P^* 
 
 > **Marking Guide [14 marks]:** SR Production (2) | SR Factor Demand & Cost (3) | Shutdown & Supply (2) | Returns to Scale (2) | EoS (1) | LR Factor Demand (2) | LR Cost & Supply (2)
 
-> ⭐ **High-Yield** — This is the most comprehensive production question, covering every major concept: SR vs LR, conditional factor demands, cost functions, shutdown, supply, RTS, EoS, and duality. Master this and you master production theory.
+> ⭐ **High-Yield** — This is the most comprehensive production question, covering every major concept: [SR](GLOSSARY.md#term-sr) vs LR, conditional factor demands, cost functions, shutdown, supply, RTS, EoS, and duality. Master this and you master production theory.
 
 $Q = (KL)^{1/3}$, short-run $K = 64$.
 
@@ -847,7 +847,7 @@ $$Q^S(P) = \frac{P^2}{9wr}$$
 - **Homogeneous of degree zero** in $(w,r)$: doubling both $w$ and $r$ leaves $Q^S$ unchanged ✓
 - **Homogeneous of degree 1 in $P$**: doubling $P$ quadruples $Q^S$ (since $Q^S \propto P^2$)
 
-**Exam Tip:** For DRS, LR supply slopes upward. For CRS, LR supply is horizontal at $P = MC$. For IRS, the firm would not have a well-defined supply curve (natural monopoly — links to Q8 on economies of scale).
+**Exam Tip:** For DRS, LR supply slopes upward. For CRS, LR supply is horizontal at $P = MC$. For [IRS](GLOSSARY.md#term-irs), the firm would not have a well-defined supply curve (natural monopoly — links to Q8 on economies of scale).
 
 > **Professor's Corner:** Part (iv) on the shutdown price is subtle — $\min AVC = 0$ means the firm never shuts down for any positive price (it always covers variable costs at some output). A top answer notes that with fixed costs sunk in the SR, any $P > 0$ justifies production. Part (x) derives the LR supply — note it's upward-sloping (DRS) and homogeneous of degree zero in $(w,r)$ as required. The LR conditional factor demands satisfy Shephard's Lemma — we verified this above. The Lagrangian derivation in (viii) explicitly shows $\lambda = MC$, linking cost minimization to profit maximization. In general equilibrium, the condition $MRTS_L^A = MRTS_L^B$ across firms ensures **production efficiency** (the first welfare theorem) — this firm's input mix choice is a building block of that result.
 >
@@ -873,7 +873,7 @@ Reasoning: Food/beverage production typically exhibits economies of scale in pac
 
 The firm's average cost declines with output → the marginal cost of the second 31 oz is **less** than the average cost of the first 31 oz.
 
-**Formal AC/MC relationship (Koutsoyiannis Ch.4, Munoz-Garcia §4.10):**
+**Formal [AC](GLOSSARY.md#term-ac)/[MC](GLOSSARY.md#term-mc) relationship (Koutsoyiannis Ch.4, Munoz-Garcia §4.10):**
 
 When there are **economies of scale**, the average cost curve is declining:
 

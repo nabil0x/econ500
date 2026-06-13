@@ -71,7 +71,7 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 >
 > **Uniqueness:** Equilibrium is unique if the excess demand function satisfies **gross substitutability**: $\partial z_i(p)/\partial p_j > 0$ for all $i \neq j$. This ensures the mapping is monotone (Koutsoyiannis, p.489; Munoz-Garcia, §6.2.1, p.340).
 >
-> **Stability:** An equilibrium is **stable** if the system returns to it after a small displacement. Under **Walrasian tâtonnement**, prices adjust proportionally to excess demand: $\dot{p}_i = k_i \cdot z_i(p)$. Stability requires the Jacobian of excess demand to be negative definite at equilibrium (Koutsoyiannis, p.490–491).
+> **Stability:** An equilibrium is **stable** if the system returns to it after a small displacement. Under **Walrasian [tâtonnement](GLOSSARY.md#term-tatonnement)**, prices adjust proportionally to excess demand: $\dot{p}_i = k_i \cdot z_i(p)$. Stability requires the Jacobian of excess demand to be negative definite at equilibrium (Koutsoyiannis, p.490–491).
 >
 > **Caution:** Existence does not guarantee uniqueness (multiple equilibria possible with backward-bending supply), and uniqueness does not guarantee stability.
 >
@@ -116,7 +116,7 @@ The three problems are best illustrated using a demand-supply diagram (partial e
 
 - **Stable equilibrium:** D cuts S from above → excess demand drives price up, excess supply drives it down (negative slope of E(P) at equilibrium).
 - **Unstable equilibrium:** D cuts S from below → excess demand drives price down, excess supply drives it up (positive slope of E(P) at equilibrium).
-- Walrasian *tâtonnement*: auctioneer adjusts prices proportionally to excess demand. Stable if \partial E/\partial P < 0.
+- Walrasian *[tâtonnement](GLOSSARY.md#term-tatonnement)*: auctioneer adjusts prices proportionally to excess demand. Stable if \partial E/\partial P < 0.
 
 ```
 Stable:              Unstable:
@@ -130,7 +130,7 @@ Stable:              Unstable:
 
 **Exam Tip:** Draw all four cases: (1) unique stable, (2) unique unstable, (3) multiple equilibria (alternating stable/unstable), (4) no equilibrium. Always translate D-S into excess demand $E(P) = QD - QS$.
 
-> **Professor's Corner:** A-grade answers label each equilibrium's stability type and explain the Walrasian tâtonnement mechanism explicitly ("price rises when E(P) > 0, falls when E(P) < 0"). The best answers note that backward-bending supply curves generate multiple equilibria and connect this to Giffen goods/labour supply.
+> **Professor's Corner:** A-grade answers label each equilibrium's stability type and explain the Walrasian [tâtonnement](GLOSSARY.md#term-tatonnement) mechanism explicitly ("price rises when E(P) > 0, falls when E(P) < 0"). The best answers note that backward-bending supply curves generate multiple equilibria and connect this to [Giffen](GLOSSARY.md#term-giffen) goods/labour supply.
 
 → *See also: Topic 6A Q3 (excess demand formulation), Topic 6A Q4 (transmission mechanism)*
 
@@ -138,7 +138,7 @@ Stable:              Unstable:
 
 ### Question 3 {#q-ge-03}
 
-> **Marking Guide [14 marks]:** Define E(P) (2) | Existence via IVT (4) | Stability from slope sign (4) | Uniqueness from monotonicity (2) | Synthesis (2)
+> **Marking Guide [14 marks]:** Define E(P) (2) | Existence via [IVT](GLOSSARY.md#term-ivt) (4) | Stability from slope sign (4) | Uniqueness from monotonicity (2) | Synthesis (2)
 
 **Answer:**
 
@@ -190,7 +190,7 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 - If E(P) is **monotonic** (dE/dP < 0 for all P), equilibrium is unique — there can be only one P where E(P) = 0.
 - If E(P) is non-monotonic (changes sign multiple times), multiple equilibria exist.
 - Normal goods (downward-sloping D, upward-sloping S) guarantee dE/dP < 0 → uniqueness.
-- Giffen goods, backward-bending supply can create multiple crossings.
+- [Giffen](GLOSSARY.md#term-giffen) goods, backward-bending supply can create multiple crossings.
 
 **Exam Tip:** Always define $E(P) = QD - QS$ first. Then: existence $= E(P) = 0$ at some $P > 0$; stability $= \text{sign of } dE/dP$ at equilibrium; uniqueness $= \text{monotonicity of } E(P)$.
 
@@ -281,7 +281,7 @@ This question asks about the transmission mechanism: **external shock in product
 >
 > **From contract curve to PPC:** Mapping the contract curve from input-space to output-space yields the **Production Possibility Curve (PPC)**, whose slope is the **Marginal Rate of Product Transformation (MRPT)**.
 >
-> **Classification:** The contract curve is unique only under CRS and homothetic isoquants. With DRS or non-homothetic technology, the curve is non-linear.
+> **Classification:** The contract curve is unique only under [CRS](GLOSSARY.md#term-crs) and homothetic isoquants. With [DRS](GLOSSARY.md#term-drs) or non-homothetic technology, the curve is non-linear.
 >
 > → *See also: Topic 6B Q3 (three Pareto conditions), Topic 6B Q5 (GE reached via these conditions)*
 
@@ -839,7 +839,7 @@ $\pi_{2} = (40 - 10)(60) = 1800$
 
 **Exam Tip:** Always derive best response functions from FOCs. The Nash equilibrium is the intersection of BR functions. For Bertrand with differentiated products, prices are strategic complements (BR slopes are positive: $dp_1/dp_2 = 1/4$ > 0). Draw the BR diagram if asked.
 
-> **Professor's Corner:** A-grade answers highlight strategic complements (upward-sloping BRs) vs strategic substitutes (downward-sloping, as in Cournot). Top answers compute the collusive outcome to show that NE prices (40,40) are below monopoly levels, or discuss how the degree of product differentiation affects pricing. If products were identical (substitute d = ∞), price = MC.
+> **Professor's Corner:** A-grade answers highlight strategic complements (upward-sloping BRs) vs strategic substitutes (downward-sloping, as in [Cournot](GLOSSARY.md#term-cournot)). Top answers compute the collusive outcome to show that NE prices (40,40) are below monopoly levels, or discuss how the degree of product differentiation affects pricing. If products were identical (substitute d = ∞), price = MC.
 
 → *See also: Topic 7 Q2 (PD — why collusion is fragile)*
 
@@ -1417,7 +1417,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 >
 > **Spence's job-market signalling model:** Workers have private productivity types (High $H$ or Low $L$). Education $e$ is costly ($c_H < c_L$ — the single-crossing property) but does not enhance productivity — it serves as a **signal** of type (Spence, 1973, Nobel Prize 2001; Munoz-Garcia, §8.5, pp.573–578).
 >
-> **Perfect Bayesian Equilibrium (PBE):**
+> **[Perfect Bayesian Equilibrium](GLOSSARY.md#term-perfect-bayesian) ([PBE](GLOSSARY.md#term-pbe)):**
 > - **Separating equilibrium:** $H$ acquires education ($e=1$), $L$ does not ($e=0$). Firms correctly infer type: $\mu(H|e=1)=1$, $\mu(H|e=0)=0$. Wages: $w(1)=q_H$, $w(0)=q_L$.
 > - **Pooling equilibrium:** Neither type acquires education. Firms hold off-equilibrium beliefs that sustain no deviation. Wage: $w(0) = \mu q_H + (1-\mu)q_L$.
 >
@@ -1450,7 +1450,7 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 **Single-crossing property:** The marginal cost of education is lower for H types. This allows education to serve as a credible signal.
 
-**Perfect Bayesian Equilibrium (PBE):**
+**[Perfect Bayesian Equilibrium](GLOSSARY.md#term-perfect-bayesian) ([PBE](GLOSSARY.md#term-pbe)):**
 
 **Separating equilibrium:**
 - H type acquires education (e=1), L type does not (e=0).
@@ -1606,7 +1606,7 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
 
 ### Question 1 {#q-trade-01}
 
-> **Marking Guide [14 marks]:** Autarky equilibrium (2) | Free trade imports (2) | Tariff welfare effects — CS, PS, revenue (4) | DWL calculation (2) | VER analysis (2) | Comparison table (2)
+> **Marking Guide [14 marks]:** Autarky equilibrium (2) | Free trade imports (2) | Tariff welfare effects — CS, [PS](GLOSSARY.md#term-ps), revenue (4) | DWL calculation (2) | VER analysis (2) | Comparison table (2)
 
 **Answer:**
 
@@ -1665,7 +1665,7 @@ Tariff revenue = $50 \times 52,500$ = **$2,625,000**
   $\Delta CS = -[(P_2 - P_1)(Q_{d1} + Q_{d2})/2]$ (trapezoid formula)
   $\Delta CS = -[50 \times (190,000 + 185,000)/2] = -[50 \times 187,500] = -9,375,000$
 
-- **Producer surplus (PS):** Change = +(area between P=$600 and P=$650 above S).
+- **Producer surplus ([PS](GLOSSARY.md#term-ps)):** Change = +(area between P=$600 and P=$650 above S).
   $\Delta PS = +[50 \times (120,000 + 132,500)/2] = +[50 \times 126,250] = 6,312,500$
 
 - **Tariff revenue:** = $50 \times 52,500 = **+$2,625,000**

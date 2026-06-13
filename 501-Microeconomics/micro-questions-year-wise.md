@@ -3,7 +3,7 @@
 > ⚠️ **DEPRECATED** — Use the answered version instead: [`micro-questions-year-wise-answered.md`](./micro-questions-year-wise-answered.md) which has the same index plus inline answers.
 
 > All microeconomic theory questions indexed by source document.
-> **Cross-links:** [Topic-wise Index](./micro-questions-topic-wise.md) | [Full Notes](./README.md) | [Basics](./basics.md)
+> **Cross-links:** [Topic-wise Index](./micro-questions-topic-wise.md) | [Priority Matrix 📊](./EXAM-PRIORITY-MATRIX.md) | [Full Notes](./README.md) | [Basics](./basics.md)
 
 ---
 

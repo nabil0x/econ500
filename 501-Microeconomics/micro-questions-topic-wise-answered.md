@@ -1,7 +1,7 @@
 # Microeconomics — Questions by Topic (with Answers)
 
 > All microeconomic theory questions from every source, organized by topic with concise exam-ready answers.
-> **Cross-links:** [Year-wise Index](./micro-questions-year-wise.md) | [Full Notes](./README.md) | [Basics](./basics.md) | [Resources](./resources/README.md)
+> **Cross-links:** [Year-wise Index](./micro-questions-year-wise.md) | [Priority Matrix 📊](./EXAM-PRIORITY-MATRIX.md) | [Full Notes](./README.md) | [Basics](./basics.md) | [Resources](./resources/README.md)
 
 ---
 
@@ -9,18 +9,18 @@
 
 ### 1A — Preference-Based Approach
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | What is the preference-based approach of consumer's behavior? Explain and interpret the assumptions. | 10/7 | MainQ Tut1, Batch 47 Q1a | —, 2022 |
-| 2 | Define indifference set. Examine that if a preference relation satisfies strong monotonicity, its indifference curves must be downward sloping. | 10/7 | MainQ Tut1, Batch 47 Q1b | —, 2022 |
-| 3 | What are the twin definitions of convexity? How do they differ from strong convexity? Examine graphically. | 10/4 | MainQ Tut1, Batch 47 Q2a | —, 2022 |
-| 4 | Show: Convexity of preference $\iff$ USC(x) is convex $\iff$ u(.) is quasiconcave. | 5 | MainQ Tut1, Batch 47 Q2b | —, 2022 |
-| 5 | Prove: If preference satisfies monotonicity and continuity, there exists a utility function u(.) representing it. | 5 | MainQ Tut1, Batch 47 Q2c | —, 2022 |
-| 6 | Define utility function. Explain desirability of consumer's preference by monotonicity and strong monotonicity. | 10/5 | MainQ Tut1, Batch 47 Q4a | —, 2022 |
-| 7 | Show: Strong Monotonicity $\implies$ Monotonicity $\implies$ LNS. | 5 | MainQ Tut1, Batch 47 Q4b | —, 2022 |
-| 8 | Examine properties of preference relations: i) Homogeneity ii) Homotheticity. | 5/4 | MainQ Tut1, Batch 47 Q4c | —, 2022 |
-| 9 | Prove quasi-concave utility U(X,Y) is identical to dMRS/dX < 0. | 8 | Batch 48 Q1a | 2023 |
-| 10 | Does U = X + log(Y) have convex indifference curves? Provide proof. | ~3 | Batch 48 Q2a | 2023 |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | What is the preference-based approach of consumer's behavior? Explain and interpret the assumptions. | [A](./EXAM-PRIORITY-MATRIX.md) | 10/7 | MainQ Tut1, Batch 47 Q1a | —, 2022 |
+| 2 | Define indifference set. Examine that if a preference relation satisfies strong monotonicity, its indifference curves must be downward sloping. | [A](./EXAM-PRIORITY-MATRIX.md) | 10/7 | MainQ Tut1, Batch 47 Q1b | —, 2022 |
+| 3 | What are the twin definitions of convexity? How do they differ from strong convexity? Examine graphically. | [A](./EXAM-PRIORITY-MATRIX.md) | 10/4 | MainQ Tut1, Batch 47 Q2a | —, 2022 |
+| 4 | Show: Convexity of preference $\iff$ USC(x) is convex $\iff$ u(.) is quasiconcave. | [A](./EXAM-PRIORITY-MATRIX.md) | 5 | MainQ Tut1, Batch 47 Q2b | —, 2022 |
+| 5 | Prove: If preference satisfies monotonicity and continuity, there exists a utility function u(.) representing it. | [A](./EXAM-PRIORITY-MATRIX.md) | 5 | MainQ Tut1, Batch 47 Q2c | —, 2022 |
+| 6 | Define utility function. Explain desirability of consumer's preference by monotonicity and strong monotonicity. | [A](./EXAM-PRIORITY-MATRIX.md) | 10/5 | MainQ Tut1, Batch 47 Q4a | —, 2022 |
+| 7 | Show: Strong Monotonicity $\implies$ Monotonicity $\implies$ LNS. | [A](./EXAM-PRIORITY-MATRIX.md) | 5 | MainQ Tut1, Batch 47 Q4b | —, 2022 |
+| 8 | Examine properties of preference relations: i) Homogeneity ii) Homotheticity. | [S](./EXAM-PRIORITY-MATRIX.md) | 5/4 | MainQ Tut1, Batch 47 Q4c | —, 2022 |
+| 9 | Prove quasi-concave utility U(X,Y) is identical to dMRS/dX < 0. | [B](./EXAM-PRIORITY-MATRIX.md) | 8 | Batch 48 Q1a | 2023 |
+| 10 | Does U = X + log(Y) have convex indifference curves? Provide proof. | [B](./EXAM-PRIORITY-MATRIX.md) | ~3 | Batch 48 Q2a | 2023 |
 
 ### Question 1
 **Q:** What is the preference-based approach of consumer behavior? Explain and interpret the assumptions.
@@ -74,16 +74,16 @@
 
 ### 1B — Utility Maximization & Demand
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Cobb-Douglas: Derive Walrasian demand, examine properties. | 7 | MainQ Tut1 Q3i, Batch 47 Q3i | —, 2022 |
-| 2 | Cobb-Douglas: Get indirect utility, explain properties, verify Roy's identity. | 7 | MainQ Tut1 Q3ii, Batch 47 Q3ii | —, 2022 |
-| 3 | Cobb-Douglas: Solve expenditure minimization, examine compensated demand properties. | 6 | MainQ Tut1 Q3iii, Batch 47 Q3iii | —, 2022 |
-| 4 | Consider utility maximization problem — examine properties of Walrasian demand x(p,w). When can sufficient condition of UMP be violated? | 10 | MainQ Tut2 Q4a | — |
-| 5 | Examine: i) Homogeneity ii) Homotheticity. | 10 | MainQ Tut2 Q4b | — |
-| 6 | Negroni cocktail: U(G,V,C) = min(G,V,C). Find Marshallian demand for Gin, Hicksian demand for Campari, expenditure function. | ~11 | Batch 48 Q1b | 2023 |
-| 7 | U = X + ln(Y). Find demands for X and Y. With limited I, which goods do you buy? Why? | 3 | Batch 48 Q1c | 2023 |
-| 8 | Agent has U(X,Y) = X - 3Y. P_X=20, P_Y=40, I=400. Choose quantities maximizing utility. | 3 | Batch 48 Q2c | 2023 |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Cobb-Douglas: Derive Walrasian demand, examine properties. | [S](./EXAM-PRIORITY-MATRIX.md) | 7 | MainQ Tut1 Q3i, Batch 47 Q3i | —, 2022 |
+| 2 | Cobb-Douglas: Get indirect utility, explain properties, verify Roy's identity. | [S](./EXAM-PRIORITY-MATRIX.md) | 7 | MainQ Tut1 Q3ii, Batch 47 Q3ii | —, 2022 |
+| 3 | Cobb-Douglas: Solve expenditure minimization, examine compensated demand properties. | [S](./EXAM-PRIORITY-MATRIX.md) | 6 | MainQ Tut1 Q3iii, Batch 47 Q3iii | —, 2022 |
+| 4 | Consider utility maximization problem — examine properties of Walrasian demand x(p,w). When can sufficient condition of UMP be violated? | [S](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ Tut2 Q4a | — |
+| 5 | Examine: i) Homogeneity ii) Homotheticity. | [S](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ Tut2 Q4b | — |
+| 6 | Negroni cocktail: U(G,V,C) = min(G,V,C). Find Marshallian demand for Gin, Hicksian demand for Campari, expenditure function. | [B](./EXAM-PRIORITY-MATRIX.md) | ~11 | Batch 48 Q1b | 2023 |
+| 7 | U = X + ln(Y). Find demands for X and Y. With limited I, which goods do you buy? Why? | [B](./EXAM-PRIORITY-MATRIX.md) | 3 | Batch 48 Q1c | 2023 |
+| 8 | Agent has U(X,Y) = X - 3Y. P_X=20, P_Y=40, I=400. Choose quantities maximizing utility. | [B](./EXAM-PRIORITY-MATRIX.md) | 3 | Batch 48 Q2c | 2023 |
 
 ### Question 1
 **Q:** Cobb-Douglas: Derive Walrasian demand, examine properties.
@@ -129,11 +129,11 @@
 
 ## 2. Demand Estimation & Elasticities
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Demand: X = $\alpha$P_X^γ P_Z^δ P_W^$\varepsilon$ I^η. Find cross-price elasticity with Z, income elasticity. Given $\alpha$=-0.5, γ=-0.4, δ=0.8: Is X luxury/necessity/inferior? Is Z substitute/complement? If P_W↓5%, ΔQ_d? If P_X↓, does expenditure↑↓? | ~11 | Batch 48 Q2b | 2023 |
-| 2 | Burger King demand for Whopper: Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I. What's the terrible problem? | 2 | Batch 48 Q3a | 2023 |
-| 3 | Corrected demand: Q = 150P_B^{-1.5}P_{r1}^{0.75}P_{r2}^{-0.25}I^{0.8}A^{0.05}. Which good is French fries? Luxury? Advertising↑50%$\to$ΔQ? French fry price↓50%$\to$ΔQ? MC=$1, profit-max P? McDonald's↓10%, what % must BK lower price? | 12 | Batch 48 Q3b | 2023 |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Demand: X = $\alpha$P_X^γ P_Z^δ P_W^$\varepsilon$ I^η. Find cross-price elasticity with Z, income elasticity. Given $\alpha$=-0.5, γ=-0.4, δ=0.8: Is X luxury/necessity/inferior? Is Z substitute/complement? If P_W↓5%, ΔQ_d? If P_X↓, does expenditure↑↓? | [B](./EXAM-PRIORITY-MATRIX.md) | ~11 | Batch 48 Q2b | 2023 |
+| 2 | Burger King demand for Whopper: Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I. What's the terrible problem? | [B](./EXAM-PRIORITY-MATRIX.md) | 2 | Batch 48 Q3a | 2023 |
+| 3 | Corrected demand: Q = 150P_B^{-1.5}P_{r1}^{0.75}P_{r2}^{-0.25}I^{0.8}A^{0.05}. Which good is French fries? Luxury? Advertising↑50%$\to$ΔQ? French fry price↓50%$\to$ΔQ? MC=$1, profit-max P? McDonald's↓10%, what % must BK lower price? | [A](./EXAM-PRIORITY-MATRIX.md) | 12 | Batch 48 Q3b | 2023 |
 
 ### Question 1
 **Q:** Demand: X = $\alpha$P_X^γ P_Z^δ P_W^$\varepsilon$ I^η. Find cross-price elasticity with Z, income elasticity. Given $\alpha$=-0.5, γ=-0.4, δ=0.8: classify X, Z, and predict changes.
@@ -156,16 +156,16 @@
 
 ### 3A — Production Sets & Functions
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Define production function, production set, transformation function, transformation frontier. | 10 | MainQ Tut2 Q2a | — |
-| 2 | Graphically explain the properties of the production set. | 10 | MainQ Tut2 Q2b | — |
-| 3 | Define production sets. Graphically explain properties. | 5 | Batch 47 Q5a | 2022 |
-| 4 | What is elasticity of substitution (EoS)? Find EoS for q = aK + bL. EoS for fixed proportions? | 6 | Batch 47 Q5b | 2022 |
-| 5 | Four properties of cost functions — match to intuitive explanations. | 6 | Batch 48 Q4a | 2023 |
-| 6 | Sausage maker: 3 oz pork + 2 oz veal = 5 oz sausage. Write production function, conditional factor demand for pork, cost function. If Q = 200P^{-6}, find profit-max P. | ~8 | Batch 48 Q4b | 2023 |
-| 7 | Q = (KL)^{1/3}. Short-run K=64. Find SR production function, conditional factor demand for L, SR cost function, shutdown price, SR supply, returns to scale, elasticity of substitution, LR conditional factor demands, LR cost function, LR supply. | ~12 | Batch 48 Q5a | 2023 |
-| 8 | Starbucks Jumbo (62 oz) vs Trenta (31 oz). Will Jumbo cost twice as much, more, or less? Explain. | 2 | Batch 48 Q5b | 2023 |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Define production function, production set, transformation function, transformation frontier. | [B](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ Tut2 Q2a | — |
+| 2 | Graphically explain the properties of the production set. | [S](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ Tut2 Q2b | — |
+| 3 | Define production sets. Graphically explain properties. | [S](./EXAM-PRIORITY-MATRIX.md) | 5 | Batch 47 Q5a | 2022 |
+| 4 | What is elasticity of substitution (EoS)? Find EoS for q = aK + bL. EoS for fixed proportions? | [A](./EXAM-PRIORITY-MATRIX.md) | 6 | Batch 47 Q5b | 2022 |
+| 5 | Four properties of cost functions — match to intuitive explanations. | [B](./EXAM-PRIORITY-MATRIX.md) | 6 | Batch 48 Q4a | 2023 |
+| 6 | Sausage maker: 3 oz pork + 2 oz veal = 5 oz sausage. Write production function, conditional factor demand for pork, cost function. If Q = 200P^{-6}, find profit-max P. | [B](./EXAM-PRIORITY-MATRIX.md) | ~8 | Batch 48 Q4b | 2023 |
+| 7 | Q = (KL)^{1/3}. Short-run K=64. Find SR production function, conditional factor demand for L, SR cost function, shutdown price, SR supply, returns to scale, elasticity of substitution, LR conditional factor demands, LR cost function, LR supply. | [A](./EXAM-PRIORITY-MATRIX.md) | ~12 | Batch 48 Q5a | 2023 |
+| 8 | Starbucks Jumbo (62 oz) vs Trenta (31 oz). Will Jumbo cost twice as much, more, or less? Explain. | [B](./EXAM-PRIORITY-MATRIX.md) | 2 | Batch 48 Q5b | 2023 |
 
 ### Question 1
 **Q:** Define production function, production set, transformation function, transformation frontier.
@@ -204,49 +204,29 @@
 
 ### 3B — Profit Function
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Define profit function. If production set Y is closed and has free disposal, what properties does the profit function satisfy? | 10/3 | MainQ Tut2 Q3a, Batch 47 Q5c | —, 2022 |
-| 2 | Show that MRPT_x,y = MC_x / MC_y. | — | Professor Q17 | — |
-
-### Question 1
-**Q:** Define profit function. Properties if Y closed with free disposal.
-**Brief:** $\pi(p) = \max_{y \in Y} p \cdot y$ is the value function of the PMP. With $Y$ closed and free disposal: HD(1) in $p$, convex in $p$ (opposite of cost concavity), non-decreasing in output prices. Hotelling's Lemma $\nabla_p \pi(p) = y(p)$ recovers net supply, and convexity implies the Law of Supply ($\partial y_k/\partial p_k \geq 0$).
-→ [Full answer in Demand & Production](./answers-demand-production.md#q-profit-01)
-
-### Question 2
-**Q:** Show MRPT_x,y = MC_x / MC_y.
-**Brief:** From the transformation function $F(q_x,q_y,z)=0$, $MRPT_{x,y} = (\partial F/\partial q_x)/(\partial F/\partial q_y)$. Profit maximisation gives $p_x = MC_x$ and $p_y = MC_y$, and the tangency condition equates $MRPT_{x,y}$ to $p_x/p_y$. Substituting yields $MRPT_{x,y} = MC_x/MC_y$ — the foundation for product-mix efficiency ($MRPT = MRS$) in GE.
-→ [Full answer in Demand & Production](./answers-demand-production.md#q-profit-02)
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Define profit function. If production set Y is closed and has free disposal, what properties does the profit function satisfy? | [S](./EXAM-PRIORITY-MATRIX.md) | 10/3 | MainQ Tut2 Q3a, Batch 47 Q5c | —, 2022 |
+| 2 | Show that MRPT_x,y = MC_x / MC_y. | [B](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q17 | — |
 
 ### 3C — Competitive Industry
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | 1,000 identical firms: C_SR(q) = 0.5q²+2q+80. Find SR supply per firm, industry SR supply. Market Q=44,000-1,000P. Find equilibrium P, Q, each firm's profit. $20/unit tax: new P, quantity. Welfare cost of tax. | ~14 | Batch 48 Q6a | 2023 |
-| 2 | Three-good world: excess demand Z₂(p) = -3 + p₃/p₂ + p₁/p₂, Z₃(p) = 3p₁/p₃ + 4p₂/p₃ - 7. Find Z₁. Find market-clearing p₂/p₁, p₃/p₁. | ~4 | Batch 48 Q6b | 2023 |
-
-### Question 1
-**Q:** 1,000 identical firms with C_SR(q)=0.5q²+2q+80. Market Q_D=44,000-1,000P. $20/unit tax. Find equilibrium, profit, welfare cost.
-**Brief:** Per-firm supply $q=P-2$ (for $P \geq 2$), industry $Q_S = 1,000(P-2)$. Equilibrium: $P^*=23$, $Q^*=21,000$, per-firm profit $=140.5$. A \$20/unit tax shifts supply: buyers pay \$33, sellers receive \$13, quantity falls to 11,000. DWL = $\frac12 \times 20 \times 10,000 = 100,000$. The tax burden is split evenly since supply and demand slopes are equal.
-→ [Full answer in Demand & Production](./answers-demand-production.md#q-compet-01)
-
-### Question 2
-**Q:** Three-good world: given Z₂, Z₃. Find Z₁ via Walras' law. Solve price ratios.
-**Brief:** Walras' Law gives $Z_1 = -(p_2/p_1)Z_2 - (p_3/p_1)Z_3$. Normalising $p_1=1$ and solving $Z_2=0$, $Z_3=0$ yields $p_2/p_1 = 10/17$, $p_3/p_1 = 13/17$. Only $n-1=2$ equations are independent — $Z_1=0$ holds automatically as a consistency check.
-→ [Full answer in Demand & Production](./answers-demand-production.md#q-compet-02)
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | 1,000 identical firms: C_SR(q) = 0.5q²+2q+80. Find SR supply per firm, industry SR supply. Market Q=44,000-1,000P. Find equilibrium P, Q, each firm's profit. $20/unit tax: new P, quantity. Welfare cost of tax. | [S](./EXAM-PRIORITY-MATRIX.md) | ~14 | Batch 48 Q6a | 2023 |
+| 2 | Three-good world: excess demand Z₂(p) = -3 + p₃/p₂ + p₁/p₂, Z₃(p) = 3p₁/p₃ + 4p₂/p₃ - 7. Find Z₁. Find market-clearing p₂/p₁, p₃/p₁. | [B](./EXAM-PRIORITY-MATRIX.md) | ~4 | Batch 48 Q6b | 2023 |
 
 ---
 
 ## 4. Welfare Economics (CV, EV, CS)
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Distinguish CV and EV. How are they different from CS? | 10/4 | MainQ Tut2 Q1a, Batch 47 Q6a | —, 2022 |
-| 2 | For a price decrease (both goods normal): EV > CS > CV. For price increase, explain relationship. | 10/5 | MainQ Tut2 Q1b, Batch 47 Q6b | —, 2022 |
-| 3 | Cobb-Douglas u = x₁^½ x₂^½. Given {p⁰,m⁰}={{4,4},300}, {p¹,m¹}={{2,4},300}. Compute EV, CV, CS. Examine relationship $\to$ nature of commodities. | 10/5 | MainQ Tut2 Q3b, Batch 47 Q6c | —, 2022 |
-| 4 | EV > CS > CV diagram (price decrease) and EV < CS < CV (price increase) — graphical analysis. | — | Practice Mid | — |
-| 5 | Show: Marshallian consumer surplus overstates CV and understates EV for normal goods. | — | WelfareChange paper §4 | — |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Distinguish CV and EV. How are they different from CS? | [S](./EXAM-PRIORITY-MATRIX.md) | 10/4 | MainQ Tut2 Q1a, Batch 47 Q6a | —, 2022 |
+| 2 | For a price decrease (both goods normal): EV > CS > CV. For price increase, explain relationship. | [S](./EXAM-PRIORITY-MATRIX.md) | 10/5 | MainQ Tut2 Q1b, Batch 47 Q6b | —, 2022 |
+| 3 | Cobb-Douglas u = x₁^½ x₂^½. Given {p⁰,m⁰}={{4,4},300}, {p¹,m¹}={{2,4},300}. Compute EV, CV, CS. Examine relationship $\to$ nature of commodities. | [S](./EXAM-PRIORITY-MATRIX.md) | 10/5 | MainQ Tut2 Q3b, Batch 47 Q6c | —, 2022 |
+| 4 | EV > CS > CV diagram (price decrease) and EV < CS < CV (price increase) — graphical analysis. | [A](./EXAM-PRIORITY-MATRIX.md) | — | Practice Mid | — |
+| 5 | Show: Marshallian consumer surplus overstates CV and understates EV for normal goods. | [B](./EXAM-PRIORITY-MATRIX.md) | — | WelfareChange paper §4 | — |
 
 ### Question 1
 **Q:** Distinguish CV and EV. How are they different from CS?
@@ -279,63 +259,28 @@
 
 ### 5A — Social Welfare Criteria
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Define social welfare. Critically examine three key issues Pigou dealt with in analyzing social welfare. | 10 | MainQ GE Q3a, Professor Q5 | — |
-| 2 | Derive the grand utility possibility frontier and determine the 'point of bliss'. Does this ensure maximum social welfare? Justify. | 10/6 | MainQ GE Q3b, Batch 48 Q8b | —, 2023 |
-| 3 | Define social welfare. Critically explain criteria: i) Growth of GNP ii) Bentham's Criteria iii) Cardinalist approach. | — | Professor Q1 | — |
-| 4 | Define social welfare function. Derive grand utility possibility frontier, determine point of bliss. | — | Professor Q4, 49Qs Q4 | — |
-| 5 | Critically explain the three key things Pigou dealt with in analyzing social welfare. | — | Professor Q5, 49Qs Q5 | — |
-| 6 | Define social welfare function. How could it be used as a criterion to measure social welfare? Explain. | — | Professor (Given) Q4 | — |
-| 7 | What are the major assumptions of social welfare maximization in a 2×2×2 model? | — | Professor (Given) Q5 | — |
-
-### Question 1
-**Q:** Define social welfare. Critically examine three key issues Pigou dealt with.
-**Brief:** Pigou defined economic welfare as the part of social welfare measurable by money. He examined three issues: (1) the definition and scope of economic welfare, (2) dual conditions for maximizing social welfare (maximize national income + redistribute based on diminishing marginal utility), and (3) divergence between private and social net product (externalities), proposing taxes and subsidies as remedies. Criticisms include the arbitrary welfare/non-welfare dichotomy, the unscientific assumption of equal capacity for satisfaction (Robbins, 1932), and the impracticality of quantifying externalities.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-01)
-
-### Question 2
-**Q:** Derive the grand utility possibility frontier and determine the 'point of bliss'. Does this ensure maximum SW?
-**Brief:** The GUPF is the outer envelope of all utility possibility frontiers (UPFs) derived from each product-mix on the production possibility curve. The "point of bliss" is the tangency between the GUPF and the highest attainable social indifference contour. It ensures maximum social welfare given the chosen social welfare function, but different value judgements yield different bliss points — Pareto optimality is necessary but not sufficient for SW maximization.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-02)
-
-### Question 3
-**Q:** Define social welfare. Explain criteria: (i) Growth of GNP (ii) Bentham (iii) Cardinalist.
-**Brief:** Social welfare is the aggregate well-being of all individuals in a society. (i) GNP Growth criterion: welfare rises when GNP rises — objective but ignores distribution and non-market factors. (ii) Bentham's utilitarian criterion: $W = \sum U_i$ — sum-ranking but requires cardinal interpersonal comparisons and ignores distribution. (iii) Cardinalist criterion: uses diminishing marginal utility of income to justify redistribution toward equality — equity-focused but assumes identical utility functions, which is empirically false.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-03)
-
-### Question 4
-**Q:** Define social welfare function. Derive GUPF and point of bliss.
-**Brief:** A social welfare function (SWF) $W = F(U_1,\ldots,U_n)$ ranks social states based on individual utilities, introduced by Bergson (1938). The GUPF is derived as the outer envelope of all UPFs across every product-mix on the PPC. The point of bliss is the tangency between the GUPF and the highest social indifference contour — it is not unique, as it depends on the value judgements embedded in the SWF.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-04)
-
-### Question 5
-**Q:** Critically explain three key things Pigou dealt with in social welfare analysis.
-**Brief:** Pigou's welfare economics rests on three pillars: (1) defining economic welfare as the money-measurable part of social welfare, coordinate with national income; (2) dual conditions for maximizing SW — grow national income and redistribute from rich to poor based on diminishing marginal utility; (3) divergence between private and social net product (externalities), remedied by taxes and subsidies. Key criticisms include the arbitrary welfare/non-welfare dichotomy, the unscientific equal-capacity assumption (Robbins), and the impracticality of quantifying externalities.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-05)
-
-### Question 6
-**Q:** Define social welfare function. How could it be used as a criterion to measure SW?
-**Brief:** A social welfare function $W = F(U_1,\ldots,U_n)$ ranks social states by aggregating individual utilities. It serves as a criterion by: (1) directly comparing social states (if $W' > W$, state $S'$ is preferred), (2) identifying the bliss point via constrained optimization on the GUPF, and (3) evaluating Pareto-incomparable changes where some gain and others lose. Limitations include reliance on value judgements and Arrow's Impossibility Theorem.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-06)
-
-### Question 7
-**Q:** What are the major assumptions of SW maximization in a 2×2×2 model?
-**Brief:** The assumptions fall into five categories: (A) structural — 2 factors, 2 goods, 2 consumers; (B) Pareto efficiency — equality of MRS, MRTS, and MRPT with MRS; (C) perfect competition — price-taking, complete markets, no externalities; (D) distributional — existence of a SWF embodying societal value judgements; (E) regularity — continuous, convex, differentiable functions. Assumptions A-C ensure Pareto optimality, while D adds the value judgements needed to select a unique social optimum.
-→ [Full answer in Welfare](./answers-welfare.md#q-socwel-07)
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Define social welfare. Critically examine three key issues Pigou dealt with in analyzing social welfare. | [S](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ GE Q3a, Professor Q5 | — |
+| 2 | Derive the grand utility possibility frontier and determine the 'point of bliss'. Does this ensure maximum social welfare? Justify. | [S](./EXAM-PRIORITY-MATRIX.md) | 10/6 | MainQ GE Q3b, Batch 48 Q8b | —, 2023 |
+| 3 | Define social welfare. Critically explain criteria: i) Growth of GNP ii) Bentham's Criteria iii) Cardinalist approach. | [B](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q1 | — |
+| 4 | Define social welfare function. Derive grand utility possibility frontier, determine point of bliss. | [S](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q4, 49Qs Q4 | — |
+| 5 | Critically explain the three key things Pigou dealt with in analyzing social welfare. | [C](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q5, 49Qs Q5 | — |
+| 6 | Define social welfare function. How could it be used as a criterion to measure social welfare? Explain. | [C](./EXAM-PRIORITY-MATRIX.md) | — | Professor (Given) Q4 | — |
+| 7 | What are the major assumptions of social welfare maximization in a 2×2×2 model? | [B](./EXAM-PRIORITY-MATRIX.md) | — | Professor (Given) Q5 | — |
 
 ### 5B — Pareto Optimality & Welfare Theorems
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | "Pareto optimality is necessary but not sufficient for social welfare maximization" — justify with 2×2×2 model. | 10/7 | MainQ GE Q4a, Batch 46 A1a, Professor Q2 | —, 2020 |
-| 2 | Explain assumptions about marginal utility of money for Hicks-Kaldor compensation to be correct. Can compensation be correct? | 10/7 | MainQ GE Q4b, Batch 46 A1b, Professor Q3 | —, 2020 |
-| 3 | In a 2-person 2-good case (fixed supply), show with equations how Pareto optimality for consumption is achieved. | 7 | Batch 46 A2a | 2020 |
-| 4 | Firm 1 external economies, firm 2 external diseconomies. p₁=p₂=15. Cost functions given. Show Pareto optimality through taxes/subsidies. Find social dividend. | 7 | Batch 46 A2b | 2020 |
-| 5 | State and explain First and Second Welfare Theorems with implications. | 8 | Batch 46 A3a | 2020 |
-| 6 | What is social welfare function? Explain Utilitarian vs Rawlsian welfare functions. | 6 | Batch 46 A3b | 2020 |
-| 7 | Explain the Hicks-Kaldor compensation principle. How did Scitovsky correct the contradiction? | 8 | Batch 48 Q8a | 2023 |
-| 8 | Does perfect competition ensure welfare maximization? Examine. | — | Professor (Given) Q8 | — |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | "Pareto optimality is necessary but not sufficient for social welfare maximization" — justify with 2×2×2 model. | [S](./EXAM-PRIORITY-MATRIX.md) | 10/7 | MainQ GE Q4a, Batch 46 A1a, Professor Q2 | —, 2020 |
+| 2 | Explain assumptions about marginal utility of money for Hicks-Kaldor compensation to be correct. Can compensation be correct? | [S](./EXAM-PRIORITY-MATRIX.md) | 10/7 | MainQ GE Q4b, Batch 46 A1b, Professor Q3 | —, 2020 |
+| 3 | In a 2-person 2-good case (fixed supply), show with equations how Pareto optimality for consumption is achieved. | [A](./EXAM-PRIORITY-MATRIX.md) | 7 | Batch 46 A2a | 2020 |
+| 4 | Firm 1 external economies, firm 2 external diseconomies. p₁=p₂=15. Cost functions given. Show Pareto optimality through taxes/subsidies. Find social dividend. | [A](./EXAM-PRIORITY-MATRIX.md) | 7 | Batch 46 A2b | 2020 |
+| 5 | State and explain First and Second Welfare Theorems with implications. | [S](./EXAM-PRIORITY-MATRIX.md) | 8 | Batch 46 A3a | 2020 |
+| 6 | What is social welfare function? Explain Utilitarian vs Rawlsian welfare functions. | [B](./EXAM-PRIORITY-MATRIX.md) | 6 | Batch 46 A3b | 2020 |
+| 7 | Explain the Hicks-Kaldor compensation principle. How did Scitovsky correct the contradiction? | [B](./EXAM-PRIORITY-MATRIX.md) | 8 | Batch 48 Q8a | 2023 |
+| 8 | Does perfect competition ensure welfare maximization? Examine. | [S](./EXAM-PRIORITY-MATRIX.md) | — | Professor (Given) Q8 | — |
 
 ### Question 1
 **Q:** "Pareto optimality necessary but not sufficient for SW maximization" — justify with 2×2×2 model.
@@ -383,40 +328,25 @@
 
 ### 6A — Existence, Uniqueness, Stability
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Define general equilibrium. How does it differ from partial equilibrium? Examine with examples. | 8/— | MainQ GE Q1a, Professor Q9 | — |
-| 2 | Graphically explain problems of existence, uniqueness, and stability in GE. | 12 | MainQ GE Q1b | — |
-| 3 | Explain existence, uniqueness, stability of GE. Show: i) Existence at positive price ii) Stability from demand/supply slopes iii) Uniqueness from excess demand slope. | 7 | Batch 47 Q7a | 2022 |
-| 4 | Graphically explain: external shock in product market $\to$ factor market $\to$ equilibrium restored in both markets. | 7/— | Batch 47 Q7b, Professor Q12 | 2022 |
-
-### Question 1
-**Q:** Define general equilibrium. How differs from partial equilibrium? Examples.
-**Brief:** General equilibrium is a state where all markets (goods and factors) clear simultaneously, with all consumers maximizing utility and firms maximizing profit. Partial equilibrium studies one market in isolation holding all else constant (ceteris paribus), while GE models full cross-market interdependence, capturing income effects, cross-price effects, and factor reallocation that PE misses.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-ge-01)
-
-### Question 2 & 3
-**Q:** Explain existence, uniqueness, stability of GE graphically.
-**Brief:** Existence requires continuous excess demand $E(P)$ with $E(P) > 0$ at low $P$ and $E(P) < 0$ at high $P$ (Intermediate Value Theorem). Uniqueness holds when $E(P)$ is monotonic ($dE/dP < 0$ everywhere). Stability requires $dE/dP < 0$ at equilibrium — when displaced, excess demand pushes price back. Arrow-Debreu (1954) established existence conditions: perfect competition, no indivisibilities, convex preferences and production.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-ge-02)
-
-### Question 4
-**Q:** Graphically explain: external shock in product market $\to$ factor market $\to$ equilibrium restored.
-**Brief:** A taste shock favoring good X raises $P_X$ and expands X output, while $P_Y$ falls and Y contracts. Factor demand shifts cause wage differentials, driving labor and capital migration from Y to X until factor prices equalize. Long-run entry/exit restores normal profits, yielding a new GE with output mix tilted toward X (Stolper-Samuelson effects determine factor price changes).
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-ge-03)
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Define general equilibrium. How does it differ from partial equilibrium? Examine with examples. | [S](./EXAM-PRIORITY-MATRIX.md) | 8/— | MainQ GE Q1a, Professor Q9 | — |
+| 2 | Graphically explain problems of existence, uniqueness, and stability in GE. | [A](./EXAM-PRIORITY-MATRIX.md) | 12 | MainQ GE Q1b | — |
+| 3 | Explain existence, uniqueness, stability of GE. Show: i) Existence at positive price ii) Stability from demand/supply slopes iii) Uniqueness from excess demand slope. | [S](./EXAM-PRIORITY-MATRIX.md) | 7 | Batch 47 Q7a | 2022 |
+| 4 | Graphically explain: external shock in product market $\to$ factor market $\to$ equilibrium restored in both markets. | [S](./EXAM-PRIORITY-MATRIX.md) | 7/— | Batch 47 Q7b, Professor Q12 | 2022 |
 
 ### 6B — Edgeworth Box & 2×2×2 Model
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Explain with assumptions of 2×2×2 model, production equilibrium in simple GE through Edgeworth box. | 10 | MainQ GE Q2a | — |
-| 2 | Graphically explain: external shock in product market affects factor market $\to$ equilibrium restored in both markets. | 10 | MainQ GE Q2b | — |
-| 3 | Explain production/consumption/simultaneous equilibrium in simple GE through Edgeworth box. | — | 49Qs Q8, Professor Q13 | — |
-| 4 | Define general equilibrium. How differs from partial equilibrium? Examine with example. | — | 49Qs Q9, Professor Q14 | — |
-| 5 | What are assumptions of 2×2×2 model? How is GE reached in such model? | — | 49Qs Q10, Professor Q16 | — |
-| 6 | Exchange economy: A: U_A = X_A Y_A, B: U_B = X_B + Y_B. Endowments given. Draw Edgeworth box, check Pareto efficiency, find contract curve, check if allocation is Pareto efficient / in core. | 14 | Batch 47 Q8 | 2022 |
-| 7 | Present a 2×2×2 Walrasian system. Does GE solution exist in such model? Explain. | — | Professor Q15 | — |
-| 8 | Three-good world: excess demand functions given. Find Z₁ via Walras' law. Solve price ratios. | ~4 | Batch 48 Q6b | 2023 |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Explain with assumptions of 2×2×2 model, production equilibrium in simple GE through Edgeworth box. | [A](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ GE Q2a | — |
+| 2 | Graphically explain: external shock in product market affects factor market $\to$ equilibrium restored in both markets. | [C](./EXAM-PRIORITY-MATRIX.md) | 10 | MainQ GE Q2b | — |
+| 3 | Explain production/consumption/simultaneous equilibrium in simple GE through Edgeworth box. | [S](./EXAM-PRIORITY-MATRIX.md) | — | 49Qs Q8, Professor Q13 | — |
+| 4 | Define general equilibrium. How differs from partial equilibrium? Examine with example. | [C](./EXAM-PRIORITY-MATRIX.md) | — | 49Qs Q9, Professor Q14 | — |
+| 5 | What are assumptions of 2×2×2 model? How is GE reached in such model? | [S](./EXAM-PRIORITY-MATRIX.md) | — | 49Qs Q10, Professor Q16 | — |
+| 6 | Exchange economy: A: U_A = X_A Y_A, B: U_B = X_B + Y_B. Endowments given. Draw Edgeworth box, check Pareto efficiency, find contract curve, check if allocation is Pareto efficient / in core. | [S](./EXAM-PRIORITY-MATRIX.md) | 14 | Batch 47 Q8 | 2022 |
+| 7 | Present a 2×2×2 Walrasian system. Does GE solution exist in such model? Explain. | [A](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q15 | — |
+| 8 | Three-good world: excess demand functions given. Find Z₁ via Walras' law. Solve price ratios. | [A](./EXAM-PRIORITY-MATRIX.md) | ~4 | Batch 48 Q6b | 2023 |
 
 ### Question 1
 **Q:** Explain 2×2×2 model assumptions and production equilibrium via Edgeworth box.
@@ -462,95 +392,35 @@
 
 ## 7. Game Theory & Industrial Organization
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Define Nash equilibrium. Duopoly: MC=$10, q₁=100-2p₁+p₂, q₂=100-2p₂+p₁. Solve Bertrand equilibrium. Explain as Nash equilibrium. | 8 | Batch 46 B4a | 2020 |
-| 2 | What is Prisoners' dilemma? Explain implications for oligopolistic market. Strategic interaction? | 6 | Batch 46 B4b | 2020 |
-| 3 | Two firms considering entry. Market supports only one. Firm B observes A's decision. Present in extensive form, apply backward induction. | 6 | Batch 46 B5a | 2020 |
-| 4 | Show "down/right" can be subgame perfect Nash equilibrium if infinitely repeated (grim trigger). Given payoff matrix. | 8 | Batch 46 B5b | 2020 |
-| 5 | Paradox of backward induction. How can multiple Nash equilibrium help avoid it? | 8 | Batch 46 B6a | 2020 |
-| 6 | If players initially cooperate (play across), paradox partially overcome — explain with Centipede game (Rosenthal). | 6 | Batch 46 B6b | 2020 |
-
-### Question 1
-**Q:** Define Nash equilibrium. Bertrand duopoly: q₁=100-2p₁+p₂, q₂=100-2p₂+p₁, MC=10. Solve Bertrand equilibrium.
-**Brief:** Nash equilibrium is a set of strategies where no player can unilaterally improve their payoff. For this Bertrand duopoly with differentiated products, best response functions are $p_1 = 30 + p_2/4$ and $p_2 = 30 + p_1/4$ (strategic complements). Solving yields symmetric equilibrium $(p_1^*, p_2^*) = (40, 40)$ with $q_i = 60$ and $\pi_i = 1800$ each.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-game-01)
-
-### Question 2
-**Q:** What is Prisoners' dilemma? Implications for oligopolistic market?
-**Brief:** The Prisoners' Dilemma is a game where each player has a dominant strategy to defect, yet mutual defection yields a worse outcome for both than mutual cooperation. The dilemma is structural ($T > R > P > S$ payoff ordering), not about irrationality. In oligopoly, it explains price wars (undercutting like confessing), advertising arms races, and overinvestment in R&D — each firm fears being exploited, leading to collectively inferior outcomes.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-game-02)
-
-### Question 3
-**Q:** Two firms considering entry. Market supports only one. Firm B observes A's decision. Extensive form, backward induction.
-**Brief:** In the entry game, the entrant chooses Enter or Stay Out; if Enter, the incumbent chooses Accommodate (duopoly profits 40,40) or Fight (price war -10,-10). Backward induction shows the incumbent accommodates (40 > -10), so the entrant enters (40 > 0). The unique SPNE is (Enter, Accommodate). The incumbent's threat to fight is not credible — subgame perfection eliminates such non-credible threats.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-game-03)
-
-### Question 4
-**Q:** Show "down/right" can be SPNE if infinitely repeated with grim trigger.
-**Brief:** The stage game has unique NE (Down,Right) = (2,2), but (Up,Left) = (3,3) Pareto dominates it. With grim trigger (revert to NE forever after any deviation), cooperation is sustainable if $\delta \ge \delta^* = (\pi_{dev} - \pi_{coop})/(\pi_{dev} - \pi_{NE}) = (5-3)/(5-2) = 2/3$. When players are sufficiently patient, the long-run punishment cost outweighs the short-run gain from deviation.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-game-04)
-
-### Question 5
-**Q:** Paradox of backward induction. How can multiple Nash equilibrium help avoid it?
-**Brief:** The paradox is that in finite games with a unique stage-game NE, backward induction unravels cooperation from the final period — players defect in every period despite preferring mutual cooperation, contradicting experimental evidence. Multiple NE help because players can threaten reversion to a "bad" NE to deter deviation from a "good" NE, and coordinate on the Pareto-superior equilibrium. The Kreps-Milgrom-Roberts-Wilson (1982) reputation model also shows that incomplete information limits unraveling.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-game-05)
-
-### Question 6
-**Q:** Explain Centipede game (Rosenthal) — how initial cooperation helps overcome the paradox.
-**Brief:** The Centipede game is a sequential game where players alternately choose Take or Pass; the pot grows with each Pass. Backward induction predicts immediate Take (1,0), but both players prefer passing to the end (2,2). Initial cooperation (Passing early) overcomes the paradox through: incomplete information about types, multiple equilibria, bounded rationality, and social preferences. Experiments (McKelvey & Palfrey, 1992) show substantial passing, consistent with Kreps' incomplete information model.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-game-06)
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Define Nash equilibrium. Duopoly: MC=$10, q₁=100-2p₁+p₂, q₂=100-2p₂+p₁. Solve Bertrand equilibrium. Explain as Nash equilibrium. | [A](./EXAM-PRIORITY-MATRIX.md) | 8 | Batch 46 B4a | 2020 |
+| 2 | What is Prisoners' dilemma? Explain implications for oligopolistic market. Strategic interaction? | [B](./EXAM-PRIORITY-MATRIX.md) | 6 | Batch 46 B4b | 2020 |
+| 3 | Two firms considering entry. Market supports only one. Firm B observes A's decision. Present in extensive form, apply backward induction. | [B](./EXAM-PRIORITY-MATRIX.md) | 6 | Batch 46 B5a | 2020 |
+| 4 | Show "down/right" can be subgame perfect Nash equilibrium if infinitely repeated (grim trigger). Given payoff matrix. | [A](./EXAM-PRIORITY-MATRIX.md) | 8 | Batch 46 B5b | 2020 |
+| 5 | Paradox of backward induction. How can multiple Nash equilibrium help avoid it? | [B](./EXAM-PRIORITY-MATRIX.md) | 8 | Batch 46 B6a | 2020 |
+| 6 | If players initially cooperate (play across), paradox partially overcome — explain with Centipede game (Rosenthal). | [B](./EXAM-PRIORITY-MATRIX.md) | 6 | Batch 46 B6b | 2020 |
 
 ---
 
 ## 8. Externalities, Public Goods & Information
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | What is Tragedy of Commons? Explain with example. | 3 | Batch 46 C7a | 2020 |
-| 2 | Two firms: A (steel, pollution x) and B (fishery). Pollution increases B's cost, decreases A's cost. Show private/social costs under: i) individual profit max ii) joint profit max iii) different property rights. | 11 | Batch 46 C7b | 2020 |
-| 3 | Show asymmetric information may lead to disappearance of a good from market. | 4 | Batch 46 C8a | 2020 |
-| 4 | Using Spence's Model of Education, explain how education works as a signal of worker productivity. | 10 | Batch 46 C8b | 2020 |
-| 5 | Define consumption externality. Explain by Bandwagon effect and Snob effect. | — | Professor Q10 | — |
-| 6 | Does consumption externality affect GE solution in a 2×2×2 model? | — | Professor Q11 | — |
-
-### Question 1
-**Q:** What is Tragedy of Commons? Explain with example.
-**Brief:** The Tragedy of the Commons (Hardin, 1968) occurs when a shared resource with no property rights is over-exploited because each user captures the full benefit of extraction but shares the cost of depletion with others — private marginal benefit exceeds social marginal benefit. Example: an open-access fishery where each fisher catches maximally, leading to stock collapse. Solutions include private property rights (Coase), government regulation (quotas, licences), and Pigouvian taxes.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-extern-01)
-
-### Question 2
-**Q:** Steel-fishery: pollution increases B's cost, decreases A's cost. Show private/social optimum.
-**Brief:** In the steel-fishery model, pollution $x$ reduces steel's cost ($\partial C_S/\partial x < 0$) but raises the fishery's cost ($\partial C_F/\partial x > 0$). Under individual profit maximization, the steel mill pollutes until $-\partial C_S/\partial x = 0$ (excessive). Under joint profit maximization (merger), pollution is set where $-\partial C_S/\partial x = \partial C_F/\partial x$ (social optimum). The Coase Theorem states that with well-defined property rights and zero transaction costs, bargaining achieves the efficient pollution level regardless of rights assignment.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-extern-02)
-
-### Question 3
-**Q:** Show asymmetric information may lead to disappearance of a good from market.
-**Brief:** Akerlof's (1970) "Market for Lemons" shows that when sellers know quality but buyers do not, buyers offer the expected value, causing high-quality sellers to exit. This adverse selection spiral — price falls, quality deteriorates, more exit — can lead to complete market collapse. Solutions include signalling (warranties), screening (separating contracts), and reputation mechanisms.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-extern-03)
-
-### Question 4
-**Q:** Using Spence's Model of Education, explain education as a signal of worker productivity.
-**Brief:** In Spence's (1973) signalling model, education is costly but does not increase productivity — it signals underlying type. The single-crossing property ($c_L > c_H$) makes the signal credible: High types acquire education and earn $w_H$, Low types do not and earn $w_L$, provided $w_H - w_L \in [c_H, c_L]$. The separating equilibrium is Pareto-inferior to full information because education is a socially wasteful but individually rational expenditure.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-extern-04)
-
-### Question 5
-**Q:** Define consumption externality. Explain Bandwagon and Snob effects.
-**Brief:** A consumption externality occurs when one consumer's utility depends on others' consumption ($U_i = U_i(C_i, C_j)$ with $\partial U_i/\partial C_j \neq 0$). The Bandwagon effect (positive externality) increases demand as more people consume — demand becomes more elastic. The Snob effect (negative externality) decreases demand as more consume — demand becomes less elastic. Both violate the standard assumption of independent preferences (Leibenstein, 1950).
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-extern-05)
-
-### Question 6
-**Q:** Does consumption externality affect GE solution in a 2×2×2 model?
-**Brief:** Yes. The standard $2\times 2\times 2$ model assumes away consumption externalities. When introduced, the Pareto conditions break because MRS equality no longer captures all welfare-relevant margins (utility depends on others' consumption directly). The First Welfare Theorem fails due to missing markets, and the equilibrium is not Pareto-optimal. The GE solution may still exist but will not be efficient.
-→ [Full answer in GE, Game, Extern & Trade](./answers-ge-game-extern-trade.md#q-extern-06)
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | What is Tragedy of Commons? Explain with example. | [B](./EXAM-PRIORITY-MATRIX.md) | 3 | Batch 46 C7a | 2020 |
+| 2 | Two firms: A (steel, pollution x) and B (fishery). Pollution increases B's cost, decreases A's cost. Show private/social costs under: i) individual profit max ii) joint profit max iii) different property rights. | [A](./EXAM-PRIORITY-MATRIX.md) | 11 | Batch 46 C7b | 2020 |
+| 3 | Show asymmetric information may lead to disappearance of a good from market. | [B](./EXAM-PRIORITY-MATRIX.md) | 4 | Batch 46 C8a | 2020 |
+| 4 | Using Spence's Model of Education, explain how education works as a signal of worker productivity. | [A](./EXAM-PRIORITY-MATRIX.md) | 10 | Batch 46 C8b | 2020 |
+| 5 | Define consumption externality. Explain by Bandwagon effect and Snob effect. | [B](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q10 | — |
+| 6 | Does consumption externality affect GE solution in a 2×2×2 model? | [B](./EXAM-PRIORITY-MATRIX.md) | — | Professor Q11 | — |
 
 ---
 
 ## 9. Trade & Tariffs
 
-| # | Question | Marks | Source | Year |
-|---|----------|-------|--------|------|
-| 1 | Domestic demand: Q=250,000-100P. Supply: Q=250P-30,000. Find autarky P, Q. World P_W=600: import/export? $50 tariff: new P, Q_d, Q_s, imports, tariff revenue. Welfare effects (ΔCS, ΔPS, ΔW). VER limiting to 20,000: welfare vs free trade. | ~14 | Batch 48 Q7 | 2023 |
+| # | Question | Priority | Marks | Source | Year |
+|---|----------|----------|-------|--------|------|
+| 1 | Domestic demand: Q=250,000-100P. Supply: Q=250P-30,000. Find autarky P, Q. World P_W=600: import/export? $50 tariff: new P, Q_d, Q_s, imports, tariff revenue. Welfare effects (ΔCS, ΔPS, ΔW). VER limiting to 20,000: welfare vs free trade. | [A](./EXAM-PRIORITY-MATRIX.md) | ~14 | Batch 48 Q7 | 2023 |
 
 ### Question 1
 **Q:** Domestic Q_d=250,000-100P, Q_s=250P-30,000. World P_W=600. Tariff $50. VER 20,000. Welfare analysis.

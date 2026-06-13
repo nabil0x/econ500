@@ -1,7 +1,7 @@
 # Microeconomics — Questions by Year/Source (with Answers)
 
 > All microeconomic theory questions indexed by source document, with concise exam-ready answers.
-> **Cross-links:** [Topic-wise Index](./micro-questions-topic-wise.md) | [Full Notes](./README.md) | [Basics](./basics.md)
+> **Cross-links:** [Topic-wise Index](./micro-questions-topic-wise.md) | [Priority Matrix 📊](./EXAM-PRIORITY-MATRIX.md) | [Full Notes](./README.md) | [Basics](./basics.md)
 
 ---
 

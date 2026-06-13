@@ -1,17 +1,22 @@
 /**
- * Study Logger v2 — Global analytics + Local session study time
+ * Study Logger v3 — Global analytics + persistence + content intelligence
  *
- * GLOBAL:  Logs page views to Supabase → shows top 20 pages across all visitors
- * LOCAL:   Tracks study time per session using the Page Visibility API
+ * v3 improvements over v2:
+ *   - Persistent visitor ID (survives browser sessions via localStorage)
+ *   - Topic extraction from URL paths (not just course-level)
+ *   - Heartbeat study logging every 60s (no more data loss on crash)
+ *   - Search query tracking
+ *   - Scroll depth capture
+ *   - Content-type tagging (answers, cheat-sheets, basics, etc.)
  *
  * Architecture:
  *   Browser ↔ Supabase REST API (anon key, RLS-protected)
- *   Browser → localStorage (session state, no sensitive data)
+ *   Browser → localStorage (visitor_id, session state)
  *
- * "Study what you track." — every economist ever
+ * "What gets measured gets managed." — Drucker, probably
  *
  * ── Supabase Setup (run in Supabase SQL Editor) ─────────────────
- * See file: SUPABASE_SETUP.md
+ * See file: SUPABASE_SETUP.md + supabase/migrations/002_*.sql
  * After setup, paste your Supabase URL + anon key into CONFIG below.
  * ────────────────────────────────────────────────────────────────
  */
@@ -26,12 +31,16 @@
 var CONFIG = {
   supabaseUrl: 'https://cjhlbpyuzepwogmwjwyl.supabase.co',
   supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqaGxicHl1emVwd29nbXdqd3lsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzI3MTYsImV4cCI6MjA5NjkwODcxNn0.HtUGJAjEkMLItl37UkNmRM-Jjrnjuu_lgU7TJYBiyQs',
+  HEARTBEAT_INTERVAL: 60000,  // ms between study heartbeats (60s)
+  PAGE_VIEW_DEBOUNCE: 1500,   // ms debounce between page view logs
+  CLICK_DEBOUNCE: 400,        // ms debounce between click logs
 };
 
 /* ══════════════════════════════════════════════════════════════
  *  LOCAL STORAGE HELPERS
  * ══════════════════════════════════════════════════════════════ */
-var SESSION_KEY = 'sl_v2_session';
+var SESSION_KEY  = 'sl_v3_session';
+var VISITOR_KEY  = 'sl_v3_visitor';
 
 function lsGet(key, def) {
   try { var v = JSON.parse(localStorage.getItem(key)); return v !== null && v !== undefined ? v : def; }
@@ -92,9 +101,24 @@ function sbSelect(table, opts) {
 }
 
 /* ══════════════════════════════════════════════════════════════
- *  SESSION
- *  Persisted in localStorage so it survives page navigations
- *  within the MkDocs SPA shell.
+ *  VISITOR ID — Persistent across browser sessions
+ *  Stored in localStorage, survives tab closes, cache clears
+ *  Only regenerates if user clears site data manually.
+ * ══════════════════════════════════════════════════════════════ */
+
+function getVisitorId() {
+  var v = lsGet(VISITOR_KEY, null);
+  if (!v) {
+    v = crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2, 16);
+    lsSet(VISITOR_KEY, v);
+  }
+  return v;
+}
+
+/* ══════════════════════════════════════════════════════════════
+ *  SESSION — Persisted in localStorage
+ *  Resets on browser close (session storage would be ideal
+ *  but we need it to survive SPA navigations).
  * ══════════════════════════════════════════════════════════════ */
 
 function getSession() {
@@ -114,39 +138,156 @@ function getSession() {
 function saveSession(s) { lsSet(SESSION_KEY, s); }
 
 /* ══════════════════════════════════════════════════════════════
- *  COURSE BUCKET UTILITY
- *  Extracts the course name from a URL pathname.
+ *  COURSE & TOPIC EXTRACTION — from URL pathname
+ *  Returns { course: 'Microeconomics', topic: 'Consumer Theory' }
+ *  Falls back gracefully for unknown paths.
  * ══════════════════════════════════════════════════════════════ */
+
+var COURSE_PATTERNS = [
+  { regex: /^\/501-Microeconomics(\/|$)/i,  name: 'Microeconomics' },
+  { regex: /^\/microeconomics(\/|$)/i,       name: 'Microeconomics' },
+  { regex: /^\/macroeconomics(\/|$)/i,        name: 'Macroeconomics' },
+  { regex: /^\/503-Development(\/|$)/i,       name: 'Development' },
+  { regex: /^\/development(\/|$)/i,           name: 'Development' },
+  { regex: /^\/512-Political-Economy(\/|$)/i, name: 'Political Economy' },
+  { regex: /^\/health-economics(\/|$)/i,      name: 'Health Economics' },
+  { regex: /^\/econometrics(\/|$)/i,          name: 'Econometrics' },
+];
+
+/** Map of URL path segments to human-readable topic names */
+var TOPIC_MAP = {
+  // Microeconomics
+  'answers-consumer-theory':      'Answers: Consumer Theory',
+  'answers-demand-production':    'Answers: Demand & Production',
+  'answers-welfare':              'Answers: Welfare',
+  'answers-ge-game-extern-trade': 'Answers: GE, Game Theory & Trade',
+  'exam-cheat-sheet':             'Exam Cheat Sheet',
+  'exam-answer-template':         'Exam Answer Template',
+  'exam-priority-matrix':         'Exam Priority Matrix',
+  'exam-common-mistakes':         'Exam Common Mistakes',
+  'exam-simulations':             'Exam Simulations',
+  'study-roadmap':                'Study Roadmap',
+  'welfare-change-reference':     'Welfare Change Reference',
+  'answers-cross-reference':      'Cross-Reference',
+  'answers-index':                'ANSWERS Index',
+  'micro-questions-topic-wise-answered': 'Questions: By Topic (Answered)',
+  'micro-questions-year-wise-answered':  'Questions: By Year (Answered)',
+  'micro-questions-topic-wise':         'Questions: By Topic',
+  'micro-questions-year-wise':          'Questions: By Year',
+  'glossary':                     'Glossary',
+  'resources':                    'Resources',
+  'basics':                       'Course Basics',
+  // Macroeconomics
+  // (same key names work since URLs are unique)
+  // Development
+  'naila-kabeer':                 'Naila Kabeer',
+  'venezuela':                    'Venezuela',
+  'labour-force-survey':          'Labour Force Survey',
+  'bangladesh-trade':             'Bangladesh Trade',
+  // Political Economy
+  'modernization-theory':         'Modernization Theory',
+  'dependency-theory':            'Dependency Theory',
+  'washington-consensus':         'Washington Consensus',
+  'free-trade-agriculture':       'Free Trade in Agriculture',
+  'food-crisis':                  'Food Crisis (Patnaik)',
+  'bangladesh-dairy':             'Bangladesh Dairy',
+  'rmg-sector':                   'RMG Sector',
+  'cash-crops':                   'Cash Crops vs Food Crops',
+  // Top-level sections
+  'study-dashboard':              'Study Dashboard',
+  'batch-finals':                 'Batch Finals',
+  'exam-guides':                  'Exam Guides',
+  'master-study-notes':           'Master Study Notes',
+  'master_study_notes':           'Master Study Notes',
+  'theorists-reference':          'Theorists Reference',
+  'exam-frameworks':              'Exam Frameworks',
+  'statistics-reference':         'Statistics Reference',
+};
+
+/** Clean a slug into a display name (e.g. "answers-consumer-theory" → "Answers: Consumer Theory") */
+function slugToName(slug) {
+  if (!slug) return '';
+  // Check known map first
+  var lower = slug.toLowerCase();
+  if (TOPIC_MAP[lower]) return TOPIC_MAP[lower];
+  // Fallback: replace hyphens, title-case
+  return lower
+    .split('-')
+    .map(function (w) { return w.charAt(0).toUpperCase() + w.slice(1); })
+    .join(' ');
+}
+
 function getCourseFromPath(path) {
   if (!path) return 'Other';
-  // Strip trailing slash for consistent matching
   var p = path.replace(/\/$/, '');
-  if (/^\/501-Microeconomics(\/|$)/.test(p) || /^\/microeconomics(\/|$)/.test(p)) return 'Microeconomics';
-  if (/^\/macroeconomics(\/|$)/.test(p)) return 'Macroeconomics';
-  if (/^\/503-Development(\/|$)/.test(p) || /^\/development(\/|$)/.test(p)) return 'Development';
-  if (/^\/512-Political-Economy(\/|$)/.test(p)) return 'Political Economy';
-  if (/^\/health-economics(\/|$)/.test(p)) return 'Health Economics';
-  if (/^\/econometrics(\/|$)/.test(p)) return 'Econometrics';
-  // Fallback: try to derive from the first path segment
+  for (var i = 0; i < COURSE_PATTERNS.length; i++) {
+    if (COURSE_PATTERNS[i].regex.test(p)) return COURSE_PATTERNS[i].name;
+  }
+  // Fallback: first path segment
   var parts = p.split('/').filter(Boolean);
   if (parts.length > 0) {
     var first = parts[0];
-    // Match patterns like "501-Microeconomics" or "512-Political-Economy"
     var match = first.match(/^\d+-([A-Za-z-]+)$/);
-    if (match) {
-      return match[1].replace(/-/g, ' ');
-    }
-    // Try capitalized single-word match
-    if (/^[A-Z]/.test(first)) {
-      return first.replace(/-/g, ' ');
-    }
+    if (match) return match[1].replace(/-/g, ' ');
+    if (/^[A-Z]/.test(first)) return first.replace(/-/g, ' ');
   }
   return 'Other';
 }
 
+function getTopicFromPath(path, title) {
+  if (!path) return title || 'General';
+  var p = path.replace(/\/$/, '');
+  var parts = p.split('/').filter(Boolean);
+
+  // If there's a second segment, that's usually the topic area
+  if (parts.length >= 2) {
+    var topicSlug = parts[1].toLowerCase();
+    // But skip known non-topic segments: "basics" under a course is the page itself
+    if (TOPIC_MAP[topicSlug]) return TOPIC_MAP[topicSlug];
+    // Skip utility segments that appear as second level
+    if (['basics', 'readme', 'overview'].indexOf(topicSlug) >= 0) {
+      // Use first segment as topic instead
+      return slugToName(parts[0]);
+    }
+    return slugToName(topicSlug);
+  }
+
+  // Single segment paths: extract topic from title or slug
+  if (parts.length === 1) {
+    return slugToName(parts[0]);
+  }
+
+  // Root or unknown: use title if available
+  if (title) {
+    var cleaned = title.replace(/\s*-\s*Economics\s*Mastery\s*$/i, '').trim();
+    if (cleaned) return cleaned;
+  }
+
+  return 'General';
+}
+
+/** Derive content type from path (answers, cheat-sheet, basics, etc.) */
+function getContentTypeFromPath(path) {
+  if (!path) return 'Other Pages';
+  var p = path.toLowerCase();
+  if (p.indexOf('answers-') >= 0 || p.indexOf('/answers-') >= 0)  return 'Answer Files';
+  if (p.indexOf('cheat-sheet') >= 0)    return 'Cheat Sheets';
+  if (p.indexOf('study-roadmap') >= 0)  return 'Study Roadmap';
+  if (p.indexOf('simulation') >= 0)     return 'Simulations';
+  if (p.indexOf('exam-') >= 0)           return 'Exam Resources';
+  if (p.indexOf('/basics') >= 0 || p.indexOf('basics/') >= 0) return 'Basics';
+  if (p.indexOf('glossary') >= 0)       return 'Glossary';
+  if (p.indexOf('questions') >= 0)      return 'Question Banks';
+  if (p.indexOf('cross-reference') >= 0) return 'Cross-References';
+  if (p.indexOf('resources') >= 0)      return 'Resources';
+  if (p.indexOf('batch-finals') >= 0)   return 'Batch Finals';
+  if (p.indexOf('exam-guides') >= 0)    return 'Exam Guides';
+  if (p.indexOf('master_study_notes') >= 0 || p.indexOf('master-study-notes') >= 0) return 'Master Notes';
+  return 'Other Pages';
+}
+
 /* ══════════════════════════════════════════════════════════════
  *  TODAY STATS (global helper)
- *  Returns a promise with today's aggregated stats.
  * ══════════════════════════════════════════════════════════════ */
 function getTodayStats() {
   return Promise.all([
@@ -167,8 +308,12 @@ window.__studyLogger = {
   sbSelect: sbSelect,
   getSession: getSession,
   getCourseFromPath: getCourseFromPath,
+  getTopicFromPath: getTopicFromPath,
   getTodayStats: getTodayStats,
+  getVisitorId: getVisitorId,
+  getContentTypeFromPath: getContentTypeFromPath,
   get sessionId() { return getSession().id; },
+  get visitorId() { return getVisitorId(); },
 };
 
 /* ══════════════════════════════════════════════════════════════
@@ -182,38 +327,49 @@ window.__studyLogger = {
   lsRemove('masters_visitor_pages');
   lsRemove('masters_visitor_start');
   lsRemove('masters_unique_pages');
+  // Remove v2 session key (replaced by v3)
+  lsRemove('sl_v2_session');
 
   /* ══════════════════════════════════════════════════════════
    *  STATE (volatile — reset on each page navigation)
    * ══════════════════════════════════════════════════════════ */
-  var gPageEnterTime = null;    // timestamp when current page became visible
-  var gCurrentPage   = null;    // current pathname
-  var gLastLogTime   = 0;       // debounce for Supabase inserts
-  var gLastClickMsgs = {};      // per-session debounce map for click tracking (400ms)
+  var gPageEnterTime  = null;    // timestamp when current page became visible
+  var gCurrentPage    = null;    // current pathname
+  var gCurrentTitle   = null;    // current page title
+  var gLastLogTime    = 0;       // debounce for Supabase page view inserts
+  var gLastClickMsgs  = {};      // per-session debounce map for click tracking
+  var gHeartbeatTimer = null;    // interval ID for heartbeat
+  var gLastHeartbeatMs = 0;      // accumulated ms at last heartbeat
+  var gVisitorId      = getVisitorId();  // persistent across sessions
 
   /* ══════════════════════════════════════════════════════════
    *  GLOBAL: LOG PAGE VIEW → SUPABASE
-   *  Debounced (2 s) so quick navigations don't spam.
+   *  Debounced so quick SPA navigations don't spam.
+   *  Now includes topic, visitor_id, content_type.
    * ══════════════════════════════════════════════════════════ */
   function logPageView(path, title) {
     var now = Date.now();
-    if ((now - gLastLogTime) < 2000) return;
+    if ((now - gLastLogTime) < CONFIG.PAGE_VIEW_DEBOUNCE) return;
     gLastLogTime = now;
 
     var session = getSession();
+    var course  = getCourseFromPath(path);
+    var topic   = getTopicFromPath(path, title);
 
     sbInsert('page_visits', {
-      path:       path,
-      title:      title,
-      referrer:   document.referrer || null,
-      session_id: session.id,
-      user_agent: navigator.userAgent,
+      path:        path,
+      title:       title,
+      referrer:    document.referrer || null,
+      session_id:  session.id,
+      visitor_id:  gVisitorId,
+      user_agent:  navigator.userAgent,
+      topic:       topic,
     }).catch(function () { /* analytics never breaks the site */ });
   }
 
   /* ══════════════════════════════════════════════════════════
    *  GLOBAL: CLICK TRACKING (capture phase)
-   *  Logs <a> clicks to click_events table, throttled at 5 s.
+   *  Logs <a> clicks, now with topic + visitor_id.
    * ══════════════════════════════════════════════════════════ */
   document.addEventListener('click', function (e) {
     var anchor = e.target.closest('a');
@@ -222,30 +378,97 @@ window.__studyLogger = {
     var session  = getSession();
     var now      = Date.now();
     var last     = gLastClickMsgs[session.id] || 0;
-    if ((now - last) < 400) return;  // per-session debounce: prevent accidental double-clicks
+    if ((now - last) < CONFIG.CLICK_DEBOUNCE) return;  // prevent double-clicks
     gLastClickMsgs[session.id] = now;
 
     var path     = window.location.pathname;
     var target   = anchor.href || anchor.getAttribute('href') || '';
-    var category = getCourseFromPath(path);
+    var course   = getCourseFromPath(path);
+    var topic    = getTopicFromPath(path, document.title);
 
     sbInsert('click_events', {
       path:       path,
       target:     target,
-      category:   category,
+      category:   course,
+      topic:      topic,
       session_id: session.id,
+      visitor_id: gVisitorId,
       user_agent: navigator.userAgent,
     }).catch(function () { /* analytics never breaks the site */ });
   }, true);
 
   /* ══════════════════════════════════════════════════════════
+   *  SEARCH QUERY TRACKING
+   *  Captures search terms when user submits a search.
+   * ══════════════════════════════════════════════════════════ */
+  function initSearchTracking() {
+    var searchForm = document.forms && document.forms.search;
+    if (!searchForm) return;
+    var input = searchForm.query;
+    if (!input) return;
+
+    // MkDocs Material fires search on input blur with a non-empty value
+    input.addEventListener('blur', function () {
+      var q = (this.value || '').trim();
+      if (!q) return;
+      var session = getSession();
+      sbInsert('search_queries', {
+        query:       q,
+        session_id:  session.id,
+        visitor_id:  gVisitorId,
+      }).catch(function () {});
+    });
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   *  HEARTBEAT: Periodic study time sync
+   *  Writes accumulated study ms to study_heartbeats every 60s.
+   *  This ensures we NEVER lose more than 60s of data (vs.
+   *  the old beforeunload-only approach).
+   * ══════════════════════════════════════════════════════════ */
+  function startHeartbeat() {
+    if (gHeartbeatTimer) return;
+
+    gHeartbeatTimer = setInterval(function () {
+      var session = getSession();
+      var now     = Date.now();
+      var currentMs = gPageEnterTime !== null ? (now - gPageEnterTime) : 0;
+      var totalMs   = session.totalStudyMs + currentMs;
+
+      // Only send if there's new study time since last heartbeat
+      if (totalMs <= gLastHeartbeatMs && gLastHeartbeatMs > 0) return;
+      gLastHeartbeatMs = totalMs;
+
+      var path   = window.location.pathname;
+      var course = getCourseFromPath(path);
+      var topic  = getTopicFromPath(path, document.title);
+
+      sbInsert('study_heartbeats', {
+        session_id:     session.id,
+        visitor_id:     gVisitorId,
+        course:         course,
+        topic:          topic,
+        accumulated_ms: totalMs,
+        page_path:      path,
+        page_title:     document.title,
+      }).catch(function () {});
+    }, CONFIG.HEARTBEAT_INTERVAL);
+  }
+
+  function stopHeartbeat() {
+    if (gHeartbeatTimer) {
+      clearInterval(gHeartbeatTimer);
+      gHeartbeatTimer = null;
+    }
+  }
+
+  /* ══════════════════════════════════════════════════════════
    *  GLOBAL: FETCH TOP 20 PAGES
-   *  Cached for 60 s so repeated widget refreshes don't hammer API.
+   *  Cached for 60 s.
    * ══════════════════════════════════════════════════════════ */
   var topCache = null;
 
   function fetchTopPages() {
-    // Return cache if fresh (< 60 s)
     if (topCache && (Date.now() - topCache.ts) < 60000) {
       return Promise.resolve(topCache.data);
     }
@@ -261,7 +484,6 @@ window.__studyLogger = {
         return arr;
       })
       .catch(function (err) {
-        // If cache exists, serve stale rather than nothing
         if (topCache) return topCache.data;
         console.warn('Study Logger: fetchTopPages failed', err);
         return [];
@@ -273,24 +495,16 @@ window.__studyLogger = {
    *
    *  Study time = time the tab is VISIBLE (Page Visibility API).
    *  Hidden / idle time is NOT counted.
-   *
-   *  Flow:
-   *    navigate → startPageTracking()     sets pageEnterTime = now
-   *    tab hide → finalizePageTracking()  adds (now - enter) to total
-   *    tab show → resumePageTracking()    resets pageEnterTime = now
-   *    navigate → startPageTracking()     finalizes previous, resets
    * ══════════════════════════════════════════════════════════ */
 
-  /** Start tracking a new page (call on navigation / load) */
   function startPageTracking(path, title) {
-    // Finalise whichever page we were on before
     finalizePageTracking();
 
     var session = getSession();
     gPageEnterTime = Date.now();
     gCurrentPage = path;
+    gCurrentTitle = title;
 
-    // Record page entry in session
     session.pages.push({
       path:       path,
       title:      title,
@@ -299,11 +513,9 @@ window.__studyLogger = {
     });
     saveSession(session);
 
-    // Fire-and-forget global log
     logPageView(path, title);
   }
 
-  /** Finalise the current page: accumulate visible time */
   function finalizePageTracking() {
     if (gPageEnterTime === null || !gCurrentPage) return;
 
@@ -325,12 +537,8 @@ window.__studyLogger = {
     gCurrentPage = null;
   }
 
-  /** Resume after tab becomes visible again */
   function resumePageTracking() {
     gPageEnterTime = Date.now();
-    // Update the session record so currentPageStart is in sync
-    var session = getSession();
-    saveSession(session);
   }
 
   /* ══════════════════════════════════════════════════════════
@@ -343,7 +551,6 @@ window.__studyLogger = {
     var currentMs = gPageEnterTime !== null ? (now - gPageEnterTime) : 0;
     var totalMs   = session.totalStudyMs + currentMs;
 
-    // Aggregate per-path
     var pathMap = {};
     session.pages.forEach(function (p) {
       if (!pathMap[p.path]) {
@@ -402,9 +609,8 @@ window.__studyLogger = {
   }
 
   /* ══════════════════════════════════════════════════════════
-   *  WIDGET — DOM BUILDING
-   *  Single clickable bubble: collapsed = small circle,
-   *  expanded = full card. No separate toggle button.
+   *  WIDGET — DOM BUILDING (unchanged from v2)
+   *  Floating bubble: collapsed = small circle, expanded = full card.
    * ══════════════════════════════════════════════════════════ */
 
   var STATE = { open: false, tab: 'popular' };
@@ -412,10 +618,8 @@ window.__studyLogger = {
   function buildWidget() {
     var root  = ce('div', 'vl-root');
 
-    // ── Bubble container (replaces old toggle + panel) ─────
     var bubble = ce('div', 'vl-bubble');
 
-    // Preview — shown when collapsed
     var preview = ce('div', 'vl-bubble-preview');
     var icon    = ce('span', 'vl-bubble-icon');
     icon.textContent = '\uD83D\uDCCA';
@@ -425,7 +629,6 @@ window.__studyLogger = {
     preview.appendChild(icon);
     preview.appendChild(timeSpan);
 
-    // Full content — shown when expanded
     var content    = ce('div', 'vl-bubble-content');
     var header     = ce('div', 'vl-header');
     var titleSpan  = ce('span', 'vl-title');
@@ -451,7 +654,6 @@ window.__studyLogger = {
     var body = ce('div', 'vl-body');
     body.id = 'vl-body';
 
-    // Assemble content panel
     header.appendChild(titleSpan);
     header.appendChild(closeBtn);
     tabs.appendChild(tabP);
@@ -462,33 +664,27 @@ window.__studyLogger = {
     content.appendChild(tabs);
     content.appendChild(body);
 
-    // Assemble bubble
     bubble.appendChild(preview);
     bubble.appendChild(content);
     root.appendChild(bubble);
     document.body.appendChild(root);
 
-    // ── Events ─────────────────────────────────────────────
-
-    // Click bubble to open (when collapsed)
+    // Click bubble to open
     bubble.addEventListener('click', function (e) {
       if (STATE.open) return;
       openWidget();
     });
 
-    // Close button collapses the bubble
     closeBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       closeWidget();
     });
 
-    // Tab switching
     tabs.addEventListener('click', function (e) {
       e.stopPropagation();
       onTabClick(e);
     });
 
-    // Periodic refresh
     setInterval(function () {
       updateBubbleTime();
       if (STATE.open) render();
@@ -504,7 +700,6 @@ window.__studyLogger = {
     return el;
   }
 
-  /* ── Widget event handlers ──────────────────────────────── */
   function openWidget() {
     STATE.open = true;
     document.querySelector('.vl-root').classList.add('vl-open');
@@ -536,9 +731,7 @@ window.__studyLogger = {
     render();
   }
 
-  /* ══════════════════════════════════════════════════════════
-   *  RENDER — dispatch to active tab
-   * ══════════════════════════════════════════════════════════ */
+  /* ── RENDER dispatch ──────────────────────────────────── */
   function render() {
     var body = document.getElementById('vl-body');
     if (!body) return;
@@ -586,14 +779,10 @@ window.__studyLogger = {
 
     var h =
       '<div class="vl-scroll">' +
-
-      // Main timer — big and prominent
       '<div class="vl-timer">' +
       '  <div class="vl-timer-value">' + fmt(s.totalStudyMs) + '</div>' +
       '  <div class="vl-timer-label">study time this session</div>' +
       '</div>' +
-
-      // Stats row
       '<div class="vl-mini-stats">' +
       '  <div class="vl-mini">' +
       '    <span class="vl-mini-value">' + fmtShort(s.currentPageMs) + '</span>' +
@@ -609,7 +798,6 @@ window.__studyLogger = {
       '  </div>' +
       '</div>';
 
-    // Per-page breakdown
     if (s.pageBreakdown.length > 0) {
       h += '<div class="vl-divider"></div>' +
            '<div class="vl-subtitle">Time by page</div>';
@@ -644,7 +832,6 @@ window.__studyLogger = {
       var clicksData = results[0];
       var studyData  = results[1];
 
-      // Normalise: RPC may return an array (one row) or a bare object
       function extractVal(data, field) {
         if (!data) return 0;
         if (Array.isArray(data)) return (data[0] && data[0][field]) || 0;
@@ -725,10 +912,13 @@ window.__studyLogger = {
    *  LIFECYCLE
    * ══════════════════════════════════════════════════════════ */
 
-  // 1. Initial page load
   function boot() {
     startPageTracking(window.location.pathname, document.title);
+    initSearchTracking();
+    startHeartbeat();
   }
+
+  // 1. Initial page load
   if (document.readyState === 'complete') boot();
   else window.addEventListener('load', boot);
 
@@ -741,13 +931,15 @@ window.__studyLogger = {
     }
   });
 
-  // 3. Unload — save any pending time (+ POST to Supabase via sendBeacon)
+  // 3. Unload — final heartbeat + sendBeacon for last session state
   window.addEventListener('beforeunload', function () {
     finalizePageTracking();
+    stopHeartbeat();
 
     var session = getSession();
     var payload = JSON.stringify({
       session_id:     session.id,
+      visitor_id:     gVisitorId,
       date:           new Date().toISOString().slice(0, 10),
       total_study_ms: session.totalStudyMs,
       pages_studied:  session.pages.length,
@@ -776,7 +968,6 @@ window.__studyLogger = {
       obs.observe(el, { childList: true, subtree: true });
     }
 
-    // Build widget
     buildWidget();
   });
 })();

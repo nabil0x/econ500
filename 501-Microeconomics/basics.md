@@ -88,35 +88,35 @@ $$MR = P\left(1 + \frac{1}{\varepsilon}\right) = P\left(1 - \frac{1}{|\varepsilo
 - Elastic region ($|\varepsilon|>1$): $MR>0$ — price cut raises revenue  
 - Inelastic region ($|\varepsilon|<1$): $MR<0$ — price cut lowers revenue  
 - Unit elastic ($|\varepsilon|=1$): $MR=0$ — revenue maximised  
-- **See:** [DP 2.Q1](./answers-demand-production.md#q-demand-01) (derivation), [DP 2.Q3](./answers-demand-production.md#q-demand-03) (Lerner index)
+- **See:** [DP 2.Q1](./answers-demand-production.md#q-demand-01) (derivation), [DP 2.Q3](./answers-demand-production.md#q-demand-03) ([Lerner index](./GLOSSARY.md#term-lerner-index))
 
 ### Slutsky in Elasticity Form
 
 $$\varepsilon_{x_k,p_j} = \varepsilon_{x_k,p_j}^h - s_j\,\varepsilon_{x_k,w} \qquad s_j = p_j x_j / w$$
 
-where $\varepsilon^h$ is the Hicksian (compensated) elasticity. Links [→ Glossary](./GLOSSARY.md#term-slutsky-equation) · [→ DP 2 Q1](./answers-demand-production.md#q-demand-01)
+where $\varepsilon^h$ is the Hicksian (compensated) elasticity. ([→ Glossary](./GLOSSARY.md#term-slutsky-equation) · [→ DP 2 Q1](./answers-demand-production.md#q-demand-01))
 
-**See:** [DP 2](./answers-demand-production.md#q-demand-01) (elasticity concepts, MR, revenue test), [DP 2.Q3](./answers-demand-production.md#q-demand-03) (Lerner index application)
+**See:** [DP 2](./answers-demand-production.md#q-demand-01) (elasticity concepts, MR, revenue test), [DP 2.Q3](./answers-demand-production.md#q-demand-03) (Lerner index application) ([→ Glossary](./GLOSSARY.md#term-lerner-index))
 
 ---
 
 ## 4 Workhorse Utility Forms
 
-### [Cobb-Douglas](./answers-consumer-theory.md#q-cons-1b-01) $u(x)=\prod_{i=1}^n x_i^{\alpha_i},\;\sum\alpha_i=1$
+### [Cobb-Douglas](./answers-consumer-theory.md#q-cons-1b-01) $u(x)=\prod_{i=1}^n x_i^{\alpha_i},\;\sum\alpha_i=1$ ([→ Glossary](./GLOSSARY.md#term-cd))
 - $x_k(p,w)=\alpha_k w/p_k$
 - $v(p,w)=w\prod_{k=1}^n\bigl(\alpha_k/p_k\bigr)^{\alpha_k}$
 - $e(p,u)=u\prod_{k=1}^n\bigl(p_k/\alpha_k\bigr)^{\alpha_k}$
 - **Properties:** Homothetic; Engel elasticity $=1$; $\varepsilon_{x_k,p_k}=-1$
 - **See:** [CT 1B.Q1](./answers-consumer-theory.md#q-cons-1b-01) (Walrasian demand), [Q2](./answers-consumer-theory.md#q-cons-1b-02) (indirect utility), [Q3](./answers-consumer-theory.md#q-cons-1b-03) (EMP/Hicksian), [WF Q3](./answers-welfare.md#q-welfare-03) (EV/CV/CS computation)
 
-### [CES](./answers-demand-production.md#q-prodset-03) $u(x)=\bigl(\sum_{i=1}^n x_i^\rho\bigr)^{1/\rho},\;\rho<1,\;\rho\neq0,\;\sigma=1/(1-\rho)$
+### [CES](./answers-demand-production.md#q-prodset-03) $u(x)=\bigl(\sum_{i=1}^n x_i^\rho\bigr)^{1/\rho},\;\rho<1,\;\rho\neq0,\;\sigma=1/(1-\rho)$ ([→ Glossary](./GLOSSARY.md#term-eos))
 - $x_k(p,w)=w\,p_k^{-\sigma}\bigm/\sum_{j}p_j^{1-\sigma}$
 - $v(p,w)=w\bigl(\sum_k p_k^{1-\sigma}\bigr)^{-1/(1-\sigma)}$
 - $e(p,u)=u\bigl(\sum_k p_k^{1-\sigma}\bigr)^{1/(1-\sigma)}$
-- **Properties:** Homothetic; $\rho\to0\Rightarrow$ CD; $\rho\to-\infty\Rightarrow$ [Leontief](./answers-consumer-theory.md#q-cons-1b-06); $\rho\to1\Rightarrow$ perfect substitutes
+- **Properties:** Homothetic; $\rho\to0\Rightarrow$ CD; $\rho\to-\infty\Rightarrow$ [Leontief](./answers-consumer-theory.md#q-cons-1b-06) ([→ Glossary](./GLOSSARY.md#term-leontief)); $\rho\to1\Rightarrow$ perfect substitutes
 - **See:** [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (elasticity of substitution)
 
-### [Quasilinear](./answers-consumer-theory.md#q-cons-1b-07) $u(x)=x_1+\varphi(x_2,\dots,x_n)$ ($p_1=1$ numeraire)
+### [Quasilinear](./answers-consumer-theory.md#q-cons-1b-07) $u(x)=x_1+\varphi(x_2,\dots,x_n)$ ($p_1=1$ numeraire) ([→ Glossary](./GLOSSARY.md#term-quasilinear))
 - $x_k(p)=\varphi_k'^{-1}(p_k)\;(k\ge2),\;x_1=w-\sum_{k\ge2}p_kx_k$
 - $v(p,w)=w+\bigl[\varphi(x^*)-\sum_{k\ge2}p_kx_k^*\bigr]\equiv w+CS(p)$
 - $e(p,u)=u-CS(p)$
@@ -133,9 +133,9 @@ where $\varepsilon^h$ is the Hicksian (compensated) elasticity. Links [→ Gloss
 
 ## 5 Welfare Measurement
 
-- [Consumer surplus](./answers-welfare.md#q-welfare-01): $\displaystyle CS=\int_{p^1}^{p^0}x(p,w)\,dp$
-- [Compensating variation](./answers-welfare.md#q-welfare-01): $CV=e(p^0,u^0)-e(p^1,u^0)=w-e(p^1,u^0)$
-- [Equivalent variation](./answers-welfare.md#q-welfare-01): $EV=e(p^0,u^1)-e(p^0,u^0)=e(p^0,u^1)-w$
+- [Consumer surplus](./answers-welfare.md#q-welfare-01): $\displaystyle CS=\int_{p^1}^{p^0}x(p,w)\,dp$ ([→ Glossary](./GLOSSARY.md#term-cs))
+- [Compensating variation](./answers-welfare.md#q-welfare-01): $CV=e(p^0,u^0)-e(p^1,u^0)=w-e(p^1,u^0)$ ([→ Glossary](./GLOSSARY.md#term-cv))
+- [Equivalent variation](./answers-welfare.md#q-welfare-01): $EV=e(p^0,u^1)-e(p^0,u^0)=e(p^0,u^1)-w$ ([→ Glossary](./GLOSSARY.md#term-ev))
 
 | Price Change | [Normal Good](./answers-welfare.md#q-welfare-02) | [Quasilinear](./answers-welfare.md#q-welfare-05) |
 |---|---|---|
@@ -149,31 +149,31 @@ where $\varepsilon^h$ is the Hicksian (compensated) elasticity. Links [→ Gloss
 ## 6 Production & Costs
 
 **Profit maximization:** $\pi(p,w)=\max_{y,z}\,p\,y-w\cdot z$ s.t. $y\le f(z)$
-- [Hotelling's lemma](./answers-demand-production.md#q-profit-01): $y(p,w)=\partial\pi/\partial p,\;z_i(p,w)=-\partial\pi/\partial w_i$
+- [Hotelling's lemma](./answers-demand-production.md#q-profit-01): $y(p,w)=\partial\pi/\partial p,\;z_i(p,w)=-\partial\pi/\partial w_i$ ([→ Glossary](./GLOSSARY.md#term-hotellings))
 - Supply function $y(p,w)$; $\pi$ [convex](./answers-demand-production.md#q-profit-01) in $(p,w)$, HD1
 
 **Cost minimization:** $c(w,y)=\min_z\,w\cdot z$ s.t. $f(z)\ge y$
-- [Shephard's lemma](./answers-demand-production.md#q-prodset-05): $z_i(w,y)=\partial c/\partial w_i$ (conditional factor demand)
+- [Shephard's lemma](./answers-demand-production.md#q-prodset-05): $z_i(w,y)=\partial c/\partial w_i$ (conditional factor demand) ([→ Glossary](./GLOSSARY.md#term-shephards))
 - $c$ [concave](./answers-demand-production.md#q-prodset-05) in $w$, HD1 in $w$, $\uparrow$ in $y$
 
 **Production functions & returns to scale:**
-- **Returns to scale test:** $f(tK,tL) = t^\nu f(K,L)$; $\nu>1$ IRTS, $\nu=1$ CRTS, $\nu<1$ DRTS ([→ DP 3A.Q1](./answers-demand-production.md#q-prodset-01))
-- **Elasticity of substitution:** $\displaystyle \sigma = \frac{d\ln(K/L)}{d\ln(MRTS)}$ ([→ DP 3A.Q4](./answers-demand-production.md#q-prodset-03))
+- **Returns to scale test:** $f(tK,tL) = t^\nu f(K,L)$; $\nu>1$ IRTS, $\nu=1$ CRTS, $\nu<1$ DRTS ([→ DP 3A.Q1](./answers-demand-production.md#q-prodset-01)) ([→ Glossary](./GLOSSARY.md#term-returns-to-scale))
+- **Elasticity of substitution:** $\displaystyle \sigma = \frac{d\ln(K/L)}{d\ln(MRTS)}$ ([→ DP 3A.Q4](./answers-demand-production.md#q-prodset-03)) ([→ Glossary](./GLOSSARY.md#term-eos))
 - **CES production:** $q = [\alpha K^\rho + (1-\alpha)L^\rho]^{\gamma/\rho}$ where $\sigma = 1/(1-\rho)$ ([→ DP 3A.Q4](./answers-demand-production.md#q-prodset-03))
 
 **MRPT (Marginal Rate of Product Transformation):**
 $$\displaystyle MRPT_{k,l}(y) = \frac{\partial F(y)/\partial y_k}{\partial F(y)/\partial y_l} = -\frac{dy_l}{dy_k} = \frac{MC_k}{MC_l}$$
-(Duality result: $MRPT = MC_k/MC_l$ — see [→ DP 3A.Q1](./answers-demand-production.md#q-prodset-01))
+(Duality result: $MRPT = MC_k/MC_l$ — see [→ DP 3A.Q1](./answers-demand-production.md#q-prodset-01)) ([→ Glossary](./GLOSSARY.md#term-mrpt))
 
 **Cost function properties:**
 - $c$ concave in $w$ $\Rightarrow$ $\partial^2 c/\partial w_k^2 \le 0$ (conditional factor demand slopes downward) ([→ Glossary](./GLOSSARY.md#term-cost-function))
 - Matrix $D_w z(w,y)$: symmetric, NSD, HD0 in $w$ ([→ DP 3A.Q5](./answers-demand-production.md#q-prodset-04))
-- **Short-run shutdown:** produce if $P \ge \min AVC$ ([→ DP 3C.Q1](./answers-demand-production.md#q-compet-01))
+- **Short-run shutdown:** produce if $P \ge \min AVC$ ([→ DP 3C.Q1](./answers-demand-production.md#q-compet-01)) ([→ Glossary](./GLOSSARY.md#term-shutdown-price))
 - **Long-run zero-profit:** $P = \min LAC$ with free entry ([→ DP 3C.Q1](./answers-demand-production.md#q-compet-01))
 
 **Returns to scale & cost shape:**
 
-**[Lerner index](./answers-demand-production.md#q-demand-03):** $\displaystyle\frac{P-MC}{P}=-\frac{1}{\varepsilon}$ where $\varepsilon$ = demand price elasticity
+**[Lerner index](./answers-demand-production.md#q-demand-03):** $\displaystyle\frac{P-MC}{P}=-\frac{1}{\varepsilon}$ where $\varepsilon$ = demand price elasticity ([→ Glossary](./GLOSSARY.md#term-lerner-index))
 - Perfect competition: $P=MC$, Lerner $=0$
 - Monopoly (linear demand): $P=MC/(1+1/\varepsilon)$
 
@@ -185,9 +185,9 @@ $$\displaystyle MRPT_{k,l}(y) = \frac{\partial F(y)/\partial y_k}{\partial F(y)/
 
 ### GE Concepts
 
-**[Walras' law](./answers-ge-game-extern-trade.md#q-ge-02):** $p\cdot z(p)=0\;\forall p$ where $z(p)=\sum_i(x_i(p)-\omega_i)-\sum_jy_j(p)$
+**[Walras' law](./answers-ge-game-extern-trade.md#q-ge-02):** $p\cdot z(p)=0\;\forall p$ where $z(p)=\sum_i(x_i(p)-\omega_i)-\sum_jy_j(p)$ ([→ Glossary](./GLOSSARY.md#term-walras-law))
 
-**Excess demand $z(p)$ properties:** HD0; continuous on $\mathbb{R}_{++}^n$; satisfies Walras' law; boundary behavior ($p_k\to0\Rightarrow z_k(p)\to+\infty$)
+**Excess demand $z(p)$ properties:** HD0; continuous on $\mathbb{R}_{++}^n$; satisfies Walras' law; boundary behavior ($p_k\to0\Rightarrow z_k(p)\to+\infty$) ([→ Glossary](./GLOSSARY.md#term-excess-demand))
 
 **Existence:** If $z(p)$ continuous, HD0, obeys Walras' law, and has boundary behavior $\Rightarrow\exists p^*>0$: $z(p^*)=0$
 
@@ -203,18 +203,18 @@ For an allocation to be Pareto-optimal, **all three** must hold simultaneously:
 
 ### Welfare Theorems
 
-**[FWT](./answers-welfare.md#q-pareto-05) (First Welfare Theorem):** Under local nonsatiation, every Walrasian (competitive) equilibrium allocation is Pareto optimal.
+**[FWT](./answers-welfare.md#q-pareto-05) (First Welfare Theorem):** Under local nonsatiation, every Walrasian (competitive) equilibrium allocation is Pareto optimal. ([→ Glossary](./GLOSSARY.md#term-fwt))
 
-**[SWT](./answers-welfare.md#q-pareto-05) (Second Welfare Theorem):** If preferences and production sets are convex, any Pareto optimal allocation can be decentralized as a CE with lump-sum transfers.
+**[SWT](./answers-welfare.md#q-pareto-05) (Second Welfare Theorem):** If preferences and production sets are convex, any Pareto optimal allocation can be decentralized as a CE with lump-sum transfers. ([→ Glossary](./GLOSSARY.md#term-swt))
 
 ### Social Welfare Functions
 
 - **Utilitarian (Bentham):** $W = \sum_i U_i$ — sum-ranking, indifference contours slope $-1$ ([→ Glossary](./GLOSSARY.md#term-bentham))
 - **Rawlsian (maximin):** $W = \min_i U_i$ — cares only about worst-off, L-shaped contours ([→ Glossary](./GLOSSARY.md#term-rawlsian))
 - **Nash (multiplicative):** $W = \prod_i U_i$ — symmetric, logarithmic social indifference ([→ Glossary](./GLOSSARY.md#term-swf))
-- **Bergson-Samuelson:** $W = F(U_1,\dots,U_n)$ — general form, embodies any ethical judgement
+- **Bergson-Samuelson:** $W = F(U_1,\dots,U_n)$ — general form, embodies any ethical judgement ([→ Glossary](./GLOSSARY.md#term-bergson-samuelson))
 
-**Key result ($2\times2\times2$):** Tangency of GUPF and highest social indifference contour = **Point of Bliss** (social optimum).  
+**Key result ($2\times2\times2$):** Tangency of GUPF and highest social indifference contour = **Point of Bliss** (social optimum) ([→ Glossary](./GLOSSARY.md#term-point-of-bliss)).  
 **Arrow's Impossibility:** No SWF can simultaneously satisfy UD, P, IIA, and ND ([→ Glossary](./GLOSSARY.md#term-arrow-impossibility))
 
 **See:** [WF 5A](./answers-welfare.md#q-socwel-06) (SWF criteria), [WF 5B.Q5](./answers-welfare.md#q-pareto-05) (Welfare Theorems)
@@ -225,11 +225,11 @@ For an allocation to be Pareto-optimal, **all three** must hold simultaneously:
 
 **Normal form:** $G=(N,\{S_i\},\{u_i\})$
 
-**[Nash equilibrium](./answers-ge-game-extern-trade.md#q-game-01):** $s^*$ s.t. $u_i(s_i^*,s_{-i}^*)\ge u_i(s_i,s_{-i}^*)\;\forall s_i\in S_i,\forall i$
+**[Nash equilibrium](./answers-ge-game-extern-trade.md#q-game-01):** $s^*$ s.t. $u_i(s_i^*,s_{-i}^*)\ge u_i(s_i,s_{-i}^*)\;\forall s_i\in S_i,\forall i$ ([→ Glossary](./GLOSSARY.md#term-nash-equilibrium))
 
 **[Best response](./answers-ge-game-extern-trade.md#q-game-01):** $BR_i(s_{-i}) = \arg\max_{s_i} u_i(s_i,s_{-i})$ — NE is a fixed point: $s_i^*\in BR_i(s_{-i}^*)$
 
-**[Dominant strategy](./answers-ge-game-extern-trade.md#q-game-02):** $s_i^D$ is dominant if $u_i(s_i^D,s_{-i})>u_i(s_i',s_{-i})\;\forall s_{-i},\forall s_i'\neq s_i^D$
+**[Dominant strategy](./answers-ge-game-extern-trade.md#q-game-02):** $s_i^D$ is dominant if $u_i(s_i^D,s_{-i})>u_i(s_i',s_{-i})\;\forall s_{-i},\forall s_i'\neq s_i^D$ ([→ Glossary](./GLOSSARY.md#term-dominant-strategy))
 
 **[Prisoner's Dilemma](./answers-ge-game-extern-trade.md#q-game-02)** ($T>R>P>S,\;T+S<2R$):
 | | Cooperate | Defect |
@@ -237,11 +237,11 @@ For an allocation to be Pareto-optimal, **all three** must hold simultaneously:
 | Cooperate | $R,R$ | $S,T$ |
 | Defect | $T,S$ | $P,P$ |
 
-NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooperation sustainable if $\delta\ge(T-R)/(T-P)$ (see [Folk Theorem](./answers-ge-game-extern-trade.md#q-game-04)).
+NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooperation sustainable if $\delta\ge(T-R)/(T-P)$ (see [Folk Theorem](./answers-ge-game-extern-trade.md#q-game-04) ([→ Glossary](./GLOSSARY.md#term-folk-theorem))).
 
-**Mixed strategy:** $\sigma^*$ is a mixed NE if for each $i$, every pure $s_i$ in the support yields equal expected payoff.
+**Mixed strategy:** $\sigma^*$ is a mixed NE if for each $i$, every pure $s_i$ in the support yields equal expected payoff. ([→ Glossary](./GLOSSARY.md#term-mixed-strategy))
 
-**[Subgame perfect equilibrium](./answers-ge-game-extern-trade.md#q-game-03):** Strategy profile that is a NE in every subgame; solved via backward induction.
+**[Subgame perfect equilibrium](./answers-ge-game-extern-trade.md#q-game-03):** Strategy profile that is a NE in every subgame; solved via backward induction. ([→ Glossary](./GLOSSARY.md#term-subgame-perfect-ne))
 
 ### IO Market Models
 
@@ -251,7 +251,7 @@ NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooper
 | **[Bertrand (diff.)](./answers-ge-game-extern-trade.md#q-game-01)** | Price $p_i$ | Upward (strategic complements) | $p_i^*$ from intersection of BR functions |
 | **[Stackelberg](./answers-ge-game-extern-trade.md#q-game-03)** | Quantity (leader → follower) | — | Follower's BR + leader's $MR=MC$ |
 
-- **Cournot (homogeneous):** $P(Q) = a - bQ$, $Q = \sum q_i$, each firm solves $\max_{q_i} (P(Q)-c)q_i$
+- **Cournot (homogeneous):** $P(Q) = a - bQ$, $Q = \sum q_i$, each firm solves $\max_{q_i} (P(Q)-c)q_i$ ([→ Glossary](./GLOSSARY.md#term-cournot))
 - **Bertrand (differentiated):** $q_i = a - b p_i + d p_j$, BR: $p_i = (a + bc + d p_j)/2b$
 - **Stackelberg:** Leader anticipates follower's BR, solves $\max_{q_L} P(q_L + BR_F(q_L))\cdot q_L$
 
@@ -271,7 +271,7 @@ NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooper
 - **Tax incidence:** $\dfrac{P_b - P_W}{\tau} = \dfrac{\varepsilon_S}{\varepsilon_S - \varepsilon_D}$ (consumer share — [→ DP 3C](./answers-demand-production.md#q-compet-01))
 
 **VER vs Tariff:**
-- **VER:** Equivalent to tariff but **quota rent goes to foreign exporters** ($\tau \times Q_{\text{imports}}$), making it strictly worse for the importing country.
+- **VER:** Equivalent to tariff but **quota rent goes to foreign exporters** ($\tau \times Q_{\text{imports}}$), making it strictly worse for the importing country. ([→ Glossary](./GLOSSARY.md#term-ver))
 - **Welfare ranking** (home country): Tariff $\succ$ VER (same DWL but tariff preserves revenue)
 
 **See:** [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) (tariff numerical + VER comparison), [→ Glossary](./GLOSSARY.md#term-dwl)
@@ -280,18 +280,18 @@ NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooper
 
 ## 10 Externalities & Public Goods
 
-**[Negative externality](./answers-ge-game-extern-trade.md#q-extern-02):** Optimal [Pigouvian tax](./answers-welfare.md#q-pareto-04) $t=MED$ (marginal external damage at $Q^*$)
+**[Negative externality](./answers-ge-game-extern-trade.md#q-extern-02):** Optimal [Pigouvian tax](./answers-welfare.md#q-pareto-04) $t=MED$ (marginal external damage at $Q^*$) ([→ Glossary](./GLOSSARY.md#term-pigouvian-tax))
 - With tax: $PMC+t=SMC\Rightarrow$ private $\to$ social optimum
 
-**[Coase theorem](./answers-ge-game-extern-trade.md#q-extern-02):** If property rights well-defined, zero transaction costs, small number of agents $\Rightarrow$ private bargaining attains efficiency independently of initial rights allocation.
+**[Coase theorem](./answers-ge-game-extern-trade.md#q-extern-02):** If property rights well-defined, zero transaction costs, small number of agents $\Rightarrow$ private bargaining attains efficiency independently of initial rights allocation. ([→ Glossary](./GLOSSARY.md#term-coase-theorem))
 
-**Samuelson condition (public good):** $\displaystyle\sum_{i=1}^n MRS_{G,x}^i = MRT_{G,x}$
+**Samuelson condition (public good):** $\displaystyle\sum_{i=1}^n MRS_{G,x}^i = MRT_{G,x}$ ([→ Glossary](./GLOSSARY.md#term-samuelson))
 - Private goods: $MRS_i=MRT$ for each $i$ (individual condition)
 - Public goods: sum of MRS = MRT (aggregate condition)
 
 **[Lindahl prices](./GLOSSARY.md#term-lindahl):** Personalized prices $p_G^i$ s.t. $MRS^i=p_G^i$ and $\sum_ip_G^i=MC_G$
 
-**[Free rider problem](./answers-ge-game-extern-trade.md#q-extern-01):** Non-excludability $\Rightarrow$ each agent under-contributes to public good; Nash equilibrium voluntary contributions fall short of Samuelson optimum.
+**[Free rider problem](./answers-ge-game-extern-trade.md#q-extern-01):** Non-excludability $\Rightarrow$ each agent under-contributes to public good; Nash equilibrium voluntary contributions fall short of Samuelson optimum. ([→ Glossary](./GLOSSARY.md#term-free-rider))
 
 **See:** [GE 8](./answers-ge-game-extern-trade.md#q-extern-01) (tragedy of commons, steel-fishery, lemons, Spence signaling, bandwagon/snob), [WF 5B.Q4](./answers-welfare.md#q-pareto-04) (Pigouvian tax numerical)
 
@@ -315,4 +315,4 @@ Microeconomic theory is the foundation for several other MSc economics courses. 
 | **Consumer/producer surplus** | [Health (CEA/CUA, QALYs)](../health-economics/basics.md) · [Dev (project CBA)](../503-Development/basics.md) | Welfare measurement tools applied to health and development projects |
 | **Production theory** | [Development (dual economy)](../503-Development/basics.md) | Lewis structural transformation; sectoral productivity gaps |
 
-**Full cross-course reference:** [Cross-Links in README](./README.md#cross-course-links) · [Cross-cutting themes in index.md](../index.md#key-cross-cutting-themes)
+**Full cross-course reference:** [Cross-Links in README](./README.md#cross-course-links)

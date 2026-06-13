@@ -123,6 +123,12 @@
     var html =
       '<div class="ds-container">' +
 
+        /* Global error banner (hidden by default) */
+        '<div id="ds-error-banner" class="ds-error-banner" style="display:none">' +
+          '\u26A0\uFE0F Could not load dashboard data. ' +
+          'Please check your connection and try again.' +
+        '</div>' +
+
         /* ════ 1. Header Bar + Range Selector ════ */
         '<div class="ds-header-bar">' +
           '<div class="ds-header-text">' +
@@ -228,14 +234,15 @@
           '<div id="ds-session-section"></div>' +
         '</div>' +
 
-        /* ════ 13. Live Data Feed ════ */
-        '<div class="ds-section ds-debug">' +
+        /* ════ 13. Live Data Feed (hidden unless dev mode is enabled via localStorage) ════ */
+        '<div class="ds-section ds-debug" id="ds-debug-section" style="display:none">' +
           '<div class="ds-debug-header">' +
             '<span class="ds-debug-header-label">\uD83D\uDCCA Live Data Feed</span>' +
             '<span class="ds-debug-header-badge" id="ds-debug-badge"></span>' +
           '</div>' +
           '<p class="ds-debug-hint">Live records pulled from the database. ' +
-          'Expand a table to inspect raw rows.</p>' +
+          'Expand a table to inspect raw rows. ' +
+          '(Enable via localStorage: <code>sl_dev_mode=true</code>)</p>' +
           '<div id="ds-debug-tables"></div>' +
         '</div>' +
 
@@ -260,16 +267,17 @@
       }
     }
 
-    var activeCount = 0;
+    var activeCount = null;
     if (activeVisitors && activeVisitors.length > 0) {
-      activeCount = activeVisitors[0].active_visitors || 0;
+      var ac = activeVisitors[0].active_visitors;
+      activeCount = (ac != null && ac > 0) ? ac : null;
     }
 
     setText('ds-val-clicks', totalClicks != null ? String(totalClicks) : '\u2014');
     setText('ds-val-hours', totalStudyMs > 0 ? fmtHours(totalStudyMs) + 'h' : '\u2014');
     setText('ds-val-streak', streak != null ? String(streak) : '\u2014');
     setText('ds-val-today', todayMs != null ? fmtMinutes(todayMs) : '\u2014');
-    setText('ds-val-active', String(activeCount));
+    setText('ds-val-active', activeCount != null ? String(activeCount) : '\u2014');
   }
 
   /* ── 3. Draw 7-day bar chart (Canvas 2D) ────────────── */
@@ -418,10 +426,9 @@
 
       section.appendChild(row);
 
-      /* Hidden topic list container for this course */
+      /* Hidden topic list container for this course (CSS handles collapsed state via max-height: 0) */
       var topicList = el('div', 'ds-topic-list');
       topicList.setAttribute('data-course', courseName);
-      topicList.style.display = 'none';
       section.appendChild(topicList);
     });
   }
@@ -436,18 +443,16 @@
     if (!topicList || !topicList.classList.contains('ds-topic-list')) return;
 
     /* Toggle expand/collapse */
-    var isExpanded = topicList.style.display !== 'none';
+    var isExpanded = topicList.classList.contains('ds-topic-list--open');
 
     if (isExpanded) {
-      topicList.style.display = 'none';
-      if (icon) icon.textContent = '\u25B6';
+      topicList.classList.remove('ds-topic-list--open');
       courseEl.classList.remove('ds-topic-course--expanded');
       return;
     }
 
     /* Expand */
-    topicList.style.display = 'block';
-    if (icon) icon.textContent = '\u25BC';
+    topicList.classList.add('ds-topic-list--open');
     courseEl.classList.add('ds-topic-course--expanded');
 
     /* Fetch topics if not cached */
@@ -731,10 +736,18 @@
 
     section.appendChild(grid);
 
-    /* Label below grid */
-    var label = el('div', 'ds-hourly-label');
-    label.textContent = 'Hour of Day (0\u201323) \u2014 darker = more study time';
-    section.appendChild(label);
+    /* Label grid below — one label per hour, matching the 24-cell CSS grid */
+    var labelGrid = el('div', 'ds-hourly-labels');
+    for (var h = 0; h < 24; h++) {
+      var lbl = el('div', 'ds-hourly-label');
+      lbl.textContent = h;
+      labelGrid.appendChild(lbl);
+    }
+    section.appendChild(labelGrid);
+
+    var caption = el('div', 'ds-hourly-caption');
+    caption.textContent = 'Hour of Day (0\u201323) \u2014 darker = more study time';
+    section.appendChild(caption);
   }
 
   /* ── 11. My click activity ──────────────────────────── */
@@ -813,9 +826,16 @@
       return;
     }
 
-    var start  = new Date(session.startTime);
-    var totalMs = session.totalStudyMs || 0;
-    var pages  = session.pages || [];
+    var start, totalMs, pages;
+    try {
+      start   = new Date(session.startTime);
+      totalMs = session.totalStudyMs || 0;
+      pages   = session.pages || [];
+      if (isNaN(start.getTime())) throw new Error('Invalid date');
+    } catch (e) {
+      showEmpty(section);
+      return;
+    }
 
     var info = el('div');
     info.innerHTML =
@@ -952,6 +972,8 @@
     }).catch(function (err) {
       /* Global catch — never break the page */
       console.warn('Dashboard: error loading data', err);
+      var banner = document.getElementById('ds-error-banner');
+      if (banner) banner.style.display = '';
     });
   }
 
@@ -1125,8 +1147,12 @@
     /* Load and render all data */
     loadAll();
 
-    /* Render debug logger after main dashboard */
-    renderDebugLogger();
+    /* Render debug logger after main dashboard (only if dev mode enabled) */
+    var debugSection = document.getElementById('ds-debug-section');
+    if (debugSection && lsGet('sl_dev_mode', false)) {
+      debugSection.style.display = '';
+      renderDebugLogger();
+    }
 
     /* Responsive chart: redraw on resize */
     var canvas = document.getElementById('ds-chart-canvas');

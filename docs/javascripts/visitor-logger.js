@@ -100,43 +100,6 @@ function sbSelect(table, opts) {
   });
 }
 
-/** Call an RPC with automatic retry on failure */
-function sbRpcRetry(fn, params, retries) {
-  retries = retries !== undefined ? retries : 1;
-  function attempt(n) {
-    return sbRpc(fn, params).then(function (r) {
-      if (r.ok) return r;
-      if (n > 0) {
-        return new Promise(function (resolve) { setTimeout(resolve, 2000); })
-          .then(function () { return attempt(n - 1); });
-      }
-      return r;
-    });
-  }
-  return attempt(retries);
-}
-
-var ttlCache = {};
-
-function cachedRpc(fn, params, ttl) {
-  ttl = ttl || 30000;
-  var key = fn + ':' + JSON.stringify(params || {});
-  var entry = ttlCache[key];
-  if (entry && (Date.now() - entry.ts) < ttl) {
-    return Promise.resolve(entry.data);
-  }
-  return sbRpcRetry(fn, params).then(function (r) {
-    if (!r.ok) {
-      if (entry) return entry.data;
-      throw new Error('RPC ' + fn + ' failed: ' + r.status);
-    }
-    return r.json().then(function (data) {
-      ttlCache[key] = { data: data, ts: Date.now() };
-      return data;
-    });
-  });
-}
-
 /* ══════════════════════════════════════════════════════════════
  *  VISITOR ID — Persistent across browser sessions
  *  Stored in localStorage, survives tab closes, cache clears
@@ -328,8 +291,8 @@ function getContentTypeFromPath(path) {
  * ══════════════════════════════════════════════════════════════ */
 function getTodayStats() {
   return Promise.all([
-    cachedRpc('get_clicks_today'),
-    cachedRpc('get_study_ms_today'),
+    sbRpc('get_clicks_today').then(function (r) { return r.ok ? r.json() : null; }),
+    sbRpc('get_study_ms_today').then(function (r) { return r.ok ? r.json() : null; }),
   ]).then(function (results) {
     return {
       clicks:  typeof results[0] === 'number' ? results[0] : 0,
@@ -866,8 +829,8 @@ window.__studyLogger = {
     body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
 
     Promise.all([
-      cachedRpc('get_clicks_today'),
-      cachedRpc('get_study_ms_today'),
+      sbRpc('get_clicks_today').then(function (r) { return r.ok ? r.json() : null; }),
+      sbRpc('get_study_ms_today').then(function (r) { return r.ok ? r.json() : null; }),
     ]).then(function (results) {
       // RPCs return scalar BIGINT (plain number), not objects
       var clicks  = typeof results[0] === 'number' ? results[0] : 0;
@@ -902,7 +865,11 @@ window.__studyLogger = {
   function renderCourses(body) {
     body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
 
-    cachedRpc('get_course_breakdown')
+    sbRpc('get_course_breakdown')
+      .then(function (res) {
+        if (!res.ok) throw new Error('Supabase RPC error: ' + res.status);
+        return res.json();
+      })
       .then(function (data) {
         var rows = data || [];
         if (rows.length === 0) {
@@ -911,18 +878,18 @@ window.__studyLogger = {
         }
 
         var maxStudy = 1;
-        rows.forEach(function (r) { maxStudy = Math.max(maxStudy, r.total_study_ms || 0); });
+        rows.forEach(function (r) { maxStudy = Math.max(maxStudy, r.total_visits || 0); });
 
         var h = '<div class="vl-scroll">';
         rows.forEach(function (r) {
           var courseName = r.course || r.category || 'Other';
-          var studyMs    = r.total_study_ms || 0;
-          var pct        = Math.min((studyMs / maxStudy) * 100, 100);
+          var visits     = r.total_visits || 0;
+          var pct        = Math.min((visits / maxStudy) * 100, 100);
           h +=
             '<div class="vl-row">' +
             '  <div class="vl-row-info">' +
             '    <span class="vl-name">' + esc(courseName) + '</span>' +
-            '    <span class="vl-time">' + fmtShort(studyMs) + '</span>' +
+            '    <span class="vl-count">' + visits + '</span>' +
             '  </div>' +
             '  <div class="vl-bar"><div class="vl-fill" style="width:' + pct + '%"></div></div>' +
             '</div>';

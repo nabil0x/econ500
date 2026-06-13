@@ -178,25 +178,6 @@
     <span>Key figures for Bangladesh, development, health, and policy examples.</span>
   </a>
 </div>
-
-<h2 id="key-cross-cutting-themes">🔗 Key Cross-Cutting Themes</h2>
-
-<details class="ju-theme-drawer">
-  <summary>Cross-course themes worth revising together</summary>
-
-| Theme | Appears In |
-|-------|-----------|
-| **Export dependency / resource curse** | Venezuela, Bangladesh Trade (503); RMG, Cash Crops, Food Crisis (512) |
-| **State vs market** | Venezuela (503); Modernization, Dependency, Washington Consensus (512) |
-| **Role of IFIs (WB/IMF)** | Trade policy (503); Washington Consensus, Agriculture (512) |
-| **Food security and land use** | Free Trade, Food Crisis, Dairy (512) |
-| **Value addition / industrialization** | Bangladesh Trade (503); RMG Sector (512) |
-| **Gender and development** | Naila Kabeer (503) |
-| **Growth and convergence** | Solow, Ramsey (Macro); Bangladesh as outlier (503) |
-| **Pareto optimality and welfare** | General Equilibrium (Micro) |
-
-</details>
-
 <div class="ju-study-note">
   <strong>Suggested route:</strong> choose one course pathway, review its basics, read two solved answers, then attempt one past-paper question before opening the model answer.
 </div>

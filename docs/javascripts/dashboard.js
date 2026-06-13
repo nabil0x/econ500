@@ -414,6 +414,27 @@
     });
   }
 
+  /* ── Bubble helpers ──────────────────────────────────── */
+  function truncPath(p) {
+    if (!p) return '/';
+    var s = p.replace(/^\/econ500\//, '');
+    if (s.length > 35) s = s.slice(0, 32) + '...';
+    return s || '/';
+  }
+
+  function shortId(id) {
+    if (!id) return '\u2014';
+    return id.length > 10 ? id.slice(0, 10) + '\u2026' : id;
+  }
+
+  function fmtTime(iso) {
+    if (!iso) return '\u2014';
+    try {
+      var d = new Date(iso);
+      return d.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+    } catch (e) { return String(iso); }
+  }
+
   /* ── Render live data feed (per-table collapsible) ──── */
   function renderDebugLogger() {
     var target = document.getElementById('ds-debug-tables');
@@ -484,32 +505,35 @@
           empty.textContent = 'No records yet';
           scrollWrap.appendChild(empty);
         } else {
-          var tbl = el('table', 'ds-dt-table');
+          var bubbleContainer = el('div', 'ds-dt-bubbles');
 
-          var thead = el('thead');
-          var headerRow = el('tr');
-          table.cols.forEach(function (c) {
-            var th = el('th');
-            th.textContent = c;
-            headerRow.appendChild(th);
-          });
-          thead.appendChild(headerRow);
-          tbl.appendChild(thead);
-
-          var tbody = el('tbody');
           rows.forEach(function (row) {
-            var tr = el('tr');
-            table.cols.forEach(function (c) {
-              var td = el('td');
-              var val = row[c];
-              td.textContent = val != null ? String(val) : '\u2014';
-              td.title = val != null ? String(val) : '';
-              tr.appendChild(td);
-            });
-            tbody.appendChild(tr);
+            var bubble = el('div', 'ds-dt-bubble');
+
+            /* Build bubble content per table type */
+            var content = '';
+            if (table.name === 'page_visits') {
+              content += '<span class="ds-bubble-field ds-bubble-path" title="' + esc(row.path || '') + '">' + esc(truncPath(row.path)) + '</span>';
+              if (row.title) content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field ds-bubble-title">' + esc(row.title) + '</span>';
+              content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field ds-bubble-time">' + fmtTime(row.created_at) + '</span>';
+            } else if (table.name === 'click_events') {
+              content += '<span class="ds-bubble-field ds-bubble-path" title="' + esc(row.path || '') + '">' + esc(truncPath(row.path)) + '</span>';
+              content += '<span class="ds-bubble-arrow">\u2192</span>';
+              content += '<span class="ds-bubble-field ds-bubble-target" title="' + esc(row.target || '') + '">' + esc(truncPath(row.target)) + '</span>';
+              if (row.category) content += '<span class="ds-bubble-tag">' + esc(row.category) + '</span>';
+              content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field ds-bubble-time">' + fmtTime(row.created_at) + '</span>';
+            } else if (table.name === 'study_sessions') {
+              content += '<span class="ds-bubble-field ds-bubble-id">\u{1F4CB} ' + esc(shortId(row.session_id)) + '</span>';
+              content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field">' + esc(row.date || '') + '</span>';
+              content += '<span class="ds-bubble-sep">|</span><span class="ds-bubble-field ds-bubble-ms">' + fmtMinutes(row.total_study_ms || 0) + ' min</span>';
+              content += '<span class="ds-bubble-tag">' + (row.pages_studied || 0) + ' pages</span>';
+            }
+
+            bubble.innerHTML = content;
+            bubbleContainer.appendChild(bubble);
           });
-          tbl.appendChild(tbody);
-          scrollWrap.appendChild(tbl);
+
+          scrollWrap.appendChild(bubbleContainer);
         }
 
         body.appendChild(scrollWrap);

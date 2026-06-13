@@ -380,40 +380,99 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* ── Data table ─────────────────────────────────────────── */
-.ds-dt-table {
-  width: 100%;
-  border-collapse: collapse;
+/* ── Bubble container ──────────────────────────────────── */
+.ds-dt-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── Individual bubble ─────────────────────────────────── */
+.ds-dt-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
   font-size: 0.7rem;
-  line-height: 1.55;
-}
-
-.ds-dt-table th {
-  text-align: left;
-  padding: 5px 8px;
-  font-weight: 700;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--md-default-fg-color--light, #888);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  white-space: nowrap;
-}
-
-.ds-dt-table td {
-  padding: 4px 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  line-height: 1.4;
   color: var(--md-default-fg-color, #444);
+  transition: background 0.15s, box-shadow 0.2s;
   white-space: nowrap;
+  max-width: 100%;
+  cursor: default;
+}
+
+.ds-dt-bubble:hover {
+  background: rgba(0, 0, 0, 0.055);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Field types */
+.ds-bubble-field {
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 200px;
-  font-variant-numeric: tabular-nums;
 }
 
-.ds-dt-table tbody tr:hover {
-  background: rgba(0, 0, 0, 0.025);
+.ds-bubble-path {
+  max-width: 180px;
+  color: var(--md-typeset-a-color, #3f51b5);
+}
+
+.ds-bubble-title {
+  max-width: 220px;
+  font-weight: 500;
+  color: var(--md-default-fg-color, #333);
+}
+
+.ds-bubble-time {
+  color: var(--md-default-fg-color--light, #888);
+  font-size: 0.65rem;
+}
+
+.ds-bubble-target {
+  max-width: 160px;
+  color: var(--md-typeset-a-color, #3f51b5);
+}
+
+.ds-bubble-id {
+  font-weight: 600;
+  color: var(--md-default-fg-color, #333);
+}
+
+.ds-bubble-ms {
+  font-weight: 600;
+  color: var(--md-primary-fg-color, #3f51b5);
+}
+
+/* Separator between fields */
+.ds-bubble-sep {
+  color: rgba(0, 0, 0, 0.12);
+  font-size: 0.6rem;
+  margin: 0 1px;
+}
+
+/* Arrow for click events (path → target) */
+.ds-bubble-arrow {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.65rem;
+  margin: 0 2px;
+}
+
+/* Category / page count tag */
+.ds-bubble-tag {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--md-default-fg-color--light, #888);
+  white-space: nowrap;
 }
 
 /* ── Dark mode overrides ────────────────────────────────── */
@@ -459,18 +518,49 @@
   color: var(--md-default-fg-color--light, #777);
 }
 
-[data-md-color-scheme="ju-dark"] .ds-dt-table th {
-  color: var(--md-default-fg-color--light, #b6b0a5);
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-
-[data-md-color-scheme="ju-dark"] .ds-dt-table td {
+[data-md-color-scheme="ju-dark"] .ds-dt-bubble {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.07);
   color: var(--md-default-fg-color, #ece7dc);
-  border-bottom-color: rgba(255, 255, 255, 0.04);
 }
 
-[data-md-color-scheme="ju-dark"] .ds-dt-table tbody tr:hover {
-  background: rgba(255, 255, 255, 0.03);
+[data-md-color-scheme="ju-dark"] .ds-dt-bubble:hover {
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-title {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-path,
+[data-md-color-scheme="ju-dark"] .ds-bubble-target {
+  color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-time {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-id {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-ms {
+  color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-sep {
+  color: rgba(255, 255, 255, 0.12);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-arrow {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+[data-md-color-scheme="ju-dark"] .ds-bubble-tag {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--md-default-fg-color--light, #b6b0a5);
 }
 
 /* ── Responsive: tablet ─────────────────────────────────────── */

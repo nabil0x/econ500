@@ -73,7 +73,7 @@ Start here for: exam strategy, 10-day study plan, topic prioritization, and file
 
 | PDF | Content |
 |-----|---------|
-| [WelfareChange — CV, EV & CS](./WelfareChange%20(CV%2C%20EV%20and%20CS).pdf) | CV/EV/CS measurement paper |
+| [WelfareChange — CV, EV & CS (notes)](./welfare-change-reference.md) | CV/EV/CS measurement paper (PDF unavailable — see reference notes) |
 | [Welfare Sheet](./resources/welfare%20sheet.pdf) | Welfare reference (scanned) |
 | [Welfare Sheet — Pigou](./resources/welfare%20sheet%20Pigou.pdf) | Pigouvian welfare (scanned) |
 

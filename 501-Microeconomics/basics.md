@@ -74,7 +74,7 @@ Exponents are **directly the elasticities**: $\gamma = \varepsilon_{X,P_X},\ \de
 |---|---|
 | $>1$ | Luxury (income-elastic normal) |
 | $0<\cdot<1$ | Necessity (income-inelastic normal) |
-| $<0$ | Inferior good |
+| $<0$ | Inferior good | ([→ Glossary](./GLOSSARY.md#term-income-elasticity))
 
 | Cross-price $\varepsilon_{X,P_Y}$ | Label |
 |---|---|
@@ -227,7 +227,7 @@ For an allocation to be Pareto-optimal, **all three** must hold simultaneously:
 
 **[Nash equilibrium](./answers-ge-game-extern-trade.md#q-game-01):** $s^*$ s.t. $u_i(s_i^*,s_{-i}^*)\ge u_i(s_i,s_{-i}^*)\;\forall s_i\in S_i,\forall i$ ([→ Glossary](./GLOSSARY.md#term-nash-equilibrium))
 
-**[Best response](./answers-ge-game-extern-trade.md#q-game-01):** $BR_i(s_{-i}) = \arg\max_{s_i} u_i(s_i,s_{-i})$ — NE is a fixed point: $s_i^*\in BR_i(s_{-i}^*)$
+**[Best response](./answers-ge-game-extern-trade.md#q-game-01):** $BR_i(s_{-i}) = \arg\max_{s_i} u_i(s_i,s_{-i})$ — NE is a fixed point: $s_i^*\in BR_i(s_{-i}^*)$ ([→ Glossary](./GLOSSARY.md#term-best-response))
 
 **[Dominant strategy](./answers-ge-game-extern-trade.md#q-game-02):** $s_i^D$ is dominant if $u_i(s_i^D,s_{-i})>u_i(s_i',s_{-i})\;\forall s_{-i},\forall s_i'\neq s_i^D$ ([→ Glossary](./GLOSSARY.md#term-dominant-strategy))
 
@@ -253,7 +253,7 @@ NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooper
 
 - **Cournot (homogeneous):** $P(Q) = a - bQ$, $Q = \sum q_i$, each firm solves $\max_{q_i} (P(Q)-c)q_i$ ([→ Glossary](./GLOSSARY.md#term-cournot))
 - **Bertrand (differentiated):** $q_i = a - b p_i + d p_j$, BR: $p_i = (a + bc + d p_j)/2b$
-- **Stackelberg:** Leader anticipates follower's BR, solves $\max_{q_L} P(q_L + BR_F(q_L))\cdot q_L$
+- **Stackelberg:** Leader anticipates follower's BR, solves $\max_{q_L} P(q_L + BR_F(q_L))\cdot q_L$ ([→ Glossary](./GLOSSARY.md#term-stackelberg))
 
 **See:** [GE 7](./answers-ge-game-extern-trade.md#q-game-01) (Bertrand, PD, entry, grim trigger, unraveling, centipede), [→ Glossary](./GLOSSARY.md#term-bertrand)
 
@@ -265,10 +265,10 @@ NE = $(\text{Defect},\text{Defect})$ (strictly dominant). In repeated PD: cooper
 
 **Free trade vs autarky:** World price $P_W$ below autarky $\Rightarrow$ imports = $Q_d - Q_s$.
 
-**Tariff analysis ($\tau$ per unit):**
+**Tariff analysis ($\tau$ per unit):** ([→ Glossary](./GLOSSARY.md#term-tariff))
 - Buyer price rises to $P_W + \tau$, domestic $Q_s\uparrow$, $Q_d\downarrow$, imports $\downarrow$
 - **Tariff DWL:** $\displaystyle \text{DWL} = \frac12\tau(\Delta Q_s + \Delta Q_d)$ — production + consumption distortion triangles
-- **Tax incidence:** $\dfrac{P_b - P_W}{\tau} = \dfrac{\varepsilon_S}{\varepsilon_S - \varepsilon_D}$ (consumer share — [→ DP 3C](./answers-demand-production.md#q-compet-01))
+- **Tax incidence:** $\dfrac{P_b - P_W}{\tau} = \dfrac{\varepsilon_S}{\varepsilon_S - \varepsilon_D}$ (consumer share — [→ DP 3C](./answers-demand-production.md#q-compet-01)) ([→ Glossary](./GLOSSARY.md#term-tax-incidence))
 
 **VER vs Tariff:**
 - **VER:** Equivalent to tariff but **quota rent goes to foreign exporters** ($\tau \times Q_{\text{imports}}$), making it strictly worse for the importing country. ([→ Glossary](./GLOSSARY.md#term-ver))

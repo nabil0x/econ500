@@ -375,12 +375,16 @@
 <a id="term-homogeneity"></a>
 | **Log-linear Demand** | $X = \alpha P^\gamma P_Z^\delta I^\eta$ | Constant elasticities; $\gamma$ own-price, $\delta$ cross-price, $\eta$ income; homogeneity: $\gamma+\delta+\eta = 0$ | [DP 2.Q1](./answers-demand-production.md#q-demand-01) | [→](./GLOSSARY-DETAILED.md#detail-term-log-linear-demand) |
 | **Linear Expenditure (Stone-Geary)** | $u = \prod(x_i - \gamma_i)^{\alpha_i}$ | Subsistence consumption $\gamma_i$; linear Engel curves | [CT 1B](./answers-consumer-theory.md) (extension) | [→](./GLOSSARY-DETAILED.md#detail-term-linear-expenditure) |
+<a id="term-income-elasticity"></a>
+| **Income Elasticity Classification** | $\varepsilon_{X,I} < 0$ inferior; $0 < \varepsilon_{X,I} < 1$ necessity; $\varepsilon_{X,I} > 1$ luxury | Income-elastic normal = luxury; income-inelastic normal = necessity; negative = inferior | [basics.md](./basics.md) | [→](./GLOSSARY-DETAILED.md#detail-term-income-elasticity) |
 <a id="term-giffen"></a>
 | **Giffen Good** | Good whose demand curve slopes **up** ($\partial x/\partial p > 0$); large income effect > substitution effect; violates Law of Demand but not rationality | [CT 1B.Q4](./answers-consumer-theory.md#q-cons-1b-04), [EXAM-COMMON-MISTAKES.md](./EXAM-COMMON-MISTAKES.md) | [→](./GLOSSARY-DETAILED.md#detail-term-giffen-good) |
 <a id="term-perfect-substitutes"></a>
 | **Perfect Substitutes** | Linear utility $u = a x_1 + b x_2$ or production $q = aK + bL$; $\sigma = \infty$; consumer buys only the cheaper good | [CT 1B.Q8](./answers-consumer-theory.md#q-cons-1b-08), [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) | [→](./GLOSSARY-DETAILED.md#detail-term-perfect-substitutes) |
 <a id="term-cournot"></a>
 | **Cournot Competition** | Oligopoly model where firms compete in **quantities**; best-response functions slope down (strategic substitutes); NE at intersection | [GE 7.Q1](./answers-ge-game-extern-trade.md#q-game-01), [EXAM-COMMON-MISTAKES.md](./EXAM-COMMON-MISTAKES.md) | [→](./GLOSSARY-DETAILED.md#detail-term-cournot) |
+<a id="term-stackelberg"></a>
+| **Stackelberg Competition** | Oligopoly with sequential moves (leader → follower); leader anticipates follower's BR; solves $\max_{q_L} P(q_L + BR_F(q_L)) \cdot q_L$ | [GE 7.Q3](./answers-ge-game-extern-trade.md#q-game-03) | [→](./GLOSSARY-DETAILED.md#detail-term-stackelberg) |
 
 ---
 
@@ -398,6 +402,10 @@
 | **CS** | Area under Marshallian demand between prices | [WF Q1](./answers-welfare.md#q-welfare-01)–[Q5](./answers-welfare.md#q-welfare-05) | [→](./GLOSSARY-DETAILED.md#detail-term-cs) |
 | **DWL (tariff)** | $\frac12 \times t \times \Delta Q$ — tariff revenue lost to inefficient trade | [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) | [→](./GLOSSARY-DETAILED.md#detail-term-dwl-tariff) |
 | **DWL (tax)** | $\frac12 \times t \times \Delta Q$ — consumer+producer surplus lost | [DP 3C.Q1](./answers-demand-production.md#q-compet-01) | [→](./GLOSSARY-DETAILED.md#detail-term-dwl-tax) |
+<a id="term-tariff"></a>
+| **Tariff** | Per-unit tax $\tau$ on imports; raises domestic price to $P_W + \tau$; generates DWL = $\frac12 \tau (\Delta Q_s + \Delta Q_d)$ | [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) | [→](./GLOSSARY-DETAILED.md#detail-term-tariff) |
+<a id="term-tax-incidence"></a>
+| **Tax Incidence** | Division of tax burden between consumers and producers: $\dfrac{P_b - P_W}{\tau} = \dfrac{\varepsilon_S}{\varepsilon_S - \varepsilon_D}$ (consumer share) | [DP 3C.Q1](./answers-demand-production.md#q-compet-01) | [→](./GLOSSARY-DETAILED.md#detail-term-tax-incidence) |
 | **Point of Bliss** | Tangency of GUPF with highest possible SWF indifference curve | [WF 5A.Q2](./answers-welfare.md#q-socwel-02) | [→](./GLOSSARY-DETAILED.md#detail-term-point-of-bliss) |
 <a id="term-utilitarian"></a>
 <a id="term-rawlsian"></a>
@@ -432,6 +440,8 @@
 | **Uniqueness of GE** | Only one $p^*$; requires gross substitutes (not guaranteed) | [GE 6A.Q3](./answers-ge-game-extern-trade.md#q-ge-03) | [→](./GLOSSARY-DETAILED.md#detail-term-uniqueness-ge) |
 | **Stability of GE** | $dE/dP < 0$ at equilibrium (tâtonnement); multiple eq → some unstable | [GE 6A.Q3](./answers-ge-game-extern-trade.md#q-ge-03) | [→](./GLOSSARY-DETAILED.md#detail-term-stability-ge) |
 | **Nash Equilibrium** | $s_i^*$ is best response to $s_{-i}^*$; no unilateral profitable deviation | [GE 7.Q1](./answers-ge-game-extern-trade.md#q-game-01) | [→](./GLOSSARY-DETAILED.md#detail-term-nash-equilibrium) |
+<a id="term-best-response"></a>
+| **Best Response** | $BR_i(s_{-i}) = \arg\max_{s_i} u_i(s_i, s_{-i})$ — optimal action given opponents' strategies; NE is a fixed point $s_i^* \in BR_i(s_{-i}^*)$ | [GE 7.Q1](./answers-ge-game-extern-trade.md#q-game-01) | [→](./GLOSSARY-DETAILED.md#detail-term-best-response) |
 <a id="term-centipede"></a>
 | **Subgame Perfect NE** | NE in every subgame; eliminates non-credible threats | [GE 7.Q3](./answers-ge-game-extern-trade.md#q-game-03) | [→](./GLOSSARY-DETAILED.md#detail-term-subgame-perfect-ne) |
 <a id="term-dominant-strategy"></a>

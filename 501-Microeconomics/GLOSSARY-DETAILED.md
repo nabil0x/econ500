@@ -1012,6 +1012,17 @@
 
 **Also see:** [Equation Explainer — Slutsky Equation](./EQUATION-EXPLAINER.md#eq-slutsky)
 
+<a id="detail-term-income-elasticity"></a>
+### **Income Elasticity Classification** (Luxury / Necessity / Inferior)
+
+**What it is:** The income elasticity of demand $\varepsilon_{X,I} = \frac{\partial X}{\partial I} \cdot \frac{I}{X}$ measures how quantity demanded responds to a change in consumer income. The sign and magnitude classify goods into three categories. **Luxury** (income-elastic normal): $\varepsilon_{X,I} > 1$ — demand rises more than proportionally with income (e.g., restaurant meals, travel). **Necessity** (income-inelastic normal): $0 < \varepsilon_{X,I} < 1$ — demand rises less than proportionally (e.g., food, housing). **Inferior good**: $\varepsilon_{X,I} < 0$ — demand falls as income rises (e.g., public transit, generic brands, potatoes). A **normal good** has $\varepsilon_{X,I} > 0$ (luxury + necessity combined).
+
+**Why it matters:** Income elasticity classification is fundamental for understanding Engel's Law (as income rises, the food budget share falls — food is a necessity in most economies), structural transformation (luxury goods become more important as economies grow), and poverty measurement (inferior goods can trap consumers in low-quality consumption). The distinction between luxuries and necessities is vital for: (1) tax policy — taxing necessities is regressive, (2) forecasting — luxury demand grows faster than GDP, (3) international trade — developing countries export necessities (low income elasticity → terms of trade decline over time, the Prebisch-Singer hypothesis).
+
+**Exam tip:** Income elasticity can be derived from log-linear demand or Cobb-Douglas (where $\eta = 1$ for all goods — CD does not permit luxuries/necessities). For Stone-Geary/LES, the income elasticity of good $i$ is $\eta_i = \alpha_i w / (p_i x_i)$, which exceeds 1 when the good's budget share is small but rises as income grows. Common mistake: confusing normal goods (positive income elasticity) with necessity goods ($0 < \eta < 1$). All luxuries and necessities are normal, but only necessities are "income-inelastic normal." Engel curves: luxury → convex, necessity → concave, inferior → downward sloping.
+
+**Also see:** [Equation Explainer — Elasticities](./EQUATION-EXPLAINER.md#eq-elasticities), [Log-linear Demand](#detail-term-log-linear-demand) (elasticity interpretation)
+
 <a id="detail-term-perfect-substitutes"></a>
 ### **Perfect Substitutes**
 
@@ -1031,6 +1042,17 @@
 **Why it matters:** Cournot is the foundational model of oligopoly theory. It bridges perfect competition (many firms → price approaches MC) and monopoly (one firm). As $n$ increases, the Cournot price converges to the competitive price. The Lerner Index for firm $i$ is $(P - MC)/P = s_i / \varepsilon$, where $s_i$ is market share and $\varepsilon$ is market demand elasticity. This shows market power depends on both market share and demand elasticity. Cournot is used in: industrial organization (merger analysis), trade (reciprocal dumping model), and regulation.
 
 **Exam tip:** The core problem: "Find Cournot equilibrium for $n$ firms with linear demand and constant MC." Steps: (1) write firm $i$'s profit, (2) take FOC, (3) solve best-response function, (4) impose symmetry, (5) solve for $q$, (6) compute price, profit, and HHI. As $n \to \infty$, $P \to MC$. Common mistake: confusing Cournot (quantities) with Bertrand (prices). With homogeneous goods, Cournot gives positive markups; Bertrand gives $P = MC$ (Bertrand paradox). Cournot best responses slope down (strategic substitutes); Bertrand best responses slope up (strategic complements). Industries with capacity constraints (auto, steel, oil) fit Cournot better; those with low fixed costs (software, retail) fit Bertrand better.
+
+<a id="detail-term-stackelberg"></a>
+### **Stackelberg Competition**
+
+**What it is:** Stackelberg competition is an oligopoly model where firms move sequentially: a **leader** chooses its quantity $q_L$ first, and a **follower** observes $q_L$ and then chooses its own quantity $q_F$. The follower's best-response function $BR_F(q_L)$ is the same as in Cournot (given the leader's output, the follower maximizes its profit). The leader, anticipating the follower's response, chooses $q_L$ to maximize $\pi_L(q_L, BR_F(q_L))$. For linear demand $P = A - B(q_L + q_F)$ and constant MC $c$, the follower's BR is $q_F = (A - c - B q_L)/(2B)$, and the leader produces $q_L = (A - c)/(2B)$ (twice the Cournot quantity). Total output is higher and price lower than Cournot — the leader enjoys a first-mover advantage (higher profit than in Cournot, but less than monopoly).
+
+**Why it matters:** Stackelberg shows the value of commitment in strategic settings. The leader's ability to commit to a large quantity changes the strategic outcome, giving a first-mover advantage. The model applies to: (1) industries with dominant firms (e.g., OPEC as leader, fringe firms as followers), (2) R&D races where the first innovator sets the standard, (3) entry deterrence where the incumbent can over-invest to signal commitment. Comparing Stackelberg to Cournot and Bertrand shows how the order of moves and the strategic variable (quantity vs. price) fundamentally alter market outcomes.
+
+**Exam tip:** Stackelberg is solved by backward induction: (1) find the follower's BR $q_F(q_L)$, (2) substitute into the leader's profit, (3) solve leader's FOC, (4) substitute back to get $q_F$. The leader always produces more and earns more than in Cournot. Total output is larger than Cournot but smaller than perfect competition. Common mistake: solving both firms simultaneously (Cournot) instead of sequentially. Stackelberg is a Stackelberg-Schelling commitment model: the leader's advantage comes from credibility — if the leader cannot commit, the outcome reverts to Cournot.
+
+**Also see:** [Equation Explainer — Game Theory](./EQUATION-EXPLAINER.md#eq-game-theory), [Cournot Competition](#detail-term-cournot) (simultaneous quantity competition)
 
 ---
 
@@ -1111,6 +1133,28 @@
 **Why it matters:** The DWL of taxation is central to public finance and optimal tax theory. The size of the DWL depends on the elasticities of supply and demand. More elastic curves mean larger DWL for the same tax because the quantity responds more. This is the key insight behind Ramsey's inverse elasticity rule: to minimize DWL, tax inelastic goods more heavily. Tax revenue is a transfer; DWL is the real cost of taxation.
 
 **Exam tip:** Draw the supply-demand diagram with the tax wedge. The DWL triangle sits between the original equilibrium quantity and the new quantity, bounded above by the demand curve and below by the supply curve. Elasticity determines how big the triangle is. Inelastic demand or supply means small DWL.
+
+<a id="detail-term-tariff"></a>
+### **Tariff**
+
+**What it is:** A tariff is a per-unit tax $\tau$ imposed on imported goods. It raises the domestic price from the world price $P_W$ to $P_W + \tau$. The effects: (1) consumer surplus falls (higher price reduces quantity demanded), (2) domestic producer surplus rises (domestic firms produce more at the higher price), (3) government collects tariff revenue $\tau \times Q_{\text{imports}}$, (4) net welfare loss = deadweight loss from consumption distortion (consumers buy less) and production distortion (domestic firms produce too much). The tariff DWL triangle is $\frac12 \tau (\Delta Q_s + \Delta Q_d)$.
+
+**Why it matters:** Tariff analysis is the standard framework for evaluating trade policy in this course. The key comparison is between tariffs and VERs (voluntary export restraints). A tariff preserves government revenue (which stays in the home country), while a VER transfers the equivalent revenue to foreign exporters — making VER strictly worse for the importing country. Tariff analysis also connects to optimal tariff theory (a large country can improve its terms of trade by imposing a tariff), political economy (domestic producers lobby for protection), and the Stolper-Samuelson theorem (trade protection raises the return to the scarce factor).
+
+**Exam tip:** Draw the domestic supply and demand diagram with world price $P_W$ and the tariff-inclusive price $P_W + \tau$. Shade: (a) consumer surplus loss (large rectangle + triangles), (b) producer surplus gain (small rectangle), (c) government revenue (rectangle on imports), (d) DWL = two small triangles on the production and consumption sides. The welfare ranking: free trade > tariff > VER. Common mistake: forgetting that a tariff has BOTH a production DWL and a consumption DWL — they must be added together.
+
+**Also see:** [Equation Explainer — Extern & Trade](./EQUATION-EXPLAINER.md#eq-extern-trade), [DWL (Tariff)](#detail-term-dwl-tariff), [VER](./GLOSSARY.md#term-ver)
+
+<a id="detail-term-tax-incidence"></a>
+### **Tax Incidence**
+
+**What it is:** Tax incidence measures how the burden of a tax is divided between consumers and producers. For a per-unit tax $\tau$, the consumer price rises to $p_b$ (buyer price) and the producer price falls to $p_s = p_b - \tau$ (seller price). The consumer share is $\frac{p_b - p_0}{\tau}$ and the producer share is $\frac{p_0 - p_s}{\tau}$, where $p_0$ is the pre-tax equilibrium price. Using elasticities: $\frac{p_b - p_0}{\tau} = \frac{\varepsilon_S}{\varepsilon_S - \varepsilon_D}$, where $\varepsilon_S$ is supply elasticity and $\varepsilon_D$ is demand elasticity. Consumers bear a larger share when demand is inelastic relative to supply.
+
+**Why it matters:** Tax incidence determines who actually pays the tax, regardless of who legally remits it. This is the difference between statutory incidence (who writes the check) and economic incidence (whose welfare falls). The key insight: the side with the more inelastic curve bears more of the tax. If demand is perfectly inelastic (e.g., life-saving drugs), consumers bear 100% of the tax. If supply is perfectly inelastic (e.g., land), producers bear 100%. This principle applies to tariffs, payroll taxes, sales taxes, and carbon taxes — it explains why taxing necessities (inelastic demand) is regressive.
+
+**Exam tip:** Two methods: (1) shift the supply curve up by $\tau$ and find the new equilibrium — the vertical distance between the old and new equilibrium price is the consumer burden; (2) use the elasticity formula. The DWL triangle is between the old and new quantity, bounded by demand and supply. Tax revenue = $\tau \times Q_{\text{new}}$. Common mistake: thinking the party who physically pays the tax bears the burden — economic incidence depends on elasticities, not remittance. For a tariff, consumers bear more burden when import demand is inelastic.
+
+**Also see:** [Equation Explainer — Welfare Measures](./EQUATION-EXPLAINER.md#eq-welfare-measures), [DWL (Tax)](#detail-term-dwl-tax), [Tariff](#detail-term-tariff)
 
 <a id="detail-term-point-of-bliss"></a>
 ### **Point of Bliss**
@@ -1245,6 +1289,17 @@
 **Exam tip:** To find Nash equilibria in a 2x2 payoff matrix, underline each player's best response to each opponent action. The cells with both payoffs underlined are pure-strategy Nash equilibria. Always check for mixed strategy NE when there is no pure-strategy NE.
 
 **Also see:** [Equation Explainer — Game Theory](./EQUATION-EXPLAINER.md#eq-game-theory)
+
+<a id="detail-term-best-response"></a>
+### **Best Response**
+
+**What it is:** Player $i$'s best response $BR_i(s_{-i})$ is the set of strategies that maximize $i$'s payoff given the strategies of all other players $s_{-i}$. Formally: $BR_i(s_{-i}) = \{s_i \in S_i \mid u_i(s_i, s_{-i}) \ge u_i(s_i', s_{-i})\ \forall s_i' \in S_i\}$. A Nash equilibrium is a fixed point of the best-response correspondence: $s_i^* \in BR_i(s_{-i}^*)$ for all players $i$. In Cournot competition, best-response functions slope downward (strategic substitutes — if rivals produce more, I produce less). In Bertrand competition, they slope upward (strategic complements — if rivals charge more, I charge more).
+
+**Why it matters:** Best response is the fundamental building block of Nash equilibrium. Every solution concept in game theory (NE, SPNE, PBE, dominant strategy) can be expressed in terms of best responses. The shape and slope of best-response functions determine: (1) the number of equilibria (intersection of BR functions), (2) comparative statics (how equilibrium changes with parameters), (3) stability (whether adjustment converges to equilibrium), and (4) the nature of strategic interaction (substitutes vs complements). Best-response functions also connect to reaction functions in oligopoly theory.
+
+**Exam tip:** To find best responses in a $2\times2$ matrix game, underline the highest payoff in each column (for player 1) and each row (for player 2). Cells with both payoffs underlined are pure-strategy Nash equilibria. For continuous strategy spaces (Cournot, Bertrand), solve $u_i$ FOC for $s_i$ to get $BR_i(s_{-i})$. Common mistake: thinking best response assumes opponents are fixed — in equilibrium, everyone's strategies must simultaneously be best responses to each other.
+
+**Also see:** [Equation Explainer — Game Theory](./EQUATION-EXPLAINER.md#eq-game-theory), [Nash Equilibrium](#detail-term-nash-equilibrium), [Cournot Competition](#detail-term-cournot)
 
 <a id="detail-term-subgame-perfect-ne"></a>
 ### **Subgame Perfect Nash Equilibrium (SPNE)**

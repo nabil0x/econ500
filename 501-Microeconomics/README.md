@@ -37,6 +37,7 @@ Start here for: exam strategy, 10-day study plan, topic prioritization, and file
 
 | File | What It Does |
 |------|-------------|
+| [`EXAM-SIMULATIONS.md`](./EXAM-SIMULATIONS.md) | Simulated exam-style questions arranged by batch paper |
 | [`answers-cross-reference.md`](./answers-cross-reference.md) | Technique map, model traces, dependency chains, source overlap, quick ref table |
 | [`ANSWERS-INDEX.md`](./ANSWERS-INDEX.md) | Master table of all answer files with sizes and status |
 

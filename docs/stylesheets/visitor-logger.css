@@ -279,6 +279,177 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+/* ── Tab bar styling ────────────────────────────────────────── */
+.vl-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 16px;
+  flex-shrink: 0;
+}
+
+.vl-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 8px 4px 6px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color--light, #888);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.vl-tab:hover {
+  color: var(--md-default-fg-color, #444);
+}
+
+.vl-tab.active,
+.vl-tab[data-active="true"] {
+  color: var(--md-primary-fg-color, #3f51b5);
+  border-bottom-color: var(--md-primary-fg-color, #3f51b5);
+}
+
+/* ── Today tab content ─────────────────────────────────────── */
+.vl-today-grid {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.vl-today-stat {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vl-today-stat:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.vl-today-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color, #3f51b5);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.vl-today-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light, #888);
+  margin-top: 4px;
+}
+
+/* ── Courses tab content ───────────────────────────────────── */
+.vl-courses .vl-row {
+  margin-bottom: 10px;
+}
+
+.vl-courses .vl-row:last-child {
+  margin-bottom: 0;
+}
+
+.vl-courses .vl-row-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.vl-courses .vl-name {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color, #444);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.vl-courses .vl-count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--md-typeset-a-color, #9bc5b4);
+  font-variant-numeric: tabular-nums;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+/* ── Course bar fill (green accent) ──────────────────────────── */
+.vl-courses .vl-bar-fill {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+}
+
+/* ── Loader ────────────────────────────────────────────────── */
+.vl-loader {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light, #888);
+  animation: vl-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes vl-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* ── Dark mode overrides for new elements ──────────────────── */
+[data-md-color-scheme="ju-dark"] .vl-tab {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-tab:hover {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-tab.active,
+[data-md-color-scheme="ju-dark"] .vl-tab[data-active="true"] {
+  color: var(--md-typeset-a-color, #9bc5b4);
+  border-bottom-color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-today-stat {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-today-value {
+  color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-today-label {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-courses .vl-name {
+  color: var(--md-default-fg-color, #ece7dc);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-courses .vl-count {
+  color: var(--md-typeset-a-color, #9bc5b4);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-courses .vl-bar-fill {
+  background: linear-gradient(90deg, #388e3c, #66bb6a);
+}
+
+[data-md-color-scheme="ju-dark"] .vl-loader {
+  color: var(--md-default-fg-color--light, #b6b0a5);
+}
+
 /* ── Responsive: on mobile, make panel wider ──────────────── */
 @media (max-width: 480px) {
   #vl-panel {

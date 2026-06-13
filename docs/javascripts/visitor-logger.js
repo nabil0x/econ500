@@ -15,108 +15,168 @@
  * After setup, paste your Supabase URL + anon key into CONFIG below.
  * ────────────────────────────────────────────────────────────────
  */
+
+/* ══════════════════════════════════════════════════════════════
+ *  CONFIG — Replace with YOUR Supabase project credentials
+ * ══════════════════════════════════════════════════════════════
+ *  1. Go to https://supabase.com → your project → Settings → API
+ *  2. Copy "Project URL"  → supabaseUrl
+ *  3. Copy "anon public"  → supabaseKey
+ * ══════════════════════════════════════════════════════════════ */
+var CONFIG = {
+  supabaseUrl: 'https://cjhlbpyuzepwogmwjwyl.supabase.co',
+  supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqaGxicHl1emVwd29nbXdqd3lsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMzI3MTYsImV4cCI6MjA5NjkwODcxNn0.HtUGJAjEkMLItl37UkNmRM-Jjrnjuu_lgU7TJYBiyQs',
+};
+
+/* ══════════════════════════════════════════════════════════════
+ *  LOCAL STORAGE HELPERS
+ * ══════════════════════════════════════════════════════════════ */
+var SESSION_KEY = 'sl_v2_session';
+
+function lsGet(key, def) {
+  try { var v = JSON.parse(localStorage.getItem(key)); return v !== null && v !== undefined ? v : def; }
+  catch (e) { return def; }
+}
+
+function lsSet(key, val) {
+  try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+}
+
+function lsRemove(key) {
+  try { localStorage.removeItem(key); } catch (e) {}
+}
+
+/* ══════════════════════════════════════════════════════════════
+ *  SUPABASE CLIENT — zero dependencies, pure fetch
+ * ══════════════════════════════════════════════════════════════ */
+
+/** POST a row to a table */
+function sbInsert(table, row) {
+  return fetch(CONFIG.supabaseUrl + '/rest/v1/' + table, {
+    method: 'POST',
+    headers: {
+      'apikey': CONFIG.supabaseKey,
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal',
+    },
+    body: JSON.stringify(row),
+  });
+}
+
+/** Call an RPC (PostgreSQL function) */
+function sbRpc(fn, params) {
+  return fetch(CONFIG.supabaseUrl + '/rest/v1/rpc/' + fn, {
+    method: 'POST',
+    headers: {
+      'apikey': CONFIG.supabaseKey,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(params || {}),
+  });
+}
+
+/* ══════════════════════════════════════════════════════════════
+ *  SESSION
+ *  Persisted in localStorage so it survives page navigations
+ *  within the MkDocs SPA shell.
+ * ══════════════════════════════════════════════════════════════ */
+
+function getSession() {
+  var s = lsGet(SESSION_KEY, null);
+  if (!s || !s.id) {
+    s = {
+      id:         crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2, 10),
+      startTime:  Date.now(),
+      totalStudyMs: 0,
+      pages:      [],
+    };
+    lsSet(SESSION_KEY, s);
+  }
+  return s;
+}
+
+function saveSession(s) { lsSet(SESSION_KEY, s); }
+
+/* ══════════════════════════════════════════════════════════════
+ *  COURSE BUCKET UTILITY
+ *  Extracts the course name from a URL pathname.
+ * ══════════════════════════════════════════════════════════════ */
+function getCourseFromPath(path) {
+  if (!path) return 'Other';
+  // Strip trailing slash for consistent matching
+  var p = path.replace(/\/$/, '');
+  if (/^\/501-Microeconomics(\/|$)/.test(p) || /^\/microeconomics(\/|$)/.test(p)) return 'Microeconomics';
+  if (/^\/macroeconomics(\/|$)/.test(p)) return 'Macroeconomics';
+  if (/^\/503-Development(\/|$)/.test(p) || /^\/development(\/|$)/.test(p)) return 'Development';
+  if (/^\/512-Political-Economy(\/|$)/.test(p)) return 'Political Economy';
+  if (/^\/health-economics(\/|$)/.test(p)) return 'Health Economics';
+  if (/^\/econometrics(\/|$)/.test(p)) return 'Econometrics';
+  // Fallback: try to derive from the first path segment
+  var parts = p.split('/').filter(Boolean);
+  if (parts.length > 0) {
+    var first = parts[0];
+    // Match patterns like "501-Microeconomics" or "512-Political-Economy"
+    var match = first.match(/^\d+-([A-Za-z-]+)$/);
+    if (match) {
+      return match[1].replace(/-/g, ' ');
+    }
+    // Try capitalized single-word match
+    if (/^[A-Z]/.test(first)) {
+      return first.replace(/-/g, ' ');
+    }
+  }
+  return 'Other';
+}
+
+/* ══════════════════════════════════════════════════════════════
+ *  TODAY STATS (global helper)
+ *  Returns a promise with today's aggregated stats.
+ * ══════════════════════════════════════════════════════════════ */
+function getTodayStats() {
+  return Promise.all([
+    sbRpc('get_clicks_today').then(function (r) { return r.ok ? r.json() : null; }),
+    sbRpc('get_study_ms_today').then(function (r) { return r.ok ? r.json() : null; }),
+  ]).then(function (results) {
+    return { clicks: results[0], studyMs: results[1] };
+  });
+}
+
+/* ══════════════════════════════════════════════════════════════
+ *  GLOBAL API
+ *  Exposed on window for external / debug access.
+ * ══════════════════════════════════════════════════════════════ */
+window.__studyLogger = {
+  sbInsert: sbInsert,
+  sbRpc: sbRpc,
+  getSession: getSession,
+  getCourseFromPath: getCourseFromPath,
+  getTodayStats: getTodayStats,
+};
+
+/* ══════════════════════════════════════════════════════════════
+ *  IIFE — Application code
+ * ══════════════════════════════════════════════════════════════ */
 (function () {
   'use strict';
 
-  /* ══════════════════════════════════════════════════════════════
-   *  CONFIG — Replace with YOUR Supabase project credentials
-   * ══════════════════════════════════════════════════════════════
-   *  1. Go to https://supabase.com → your project → Settings → API
-   *  2. Copy "Project URL"  → supabaseUrl
-   *  3. Copy "anon public"  → supabaseKey
-   * ══════════════════════════════════════════════════════════════ */
-  var CONFIG = {
-    supabaseUrl: 'https://YOUR_PROJECT.supabase.co',
-    supabaseKey: 'your-anon-key-here',
-  };
-
-  /* ══════════════════════════════════════════════════════════════
-   *  SUPABASE CLIENT — zero dependencies, pure fetch
-   * ══════════════════════════════════════════════════════════════ */
-
-  /** POST a row to a table */
-  function sbInsert(table, row) {
-    return fetch(CONFIG.supabaseUrl + '/rest/v1/' + table, {
-      method: 'POST',
-      headers: {
-        'apikey': CONFIG.supabaseKey,
-        'Content-Type': 'application/json',
-        'Prefer': 'return=minimal',
-      },
-      body: JSON.stringify(row),
-    });
-  }
-
-  /** Call an RPC (PostgreSQL function) */
-  function sbRpc(fn, params) {
-    return fetch(CONFIG.supabaseUrl + '/rest/v1/rpc/' + fn, {
-      method: 'POST',
-      headers: {
-        'apikey': CONFIG.supabaseKey,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(params || {}),
-    });
-  }
-
-  /* ══════════════════════════════════════════════════════════════
-   *  LOCAL STORAGE HELPERS
-   * ══════════════════════════════════════════════════════════════ */
-  function lsGet(key, def) {
-    try { var v = JSON.parse(localStorage.getItem(key)); return v !== null && v !== undefined ? v : def; }
-    catch (e) { return def; }
-  }
-
-  function lsSet(key, val) {
-    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
-  }
-
-  function lsRemove(key) {
-    try { localStorage.removeItem(key); } catch (e) {}
-  }
-
-  /* ══════════════════════════════════════════════════════════════
-   *  MIGRATE: clear old storage keys from v1
-   * ══════════════════════════════════════════════════════════════ */
+  /* ── Migrate: clear old storage keys from v1 ─────────────── */
   lsRemove('masters_visitor_log');
   lsRemove('masters_visitor_pages');
   lsRemove('masters_visitor_start');
   lsRemove('masters_unique_pages');
 
-  /* ══════════════════════════════════════════════════════════════
-   *  SESSION
-   *  Persisted in localStorage so it survives page navigations
-   *  within the MkDocs SPA shell.
-   * ══════════════════════════════════════════════════════════════ */
-  var SESSION_KEY = 'sl_v2_session';
-
-  function getSession() {
-    var s = lsGet(SESSION_KEY, null);
-    if (!s || !s.id) {
-      s = {
-        id:         crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2, 10),
-        startTime:  Date.now(),
-        totalStudyMs: 0,
-        pages:      [],
-      };
-      lsSet(SESSION_KEY, s);
-    }
-    return s;
-  }
-
-  function saveSession(s) { lsSet(SESSION_KEY, s); }
-
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
    *  STATE (volatile — reset on each page navigation)
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
   var gPageEnterTime = null;    // timestamp when current page became visible
   var gCurrentPage   = null;    // current pathname
   var gLastLogTime   = 0;       // debounce for Supabase inserts
+  var gLastClickTime = 0;       // throttle for click tracking (5s per session)
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
    *  GLOBAL: LOG PAGE VIEW → SUPABASE
    *  Debounced (2 s) so quick navigations don't spam.
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
   function logPageView(path, title) {
     var now = Date.now();
     if ((now - gLastLogTime) < 2000) return;
@@ -133,10 +193,36 @@
     }).catch(function () { /* analytics never breaks the site */ });
   }
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
+   *  GLOBAL: CLICK TRACKING (capture phase)
+   *  Logs <a> clicks to click_events table, throttled at 5 s.
+   * ══════════════════════════════════════════════════════════ */
+  document.addEventListener('click', function (e) {
+    var anchor = e.target.closest('a');
+    if (!anchor) return;
+
+    var now = Date.now();
+    if ((now - gLastClickTime) < 5000) return;
+    gLastClickTime = now;
+
+    var path     = window.location.pathname;
+    var target   = anchor.href || anchor.getAttribute('href') || '';
+    var category = getCourseFromPath(path);
+
+    sbInsert('click_events', {
+      path:       path,
+      target:     target,
+      category:   category,
+      session_id: getSession().id,
+      user_agent: navigator.userAgent,
+      clicked_at: new Date().toISOString(),
+    }).catch(function () { /* analytics never breaks the site */ });
+  }, true);
+
+  /* ══════════════════════════════════════════════════════════
    *  GLOBAL: FETCH TOP 20 PAGES
    *  Cached for 60 s so repeated widget refreshes don't hammer API.
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
   var topCache = null;
 
   function fetchTopPages() {
@@ -163,7 +249,7 @@
       });
   }
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
    *  LOCAL: STUDY TIME TRACKING
    *
    *  Study time = time the tab is VISIBLE (Page Visibility API).
@@ -171,10 +257,10 @@
    *
    *  Flow:
    *    navigate → startPageTracking()     sets pageEnterTime = now
-   *    tab hide → finalizePageTracking()  adds (now - enter) to total, saves last entry
+   *    tab hide → finalizePageTracking()  adds (now - enter) to total
    *    tab show → resumePageTracking()    resets pageEnterTime = now
-   *    navigate → startPageTracking()     finalizes previous, resets for new
-   * ══════════════════════════════════════════════════════════════ */
+   *    navigate → startPageTracking()     finalizes previous, resets
+   * ══════════════════════════════════════════════════════════ */
 
   /** Start tracking a new page (call on navigation / load) */
   function startPageTracking(path, title) {
@@ -228,9 +314,9 @@
     saveSession(session);
   }
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
    *  LOCAL: COMPUTE SESSION STATS
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
   function computeSessionStats() {
     var session = getSession();
     var now = Date.now();
@@ -261,9 +347,9 @@
     };
   }
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
    *  UI FORMATTERS
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
   function fmt(ms) {
     if (ms < 1000) return '0s';
     var sec = Math.floor(ms / 1000);
@@ -296,9 +382,9 @@
     return d.innerHTML;
   }
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ══════════════════════════════════════════════════════════
    *  WIDGET — DOM BUILDING
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
 
   var STATE = { open: false, tab: 'popular' };
 
@@ -328,9 +414,17 @@
     var tabS  = ce('button', 'vl-tab');
     tabS.setAttribute('data-tab', 'session');
     tabS.textContent = '\uD83D\uDCDA My Session';
+    var tabT  = ce('button', 'vl-tab');
+    tabT.setAttribute('data-tab', 'today');
+    tabT.textContent = '\uD83D\uDCC5 Today';
+    var tabC  = ce('button', 'vl-tab');
+    tabC.setAttribute('data-tab', 'courses');
+    tabC.textContent = '\uD83D\uDCDA Courses';
     tabs.addEventListener('click', onTabClick);
     tabs.appendChild(tabP);
     tabs.appendChild(tabS);
+    tabs.appendChild(tabT);
+    tabs.appendChild(tabC);
 
     var body = ce('div', 'vl-body');
     body.id = 'vl-body';
@@ -357,7 +451,7 @@
     return el;
   }
 
-  /* ── Widget event handlers ──────────────────────────────────── */
+  /* ── Widget event handlers ──────────────────────────────── */
   function toggleWidget() {
     STATE.open = !STATE.open;
     document.querySelector('.vl-root').classList.toggle('vl-open', STATE.open);
@@ -382,18 +476,20 @@
     render();
   }
 
-  /* ══════════════════════════════════════════════════════════════
-   *  RENDER
-   * ══════════════════════════════════════════════════════════════ */
+  /* ══════════════════════════════════════════════════════════
+   *  RENDER — dispatch to active tab
+   * ══════════════════════════════════════════════════════════ */
   function render() {
     var body = document.getElementById('vl-body');
     if (!body) return;
     body.innerHTML = '';
     if (STATE.tab === 'popular') renderPopular(body);
-    else renderSession(body);
+    else if (STATE.tab === 'session') renderSession(body);
+    else if (STATE.tab === 'today') renderToday(body);
+    else if (STATE.tab === 'courses') renderCourses(body);
   }
 
-  /* ── Popular tab ───────────────────────────────────────────── */
+  /* ── Popular tab ───────────────────────────────────────── */
   function renderPopular(body) {
     body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
 
@@ -424,7 +520,7 @@
     });
   }
 
-  /* ── Session tab ───────────────────────────────────────────── */
+  /* ── Session tab ───────────────────────────────────────── */
   function renderSession(body) {
     var s = computeSessionStats();
 
@@ -477,9 +573,97 @@
     body.innerHTML = h;
   }
 
-  /* ══════════════════════════════════════════════════════════════
+  /* ── Today tab ─────────────────────────────────────────── */
+  function renderToday(body) {
+    body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
+
+    Promise.all([
+      sbRpc('get_clicks_today').then(function (r) { return r.ok ? r.json() : null; }),
+      sbRpc('get_study_ms_today').then(function (r) { return r.ok ? r.json() : null; }),
+    ]).then(function (results) {
+      var clicksData = results[0];
+      var studyData  = results[1];
+
+      // Normalise: RPC may return an array (one row) or a bare object
+      function extractVal(data, field) {
+        if (!data) return 0;
+        if (Array.isArray(data)) return (data[0] && data[0][field]) || 0;
+        return data[field] || 0;
+      }
+
+      var clicks  = extractVal(clicksData, 'count');
+      var studyMs = extractVal(studyData, 'study_ms');
+
+      if (!clicks && !studyMs) {
+        body.innerHTML = '<div class="vl-empty">No activity recorded today.</div>';
+        return;
+      }
+
+      var h =
+        '<div class="vl-scroll">' +
+        '  <div class="vl-mini-stats">' +
+        '    <div class="vl-mini">' +
+        '      <span class="vl-mini-value">' + clicks + '</span>' +
+        '      <span class="vl-mini-label">clicks today</span>' +
+        '    </div>' +
+        '    <div class="vl-mini">' +
+        '      <span class="vl-mini-value">' + fmtShort(studyMs) + '</span>' +
+        '      <span class="vl-mini-label">study time today</span>' +
+        '    </div>' +
+        '  </div>' +
+        '</div>';
+      body.innerHTML = h;
+    }).catch(function (err) {
+      console.warn('Study Logger: renderToday failed', err);
+      body.innerHTML = '<div class="vl-empty">Could not load today\u2019s stats.</div>';
+    });
+  }
+
+  /* ── Courses tab ───────────────────────────────────────── */
+  function renderCourses(body) {
+    body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
+
+    sbRpc('get_course_breakdown')
+      .then(function (res) {
+        if (!res.ok) throw new Error('Supabase RPC error: ' + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var rows = data || [];
+        if (rows.length === 0) {
+          body.innerHTML = '<div class="vl-empty">No course data yet.</div>';
+          return;
+        }
+
+        var maxStudy = 1;
+        rows.forEach(function (r) { maxStudy = Math.max(maxStudy, r.total_study_ms || 0); });
+
+        var h = '<div class="vl-scroll">';
+        rows.forEach(function (r) {
+          var courseName = r.course || r.category || 'Other';
+          var studyMs    = r.total_study_ms || 0;
+          var pct        = Math.min((studyMs / maxStudy) * 100, 100);
+          h +=
+            '<div class="vl-row">' +
+            '  <div class="vl-row-info">' +
+            '    <span class="vl-name">' + esc(courseName) + '</span>' +
+            '    <span class="vl-time">' + fmtShort(studyMs) + '</span>' +
+            '  </div>' +
+            '  <div class="vl-bar"><div class="vl-fill" style="width:' + pct + '%"></div></div>' +
+            '</div>';
+        });
+        h += '</div>';
+        body.innerHTML = h;
+      })
+      .catch(function (err) {
+        console.warn('Study Logger: renderCourses failed', err);
+        body.innerHTML = '<div class="vl-empty">Could not load course data.</div>';
+      });
+  }
+
+  /* ══════════════════════════════════════════════════════════
    *  LIFECYCLE
-   * ══════════════════════════════════════════════════════════════ */
+   * ══════════════════════════════════════════════════════════ */
 
   // 1. Initial page load
   function boot() {
@@ -497,8 +681,23 @@
     }
   });
 
-  // 3. Unload — save any pending time
-  window.addEventListener('beforeunload', finalizePageTracking);
+  // 3. Unload — save any pending time (+ POST to Supabase via sendBeacon)
+  window.addEventListener('beforeunload', function () {
+    finalizePageTracking();
+
+    var session = getSession();
+    var payload = JSON.stringify({
+      session_id:     session.id,
+      date:           new Date().toISOString().slice(0, 10),
+      total_study_ms: session.totalStudyMs,
+      pages_studied:  session.pages.length,
+      started_at:     new Date(session.startTime).toISOString(),
+    });
+
+    var url  = CONFIG.supabaseUrl + '/rest/v1/study_sessions?apikey=' + encodeURIComponent(CONFIG.supabaseKey);
+    var blob = new Blob([payload], { type: 'application/json' });
+    navigator.sendBeacon(url, blob);
+  });
 
   // 4. MkDocs SPA navigation — detect content swaps via MutationObserver
   document.addEventListener('DOMContentLoaded', function () {

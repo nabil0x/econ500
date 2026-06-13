@@ -28,7 +28,8 @@
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Definition of preference approach (2) | Completeness — explanation + violations (4) | Transitivity — explanation + violations (4) | Money-pump argument + reflexivity (2) | Structure & intuition for exam timing (2)
+!!! tip "Marking Guide"
+    Definition of preference approach (2) | Completeness — explanation + violations (4) | Transitivity — explanation + violations (4) | Money-pump argument + reflexivity (2) | Structure & intuition for exam timing (2)
 >
 > ⭐ **High-Yield** — Rational preferences are the foundational assumption of all consumer theory. Every UMP/EMP problem presupposes them. Expect either a direct definition question or indirect testing via the Debreu existence theorem (Q5).
 
@@ -57,30 +58,30 @@ The preference-based approach models consumer choice by assuming the consumer ha
 
 **Reflexivity** (implied): $x \sim x$ and $x \succeq x$ for all $x$.
 
-> **Formal Definition 1 — [Preference Relation](GLOSSARY.md#term-rationality)**
->
-> A **preference relation** $\succeq$ is a binary relation on the consumption set $X = \mathbb{R}^N_+$ that expresses the consumer's ranking over consumption bundles (Koutsoyiannis, Ch.2 §B, pp.17–19; Munoz-Garcia, §1.1, pp.2–5):
->
-> - $x \succeq y$: "$x$ is at least as preferred as $y$"
-> - $x \succ y$ (strict): $x \succeq y$ but not $y \succeq x$
-> - $x \sim y$ (indifference): $x \succeq y$ and $y \succeq x$
->
-> The relation is the primitive in consumer theory — choices are derived from preferences, not the reverse.
->
-> → *See also: FD2 (Rational Preferences), FD7 (Debreu Existence)*
->
-> **Formal Definition 2 — [Rational Preference Relation](GLOSSARY.md#term-rationality)**
->
-> A preference relation $\succeq$ is **rational** if it satisfies (Munoz-Garcia, §1.1, pp.2–5):
->
-> 1. **[Completeness](GLOSSARY.md#term-completeness):** For all $x, y \in X$, either $x \succeq y$ or $y \succeq x$ (or both). The consumer can compare any two bundles.
-> 2. **[Transitivity](GLOSSARY.md#term-transitivity):** For all $x, y, z \in X$, $x \succeq y$ and $y \succeq z$ $\implies$ $x \succeq z$. Preferences do not cycle.
->
-> Rationality implies **reflexivity** ($x \succeq x$). Without transitivity, a money-pump extracts infinite wealth from the individual.
->
-> **Key insight:** [Rationality](GLOSSARY.md#term-rationality) is the foundational assumption of consumer theory. Without it, [utility](GLOSSARY.md#term-utility-function) representation (FD7) and [demand functions](GLOSSARY.md#term-demand-function) (FD16) cannot be derived.
->
-> → *See also: FD1 (Preference Relation), FD7 (Debreu Existence)*
+!!! quote "Formal Definition 1 — [Preference Relation](GLOSSARY.md#term-rationality)"
+    
+    A **preference relation** $\succeq$ is a binary relation on the consumption set $X = \mathbb{R}^N_+$ that expresses the consumer's ranking over consumption bundles (Koutsoyiannis, Ch.2 §B, pp.17–19; Munoz-Garcia, §1.1, pp.2–5):
+    
+    - $x \succeq y$: "$x$ is at least as preferred as $y$"
+    - $x \succ y$ (strict): $x \succeq y$ but not $y \succeq x$
+    - $x \sim y$ (indifference): $x \succeq y$ and $y \succeq x$
+    
+    The relation is the primitive in consumer theory — choices are derived from preferences, not the reverse.
+    
+    → *See also: FD2 (Rational Preferences), FD7 (Debreu Existence)*
+    
+!!! quote "Formal Definition 2 — [Rational Preference Relation](GLOSSARY.md#term-rationality)"
+    
+    A preference relation $\succeq$ is **rational** if it satisfies (Munoz-Garcia, §1.1, pp.2–5):
+    
+    1. **[Completeness](GLOSSARY.md#term-completeness):** For all $x, y \in X$, either $x \succeq y$ or $y \succeq x$ (or both). The consumer can compare any two bundles.
+    2. **[Transitivity](GLOSSARY.md#term-transitivity):** For all $x, y, z \in X$, $x \succeq y$ and $y \succeq z$ $\implies$ $x \succeq z$. Preferences do not cycle.
+    
+    Rationality implies **reflexivity** ($x \succeq x$). Without transitivity, a money-pump extracts infinite wealth from the individual.
+    
+    **Key insight:** [Rationality](GLOSSARY.md#term-rationality) is the foundational assumption of consumer theory. Without it, [utility](GLOSSARY.md#term-utility-function) representation (FD7) and [demand functions](GLOSSARY.md#term-demand-function) (FD16) cannot be derived.
+    
+    → *See also: FD1 (Preference Relation), FD7 (Debreu Existence)*
 
 **Exam Tip:** Completeness is the most frequently challenged assumption — real people often cannot compare unfamiliar bundles. Transitivity is needed for the utility representation. Always state both when defining rational preferences. (10-mark questions expect you to discuss each assumption + give examples of violations.)
 
@@ -96,7 +97,8 @@ The preference-based approach models consumer choice by assuming the consumer ha
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** IND set definition & notation (2) | Upper/lower contour sets (2) | Strong monotonicity — precise definition (3) | Proof by contradiction (4) | Diagram of regions A & B (2) | What SM rules out (1)
+!!! tip "Marking Guide"
+    IND set definition & notation (2) | Upper/lower contour sets (2) | Strong monotonicity — precise definition (3) | Proof by contradiction (4) | Diagram of regions A & B (2) | What SM rules out (1)
 >
 > ⭐ **High-Yield** — The proof that SM ⇒ downward-sloping ICs is a classic contradiction argument that reappears in production theory (MRTS slope). The IND/UCS/LCS definitions are essential vocabulary for all subsequent questions.
 >
@@ -167,7 +169,8 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Definition 1 — convexity of preferences (3) | Definition 2 — convex UCS (3) | Equivalence (2) | Strong convexity (2) | Comparison table (2) | Diagram of IC shapes (2)
+!!! tip "Marking Guide"
+    Definition 1 — convexity of preferences (3) | Definition 2 — convex UCS (3) | Equivalence (2) | Strong convexity (2) | Comparison table (2) | Diagram of IC shapes (2)
 >
 > ⭐ **High-Yield** — Convexity is the second-most tested preference property after rationality. It connects directly to quasiconcavity (Q4), dMRS/dx < 0 (Q9), and uniqueness of Walrasian demand (1B Q4). Expect at least one question on it.
 >
@@ -227,7 +230,8 @@ $$\lambda x + (1-\lambda) y \succ z$$
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Chain statement (1) | Convex ⇔ UCS convex — definitional (2) | UCS convex ⇔ quasiconcave — forward proof (4) | UCS convex ⇔ quasiconcave — reverse proof (3) | Bordered Hessian reference (2) | Chain completion & intuition (2)
+!!! tip "Marking Guide"
+    Chain statement (1) | Convex ⇔ UCS convex — definitional (2) | UCS convex ⇔ quasiconcave — forward proof (4) | UCS convex ⇔ quasiconcave — reverse proof (3) | Bordered Hessian reference (2) | Chain completion & intuition (2)
 >
 > ⭐ **High-Yield** — The convexity ⇔ quasiconcavity equivalence is the single most tested equivalence in 501 Micro prelims. Every student who fails this question does so because they cannot articulate both directions of the proof. Master the $\min\{u(x),u(y)\}$ trick.
 >
@@ -290,7 +294,8 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Theorem statement (2) | 45° diagonal projection idea (3) | Construction of $t(x)$ via $A$ and $B$ sets (4) | Continuity argument for intersection (3) | Conclusion: $u(x)=t(x)$ (2)
+!!! tip "Marking Guide"
+    Theorem statement (2) | 45° diagonal projection idea (3) | Construction of $t(x)$ via $A$ and $B$ sets (4) | Continuity argument for intersection (3) | Conclusion: $u(x)=t(x)$ (2)
 >
 > ⭐ **High-Yield** — The Debreu existence proof is the crowning theoretical result of Section 1A. It combines completeness, transitivity, continuity, and monotonicity into one construction. Often appears as a 5-mark "sketch the proof" question or as the starting point for a discussion on representability.
 >
@@ -354,7 +359,8 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Utility function definition & notation (2) | Ordinality & monotonic transformations (3) | Monotonicity — conditions (a) & (b) (3) | Strong monotonicity (3) | Comparison table & IC implications (3)
+!!! tip "Marking Guide"
+    Utility function definition & notation (2) | Ordinality & monotonic transformations (3) | Monotonicity — conditions (a) & (b) (3) | Strong monotonicity (3) | Comparison table & IC implications (3)
 >
 > → *See also: [Section 1A Q5](./answers-consumer-theory.md#q-cons-05) (Debreu existence — utility as representation); [Section 1A Q7](./answers-consumer-theory.md#q-cons-07) (hierarchical chain SM ⇒ M ⇒ LNS)*
 >
@@ -418,7 +424,8 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** SM ⇒ M proof (4) | M ⇒ LNS proof with $\varepsilon$-ball (5) | Chain statement (2) | Converse non-implications with counterexample (3)
+!!! tip "Marking Guide"
+    SM ⇒ M proof (4) | M ⇒ LNS proof with $\varepsilon$-ball (5) | Chain statement (2) | Converse non-implications with counterexample (3)
 >
 > ⭐ **High-Yield** — The SM ⇒ M ⇒ LNS hierarchy is one of the most frequently examined proof chains. LNS is the workhorse assumption of modern micro theory (Walras' Law, UMP interior solutions). Expect this as a short-proof question.
 >
@@ -477,7 +484,8 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Homogeneity definition & degree (2) | Properties (MRS, derivatives) (3) | Examples (2) | Homotheticity definition (2) | Key properties — Engel curves, shares, MRS (3) | Homogeneous ⊂ Homothetic + counterexample (2)
+!!! tip "Marking Guide"
+    Homogeneity definition & degree (2) | Properties (MRS, derivatives) (3) | Examples (2) | Homotheticity definition (2) | Key properties — Engel curves, shares, MRS (3) | Homogeneous ⊂ Homothetic + counterexample (2)
 >
 > → *See also: [Section 1B Q5](./answers-consumer-theory.md#q-cons-1b-05) (demand-side implications of homotheticity); [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (EoS and homotheticity in production)*
 >
@@ -569,7 +577,8 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** MRS formula & IC slope (2) | Bordered Hessian quasiconcavity condition (3) | $dMRS/dx$ derivation — implicit differentiation (5) | Sign equivalence proof (2) | Interpretation (2)
+!!! tip "Marking Guide"
+    MRS formula & IC slope (2) | Bordered Hessian quasiconcavity condition (3) | $dMRS/dx$ derivation — implicit differentiation (5) | Sign equivalence proof (2) | Interpretation (2)
 >
 > ⭐ **High-Yield** — This is the most technically demanding proof in Section 1A. The equivalence between quasiconcavity and diminishing MRS ties preference theory (convexity) to calculus (bordered Hessian). Expect this as an 8-mark proof or as embedded reasoning in a UMP question.
 >
@@ -686,7 +695,8 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** MRS computation (3) | $dMRS/dx$ derivation along IC (5) | Sign conclusion & interpretation (3) | Bordered Hessian verification (3)
+!!! tip "Marking Guide"
+    MRS computation (3) | $dMRS/dx$ derivation along IC (5) | Sign conclusion & interpretation (3) | Bordered Hessian verification (3)
 >
 > **Formal Definition 15 — [Quasilinear Utility](GLOSSARY.md#term-quasilinear)**
 >
@@ -753,7 +763,8 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Lagrangian setup & FOCs (3) | Tangency condition (2) | Demand derivation (3) | Homogeneity & Walras' Law checks (3) | Own-price/cross-price/income effects (3)
+!!! tip "Marking Guide"
+    Lagrangian setup & FOCs (3) | Tangency condition (2) | Demand derivation (3) | Homogeneity & Walras' Law checks (3) | Own-price/cross-price/income effects (3)
 >
 > ⭐ **High-Yield** — Cobb-Douglas is THE canonical utility function. Its closed-form solutions for Walrasian demand, indirect utility, Hicksian demand, and expenditure function are the backbone of Section 1B. Expect one full question set (Q1-Q3) as a block worth ~20 marks across parts (a), (b), (c).
 >
@@ -855,7 +866,8 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Indirect utility derivation from Walrasian demands (3) | Properties: HD(0), monotonicity, quasiconvexity (3) | Roy's identity statement (2) | Verification for goods 1 & 2 (4) | Interpretation & duality insight (2)
+!!! tip "Marking Guide"
+    Indirect utility derivation from Walrasian demands (3) | Properties: HD(0), monotonicity, quasiconvexity (3) | Roy's identity statement (2) | Verification for goods 1 & 2 (4) | Interpretation & duality insight (2)
 >
 > ⭐ **High-Yield** — Roy's identity bridges UMP and observable demand: it recovers Walrasian demand from indirect utility without re-solving optimization. This is the first duality result in the course and is frequently tested as a verification question.
 >
@@ -946,7 +958,8 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** EMP setup & Lagrangian (2) | FOCs & tangency condition (2) | Hicksian demand derivation (3) | Expenditure function derivation (3) | Properties & duality checks (2) | Shephard's lemma verification (2)
+!!! tip "Marking Guide"
+    EMP setup & Lagrangian (2) | FOCs & tangency condition (2) | Hicksian demand derivation (3) | Expenditure function derivation (3) | Properties & duality checks (2) | Shephard's lemma verification (2)
 >
 > ⭐ **High-Yield** — EMP/Hicksian demand is the mirror image of UMP/Walrasian demand. Together they form the duality core of consumer theory. Shephard's lemma is the EMP analog of Roy's identity — expect them to appear together in a question pairing.
 >
@@ -1079,7 +1092,8 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** HD(0) property (2) | Walras' Law via LNS (2) | Convexity/uniqueness (2) | Other properties (2) | Three violation cases: non-monotonicity, non-quasiconcavity, zero gradient (4) | Summary table (2)
+!!! tip "Marking Guide"
+    HD(0) property (2) | Walras' Law via LNS (2) | Convexity/uniqueness (2) | Other properties (2) | Three violation cases: non-monotonicity, non-quasiconcavity, zero gradient (4) | Summary table (2)
 >
 > ⭐ **High-Yield** — This question synthesizes everything from Section 1A into the UMP. The violation cases (especially non-quasiconcave preferences leading to corner solutions) are frequently tested and separate A from B students.
 >
@@ -1170,7 +1184,8 @@ The Kuhn-Tucker conditions are necessary for a max. They are sufficient when:
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Homogeneity HD(0) of Walrasian demand (2) | HD properties of $v(p,w)$, $e(p,u)$, $h(p,u)$ (2) | Homotheticity definition (2) | Demand implications table — Engel curves, shares, elasticities (4) | Examples & non-examples (2) | Homogeneous vs homothetic relationship (2)
+!!! tip "Marking Guide"
+    Homogeneity HD(0) of Walrasian demand (2) | HD properties of $v(p,w)$, $e(p,u)$, $h(p,u)$ (2) | Homotheticity definition (2) | Demand implications table — Engel curves, shares, elasticities (4) | Examples & non-examples (2) | Homogeneous vs homothetic relationship (2)
 >
 > *[Note: This question appears to be a demand-focused version of Q8 from Section 1A. The answer below focuses on the demand-side implications.]*
 
@@ -1258,7 +1273,8 @@ A preference relation is homothetic if all indifference sets are related to prop
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Leontief setup & fixed-proportion insight (2) | Marshallian demand derivation for Gin (3) | Hicksian demand for Campari — EMP setup (3) | Expenditure function (2) | Duality checks (2) | Summary table (2)
+!!! tip "Marking Guide"
+    Leontief setup & fixed-proportion insight (2) | Marshallian demand derivation for Gin (3) | Hicksian demand for Campari — EMP setup (3) | Expenditure function (2) | Duality checks (2) | Summary table (2)
 >
 > ⭐ **High-Yield** — Leontief is the second most tested functional form after Cobb-Douglas. The fixed-proportion structure tests whether you understand the *non-substitutability* case. It's the polar opposite of Cobb-Douglas and perfect substitutes, making it essential comparative material.
 >
@@ -1358,7 +1374,8 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** MRS & tangency condition (3) | Marshallian demand derivation (3) | Corner solution condition $I \ge p_x$ (3) | Income elasticity characterization (3) | Quasilinearity & zero income effect (2)
+!!! tip "Marking Guide"
+    MRS & tangency condition (3) | Marshallian demand derivation (3) | Corner solution condition $I \ge p_x$ (3) | Income elasticity characterization (3) | Quasilinearity & zero income effect (2)
 >
 > **Formal Definition 28 — [Quasilinear Utility (Demand Properties)](GLOSSARY.md#term-quasilinear)**
 >
@@ -1442,7 +1459,8 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 
 **Answer:**
 
-> **Marking Guide [14 marks]:** Linear utility recognition & MU computation (2) | $MU_y < 0$ — identifying the bad (3) | Corner solution derivation (3) | Verification: tangency yields minimum (4) | Conclusion & alternative interpretation (2)
+!!! tip "Marking Guide"
+    Linear utility recognition & MU computation (2) | $MU_y < 0$ — identifying the bad (3) | Corner solution derivation (3) | Verification: tangency yields minimum (4) | Conclusion & alternative interpretation (2)
 >
 > ⭐ **High-Yield** — The "good with a bad" corner solution is a classic exam trick. Students trained to mechanically solve Lagrangian FOCs miss the key insight: $MU_y < 0$ means the tangency condition identifies a minimum, not a maximum. Always check marginal utility signs before optimizing.
 >

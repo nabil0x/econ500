@@ -23,23 +23,25 @@
 
 ### Question 1 {#q-demand-01}
 
-> **Marking Guide [14 marks]:** Elasticity Concepts (3) | Sign Classification (3) | Revenue Test (3) | Numerical Application (3) | Economic Intuition (2)
+!!! tip "Marking Guide"
+    Elasticity Concepts (3) | Sign Classification (3) | Revenue Test (3) | Numerical Application (3) | Economic Intuition (2)
 
-> ⭐ **High-Yield** — Constant elasticity (log-linear) demand is the most common functional form in empirical demand estimation. Mastering the interpretation of exponents as elasticities is essential.
+!!! success "High-Yield"
+    Constant elasticity (log-linear) demand is the most common functional form in empirical demand estimation. Mastering the interpretation of exponents as elasticities is essential.
 
-> **Formal Definition 1 — [Elasticity of Demand](GLOSSARY.md#term-elasticity)**
->
-> **Point Elasticity:** For infinitesimal changes, the price elasticity of demand is defined as the proportionate change in quantity demanded resulting from a very small proportionate change in price (Koutsoyiannis, p.46):
->
-> $$\varepsilon_{X,P} = \frac{\partial X}{\partial P} \cdot \frac{P}{X} = \frac{\% \Delta X}{\% \Delta P}$$
->
-> **Arc Elasticity:** When price changes are not small, we use the arc elasticity (average elasticity over the interval):
->
-> $$\varepsilon_{X,P}^{\text{arc}} = \frac{\Delta X}{\Delta P} \cdot \frac{P_1 + P_2}{X_1 + X_2}$$
->
-> (Koutsoyiannis, eq. 2.5, p.48) — the elasticity at the midpoint of the chord connecting two points on the demand curve.
->
-> The constant elasticity (log-linear) form $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$ assumes elasticities are constant at **all** price–quantity combinations, so point and arc measures coincide.
+!!! quote "Formal Definition 1 — [Elasticity of Demand](GLOSSARY.md#term-elasticity)"
+    
+    **Point Elasticity:** For infinitesimal changes, the price elasticity of demand is defined as the proportionate change in quantity demanded resulting from a very small proportionate change in price (Koutsoyiannis, p.46):
+    
+    $$\varepsilon_{X,P} = \frac{\partial X}{\partial P} \cdot \frac{P}{X} = \frac{\% \Delta X}{\% \Delta P}$$
+    
+    **Arc Elasticity:** When price changes are not small, we use the arc elasticity (average elasticity over the interval):
+    
+    $$\varepsilon_{X,P}^{\text{arc}} = \frac{\Delta X}{\Delta P} \cdot \frac{P_1 + P_2}{X_1 + X_2}$$
+    
+    (Koutsoyiannis, eq. 2.5, p.48) — the elasticity at the midpoint of the chord connecting two points on the demand curve.
+    
+    The constant elasticity (log-linear) form $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$ assumes elasticities are constant at **all** price–quantity combinations, so point and arc measures coincide.
 
 Demand function: $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$
 
@@ -102,17 +104,17 @@ $$\% \Delta Q_d = \varepsilon \times (\% \Delta P_W) = \varepsilon \times (-5\%)
 
 **Exam Tip:** Always check the sign of the cross-price elasticity. A fall in the price of a complement ($\varepsilon < 0$) raises demand; a fall in the price of a substitute ($\varepsilon > 0$) lowers demand.
 
-> **Formal Definition 3 — [Own-Price Elasticity of Demand](GLOSSARY.md#term-elasticity)**
->
-> The own-price elasticity measures the percentage change in quantity demanded of good $k$ resulting from a 1% change in its own price $p_k$ (Munoz-Garcia, p.93):
->
-> $$\varepsilon_{X,P_X} = \frac{\partial X}{\partial P_X} \cdot \frac{P_X}{X} = \frac{\% \Delta X}{\% \Delta P_X}$$
->
-> For the constant elasticity form $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$:
->
-> $$\varepsilon_{X,P_X} = \gamma = -0.4$$
->
-> **Classification:** $|\varepsilon| < 1$ → **inelastic**; $|\varepsilon| > 1$ → **elastic**; $|\varepsilon| = 1$ → **unit elastic**.
+!!! quote "Formal Definition 3 — [Own-Price Elasticity of Demand](GLOSSARY.md#term-elasticity)"
+    
+    The own-price elasticity measures the percentage change in quantity demanded of good $k$ resulting from a 1% change in its own price $p_k$ (Munoz-Garcia, p.93):
+    
+    $$\varepsilon_{X,P_X} = \frac{\partial X}{\partial P_X} \cdot \frac{P_X}{X} = \frac{\% \Delta X}{\% \Delta P_X}$$
+    
+    For the constant elasticity form $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$:
+    
+    $$\varepsilon_{X,P_X} = \gamma = -0.4$$
+    
+    **Classification:** $|\varepsilon| < 1$ → **inelastic**; $|\varepsilon| > 1$ → **elastic**; $|\varepsilon| = 1$ → **unit elastic**.
 
 **(v) If $P_X$ decreases, would expenditure on X increase, decrease, or remain same?**
 
@@ -161,7 +163,8 @@ Since $|\gamma| = 0.4 < 1$, a price cut lowers total revenue. For contrast, if d
 
 ### Question 2 {#q-demand-02}
 
-> **Marking Guide [14 marks]:** Sign Identification (4) | Law of Demand (4) | Economic Interpretation (3) | Misspecification Diagnosis (3)
+!!! tip "Marking Guide"
+    Sign Identification (4) | Law of Demand (4) | Economic Interpretation (3) | Misspecification Diagnosis (3)
 
 Burger King demand: $Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I$
 
@@ -212,24 +215,26 @@ In an exam setting, identifying these econometric issues scores points beyond me
 
 ### Question 3 {#q-demand-03}
 
-> **Marking Guide [14 marks]:** Cross-price Elasticities (4) | Income Elasticity Classification (2) | Advertising Elasticity (2) | Lerner Index Derivation (3) | Competitive Response (3)
+!!! tip "Marking Guide"
+    Cross-price Elasticities (4) | Income Elasticity Classification (2) | Advertising Elasticity (2) | Lerner Index Derivation (3) | Competitive Response (3)
 
-> ⭐ **High-Yield** — Integrates elasticity interpretation, the Lerner Index (monopoly pricing), and competitive strategy. The profit-maximising price formula $P = MC/(1+1/\varepsilon)$ is a staple exam question.
+!!! success "High-Yield"
+    Integrates elasticity interpretation, the Lerner Index (monopoly pricing), and competitive strategy. The profit-maximising price formula $P = MC/(1+1/\varepsilon)$ is a staple exam question.
 
 Corrected demand: $Q = 150 P_B^{-1.5} P_{r1}^{0.75} P_{r2}^{-0.25} I^{0.8} A^{0.05}$
 
-> **Formal Definition 5 — [Cross-Price Elasticity of Demand](GLOSSARY.md#term-elasticity)**
->
-> The cross-price elasticity measures the percentage change in quantity demanded of good $i$ resulting from a 1% change in the price of good $j$ (Munoz-Garcia, p.93; Koutsoyiannis, eq. 2.7, p.49):
->
-> $$\varepsilon_{Q_i,P_j} = \frac{\partial Q_i}{\partial P_j} \cdot \frac{P_j}{Q_i} = \frac{\% \Delta Q_i}{\% \Delta P_j}$$
->
-> **Classification by sign:**
-> - $\varepsilon_{Q_i,P_j} > 0$ → $i$ and $j$ are **gross substitutes** (rise in $P_j$ raises $Q_i$)
-> - $\varepsilon_{Q_i,P_j} < 0$ → $i$ and $j$ are **gross complements** (rise in $P_j$ lowers $Q_i$)
-> - $\varepsilon_{Q_i,P_j} = 0$ → $i$ and $j$ are **independent** in consumption (Cobb-Douglas case, Munoz-Garcia p.93)
->
-> In the constant elasticity form, the exponents directly are the cross-price elasticities.
+!!! quote "Formal Definition 5 — [Cross-Price Elasticity of Demand](GLOSSARY.md#term-elasticity)"
+    
+    The cross-price elasticity measures the percentage change in quantity demanded of good $i$ resulting from a 1% change in the price of good $j$ (Munoz-Garcia, p.93; Koutsoyiannis, eq. 2.7, p.49):
+    
+    $$\varepsilon_{Q_i,P_j} = \frac{\partial Q_i}{\partial P_j} \cdot \frac{P_j}{Q_i} = \frac{\% \Delta Q_i}{\% \Delta P_j}$$
+    
+    **Classification by sign:**
+    - $\varepsilon_{Q_i,P_j} > 0$ → $i$ and $j$ are **gross substitutes** (rise in $P_j$ raises $Q_i$)
+    - $\varepsilon_{Q_i,P_j} < 0$ → $i$ and $j$ are **gross complements** (rise in $P_j$ lowers $Q_i$)
+    - $\varepsilon_{Q_i,P_j} = 0$ → $i$ and $j$ are **independent** in consumption (Cobb-Douglas case, Munoz-Garcia p.93)
+    
+    In the constant elasticity form, the exponents directly are the cross-price elasticities.
 
 **(i) Which related good (r1 or r2) is French fries?**
 
@@ -240,16 +245,16 @@ French fries are a **complement** to Whoppers. Cross-price elasticity should be 
 
 The magnitude $|0.75| > |{-0.25}|$ indicates the substitution relationship with r1 is stronger than the complement relationship with r2. This makes economic sense: customers view chicken sandwiches as closer alternatives to burgers than fries are as complements.
 
-> **Formal Definition 6 — [Income Elasticity of Demand](GLOSSARY.md#term-elasticity)**
->
-> Measures the percentage change in quantity demanded from a 1% change in income (Koutsoyiannis, eq. 2.6, p.49):
->
-> $$\varepsilon_{Q,I} = \frac{\partial Q}{\partial I} \cdot \frac{I}{Q} = \frac{\% \Delta Q}{\% \Delta I}$$
->
-> **Classification:**
-> - $\varepsilon_{Q,I} > 1$ → **luxury** (income-elastic normal good)
-> - $0 < \varepsilon_{Q,I} < 1$ → **necessity** (income-inelastic normal good)
-> - $\varepsilon_{Q,I} < 0$ → **inferior good** (demand falls as income rises)
+!!! quote "Formal Definition 6 — [Income Elasticity of Demand](GLOSSARY.md#term-elasticity)"
+    
+    Measures the percentage change in quantity demanded from a 1% change in income (Koutsoyiannis, eq. 2.6, p.49):
+    
+    $$\varepsilon_{Q,I} = \frac{\partial Q}{\partial I} \cdot \frac{I}{Q} = \frac{\% \Delta Q}{\% \Delta I}$$
+    
+    **Classification:**
+    - $\varepsilon_{Q,I} > 1$ → **luxury** (income-elastic normal good)
+    - $0 < \varepsilon_{Q,I} < 1$ → **necessity** (income-inelastic normal good)
+    - $\varepsilon_{Q,I} < 0$ → **inferior good** (demand falls as income rises)
 
 **(ii) Is Whopper a luxury, necessity, or inferior?**
 
@@ -275,33 +280,33 @@ Whopper quantity **increases by 12.5%**.
 
 **(v) If MC = \$1.00, what is profit-maximizing price?**
 
-> **Formal Definition 7 — [Lerner Index of Market Power](GLOSSARY.md#term-lerner-index)**
->
-> The Lerner Index measures the firm's price markup over marginal cost as a fraction of price (Munoz-Garcia, §7.2.3, p.497–499):
->
-> $$L = \frac{P - MC}{P} = -\frac{1}{\varepsilon_{Q,P}}$$
->
-> This is derived from the profit-maximising condition $MR = MC$. Starting from:
->
-> $$MR = \frac{d(PQ)}{dQ} = P + Q\frac{dP}{dQ} = P\left(1 + \frac{dP}{dQ}\cdot\frac{Q}{P}\right) = P\left(1 + \frac{1}{\varepsilon}\right)$$
->
-> **Full derivation:** Since $\varepsilon = \frac{dQ}{dP}\cdot\frac{P}{Q} < 0$, we have $\frac{1}{\varepsilon} = \frac{dP}{dQ}\cdot\frac{Q}{P}$. Substituting into $MR = P + Q\cdot dP/dQ$:
->
-> $$MR = P + Q\frac{dP}{dQ} = P\left(1 + \frac{Q}{P}\cdot\frac{dP}{dQ}\right) = P\left(1 + \frac{1}{\varepsilon}\right)$$
->
-> Setting $MR = MC$:
->
-> $$P\left(1 + \frac{1}{\varepsilon}\right) = MC \;\Longrightarrow\; \frac{P - MC}{P} = -\frac{1}{\varepsilon}$$
->
-> The **Inverse Elasticity Pricing Rule (IEPR)** solves for optimal price:
->
-> $$P^* = \frac{MC}{1 + 1/\varepsilon}$$
->
-> (Munoz-Garcia, p.498, eq. 7.5)
->
-> **Interpretation:** The Lerner Index ranges from 0 (perfect competition, $\varepsilon \to -\infty$) to 1 (monopoly with perfectly inelastic demand, $\varepsilon \to 0$). Markets with more elastic demand have lower markups.
->
-> **Real-world benchmark (Munoz-Garcia, p.498):** Perloff (2013) reports that Prilosec OTC had $\varepsilon \approx -1.2$, implying $P^* = 5.88 \times MC$ — a 488% markup. Designer jeans with $\varepsilon \approx -2$ give $P^* = 2 \times MC$, a 100% markup. Both are elastic, but the less elastic demand supports a much higher markup.
+!!! quote "Formal Definition 7 — [Lerner Index of Market Power](GLOSSARY.md#term-lerner-index)"
+    
+    The Lerner Index measures the firm's price markup over marginal cost as a fraction of price (Munoz-Garcia, §7.2.3, p.497–499):
+    
+    $$L = \frac{P - MC}{P} = -\frac{1}{\varepsilon_{Q,P}}$$
+    
+    This is derived from the profit-maximising condition $MR = MC$. Starting from:
+    
+    $$MR = \frac{d(PQ)}{dQ} = P + Q\frac{dP}{dQ} = P\left(1 + \frac{dP}{dQ}\cdot\frac{Q}{P}\right) = P\left(1 + \frac{1}{\varepsilon}\right)$$
+    
+    **Full derivation:** Since $\varepsilon = \frac{dQ}{dP}\cdot\frac{P}{Q} < 0$, we have $\frac{1}{\varepsilon} = \frac{dP}{dQ}\cdot\frac{Q}{P}$. Substituting into $MR = P + Q\cdot dP/dQ$:
+    
+    $$MR = P + Q\frac{dP}{dQ} = P\left(1 + \frac{Q}{P}\cdot\frac{dP}{dQ}\right) = P\left(1 + \frac{1}{\varepsilon}\right)$$
+    
+    Setting $MR = MC$:
+    
+    $$P\left(1 + \frac{1}{\varepsilon}\right) = MC \;\Longrightarrow\; \frac{P - MC}{P} = -\frac{1}{\varepsilon}$$
+    
+    The **Inverse Elasticity Pricing Rule (IEPR)** solves for optimal price:
+    
+    $$P^* = \frac{MC}{1 + 1/\varepsilon}$$
+    
+    (Munoz-Garcia, p.498, eq. 7.5)
+    
+    **Interpretation:** The Lerner Index ranges from 0 (perfect competition, $\varepsilon \to -\infty$) to 1 (monopoly with perfectly inelastic demand, $\varepsilon \to 0$). Markets with more elastic demand have lower markups.
+    
+    **Real-world benchmark (Munoz-Garcia, p.498):** Perloff (2013) reports that Prilosec OTC had $\varepsilon \approx -1.2$, implying $P^* = 5.88 \times MC$ — a 488% markup. Designer jeans with $\varepsilon \approx -2$ give $P^* = 2 \times MC$, a 100% markup. Both are elastic, but the less elastic demand supports a much higher markup.
 
 For BK, own-price elasticity $\varepsilon = -1.5$.
 
@@ -356,7 +361,8 @@ $$\frac{\% \Delta Q}{\% \Delta P_B} = -1.5 \Rightarrow \% \Delta P_B = \frac{\% 
 
 ### Question 1 {#q-prodset-01}
 
-> **Marking Guide [14 marks]:** Production Function (3) | Production Set (3) | Transformation Function (3) | Transformation Frontier (2) | MRPT Definition & Formula (3)
+!!! tip "Marking Guide"
+    Production Function (3) | Production Set (3) | Transformation Function (3) | Transformation Frontier (2) | MRPT Definition & Formula (3)
 
 Define:
 
@@ -398,9 +404,11 @@ $$MRPT_{k,l} = \frac{MC_k}{MC_l}$$
 
 ### Question 2 & 3 {#q-prodset-02}
 
-> **Marking Guide [14 marks]:** Property Definitions (6) | Graphical Interpretations (4) | Convexity Understanding (2) | Fixed-Cost Exception (2)
+!!! tip "Marking Guide"
+    Property Definitions (6) | Graphical Interpretations (4) | Convexity Understanding (2) | Fixed-Cost Exception (2)
 
-> ⭐ **High-Yield** — The 11 properties of a production set form the axiomatic foundation of producer theory. Convexity and returns-to-scale properties are the most frequently examined.
+!!! success "High-Yield"
+    The 11 properties of a production set form the axiomatic foundation of producer theory. Convexity and returns-to-scale properties are the most frequently examined.
 
 **Properties of the production set** (graphically):
 
@@ -445,9 +453,11 @@ With fixed costs, convexity fails — the production set becomes non-convex near
 
 ### Question 4 {#q-prodset-03}
 
-> **Marking Guide [14 marks]:** Definition & Formula (3) | Perfect Substitutes Derivation (4) | Leontief Derivation (4) | Comparison Table (3)
+!!! tip "Marking Guide"
+    Definition & Formula (3) | Perfect Substitutes Derivation (4) | Leontief Derivation (4) | Comparison Table (3)
 
-> ⭐ **High-Yield** — The polar cases ($\sigma = \infty$ and $\sigma = 0$) and the Cobb-Douglas benchmark ($\sigma = 1$) are almost guaranteed exam questions. The CES generalisation $\sigma = 1/(1-\rho)$ is the capstone.
+!!! success "High-Yield"
+    The polar cases ($\sigma = \infty$ and $\sigma = 0$) and the Cobb-Douglas benchmark ($\sigma = 1$) are almost guaranteed exam questions. The CES generalisation $\sigma = 1/(1-\rho)$ is the capstone.
 
 **Elasticity of Substitution (EoS)** — $\sigma$ measures the proportionate change in the $K/L$ ratio relative to the proportionate change in $MRTS_{L,K}$ along an isoquant:
 
@@ -547,7 +557,8 @@ This intermediate value (between 0 and 1) indicates moderate substitution possib
 
 ### Question 5 {#q-prodset-04}
 
-> **Marking Guide [14 marks]:** Property Definitions (6) | Intuitive Matching (4) | Concavity Insight (2) | Shephard's Lemma (2)
+!!! tip "Marking Guide"
+    Property Definitions (6) | Intuitive Matching (4) | Concavity Insight (2) | Shephard's Lemma (2)
 
 **Four properties of cost functions** — match to intuitive explanations:
 
@@ -641,9 +652,11 @@ $$\frac{\partial c}{\partial r} = 2 \cdot \frac{1}{2} \sqrt{\frac{w}{r}} \cdot Q
 
 ### Question 6 {#q-prodset-05}
 
-> **Marking Guide [14 marks]:** Production Function (2) | Conditional Factor Demand (2) | Cost Function (3) | Profit Maximisation (4) | MR=MC Alternative (3)
+!!! tip "Marking Guide"
+    Production Function (2) | Conditional Factor Demand (2) | Cost Function (3) | Profit Maximisation (4) | MR=MC Alternative (3)
 
-> ⭐ **High-Yield** — The Leontief production function in a profit-maximisation context. Links production theory to pricing decisions.
+!!! success "High-Yield"
+    The Leontief production function in a profit-maximisation context. Links production theory to pricing decisions.
 
 **Sausage maker:** 3 oz pork + 2 oz veal → 5 oz sausage.
 
@@ -723,9 +736,11 @@ $MC = 5$. Set MR = MC → $Q^* = 200(6)^{-6} = 200/46656 \approx 0.00429$. $P^* 
 
 ### Question 7 {#q-prodset-06}
 
-> **Marking Guide [14 marks]:** SR Production (2) | SR Factor Demand & Cost (3) | Shutdown & Supply (2) | Returns to Scale (2) | EoS (1) | LR Factor Demand (2) | LR Cost & Supply (2)
+!!! tip "Marking Guide"
+    SR Production (2) | SR Factor Demand & Cost (3) | Shutdown & Supply (2) | Returns to Scale (2) | EoS (1) | LR Factor Demand (2) | LR Cost & Supply (2)
 
-> ⭐ **High-Yield** — This is the most comprehensive production question, covering every major concept: [SR](GLOSSARY.md#term-sr) vs LR, conditional factor demands, cost functions, shutdown, supply, RTS, EoS, and duality. Master this and you master production theory.
+!!! success "High-Yield"
+    This is the most comprehensive production question, covering every major concept: [SR](GLOSSARY.md#term-sr) vs LR, conditional factor demands, cost functions, shutdown, supply, RTS, EoS, and duality. Master this and you master production theory.
 
 $Q = (KL)^{1/3}$, short-run $K = 64$.
 
@@ -859,7 +874,8 @@ $$Q^S(P) = \frac{P^2}{9wr}$$
 
 ### Question 8 {#q-prodset-07}
 
-> **Marking Guide [14 marks]:** Economies of Scale Identification (5) | Fixed Cost Spreading (4) | Marginal vs Average Cost (3) | Real-World Application (2)
+!!! tip "Marking Guide"
+    Economies of Scale Identification (5) | Fixed Cost Spreading (4) | Marginal vs Average Cost (3) | Real-World Application (2)
 
 **Starbucks Jumbo (62 oz) vs Trenta (31 oz). Will Jumbo cost twice as much, more, or less?**
 
@@ -914,9 +930,11 @@ The Jumbo's AC (\$3.11/oz) is 34% lower than the Trenta's AC (\$4.73/oz). The to
 
 ### Question 1 {#q-profit-01}
 
-> **Marking Guide [14 marks]:** Definition (2) | Property Listing (4) | Hotelling's Lemma (4) | Convexity Intuition (2) | Law of Supply (2)
+!!! tip "Marking Guide"
+    Definition (2) | Property Listing (4) | Hotelling's Lemma (4) | Convexity Intuition (2) | Law of Supply (2)
 
-> ⭐ **High-Yield** — The profit function is the dual of the cost function. Its convexity in prices (not concavity!) is a classic exam trap. Hotelling's Lemma is the production-side analogue of Roy's Identity.
+!!! success "High-Yield"
+    The profit function is the dual of the cost function. Its convexity in prices (not concavity!) is a classic exam trap. Hotelling's Lemma is the production-side analogue of Roy's Identity.
 
 **Profit function:** $\pi(p) = \max_{y \in Y} p \cdot y$
 
@@ -993,9 +1011,11 @@ As a support function of a convex set, $\pi(p)$ inherits convexity automatically
 
 ### Question 2 {#q-profit-02}
 
-> **Marking Guide [14 marks]:** Setup & Differentiation (4) | Profit FOCs (4) | Substitution (3) | Intuitive Explanation (3)
+!!! tip "Marking Guide"
+    Setup & Differentiation (4) | Profit FOCs (4) | Substitution (3) | Intuitive Explanation (3)
 
-> ⭐ **High-Yield** — This duality result connects production theory (MRPT) with cost theory (MC ratio) and is the foundation for the product-mix efficiency condition in GE.
+!!! success "High-Yield"
+    This duality result connects production theory (MRPT) with cost theory (MC ratio) and is the foundation for the product-mix efficiency condition in GE.
 
 **Show: $MRPT_{x,y} = MC_x / MC_y$.**
 
@@ -1054,9 +1074,11 @@ This chain of equalities — **$MRPT = MRS$** — is the **product-mix efficienc
 
 ### Question 1 {#q-compet-01}
 
-> **Marking Guide [14 marks]:** SR Firm Supply (2) | Market Equilibrium (3) | Tax Incidence Computation (4) | DWL Calculation (3) | Welfare Summary (2)
+!!! tip "Marking Guide"
+    SR Firm Supply (2) | Market Equilibrium (3) | Tax Incidence Computation (4) | DWL Calculation (3) | Welfare Summary (2)
 
-> ⭐ **High-Yield** — Competitive equilibrium with taxation is the most commonly examined numerical question in this topic. Tax incidence and DWL are almost guaranteed.
+!!! success "High-Yield"
+    Competitive equilibrium with taxation is the most commonly examined numerical question in this topic. Tax incidence and DWL are almost guaranteed.
 
 1,000 identical firms. $C_{SR}(q) = 0.5q^2 + 2q + 80$.
 
@@ -1332,9 +1354,11 @@ Simplifying gives 100,000, matching our earlier result.
 
 ### Question 2 {#q-compet-02}
 
-> **Marking Guide [14 marks]:** Walras' Law Statement (2) | Algebraic Substitution (5) | Price Ratio Derivation (5) | Consistency Check (2)
+!!! tip "Marking Guide"
+    Walras' Law Statement (2) | Algebraic Substitution (5) | Price Ratio Derivation (5) | Consistency Check (2)
 
-> ⭐ **High-Yield** — Walras' Law is the central organising principle of general equilibrium. Knowing how to use it to find equilibrium price ratios is essential for GE questions.
+!!! success "High-Yield"
+    Walras' Law is the central organising principle of general equilibrium. Knowing how to use it to find equilibrium price ratios is essential for GE questions.
 
 **Three-good world:** Walras' law: $p \cdot Z(p) = 0$ for all $p$.
 

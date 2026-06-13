@@ -21,21 +21,23 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 ### Question 1 {#q-ge-01}
 
-> **Marking Guide [14 marks]:** Definition (3) | Comparison table (4) | Examples (3) | Intuition (2) | Exam structure (2)
+!!! tip "Marking Guide"
+    Definition (3) | Comparison table (4) | Examples (3) | Intuition (2) | Exam structure (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Foundational concept: every GE exam begins here. Must command the distinction.
+!!! success "High-Yield"
+    Foundational concept: every GE exam begins here. Must command the distinction.
 
-> **Formal Definition 1 — [General Equilibrium (GE)](GLOSSARY.md#term-ge)**
->
-> **A state in which all markets and all decision-making units are simultaneously in equilibrium:** every market is cleared at positive prices, every consumer maximises utility given their budget, and every firm maximises profit given its technology (Koutsoyiannis, Ch.22, p.486; Munoz-Garcia, §6.1, p.330).
->
-> $$\text{GE: } \sum_i z_i(p) = 0 \text{ for all } i \text{, where } z_i(p) = D_i(p) - S_i(p)$$
->
-> **Key distinction from PE:** Partial equilibrium analyses one market in isolation (ceteris paribus), while GE captures the full interdependence of markets through price feedbacks and factor-market adjustments. The Arrow-Debreu (1954) existence proof formalises GE as a fixed point of the excess demand mapping.
->
-> → *See also: [Topic 6B Q4](./answers-ge-game-extern-trade.md#q-edge-04) (GE definition recap), [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (Walrasian system — 18 equations)*
+!!! quote "Formal Definition 1 — [General Equilibrium (GE)](GLOSSARY.md#term-ge)"
+    
+    **A state in which all markets and all decision-making units are simultaneously in equilibrium:** every market is cleared at positive prices, every consumer maximises utility given their budget, and every firm maximises profit given its technology (Koutsoyiannis, Ch.22, p.486; Munoz-Garcia, §6.1, p.330).
+    
+    $$\text{GE: } \sum_i z_i(p) = 0 \text{ for all } i \text{, where } z_i(p) = D_i(p) - S_i(p)$$
+    
+    **Key distinction from PE:** Partial equilibrium analyses one market in isolation (ceteris paribus), while GE captures the full interdependence of markets through price feedbacks and factor-market adjustments. The Arrow-Debreu (1954) existence proof formalises GE as a fixed point of the excess demand mapping.
+    
+    → *See also: [Topic 6B Q4](./answers-ge-game-extern-trade.md#q-edge-04) (GE definition recap), [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (Walrasian system — 18 equations)*
 
 **General equilibrium (GE)** is a state in which *all* markets and *all* decision-making units are in simultaneous equilibrium. A GE exists if every market is cleared at a positive price, with each consumer maximising utility and each firm maximising profit. (Koutsoyiannis p. 486)
 
@@ -61,21 +63,22 @@ All sources: Koutsoyiannis *Modern Microeconomics*, Felix Munoz-Garcia *Advanced
 
 ### Question 2 {#q-ge-02}
 
-> **Marking Guide [14 marks]:** Existence definition (2) | Uniqueness explanation (2) | Stability analysis (4) | Diagram(s) (4) | Synthesis & intuition (2)
+!!! tip "Marking Guide"
+    Existence definition (2) | Uniqueness explanation (2) | Stability analysis (4) | Diagram(s) (4) | Synthesis & intuition (2)
 
 **Answer:**
 
-> **Formal Definition 2 — Existence, Uniqueness, and Stability of [Equilibrium](GLOSSARY.md#term-ge)**
->
-> **Existence:** An equilibrium exists if there is a price vector $p^* \gg 0$ such that aggregate excess demand $z(p^*) = 0$ (Arrow-Debreu, 1954). Sufficient conditions include continuity of excess demand, homogeneity of degree zero, Walras' Law, and boundary behaviour ($z_i(p) \to +\infty$ as $p_i \to 0$) (Munoz-Garcia, §6.2, p.336).
->
-> **Uniqueness:** Equilibrium is unique if the excess demand function satisfies **gross substitutability**: $\partial z_i(p)/\partial p_j > 0$ for all $i \neq j$. This ensures the mapping is monotone (Koutsoyiannis, p.489; Munoz-Garcia, §6.2.1, p.340).
->
-> **Stability:** An equilibrium is **stable** if the system returns to it after a small displacement. Under **Walrasian [tâtonnement](GLOSSARY.md#term-tatonnement)**, prices adjust proportionally to excess demand: $\dot{p}_i = k_i \cdot z_i(p)$. Stability requires the Jacobian of excess demand to be negative definite at equilibrium (Koutsoyiannis, p.490–491).
->
-> **Caution:** Existence does not guarantee uniqueness (multiple equilibria possible with backward-bending supply), and uniqueness does not guarantee stability.
->
-> → *See also: [Topic 6A Q3](./answers-ge-game-extern-trade.md#q-ge-03) (excess demand formulation), [Topic 6A Q4](./answers-ge-game-extern-trade.md#q-ge-04) (transmission mechanism)*
+!!! quote "Formal Definition 2 — Existence, Uniqueness, and Stability of [Equilibrium](GLOSSARY.md#term-ge)"
+    
+    **Existence:** An equilibrium exists if there is a price vector $p^* \gg 0$ such that aggregate excess demand $z(p^*) = 0$ (Arrow-Debreu, 1954). Sufficient conditions include continuity of excess demand, homogeneity of degree zero, Walras' Law, and boundary behaviour ($z_i(p) \to +\infty$ as $p_i \to 0$) (Munoz-Garcia, §6.2, p.336).
+    
+    **Uniqueness:** Equilibrium is unique if the excess demand function satisfies **gross substitutability**: $\partial z_i(p)/\partial p_j > 0$ for all $i \neq j$. This ensures the mapping is monotone (Koutsoyiannis, p.489; Munoz-Garcia, §6.2.1, p.340).
+    
+    **Stability:** An equilibrium is **stable** if the system returns to it after a small displacement. Under **Walrasian [tâtonnement](GLOSSARY.md#term-tatonnement)**, prices adjust proportionally to excess demand: $\dot{p}_i = k_i \cdot z_i(p)$. Stability requires the Jacobian of excess demand to be negative definite at equilibrium (Koutsoyiannis, p.490–491).
+    
+    **Caution:** Existence does not guarantee uniqueness (multiple equilibria possible with backward-bending supply), and uniqueness does not guarantee stability.
+    
+    → *See also: [Topic 6A Q3](./answers-ge-game-extern-trade.md#q-ge-03) (excess demand formulation), [Topic 6A Q4](./answers-ge-game-extern-trade.md#q-ge-04) (transmission mechanism)*
 
 The three problems are best illustrated using a demand-supply diagram (partial equilibrium framework that extends to GE via excess demand functions). (Koutsoyiannis pp. 489-491)
 
@@ -138,22 +141,23 @@ Stable:              Unstable:
 
 ### Question 3 {#q-ge-03}
 
-> **Marking Guide [14 marks]:** Define E(P) (2) | Existence via [IVT](GLOSSARY.md#term-ivt) (4) | Stability from slope sign (4) | Uniqueness from monotonicity (2) | Synthesis (2)
+!!! tip "Marking Guide"
+    Define E(P) (2) | Existence via [IVT](GLOSSARY.md#term-ivt) (4) | Stability from slope sign (4) | Uniqueness from monotonicity (2) | Synthesis (2)
 
 **Answer:**
 
-> **Formal Definition 3 — [Excess Demand Function](GLOSSARY.md#term-excess-demand)**
->
-> **The excess demand function for good $i$ is the difference between quantity demanded and quantity supplied at price $p$:** $z_i(p) = D_i(p) - S_i(p)$ (Koutsoyiannis, p.489). In a pure exchange economy, $z_i(p) = \sum_h x_i^h(p) - \sum_h \omega_i^h$, where $x_i^h$ is consumer $h$'s demand and $\omega_i^h$ is their endowment.
->
-> **Properties (Munoz-Garcia, §6.1, p.332–335):**
-> - **Homogeneous of degree zero:** $z_i(\lambda p) = z_i(p)$ for all $\lambda > 0$ (only relative prices matter)
-> - **Walras' Law:** $p \cdot z(p) = 0$ (aggregate value of excess demand is zero)
-> - **Continuity:** $z_i(p)$ is continuous on $\mathbb{R}^L_{++}$ under standard utility assumptions
->
-> **Existence via Intermediate Value Theorem:** If $z_i(p)$ is continuous and satisfies $z_i(0) > 0$ and $z_i(\infty) < 0$, there exists $p^* > 0$ such that $z_i(p^*) = 0$.
->
-> → *See also: [Topic 6B Q8](./answers-ge-game-extern-trade.md#q-edge-08) (Walras' Law and numeraire)*
+!!! quote "Formal Definition 3 — [Excess Demand Function](GLOSSARY.md#term-excess-demand)"
+    
+    **The excess demand function for good $i$ is the difference between quantity demanded and quantity supplied at price $p$:** $z_i(p) = D_i(p) - S_i(p)$ (Koutsoyiannis, p.489). In a pure exchange economy, $z_i(p) = \sum_h x_i^h(p) - \sum_h \omega_i^h$, where $x_i^h$ is consumer $h$'s demand and $\omega_i^h$ is their endowment.
+    
+    **Properties (Munoz-Garcia, §6.1, p.332–335):**
+    - **Homogeneous of degree zero:** $z_i(\lambda p) = z_i(p)$ for all $\lambda > 0$ (only relative prices matter)
+    - **Walras' Law:** $p \cdot z(p) = 0$ (aggregate value of excess demand is zero)
+    - **Continuity:** $z_i(p)$ is continuous on $\mathbb{R}^L_{++}$ under standard utility assumptions
+    
+    **Existence via Intermediate Value Theorem:** If $z_i(p)$ is continuous and satisfies $z_i(0) > 0$ and $z_i(\infty) < 0$, there exists $p^* > 0$ such that $z_i(p^*) = 0$.
+    
+    → *See also: [Topic 6B Q8](./answers-ge-game-extern-trade.md#q-edge-08) (Walras' Law and numeraire)*
 
 The three properties expressed via the **excess demand function** $E(P) = QD(P) - QS(P)$: (Koutsoyiannis pp. 489-491)
 
@@ -202,23 +206,24 @@ Stable (dE/dP < 0):          Unstable (dE/dP > 0):
 
 ### Question 4 {#q-ge-04}
 
-> **Marking Guide [14 marks]:** Initial equilibrium (2) | Taste shock & product market (3) | Factor market transmission (4) | Factor mobility & price equalisation (3) | New GE (2)
+!!! tip "Marking Guide"
+    Initial equilibrium (2) | Taste shock & product market (3) | Factor market transmission (4) | Factor mobility & price equalisation (3) | New GE (2)
 
 **Answer:**
 
-> **Formal Definition 4 — Transmission Mechanism (Product Market → Factor Market → [GE](GLOSSARY.md#term-ge))**
->
-> **The transmission mechanism describes how an exogenous shock propagates through interdependent markets to restore a new general equilibrium** (Koutsoyiannis, Ch.22, §D, pp.491–495). The canonical sequence is:
->
-> 1. **Product market shock** (e.g., taste shift) → price and output changes → excess profits/losses
-> 2. **Firm adjustment** → expansion/contraction along MC curves
-> 3. **Factor market transmission** → derived demand for L and K shifts → factor price differentials emerge
-> 4. **Factor mobility** → L and K migrate between industries → factor prices equalise at new levels
-> 5. **Long-run product adjustment** → entry/exit shifts supply curves → all markets clear at new prices
->
-> **Key insight:** The final factor price change depends on **relative [factor intensities](GLOSSARY.md#term-factor-intensity)** ([Stolper-Samuelson](GLOSSARY.md#term-stolper-samuelson) logic). If the expanding industry is labour-intensive, $w$ rises and $r$ falls. Factor mobility is the "transmission belt" connecting product and factor markets.
->
-> → *See also: [Topic 6A Q2](./answers-ge-game-extern-trade.md#q-ge-02) (existence/stability framework), [Topic 6B Q2](./answers-ge-game-extern-trade.md#q-edge-02) (Stolper-Samuelson)*
+!!! quote "Formal Definition 4 — Transmission Mechanism (Product Market → Factor Market → [GE](GLOSSARY.md#term-ge))"
+    
+    **The transmission mechanism describes how an exogenous shock propagates through interdependent markets to restore a new general equilibrium** (Koutsoyiannis, Ch.22, §D, pp.491–495). The canonical sequence is:
+    
+    1. **Product market shock** (e.g., taste shift) → price and output changes → excess profits/losses
+    2. **Firm adjustment** → expansion/contraction along MC curves
+    3. **Factor market transmission** → derived demand for L and K shifts → factor price differentials emerge
+    4. **Factor mobility** → L and K migrate between industries → factor prices equalise at new levels
+    5. **Long-run product adjustment** → entry/exit shifts supply curves → all markets clear at new prices
+    
+    **Key insight:** The final factor price change depends on **relative [factor intensities](GLOSSARY.md#term-factor-intensity)** ([Stolper-Samuelson](GLOSSARY.md#term-stolper-samuelson) logic). If the expanding industry is labour-intensive, $w$ rises and $r$ falls. Factor mobility is the "transmission belt" connecting product and factor markets.
+    
+    → *See also: [Topic 6A Q2](./answers-ge-game-extern-trade.md#q-ge-02) (existence/stability framework), [Topic 6B Q2](./answers-ge-game-extern-trade.md#q-edge-02) (Stolper-Samuelson)*
 
 This question asks about the transmission mechanism: **external shock in product market → factor market → general equilibrium restored**. This is the core of Koutsoyiannis's graphical illustration (Chapter 22, Section D, pp. 491-495).
 
@@ -265,25 +270,27 @@ This question asks about the transmission mechanism: **external shock in product
 
 ### Question 1 {#q-edge-01}
 
-> **Marking Guide [14 marks]:** Model definition & dimensions (2) | Six assumptions listed (4) | Edgeworth box diagram (3) | Contract curve & MRTS condition (3) | GE of production condition (2)
+!!! tip "Marking Guide"
+    Model definition & dimensions (2) | Six assumptions listed (4) | Edgeworth box diagram (3) | Contract curve & MRTS condition (3) | GE of production condition (2)
 
 **Answer:**
 
-⭐ **High-Yield** — The 2×2×2 model is the backbone of GE exam questions. Assumptions are frequently tested directly.
+!!! success "High-Yield"
+    The 2×2×2 model is the backbone of GE exam questions. Assumptions are frequently tested directly.
 
-> **Formal Definition 5 — The $2\times 2\times 2$ Model, [Edgeworth Box](GLOSSARY.md#term-edgeworth-box), [Contract Curve](GLOSSARY.md#term-contract-curve), and [PPC](GLOSSARY.md#term-ppc)**
->
-> **The $2\times 2\times 2$ model is the canonical general equilibrium framework:** two factors (labour L, capital K), two commodities (X, Y), and two consumers (A, B), all under perfect competition (Koutsoyiannis, Ch.22, §E, pp.496–499; Munoz-Garcia, §6.3, p.353).
->
-> **Edgeworth production box:** A diagram whose width is total capital $\bar{K}$ and height is total labour $\bar{L}$. X-isoquants originate from the SW corner (O$_X$), Y-isoquants from the NE corner (O$_Y$).
->
-> **Contract curve (production):** The locus of tangency points where $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK}$. Points on this curve are Pareto-efficient in production — increasing one good's output requires reducing the other.
->
-> **From contract curve to PPC:** Mapping the contract curve from input-space to output-space yields the **Production Possibility Curve (PPC)**, whose slope is the **Marginal Rate of Product Transformation (MRPT)**.
->
-> **Classification:** The contract curve is unique only under [CRS](GLOSSARY.md#term-crs) and homothetic isoquants. With [DRS](GLOSSARY.md#term-drs) or non-homothetic technology, the curve is non-linear.
->
-> → *See also: [Topic 6B Q3](./answers-ge-game-extern-trade.md#q-edge-03) (three Pareto conditions), [Topic 6B Q5](./answers-ge-game-extern-trade.md#q-edge-05) (GE reached via these conditions)*
+!!! quote "Formal Definition 5 — The $2\times 2\times 2$ Model, [Edgeworth Box](GLOSSARY.md#term-edgeworth-box), [Contract Curve](GLOSSARY.md#term-contract-curve), and [PPC](GLOSSARY.md#term-ppc)"
+    
+    **The $2\times 2\times 2$ model is the canonical general equilibrium framework:** two factors (labour L, capital K), two commodities (X, Y), and two consumers (A, B), all under perfect competition (Koutsoyiannis, Ch.22, §E, pp.496–499; Munoz-Garcia, §6.3, p.353).
+    
+    **Edgeworth production box:** A diagram whose width is total capital $\bar{K}$ and height is total labour $\bar{L}$. X-isoquants originate from the SW corner (O$_X$), Y-isoquants from the NE corner (O$_Y$).
+    
+    **Contract curve (production):** The locus of tangency points where $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK}$. Points on this curve are Pareto-efficient in production — increasing one good's output requires reducing the other.
+    
+    **From contract curve to PPC:** Mapping the contract curve from input-space to output-space yields the **Production Possibility Curve (PPC)**, whose slope is the **Marginal Rate of Product Transformation (MRPT)**.
+    
+    **Classification:** The contract curve is unique only under [CRS](GLOSSARY.md#term-crs) and homothetic isoquants. With [DRS](GLOSSARY.md#term-drs) or non-homothetic technology, the curve is non-linear.
+    
+    → *See also: [Topic 6B Q3](./answers-ge-game-extern-trade.md#q-edge-03) (three Pareto conditions), [Topic 6B Q5](./answers-ge-game-extern-trade.md#q-edge-05) (GE reached via these conditions)*
 
 **The $2\times 2\times 2$ model** has: 2 factors (L, K), 2 commodities (X, Y), 2 consumers (A, B). (Koutsoyiannis pp. 496-499)
 
@@ -336,23 +343,24 @@ The production equilibrium is not unique (any point on contract curve is Pareto-
 
 ### Question 2 {#q-edge-02}
 
-> **Marking Guide [14 marks]:** Shock & product market (2) | Firm response (2) | Factor market effects (4) | Factor mobility (3) | Long-run adjustment & new GE (3)
+!!! tip "Marking Guide"
+    Shock & product market (2) | Firm response (2) | Factor market effects (4) | Factor mobility (3) | Long-run adjustment & new GE (3)
 
 **Answer:**
 
-> **Formal Definition 6 — [Stolper-Samuelson Theorem](GLOSSARY.md#term-stolper-samuelson)**
->
-> **An increase in the relative price of a good raises the real return to the factor used intensively in its production and lowers the real return to the other factor** (Stolper & Samuelson, 1941; Koutsoyiannis, p.505; Munoz-Garcia, §6.6, p.404).
->
-> $$ \text{If } \frac{P_X}{P_Y} \uparrow \text{ and } X \text{ is labour-intensive, then } \frac{w}{r} \uparrow $$
->
-> **Mechanism:** A taste shift toward X (labour-intensive) raises $P_X$, expanding X-industry output and its derived demand for labour. Since labour supply is fixed in the short run, $w$ rises. Simultaneously, Y (capital-intensive) contracts, releasing capital faster than labour, causing $r$ to fall.
->
-> **Magnification effect:** The change in factor prices is *magnified* relative to the change in output prices (the Jones algebra): $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$ in proportional terms.
->
-> **Key insight:** Trade benefits the abundant factor and harms the scarce factor — the central distributional result of the Heckscher-Ohlin model. *(See: [Stolper-Samuelson Theorem](GLOSSARY.md#term-stolper-samuelson))*
->
-> → *See also: [Topic 6A Q4](./answers-ge-game-extern-trade.md#q-ge-04) (transmission mechanism), [Topic 6B Q2](./answers-ge-game-extern-trade.md#q-edge-02) (same mechanism)*
+!!! quote "Formal Definition 6 — [Stolper-Samuelson Theorem](GLOSSARY.md#term-stolper-samuelson)"
+    
+    **An increase in the relative price of a good raises the real return to the factor used intensively in its production and lowers the real return to the other factor** (Stolper & Samuelson, 1941; Koutsoyiannis, p.505; Munoz-Garcia, §6.6, p.404).
+    
+    $$ \text{If } \frac{P_X}{P_Y} \uparrow \text{ and } X \text{ is labour-intensive, then } \frac{w}{r} \uparrow $$
+    
+    **Mechanism:** A taste shift toward X (labour-intensive) raises $P_X$, expanding X-industry output and its derived demand for labour. Since labour supply is fixed in the short run, $w$ rises. Simultaneously, Y (capital-intensive) contracts, releasing capital faster than labour, causing $r$ to fall.
+    
+    **Magnification effect:** The change in factor prices is *magnified* relative to the change in output prices (the Jones algebra): $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$ in proportional terms.
+    
+    **Key insight:** Trade benefits the abundant factor and harms the scarce factor — the central distributional result of the Heckscher-Ohlin model. *(See: [Stolper-Samuelson Theorem](GLOSSARY.md#term-stolper-samuelson))*
+    
+    → *See also: [Topic 6A Q4](./answers-ge-game-extern-trade.md#q-ge-04) (transmission mechanism), [Topic 6B Q2](./answers-ge-game-extern-trade.md#q-edge-02) (same mechanism)*
 
 This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\times 2\times 2$ framework. The answer follows the Koutsoyiannis path (pp. 491-495) using the 8-panel diagram.
 
@@ -393,27 +401,29 @@ This is the same mechanism as Topic 6A Q4 but asked specifically for the $2\time
 
 ### Question 3 {#q-edge-03}
 
-> **Marking Guide [14 marks]:** Production efficiency — MRTS condition & contract curve (4) | Consumption efficiency — MRS condition (4) | Simultaneous equilibrium — MRPT = MRS (4) | Diagram & synthesis (2)
+!!! tip "Marking Guide"
+    Production efficiency — MRTS condition & contract curve (4) | Consumption efficiency — MRS condition (4) | Simultaneous equilibrium — MRPT = MRS (4) | Diagram & synthesis (2)
 
 **Answer:**
 
-⭐ **High-Yield** — The three Pareto conditions are the core of welfare economics in GE. Direct exam question or essay component.
+!!! success "High-Yield"
+    The three Pareto conditions are the core of welfare economics in GE. Direct exam question or essay component.
 
-> **Formal Definition 7 — The Three [Pareto Efficiency](GLOSSARY.md#term-pareto-efficient) Conditions, [MRPT](GLOSSARY.md#term-mrpt), and the [Welfare Theorems](GLOSSARY.md#term-welfare-theorems)**
->
-> **For a general equilibrium to be Pareto-optimal, three marginal conditions must hold simultaneously** (Koutsoyiannis, Ch.23, pp.524–532; Munoz-Garcia, §6.5, p.380):
->
-> 1. **Efficiency in exchange (consumption):** $\text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$ — the marginal rate at which consumers are willing to trade X for Y must be equal across all consumers.
->
-> 2. **Efficiency in production (factor allocation):** $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK} = w/r$ — the marginal rate at which factors can be substituted must be equal across all firms.
->
-> 3. **Efficiency in product-mix (top-level):** $\text{MRPT}_{xy} = \text{MRS}_{xy}$ — the rate at which the economy can transform X into Y (slope of the PPC) must equal consumers' marginal willingness to trade.
->
-> **First Welfare Theorem:** Every competitive equilibrium satisfies these three conditions and is therefore Pareto-efficient.
->
-> **Second Welfare Theorem:** Any Pareto-efficient allocation can be decentralised as a competitive equilibrium with appropriate lump-sum transfers.
->
-> → *See also: [Topic 6B Q1](./answers-ge-game-extern-trade.md#q-edge-01) (Edgeworth box), [Topic 8 Q6](./answers-ge-game-extern-trade.md#q-extern-06) (why externalities break these conditions)*
+!!! quote "Formal Definition 7 — The Three [Pareto Efficiency](GLOSSARY.md#term-pareto-efficient) Conditions, [MRPT](GLOSSARY.md#term-mrpt), and the [Welfare Theorems](GLOSSARY.md#term-welfare-theorems)"
+    
+    **For a general equilibrium to be Pareto-optimal, three marginal conditions must hold simultaneously** (Koutsoyiannis, Ch.23, pp.524–532; Munoz-Garcia, §6.5, p.380):
+    
+    1. **Efficiency in exchange (consumption):** $\text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$ — the marginal rate at which consumers are willing to trade X for Y must be equal across all consumers.
+    
+    2. **Efficiency in production (factor allocation):** $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK} = w/r$ — the marginal rate at which factors can be substituted must be equal across all firms.
+    
+    3. **Efficiency in product-mix (top-level):** $\text{MRPT}_{xy} = \text{MRS}_{xy}$ — the rate at which the economy can transform X into Y (slope of the PPC) must equal consumers' marginal willingness to trade.
+    
+    **First Welfare Theorem:** Every competitive equilibrium satisfies these three conditions and is therefore Pareto-efficient.
+    
+    **Second Welfare Theorem:** Any Pareto-efficient allocation can be decentralised as a competitive equilibrium with appropriate lump-sum transfers.
+    
+    → *See also: [Topic 6B Q1](./answers-ge-game-extern-trade.md#q-edge-01) (Edgeworth box), [Topic 8 Q6](./answers-ge-game-extern-trade.md#q-extern-06) (why externalities break these conditions)*
 
 The three static Pareto-efficiency properties of a GE state (Koutsoyiannis pp. 497-504):
 
@@ -470,7 +480,8 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ### Question 4 {#q-edge-04}
 
-> **Marking Guide [14 marks]:** GE definition (2) | Comparison table (6) | Worked example (4) | Intuition (2)
+!!! tip "Marking Guide"
+    GE definition (2) | Comparison table (6) | Worked example (4) | Intuition (2)
 
 **Answer:**
 
@@ -498,7 +509,8 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ### Question 5 {#q-edge-05}
 
-> **Marking Guide [14 marks]:** Assumptions (4) | Production side reaching GE (3) | PPC & MRPT (2) | Consumption side (3) | Simultaneous equilibrium condition (2)
+!!! tip "Marking Guide"
+    Assumptions (4) | Production side reaching GE (3) | PPC & MRPT (2) | Consumption side (3) | Simultaneous equilibrium condition (2)
 
 **Answer:**
 
@@ -511,21 +523,21 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 5. **Ownership:** Consumers own factors; full employment; all income spent.
 6. **Perfect competition:** All agents are price-takers facing same (Pₓ, Pᵧ, w, r).
 
-> **Formal Definition 8 — The [Walrasian System](GLOSSARY.md#term-walrasian-system) and [Numeraire](GLOSSARY.md#term-numeraire)**
->
-> **The Walrasian system describes general equilibrium as a system of simultaneous equations equating supply and demand in every market** (Koutsoyiannis, pp.497–509). In the $2\times 2\times 2$ model, there are 18 equations in 18 unknowns:
->
-> $$ \begin{aligned}
-> &\text{Demand: } X_i(p), Y_i(p) \text{ for } i=A,B && \text{Supply: } L_i(p), K_i(p) \text{ for } i=A,B\\
-> &\text{Factor demand: } L_j(w,r), K_j(w,r) \text{ for } j=X,Y && \text{Output supply: } X(p), Y(p)\\
-> &\text{Market clearing: } 4 \text{ equations (X, Y, L, K)} && \text{Prices: } P_X, P_Y, w, r
-> \end{aligned} $$
->
-> **Numeraire:** Because Walras' Law makes one equation redundant, absolute prices are indeterminate. By setting one price as numeraire ($P_1 = 1$), the system determines $n-1$ relative prices uniquely (Munoz-Garcia, §6.2, p.338).
->
-> **Caution:** Counting equations = unknowns is neither necessary nor sufficient for existence (non-negativity constraints, Walras' Law redundancy, and the need for Arrow-Debreu fixed-point conditions).
->
-> → *See also: [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (18 equations detail), [Topic 6B Q8](./answers-ge-game-extern-trade.md#q-edge-08) (Walras' Law and numeraire example)*
+!!! quote "Formal Definition 8 — The [Walrasian System](GLOSSARY.md#term-walrasian-system) and [Numeraire](GLOSSARY.md#term-numeraire)"
+    
+    **The Walrasian system describes general equilibrium as a system of simultaneous equations equating supply and demand in every market** (Koutsoyiannis, pp.497–509). In the $2\times 2\times 2$ model, there are 18 equations in 18 unknowns:
+    
+    $$ \begin{aligned}
+    &\text{Demand: } X_i(p), Y_i(p) \text{ for } i=A,B && \text{Supply: } L_i(p), K_i(p) \text{ for } i=A,B\\
+    &\text{Factor demand: } L_j(w,r), K_j(w,r) \text{ for } j=X,Y && \text{Output supply: } X(p), Y(p)\\
+    &\text{Market clearing: } 4 \text{ equations (X, Y, L, K)} && \text{Prices: } P_X, P_Y, w, r
+    \end{aligned} $$
+    
+    **Numeraire:** Because Walras' Law makes one equation redundant, absolute prices are indeterminate. By setting one price as numeraire ($P_1 = 1$), the system determines $n-1$ relative prices uniquely (Munoz-Garcia, §6.2, p.338).
+    
+    **Caution:** Counting equations = unknowns is neither necessary nor sufficient for existence (non-negativity constraints, Walras' Law redundancy, and the need for Arrow-Debreu fixed-point conditions).
+    
+    → *See also: [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (18 equations detail), [Topic 6B Q8](./answers-ge-game-extern-trade.md#q-edge-08) (Walras' Law and numeraire example)*
 
 **How GE is reached:**
 
@@ -546,24 +558,26 @@ $\text{MRPT}_{xy} = \text{MRS}^A_{xy} = \text{MRS}^B_{xy} = P_x/P_y$
 
 ### Question 6 {#q-edge-06}
 
-> **Marking Guide [14 marks]:** Setup & box dimensions (2) | MRS derivation & Pareto condition (4) | Contract curve equation (2) | Endowment check & inefficiency (3) | Infeasibility identification (1) | Core reasoning (2)
+!!! tip "Marking Guide"
+    Setup & box dimensions (2) | MRS derivation & Pareto condition (4) | Contract curve equation (2) | Endowment check & inefficiency (3) | Infeasibility identification (1) | Core reasoning (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Numerical Edgeworth box problems are a staple of GE exams. Practice this exact type.
+!!! success "High-Yield"
+    Numerical Edgeworth box problems are a staple of GE exams. Practice this exact type.
 
-> **Formal Definition 9 — The Core of an Economy and [Gains from Trade](GLOSSARY.md#term-ge)**
->
-> **The core is the set of all feasible allocations that cannot be improved upon by any coalition of agents** (Munoz-Garcia, §6.3, p.354). Formally, an allocation $(x^A, x^B)$ is in the core if it is:
-> - **Feasible:** $x^A + x^B \leq \omega^A + \omega^B$
-> - **Individual rational:** $U^A(x^A) \geq U^A(\omega^A)$ and $U^B(x^B) \geq U^B(\omega^B)$
-> - **Coalition-proof:** No subset $S \subset \{A,B\}$ can reallocate its endowment to make all members of $S$ strictly better off.
->
-> **Gains from trade:** The lens-shaped region in the Edgeworth box between the two indifference curves passing through the endowment point represents the set of mutually beneficial trades — allocations where both parties are better off than at their endowment (Koutsoyiannis, Ch.22).
->
-> **Relationship to GE:** The competitive equilibrium allocation lies in the core. In a two-person exchange economy, the core coincides with the set of allocations on the contract curve that are individually rational.
->
-> → *See also: [Topic 6B Q6](./answers-ge-game-extern-trade.md#q-edge-06) (numerical Edgeworth box example)*
+!!! quote "Formal Definition 9 — The Core of an Economy and [Gains from Trade](GLOSSARY.md#term-ge)"
+    
+    **The core is the set of all feasible allocations that cannot be improved upon by any coalition of agents** (Munoz-Garcia, §6.3, p.354). Formally, an allocation $(x^A, x^B)$ is in the core if it is:
+    - **Feasible:** $x^A + x^B \leq \omega^A + \omega^B$
+    - **Individual rational:** $U^A(x^A) \geq U^A(\omega^A)$ and $U^B(x^B) \geq U^B(\omega^B)$
+    - **Coalition-proof:** No subset $S \subset \{A,B\}$ can reallocate its endowment to make all members of $S$ strictly better off.
+    
+    **Gains from trade:** The lens-shaped region in the Edgeworth box between the two indifference curves passing through the endowment point represents the set of mutually beneficial trades — allocations where both parties are better off than at their endowment (Koutsoyiannis, Ch.22).
+    
+    **Relationship to GE:** The competitive equilibrium allocation lies in the core. In a two-person exchange economy, the core coincides with the set of allocations on the contract curve that are individually rational.
+    
+    → *See also: [Topic 6B Q6](./answers-ge-game-extern-trade.md#q-edge-06) (numerical Edgeworth box example)*
 
 **Given:**
 - A: $U_a = X_a \cdot Y_a$ (Cobb-Douglas)
@@ -616,25 +630,27 @@ Infeasible — total X endowment is only 60. Cannot be in the core (core allocat
 
 ### Question 7 {#q-edge-07}
 
-> **Marking Guide [14 marks]:** Unknowns classification (4) | Equations classification (4) | Walras' Law redundancy (3) | Numeraire solution (2) | Arrow-Debreu conditions (1)
+!!! tip "Marking Guide"
+    Unknowns classification (4) | Equations classification (4) | Walras' Law redundancy (3) | Numeraire solution (2) | Arrow-Debreu conditions (1)
 
 **Answer:**
 
-⭐ **High-Yield** — Classic "counting equations and unknowns" question. Expect this as a short answer or exam component.
+!!! success "High-Yield"
+    Classic "counting equations and unknowns" question. Expect this as a short answer or exam component.
 
-> **Formal Definition 10 — [Walras' Law](GLOSSARY.md#term-walras-law)**
->
-> **Walras' Law states that the sum of the values of excess demands across all markets is identically zero** (Koutsoyiannis, p.508; Munoz-Garcia, §6.1, p.333):
->
-> $$ \sum_{i=1}^n p_i \cdot z_i(p) = 0 \quad \text{for all } p \gg 0 $$
->
-> **Implication:** If $n-1$ markets are in equilibrium, the $n$th market must also be in equilibrium — one market-clearing equation is redundant. Therefore, only $n-1$ independent equations determine $n-1$ relative prices.
->
-> **Intuition:** Walras' Law follows from budget constraints. Each consumer's expenditure equals their income, so their individual excess demand sums to zero. Aggregating across all consumers gives the economy-wide result.
->
-> **Logical corollary:** In an $n$-good economy, one good must serve as **numeraire** ($p_1 = 1$) to pin down the price level, since only relative prices are determined.
->
-> → *See also: [Topic 6B Q8](./answers-ge-game-extern-trade.md#q-edge-08) (numerical example), [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (18 equations)*
+!!! quote "Formal Definition 10 — [Walras' Law](GLOSSARY.md#term-walras-law)"
+    
+    **Walras' Law states that the sum of the values of excess demands across all markets is identically zero** (Koutsoyiannis, p.508; Munoz-Garcia, §6.1, p.333):
+    
+    $$ \sum_{i=1}^n p_i \cdot z_i(p) = 0 \quad \text{for all } p \gg 0 $$
+    
+    **Implication:** If $n-1$ markets are in equilibrium, the $n$th market must also be in equilibrium — one market-clearing equation is redundant. Therefore, only $n-1$ independent equations determine $n-1$ relative prices.
+    
+    **Intuition:** Walras' Law follows from budget constraints. Each consumer's expenditure equals their income, so their individual excess demand sums to zero. Aggregating across all consumers gives the economy-wide result.
+    
+    **Logical corollary:** In an $n$-good economy, one good must serve as **numeraire** ($p_1 = 1$) to pin down the price level, since only relative prices are determined.
+    
+    → *See also: [Topic 6B Q8](./answers-ge-game-extern-trade.md#q-edge-08) (numerical example), [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (18 equations)*
 
 **The $2\times 2\times 2$ Walrasian system** (Koutsoyiannis pp. 497-509):
 
@@ -683,25 +699,27 @@ Under these conditions, a GE solution **does exist**. However, without these ass
 
 ### Question 8 {#q-edge-08}
 
-> **Marking Guide [14 marks]:** Walras' Law statement (2) | Three-good illustration (3) | Price ratio solution & numeraire (5) | Numerical example (2) | Key insight (2)
+!!! tip "Marking Guide"
+    Walras' Law statement (2) | Three-good illustration (3) | Price ratio solution & numeraire (5) | Numerical example (2) | Key insight (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Walras' Law is a guaranteed feature of any GE exam. Know the theorem, the numeraire trick, and a numerical example.
+!!! success "High-Yield"
+    Walras' Law is a guaranteed feature of any GE exam. Know the theorem, the numeraire trick, and a numerical example.
 
-> **Formal Definition 11 — [Walras' Law](GLOSSARY.md#term-walras-law) (Mathematical Formulation)**
->
-> **Formal statement:** For any price vector $p \in \mathbb{R}^n_{++}$, the value of aggregate excess demand is zero:
->
-> $$ p \cdot z(p) = \sum_{i=1}^n p_i \cdot z_i(p) = 0 $$
->
-> **Proof from individual budget constraints:** Each consumer $h$ satisfies $p \cdot x^h(p) = p \cdot \omega^h$ (budget balance). Thus $p \cdot (x^h - \omega^h) = 0$ for each $h$. Summing over $h$: $\sum_h p \cdot (x^h - \omega^h) = p \cdot z(p) = 0$.
->
-> **Consequence for solving GE:** With $n$ goods and Walras' Law, solving $n-1$ market-clearing equations $z_i(p) = 0$ (for $i=1,\dots,n-1$) automatically ensures $z_n(p) = 0$. The numeraire price is set to 1, yielding $n-1$ relative prices (Munoz-Garcia, §6.2, pp.337–339).
->
-> **Example (3-good case):** Set $p_1 = 1$, solve $z_2(p_1,p_2,p_3) = 0$ and $z_3(p_1,p_2,p_3) = 0$ for $(p_2, p_3)$. Then $z_1 = 0$ automatically by Walras' Law.
->
-> → *See also: [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (existence conditions), [Topic 6A Q3](./answers-ge-game-extern-trade.md#q-ge-03) (excess demand properties)*
+!!! quote "Formal Definition 11 — [Walras' Law](GLOSSARY.md#term-walras-law) (Mathematical Formulation)"
+    
+    **Formal statement:** For any price vector $p \in \mathbb{R}^n_{++}$, the value of aggregate excess demand is zero:
+    
+    $$ p \cdot z(p) = \sum_{i=1}^n p_i \cdot z_i(p) = 0 $$
+    
+    **Proof from individual budget constraints:** Each consumer $h$ satisfies $p \cdot x^h(p) = p \cdot \omega^h$ (budget balance). Thus $p \cdot (x^h - \omega^h) = 0$ for each $h$. Summing over $h$: $\sum_h p \cdot (x^h - \omega^h) = p \cdot z(p) = 0$.
+    
+    **Consequence for solving GE:** With $n$ goods and Walras' Law, solving $n-1$ market-clearing equations $z_i(p) = 0$ (for $i=1,\dots,n-1$) automatically ensures $z_n(p) = 0$. The numeraire price is set to 1, yielding $n-1$ relative prices (Munoz-Garcia, §6.2, pp.337–339).
+    
+    **Example (3-good case):** Set $p_1 = 1$, solve $z_2(p_1,p_2,p_3) = 0$ and $z_3(p_1,p_2,p_3) = 0$ for $(p_2, p_3)$. Then $z_1 = 0$ automatically by Walras' Law.
+    
+    → *See also: [Topic 6B Q7](./answers-ge-game-extern-trade.md#q-edge-07) (existence conditions), [Topic 6A Q3](./answers-ge-game-extern-trade.md#q-ge-03) (excess demand properties)*
 
 **Walras' Law** states that the sum of excess demands across all markets equals zero:
 $\sum P_i \cdot ED_i = 0$ for all $i = 1, \ldots, n$
@@ -770,27 +788,29 @@ Given consistent ED functions: solve $ED_2 = 0$ and $ED_3 = 0$ for $P_2$, $P_3$ 
 
 ### Question 1 {#q-game-01}
 
-> **Marking Guide [14 marks]:** Nash equilibrium definition (2) | Profit functions (2) | FOC & best responses (4) | Solve NE prices (3) | Quantities, profits & comparison (2) | Diagram (1)
+!!! tip "Marking Guide"
+    Nash equilibrium definition (2) | Profit functions (2) | FOC & best responses (4) | Solve NE prices (3) | Quantities, profits & comparison (2) | Diagram (1)
 
 **Answer:**
 
-⭐ **High-Yield** — Bertrand differentiated duopoly is the most common game theory calculation on graduate exams.
+!!! success "High-Yield"
+    Bertrand differentiated duopoly is the most common game theory calculation on graduate exams.
 
-> **Formal Definition 12 — [Nash Equilibrium](GLOSSARY.md#term-nash-equilibrium) and Best Response
->
-> **Nash Equilibrium:** A strategy profile $(s_1^*, s_2^*, \dots, s_n^*)$ such that no player can gain by unilaterally deviating (Nash, 1950; Fudenberg & Tirole, 1991, Ch.1):
->
-> $$ u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \quad \text{for all } s_i \in S_i \text{ and all } i $$
->
-> **Best Response:** Player $i$'s best response $BR_i(s_{-i})$ is the set of strategies that maximise $i$'s payoff given opponents' strategies:
->
-> $$ BR_i(s_{-i}) = \arg\max_{s_i \in S_i} u_i(s_i, s_{-i}) $$
->
-> A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_i^* \in BR_i(s_{-i}^*)$ for all $i$.
->
-> **Classification:** NE can be pure (deterministic) or mixed (randomised). In Bertrand differentiated duopoly, best-response functions slope upward (strategic complements) — a price cut by one firm induces the other to cut price as well (Munoz-Garcia, Ch.10).
->
-> → *See also: [Topic 7 Q3](./answers-ge-game-extern-trade.md#q-game-03) (SPNE — refinement), [Topic 7 Q2](./answers-ge-game-extern-trade.md#q-game-02) (PD — why collusion is fragile)*
+!!! quote "Formal Definition 12 — Nash Equilibrium and Best Response"
+    
+    **Nash Equilibrium:** A strategy profile $(s_1^*, s_2^*, \dots, s_n^*)$ such that no player can gain by unilaterally deviating (Nash, 1950; Fudenberg & Tirole, 1991, Ch.1):
+    
+    $$ u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \quad \text{for all } s_i \in S_i \text{ and all } i $$
+    
+    **Best Response:** Player $i$'s best response $BR_i(s_{-i})$ is the set of strategies that maximise $i$'s payoff given opponents' strategies:
+    
+    $$ BR_i(s_{-i}) = \arg\max_{s_i \in S_i} u_i(s_i, s_{-i}) $$
+    
+    A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_i^* \in BR_i(s_{-i}^*)$ for all $i$.
+    
+    **Classification:** NE can be pure (deterministic) or mixed (randomised). In Bertrand differentiated duopoly, best-response functions slope upward (strategic complements) — a price cut by one firm induces the other to cut price as well (Munoz-Garcia, Ch.10).
+    
+    → *See also: [Topic 7 Q3](./answers-ge-game-extern-trade.md#q-game-03) (SPNE — refinement), [Topic 7 Q2](./answers-ge-game-extern-trade.md#q-game-02) (PD — why collusion is fragile)*
 
 **Nash equilibrium:** A set of strategies (one for each player) such that no player can unilaterally deviate and improve their payoff. Each player's strategy is a **best response** to the other's.
 
@@ -847,30 +867,32 @@ $\pi_{2} = (40 - 10)(60) = 1800$
 
 ### Question 2 {#q-game-02}
 
-> **Marking Guide [14 marks]:** PD definition (2) | Correct payoff matrix (2) | Dominant strategy check (3) | Dilemma explanation (2) | Oligopoly implications (3) | Repeated games & Folk Theorem (2)
+!!! tip "Marking Guide"
+    PD definition (2) | Correct payoff matrix (2) | Dominant strategy check (3) | Dilemma explanation (2) | Oligopoly implications (3) | Repeated games & Folk Theorem (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Prisoners' Dilemma is the most frequently cited game in oligopoly theory. Know the matrix cold.
+!!! success "High-Yield"
+    Prisoners' Dilemma is the most frequently cited game in oligopoly theory. Know the matrix cold.
 
-> **Formal Definition 13 — [Dominant Strategy](GLOSSARY.md#term-dominant-strategy) and the [Prisoner's Dilemma](GLOSSARY.md#term-pd)**
->
-> **Dominant strategy:** A strategy $s_i^*$ is dominant if it yields a strictly higher payoff than any other strategy **regardless** of what opponents do (Fudenberg & Tirole, §1.1):
->
-> $$ u_i(s_i^*, s_{-i}) > u_i(s_i, s_{-i}) \quad \text{for all } s_i \neq s_i^* \text{ and all } s_{-i} $$
->
-> **Prisoner's Dilemma (PD):** A $2\times 2$ game where each player has a dominant strategy (Defect), yet mutual defection is Pareto-inferior to mutual cooperation (Koutsoyiannis, p.412–413; Munoz-Garcia, §10.1.1):
->
-> | | Cooperate | Defect |
-> |---|---|---|
-> | **Cooperate** | $(R,R)$ | $(S,T)$ |
-> | **Defect** | $(T,S)$ | $(P,P)$ |
->
-> with $T > R > P > S$ (temptation > reward > punishment > sucker payoff) and $(T+S)/2 < R$ (to prevent alternating cooperation).
->
-> **Economic significance:** PD captures the fragility of oligopolistic collusion — each firm has an individual incentive to undercut, even though all would be better off maintaining high prices.
->
-> → *See also: [Topic 7 Q1](./answers-ge-game-extern-trade.md#q-game-01) (Bertrand competition), [Topic 7 Q4](./answers-ge-game-extern-trade.md#q-game-04) (grim trigger sustains cooperation)*
+!!! quote "Formal Definition 13 — [Dominant Strategy](GLOSSARY.md#term-dominant-strategy) and the [Prisoner's Dilemma](GLOSSARY.md#term-pd)"
+    
+    **Dominant strategy:** A strategy $s_i^*$ is dominant if it yields a strictly higher payoff than any other strategy **regardless** of what opponents do (Fudenberg & Tirole, §1.1):
+    
+    $$ u_i(s_i^*, s_{-i}) > u_i(s_i, s_{-i}) \quad \text{for all } s_i \neq s_i^* \text{ and all } s_{-i} $$
+    
+    **Prisoner's Dilemma (PD):** A $2\times 2$ game where each player has a dominant strategy (Defect), yet mutual defection is Pareto-inferior to mutual cooperation (Koutsoyiannis, p.412–413; Munoz-Garcia, §10.1.1):
+    
+    | | Cooperate | Defect |
+    |---|---|---|
+    | **Cooperate** | $(R,R)$ | $(S,T)$ |
+    | **Defect** | $(T,S)$ | $(P,P)$ |
+    
+    with $T > R > P > S$ (temptation > reward > punishment > sucker payoff) and $(T+S)/2 < R$ (to prevent alternating cooperation).
+    
+    **Economic significance:** PD captures the fragility of oligopolistic collusion — each firm has an individual incentive to undercut, even though all would be better off maintaining high prices.
+    
+    → *See also: [Topic 7 Q1](./answers-ge-game-extern-trade.md#q-game-01) (Bertrand competition), [Topic 7 Q4](./answers-ge-game-extern-trade.md#q-game-04) (grim trigger sustains cooperation)*
 
 **Prisoners' Dilemma (PD):** A game where individually rational choices lead to a collectively worse outcome. (Koutsoyiannis pp. 412-413)
 
@@ -906,26 +928,28 @@ Don't       │ (10, 0)       (1, 1)
 
 ### Question 3 {#q-game-03}
 
-> **Marking Guide [14 marks]:** Game structure & tree (4) | Backward induction — I's node (3) | Backward induction — E's node (3) | SPNE identification (2) | Non-credible threat discussion (2)
+!!! tip "Marking Guide"
+    Game structure & tree (4) | Backward induction — I's node (3) | Backward induction — E's node (3) | SPNE identification (2) | Non-credible threat discussion (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Extensive form entry games are the standard tool for teaching subgame perfection and credible threats.
+!!! success "High-Yield"
+    Extensive form entry games are the standard tool for teaching subgame perfection and credible threats.
 
-> **Formal Definition 14 — [Subgame Perfect Nash Equilibrium (SPNE)](GLOSSARY.md#term-spne) and [Backward Induction](GLOSSARY.md#term-backward-induction)**
->
-> **Subgame Perfect Nash Equilibrium:** A strategy profile that induces a Nash equilibrium in every subgame of the original game (Selten, 1965; Fudenberg & Tirole, §3.5). It is a refinement of NE that **eliminates non-credible threats**.
->
-> **Backward induction (rollback):** The algorithm for finding SPNE in finite-horizon games of perfect information:
-> 1. Start at the **last decision node** — choose the action that maximises that player's payoff.
-> 2. Move backward: at each preceding node, the player chooses optimally given the equilibrium play in all subsequent subgames.
-> 3. The resulting strategy profile is the unique SPNE (if no ties at any node).
->
-> **Market entry example:** The incumbent's threat to fight entry is not credible because accommodating is the optimal response once entry occurs — backward induction reveals this, and the entrant enters (Koutsoyiannis, p.414).
->
-> **Key property:** SPNE always exists in finite extensive-form games and is always a NE, but not every NE is subgame perfect.
->
-> → *See also: [Topic 7 Q1](./answers-ge-game-extern-trade.md#q-game-01) (Nash equilibrium), [Topic 7 Q5](./answers-ge-game-extern-trade.md#q-game-05) (backward induction paradox)*
+!!! quote "Formal Definition 14 — [Subgame Perfect Nash Equilibrium (SPNE)](GLOSSARY.md#term-spne) and [Backward Induction](GLOSSARY.md#term-backward-induction)"
+    
+    **Subgame Perfect Nash Equilibrium:** A strategy profile that induces a Nash equilibrium in every subgame of the original game (Selten, 1965; Fudenberg & Tirole, §3.5). It is a refinement of NE that **eliminates non-credible threats**.
+    
+    **Backward induction (rollback):** The algorithm for finding SPNE in finite-horizon games of perfect information:
+    1. Start at the **last decision node** — choose the action that maximises that player's payoff.
+    2. Move backward: at each preceding node, the player chooses optimally given the equilibrium play in all subsequent subgames.
+    3. The resulting strategy profile is the unique SPNE (if no ties at any node).
+    
+    **Market entry example:** The incumbent's threat to fight entry is not credible because accommodating is the optimal response once entry occurs — backward induction reveals this, and the entrant enters (Koutsoyiannis, p.414).
+    
+    **Key property:** SPNE always exists in finite extensive-form games and is always a NE, but not every NE is subgame perfect.
+    
+    → *See also: [Topic 7 Q1](./answers-ge-game-extern-trade.md#q-game-01) (Nash equilibrium), [Topic 7 Q5](./answers-ge-game-extern-trade.md#q-game-05) (backward induction paradox)*
 
 **Market entry game (extensive form):**
 
@@ -979,27 +1003,29 @@ Payoffs: (40, 40)
 
 ### Question 4 {#q-game-04}
 
-> **Marking Guide [14 marks]:** Stage-game NE identification (3) | Grim trigger strategy definition (2) | PV of cooperation (3) | PV of deviation (3) | Discount factor threshold (3)
+!!! tip "Marking Guide"
+    Stage-game NE identification (3) | Grim trigger strategy definition (2) | PV of cooperation (3) | PV of deviation (3) | Discount factor threshold (3)
 
 **Answer:**
 
-⭐ **High-Yield** — Repeated game with grim trigger is the standard way to sustain collusion. Expect δ* calculations.
+!!! success "High-Yield"
+    Repeated game with grim trigger is the standard way to sustain collusion. Expect δ* calculations.
 
-> **Formal Definition 15 — [Grim Trigger Strategy](GLOSSARY.md#term-grim-trigger)**
->
-> **A grim trigger strategy in a repeated game prescribes cooperation as long as all players have cooperated in every previous period; if any player ever deviates, punishment (reversion to the stage-game Nash equilibrium) is triggered forever** (Friedman, 1971; Fudenberg & Tirole, §5.1).
->
-> **Sustaining condition:** Cooperation is an SPNE under grim trigger if the discount factor $\delta$ satisfies:
->
-> $$ \delta \geq \frac{\pi_{\text{dev}} - \pi_{\text{coop}}}{\pi_{\text{dev}} - \pi_{\text{pun}}} $$
->
-> where $\pi_{\text{dev}}$ is the one-period gain from deviation, $\pi_{\text{coop}}$ is the cooperative per-period payoff, and $\pi_{\text{pun}}$ is the punishment (NE) payoff.
->
-> **Intuition:** The short-run gain from cheating must be outweighed by the long-run loss from permanent punishment. For $\delta \to 1$ (very patient players), almost any cooperative outcome can be sustained (Folk Theorem).
->
-> **Caution:** Grim trigger is not renegotiation-proof — once triggered, the punishment phase continues even though both would prefer to renegotiate and return to cooperation.
->
-> → *See also: [Topic 7 Q2](./answers-ge-game-extern-trade.md#q-game-02) (PD and Folk Theorem), [Topic 7 Q4](./answers-ge-game-extern-trade.md#q-game-04) (δ* calculation)*
+!!! quote "Formal Definition 15 — [Grim Trigger Strategy](GLOSSARY.md#term-grim-trigger)"
+    
+    **A grim trigger strategy in a repeated game prescribes cooperation as long as all players have cooperated in every previous period; if any player ever deviates, punishment (reversion to the stage-game Nash equilibrium) is triggered forever** (Friedman, 1971; Fudenberg & Tirole, §5.1).
+    
+    **Sustaining condition:** Cooperation is an SPNE under grim trigger if the discount factor $\delta$ satisfies:
+    
+    $$ \delta \geq \frac{\pi_{\text{dev}} - \pi_{\text{coop}}}{\pi_{\text{dev}} - \pi_{\text{pun}}} $$
+    
+    where $\pi_{\text{dev}}$ is the one-period gain from deviation, $\pi_{\text{coop}}$ is the cooperative per-period payoff, and $\pi_{\text{pun}}$ is the punishment (NE) payoff.
+    
+    **Intuition:** The short-run gain from cheating must be outweighed by the long-run loss from permanent punishment. For $\delta \to 1$ (very patient players), almost any cooperative outcome can be sustained (Folk Theorem).
+    
+    **Caution:** Grim trigger is not renegotiation-proof — once triggered, the punishment phase continues even though both would prefer to renegotiate and return to cooperation.
+    
+    → *See also: [Topic 7 Q2](./answers-ge-game-extern-trade.md#q-game-02) (PD and Folk Theorem), [Topic 7 Q4](./answers-ge-game-extern-trade.md#q-game-04) (δ* calculation)*
 
 **Question:** Show that "Down/Right" is SPNE if the stage game is infinitely repeated with grim trigger strategies.
 
@@ -1084,27 +1110,29 @@ So if players are sufficiently patient ($\delta \ge \frac{2}{3}$), (Up, Left) ca
 
 ### Question 5 {#q-game-05}
 
-> **Marking Guide [14 marks]:** Paradox definition (2) | Finitely repeated PD unraveling (4) | Why multiple NE helps (4) | Reputation/bounded rationality (2) | Synthesis (2)
+!!! tip "Marking Guide"
+    Paradox definition (2) | Finitely repeated PD unraveling (4) | Why multiple NE helps (4) | Reputation/bounded rationality (2) | Synthesis (2)
 
 **Answer:**
 
-⭐ **High-Yield** — The unraveling paradox is a favourite exam topic connecting game theory to real-world cooperation.
+!!! success "High-Yield"
+    The unraveling paradox is a favourite exam topic connecting game theory to real-world cooperation.
 
-> **Formal Definition 16 — [Backward Induction](GLOSSARY.md#term-backward-induction) Paradox (Unraveling)**
->
-> **The backward induction paradox (unraveling) refers to the result that in any finite-horizon game with a unique stage-game Nash equilibrium, backward induction predicts defection in every period — even when both players would prefer mutual cooperation** (Koutsoyiannis, p.413; Fudenberg & Tirole, §5.1).
->
-> **Mechanism:** In a finitely repeated Prisoner's Dilemma:
-> - Period $T$ (last): both defect (dominant strategy).
-> - Period $T-1$: knowing $T$ will be defection, there is no incentive to cooperate — both defect.
-> - This unravels backward to period 1: defection in **every** period.
->
-> **Resolution paths:**
-> 1. **Multiple stage-game Nash equilibria:** If the stage game has a cooperative NE alongside the non-cooperative one, punishment strategies sustain cooperation.
-> 2. **Incomplete information:** A small probability of a "cooperative type" limits unraveling (Kreps-Milgrom-Roberts-Wilson, 1982).
-> 3. **Bounded rationality:** Real players may not perform full backward induction.
->
-> → *See also: [Topic 7 Q6](./answers-ge-game-extern-trade.md#q-game-06) (centipede game — same paradox)*
+!!! quote "Formal Definition 16 — [Backward Induction](GLOSSARY.md#term-backward-induction) Paradox (Unraveling)"
+    
+    **The backward induction paradox (unraveling) refers to the result that in any finite-horizon game with a unique stage-game Nash equilibrium, backward induction predicts defection in every period — even when both players would prefer mutual cooperation** (Koutsoyiannis, p.413; Fudenberg & Tirole, §5.1).
+    
+    **Mechanism:** In a finitely repeated Prisoner's Dilemma:
+    - Period $T$ (last): both defect (dominant strategy).
+    - Period $T-1$: knowing $T$ will be defection, there is no incentive to cooperate — both defect.
+    - This unravels backward to period 1: defection in **every** period.
+    
+    **Resolution paths:**
+    1. **Multiple stage-game Nash equilibria:** If the stage game has a cooperative NE alongside the non-cooperative one, punishment strategies sustain cooperation.
+    2. **Incomplete information:** A small probability of a "cooperative type" limits unraveling (Kreps-Milgrom-Roberts-Wilson, 1982).
+    3. **Bounded rationality:** Real players may not perform full backward induction.
+    
+    → *See also: [Topic 7 Q6](./answers-ge-game-extern-trade.md#q-game-06) (centipede game — same paradox)*
 
 **Paradox of backward induction:** In finite-horizon games of perfect information, backward induction predicts cooperation unravels from the end. For example, in a finitely repeated Prisoners' Dilemma:
 
@@ -1137,25 +1165,26 @@ Yes. The paradox arises when the stage game has a **unique** Nash equilibrium. I
 
 ### Question 6 {#q-game-06}
 
-> **Marking Guide [14 marks]:** Game description (2) | Game tree diagram (3) | Backward induction steps (4) | Paradox statement (2) | Overcoming mechanisms (3)
+!!! tip "Marking Guide"
+    Game description (2) | Game tree diagram (3) | Backward induction steps (4) | Paradox statement (2) | Overcoming mechanisms (3)
 
 **Answer:**
 
-> **Formal Definition 17 — [Centipede Game](GLOSSARY.md#term-centipede)**
->
-> **The centipede game (Rosenthal, 1981) is a sequential-move game where two players alternately choose to "Take" (end the game) or "Pass" (increase the pot for the next player)** (Munoz-Garcia, §10.4, p.650).
->
-> **Structure:** Pot doubles with each Pass. Taking gives the current player a larger share now; Passing risks the opponent taking an even larger share later.
->
-> **Paradox:** Backward induction predicts the first player Takes immediately, yielding a minimal payoff $(1,0)$. Yet if both Pass repeatedly, they reach a Pareto-superior outcome $(2,2)$.
->
-> $$ \text{Backward induction: Take at Round 1} \to (1,0); \quad \text{Both Pass to end} \to (2,2) $$
->
-> **Experimental evidence (McKelvey & Palfrey, 1992):** Subjects Pass far more often than backward induction predicts, especially in early rounds. The Kreps incomplete-information model (a small chance of an "altruistic" type) explains the observed pattern well.
->
-> **Key insight:** The [centipede game](GLOSSARY.md#term-centipede) is the canonical illustration of the gap between theoretical [backward induction](GLOSSARY.md#term-backward-induction) and actual human behaviour.
->
-> → *See also: [Topic 7 Q5](./answers-ge-game-extern-trade.md#q-game-05) (backward induction paradox — same logic)*
+!!! quote "Formal Definition 17 — [Centipede Game](GLOSSARY.md#term-centipede)"
+    
+    **The centipede game (Rosenthal, 1981) is a sequential-move game where two players alternately choose to "Take" (end the game) or "Pass" (increase the pot for the next player)** (Munoz-Garcia, §10.4, p.650).
+    
+    **Structure:** Pot doubles with each Pass. Taking gives the current player a larger share now; Passing risks the opponent taking an even larger share later.
+    
+    **Paradox:** Backward induction predicts the first player Takes immediately, yielding a minimal payoff $(1,0)$. Yet if both Pass repeatedly, they reach a Pareto-superior outcome $(2,2)$.
+    
+    $$ \text{Backward induction: Take at Round 1} \to (1,0); \quad \text{Both Pass to end} \to (2,2) $$
+    
+    **Experimental evidence (McKelvey & Palfrey, 1992):** Subjects Pass far more often than backward induction predicts, especially in early rounds. The Kreps incomplete-information model (a small chance of an "altruistic" type) explains the observed pattern well.
+    
+    **Key insight:** The [centipede game](GLOSSARY.md#term-centipede) is the canonical illustration of the gap between theoretical [backward induction](GLOSSARY.md#term-backward-induction) and actual human behaviour.
+    
+    → *See also: [Topic 7 Q5](./answers-ge-game-extern-trade.md#q-game-05) (backward induction paradox — same logic)*
 
 **Centipede game (Rosenthal, 1981):** A sequential game where two players alternately choose to "Take" or "Pass." The total pot grows with each Pass, but taking ends the game.
 
@@ -1216,29 +1245,31 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 ### Question 1 {#q-extern-01}
 
-> **Marking Guide [14 marks]:** Definition & mechanism (4) | Worked example — fishing (4) | Solutions: property rights/taxes/regulation (4) | Link to externalities (2)
+!!! tip "Marking Guide"
+    Definition & mechanism (4) | Worked example — fishing (4) | Solutions: property rights/taxes/regulation (4) | Link to externalities (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Tragedy of the Commons is the canonical negative externality example. Connects property rights, externalities, and Coase.
+!!! success "High-Yield"
+    Tragedy of the Commons is the canonical negative externality example. Connects property rights, externalities, and Coase.
 
-> **Formal Definition 18 — [Tragedy of the Commons](GLOSSARY.md#term-tragedy-commons)**
->
-> **The Tragedy of the Commons (Hardin, 1968) describes how a shared resource is over-exploited when each user acts independently according to their self-interest, contrary to the common good** (Munoz-Garcia, §8.3, p.552).
->
-> **Formal mechanism:** Each user $i$ chooses extraction level $q_i$ to maximise private benefit $B_i(q_i)$ while the cost of resource depletion $C(\sum_j q_j)$ is shared by all. The Nash equilibrium satisfies:
->
-> $$ B_i'(q_i^*) = C'(Q^*) \quad \text{(private optimum)} $$
->
-> while the social optimum requires:
->
-> $$ B_i'(q_i^\circ) = \sum_j C'(Q^\circ) \quad \text{(social optimum)} $$
->
-> Since the private cost ignores the external cost imposed on others, $q_i^* > q_i^\circ$ and total extraction $Q^* > Q^\circ$ — the resource is overused.
->
-> **Solutions:** Private property rights (Coase), Pigouvian taxes ($\tau = \text{marginal social damage}$), or regulatory quotas.
->
-> → *See also: [Topic 8 Q2](./answers-ge-game-extern-trade.md#q-extern-02) (steel-fishery — same externality structure)*
+!!! quote "Formal Definition 18 — [Tragedy of the Commons](GLOSSARY.md#term-tragedy-commons)"
+    
+    **The Tragedy of the Commons (Hardin, 1968) describes how a shared resource is over-exploited when each user acts independently according to their self-interest, contrary to the common good** (Munoz-Garcia, §8.3, p.552).
+    
+    **Formal mechanism:** Each user $i$ chooses extraction level $q_i$ to maximise private benefit $B_i(q_i)$ while the cost of resource depletion $C(\sum_j q_j)$ is shared by all. The Nash equilibrium satisfies:
+    
+    $$ B_i'(q_i^*) = C'(Q^*) \quad \text{(private optimum)} $$
+    
+    while the social optimum requires:
+    
+    $$ B_i'(q_i^\circ) = \sum_j C'(Q^\circ) \quad \text{(social optimum)} $$
+    
+    Since the private cost ignores the external cost imposed on others, $q_i^* > q_i^\circ$ and total extraction $Q^* > Q^\circ$ — the resource is overused.
+    
+    **Solutions:** Private property rights (Coase), Pigouvian taxes ($\tau = \text{marginal social damage}$), or regulatory quotas.
+    
+    → *See also: [Topic 8 Q2](./answers-ge-game-extern-trade.md#q-extern-02) (steel-fishery — same externality structure)*
 
 **Tragedy of the Commons** (Hardin, 1968): When a resource is owned in common (no one has exclusive property rights), each individual acting rationally in their self-interest depletes the resource, ultimately destroying it for everyone.
 
@@ -1258,27 +1289,29 @@ Round 1: P1 predicts Round 2 yields (0,3) if P now. T gives (1,0). 1 > 0 → cho
 
 ### Question 2 {#q-extern-02}
 
-> **Marking Guide [14 marks]:** Setup (2) | Unregulated FOCs (4) | Joint profit FOC & social optimum (4) | Coase Theorem & bargaining (2) | Diagram & DWL (2)
+!!! tip "Marking Guide"
+    Setup (2) | Unregulated FOCs (4) | Joint profit FOC & social optimum (4) | Coase Theorem & bargaining (2) | Diagram & DWL (2)
 
 **Answer:**
 
-⭐ **High-Yield** — The steel-fishery model is the canonical production externality. Every externality question builds on this framework.
+!!! success "High-Yield"
+    The steel-fishery model is the canonical production externality. Every externality question builds on this framework.
 
-> **Formal Definition 19 — [Production Externality](GLOSSARY.md#term-negative-externality), [Coase Theorem](GLOSSARY.md#term-coase), and [Pigouvian Tax](GLOSSARY.md#term-pigouvian-tax)**
->
-> **Production externality:** An uncompensated spillover effect of one firm's production on another's cost or profit function (Koutsoyiannis, Ch.23; Munoz-Garcia, §8.1, p.531). A steel mill's pollution $x$ reduces the fishery's profits: $\partial \pi_F / \partial x < 0$, a **negative production externality**.
->
-> **Pigouvian tax** (Pigou, 1920): A per-unit tax $\tau$ on the polluting activity set equal to the marginal social damage at the efficient allocation:
->
-> $$ \tau^* = \left. -\frac{\partial C_F}{\partial x} \right|_{x=x^\circ} = \left. \frac{\partial C_S}{\partial x} \right|_{x=x^\circ} $$
->
-> This internalises the externality, aligning private and social marginal costs.
->
-> **Coase Theorem** (Coase, 1960): If property rights are well-defined and transaction costs are zero, private bargaining achieves the efficient outcome regardless of the initial allocation of rights. The efficient pollution level $x^\circ$ satisfies $-\partial C_S/\partial x = \partial C_F/\partial x$. The distribution of welfare (who pays whom) depends on the rights assignment, but the quantity is identical.
->
-> **Practical limitation:** Coase bargaining fails with many parties (free-riding), high transaction costs, or asymmetric information — justifying Pigouvian intervention.
->
-> → *See also: [Topic 8 Q1](./answers-ge-game-extern-trade.md#q-extern-01) (Tragedy of Commons), [Topic 8 Q6](./answers-ge-game-extern-trade.md#q-extern-06) (missing markets)*
+!!! quote "Formal Definition 19 — [Production Externality](GLOSSARY.md#term-negative-externality), [Coase Theorem](GLOSSARY.md#term-coase), and [Pigouvian Tax](GLOSSARY.md#term-pigouvian-tax)"
+    
+    **Production externality:** An uncompensated spillover effect of one firm's production on another's cost or profit function (Koutsoyiannis, Ch.23; Munoz-Garcia, §8.1, p.531). A steel mill's pollution $x$ reduces the fishery's profits: $\partial \pi_F / \partial x < 0$, a **negative production externality**.
+    
+    **Pigouvian tax** (Pigou, 1920): A per-unit tax $\tau$ on the polluting activity set equal to the marginal social damage at the efficient allocation:
+    
+    $$ \tau^* = \left. -\frac{\partial C_F}{\partial x} \right|_{x=x^\circ} = \left. \frac{\partial C_S}{\partial x} \right|_{x=x^\circ} $$
+    
+    This internalises the externality, aligning private and social marginal costs.
+    
+    **Coase Theorem** (Coase, 1960): If property rights are well-defined and transaction costs are zero, private bargaining achieves the efficient outcome regardless of the initial allocation of rights. The efficient pollution level $x^\circ$ satisfies $-\partial C_S/\partial x = \partial C_F/\partial x$. The distribution of welfare (who pays whom) depends on the rights assignment, but the quantity is identical.
+    
+    **Practical limitation:** Coase bargaining fails with many parties (free-riding), high transaction costs, or asymmetric information — justifying Pigouvian intervention.
+    
+    → *See also: [Topic 8 Q1](./answers-ge-game-extern-trade.md#q-extern-01) (Tragedy of Commons), [Topic 8 Q6](./answers-ge-game-extern-trade.md#q-extern-06) (missing markets)*
 
 **Steel-fishery pollution externality:**
 
@@ -1356,25 +1389,27 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ### Question 3 {#q-extern-03}
 
-> **Marking Guide [14 marks]:** Asymmetric info definition (2) | Lemons setup (3) | Adverse selection mechanism (4) | Equilibrium calculation (3) | General principle & solutions (2)
+!!! tip "Marking Guide"
+    Asymmetric info definition (2) | Lemons setup (3) | Adverse selection mechanism (4) | Equilibrium calculation (3) | General principle & solutions (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Akerlof's "Market for Lemons" (1970, Nobel Prize) is the foundational model of asymmetric information.
+!!! success "High-Yield"
+    Akerlof's "Market for Lemons" (1970, Nobel Prize) is the foundational model of asymmetric information.
 
-> **Formal Definition 20 — [Asymmetric Information](GLOSSARY.md#term-asymmetric-info) and [Adverse Selection](GLOSSARY.md#term-adverse-selection) (The [Lemons Problem](GLOSSARY.md#term-lemons))
->
-> **Asymmetric information:** A situation where one party to a transaction has superior information about a relevant characteristic (Akerlof, 1970; Munoz-Garcia, §8.4, p.564). Here, sellers know product quality but buyers do not.
->
-> **Adverse selection (the "Lemons Problem"):** When quality is unobservable to buyers, the market price reflects the expected (average) quality. High-quality sellers find this price too low and exit, reducing the average quality. This feeds back into a lower willingness-to-pay, potentially causing complete market collapse (Akerlof, 1970, Nobel Prize 2001).
->
-> $$ \text{Buyer's WTP} = \mathbb{E}[V] = \mu V_H + (1-\mu) V_L $$
->
-> **General condition for market collapse:** $E[V] < \max\{\text{reservation price of high-quality sellers}\}$ — asymmetric information destroys the market.
->
-> **Solutions:** Signalling (warranties, certifications — Spence, 1973), screening (menus of contracts — Rothschild-Stiglitz, 1976), reputation mechanisms.
->
-> → *See also: [Topic 8 Q4](./answers-ge-game-extern-trade.md#q-extern-04) (Spence signalling — market solution)*
+!!! quote "Formal Definition 20 — Asymmetric Information and Adverse Selection (The Lemons Problem)"
+    
+    **Asymmetric information:** A situation where one party to a transaction has superior information about a relevant characteristic (Akerlof, 1970; Munoz-Garcia, §8.4, p.564). Here, sellers know product quality but buyers do not.
+    
+    **Adverse selection (the "Lemons Problem"):** When quality is unobservable to buyers, the market price reflects the expected (average) quality. High-quality sellers find this price too low and exit, reducing the average quality. This feeds back into a lower willingness-to-pay, potentially causing complete market collapse (Akerlof, 1970, Nobel Prize 2001).
+    
+    $$ \text{Buyer's WTP} = \mathbb{E}[V] = \mu V_H + (1-\mu) V_L $$
+    
+    **General condition for market collapse:** $E[V] < \max\{\text{reservation price of high-quality sellers}\}$ — asymmetric information destroys the market.
+    
+    **Solutions:** Signalling (warranties, certifications — Spence, 1973), screening (menus of contracts — Rothschild-Stiglitz, 1976), reputation mechanisms.
+    
+    → *See also: [Topic 8 Q4](./answers-ge-game-extern-trade.md#q-extern-04) (Spence signalling — market solution)*
 
 **Asymmetric information → market disappearance (Market for Lemons, Akerlof, 1970):**
 
@@ -1407,29 +1442,31 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ### Question 4 {#q-extern-04}
 
-> **Marking Guide [14 marks]:** Setup & assumptions (2) | Signaling game structure (3) | Separating equilibrium conditions (4) | Pooling equilibrium (3) | Welfare analysis (2)
+!!! tip "Marking Guide"
+    Setup & assumptions (2) | Signaling game structure (3) | Separating equilibrium conditions (4) | Pooling equilibrium (3) | Welfare analysis (2)
 
 **Answer:**
 
-⭐ **High-Yield** — Spence (1973, Nobel Prize 2001) is the classic signalling model. Tests separating vs pooling equilibrium logic.
+!!! success "High-Yield"
+    Spence (1973, Nobel Prize 2001) is the classic signalling model. Tests separating vs pooling equilibrium logic.
 
-> **Formal Definition 21 — [Signalling](GLOSSARY.md#term-signaling) ([Spence](GLOSSARY.md#term-spence), 1973) and [Separating](GLOSSARY.md#term-separating-equil) vs [Pooling Equilibrium](GLOSSARY.md#term-pooling-equil)**
->
-> **Spence's job-market signalling model:** Workers have private productivity types (High $H$ or Low $L$). Education $e$ is costly ($c_H < c_L$ — the single-crossing property) but does not enhance productivity — it serves as a **signal** of type (Spence, 1973, Nobel Prize 2001; Munoz-Garcia, §8.5, pp.573–578).
->
-> **[Perfect Bayesian Equilibrium](GLOSSARY.md#term-perfect-bayesian) ([PBE](GLOSSARY.md#term-pbe)):**
-> - **Separating equilibrium:** $H$ acquires education ($e=1$), $L$ does not ($e=0$). Firms correctly infer type: $\mu(H|e=1)=1$, $\mu(H|e=0)=0$. Wages: $w(1)=q_H$, $w(0)=q_L$.
-> - **Pooling equilibrium:** Neither type acquires education. Firms hold off-equilibrium beliefs that sustain no deviation. Wage: $w(0) = \mu q_H + (1-\mu)q_L$.
->
-> **Separating condition:** $w_H - w_L \in [c_H, c_L]$ — education must be cheap enough for $H$ to acquire but too costly for $L$ to mimic.
->
-> **Classification:**
-> - **Signalling:** Informed party moves first (worker chooses education)
-> - **Screening:** Uninformed party moves first (firm offers menu of contracts)
->
-> **Caution:** Separating equilibria are Pareto-inferior to full information (wasteful signalling), and the Intuitive Criterion (Cho-Kreps, 1987) may eliminate some pooling equilibria.
->
-> → *See also: [Topic 8 Q3](./answers-ge-game-extern-trade.md#q-extern-03) (lemons — the problem signalling solves)*
+!!! quote "Formal Definition 21 — [Signalling](GLOSSARY.md#term-signaling) ([Spence](GLOSSARY.md#term-spence), 1973) and [Separating](GLOSSARY.md#term-separating-equil) vs [Pooling Equilibrium](GLOSSARY.md#term-pooling-equil)"
+    
+    **Spence's job-market signalling model:** Workers have private productivity types (High $H$ or Low $L$). Education $e$ is costly ($c_H < c_L$ — the single-crossing property) but does not enhance productivity — it serves as a **signal** of type (Spence, 1973, Nobel Prize 2001; Munoz-Garcia, §8.5, pp.573–578).
+    
+    **[Perfect Bayesian Equilibrium](GLOSSARY.md#term-perfect-bayesian) ([PBE](GLOSSARY.md#term-pbe)):**
+    - **Separating equilibrium:** $H$ acquires education ($e=1$), $L$ does not ($e=0$). Firms correctly infer type: $\mu(H|e=1)=1$, $\mu(H|e=0)=0$. Wages: $w(1)=q_H$, $w(0)=q_L$.
+    - **Pooling equilibrium:** Neither type acquires education. Firms hold off-equilibrium beliefs that sustain no deviation. Wage: $w(0) = \mu q_H + (1-\mu)q_L$.
+    
+    **Separating condition:** $w_H - w_L \in [c_H, c_L]$ — education must be cheap enough for $H$ to acquire but too costly for $L$ to mimic.
+    
+    **Classification:**
+    - **Signalling:** Informed party moves first (worker chooses education)
+    - **Screening:** Uninformed party moves first (firm offers menu of contracts)
+    
+    **Caution:** Separating equilibria are Pareto-inferior to full information (wasteful signalling), and the Intuitive Criterion (Cho-Kreps, 1987) may eliminate some pooling equilibria.
+    
+    → *See also: [Topic 8 Q3](./answers-ge-game-extern-trade.md#q-extern-03) (lemons — the problem signalling solves)*
 
 **Spence's education signaling model** (Spence, 1973; Munoz-Garcia pp. 573-578):
 
@@ -1485,23 +1522,24 @@ If property rights are well-defined and transaction costs are zero, bargaining a
 
 ### Question 5 {#q-extern-05}
 
-> **Marking Guide [14 marks]:** Definition (2) | Bandwagon effect — positive externality (4) | Snob effect — negative externality (4) | Veblen effect (2) | Diagram (2)
+!!! tip "Marking Guide"
+    Definition (2) | Bandwagon effect — positive externality (4) | Snob effect — negative externality (4) | Veblen effect (2) | Diagram (2)
 
 **Answer:**
 
-> **Formal Definition 22 — [Bandwagon](GLOSSARY.md#term-bandwagon), [Snob](GLOSSARY.md#term-snob), and Veblen Effects
->
-> **Consumption externalities:** Situations where one consumer's utility depends on others' consumption, violating the independence assumption of standard demand theory (Leibenstein, 1950; Koutsoyiannis, Ch.8).
->
-> **Bandwagon effect (positive consumption externality):** Demand increases as more consumers purchase the good — "keeping up with the Joneses." This makes market demand more elastic (network effects reinforce price changes). Formally: $\partial U_i / \partial C_j > 0$ for $i \neq j$.
->
-> **Snob effect (negative consumption externality):** Demand falls as more consumers purchase the good — the desire for exclusivity. Market demand becomes less elastic. Formally: $\partial U_i / \partial C_j < 0$ for $i \neq j$.
->
-> **Veblen effect (conspicuous consumption):** Demand increases with price because high price signals status (Veblen, 1899). Related to snob effects but driven by price as a quality/status signal, not by others' consumption per se.
->
-> **Significance for GE:** These externalities violate the independence condition of the $2\times 2\times 2$ model, causing the First Welfare Theorem to fail — the competitive equilibrium is no longer Pareto-efficient (see Topic 8 Q6).
->
-> → *See also: [Topic 8 Q6](./answers-ge-game-extern-trade.md#q-extern-06) (missing market and Pareto failure)*
+!!! quote "Formal Definition 22 — Bandwagon, Snob, and Veblen Effects"
+    
+    **Consumption externalities:** Situations where one consumer's utility depends on others' consumption, violating the independence assumption of standard demand theory (Leibenstein, 1950; Koutsoyiannis, Ch.8).
+    
+    **Bandwagon effect (positive consumption externality):** Demand increases as more consumers purchase the good — "keeping up with the Joneses." This makes market demand more elastic (network effects reinforce price changes). Formally: $\partial U_i / \partial C_j > 0$ for $i \neq j$.
+    
+    **Snob effect (negative consumption externality):** Demand falls as more consumers purchase the good — the desire for exclusivity. Market demand becomes less elastic. Formally: $\partial U_i / \partial C_j < 0$ for $i \neq j$.
+    
+    **Veblen effect (conspicuous consumption):** Demand increases with price because high price signals status (Veblen, 1899). Related to snob effects but driven by price as a quality/status signal, not by others' consumption per se.
+    
+    **Significance for GE:** These externalities violate the independence condition of the $2\times 2\times 2$ model, causing the First Welfare Theorem to fail — the competitive equilibrium is no longer Pareto-efficient (see Topic 8 Q6).
+    
+    → *See also: [Topic 8 Q6](./answers-ge-game-extern-trade.md#q-extern-06) (missing market and Pareto failure)*
 
 **Consumption externality:** Occurs when one consumer's utility depends not only on their own consumption but also on others' consumption (positively or negatively). The market does not price this interdependence.
 
@@ -1545,24 +1583,25 @@ Quantity Demanded
 
 ### Question 6 {#q-extern-06}
 
-> **Marking Guide [14 marks]:** Direct answer (2) | Assumption breakdown (3) | Pareto condition failure (4) | Welfare Theorem failure (3) | Mathematical formulation (2)
+!!! tip "Marking Guide"
+    Direct answer (2) | Assumption breakdown (3) | Pareto condition failure (4) | Welfare Theorem failure (3) | Mathematical formulation (2)
 
 **Answer:**
 
-> **Formal Definition 23 — [Missing Market](GLOSSARY.md#term-negative-externality) (Externality as Market Failure)
->
-> **A missing market exists when there is no market in which a good or bad can be traded, even though it has value to economic agents** (Munoz-Garcia, §8.1, p.530). Externalities are fundamentally a missing-market problem: the price mechanism fails to price the spillover effect.
->
-> **Relation to Pareto efficiency:** The First Welfare Theorem requires **complete markets** (a price for every commodity, including externalities). When a market is missing, the competitive equilibrium is not Pareto-optimal because:
->
-> 1. **Consumption externalities:** $U_A = U_A(X_A, Y_A, X_B, Y_B)$ — A's utility enters B's preferences directly, not through prices.
-> 2. **Production externalities:** The polluter's cost function affects the fishery's profit — there is no market price for pollution.
->
-> **Standard Pareto condition fails:** $\text{MRS}^A_{xy} = \text{MRS}^B_{xy}$ is necessary but not sufficient when externalities exist (Koutsoyiannis, Ch.23, p.532).
->
-> **Remedies:** Pigouvian taxes/subsidies (creating a shadow price for the externality), Coase bargaining (simulating a market through property rights), or direct regulation.
->
-> → *See also: [Topic 8 Q2](./answers-ge-game-extern-trade.md#q-extern-02) (steel-fishery externality), [Topic 8 Q5](./answers-ge-game-extern-trade.md#q-extern-05) (consumption externalities)*
+!!! quote "Formal Definition 23 — Missing Market (Externality as Market Failure)"
+    
+    **A missing market exists when there is no market in which a good or bad can be traded, even though it has value to economic agents** (Munoz-Garcia, §8.1, p.530). Externalities are fundamentally a missing-market problem: the price mechanism fails to price the spillover effect.
+    
+    **Relation to Pareto efficiency:** The First Welfare Theorem requires **complete markets** (a price for every commodity, including externalities). When a market is missing, the competitive equilibrium is not Pareto-optimal because:
+    
+    1. **Consumption externalities:** $U_A = U_A(X_A, Y_A, X_B, Y_B)$ — A's utility enters B's preferences directly, not through prices.
+    2. **Production externalities:** The polluter's cost function affects the fishery's profit — there is no market price for pollution.
+    
+    **Standard Pareto condition fails:** $\text{MRS}^A_{xy} = \text{MRS}^B_{xy}$ is necessary but not sufficient when externalities exist (Koutsoyiannis, Ch.23, p.532).
+    
+    **Remedies:** Pigouvian taxes/subsidies (creating a shadow price for the externality), Coase bargaining (simulating a market through property rights), or direct regulation.
+    
+    → *See also: [Topic 8 Q2](./answers-ge-game-extern-trade.md#q-extern-02) (steel-fishery externality), [Topic 8 Q5](./answers-ge-game-extern-trade.md#q-extern-05) (consumption externalities)*
 
 **Short answer: Yes, consumption externalities affect the GE solution in the $2\times 2\times 2$ model.**
 
@@ -1606,27 +1645,29 @@ The $2\times 2\times 2$ model explicitly **assumes away** consumption externalit
 
 ### Question 1 {#q-trade-01}
 
-> **Marking Guide [14 marks]:** Autarky equilibrium (2) | Free trade imports (2) | Tariff welfare effects — CS, [PS](GLOSSARY.md#term-ps), revenue (4) | DWL calculation (2) | VER analysis (2) | Comparison table (2)
+!!! tip "Marking Guide"
+    Autarky equilibrium (2) | Free trade imports (2) | Tariff welfare effects — CS, [PS](GLOSSARY.md#term-ps), revenue (4) | DWL calculation (2) | VER analysis (2) | Comparison table (2)
 
 **Answer:**
 
-⭐ **High-Yield** — The only trade question on the exam. Must be fully prepared as a guaranteed pick if choosing this set.
+!!! success "High-Yield"
+    The only trade question on the exam. Must be fully prepared as a guaranteed pick if choosing this set.
 
-> **Formal Definition 24 — Tariff, [Deadweight Loss](GLOSSARY.md#term-dwl) of a Tariff, and [Voluntary Export Restraint](GLOSSARY.md#term-ver)
->
-> **Tariff:** A tax on imported goods that raises the domestic price above the world price. Welfare effects decompose into consumer surplus loss (transfer to producers + tariff revenue + deadweight loss), producer surplus gain (transfer from consumers), and tariff revenue (collected by government).
->
-> **Deadweight loss (DWL) of a tariff:** Two efficiency triangles:
-> 1. **Production distortion:** $\frac{1}{2} \tau \cdot \Delta Q_s$ — inefficient domestic production replacing cheaper imports
-> 2. **Consumption distortion:** $\frac{1}{2} \tau \cdot \Delta Q_d$ — consumers foregoing purchases at the higher tariff-inclusive price
->
-> $$ \text{DWL} = \frac{1}{2} \tau \cdot (\Delta Q_s + \Delta Q_d) $$
->
-> **Voluntary Export Restraint (VER):** A quota imposed by the exporting country, equivalent to a tariff whose revenue is captured by foreign exporters (Koutsoyiannis, Ch.18). Welfare loss under VER is **larger** than under an equivalent tariff because the quota rent ($\tau \cdot Q_{\text{imports}}$) goes abroad rather than to domestic government revenue.
->
-> **Key insight:** A tariff at least preserves some of the welfare loss as domestic government revenue; a [VER](GLOSSARY.md#term-ver) transfers that same surplus to foreign producers, making it strictly worse for the importing country.
->
-> → *See also: [Topic 8 Q2](./answers-ge-game-extern-trade.md#q-extern-02) (Pigouvian tax — similar welfare triangle logic)*
+!!! quote "Formal Definition 24 — Tariff, Deadweight Loss of a Tariff, and Voluntary Export Restraint"
+    
+    **Tariff:** A tax on imported goods that raises the domestic price above the world price. Welfare effects decompose into consumer surplus loss (transfer to producers + tariff revenue + deadweight loss), producer surplus gain (transfer from consumers), and tariff revenue (collected by government).
+    
+    **Deadweight loss (DWL) of a tariff:** Two efficiency triangles:
+    1. **Production distortion:** $\frac{1}{2} \tau \cdot \Delta Q_s$ — inefficient domestic production replacing cheaper imports
+    2. **Consumption distortion:** $\frac{1}{2} \tau \cdot \Delta Q_d$ — consumers foregoing purchases at the higher tariff-inclusive price
+    
+    $$ \text{DWL} = \frac{1}{2} \tau \cdot (\Delta Q_s + \Delta Q_d) $$
+    
+    **Voluntary Export Restraint (VER):** A quota imposed by the exporting country, equivalent to a tariff whose revenue is captured by foreign exporters (Koutsoyiannis, Ch.18). Welfare loss under VER is **larger** than under an equivalent tariff because the quota rent ($\tau \cdot Q_{\text{imports}}$) goes abroad rather than to domestic government revenue.
+    
+    **Key insight:** A tariff at least preserves some of the welfare loss as domestic government revenue; a [VER](GLOSSARY.md#term-ver) transfers that same surplus to foreign producers, making it strictly worse for the importing country.
+    
+    → *See also: [Topic 8 Q2](./answers-ge-game-extern-trade.md#q-extern-02) (Pigouvian tax — similar welfare triangle logic)*
 
 **Given:**
 - Domestic demand: $Q_d = 250,000 - 100P$

@@ -100,6 +100,43 @@ function sbSelect(table, opts) {
   });
 }
 
+/** Call an RPC with automatic retry on failure */
+function sbRpcRetry(fn, params, retries) {
+  retries = retries !== undefined ? retries : 1;
+  function attempt(n) {
+    return sbRpc(fn, params).then(function (r) {
+      if (r.ok) return r;
+      if (n > 0) {
+        return new Promise(function (resolve) { setTimeout(resolve, 2000); })
+          .then(function () { return attempt(n - 1); });
+      }
+      return r;
+    });
+  }
+  return attempt(retries);
+}
+
+var ttlCache = {};
+
+function cachedRpc(fn, params, ttl) {
+  ttl = ttl || 30000;
+  var key = fn + ':' + JSON.stringify(params || {});
+  var entry = ttlCache[key];
+  if (entry && (Date.now() - entry.ts) < ttl) {
+    return Promise.resolve(entry.data);
+  }
+  return sbRpcRetry(fn, params).then(function (r) {
+    if (!r.ok) {
+      if (entry) return entry.data;
+      throw new Error('RPC ' + fn + ' failed: ' + r.status);
+    }
+    return r.json().then(function (data) {
+      ttlCache[key] = { data: data, ts: Date.now() };
+      return data;
+    });
+  });
+}
+
 /* ══════════════════════════════════════════════════════════════
  *  VISITOR ID — Persistent across browser sessions
  *  Stored in localStorage, survives tab closes, cache clears

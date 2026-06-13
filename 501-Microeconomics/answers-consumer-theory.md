@@ -30,7 +30,6 @@
 
 !!! tip "Marking Guide"
     Definition of preference approach (2) | Completeness — explanation + violations (4) | Transitivity — explanation + violations (4) | Money-pump argument + reflexivity (2) | Structure & intuition for exam timing (2)
->
 !!! success "High-Yield"
     Rational preferences are the foundational assumption of all consumer theory. Every UMP/EMP problem presupposes them. Expect either a direct definition question or indirect testing via the Debreu existence theorem (Q5).
 
@@ -100,7 +99,6 @@ The preference-based approach models consumer choice by assuming the consumer ha
 
 !!! tip "Marking Guide"
     IND set definition & notation (2) | Upper/lower contour sets (2) | Strong monotonicity — precise definition (3) | Proof by contradiction (4) | Diagram of regions A & B (2) | What SM rules out (1)
->
 !!! success "High-Yield"
     The proof that SM ⇒ downward-sloping ICs is a classic contradiction argument that reappears in production theory (MRTS slope). The IND/UCS/LCS definitions are essential vocabulary for all subsequent questions.
 !!! quote "Formal Definition 3 — Indifference Set & Contour Sets"
@@ -171,7 +169,6 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 
 !!! tip "Marking Guide"
     Definition 1 — convexity of preferences (3) | Definition 2 — convex UCS (3) | Equivalence (2) | Strong convexity (2) | Comparison table (2) | Diagram of IC shapes (2)
->
 !!! success "High-Yield"
     Convexity is the second-most tested preference property after rationality. It connects directly to quasiconcavity (Q4), dMRS/dx < 0 (Q9), and uniqueness of Walrasian demand (1B Q4). Expect at least one question on it.
 !!! quote "Formal Definition 5 — Convexity of Preferences"
@@ -232,7 +229,6 @@ $$\lambda x + (1-\lambda) y \succ z$$
 
 !!! tip "Marking Guide"
     Chain statement (1) | Convex ⇔ UCS convex — definitional (2) | UCS convex ⇔ quasiconcave — forward proof (4) | UCS convex ⇔ quasiconcave — reverse proof (3) | Bordered Hessian reference (2) | Chain completion & intuition (2)
->
 !!! success "High-Yield"
     The convexity ⇔ quasiconcavity equivalence is the single most tested equivalence in 501 Micro prelims. Every student who fails this question does so because they cannot articulate both directions of the proof. Master the $\min\{u(x),u(y)\}$ trick.
 !!! quote "Formal Definition 6 — Quasiconcave Function"
@@ -296,7 +292,6 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 !!! tip "Marking Guide"
     Theorem statement (2) | 45° diagonal projection idea (3) | Construction of $t(x)$ via $A$ and $B$ sets (4) | Continuity argument for intersection (3) | Conclusion: $u(x)=t(x)$ (2)
->
 !!! success "High-Yield"
     The Debreu existence proof is the crowning theoretical result of Section 1A. It combines completeness, transitivity, continuity, and monotonicity into one construction. Often appears as a 5-mark "sketch the proof" question or as the starting point for a discussion on representability.
 !!! quote "Formal Definition 7 — Debreu Utility Existence Theorem"
@@ -360,7 +355,6 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
 !!! tip "Marking Guide"
     Utility function definition & notation (2) | Ordinality & monotonic transformations (3) | Monotonicity — conditions (a) & (b) (3) | Strong monotonicity (3) | Comparison table & IC implications (3)
->
 !!! quote "Formal Definition 9 — Utility Function"
     
     A function $u: X \to \mathbb{R}$ **represents** preference relation $\succeq$ if for all $x, y \in X$ (Munoz-Garcia, §1.4, p.13):
@@ -423,7 +417,6 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 
 !!! tip "Marking Guide"
     SM ⇒ M proof (4) | M ⇒ LNS proof with $\varepsilon$-ball (5) | Chain statement (2) | Converse non-implications with counterexample (3)
->
 !!! success "High-Yield"
     The SM ⇒ M ⇒ LNS hierarchy is one of the most frequently examined proof chains. LNS is the workhorse assumption of modern micro theory (Walras' Law, UMP interior solutions). Expect this as a short-proof question.
 !!! quote "Formal Definition 10 — Local Non-Satiation (LNS)"
@@ -483,7 +476,6 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 
 !!! tip "Marking Guide"
     Homogeneity definition & degree (2) | Properties (MRS, derivatives) (3) | Examples (2) | Homotheticity definition (2) | Key properties — Engel curves, shares, MRS (3) | Homogeneous ⊂ Homothetic + counterexample (2)
->
 !!! quote "Formal Definition 11 — Homogeneous Function"
     
     A function $f: \mathbb{R}^N_+ \to \mathbb{R}$ is **homogeneous of degree $k$** if scaling all arguments by $a > 0$ multiplies the function value by $a^k$ (Munoz-Garcia, §1.6, pp.26–29; Koutsoyiannis, Ch.2 §B, p.25):
@@ -573,7 +565,6 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 
 !!! tip "Marking Guide"
     MRS formula & IC slope (2) | Bordered Hessian quasiconcavity condition (3) | $dMRS/dx$ derivation — implicit differentiation (5) | Sign equivalence proof (2) | Interpretation (2)
->
 !!! success "High-Yield"
     This is the most technically demanding proof in Section 1A. The equivalence between quasiconcavity and diminishing MRS ties preference theory (convexity) to calculus (bordered Hessian). Expect this as an 8-mark proof or as embedded reasoning in a UMP question.
 !!! quote "Formal Definition 13 — Marginal Rate of Substitution (MRS)"
@@ -690,7 +681,6 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 
 !!! tip "Marking Guide"
     MRS computation (3) | $dMRS/dx$ derivation along IC (5) | Sign conclusion & interpretation (3) | Bordered Hessian verification (3)
->
 !!! quote "Formal Definition 15 — Quasilinear Utility"
     
     A utility function of the form $u(x, y) = f(x) + y$, where $f$ is strictly concave and $y$ is a numeraire good, exhibits **quasilinear** preferences (Munoz-Garcia, §1.6, pp.29–30):
@@ -758,7 +748,6 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 
 !!! tip "Marking Guide"
     Lagrangian setup & FOCs (3) | Tangency condition (2) | Demand derivation (3) | Homogeneity & Walras' Law checks (3) | Own-price/cross-price/income effects (3)
->
 !!! success "High-Yield"
     Cobb-Douglas is THE canonical utility function. Its closed-form solutions for Walrasian demand, indirect utility, Hicksian demand, and expenditure function are the backbone of Section 1B. Expect one full question set (Q1-Q3) as a block worth ~20 marks across parts (a), (b), (c).
 !!! quote "Formal Definition 16 — Walrasian (Marshallian) Demand"
@@ -860,7 +849,6 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 
 !!! tip "Marking Guide"
     Indirect utility derivation from Walrasian demands (3) | Properties: HD(0), monotonicity, quasiconvexity (3) | Roy's identity statement (2) | Verification for goods 1 & 2 (4) | Interpretation & duality insight (2)
->
 !!! success "High-Yield"
     Roy's identity bridges UMP and observable demand: it recovers Walrasian demand from indirect utility without re-solving optimization. This is the first duality result in the course and is frequently tested as a verification question.
 !!! quote "Formal Definition 18 — Indirect Utility Function"
@@ -951,7 +939,6 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 
 !!! tip "Marking Guide"
     EMP setup & Lagrangian (2) | FOCs & tangency condition (2) | Hicksian demand derivation (3) | Expenditure function derivation (3) | Properties & duality checks (2) | Shephard's lemma verification (2)
->
 !!! success "High-Yield"
     EMP/Hicksian demand is the mirror image of UMP/Walrasian demand. Together they form the duality core of consumer theory. Shephard's lemma is the EMP analog of Roy's identity — expect them to appear together in a question pairing.
 !!! quote "Formal Definition 20 — Expenditure Minimization Problem (EMP)"
@@ -1082,7 +1069,6 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 
 !!! tip "Marking Guide"
     HD(0) property (2) | Walras' Law via LNS (2) | Convexity/uniqueness (2) | Other properties (2) | Three violation cases: non-monotonicity, non-quasiconcavity, zero gradient (4) | Summary table (2)
->
 !!! success "High-Yield"
     This question synthesizes everything from Section 1A into the UMP. The violation cases (especially non-quasiconcave preferences leading to corner solutions) are frequently tested and separate A from B students.
 !!! quote "Formal Definition 24 — Walras' Law"
@@ -1262,7 +1248,6 @@ A preference relation is homothetic if all indifference sets are related to prop
 
 !!! tip "Marking Guide"
     Leontief setup & fixed-proportion insight (2) | Marshallian demand derivation for Gin (3) | Hicksian demand for Campari — EMP setup (3) | Expenditure function (2) | Duality checks (2) | Summary table (2)
->
 !!! success "High-Yield"
     Leontief is the second most tested functional form after Cobb-Douglas. The fixed-proportion structure tests whether you understand the *non-substitutability* case. It's the polar opposite of Cobb-Douglas and perfect substitutes, making it essential comparative material.
 !!! quote "Formal Definition 27 — Leontief (Perfect Complements) Utility"
@@ -1363,7 +1348,6 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 
 !!! tip "Marking Guide"
     MRS & tangency condition (3) | Marshallian demand derivation (3) | Corner solution condition $I \ge p_x$ (3) | Income elasticity characterization (3) | Quasilinearity & zero income effect (2)
->
 !!! quote "Formal Definition 28 — Quasilinear Utility (Demand Properties)"
     
     For $u(x, y) = f(x) + y$ with $f' > 0$, $f'' < 0$, demand for the nonlinear good exhibits **zero income effect** (Munoz-Garcia, §1.6, pp.29–30):
@@ -1448,7 +1432,6 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 
 !!! tip "Marking Guide"
     Linear utility recognition & MU computation (2) | $MU_y < 0$ — identifying the bad (3) | Corner solution derivation (3) | Verification: tangency yields minimum (4) | Conclusion & alternative interpretation (2)
->
 !!! success "High-Yield"
     The "good with a bad" corner solution is a classic exam trick. Students trained to mechanically solve Lagrangian FOCs miss the key insight: $MU_y < 0$ means the tangency condition identifies a minimum, not a maximum. Always check marginal utility signs before optimizing.
 !!! quote "Formal Definition 30 — "Bad" (Negative Marginal Utility)"

@@ -291,10 +291,13 @@ function getContentTypeFromPath(path) {
  * ══════════════════════════════════════════════════════════════ */
 function getTodayStats() {
   return Promise.all([
-    sbRpc('get_clicks_today').then(function (r) { return r.ok ? r.json() : null; }),
-    sbRpc('get_study_ms_today').then(function (r) { return r.ok ? r.json() : null; }),
+    cachedRpc('get_clicks_today'),
+    cachedRpc('get_study_ms_today'),
   ]).then(function (results) {
-    return { clicks: results[0], studyMs: results[1] };
+    return {
+      clicks:  typeof results[0] === 'number' ? results[0] : 0,
+      studyMs: typeof results[1] === 'number' ? results[1] : 0,
+    };
   });
 }
 
@@ -826,20 +829,12 @@ window.__studyLogger = {
     body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
 
     Promise.all([
-      sbRpc('get_clicks_today').then(function (r) { return r.ok ? r.json() : null; }),
-      sbRpc('get_study_ms_today').then(function (r) { return r.ok ? r.json() : null; }),
+      cachedRpc('get_clicks_today'),
+      cachedRpc('get_study_ms_today'),
     ]).then(function (results) {
-      var clicksData = results[0];
-      var studyData  = results[1];
-
-      function extractVal(data, field) {
-        if (!data) return 0;
-        if (Array.isArray(data)) return (data[0] && data[0][field]) || 0;
-        return data[field] || 0;
-      }
-
-      var clicks  = extractVal(clicksData, 'count');
-      var studyMs = extractVal(studyData, 'study_ms');
+      // RPCs return scalar BIGINT (plain number), not objects
+      var clicks  = typeof results[0] === 'number' ? results[0] : 0;
+      var studyMs = typeof results[1] === 'number' ? results[1] : 0;
 
       if (!clicks && !studyMs) {
         body.innerHTML = '<div class="vl-empty">No activity recorded today.</div>';
@@ -870,11 +865,7 @@ window.__studyLogger = {
   function renderCourses(body) {
     body.innerHTML = '<div class="vl-loader">\u23F3 Loading\u2026</div>';
 
-    sbRpc('get_course_breakdown')
-      .then(function (res) {
-        if (!res.ok) throw new Error('Supabase RPC error: ' + res.status);
-        return res.json();
-      })
+    cachedRpc('get_course_breakdown')
       .then(function (data) {
         var rows = data || [];
         if (rows.length === 0) {

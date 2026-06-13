@@ -1,89 +1,58 @@
 /* ───────────────────────────────────────────────────────────────
  * Study Logger — Floating Stats Widget
- * "Academic Premium" — warm, refined, brand-cohesive
+ * "Clickable Bubble" — collapses to a small circle, expands to
+ * a full card with tabs and stats. Smooth morph animation.
  * ─────────────────────────────────────────────────────────────── */
 
-/* ── Toggle button (floating pill) ────────────────────────── */
-.vl-toggle {
+/* ── Root container ───────────────────────────────────────── */
+.vl-root {
+  /* invisible wrapper — hosts .vl-open toggle class */
+}
+
+/* ── Bubble container (morphs between circle and card) ────── */
+.vl-bubble {
   position: fixed;
   bottom: 24px;
   right: 24px;
   z-index: 9999;
-  width: 46px;
-  height: 46px;
-  border: none;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: #fff;
-  color: var(--ju-green-800, #1B5E20);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow:
     0 4px 16px rgba(0, 0, 0, 0.10),
     0 2px 4px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              height 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              border-radius 0.3s ease,
+              box-shadow 0.35s ease,
+              background 0.3s ease;
 }
 
-.vl-toggle::after {
-  content: '';
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  border: 2px solid var(--ju-green-100, #C8E6C9);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.vl-toggle:hover {
-  transform: scale(1.08);
+.vl-bubble:hover {
   box-shadow:
     0 8px 28px rgba(27, 94, 32, 0.15),
     0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
-.vl-toggle:hover::after {
-  opacity: 1;
-}
-
-.vl-toggle:active {
-  transform: scale(0.94);
-}
-
-.vl-toggle svg {
-  transition: transform 0.35s ease;
-}
-
-.vl-open .vl-toggle svg {
-  transform: rotate(90deg);
-}
-
-/* ── Panel container ─────────────────────────────────────── */
-.vl-panel {
-  position: fixed;
-  bottom: 82px;
-  right: 24px;
-  z-index: 9998;
+/* Expanded state */
+.vl-open .vl-bubble {
   width: 328px;
-  max-height: 460px;
-  background: var(--ju-cream, #FFF8E1);
+  height: 460px;
   border-radius: 14px;
+  background: var(--ju-cream, #FFF8E1);
+  cursor: default;
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.12),
     0 4px 12px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  transform: translateY(12px) scale(0.96);
-  pointer-events: none;
-  transition: opacity 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Top accent bar */
-.vl-panel::before {
+/* Top accent bar — only visible when expanded */
+.vl-open .vl-bubble::before {
   content: '';
   position: absolute;
   top: 0;
@@ -91,12 +60,54 @@
   right: 0;
   height: 3px;
   background: linear-gradient(90deg, var(--ju-green-700, #2E7D32), var(--ju-gold-500, #FFB300));
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ── Collapsed preview (icon + time) ──────────────────────── */
+.vl-bubble-preview {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  transition: opacity 0.15s ease;
   z-index: 1;
 }
 
-.vl-open .vl-panel {
+.vl-open .vl-bubble-preview {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vl-bubble-icon {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.vl-bubble-time {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ju-green-800, #1B5E20);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* ── Expanded content ─────────────────────────────────────── */
+.vl-bubble-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.vl-open .vl-bubble-content {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transition-delay: 0.12s;
   pointer-events: auto;
 }
 
@@ -108,6 +119,7 @@
   padding: 16px 18px 10px;
   flex-shrink: 0;
   position: relative;
+  z-index: 1;
 }
 
 .vl-title {
@@ -118,7 +130,6 @@
   letter-spacing: -0.01em;
 }
 
-/* Decorative dot under title */
 .vl-title::after {
   content: '';
   display: block;
@@ -156,6 +167,8 @@
   gap: 0;
   padding: 0 14px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .vl-tab {
@@ -191,6 +204,8 @@
   flex: 1;
   scrollbar-width: thin;
   scrollbar-color: var(--ju-green-100, #C8E6C9) transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .vl-body::-webkit-scrollbar {
@@ -204,10 +219,6 @@
 
 .vl-body::-webkit-scrollbar-thumb:hover {
   background: var(--ju-green-600, #388E3C);
-}
-
-.vl-scroll {
-  /* scroll container for tab content */
 }
 
 /* ── Timer (Session tab hero) ────────────────────────────── */
@@ -388,29 +399,28 @@
 /* ══════════════════════════════════════════════════════════════
    DARK MODE — ju-dark scheme
    ══════════════════════════════════════════════════════════════ */
-[data-md-color-scheme="ju-dark"] .vl-toggle {
+[data-md-color-scheme="ju-dark"] .vl-bubble {
   background: #242725;
-  color: var(--ju-green-500, #7FB39F);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.06) inset,
     0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-[data-md-color-scheme="ju-dark"] .vl-toggle::after {
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-[data-md-color-scheme="ju-dark"] .vl-toggle:hover {
+[data-md-color-scheme="ju-dark"] .vl-bubble:hover {
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.08) inset,
     0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-[data-md-color-scheme="ju-dark"] .vl-panel {
+[data-md-color-scheme="ju-dark"] .vl-open .vl-bubble {
   background: rgba(21, 22, 21, 0.96);
   box-shadow:
     0 16px 44px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+[data-md-color-scheme="ju-dark"] .vl-bubble-time {
+  color: var(--md-default-fg-color, #ECE7DC);
 }
 
 [data-md-color-scheme="ju-dark"] .vl-title {
@@ -519,7 +529,7 @@
    RESPONSIVE
    ══════════════════════════════════════════════════════════════ */
 @media (max-width: 480px) {
-  .vl-panel {
+  .vl-open .vl-bubble {
     right: 12px;
     left: 12px;
     width: auto;
@@ -527,11 +537,9 @@
     max-height: 420px;
   }
 
-  .vl-toggle {
+  .vl-bubble {
     right: 16px;
     bottom: 20px;
-    width: 42px;
-    height: 42px;
   }
 
   .vl-timer-value {

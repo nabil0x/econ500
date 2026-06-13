@@ -168,6 +168,7 @@ window.__studyLogger = {
   getSession: getSession,
   getCourseFromPath: getCourseFromPath,
   getTodayStats: getTodayStats,
+  get sessionId() { return getSession().id; },
 };
 
 /* ══════════════════════════════════════════════════════════════
@@ -188,7 +189,7 @@ window.__studyLogger = {
   var gPageEnterTime = null;    // timestamp when current page became visible
   var gCurrentPage   = null;    // current pathname
   var gLastLogTime   = 0;       // debounce for Supabase inserts
-  var gLastClickTime = 0;       // throttle for click tracking (5s per session)
+  var gLastClickMsgs = {};      // per-session debounce map for click tracking (400ms)
 
   /* ══════════════════════════════════════════════════════════
    *  GLOBAL: LOG PAGE VIEW → SUPABASE
@@ -218,9 +219,11 @@ window.__studyLogger = {
     var anchor = e.target.closest('a');
     if (!anchor) return;
 
-    var now = Date.now();
-    if ((now - gLastClickTime) < 5000) return;
-    gLastClickTime = now;
+    var session  = getSession();
+    var now      = Date.now();
+    var last     = gLastClickMsgs[session.id] || 0;
+    if ((now - last) < 400) return;  // per-session debounce: prevent accidental double-clicks
+    gLastClickMsgs[session.id] = now;
 
     var path     = window.location.pathname;
     var target   = anchor.href || anchor.getAttribute('href') || '';
@@ -230,9 +233,8 @@ window.__studyLogger = {
       path:       path,
       target:     target,
       category:   category,
-      session_id: getSession().id,
+      session_id: session.id,
       user_agent: navigator.userAgent,
-      clicked_at: new Date().toISOString(),
     }).catch(function () { /* analytics never breaks the site */ });
   }, true);
 
@@ -401,28 +403,36 @@ window.__studyLogger = {
 
   /* ══════════════════════════════════════════════════════════
    *  WIDGET — DOM BUILDING
+   *  Single clickable bubble: collapsed = small circle,
+   *  expanded = full card. No separate toggle button.
    * ══════════════════════════════════════════════════════════ */
 
   var STATE = { open: false, tab: 'popular' };
 
   function buildWidget() {
-    var root   = ce('div', 'vl-root');
-    var toggle = ce('button', 'vl-toggle');
-    toggle.setAttribute('aria-label', 'Toggle study logger');
-    toggle.innerHTML =
-      '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
-      '<path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/>' +
-      '</svg>';
-    toggle.addEventListener('click', toggleWidget);
+    var root  = ce('div', 'vl-root');
 
-    var panel     = ce('div', 'vl-panel');
-    var header    = ce('div', 'vl-header');
-    var titleSpan = ce('span', 'vl-title');
+    // ── Bubble container (replaces old toggle + panel) ─────
+    var bubble = ce('div', 'vl-bubble');
+
+    // Preview — shown when collapsed
+    var preview = ce('div', 'vl-bubble-preview');
+    var icon    = ce('span', 'vl-bubble-icon');
+    icon.textContent = '\uD83D\uDCCA';
+    var timeSpan = ce('span', 'vl-bubble-time');
+    timeSpan.id = 'vl-bubble-time';
+    timeSpan.textContent = '0m';
+    preview.appendChild(icon);
+    preview.appendChild(timeSpan);
+
+    // Full content — shown when expanded
+    var content    = ce('div', 'vl-bubble-content');
+    var header     = ce('div', 'vl-header');
+    var titleSpan  = ce('span', 'vl-title');
     titleSpan.textContent = '\uD83D\uDCCA Study Logger';
-    var closeBtn  = ce('button', 'vl-close-btn');
+    var closeBtn   = ce('button', 'vl-close-btn');
     closeBtn.setAttribute('aria-label', 'Close');
     closeBtn.textContent = '\u2715';
-    closeBtn.addEventListener('click', closeWidget);
 
     var tabs  = ce('div', 'vl-tabs');
     var tabP  = ce('button', 'vl-tab', 'vl-tab--active');
@@ -437,28 +447,54 @@ window.__studyLogger = {
     var tabC  = ce('button', 'vl-tab');
     tabC.setAttribute('data-tab', 'courses');
     tabC.textContent = '\uD83D\uDCDA Courses';
-    tabs.addEventListener('click', onTabClick);
-    tabs.appendChild(tabP);
-    tabs.appendChild(tabS);
-    tabs.appendChild(tabT);
-    tabs.appendChild(tabC);
 
     var body = ce('div', 'vl-body');
     body.id = 'vl-body';
 
+    // Assemble content panel
     header.appendChild(titleSpan);
     header.appendChild(closeBtn);
-    panel.appendChild(header);
-    panel.appendChild(tabs);
-    panel.appendChild(body);
-    root.appendChild(toggle);
-    root.appendChild(panel);
+    tabs.appendChild(tabP);
+    tabs.appendChild(tabS);
+    tabs.appendChild(tabT);
+    tabs.appendChild(tabC);
+    content.appendChild(header);
+    content.appendChild(tabs);
+    content.appendChild(body);
+
+    // Assemble bubble
+    bubble.appendChild(preview);
+    bubble.appendChild(content);
+    root.appendChild(bubble);
     document.body.appendChild(root);
 
-    // Periodic refresh while open
+    // ── Events ─────────────────────────────────────────────
+
+    // Click bubble to open (when collapsed)
+    bubble.addEventListener('click', function (e) {
+      if (STATE.open) return;
+      openWidget();
+    });
+
+    // Close button collapses the bubble
+    closeBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeWidget();
+    });
+
+    // Tab switching
+    tabs.addEventListener('click', function (e) {
+      e.stopPropagation();
+      onTabClick(e);
+    });
+
+    // Periodic refresh
     setInterval(function () {
+      updateBubbleTime();
       if (STATE.open) render();
     }, 10000);
+
+    updateBubbleTime();
   }
 
   function ce(tag, cls1, cls2) {
@@ -469,15 +505,22 @@ window.__studyLogger = {
   }
 
   /* ── Widget event handlers ──────────────────────────────── */
-  function toggleWidget() {
-    STATE.open = !STATE.open;
-    document.querySelector('.vl-root').classList.toggle('vl-open', STATE.open);
-    if (STATE.open) render();
+  function openWidget() {
+    STATE.open = true;
+    document.querySelector('.vl-root').classList.add('vl-open');
+    render();
   }
 
   function closeWidget() {
     STATE.open = false;
     document.querySelector('.vl-root').classList.remove('vl-open');
+  }
+
+  function updateBubbleTime() {
+    var el = document.getElementById('vl-bubble-time');
+    if (!el) return;
+    var s = computeSessionStats();
+    el.textContent = fmtShort(s.totalStudyMs);
   }
 
   function onTabClick(e) {

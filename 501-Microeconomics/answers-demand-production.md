@@ -73,15 +73,15 @@ Given $\alpha = -0.5, \gamma = -0.4, \delta = 0.8$:
 
 **(iii) Is Z a gross substitute or complement for X?**
 
-> **Formal Definition 2 — [Gross Substitutes vs Gross Complements](GLOSSARY.md#term-pd)** *(see: Price Elasticity)*
->
-> Two goods are **gross substitutes** if an increase in the price of one good raises the Walrasian (uncompensated) demand for the other: $\partial X_i / \partial P_j > 0$.
->
-> Two goods are **gross complements** if an increase in the price of one good reduces the Walrasian demand for the other: $\partial X_i / \partial P_j < 0$.
->
-> (Munoz-Garcia, §3.7, p.194–198)
->
-> *Caution:* Gross substitutability is **not necessarily symmetric** — good Y can be a gross substitute for X while X is neither a gross substitute nor complement of Y (Munoz-Garcia, Example 3.5, p.198–199). This contrasts with *net* substitutes, defined via Hicksian demands, which are symmetric.
+!!! quote "Formal Definition 2 — Gross Substitutes vs Gross Complements** *(see: Price Elasticity)*"
+    
+    Two goods are **gross substitutes** if an increase in the price of one good raises the Walrasian (uncompensated) demand for the other: $\partial X_i / \partial P_j > 0$.
+    
+    Two goods are **gross complements** if an increase in the price of one good reduces the Walrasian demand for the other: $\partial X_i / \partial P_j < 0$.
+    
+    (Munoz-Garcia, §3.7, p.194–198)
+    
+    *Caution:* Gross substitutability is **not necessarily symmetric** — good Y can be a gross substitute for X while X is neither a gross substitute nor complement of Y (Munoz-Garcia, Example 3.5, p.198–199). This contrasts with *net* substitutes, defined via Hicksian demands, which are symmetric.
 
 $\delta = 0.8 > 0 \Rightarrow \frac{\partial X}{\partial P_Z} > 0$.
 
@@ -168,15 +168,15 @@ Since $|\gamma| = 0.4 < 1$, a price cut lowers total revenue. For contrast, if d
 
 Burger King demand: $Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I$
 
-> **Formal Definition 4 — [Law of Demand](GLOSSARY.md#term-slutsky-equation)** *(see: Slutsky Equation)*
->
-> The Law of Demand states that, for a normal good, the quantity demanded varies inversely with its own price, ceteris paribus (Koutsoyiannis, p.44–45). For a Walrasian (uncompensated) demand function satisfying the Weak Axiom of Revealed Preference (WARP):
->
-> $$\frac{\partial X_k(p,w)}{\partial p_k} \leq 0 \quad \text{for all } k$$
->
-> Equivalently, the own-price substitution effect is always negative: $s_{kk}(p,w) \leq 0$ (Munoz-Garcia, p.121–122). This is the *compensated* law of demand — the Hicksian demand for any good is nonincreasing in its own price.
->
-> **Linear vs Constant Elasticity Form:** This question uses a **linear** demand function $Q = a + bP_B + \dots$. In linear demand, the slope $b$ is constant but elasticity $\varepsilon = b \cdot P_B/Q$ varies along the curve. In contrast, the log-linear form of Q1 and Q3 has constant elasticity but varying slope.
+!!! quote "Formal Definition 4 — Law of Demand** *(see: Slutsky Equation)*"
+    
+    The Law of Demand states that, for a normal good, the quantity demanded varies inversely with its own price, ceteris paribus (Koutsoyiannis, p.44–45). For a Walrasian (uncompensated) demand function satisfying the Weak Axiom of Revealed Preference (WARP):
+    
+    $$\frac{\partial X_k(p,w)}{\partial p_k} \leq 0 \quad \text{for all } k$$
+    
+    Equivalently, the own-price substitution effect is always negative: $s_{kk}(p,w) \leq 0$ (Munoz-Garcia, p.121–122). This is the *compensated* law of demand — the Hicksian demand for any good is nonincreasing in its own price.
+    
+    **Linear vs Constant Elasticity Form:** This question uses a **linear** demand function $Q = a + bP_B + \dots$. In linear demand, the slope $b$ is constant but elasticity $\varepsilon = b \cdot P_B/Q$ varies along the curve. In contrast, the log-linear form of Q1 and Q3 has constant elasticity but varying slope.
 
 **The terrible problem:** The coefficient on $P_B$ (own price) is **positive** (+1.3).
 

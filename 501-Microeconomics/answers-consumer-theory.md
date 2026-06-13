@@ -31,7 +31,8 @@
 !!! tip "Marking Guide"
     Definition of preference approach (2) | Completeness — explanation + violations (4) | Transitivity — explanation + violations (4) | Money-pump argument + reflexivity (2) | Structure & intuition for exam timing (2)
 >
-> ⭐ **High-Yield** — Rational preferences are the foundational assumption of all consumer theory. Every UMP/EMP problem presupposes them. Expect either a direct definition question or indirect testing via the Debreu existence theorem (Q5).
+!!! success "High-Yield"
+    Rational preferences are the foundational assumption of all consumer theory. Every UMP/EMP problem presupposes them. Expect either a direct definition question or indirect testing via the Debreu existence theorem (Q5).
 
 The preference-based approach models consumer choice by assuming the consumer has a well-defined preference relation over the set of all possible consumption bundles $X = \mathbb{R}^N_+$ and chooses the most-preferred bundle from those that are affordable.
 
@@ -100,34 +101,33 @@ The preference-based approach models consumer choice by assuming the consumer ha
 !!! tip "Marking Guide"
     IND set definition & notation (2) | Upper/lower contour sets (2) | Strong monotonicity — precise definition (3) | Proof by contradiction (4) | Diagram of regions A & B (2) | What SM rules out (1)
 >
-> ⭐ **High-Yield** — The proof that SM ⇒ downward-sloping ICs is a classic contradiction argument that reappears in production theory (MRTS slope). The IND/UCS/LCS definitions are essential vocabulary for all subsequent questions.
->
-> **Formal Definition 3 — [Indifference Set](GLOSSARY.md#term-indifference-set) & [Contour Sets](GLOSSARY.md#term-ucs)**
->
-> For a preference relation $\succeq$ and bundle $x \in X$, the following sets partition $X$ (Munoz-Garcia, §1.2, pp.5–7):
->
-> - **Indifference Set (IND):** $IND(x) = \{ y \in X : y \sim x \}$
-> - **Upper Contour Set (UCS):** $UCS(x) = \{ y \in X : y \succeq x \}$
-> - **Lower Contour Set (LCS):** $LCS(x) = \{ y \in X : x \succeq y \}$
->
-> These satisfy $IND(x) = UCS(x) \cap LCS(x)$.
->
-> **Key insight:** [Indifference curves](GLOSSARY.md#term-ic) are the boundary of $IND(x)$. Under [strong monotonicity](GLOSSARY.md#term-strong-mono) (FD4), IND sets are $(N-1)$-dimensional, downward-sloping surfaces.
->
-> → *See also: FD4 (Strong Monotonicity), FD5 (Convexity)*
->
-> **Formal Definition 4 — [Strong Monotonicity](GLOSSARY.md#term-strong-mono)**
->
-> A preference relation $\succeq$ satisfies **strong monotonicity** if for all $x \neq y$: $x_k \ge y_k$ for all $k$ and $x_l > y_l$ for some $l$ $\implies$ $x \succ y$ (Munoz-Garcia, §1.2, p.9).
->
-> **Implications:**
-> - Indifference curves are strictly downward sloping (proof by contradiction)
-> - Thick indifference curves are ruled out
-> - Strong monotonicity $\Rightarrow$ monotonicity $\Rightarrow$ LNS (FD10)
->
-> **Classification:** [Strong monotonicity](GLOSSARY.md#term-strong-mono) is stronger than [monotonicity](GLOSSARY.md#term-monotonicity) (which requires $x_k > y_k$ for ALL $k$ for $x \succ y$). [Leontief](GLOSSARY.md#term-leontief) utility satisfies monotonicity but violates strong monotonicity.
->
-> → *See also: FD10 (LNS), [Q2](./answers-consumer-theory.md#q-cons-02) (downward-sloping IC proof)*
+!!! success "High-Yield"
+    The proof that SM ⇒ downward-sloping ICs is a classic contradiction argument that reappears in production theory (MRTS slope). The IND/UCS/LCS definitions are essential vocabulary for all subsequent questions.
+!!! quote "Formal Definition 3 — Indifference Set & Contour Sets"
+    
+    For a preference relation $\succeq$ and bundle $x \in X$, the following sets partition $X$ (Munoz-Garcia, §1.2, pp.5–7):
+    
+    - **Indifference Set (IND):** $IND(x) = \{ y \in X : y \sim x \}$
+    - **Upper Contour Set (UCS):** $UCS(x) = \{ y \in X : y \succeq x \}$
+    - **Lower Contour Set (LCS):** $LCS(x) = \{ y \in X : x \succeq y \}$
+    
+    These satisfy $IND(x) = UCS(x) \cap LCS(x)$.
+    
+    **Key insight:** [Indifference curves](GLOSSARY.md#term-ic) are the boundary of $IND(x)$. Under [strong monotonicity](GLOSSARY.md#term-strong-mono) (FD4), IND sets are $(N-1)$-dimensional, downward-sloping surfaces.
+    
+    → *See also: FD4 (Strong Monotonicity), FD5 (Convexity)*
+!!! quote "Formal Definition 4 — Strong Monotonicity"
+    
+    A preference relation $\succeq$ satisfies **strong monotonicity** if for all $x \neq y$: $x_k \ge y_k$ for all $k$ and $x_l > y_l$ for some $l$ $\implies$ $x \succ y$ (Munoz-Garcia, §1.2, p.9).
+    
+    **Implications:**
+    - Indifference curves are strictly downward sloping (proof by contradiction)
+    - Thick indifference curves are ruled out
+    - Strong monotonicity $\Rightarrow$ monotonicity $\Rightarrow$ LNS (FD10)
+    
+    **Classification:** [Strong monotonicity](GLOSSARY.md#term-strong-mono) is stronger than [monotonicity](GLOSSARY.md#term-monotonicity) (which requires $x_k > y_k$ for ALL $k$ for $x \succ y$). [Leontief](GLOSSARY.md#term-leontief) utility satisfies monotonicity but violates strong monotonicity.
+    
+    → *See also: FD10 (LNS), [Q2](./answers-consumer-theory.md#q-cons-02) (downward-sloping IC proof)*
 
 **Indifference set** of a bundle $x$ is the set of all bundles $y$ such that the consumer is indifferent between them:
 
@@ -172,21 +172,21 @@ Strong monotonicity: for any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l >
 !!! tip "Marking Guide"
     Definition 1 — convexity of preferences (3) | Definition 2 — convex UCS (3) | Equivalence (2) | Strong convexity (2) | Comparison table (2) | Diagram of IC shapes (2)
 >
-> ⭐ **High-Yield** — Convexity is the second-most tested preference property after rationality. It connects directly to quasiconcavity (Q4), dMRS/dx < 0 (Q9), and uniqueness of Walrasian demand (1B Q4). Expect at least one question on it.
->
-> **Formal Definition 5 — [Convexity of Preferences](GLOSSARY.md#term-convexity)**
->
-> A preference relation $\succeq$ is **convex** if for all $x, y \in X$ with $x \succeq y$ and any $\alpha \in (0,1)$ (Munoz-Garcia, §1.5, pp.18–22; Koutsoyiannis, Ch.2 §B, pp.19–21):
->
-> $$\alpha x + (1-\alpha) y \succeq y$$
->
-> **Equivalent definition:** The upper contour set $UCS(z) = \{ x \in X : x \succeq z \}$ is convex for every $z$.
->
-> **Strong convexity (strict):** If $x \neq y$, $x \succeq z$, $y \succeq z$, then $\alpha x + (1-\alpha) y \succ z$ for all $\alpha \in (0,1)$.
->
-> **Key insight:** [Convexity](GLOSSARY.md#term-convexity) captures "diversification is desirable" — consumers prefer averages to extremes. [Strict convexity](GLOSSARY.md#term-strong-convexity) yields unique [Walrasian demand](GLOSSARY.md#term-walrasian-demand).
->
-> → *See also: FD6 (Quasiconcavity), FD14 (Diminishing MRS)*
+!!! success "High-Yield"
+    Convexity is the second-most tested preference property after rationality. It connects directly to quasiconcavity (Q4), dMRS/dx < 0 (Q9), and uniqueness of Walrasian demand (1B Q4). Expect at least one question on it.
+!!! quote "Formal Definition 5 — Convexity of Preferences"
+    
+    A preference relation $\succeq$ is **convex** if for all $x, y \in X$ with $x \succeq y$ and any $\alpha \in (0,1)$ (Munoz-Garcia, §1.5, pp.18–22; Koutsoyiannis, Ch.2 §B, pp.19–21):
+    
+    $$\alpha x + (1-\alpha) y \succeq y$$
+    
+    **Equivalent definition:** The upper contour set $UCS(z) = \{ x \in X : x \succeq z \}$ is convex for every $z$.
+    
+    **Strong convexity (strict):** If $x \neq y$, $x \succeq z$, $y \succeq z$, then $\alpha x + (1-\alpha) y \succ z$ for all $\alpha \in (0,1)$.
+    
+    **Key insight:** [Convexity](GLOSSARY.md#term-convexity) captures "diversification is desirable" — consumers prefer averages to extremes. [Strict convexity](GLOSSARY.md#term-strong-convexity) yields unique [Walrasian demand](GLOSSARY.md#term-walrasian-demand).
+    
+    → *See also: FD6 (Quasiconcavity), FD14 (Diminishing MRS)*
 
 **Definition 1 (Convexity of preferences):** For all $x, y \in X$, if $x \succeq y$ then for any $\alpha \in (0,1)$:
 
@@ -233,23 +233,23 @@ $$\lambda x + (1-\lambda) y \succ z$$
 !!! tip "Marking Guide"
     Chain statement (1) | Convex ⇔ UCS convex — definitional (2) | UCS convex ⇔ quasiconcave — forward proof (4) | UCS convex ⇔ quasiconcave — reverse proof (3) | Bordered Hessian reference (2) | Chain completion & intuition (2)
 >
-> ⭐ **High-Yield** — The convexity ⇔ quasiconcavity equivalence is the single most tested equivalence in 501 Micro prelims. Every student who fails this question does so because they cannot articulate both directions of the proof. Master the $\min\{u(x),u(y)\}$ trick.
->
-> **Formal Definition 6 — [Quasiconcave Function](GLOSSARY.md#term-quasiconcave)**
->
-> A utility function $u: X \to \mathbb{R}$ is **quasiconcave** if for all $x, y \in X$ and $\lambda \in (0,1)$ (Munoz-Garcia, §1.5, p.22):
->
-> $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
->
-> **Equivalence chain:** Convex preferences $\iff$ convex UCS $\iff$ quasiconcave utility.
->
-> **For twice-differentiable $u$ ([bordered Hessian](GLOSSARY.md#term-bordered-hessian) test, $n=2$):**
->
-> $$|\overline{H}| = 2u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx} \ge 0$$
->
-> **Caution:** Quasiconcavity is weaker than concavity. Any monotonic transformation of a concave function is quasiconcave, but not vice versa (e.g., $u = x^2 y^2$ on $\mathbb{R}^2_{++}$ is quasiconcave but not concave).
->
-> → *See also: FD5 (Convexity), FD14 (dMRS/dx Equivalence)*
+!!! success "High-Yield"
+    The convexity ⇔ quasiconcavity equivalence is the single most tested equivalence in 501 Micro prelims. Every student who fails this question does so because they cannot articulate both directions of the proof. Master the $\min\{u(x),u(y)\}$ trick.
+!!! quote "Formal Definition 6 — Quasiconcave Function"
+    
+    A utility function $u: X \to \mathbb{R}$ is **quasiconcave** if for all $x, y \in X$ and $\lambda \in (0,1)$ (Munoz-Garcia, §1.5, p.22):
+    
+    $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
+    
+    **Equivalence chain:** Convex preferences $\iff$ convex UCS $\iff$ quasiconcave utility.
+    
+    **For twice-differentiable $u$ ([bordered Hessian](GLOSSARY.md#term-bordered-hessian) test, $n=2$):**
+    
+    $$|\overline{H}| = 2u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx} \ge 0$$
+    
+    **Caution:** Quasiconcavity is weaker than concavity. Any monotonic transformation of a concave function is quasiconcave, but not vice versa (e.g., $u = x^2 y^2$ on $\mathbb{R}^2_{++}$ is quasiconcave but not concave).
+    
+    → *See also: FD5 (Convexity), FD14 (dMRS/dx Equivalence)*
 
 We prove the chain of equivalences:
 
@@ -297,29 +297,28 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 !!! tip "Marking Guide"
     Theorem statement (2) | 45° diagonal projection idea (3) | Construction of $t(x)$ via $A$ and $B$ sets (4) | Continuity argument for intersection (3) | Conclusion: $u(x)=t(x)$ (2)
 >
-> ⭐ **High-Yield** — The Debreu existence proof is the crowning theoretical result of Section 1A. It combines completeness, transitivity, continuity, and monotonicity into one construction. Often appears as a 5-mark "sketch the proof" question or as the starting point for a discussion on representability.
->
-> **Formal Definition 7 — [Debreu Utility Existence Theorem](GLOSSARY.md#term-debreu)**
->
-> If a preference relation $\succeq$ on $X = \mathbb{R}^N_+$ is **rational** (complete + transitive), **continuous**, and **monotone**, there exists a continuous utility function $u: X \to \mathbb{R}$ that represents $\succeq$ (Munoz-Garcia, §1.4, pp.13–17; Koutsoyiannis, Ch.2 §B, pp.21–22).
->
-> **Proof sketch:** Project each bundle $x$ onto the 45° diagonal by finding $t(x)$ such that $(t(x),\ldots,t(x)) \sim x$. Set $u(x) = t(x)$. Continuity guarantees the intersection exists; monotonicity ensures uniqueness.
->
-> **Key insight:** This theorem bridges the ordinal preference approach (Section 1A) with the cardinal [utility](GLOSSARY.md#term-utility-function) maximization approach (Section 1B). [Lexicographic preferences](GLOSSARY.md#term-continuity) violate [continuity](GLOSSARY.md#term-continuity) and cannot be represented.
->
-> → *See also: FD1 (Rationality), FD8 (Continuous Preferences)*
->
-> **Formal Definition 8 — [Continuous Preference Relation](GLOSSARY.md#term-continuity)**
->
-> A preference relation $\succeq$ is **continuous** if it is preserved under limits: for sequences $x^n \to x$, $y^n \to y$, $x^n \succeq y^n$ for all $n$ $\implies$ $x \succeq y$ (Munoz-Garcia, §1.4, p.14).
->
-> **Equivalent definition:** For every $x$, both $UCS(x)$ and $LCS(x)$ are closed sets.
->
-> **Economic role:** Continuity rules out "jumps" in preferences — small changes in consumption cannot cause abrupt preference reversals. It is necessary for utility representation (FD7) and ensures demand correspondences are upper hemicontinuous.
->
-> **Counterexample:** Lexicographic preferences violate continuity and have no utility representation.
->
-> → *See also: FD7 (Debreu Theorem), FD1 (Rationality)*
+!!! success "High-Yield"
+    The Debreu existence proof is the crowning theoretical result of Section 1A. It combines completeness, transitivity, continuity, and monotonicity into one construction. Often appears as a 5-mark "sketch the proof" question or as the starting point for a discussion on representability.
+!!! quote "Formal Definition 7 — Debreu Utility Existence Theorem"
+    
+    If a preference relation $\succeq$ on $X = \mathbb{R}^N_+$ is **rational** (complete + transitive), **continuous**, and **monotone**, there exists a continuous utility function $u: X \to \mathbb{R}$ that represents $\succeq$ (Munoz-Garcia, §1.4, pp.13–17; Koutsoyiannis, Ch.2 §B, pp.21–22).
+    
+    **Proof sketch:** Project each bundle $x$ onto the 45° diagonal by finding $t(x)$ such that $(t(x),\ldots,t(x)) \sim x$. Set $u(x) = t(x)$. Continuity guarantees the intersection exists; monotonicity ensures uniqueness.
+    
+    **Key insight:** This theorem bridges the ordinal preference approach (Section 1A) with the cardinal [utility](GLOSSARY.md#term-utility-function) maximization approach (Section 1B). [Lexicographic preferences](GLOSSARY.md#term-continuity) violate [continuity](GLOSSARY.md#term-continuity) and cannot be represented.
+    
+    → *See also: FD1 (Rationality), FD8 (Continuous Preferences)*
+!!! quote "Formal Definition 8 — Continuous Preference Relation"
+    
+    A preference relation $\succeq$ is **continuous** if it is preserved under limits: for sequences $x^n \to x$, $y^n \to y$, $x^n \succeq y^n$ for all $n$ $\implies$ $x \succeq y$ (Munoz-Garcia, §1.4, p.14).
+    
+    **Equivalent definition:** For every $x$, both $UCS(x)$ and $LCS(x)$ are closed sets.
+    
+    **Economic role:** Continuity rules out "jumps" in preferences — small changes in consumption cannot cause abrupt preference reversals. It is necessary for utility representation (FD7) and ensures demand correspondences are upper hemicontinuous.
+    
+    **Counterexample:** Lexicographic preferences violate continuity and have no utility representation.
+    
+    → *See also: FD7 (Debreu Theorem), FD1 (Rationality)*
 
 **Theorem (Debreu):** If a preference relation $\succeq$ satisfies monotonicity and continuity on $X = \mathbb{R}^N_+$, then there exists a continuous utility function $u: X \to \mathbb{R}$ representing $\succeq$.
 
@@ -362,19 +361,17 @@ $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 !!! tip "Marking Guide"
     Utility function definition & notation (2) | Ordinality & monotonic transformations (3) | Monotonicity — conditions (a) & (b) (3) | Strong monotonicity (3) | Comparison table & IC implications (3)
 >
-> → *See also: [Section 1A Q5](./answers-consumer-theory.md#q-cons-05) (Debreu existence — utility as representation); [Section 1A Q7](./answers-consumer-theory.md#q-cons-07) (hierarchical chain SM ⇒ M ⇒ LNS)*
->
-> **Formal Definition 9 — [Utility Function](GLOSSARY.md#term-utility-function)**
->
-> A function $u: X \to \mathbb{R}$ **represents** preference relation $\succeq$ if for all $x, y \in X$ (Munoz-Garcia, §1.4, p.13):
->
-> $$x \succeq y \iff u(x) \ge u(y)$$
->
-> **Ordinality:** Only the ranking matters. Any strictly increasing transformation $v = f \circ u$ also represents the same preferences.
->
-> **Key insight:** [Marginal utility](GLOSSARY.md#term-marginal-utility-money) $MU_k$ has no intrinsic economic meaning (it changes under monotonic transformation). Only the **ratio** $MU_i/MU_j$ (the [MRS](GLOSSARY.md#term-mrs), FD13) is invariant — it is a "real" economic object.
->
-> → *See also: FD1 (Preference Relation), FD7 (Debreu Existence Theorem)*
+!!! quote "Formal Definition 9 — Utility Function"
+    
+    A function $u: X \to \mathbb{R}$ **represents** preference relation $\succeq$ if for all $x, y \in X$ (Munoz-Garcia, §1.4, p.13):
+    
+    $$x \succeq y \iff u(x) \ge u(y)$$
+    
+    **Ordinality:** Only the ranking matters. Any strictly increasing transformation $v = f \circ u$ also represents the same preferences.
+    
+    **Key insight:** [Marginal utility](GLOSSARY.md#term-marginal-utility-money) $MU_k$ has no intrinsic economic meaning (it changes under monotonic transformation). Only the **ratio** $MU_i/MU_j$ (the [MRS](GLOSSARY.md#term-mrs), FD13) is invariant — it is a "real" economic object.
+    
+    → *See also: FD1 (Preference Relation), FD7 (Debreu Existence Theorem)*
 
 **Utility function:** A function $u: X \to \mathbb{R}$ that represents preference relation $\succeq$ if, for every $x, y \in X$:
 
@@ -427,24 +424,24 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 !!! tip "Marking Guide"
     SM ⇒ M proof (4) | M ⇒ LNS proof with $\varepsilon$-ball (5) | Chain statement (2) | Converse non-implications with counterexample (3)
 >
-> ⭐ **High-Yield** — The SM ⇒ M ⇒ LNS hierarchy is one of the most frequently examined proof chains. LNS is the workhorse assumption of modern micro theory (Walras' Law, UMP interior solutions). Expect this as a short-proof question.
->
-> **Formal Definition 10 — [Local Non-Satiation (LNS)](GLOSSARY.md#term-lns)**
->
-> A preference relation $\succeq$ satisfies **LNS** if for every $x \in X$ and $\varepsilon > 0$, there exists $y$ with $\|y - x\| < \varepsilon$ such that $y \succ x$ (Munoz-Garcia, §1.2, pp.7–8).
->
-> **Meaning:** The consumer is never fully satiated — an arbitrarily close strictly preferred bundle always exists.
->
-> **Hierarchy:** Strong Monotonicity (FD4) $\Rightarrow$ Monotonicity $\Rightarrow$ LNS.
->
-> **Sufficient conditions from LNS alone:**
-> - [Walras' Law](GLOSSARY.md#term-walras-law) ($p \cdot x = w$ for all optimal bundles)
-> - Indirect utility strictly increasing in $w$
-> - [Expenditure function](GLOSSARY.md#term-expenditure-function) strictly increasing in $u$
->
-> **Counterexample:** Preferences with a bliss point (satiation) violate LNS.
->
-> → *See also: FD4 (Strong Monotonicity), FD24 (Walras' Law)*
+!!! success "High-Yield"
+    The SM ⇒ M ⇒ LNS hierarchy is one of the most frequently examined proof chains. LNS is the workhorse assumption of modern micro theory (Walras' Law, UMP interior solutions). Expect this as a short-proof question.
+!!! quote "Formal Definition 10 — Local Non-Satiation (LNS)"
+    
+    A preference relation $\succeq$ satisfies **LNS** if for every $x \in X$ and $\varepsilon > 0$, there exists $y$ with $\|y - x\| < \varepsilon$ such that $y \succ x$ (Munoz-Garcia, §1.2, pp.7–8).
+    
+    **Meaning:** The consumer is never fully satiated — an arbitrarily close strictly preferred bundle always exists.
+    
+    **Hierarchy:** Strong Monotonicity (FD4) $\Rightarrow$ Monotonicity $\Rightarrow$ LNS.
+    
+    **Sufficient conditions from LNS alone:**
+    - [Walras' Law](GLOSSARY.md#term-walras-law) ($p \cdot x = w$ for all optimal bundles)
+    - Indirect utility strictly increasing in $w$
+    - [Expenditure function](GLOSSARY.md#term-expenditure-function) strictly increasing in $u$
+    
+    **Counterexample:** Preferences with a bliss point (satiation) violate LNS.
+    
+    → *See also: FD4 (Strong Monotonicity), FD24 (Walras' Law)*
 
 We prove two implications:
 
@@ -487,37 +484,34 @@ LNS: For every $x \in X$ and every $\varepsilon > 0$, there exists $y \in X$ wit
 !!! tip "Marking Guide"
     Homogeneity definition & degree (2) | Properties (MRS, derivatives) (3) | Examples (2) | Homotheticity definition (2) | Key properties — Engel curves, shares, MRS (3) | Homogeneous ⊂ Homothetic + counterexample (2)
 >
-> → *See also: [Section 1B Q5](./answers-consumer-theory.md#q-cons-1b-05) (demand-side implications of homotheticity); [DP 3A.Q4](./answers-demand-production.md#q-prodset-03) (EoS and homotheticity in production)*
->
-> **Formal Definition 11 — [Homogeneous Function](GLOSSARY.md#term-homogeneity)**
->
-> A function $f: \mathbb{R}^N_+ \to \mathbb{R}$ is **homogeneous of degree $k$** if scaling all arguments by $a > 0$ multiplies the function value by $a^k$ (Munoz-Garcia, §1.6, pp.26–29; Koutsoyiannis, Ch.2 §B, p.25):
->
-> $$f(a x_1, a x_2, \ldots, a x_N) = a^k f(x_1, x_2, \ldots, x_N)$$
->
-> **Key properties:**
-> - Derivatives of an HD($k$) function are HD($k-1$)
-> - [MRS](GLOSSARY.md#term-mrs) is HD(0): $MRS_{ij}(a x) = MRS_{ij}(x)$ (constant along rays)
-> - Euler's theorem: $\sum_{i=1}^N (\partial f/\partial x_i) \cdot x_i = k f(x)$
->
-> **Examples:** [Cobb-Douglas](GLOSSARY.md#term-cd) ($\alpha+\beta$), perfect substitutes (HD(1)), [Leontief](GLOSSARY.md#term-leontief) (HD(1)), CES (HD(1)).
->
-> → *See also: FD12 (Homotheticity), FD25 (HD(0) of Demand)*
->
-> **Formal Definition 12 — [Homothetic Preferences](GLOSSARY.md#term-homothetic)**
->
-> A monotonic transformation of a homogeneous function: $u(x) = g(v(x))$ with $g' > 0$ and $v$ homogeneous (Munoz-Garcia, §1.6, pp.26–29).
->
-> **Equivalent condition:** $x \sim y \implies \alpha x \sim \alpha y$ for all $\alpha > 0$.
->
-> **Key properties:**
-> - [MRS](GLOSSARY.md#term-mrs) depends only on the ratio $x_i/x_j$, not on the scale
-> - [Engel curves](GLOSSARY.md#term-ic) are straight lines through the origin (income elasticity = 1)
-> - [Walrasian demand](GLOSSARY.md#term-walrasian-demand) linear in income: $x(p,w) = w \cdot x(p,1)$
->
-> **Classification:** Homogeneous $\subset$ Homothetic. Example of homothetic but not homogeneous: $u = xy + a$.
->
-> → *See also: FD11 (Homogeneous Function), FD26 (Engel Curve)*
+!!! quote "Formal Definition 11 — Homogeneous Function"
+    
+    A function $f: \mathbb{R}^N_+ \to \mathbb{R}$ is **homogeneous of degree $k$** if scaling all arguments by $a > 0$ multiplies the function value by $a^k$ (Munoz-Garcia, §1.6, pp.26–29; Koutsoyiannis, Ch.2 §B, p.25):
+    
+    $$f(a x_1, a x_2, \ldots, a x_N) = a^k f(x_1, x_2, \ldots, x_N)$$
+    
+    **Key properties:**
+    - Derivatives of an HD($k$) function are HD($k-1$)
+    - [MRS](GLOSSARY.md#term-mrs) is HD(0): $MRS_{ij}(a x) = MRS_{ij}(x)$ (constant along rays)
+    - Euler's theorem: $\sum_{i=1}^N (\partial f/\partial x_i) \cdot x_i = k f(x)$
+    
+    **Examples:** [Cobb-Douglas](GLOSSARY.md#term-cd) ($\alpha+\beta$), perfect substitutes (HD(1)), [Leontief](GLOSSARY.md#term-leontief) (HD(1)), CES (HD(1)).
+    
+    → *See also: FD12 (Homotheticity), FD25 (HD(0) of Demand)*
+!!! quote "Formal Definition 12 — Homothetic Preferences"
+    
+    A monotonic transformation of a homogeneous function: $u(x) = g(v(x))$ with $g' > 0$ and $v$ homogeneous (Munoz-Garcia, §1.6, pp.26–29).
+    
+    **Equivalent condition:** $x \sim y \implies \alpha x \sim \alpha y$ for all $\alpha > 0$.
+    
+    **Key properties:**
+    - [MRS](GLOSSARY.md#term-mrs) depends only on the ratio $x_i/x_j$, not on the scale
+    - [Engel curves](GLOSSARY.md#term-ic) are straight lines through the origin (income elasticity = 1)
+    - [Walrasian demand](GLOSSARY.md#term-walrasian-demand) linear in income: $x(p,w) = w \cdot x(p,1)$
+    
+    **Classification:** Homogeneous $\subset$ Homothetic. Example of homothetic but not homogeneous: $u = xy + a$.
+    
+    → *See also: FD11 (Homogeneous Function), FD26 (Engel Curve)*
 
 **(i) Homogeneity:**
 
@@ -580,35 +574,34 @@ A utility function $u(x)$ is homothetic if it is a monotonic transformation of a
 !!! tip "Marking Guide"
     MRS formula & IC slope (2) | Bordered Hessian quasiconcavity condition (3) | $dMRS/dx$ derivation — implicit differentiation (5) | Sign equivalence proof (2) | Interpretation (2)
 >
-> ⭐ **High-Yield** — This is the most technically demanding proof in Section 1A. The equivalence between quasiconcavity and diminishing MRS ties preference theory (convexity) to calculus (bordered Hessian). Expect this as an 8-mark proof or as embedded reasoning in a UMP question.
->
-> **Formal Definition 13 — [Marginal Rate of Substitution (MRS)](GLOSSARY.md#term-mrs)**
->
-> The MRS between goods $i$ and $j$ measures the rate at which the consumer is willing to trade good $j$ for good $i$ while maintaining constant utility (Munoz-Garcia, §1.5, p.18; Koutsoyiannis, Ch.2 §B, p.23):
->
-> $$MRS_{ij}(x) = \frac{MU_i(x)}{MU_j(x)} = \frac{\partial u/\partial x_i}{\partial u/\partial x_j}$$
->
-> Along an indifference curve ($du = 0$): $MRS_{ij} = -\left. dx_j/dx_i \right|_{du=0}$.
->
-> **Key insight:** The [MRS](GLOSSARY.md#term-mrs) is invariant to monotonic transformations of utility (the ratio $MU_i/MU_j$ cancels out), making it a "real" economic object. At an interior [UMP](GLOSSARY.md#term-ump) optimum, $MRS_{ij} = p_i/p_j$.
->
-> → *See also: FD14 (Diminishing MRS), FD5 (Quasiconcavity)*
->
-> **Formal Definition 14 — [Diminishing MRS](GLOSSARY.md#term-mrs)**
->
-> A utility function exhibits **diminishing MRS** if $MRS_{xy}$ decreases as $x$ increases along an indifference curve (Munoz-Garcia, §1.5, pp.18–20):
->
-> $$\frac{d MRS_{xy}}{dx} < 0 \quad \text{along an IC}$$
->
-> **Equivalence:** Diminishing MRS $\iff$ strict [quasiconcavity](GLOSSARY.md#term-quasiconcave) $\iff$ strictly [convex preferences](GLOSSARY.md#term-convexity). The calculus condition for $n=2$:
->
-> $$\frac{dMRS}{dx} = \frac{u_x^2 u_{yy} - 2u_x u_y u_{xy} + u_y^2 u_{xx}}{u_y^3} < 0$$
->
-> where the numerator is the negative of the [bordered Hessian](GLOSSARY.md#term-bordered-hessian) determinant.
->
-> **Economic interpretation:** As $x$ substitutes for $y$, the IC flattens — each additional unit of $x$ requires less $y$ to be given up.
->
-> → *See also: FD13 (MRS), FD6 (Quasiconcavity)*
+!!! success "High-Yield"
+    This is the most technically demanding proof in Section 1A. The equivalence between quasiconcavity and diminishing MRS ties preference theory (convexity) to calculus (bordered Hessian). Expect this as an 8-mark proof or as embedded reasoning in a UMP question.
+!!! quote "Formal Definition 13 — Marginal Rate of Substitution (MRS)"
+    
+    The MRS between goods $i$ and $j$ measures the rate at which the consumer is willing to trade good $j$ for good $i$ while maintaining constant utility (Munoz-Garcia, §1.5, p.18; Koutsoyiannis, Ch.2 §B, p.23):
+    
+    $$MRS_{ij}(x) = \frac{MU_i(x)}{MU_j(x)} = \frac{\partial u/\partial x_i}{\partial u/\partial x_j}$$
+    
+    Along an indifference curve ($du = 0$): $MRS_{ij} = -\left. dx_j/dx_i \right|_{du=0}$.
+    
+    **Key insight:** The [MRS](GLOSSARY.md#term-mrs) is invariant to monotonic transformations of utility (the ratio $MU_i/MU_j$ cancels out), making it a "real" economic object. At an interior [UMP](GLOSSARY.md#term-ump) optimum, $MRS_{ij} = p_i/p_j$.
+    
+    → *See also: FD14 (Diminishing MRS), FD5 (Quasiconcavity)*
+!!! quote "Formal Definition 14 — Diminishing MRS"
+    
+    A utility function exhibits **diminishing MRS** if $MRS_{xy}$ decreases as $x$ increases along an indifference curve (Munoz-Garcia, §1.5, pp.18–20):
+    
+    $$\frac{d MRS_{xy}}{dx} < 0 \quad \text{along an IC}$$
+    
+    **Equivalence:** Diminishing MRS $\iff$ strict [quasiconcavity](GLOSSARY.md#term-quasiconcave) $\iff$ strictly [convex preferences](GLOSSARY.md#term-convexity). The calculus condition for $n=2$:
+    
+    $$\frac{dMRS}{dx} = \frac{u_x^2 u_{yy} - 2u_x u_y u_{xy} + u_y^2 u_{xx}}{u_y^3} < 0$$
+    
+    where the numerator is the negative of the [bordered Hessian](GLOSSARY.md#term-bordered-hessian) determinant.
+    
+    **Economic interpretation:** As $x$ substitutes for $y$, the IC flattens — each additional unit of $x$ requires less $y$ to be given up.
+    
+    → *See also: FD13 (MRS), FD6 (Quasiconcavity)*
 
 We prove: quasiconcavity of utility (convex preferences) is equivalent to diminishing MRS along an indifference curve.
 
@@ -698,21 +691,21 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 !!! tip "Marking Guide"
     MRS computation (3) | $dMRS/dx$ derivation along IC (5) | Sign conclusion & interpretation (3) | Bordered Hessian verification (3)
 >
-> **Formal Definition 15 — [Quasilinear Utility](GLOSSARY.md#term-quasilinear)**
->
-> A utility function of the form $u(x, y) = f(x) + y$, where $f$ is strictly concave and $y$ is a numeraire good, exhibits **quasilinear** preferences (Munoz-Garcia, §1.6, pp.29–30):
->
-> $$u(x_1, \ldots, x_{N-1}, y) = f(x_1, \ldots, x_{N-1}) + y$$
->
-> **Key properties:**
-> - Zero income effect for the nonlinear goods ($x$): $\partial x/\partial w = 0$
-> - All income effects concentrated on the numeraire good $y$
-> - MRS depends only on $x$: $MRS_{xy} = f'(x)$
-> - CV = EV = CS in welfare analysis (Willig bounds collapse)
->
-> **Classification:** Quasilinear preferences violate homotheticity — Engel curves are not rays through the origin. The canonical example is $u = \ln x + y$ or $u = x + \ln y$.
->
-> → *See also: FD28 (Quasilinear Demand), FD29 (Corner Solution)*
+!!! quote "Formal Definition 15 — Quasilinear Utility"
+    
+    A utility function of the form $u(x, y) = f(x) + y$, where $f$ is strictly concave and $y$ is a numeraire good, exhibits **quasilinear** preferences (Munoz-Garcia, §1.6, pp.29–30):
+    
+    $$u(x_1, \ldots, x_{N-1}, y) = f(x_1, \ldots, x_{N-1}) + y$$
+    
+    **Key properties:**
+    - Zero income effect for the nonlinear goods ($x$): $\partial x/\partial w = 0$
+    - All income effects concentrated on the numeraire good $y$
+    - MRS depends only on $x$: $MRS_{xy} = f'(x)$
+    - CV = EV = CS in welfare analysis (Willig bounds collapse)
+    
+    **Classification:** Quasilinear preferences violate homotheticity — Engel curves are not rays through the origin. The canonical example is $u = \ln x + y$ or $u = x + \ln y$.
+    
+    → *See also: FD28 (Quasilinear Demand), FD29 (Corner Solution)*
 
 **Step 1: Compute MRS.**
 - $u(x,y) = x + \ln y$
@@ -766,36 +759,35 @@ Hence $dMRS/dx = -y < 0$ for any positive $y$.
 !!! tip "Marking Guide"
     Lagrangian setup & FOCs (3) | Tangency condition (2) | Demand derivation (3) | Homogeneity & Walras' Law checks (3) | Own-price/cross-price/income effects (3)
 >
-> ⭐ **High-Yield** — Cobb-Douglas is THE canonical utility function. Its closed-form solutions for Walrasian demand, indirect utility, Hicksian demand, and expenditure function are the backbone of Section 1B. Expect one full question set (Q1-Q3) as a block worth ~20 marks across parts (a), (b), (c).
->
-> **Formal Definition 16 — [Walrasian (Marshallian) Demand](GLOSSARY.md#term-walrasian-demand)**
->
-> The **Walrasian demand correspondence** $x(p,w) \subseteq X$ solves the UMP (FD17): the set of affordable bundles that maximize utility given prices $p$ and wealth $w$ (Munoz-Garcia, §2.1, pp.78–79):
->
-> $$x(p,w) = \{ x \in X : p \cdot x \le w \text{ and } u(x) \ge u(y) \text{ for all } y \text{ with } p \cdot y \le w \}$$
->
-> **Properties** (under continuity + [LNS](GLOSSARY.md#term-lns) + [convexity](GLOSSARY.md#term-convexity)):
-> - [HD(0)](GLOSSARY.md#term-hd-0) in $(p,w)$: $x(ap, aw) = x(p,w)$
-> - Satisfies [Walras' Law](GLOSSARY.md#term-walras-law): $p \cdot x = w$ for all $x \in x(p,w)$
-> - Convex-valued if preferences convex; single-valued if strictly convex
->
-> **Notation:** $x(p,w)$ (uncompensated). Contrast with [Hicksian demand](GLOSSARY.md#term-hicksian-demand) $h(p,u)$.
->
-> → *See also: FD17 (UMP), FD21 (Hicksian Demand)*
->
-> **Formal Definition 17 — [Utility Maximization Problem (UMP)](GLOSSARY.md#term-ump)**
->
-> The consumer's primal problem: choose the consumption bundle maximizing utility subject to the budget constraint (Munoz-Garcia, §2.1, pp.78–79):
->
-> $$\max_{x \ge 0} u(x) \quad \text{subject to} \quad p \cdot x \le w$$
->
-> **Solution:** Walrasian demand $x(p,w)$ (FD16) and indirect utility $v(p,w) = u(x(p,w))$ (FD18).
->
-> **[Duality](GLOSSARY.md#term-duality):** The UMP is the dual of the [EMP](GLOSSARY.md#term-emp) (FD20). Under continuity and LNS: $x(p,w) = h(p, v(p,w))$ and $h(p,u) = x(p, e(p,u))$.
->
-> **Sufficient conditions for interior solution:** (1) $u$ [quasiconcave](GLOSSARY.md#term-quasiconcave), (2) $u$ satisfies [LNS](GLOSSARY.md#term-lns), (3) $\nabla u \neq 0$.
->
-> → *See also: FD16 (Walrasian Demand), FD20 (EMP)*
+!!! success "High-Yield"
+    Cobb-Douglas is THE canonical utility function. Its closed-form solutions for Walrasian demand, indirect utility, Hicksian demand, and expenditure function are the backbone of Section 1B. Expect one full question set (Q1-Q3) as a block worth ~20 marks across parts (a), (b), (c).
+!!! quote "Formal Definition 16 — Walrasian (Marshallian) Demand"
+    
+    The **Walrasian demand correspondence** $x(p,w) \subseteq X$ solves the UMP (FD17): the set of affordable bundles that maximize utility given prices $p$ and wealth $w$ (Munoz-Garcia, §2.1, pp.78–79):
+    
+    $$x(p,w) = \{ x \in X : p \cdot x \le w \text{ and } u(x) \ge u(y) \text{ for all } y \text{ with } p \cdot y \le w \}$$
+    
+    **Properties** (under continuity + [LNS](GLOSSARY.md#term-lns) + [convexity](GLOSSARY.md#term-convexity)):
+    - [HD(0)](GLOSSARY.md#term-hd-0) in $(p,w)$: $x(ap, aw) = x(p,w)$
+    - Satisfies [Walras' Law](GLOSSARY.md#term-walras-law): $p \cdot x = w$ for all $x \in x(p,w)$
+    - Convex-valued if preferences convex; single-valued if strictly convex
+    
+    **Notation:** $x(p,w)$ (uncompensated). Contrast with [Hicksian demand](GLOSSARY.md#term-hicksian-demand) $h(p,u)$.
+    
+    → *See also: FD17 (UMP), FD21 (Hicksian Demand)*
+!!! quote "Formal Definition 17 — Utility Maximization Problem (UMP)"
+    
+    The consumer's primal problem: choose the consumption bundle maximizing utility subject to the budget constraint (Munoz-Garcia, §2.1, pp.78–79):
+    
+    $$\max_{x \ge 0} u(x) \quad \text{subject to} \quad p \cdot x \le w$$
+    
+    **Solution:** Walrasian demand $x(p,w)$ (FD16) and indirect utility $v(p,w) = u(x(p,w))$ (FD18).
+    
+    **[Duality](GLOSSARY.md#term-duality):** The UMP is the dual of the [EMP](GLOSSARY.md#term-emp) (FD20). Under continuity and LNS: $x(p,w) = h(p, v(p,w))$ and $h(p,u) = x(p, e(p,u))$.
+    
+    **Sufficient conditions for interior solution:** (1) $u$ [quasiconcave](GLOSSARY.md#term-quasiconcave), (2) $u$ satisfies [LNS](GLOSSARY.md#term-lns), (3) $\nabla u \neq 0$.
+    
+    → *See also: FD16 (Walrasian Demand), FD20 (EMP)*
 
 Consider $u(x_1, x_2) = x_1^\alpha x_2^\beta$, with $\alpha, \beta > 0$. Budget: $p_1 x_1 + p_2 x_2 = w$.
 
@@ -869,33 +861,32 @@ $$x_1(p,w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p,w) = 
 !!! tip "Marking Guide"
     Indirect utility derivation from Walrasian demands (3) | Properties: HD(0), monotonicity, quasiconvexity (3) | Roy's identity statement (2) | Verification for goods 1 & 2 (4) | Interpretation & duality insight (2)
 >
-> ⭐ **High-Yield** — Roy's identity bridges UMP and observable demand: it recovers Walrasian demand from indirect utility without re-solving optimization. This is the first duality result in the course and is frequently tested as a verification question.
->
-> **Formal Definition 18 — [Indirect Utility Function](GLOSSARY.md#term-indirect-utility)**
->
-> The **indirect utility function** $v(p,w)$ gives maximum utility achievable at prices $p$ and wealth $w$, obtained by substituting Walrasian demand into the direct utility (Munoz-Garcia, §2.2, pp.82–84):
->
-> $$v(p,w) = \max_{x \ge 0} \{ u(x) : p \cdot x \le w \} = u(x(p,w))$$
->
-> **Properties:**
-> - HD(0) in $(p,w)$: $v(ap,aw) = v(p,w)$
-> - Strictly increasing in $w$: $\partial v/\partial w > 0$ (by LNS)
-> - Non-increasing in $p_k$: $\partial v/\partial p_k \le 0$
-> - Quasiconvex in $(p,w)$: $\{ (p,w) : v(p,w) \le \bar{v} \}$ is convex
->
-> → *See also: FD16 (Walrasian Demand), FD19 (Roy's Identity)*
->
-> **Formal Definition 19 — [Roy's Identity](GLOSSARY.md#term-roys)**
->
-> If $v(p,w)$ is differentiable at $(p,w)$ with $\partial v/\partial w \neq 0$, Walrasian demand is recovered as (Munoz-Garcia, §2.2, pp.84–86):
->
-> $$x_k(p,w) = -\frac{\partial v(p,w)/\partial p_k}{\partial v(p,w)/\partial w} \quad \text{for } k = 1, \ldots, N$$
->
-> **Proof sketch (envelope theorem):** Differentiate $v(p,w) = u(x(p,w))$ w.r.t. $p_k$. The indirect effect through $x(p,w)$ vanishes at the optimum, leaving $\partial v/\partial p_k = -\lambda x_k$, where $\lambda = \partial v/\partial w$ is the Lagrange multiplier.
->
-> **Key insight:** [Roy's Identity](GLOSSARY.md#term-roys) recovers observable demand without re-solving the [UMP](GLOSSARY.md#term-ump). It is the consumer-theory analog of [Hotelling's Lemma](GLOSSARY.md#term-hotellings) in production.
->
-> → *See also: FD18 (Indirect Utility), FD23 (Shephard's Lemma — EMP analog)*
+!!! success "High-Yield"
+    Roy's identity bridges UMP and observable demand: it recovers Walrasian demand from indirect utility without re-solving optimization. This is the first duality result in the course and is frequently tested as a verification question.
+!!! quote "Formal Definition 18 — Indirect Utility Function"
+    
+    The **indirect utility function** $v(p,w)$ gives maximum utility achievable at prices $p$ and wealth $w$, obtained by substituting Walrasian demand into the direct utility (Munoz-Garcia, §2.2, pp.82–84):
+    
+    $$v(p,w) = \max_{x \ge 0} \{ u(x) : p \cdot x \le w \} = u(x(p,w))$$
+    
+    **Properties:**
+    - HD(0) in $(p,w)$: $v(ap,aw) = v(p,w)$
+    - Strictly increasing in $w$: $\partial v/\partial w > 0$ (by LNS)
+    - Non-increasing in $p_k$: $\partial v/\partial p_k \le 0$
+    - Quasiconvex in $(p,w)$: $\{ (p,w) : v(p,w) \le \bar{v} \}$ is convex
+    
+    → *See also: FD16 (Walrasian Demand), FD19 (Roy's Identity)*
+!!! quote "Formal Definition 19 — Roy's Identity"
+    
+    If $v(p,w)$ is differentiable at $(p,w)$ with $\partial v/\partial w \neq 0$, Walrasian demand is recovered as (Munoz-Garcia, §2.2, pp.84–86):
+    
+    $$x_k(p,w) = -\frac{\partial v(p,w)/\partial p_k}{\partial v(p,w)/\partial w} \quad \text{for } k = 1, \ldots, N$$
+    
+    **Proof sketch (envelope theorem):** Differentiate $v(p,w) = u(x(p,w))$ w.r.t. $p_k$. The indirect effect through $x(p,w)$ vanishes at the optimum, leaving $\partial v/\partial p_k = -\lambda x_k$, where $\lambda = \partial v/\partial w$ is the Lagrange multiplier.
+    
+    **Key insight:** [Roy's Identity](GLOSSARY.md#term-roys) recovers observable demand without re-solving the [UMP](GLOSSARY.md#term-ump). It is the consumer-theory analog of [Hotelling's Lemma](GLOSSARY.md#term-hotellings) in production.
+    
+    → *See also: FD18 (Indirect Utility), FD23 (Shephard's Lemma — EMP analog)*
 
 **Step 1: Indirect utility function.**
 
@@ -961,61 +952,58 @@ $$-\frac{\partial v/\partial p_2}{\partial v/\partial w} = \frac{\beta w}{(\alph
 !!! tip "Marking Guide"
     EMP setup & Lagrangian (2) | FOCs & tangency condition (2) | Hicksian demand derivation (3) | Expenditure function derivation (3) | Properties & duality checks (2) | Shephard's lemma verification (2)
 >
-> ⭐ **High-Yield** — EMP/Hicksian demand is the mirror image of UMP/Walrasian demand. Together they form the duality core of consumer theory. Shephard's lemma is the EMP analog of Roy's identity — expect them to appear together in a question pairing.
->
-> **Formal Definition 20 — [Expenditure Minimization Problem (EMP)](GLOSSARY.md#term-emp)**
->
-> The **EMP** finds the cheapest bundle that achieves a target utility level $\bar{u}$ (Munoz-Garcia, §2.3, pp.86–91):
->
-> $$\min_{x \ge 0} \; p \cdot x \quad \text{subject to} \quad u(x) \ge \bar{u}$$
->
-> **Solution:** Hicksian demand $h(p, \bar{u})$ and expenditure function $e(p, \bar{u}) = p \cdot h(p, \bar{u})$.
->
-> **Duality with UMP (FD17):** Under continuity and LNS: $x(p,w) = h(p, v(p,w))$, $h(p,u) = x(p, e(p,u))$, and $e(p, v(p,w)) = w$.
->
-> → *See also: FD17 (UMP), FD21 (Hicksian Demand), FD22 (Expenditure Function)*
->
-> **Formal Definition 21 — [Hicksian (Compensated) Demand](GLOSSARY.md#term-hicksian-demand)**
->
-> The **Hicksian demand correspondence** $h(p, \bar{u})$ gives the cost-minimizing bundle to reach utility $\bar{u}$ at prices $p$ (Munoz-Garcia, §2.3, pp.86–91):
->
-> $$h(p, \bar{u}) = \arg\min_{x \ge 0} \{ p \cdot x : u(x) \ge \bar{u} \}$$
->
-> **Properties:**
-> - HD(0) in $p$: $h(ap, u) = h(p, u)$
-> - **Compensated Law of Demand:** $\partial h_k/\partial p_k \le 0$ (own-price effect non-positive)
-> - **Symmetry:** $\partial h_k/\partial p_l = \partial h_l/\partial p_k$ (Slutsky symmetry)
->
-> **Hicksian vs Marshallian:** Hicksian demand holds utility constant; Marshallian holds income constant. Linked via the Slutsky equation: $\partial x_k/\partial p_l = \partial h_k/\partial p_l - x_l \cdot \partial x_k/\partial w$.
->
-> → *See also: FD16 (Walrasian Demand), FD22 (Expenditure Function), FD23 (Shephard's Lemma)*
->
-> **Formal Definition 22 — [Expenditure Function](GLOSSARY.md#term-expenditure-function)**
->
-> The **expenditure function** $e(p, u)$ gives minimum expenditure to achieve utility $u$ at prices $p$ (Munoz-Garcia, §2.3, pp.91–94):
->
-> $$e(p, u) = \min_{x \ge 0} \{ p \cdot x : u(x) \ge u \} = p \cdot h(p, u)$$
->
-> **Properties:**
-> - HD(1) in $p$: $e(ap, u) = a \cdot e(p, u)$
-> - Strictly increasing in $u$: $\partial e/\partial u > 0$
-> - Concave in $p$: $e(\alpha p + (1-\alpha)p', u) \ge \alpha e(p, u) + (1-\alpha)e(p', u)$
->
-> **Key insight:** The [expenditure function](GLOSSARY.md#term-expenditure-function) is the building block of welfare analysis: [CV](GLOSSARY.md#term-cv) = $e(p^0, u^1) - e(p^0, u^0)$, [EV](GLOSSARY.md#term-ev) = $e(p^1, u^0) - e(p^1, u^1)$.
->
-> → *See also: FD19 (EMP), FD21 (Hicksian Demand), FD23 (Shephard's Lemma)*
->
-> **Formal Definition 23 — [Shephard's Lemma](GLOSSARY.md#term-shephards)**
->
-> If $e(p, u)$ is differentiable in $p$, Hicksian demand is its gradient (Munoz-Garcia, §2.3, pp.91–94):
->
-> $$h_k(p, u) = \frac{\partial e(p, u)}{\partial p_k} \quad \text{for } k = 1, \ldots, N$$
->
-> **Proof (envelope theorem):** $e(p, u) = p \cdot h(p, u)$. The indirect effect of $p_k$ on $h$ vanishes at the optimum by the FOCs.
->
-> **Key insight:** [Shephard's Lemma](GLOSSARY.md#term-shephards) is the [EMP](GLOSSARY.md#term-emp) analog of [Roy's Identity](GLOSSARY.md#term-roys) (FD19). Together they provide a complete [duality](GLOSSARY.md#term-duality) framework: from $v(p,w)$ recover [Walrasian demand](GLOSSARY.md#term-walrasian-demand) (Roy); from $e(p,u)$ recover [Hicksian demand](GLOSSARY.md#term-hicksian-demand) (Shephard).
->
-> → *See also: FD19 (Roy's Identity), FD22 (Expenditure Function)*
+!!! success "High-Yield"
+    EMP/Hicksian demand is the mirror image of UMP/Walrasian demand. Together they form the duality core of consumer theory. Shephard's lemma is the EMP analog of Roy's identity — expect them to appear together in a question pairing.
+!!! quote "Formal Definition 20 — Expenditure Minimization Problem (EMP)"
+    
+    The **EMP** finds the cheapest bundle that achieves a target utility level $\bar{u}$ (Munoz-Garcia, §2.3, pp.86–91):
+    
+    $$\min_{x \ge 0} \; p \cdot x \quad \text{subject to} \quad u(x) \ge \bar{u}$$
+    
+    **Solution:** Hicksian demand $h(p, \bar{u})$ and expenditure function $e(p, \bar{u}) = p \cdot h(p, \bar{u})$.
+    
+    **Duality with UMP (FD17):** Under continuity and LNS: $x(p,w) = h(p, v(p,w))$, $h(p,u) = x(p, e(p,u))$, and $e(p, v(p,w)) = w$.
+    
+    → *See also: FD17 (UMP), FD21 (Hicksian Demand), FD22 (Expenditure Function)*
+!!! quote "Formal Definition 21 — Hicksian (Compensated) Demand"
+    
+    The **Hicksian demand correspondence** $h(p, \bar{u})$ gives the cost-minimizing bundle to reach utility $\bar{u}$ at prices $p$ (Munoz-Garcia, §2.3, pp.86–91):
+    
+    $$h(p, \bar{u}) = \arg\min_{x \ge 0} \{ p \cdot x : u(x) \ge \bar{u} \}$$
+    
+    **Properties:**
+    - HD(0) in $p$: $h(ap, u) = h(p, u)$
+    - **Compensated Law of Demand:** $\partial h_k/\partial p_k \le 0$ (own-price effect non-positive)
+    - **Symmetry:** $\partial h_k/\partial p_l = \partial h_l/\partial p_k$ (Slutsky symmetry)
+    
+    **Hicksian vs Marshallian:** Hicksian demand holds utility constant; Marshallian holds income constant. Linked via the Slutsky equation: $\partial x_k/\partial p_l = \partial h_k/\partial p_l - x_l \cdot \partial x_k/\partial w$.
+    
+    → *See also: FD16 (Walrasian Demand), FD22 (Expenditure Function), FD23 (Shephard's Lemma)*
+!!! quote "Formal Definition 22 — Expenditure Function"
+    
+    The **expenditure function** $e(p, u)$ gives minimum expenditure to achieve utility $u$ at prices $p$ (Munoz-Garcia, §2.3, pp.91–94):
+    
+    $$e(p, u) = \min_{x \ge 0} \{ p \cdot x : u(x) \ge u \} = p \cdot h(p, u)$$
+    
+    **Properties:**
+    - HD(1) in $p$: $e(ap, u) = a \cdot e(p, u)$
+    - Strictly increasing in $u$: $\partial e/\partial u > 0$
+    - Concave in $p$: $e(\alpha p + (1-\alpha)p', u) \ge \alpha e(p, u) + (1-\alpha)e(p', u)$
+    
+    **Key insight:** The [expenditure function](GLOSSARY.md#term-expenditure-function) is the building block of welfare analysis: [CV](GLOSSARY.md#term-cv) = $e(p^0, u^1) - e(p^0, u^0)$, [EV](GLOSSARY.md#term-ev) = $e(p^1, u^0) - e(p^1, u^1)$.
+    
+    → *See also: FD19 (EMP), FD21 (Hicksian Demand), FD23 (Shephard's Lemma)*
+!!! quote "Formal Definition 23 — Shephard's Lemma"
+    
+    If $e(p, u)$ is differentiable in $p$, Hicksian demand is its gradient (Munoz-Garcia, §2.3, pp.91–94):
+    
+    $$h_k(p, u) = \frac{\partial e(p, u)}{\partial p_k} \quad \text{for } k = 1, \ldots, N$$
+    
+    **Proof (envelope theorem):** $e(p, u) = p \cdot h(p, u)$. The indirect effect of $p_k$ on $h$ vanishes at the optimum by the FOCs.
+    
+    **Key insight:** [Shephard's Lemma](GLOSSARY.md#term-shephards) is the [EMP](GLOSSARY.md#term-emp) analog of [Roy's Identity](GLOSSARY.md#term-roys) (FD19). Together they provide a complete [duality](GLOSSARY.md#term-duality) framework: from $v(p,w)$ recover [Walrasian demand](GLOSSARY.md#term-walrasian-demand) (Roy); from $e(p,u)$ recover [Hicksian demand](GLOSSARY.md#term-hicksian-demand) (Shephard).
+    
+    → *See also: FD19 (Roy's Identity), FD22 (Expenditure Function)*
 
 **EMP setup:** Minimize $p_1 x_1 + p_2 x_2$ subject to $u(x_1, x_2) = x_1^\alpha x_2^\beta \ge \bar{u}$.
 
@@ -1095,34 +1083,33 @@ $$e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\right)^\alpha \left(\fr
 !!! tip "Marking Guide"
     HD(0) property (2) | Walras' Law via LNS (2) | Convexity/uniqueness (2) | Other properties (2) | Three violation cases: non-monotonicity, non-quasiconcavity, zero gradient (4) | Summary table (2)
 >
-> ⭐ **High-Yield** — This question synthesizes everything from Section 1A into the UMP. The violation cases (especially non-quasiconcave preferences leading to corner solutions) are frequently tested and separate A from B students.
->
-> **Formal Definition 24 — [Walras' Law](GLOSSARY.md#term-walras-law)**
->
-> For the UMP with locally non-satiated preferences (FD10), any optimal consumption bundle $x^* \in x(p,w)$ must satisfy the budget constraint with equality (Munoz-Garcia, §2.2, pp.79–80):
->
-> $$p \cdot x^* = w \quad \text{for all } x^* \in x(p,w)$$
->
-> **Proof (by contradiction):** If $p \cdot x^* < w$, LNS guarantees a strictly preferred bundle inside the $\varepsilon$-ball that remains affordable — contradicting optimality.
->
-> **Key insight:** [Walras' Law](GLOSSARY.md#term-walras-law) requires only [LNS](GLOSSARY.md#term-lns) — not monotonicity, convexity, or continuity. It is fundamental for [general equilibrium](GLOSSARY.md#term-ge) market-clearing conditions.
->
-> → *See also: FD10 (LNS), FD16 (Walrasian Demand)*
->
-> **Formal Definition 25 — [Homogeneity of Degree Zero [HD(0)]](GLOSSARY.md#term-hd-0)**
->
-> Walrasian demand $x(p,w)$ is **homogeneous of degree zero** in $(p,w)$: scaling all prices and income by the same factor leaves the budget set unchanged, hence demand unchanged (Munoz-Garcia, §2.2, p.80):
->
-> $$x(ap, aw) = x(p,w) \quad \text{for all } a > 0$$
->
-> **Implications:**
-> - Demand depends only on **relative** prices and **real** income
-> - No money illusion — if all prices and income double, the consumer buys the same bundle
-> - Indirect utility $v(p,w)$ is HD(0); expenditure function $e(p,u)$ is HD(1) in $p$; Hicksian demand $h(p,u)$ is HD(0) in $p$
->
-> **Key insight:** [HD(0)](GLOSSARY.md#term-hd-0) of [Walrasian demand](GLOSSARY.md#term-walrasian-demand) does NOT require any preference assumptions — it follows purely from budget-set [homogeneity](GLOSSARY.md#term-homogeneity).
->
-> → *See also: FD11 (Homogeneous Function), FD16 (Walrasian Demand)*
+!!! success "High-Yield"
+    This question synthesizes everything from Section 1A into the UMP. The violation cases (especially non-quasiconcave preferences leading to corner solutions) are frequently tested and separate A from B students.
+!!! quote "Formal Definition 24 — Walras' Law"
+    
+    For the UMP with locally non-satiated preferences (FD10), any optimal consumption bundle $x^* \in x(p,w)$ must satisfy the budget constraint with equality (Munoz-Garcia, §2.2, pp.79–80):
+    
+    $$p \cdot x^* = w \quad \text{for all } x^* \in x(p,w)$$
+    
+    **Proof (by contradiction):** If $p \cdot x^* < w$, LNS guarantees a strictly preferred bundle inside the $\varepsilon$-ball that remains affordable — contradicting optimality.
+    
+    **Key insight:** [Walras' Law](GLOSSARY.md#term-walras-law) requires only [LNS](GLOSSARY.md#term-lns) — not monotonicity, convexity, or continuity. It is fundamental for [general equilibrium](GLOSSARY.md#term-ge) market-clearing conditions.
+    
+    → *See also: FD10 (LNS), FD16 (Walrasian Demand)*
+!!! quote "Formal Definition 25 — [Homogeneity of Degree Zero [HD(0)]](GLOSSARY.md#term-hd-0)"
+    
+    Walrasian demand $x(p,w)$ is **homogeneous of degree zero** in $(p,w)$: scaling all prices and income by the same factor leaves the budget set unchanged, hence demand unchanged (Munoz-Garcia, §2.2, p.80):
+    
+    $$x(ap, aw) = x(p,w) \quad \text{for all } a > 0$$
+    
+    **Implications:**
+    - Demand depends only on **relative** prices and **real** income
+    - No money illusion — if all prices and income double, the consumer buys the same bundle
+    - Indirect utility $v(p,w)$ is HD(0); expenditure function $e(p,u)$ is HD(1) in $p$; Hicksian demand $h(p,u)$ is HD(0) in $p$
+    
+    **Key insight:** [HD(0)](GLOSSARY.md#term-hd-0) of [Walrasian demand](GLOSSARY.md#term-walrasian-demand) does NOT require any preference assumptions — it follows purely from budget-set [homogeneity](GLOSSARY.md#term-homogeneity).
+    
+    → *See also: FD11 (Homogeneous Function), FD16 (Walrasian Demand)*
 
 **Properties of Walrasian demand $x(p,w)$:**
 
@@ -1225,23 +1212,23 @@ A preference relation is homothetic if all indifference sets are related to prop
 | **MRS independent of utility level** | MRS depends only on the ratio $x_1/x_2$, not on how much is consumed |
 | **No luxuries or necessities** | All goods have unit income elasticity |
 
-> **Formal Definition 26 — [Engel Curve](GLOSSARY.md#term-ic)** *(see: Indifference Curve)*
->
-> An **Engel curve** traces the relationship between the quantity demanded of a good and the consumer's income, holding prices constant (Munoz-Garcia, §2.5, pp.106–108; Koutsoyiannis, Ch.2 §B, p.25):
->
-> $$x_k = f_k(w) \quad \text{with } p \text{ fixed}$$
->
-> **Classification by income elasticity:**
-> - Normal good: $\partial x_k/\partial w > 0$ (Engel curve upward sloping)
-> - Inferior good: $\partial x_k/\partial w < 0$ (Engel curve downward sloping)
-> - Luxury: $\varepsilon_{x,w} > 1$ (Engel curve convex)
-> - Necessity: $0 < \varepsilon_{x,w} < 1$ (Engel curve concave)
->
-> **For homothetic preferences (FD12):** Engel curves are straight lines through the origin: $x_k(p,w) = w \cdot x_k(p,1)$, unit income elasticity for all goods.
->
-> **For quasilinear preferences (FD15/FD28):** Engel curves for the nonlinear good are flat beyond a threshold income (zero income effect).
->
-> → *See also: FD12 (Homotheticity), FD15 (Quasilinear Utility)*
+!!! quote "Formal Definition 26 — Engel Curve** *(see: Indifference Curve)*"
+    
+    An **Engel curve** traces the relationship between the quantity demanded of a good and the consumer's income, holding prices constant (Munoz-Garcia, §2.5, pp.106–108; Koutsoyiannis, Ch.2 §B, p.25):
+    
+    $$x_k = f_k(w) \quad \text{with } p \text{ fixed}$$
+    
+    **Classification by income elasticity:**
+    - Normal good: $\partial x_k/\partial w > 0$ (Engel curve upward sloping)
+    - Inferior good: $\partial x_k/\partial w < 0$ (Engel curve downward sloping)
+    - Luxury: $\varepsilon_{x,w} > 1$ (Engel curve convex)
+    - Necessity: $0 < \varepsilon_{x,w} < 1$ (Engel curve concave)
+    
+    **For homothetic preferences (FD12):** Engel curves are straight lines through the origin: $x_k(p,w) = w \cdot x_k(p,1)$, unit income elasticity for all goods.
+    
+    **For quasilinear preferences (FD15/FD28):** Engel curves for the nonlinear good are flat beyond a threshold income (zero income effect).
+    
+    → *See also: FD12 (Homotheticity), FD15 (Quasilinear Utility)*
 
 **Examples:**
 
@@ -1276,24 +1263,24 @@ A preference relation is homothetic if all indifference sets are related to prop
 !!! tip "Marking Guide"
     Leontief setup & fixed-proportion insight (2) | Marshallian demand derivation for Gin (3) | Hicksian demand for Campari — EMP setup (3) | Expenditure function (2) | Duality checks (2) | Summary table (2)
 >
-> ⭐ **High-Yield** — Leontief is the second most tested functional form after Cobb-Douglas. The fixed-proportion structure tests whether you understand the *non-substitutability* case. It's the polar opposite of Cobb-Douglas and perfect substitutes, making it essential comparative material.
->
-> **Formal Definition 27 — [Leontief (Perfect Complements) Utility](GLOSSARY.md#term-leontief)**
->
-> The Leontief utility function represents preferences where goods are consumed in fixed proportions (Munoz-Garcia, §1.6, pp.28–29):
->
-> $$u(x_1, x_2, \ldots, x_N) = \min\left\{\frac{x_1}{a_1}, \frac{x_2}{a_2}, \ldots, \frac{x_N}{a_N}\right\}$$
->
-> **Key properties:**
-> - **L-shaped ICs:** Right-angle indifference curves with kink at $x_i/x_j = a_i/a_j$
-> - **Zero substitutability:** $\sigma = 0$ (elasticity of substitution)
-> - **HD(1):** $u(tx) = t \cdot u(x)$
-> - **Hicksian demand** is price-independent: $h_k(p, u) = a_k \cdot u$
-> - **Marshallian demand:** $x_k(p,w) = a_k \cdot w / \sum_i a_i p_i$
->
-> **Polar case:** Leontief ($\sigma = 0$) and perfect substitutes ($\sigma = \infty$) are opposite extremes of substitutability.
->
-> → *See also: FD12 (MRS — undefined at Leontief kink), FD16 (Walrasian Demand)*
+!!! success "High-Yield"
+    Leontief is the second most tested functional form after Cobb-Douglas. The fixed-proportion structure tests whether you understand the *non-substitutability* case. It's the polar opposite of Cobb-Douglas and perfect substitutes, making it essential comparative material.
+!!! quote "Formal Definition 27 — Leontief (Perfect Complements) Utility"
+    
+    The Leontief utility function represents preferences where goods are consumed in fixed proportions (Munoz-Garcia, §1.6, pp.28–29):
+    
+    $$u(x_1, x_2, \ldots, x_N) = \min\left\{\frac{x_1}{a_1}, \frac{x_2}{a_2}, \ldots, \frac{x_N}{a_N}\right\}$$
+    
+    **Key properties:**
+    - **L-shaped ICs:** Right-angle indifference curves with kink at $x_i/x_j = a_i/a_j$
+    - **Zero substitutability:** $\sigma = 0$ (elasticity of substitution)
+    - **HD(1):** $u(tx) = t \cdot u(x)$
+    - **Hicksian demand** is price-independent: $h_k(p, u) = a_k \cdot u$
+    - **Marshallian demand:** $x_k(p,w) = a_k \cdot w / \sum_i a_i p_i$
+    
+    **Polar case:** Leontief ($\sigma = 0$) and perfect substitutes ($\sigma = \infty$) are opposite extremes of substitutability.
+    
+    → *See also: FD12 (MRS — undefined at Leontief kink), FD16 (Walrasian Demand)*
 
 Leontief (perfect complements) utility: $u(G, V, C) = \min(G, V, C)$
 
@@ -1377,17 +1364,17 @@ $$v(p, e(p,u)) = \frac{e(p,u)}{p_G + p_V + p_C} = \frac{\bar{u}(p_G + p_V + p_C)
 !!! tip "Marking Guide"
     MRS & tangency condition (3) | Marshallian demand derivation (3) | Corner solution condition $I \ge p_x$ (3) | Income elasticity characterization (3) | Quasilinearity & zero income effect (2)
 >
-> **Formal Definition 28 — [Quasilinear Utility (Demand Properties)](GLOSSARY.md#term-quasilinear)**
->
-> For $u(x, y) = f(x) + y$ with $f' > 0$, $f'' < 0$, demand for the nonlinear good exhibits **zero income effect** (Munoz-Garcia, §1.6, pp.29–30):
->
-> $$\frac{\partial x(p,w)}{\partial w} = 0, \qquad f'(x) = \frac{p_x}{p_y} \text{ (independent of } w\text{)}$$
->
-> Demand for the numeraire $y$ absorbs all income effects: $y(p,w) = (w - p_x \cdot x)/p_y$.
->
-> **Welfare implication:** CV = EV = CS for any price change affecting $p_x$, making welfare measurement unambiguous.
->
-> → *See also: FD15 (Quasilinear Utility — preferences), FD29 (Corner Solution)*
+!!! quote "Formal Definition 28 — Quasilinear Utility (Demand Properties)"
+    
+    For $u(x, y) = f(x) + y$ with $f' > 0$, $f'' < 0$, demand for the nonlinear good exhibits **zero income effect** (Munoz-Garcia, §1.6, pp.29–30):
+    
+    $$\frac{\partial x(p,w)}{\partial w} = 0, \qquad f'(x) = \frac{p_x}{p_y} \text{ (independent of } w\text{)}$$
+    
+    Demand for the numeraire $y$ absorbs all income effects: $y(p,w) = (w - p_x \cdot x)/p_y$.
+    
+    **Welfare implication:** CV = EV = CS for any price change affecting $p_x$, making welfare measurement unambiguous.
+    
+    → *See also: FD15 (Quasilinear Utility — preferences), FD29 (Corner Solution)*
 
 **Utility:** $u(x, y) = x + \ln(y)$, with $x, y \ge 0$.
 
@@ -1412,23 +1399,23 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 - $x(p, I) = I/p_x - 1$ (provided $I \ge p_x$; else $x = 0$)
 - $y(p, I) = p_x / p_y$
 
-> **Formal Definition 29 — Corner Solution
->
-> A **corner solution** occurs when the optimal bundle lies on the boundary of the budget set — at least one good is consumed in zero quantity (Munoz-Garcia, §2.1, pp.80–82):
->
-> **Kuhn-Tucker condition:** At a corner with $x_k = 0$, the marginal utility per dollar satisfies:
->
-> $$\frac{\partial u(x^*)}{\partial x_k} \le \lambda p_k \quad \Longleftrightarrow \quad \frac{MU_k}{p_k} \le \frac{MU_j}{p_j} \text{ for any } j \text{ with } x_j > 0$$
->
-> **When corners arise:**
-> - One good is a "bad" (negative MU)
-> - Income too low for interior consumption (quasilinear with $I < p_x$)
-> - Preferences non-convex (tangency identifies a minimum, not maximum)
-> - Perfect substitutes with corner-inducing price ratio
->
-> **Key insight:** Always check the non-negativity constraints $x_k \ge 0$ before applying the [Lagrangian](GLOSSARY.md#term-lagrangian) — many exam questions test whether you identify the corner.
->
-> → *See also: FD28 (Quasilinear Corner), FD30 (Bad)*
+!!! quote "Formal Definition 29 — Corner Solution"
+    
+    A **corner solution** occurs when the optimal bundle lies on the boundary of the budget set — at least one good is consumed in zero quantity (Munoz-Garcia, §2.1, pp.80–82):
+    
+    **Kuhn-Tucker condition:** At a corner with $x_k = 0$, the marginal utility per dollar satisfies:
+    
+    $$\frac{\partial u(x^*)}{\partial x_k} \le \lambda p_k \quad \Longleftrightarrow \quad \frac{MU_k}{p_k} \le \frac{MU_j}{p_j} \text{ for any } j \text{ with } x_j > 0$$
+    
+    **When corners arise:**
+    - One good is a "bad" (negative MU)
+    - Income too low for interior consumption (quasilinear with $I < p_x$)
+    - Preferences non-convex (tangency identifies a minimum, not maximum)
+    - Perfect substitutes with corner-inducing price ratio
+    
+    **Key insight:** Always check the non-negativity constraints $x_k \ge 0$ before applying the [Lagrangian](GLOSSARY.md#term-lagrangian) — many exam questions test whether you identify the corner.
+    
+    → *See also: FD28 (Quasilinear Corner), FD30 (Bad)*
 
 **Step 3: With limited $I$, which goods are consumed?**
 
@@ -1462,17 +1449,17 @@ $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_y \cdot (p_x/p_y)}{p_x} = \frac{I 
 !!! tip "Marking Guide"
     Linear utility recognition & MU computation (2) | $MU_y < 0$ — identifying the bad (3) | Corner solution derivation (3) | Verification: tangency yields minimum (4) | Conclusion & alternative interpretation (2)
 >
-> ⭐ **High-Yield** — The "good with a bad" corner solution is a classic exam trick. Students trained to mechanically solve Lagrangian FOCs miss the key insight: $MU_y < 0$ means the tangency condition identifies a minimum, not a maximum. Always check marginal utility signs before optimizing.
->
-> **Formal Definition 30 — "Bad" (Negative Marginal Utility)
->
-> A **bad** is a commodity whose consumption reduces utility: $\partial u/\partial x_k < 0$ (Munoz-Garcia, §1.2, p.9).
->
-> **Optimization with a bad:** At the UMP optimum the consumer sets $x_k = 0$ (corner solution, FD29) unless compensated by consuming a "good" that offsets the disutility. For $u = a x_g - b x_b$ with $a, b > 0$, compare $|MRS| = a/b$ to $p_g/p_b$ — if $|MRS| < p_g/p_b$, specialize in the good entirely.
->
-> **Key insight:** Always check the sign of marginal utilities before solving the [UMP](GLOSSARY.md#term-ump). A [Lagrangian](GLOSSARY.md#term-lagrangian) tangency condition with a bad identifies a minimum, not a maximum. This is a classic exam trap.
->
-> → *See also: FD29 (Corner Solution), [1B‑Q8](./answers-consumer-theory.md#q-cons-1b-08) (worked example)*
+!!! success "High-Yield"
+    The "good with a bad" corner solution is a classic exam trick. Students trained to mechanically solve Lagrangian FOCs miss the key insight: $MU_y < 0$ means the tangency condition identifies a minimum, not a maximum. Always check marginal utility signs before optimizing.
+!!! quote "Formal Definition 30 — "Bad" (Negative Marginal Utility)"
+    
+    A **bad** is a commodity whose consumption reduces utility: $\partial u/\partial x_k < 0$ (Munoz-Garcia, §1.2, p.9).
+    
+    **Optimization with a bad:** At the UMP optimum the consumer sets $x_k = 0$ (corner solution, FD29) unless compensated by consuming a "good" that offsets the disutility. For $u = a x_g - b x_b$ with $a, b > 0$, compare $|MRS| = a/b$ to $p_g/p_b$ — if $|MRS| < p_g/p_b$, specialize in the good entirely.
+    
+    **Key insight:** Always check the sign of marginal utilities before solving the [UMP](GLOSSARY.md#term-ump). A [Lagrangian](GLOSSARY.md#term-lagrangian) tangency condition with a bad identifies a minimum, not a maximum. This is a classic exam trap.
+    
+    → *See also: FD29 (Corner Solution), [1B‑Q8](./answers-consumer-theory.md#q-cons-1b-08) (worked example)*
 
 **Utility:** $u(x, y) = x - 3y$
 

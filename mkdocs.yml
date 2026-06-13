@@ -2,7 +2,7 @@
 site_name: Economics Mastery
 site_description: Free MSc Economics exam resources — Department of Economics, Jahangirnagar University. Solved past papers, exam guides, and interactive study tools for Microeconomics, Macroeconomics, Development, Political Economy & Health Economics.
 site_author: Department of Economics, Jahangirnagar University
-site_url: https://lilalab.pro.bd/
+site_url: https://nabil0x.github.io/econ500/
 repo_url: https://github.com/nabil0x/econ500
 repo_name: econ500
 
@@ -48,9 +48,9 @@ extra:
     - icon: fontawesome/brands/facebook
       link: https://facebook.com
       name: Facebook
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX  # ← Replace with real GA4 ID to enable analytics
 
 extra_css:
   - stylesheets/extra.css

@@ -314,6 +314,45 @@ GRANT EXECUTE ON FUNCTION public.get_most_clicked_pages TO anon;
 
 ---
 
+## Migration 002: Study Analytics Enhancement
+
+After the base setup above, run the migration SQL in `supabase/migrations/002_study_analytics_enhancement.sql`:
+
+```sql
+-- Copy the entire contents of supabase/migrations/002_study_analytics_enhancement.sql
+-- and run it in the Supabase SQL Editor
+```
+
+This migration adds:
+
+| Feature | Details |
+|---------|---------|
+| **New columns** on `page_visits` and `click_events` | `topic TEXT`, `visitor_id TEXT`, `scroll_depth INTEGER` (page_visits only) |
+| **New table**: `study_heartbeats` | 60s heartbeat logging so we never lose more than 60s of study time on crash |
+| **New table**: `search_queries` | Tracks what students search for in the MkDocs search bar |
+| **12 new RPC functions** | Rich analytics: course/topic study time, hourly patterns, content type breakdown, visitor stats, insights, search queries |
+
+### New RPC Functions
+
+| RPC | Parameters | Returns | Purpose |
+|-----|-----------|---------|---------|
+| `get_dashboard_summary` | `days` (default 30) | `metric_name`, `metric_value` | Combined stats: total clicks, sessions, visitors, searches, unique pages, study ms |
+| `get_study_ms_by_course` | `days` (default 30) | `course`, `total_study_ms`, `session_count` | Study time grouped by course (from heartbeats) |
+| `get_study_ms_by_topic` | `p_course`, `days` (default 30) | `topic`, `total_study_ms`, `session_count` | Study time grouped by topic within a course |
+| `get_topic_performance` | `limit_count` (20), `days` (30) | `course`, `topic`, `total_visits`, `total_clicks`, `total_study_ms`, `unique_visitors` | Combined topic view across all courses |
+| `get_study_ms_per_day` | `days` (default 7) | `date`, `total_ms` | Daily study time (v3 — from heartbeats, replaces v2 version) |
+| `get_active_visitors_now` | `minutes_window` (5) | `active_sessions`, `active_visitors` | Currently active students |
+| `get_study_hourly_pattern` | `days` (default 30) | `hour_of_day`, `avg_study_ms`, `session_count` | Study intensity by hour (0-23) |
+| `get_content_type_performance` | `days` (default 30) | `content_type`, `visits`, `unique_visitors` | Visits by content type (answers, basics, exams, etc.) |
+| `get_visitor_stats` | `days` (default 30) | `total_visitors`, `returning_visitors`, `new_visitors`, `returning_pct`, `avg_sessions_per_visitor` | Returning vs new visitor metrics |
+| `get_study_insights` | `days` (default 30) | `insight_key`, `insight_value`, `insight_type` | Auto-generated study insights (most studied, neglected, trend, total hours) |
+| `get_most_clicked_pages` | `limit_count` (10), `days` (30) | `path`, `click_count`, `sample_target`, `topic` | Most clicked pages with topic context (v3, replaces v2) |
+| `get_top_search_queries` | `limit_count` (20), `days` (30) | `query`, `search_count` | Most common search queries |
+
+> **Note:** The v3 RPCs with the same name as v2 versions (`get_study_ms_per_day`, `get_most_clicked_pages`) replace the v2 implementations. They use `study_heartbeats` and include `topic` context.
+
+---
+
 ## Step 3: Get your API credentials
 
 1. In Supabase, go to **Settings** → **API** (left sidebar)

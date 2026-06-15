@@ -75,6 +75,11 @@ This is a **single-file source of truth** for 501 Microeconomics. It consolidate
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 1: CONSUMER THEORY & PREFERENCES
+============================================================ -->
+
 ## <a id="topic-1"></a>Topic 1: Consumer Theory & Preferences
 
 
@@ -142,6 +147,14 @@ These satisfy $IND(x) = UCS(x) \cap LCS(x)$.
 
 **Indifference set** of a bundle $x$ is the set of all bundles $y$ such that the consumer is indifferent between them:
 
+> **Derivation Walkthrough:**
+> Starting from the definition of the indifference relation $\sim$ (where $x \sim y$ means $x \succeq y$ and $y \succeq x$):
+> 1. The preference relation $\succeq$ partitions the consumption set $X$ into equivalence classes
+> 2. For a given bundle $x$, collect all bundles $y$ that are indifferent to $x$: $\{ y \in X : y \sim x \}$
+> 3. This collection is defined as the **indifference set** $IND(x)$
+>
+> **Intuition:** $IND(x)$ contains every bundle that yields exactly the same satisfaction as $x$. The consumer would be equally happy with any bundle in this set — they are perfect substitutes in terms of welfare.
+
 $$IND(x) = \{ y \in X : y \sim x \}$$
 
 **Strong monotonicity:** For any $x \neq y$, if $x_k \ge y_k$ for all $k$ and $x_l > y_l$ for at least one good $l$, then $x \succ y$. (i.e., more of ANY good strictly increases utility.)
@@ -164,17 +177,43 @@ $$IND(x) = \{ y \in X : y \sim x \}$$
 
 **Convexity (Definition 1):** For all $x, y \in X$, if $x \succeq y$ then for any $\alpha \in (0,1)$:
 
+> **Derivation Walkthrough:**
+> Starting from the premise that $x \succeq y$ (bundle $x$ is at least as good as $y$):
+> 1. Take any $\alpha \in (0,1)$ and form the convex combination $\alpha x + (1-\alpha)y$
+> 2. **Convex preferences** require that this mixture is **no worse than** the worse bundle $y$
+> 3. Result: $\alpha x + (1-\alpha)y \succeq y$
+>
+> **Intuition:** Averages are not worse than extremes. If you mix a good bundle $x$ with a less-preferred bundle $y$, the mixture is still at least as good as $y$. This captures a taste for diversification.
+
 $$\alpha x + (1-\alpha) y \succeq y$$
 
 The convex combination of $x$ and $y$ is at least as good as $y$.
 
 **Convexity (Definition 2 -- Convex UCS):** For every bundle $x$, its upper contour set $UCS(x) = \{ y \in X : y \succeq x \}$ is a convex set. That is, for any $y, z \in UCS(x)$ and any $\lambda \in (0,1)$:
 
+> **Derivation Walkthrough:**
+> Starting from two bundles $y, z$ in the upper contour set $UCS(x) = \{y : y \succeq x\}$:
+> 1. By definition of $UCS(x)$: $y \succeq x$ and $z \succeq x$
+> 2. For any $\lambda \in (0,1)$, form the convex combination $\lambda y + (1-\lambda)z$
+> 3. **Convex UCS assumption:** this mixture also belongs to $UCS(x)$
+> 4. Therefore $\lambda y + (1-\lambda)z \succeq x$
+>
+> **Intuition:** The upper contour set is a convex set — if two bundles are both at least as good as $x$, then any weighted average of them is also at least as good as $x$. This is equivalent to Definition 1.
+
 $$\lambda y + (1-\lambda) z \succeq x$$
 
 **Equivalence:** The two definitions are equivalent. Both capture the idea that consumers prefer averages to extremes (diversification).
 
 **Strong convexity:** For every $x, y$ where $x \neq y$ and $x \succeq z$, $y \succeq z$, then for all $\lambda \in (0,1)$:
+
+> **Derivation Walkthrough:**
+> Starting from two distinct bundles $x 
+eq y$, both at least as good as $z$ ($x \succeq z$, $y \succeq z$):
+> 1. Form the convex combination $\lambda x + (1-\lambda)y$ for any $\lambda \in (0,1)$
+> 2. **Weak convexity** would give: $\lambda x + (1-\lambda)y \succeq z$
+> 3. **Strong convexity** strengthens this: the mixture is **strictly better** than $z$: $\lambda x + (1-\lambda)y \succ z$
+>
+> **Intuition:** Mixing distinct equally-good bundles yields a strictly preferred bundle. This rules out linear (flat) segments on indifference curves — ICs are strictly bowed inward, guaranteeing a unique optimal bundle.
 
 $$\lambda x + (1-\lambda) y \succ z$$
 
@@ -209,6 +248,15 @@ We prove the chain of equivalences:
 **(2) UCS(x) is convex $\iff$ $u(\cdot)$ is quasiconcave:**
 
 **Define quasiconcavity:** A function $u(\cdot)$ is quasiconcave if for all $x, y \in X$ and $\lambda \in (0,1)$:
+
+> **Derivation Walkthrough:**
+> Starting from the convex-UCS property of preferences:
+> 1. Take any two bundles $x, y$ and let $m = \min\{u(x), u(y)\}$ be the lower utility level
+> 2. Both $x$ and $y$ belong to $UCS(z)$ where $z$ is the bundle achieving $u(z) = m$
+> 3. Since $UCS(z)$ is convex, $\lambda x + (1-\lambda)y \in UCS(z)$
+> 4. Hence $u(\lambda x + (1-\lambda)y) \ge m = \min\{u(x), u(y)\}$
+>
+> **Intuition:** The utility of an average bundle is at least the minimum of the two utilities. This is the analytic expression of convex preferences — it ensures upper contour sets are convex sets.
 
 $$u(\lambda x + (1-\lambda) y) \ge \min\{u(x), u(y)\}$$
 
@@ -329,6 +377,14 @@ A preference relation $\succeq$ is **continuous** if it is preserved under limit
 
 **Utility function:** A function $u: X \to \mathbb{R}$ that represents preference relation $\succeq$ if, for every $x, y \in X$:
 
+> **Derivation Walkthrough:**
+> Starting from the definition of a utility representation:
+> 1. A utility function $u: X \to \mathbb{R}$ **represents** preferences $\succeq$ if it preserves the preference ordering
+> 2. For any two bundles $x, y$: $x$ is weakly preferred to $y$ **if and only if** $u(x)$ is at least as large as $u(y)$
+> 3. Mathematically: $x \succeq y \iff u(x) \ge u(y)$
+>
+> **Intuition:** Utility numbers are ordinal ranking devices — only the comparison matters, not the absolute value. Any strictly increasing transformation $f(u(x))$ represents the same preferences.
+
 $$x \succeq y \iff u(x) \ge u(y)$$
 
 **Properties of utility representation:**
@@ -410,6 +466,14 @@ $$x \succeq y \iff u(x) \ge u(y)$$
 
 A function $f: \mathbb{R}^N_+ \to \mathbb{R}$ is **homogeneous of degree $k$** if scaling all arguments by $a > 0$ multiplies the function value by $a^k$:
 
+> **Derivation Walkthrough:**
+> Starting from the definition of degree-$k$ homogeneity:
+> 1. Take a function $f: \mathbb{R}^N_+ \to \mathbb{R}$ and scale **every** argument by factor $a > 0$
+> 2. If the function value scales by $a^k$, we say $f$ is **homogeneous of degree $k$** (HD($k$))
+> 3. Formal statement: $f(a x_1, a x_2, \ldots, a x_N) = a^k f(x_1, x_2, \ldots, x_N)$
+>
+> **Intuition:** Proportional scaling of all inputs yields a proportional scaling of output. For utility functions, HD(1) means doubling consumption doubles utility; HD(0) means scaling has no effect on utility.
+
 $$f(a x_1, a x_2, \ldots, a x_N) = a^k f(x_1, x_2, \ldots, x_N)$$
 
 **Key properties:**
@@ -449,6 +513,15 @@ A utility function $u(x)$ is **homothetic** if it is a monotonic transformation 
 > **Munoz-Garcia Insight -- Formal Proof that Homotheticity Does NOT Imply Homogeneity:**
 >
 > Munoz-Garcia (§1.9.3, pp.42-43) provides the formal proof. Take $v(x_1, x_2) = x_1 x_2$, which is HD(2). Apply the monotonic transformation $g(y) = y + a$, where $a > 0$, yielding $u(x_1, x_2) = x_1 x_2 + a$. Then:
+> > **Derivation Walkthrough:**
+> > Starting from $u(x_1, x_2) = x_1 x_2 + a$, which is homothetic but claimed to be non-homogeneous:
+> > 1. Scale both arguments by $\alpha$: $u(\alpha x_1, \alpha x_2) = (\alpha x_1)(\alpha x_2) + a = \alpha^2 (x_1 x_2) + a$
+> > 2. Compare to the homogeneity requirement: $\alpha^k (x_1 x_2 + a) = \alpha^k x_1 x_2 + \alpha^k a$
+> > 3. The $\alpha^2 (x_1 x_2)$ term suggests $k=2$, but the $a$ term would scale by $\alpha^2$ when it should scale by $\alpha^k$
+> > 4. No single $k$ satisfies the condition for all $\alpha$ — **not homogeneous** (yet homothetic!)
+> >
+> > **Intuition:** Adding a constant to a homogeneous function preserves homotheticity (it is a monotonic transformation $g(y)=y+a$) but destroys homogeneity — the constant term doesn't scale proportionally.
+
 > $$u(\alpha x_1, \alpha x_2) = (\alpha x_1)(\alpha x_2) + a = \alpha^2 (x_1 x_2) + a \neq \alpha^k (x_1 x_2 + a)$$
 > for any single $k$. Thus $u$ is **not homogeneous** but **is homothetic** (since $g$ is strictly increasing).
 >
@@ -459,6 +532,15 @@ A utility function $u(x)$ is **homothetic** if it is a monotonic transformation 
 #### Marginal Rate of Substitution (MRS)
 
 The MRS between goods $i$ and $j$ measures the rate at which the consumer is willing to trade good $j$ for good $i$ while maintaining constant utility:
+
+> **Derivation Walkthrough:**
+> Starting from the total differential of the utility function along an indifference curve:
+> 1. Total change in utility: $du = \sum_{k=1}^N \frac{\partial u}{\partial x_k} dx_k$
+> 2. Along an indifference curve, $du = 0$ (utility is constant)
+> 3. For a change involving only goods $i$ and $j$: $\frac{\partial u}{\partial x_i} dx_i + \frac{\partial u}{\partial x_j} dx_j = 0$
+> 4. Rearranging: $-\frac{dx_j}{dx_i} = \frac{\partial u/\partial x_i}{\partial u/\partial x_j} \equiv MRS_{ij}(x)$
+>
+> **Intuition:** The MRS measures the consumer's willingness to trade one good for another while keeping utility constant — the subjective rate of exchange between goods $i$ and $j$.
 
 $$MRS_{ij}(x) = \frac{MU_i(x)}{MU_j(x)} = \frac{\partial u/\partial x_i}{\partial u/\partial x_j}$$
 
@@ -478,15 +560,41 @@ We prove: quasiconcavity of utility (convex preferences) is equivalent to dimini
 
 For utility $u(x,y)$,
 
+> **Derivation Walkthrough:**
+> Specializing to two goods ($x$ and $y$):
+> 1. $MRS_{xy} = \frac{MU_x}{MU_y} = \frac{\partial u/\partial x}{\partial u/\partial y}$
+> 2. This ratio tells us how many units of $y$ the consumer would give up to get one more unit of $x$ while staying on the same indifference curve
+>
+> **Intuition:** The MRS is the absolute slope of the indifference curve at a given point. It changes as we move along the IC — normally diminishing as $x$ increases.
+
 $$MRS_{xy} = \frac{MU_x}{MU_y} = \frac{\partial u/\partial x}{\partial u/\partial y}$$
 
 Along an indifference curve, $du = 0$:
+
+> **Derivation Walkthrough:**
+> Starting from total differential of $u(x,y)$ along an indifference curve:
+> 1. $du = \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy$
+> 2. Set $du = 0$ (by definition of moving along an IC): $\frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy = 0$
+> 3. Solve for $\frac{dy}{dx}$: $\frac{dy}{dx} = -\frac{\partial u/\partial x}{\partial u/\partial y} = -MRS$
+>
+> **Intuition:** The slope of the indifference curve equals the **negative** of the MRS. The negative sign reflects the tradeoff: to get more $x$ (increase $dx$), you must sacrifice some $y$ ($dy$ negative).
 
 $$du = \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy = 0 \;\Rightarrow\; \frac{dy}{dx} = -\frac{\partial u/\partial x}{\partial u/\partial y} = -MRS$$
 
 **Step 2 -- Quasiconcavity condition (bordered Hessian):**
 
 For a function of two variables, the $(3 \times 3)$ bordered Hessian is:
+
+> **Derivation Walkthrough:**
+> Starting from the second-order condition for quasiconcavity of a two-variable function:
+> 1. The **bordered Hessian** $\overline{H}$ augments the regular Hessian matrix of second derivatives with a border of first derivatives (the "bordered" refers to the first row/column of zeros and first partials)
+> 2. The $(3 \times 3)$ matrix is constructed as:
+>    - Top-left: $0$
+>    - First row/column (rest): $u_x, u_y$ (the first partials)
+>    - Lower-right $(2 \times 2)$ block: the Hessian $\begin{bmatrix} u_{xx} & u_{xy} \\ u_{yx} & u_{yy} \end{bmatrix}$
+> 3. For quasiconcavity, the principal minors must alternate in sign: $|\overline{H}_2| \ge 0$
+>
+> **Intuition:** The bordered Hessian determinant test checks whether the indifference curves are convex — it encodes the curvature of the utility function's level sets, which is what matters for well-behaved preferences.
 
 $$
 \overline{H} = \begin{vmatrix}
@@ -498,19 +606,52 @@ $$
 
 For quasiconcavity, the principal minors must alternate in sign: $|\overline{H}_2| \ge 0$. This simplifies to:
 
+> **Derivation Walkthrough:**
+> Starting from the $(3 \times 3)$ bordered Hessian determinant:
+> 1. Expand $|\overline{H}| = 0 \cdot (u_{xx}u_{yy} - u_{xy}^2) - u_x(u_x u_{yy} - u_y u_{xy}) + u_y(u_x u_{yx} - u_y u_{xx})$
+> 2. Simplify using $u_{xy} = u_{yx}$ (Young's theorem — symmetry of cross-partials)
+> 3. Result: $2 u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx}$
+> 4. Quasiconcavity requires this expression $\ge 0$
+>
+> **Intuition:** This inequality is the mathematical condition for indifference curves to be convex. When it holds strictly ($> 0$), the utility function is **strictly** quasiconcave and ICs are strictly bowed inward.
+
 $$2 u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx} \ge 0$$
 
 **Step 3 -- $dMRS/dx$ derivation:**
 
+> **Derivation Walkthrough:**
+> Simple restatement of the MRS definition in partial derivative notation:
+> 1. $MRS_{xy} = \frac{MU_x}{MU_y} = \frac{\partial u/\partial x}{\partial u/\partial y} = \frac{u_x}{u_y}$
+>
+> **Intuition:** This ratio is the fundamental object in consumer theory — it compares the marginal contribution of each good to utility. At an interior optimum, it equals the price ratio $p_x/p_y$.
+
 $$MRS = \frac{u_x}{u_y}$$
 
 Differentiate $MRS$ with respect to $x$ along an indifference curve (total derivative):
+
+> **Derivation Walkthrough:**
+> Starting from $MRS = u_x/u_y$, differentiate with respect to $x$ along an indifference curve:
+> 1. Apply the quotient rule: $\frac{d(u_x/u_y)}{dx} = \frac{u_y \cdot \frac{d(u_x)}{dx} - u_x \cdot \frac{d(u_y)}{dx}}{u_y^2}$
+> 2. Use the chain rule: $\frac{d(u_x)}{dx} = u_{xx} + u_{xy} y'(x)$ and $\frac{d(u_y)}{dx} = u_{yx} + u_{yy} y'(x)$
+> 3. Substitute $y'(x) = dy/dx = -u_x/u_y$ (from the IC slope condition above)
+> 4. This yields: $\frac{dMRS}{dx} = \frac{u_y[u_{xx} + u_{xy}(-u_x/u_y)] - u_x[u_{yx} + u_{yy}(-u_x/u_y)]}{u_y^2}$
+>
+> **Intuition:** This expression tracks how the willingness to trade changes as we consume more $x$ — the slope of the MRS function along the indifference curve.
 
 $$\frac{dMRS}{dx} = \frac{d(u_x/u_y)}{dx} = \frac{u_y[u_{xx} + u_{xy} y'(x)] - u_x[u_{yx} + u_{yy} y'(x)]}{u_y^2}$$
 
 Where $y'(x) = dy/dx = -u_x/u_y$ along the IC.
 
 Substituting and simplifying:
+
+> **Derivation Walkthrough:**
+> Continuing from the previous expression, simplify algebraically:
+> 1. Multiply numerator and denominator to clear fractions
+> 2. Collect terms: $\frac{dMRS}{dx} = \frac{u_x^2 u_{yy} - 2 u_x u_y u_{xy} + u_y^2 u_{xx}}{u_y^3}$
+> 3. Notice that $u_y^3 > 0$ (assuming $MU_y > 0$), so the sign depends entirely on the numerator
+> 4. The numerator is exactly the **negative** of the quasiconcavity condition: $-(2 u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx})$
+>
+> **Intuition:** The sign of $dMRS/dx$ is opposite to the sign of the bordered Hessian determinant — connecting diminishing MRS directly to quasiconcavity.
 
 $$\frac{dMRS}{dx} = \frac{u_x^2 u_{yy} - 2 u_x u_y u_{xy} + u_y^2 u_{xx}}{u_y^3}$$
 
@@ -522,6 +663,15 @@ Note this numerator equals $-(2 u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx})$.
 - This numerator is exactly the numerator of $dMRS/dx$ (up to the positive denominator $u_y^3 > 0$).
 
 Hence:
+
+> **Derivation Walkthrough:**
+> Combining the results above:
+> 1. Quasiconcavity requires: $2 u_x u_y u_{xy} - u_x^2 u_{yy} - u_y^2 u_{xx} \ge 0$
+> 2. $dMRS/dx$ numerator is: $u_x^2 u_{yy} - 2 u_x u_y u_{xy} + u_y^2 u_{xx} \le 0$ (the negative of the QC condition)
+> 3. Since $u_y^3 > 0$, sign$(dMRS/dx) =$ sign(numerator)
+> 4. Therefore: $\frac{dMRS}{dx} < 0 \iff$ quasiconcavity holds
+>
+> **Intuition:** **Diminishing MRS** (MRS falls as $x$ increases) is economically equivalent to **convex preferences** (quasiconcave utility). This is the bridge between the mathematical condition and the economic intuition.
 
 $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}$$
 
@@ -542,9 +692,25 @@ $$\frac{dMRS}{dx} < 0 \iff \text{numerator} < 0 \iff \text{quasiconcavity holds}
 
 Along an indifference curve, $du = 0$:
 
+> **Derivation Walkthrough:**
+> Starting from $u(x,y) = x + \ln y$:
+> 1. Total differential: $du = \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy = dx + \frac{1}{y} dy$
+> 2. Along an indifference curve, $du = 0$: $dx + \frac{1}{y} dy = 0$
+> 3. Solve for the slope: $\frac{dy}{dx} = -y$
+>
+> **Intuition:** The slope of the indifference curve for this quasilinear utility function depends only on $y$ — not on $x$. As $y$ gets smaller (moving right along the IC), the curve flattens.
+
 $$dx + (1/y) dy = 0 \Rightarrow \frac{dy}{dx} = -y$$
 
 Now differentiate $MRS = y$ with respect to $x$ along the IC:
+
+> **Derivation Walkthrough:**
+> Starting from $MRS = y$ (computed from $MU_x=1$, $MU_y=1/y$):
+> 1. Differentiate MRS with respect to $x$ along the IC: $\frac{dMRS}{dx} = \frac{dy}{dx}$
+> 2. Substitute $\frac{dy}{dx} = -y$ (from the IC slope above)
+> 3. Result: $\frac{dMRS}{dx} = -y < 0$ (for any positive $y$)
+>
+> **Intuition:** Diminishing MRS confirmed — the MRS falls as $x$ increases. Since MRS $= y$, and $y$ falls as we move along the IC, the MRS falls proportionally. Indifference curves are convex.
 
 $$\frac{dMRS}{dx} = \frac{dy}{dx} = -y < 0 \quad (\text{for any positive } y)$$
 
@@ -560,6 +726,14 @@ $$\frac{dMRS}{dx} = \frac{dy}{dx} = -y < 0 \quad (\text{for any positive } y)$$
 ### 1.3 Utility Maximization Problem (UMP)
 
 The consumer's primal problem:
+
+> **Derivation Walkthrough:**
+> Starting from the consumer's objective:
+> 1. **Objective:** Maximize utility $u(x)$ over all consumption bundles $x \in \mathbb{R}^N_+$
+> 2. **Constraint:** Total spending $p \cdot x = \sum_{k=1}^N p_k x_k$ cannot exceed wealth $w$
+> 3. Combine into the constrained optimization: $\max_{x \ge 0} u(x)$ s.t. $p \cdot x \le w$
+>
+> **Intuition:** The Utility Maximization Problem (UMP) is the consumer's primal problem — choose the most-preferred affordable bundle. Solution yields Walrasian (Marshallian) demand $x(p,w)$ and indirect utility $v(p,w)$.
 
 $$\max_{x \ge 0} u(x) \quad \text{subject to} \quad p \cdot x \le w$$
 
@@ -579,6 +753,17 @@ Step 1: Lagrangian: $\mathcal{L} = x_1^\alpha x_2^\beta + \lambda(w - p_1 x_1 - 
 
 Step 2: FOCs:
 
+> **Derivation Walkthrough:**
+> Starting from the Cobb-Douglas UMP with $u(x_1,x_2) = x_1^\alpha x_2^\beta$:
+> 1. Write the Lagrangian: $\mathcal{L} = x_1^\alpha x_2^\beta + \lambda(w - p_1 x_1 - p_2 x_2)$
+> 2. Take partial derivatives w.r.t. $x_1$, $x_2$, and $\lambda$:
+>    - $\partial\mathcal{L}/\partial x_1 = \alpha x_1^{\alpha-1} x_2^\beta - \lambda p_1 = 0$
+>    - $\partial\mathcal{L}/\partial x_2 = \beta x_1^\alpha x_2^{\beta-1} - \lambda p_2 = 0$
+>    - $\partial\mathcal{L}/\partial\lambda = w - p_1 x_1 - p_2 x_2 = 0$
+> 3. These are the **first-order necessary conditions** (FOCs) for an interior optimum
+>
+> **Intuition:** The first two FOCs say the marginal utility of each good, scaled by its price, equals the Lagrange multiplier $\lambda$ (the "shadow value" of wealth). Hence $\frac{MU_1}{p_1} = \frac{MU_2}{p_2} = \lambda$ — marginal utility per dollar is equalized across goods.
+
 $$
 \begin{aligned}
 \frac{\partial \mathcal{L}}{\partial x_1} &= \alpha x_1^{\alpha-1} x_2^\beta - \lambda p_1 = 0 \\[4pt]
@@ -590,6 +775,16 @@ $$
 Step 3: From (1) and (2): $\frac{\alpha x_2}{\beta x_1} = \frac{p_1}{p_2} \;\Rightarrow\; x_2 = \frac{\beta}{\alpha} \cdot \frac{p_1}{p_2} x_1$
 
 Step 4: Substitute into budget:
+
+> **Derivation Walkthrough:**
+> Solving the FOCs from the CD Lagrangian:
+> 1. From FOC 1 and 2, take the ratio: $\frac{\alpha x_1^{\alpha-1} x_2^\beta}{\beta x_1^\alpha x_2^{\beta-1}} = \frac{p_1}{p_2}$
+> 2. Simplify: $\frac{\alpha x_2}{\beta x_1} = \frac{p_1}{p_2} \;\Rightarrow\; x_2 = \frac{\beta}{\alpha} \cdot \frac{p_1}{p_2} x_1$ (the **tangency condition**)
+> 3. Substitute into the budget constraint: $p_1 x_1 + p_2\left(\frac{\beta}{\alpha}\cdot\frac{p_1}{p_2} x_1ight) = w$
+> 4. Solve: $p_1 x_1(1 + \frac{\beta}{\alpha}) = w \;\Rightarrow\; x_1 = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}$
+> 5. Similarly: $x_2 = \frac{\beta}{\alpha+\beta} \cdot \frac{w}{p_2}$
+>
+> **Intuition:** Each Marshallian demand is proportional to wealth $w$ and inversely proportional to its own price. The expenditure share of good $k$ is $\alpha_k/(\alpha+\beta)$ — **constant** and independent of prices and wealth, a unique CD property.
 
 $$x_1(p_1, p_2, w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2(p_1, p_2, w) = \frac{\beta}{\alpha+\beta} \cdot \frac{w}{p_2}$$
 
@@ -616,6 +811,14 @@ $$x_1(p_1, p_2, w) = \frac{\alpha}{\alpha+\beta} \cdot \frac{w}{p_1}, \qquad x_2
 
 Substitute Walrasian demands into the utility function:
 
+> **Derivation Walkthrough:**
+> Starting from the Marshallian demands for CD utility:
+> 1. Substitute $x_1(p,w)$ and $x_2(p,w)$ into the utility function:
+> 2. $v(p,w) = u(x_1(p,w), x_2(p,w)) = \left[\frac{\alpha w}{(\alpha+\beta)p_1}ight]^\alpha \cdot \left[\frac{\beta w}{(\alpha+\beta)p_2}ight]^\beta$
+> 3. Factor out terms: $= \frac{\alpha^\alpha \beta^\beta}{(\alpha+\beta)^{\alpha+\beta}} \cdot w^{\alpha+\beta} \cdot p_1^{-\alpha} \cdot p_2^{-\beta}$
+>
+> **Intuition:** Indirect utility tells us the **maximum achievable utility** given prices and wealth. It is decreasing in prices (higher prices = less affordable utility) and increasing in wealth. It is HD(0) in $(p,w)$ — doubling both prices and wealth leaves utility unchanged.
+
 $$
 \begin{aligned}
 v(p,w) &= u(x_1(p,w), x_2(p,w)) \\[4pt]
@@ -625,6 +828,13 @@ v(p,w) &= u(x_1(p,w), x_2(p,w)) \\[4pt]
 $$
 
 With normalization $\alpha + \beta = 1$:
+
+> **Derivation Walkthrough:**
+> Normalize $\alpha + \beta = 1$ (common in CD specifications):
+> 1. From the general form, set $\alpha + \beta = 1$
+> 2. $v(p,w) = \alpha^\alpha (1-\alpha)^{1-\alpha} \cdot w \cdot p_1^{-\alpha} \cdot p_2^{-(1-\alpha)}$
+>
+> **Intuition:** With constant returns to scale ($\alpha+\beta=1$), indirect utility is **linear in wealth** $w$ — a 10% increase in wealth raises max utility by exactly 10%. The constant $\alpha^\alpha(1-\alpha)^{1-\alpha}$ bundles all preference parameters.
 
 $$v(p,w) = w \cdot p_1^{-\alpha} \cdot p_2^{-(1-\alpha)} \cdot \alpha^\alpha (1-\alpha)^{1-\alpha}$$
 
@@ -642,6 +852,16 @@ $$v(p,w) = w \cdot p_1^{-\alpha} \cdot p_2^{-(1-\alpha)} \cdot \alpha^\alpha (1-
 Roy's identity: $\displaystyle x_k(p,w) = -\frac{\partial v/\partial p_k}{\partial v/\partial w}$
 
 For good 1: $\partial v/\partial p_1 = -\alpha v/p_1$, $\partial v/\partial w = (\alpha+\beta) v/w$
+
+> **Derivation Walkthrough:**
+> Verifying Roy's identity $x_k = -\frac{\partial v/\partial p_k}{\partial v/\partial w}$ for the CD case:
+> 1. From $v(p,w) = \frac{\alpha^\alpha \beta^\beta}{(\alpha+\beta)^{\alpha+\beta}} w^{\alpha+\beta} p_1^{-\alpha} p_2^{-\beta}$, compute:
+>    - $\partial v/\partial p_1 = -\alpha \cdot v / p_1$ (power rule on $p_1^{-\alpha}$)
+>    - $\partial v/\partial w = (\alpha+\beta) \cdot v / w$ (power rule on $w^{\alpha+\beta}$)
+> 2. Form the negative ratio: $-\frac{\partial v/\partial p_1}{\partial v/\partial w} = -\frac{-\alpha v/p_1}{(\alpha+\beta)v/w} = \frac{\alpha w}{(\alpha+\beta)p_1}$
+> 3. This equals $x_1(p,w)$ — Roy's identity is verified ✓
+>
+> **Intuition:** Roy's identity recovers Walrasian demand from indirect utility via simple partial derivatives — a powerful duality result. The negative sign ensures demands are positive (since $\partial v/\partial p_k < 0$ and $\partial v/\partial w > 0$).
 
 $$-\frac{\partial v/\partial p_1}{\partial v/\partial w} = -\frac{-\alpha v/p_1}{(\alpha+\beta)v/w} = \frac{\alpha w}{(\alpha+\beta)p_1} = x_1(p,w) \quad \checkmark$$
 
@@ -663,6 +883,18 @@ Similarly for good 2: $-\frac{\partial v/\partial p_2}{\partial v/\partial w} = 
 
 **Step 2: FOCs:**
 
+> **Derivation Walkthrough:**
+> Starting from the Expenditure Minimization Problem (EMP) with CD utility:
+> 1. Set up Lagrangian: $\mathcal{L} = p_1 x_1 + p_2 x_2 + \mu(\bar{u} - x_1^\alpha x_2^\beta)$
+>    - Note: we minimize expenditure, so the objective is $p_1 x_1 + p_2 x_2$
+>    - The constraint is $u(x) \ge \bar{u}$, rewritten as $\bar{u} - u(x) \le 0$
+> 2. FOCs:
+>    - $\partial\mathcal{L}/\partial x_1 = p_1 - \mu \alpha x_1^{\alpha-1} x_2^\beta = 0$
+>    - $\partial\mathcal{L}/\partial x_2 = p_2 - \mu \beta x_1^\alpha x_2^{\beta-1} = 0$
+>    - $\partial\mathcal{L}/\partial\mu = \bar{u} - x_1^\alpha x_2^\beta = 0$
+>
+> **Intuition:** The EMP Lagrangian mirrors the UMP but with roles reversed — expenditure is minimized subject to a minimum utility constraint. The multiplier $\mu$ now represents the marginal cost of tightening the utility constraint.
+
 $$
 \begin{aligned}
 p_1 - \mu \alpha x_1^{\alpha-1} x_2^\beta &= 0 \\
@@ -675,13 +907,40 @@ $$
 
 **Hicksian (Compensated) Demand Functions:**
 
+> **Derivation Walkthrough:**
+> Solving the EMP FOCs for $h_1(p,\bar{u})$:
+> 1. From the first two FOCs, take the ratio: $\frac{p_1}{p_2} = \frac{\alpha x_2}{\beta x_1}$ (same tangency condition as UMP!)
+> 2. Solve: $x_2 = \frac{\beta}{\alpha} \cdot \frac{p_1}{p_2} x_1$
+> 3. Substitute into the utility constraint: $x_1^\alpha \left(\frac{\beta}{\alpha} \cdot \frac{p_1}{p_2} x_1ight)^\beta = \bar{u}$
+> 4. Solve for $x_1$: $x_1 = \bar{u}^{1/(\alpha+\beta)} \cdot \left(\frac{\alpha}{\beta}ight)^{\beta/(\alpha+\beta)} \cdot \left(\frac{p_2}{p_1}ight)^{\beta/(\alpha+\beta)} \equiv h_1(p,\bar{u})$
+>
+> **Intuition:** Hicksian (compensated) demand holds utility constant at $\bar{u}$ while minimizing expenditure. Unlike Marshallian demand, it depends on utility level $\bar{u}$ rather than wealth $w$, and it satisfies the compensated law of demand ($\partial h_k/\partial p_k < 0$).
+
 $$h_1(p, \bar{u}) = \bar{u}^{1/(\alpha+\beta)} \cdot \left(\frac{\alpha}{\beta}\right)^{\beta/(\alpha+\beta)} \cdot \left(\frac{p_2}{p_1}\right)^{\beta/(\alpha+\beta)}$$
+
+> **Derivation Walkthrough:**
+> By symmetry of the derivation for $h_1$:
+> 1. Using the same tangency condition but solving for $x_2$: $x_2 = \frac{\beta}{\alpha} \cdot \frac{p_1}{p_2} x_1$
+> 2. Substitute into $\bar{u} = x_1^\alpha x_2^\beta$ and solve for $x_2$ directly
+> 3. Alternatively, swap roles: $h_2(p,\bar{u}) = \bar{u}^{1/(\alpha+\beta)} \cdot \left(\frac{\beta}{\alpha}ight)^{\alpha/(\alpha+\beta)} \cdot \left(\frac{p_1}{p_2}ight)^{\alpha/(\alpha+\beta)}$
+>
+> **Intuition:** The price ratios appear symmetrically but with swapped exponents — reflecting the relative importance ($\alpha$ vs $\beta$) of each good in the utility function.
 
 $$h_2(p, \bar{u}) = \bar{u}^{1/(\alpha+\beta)} \cdot \left(\frac{\beta}{\alpha}\right)^{\alpha/(\alpha+\beta)} \cdot \left(\frac{p_1}{p_2}\right)^{\alpha/(\alpha+\beta)}$$
 
 With $\alpha+\beta=1$: $h_1(p, \bar{u}) = \bar{u} \cdot \left(\frac{\alpha}{\beta}\right)^\beta \cdot \left(\frac{p_2}{p_1}\right)^\beta$
 
 **Expenditure function:**
+
+> **Derivation Walkthrough:**
+> Starting from the Hicksian demands:
+> 1. The expenditure function is defined as $e(p,\bar{u}) = p_1 h_1(p,\bar{u}) + p_2 h_2(p,\bar{u})$
+> 2. Substitute $h_1$ and $h_2$:
+>    $e = p_1 \cdot \bar{u}^{1/(\alpha+\beta)} (\frac{\alpha}{\beta})^{\beta/(\alpha+\beta)} (\frac{p_2}{p_1})^{\beta/(\alpha+\beta)} + p_2 \cdot \bar{u}^{1/(\alpha+\beta)} (\frac{\beta}{\alpha})^{\alpha/(\alpha+\beta)} (\frac{p_1}{p_2})^{\alpha/(\alpha+\beta)}$
+> 3. Factor $\bar{u}^{1/(\alpha+\beta)}$ and combine terms:
+>    $e(p,\bar{u}) = \bar{u}^{1/(\alpha+\beta)} \cdot (\alpha+\beta) \cdot \left(\frac{p_1}{\alpha}ight)^{\alpha/(\alpha+\beta)} \left(\frac{p_2}{\beta}ight)^{\beta/(\alpha+\beta)}$
+>
+> **Intuition:** The expenditure function gives the **minimum** expenditure needed to achieve utility $\bar{u}$ at prices $p$. It is HD(1) in $p$ (doubling prices doubles required expenditure) and strictly increasing in $\bar{u}$.
 
 $$
 \begin{aligned}
@@ -704,6 +963,15 @@ With $\alpha+\beta=1$: $e(p, \bar{u}) = \bar{u} \cdot \left(\frac{p_1}{\alpha}\r
 #### Shephard's Lemma
 
 If $e(p, u)$ is differentiable in $p$, Hicksian demand is its gradient:
+
+> **Derivation Walkthrough:**
+> Starting from the envelope theorem applied to the EMP:
+> 1. By the envelope theorem, the derivative of the minimized expenditure function w.r.t. $p_k$ equals the **partial derivative of the Lagrangian** w.r.t. $p_k$ at the optimum
+> 2. The EMP Lagrangian is $\mathcal{L} = p \cdot x + \mu(\bar{u} - u(x))$
+> 3. At the optimum, $\partial\mathcal{L}/\partial p_k = x_k^* = h_k(p,u)$
+> 4. Hence: $h_k(p,u) = \frac{\partial e(p,u)}{\partial p_k}$ for $k = 1,\ldots,N$
+>
+> **Intuition:** Shephard's lemma is the EMP counterpart of Roy's identity — it recovers Hicksian demand from the expenditure function by simple differentiation. If you know $e(p,u)$, you get all compensated demands for free.
 
 $$h_k(p, u) = \frac{\partial e(p, u)}{\partial p_k} \quad \text{for } k = 1, \ldots, N$$
 
@@ -856,10 +1124,30 @@ Standard consumer theory assumes unbounded rationality, willpower, and selfishne
 Kahneman and Tversky's **prospect theory** (Munoz-Garcia, §5.9, pp.368-372) models choice under uncertainty with three key deviations from expected utility theory:
 
 1. **Probability weighting:** Individuals overweight low probabilities and underweight high probabilities via a weighting function $w(p_i)$:
+> **Derivation Walkthrough:**
+> Starting from expected utility theory and modifying it for behavioral realism:
+> 1. Standard expected utility: $EU = \sum p_i u(x_i)$ where $p_i$ are objective probabilities
+> 2. Prospect theory replaces objective probabilities $p_i$ with **decision weights** $w(p_i)$
+> 3. The weighting function $w(p)$ overweights small probabilities and underweights large ones
+> 4. Result: $v(x,p) = \sum_{i=1}^n w(p_i) v(x_i)$
+>
+> **Intuition:** People don't treat probabilities linearly — they exaggerate small chances (lottery tickets, insurance) and discount near-certain events. This explains the Allais paradox and other violations of expected utility.
+
    $$v(x, p) = \sum_{i=1}^n w(p_i) v(x_i)$$
    A common weighting function (Tversky-Kahneman): $w(p) = p^\beta / [p^\beta + (1-p)^\beta]^{1/\beta}$, where $\beta \in [0,1]$.
 
 2. **Reference-dependent value function:** Payoffs are evaluated relative to a **reference point** $x_0$, not as absolute levels:
+> **Derivation Walkthrough:**
+> Starting from the idea that utility depends on a **reference point** $x_0$ (typically the status quo):
+> 1. In the **gains domain** ($x_i \ge x_0$): $v(x_i) = (x_i)^\alpha$, where $\alpha \in (0,1]$ captures **diminishing sensitivity** — each additional unit of gain adds less value
+> 2. In the **losses domain** ($x_i < x_0$): $v(x_i) = -\lambda(-x_i)^\alpha$, where $\lambda \ge 1$ captures **loss aversion** — losses hurt more than equivalent gains please
+> 3. The function is:
+>    - **Concave for gains** (risk-averse in gains)
+>    - **Convex for losses** (risk-seeking in losses)
+>    - **Steeper for losses** ($\lambda > 1$ makes the loss side steeper)
+>
+> **Intuition:** The $S$-shaped value function is the hallmark of prospect theory — it embeds both diminishing sensitivity and loss aversion, explaining the endowment effect and status quo bias.
+
    $$v(x_i) = \begin{cases} (x_i)^\alpha & \text{if } x_i \ge x_0 \text{ (gains)} \\ -\lambda(-x_i)^\alpha & \text{if } x_i < x_0 \text{ (losses)} \end{cases}$$
    where $\alpha \in (0,1]$ measures diminishing sensitivity, and $\lambda \ge 1$ measures **loss aversion**.
 
@@ -879,6 +1167,15 @@ Several experiments (Munoz-Garcia, §5.9.3, pp.371-372) show that individuals' *
 #### Social Preferences (Fehr-Schmidt, 1999)
 
 Standard models assume purely selfish preferences. Fehr and Schmidt (1999) incorporate **inequality aversion**:
+
+> **Derivation Walkthrough:**
+> Starting from the standard self-regarding utility model and adding concern for others:
+> 1. Base utility is own payoff $x_i$
+> 2. Add a penalty for **disadvantageous inequality** (envy): $-\alpha_i \max\{x_j - x_i, 0\}$ — the consumer dislikes it when others earn more
+> 3. Add a penalty for **advantageous inequality** (guilt): $-\beta_i \max\{x_i - x_j, 0\}$ — the consumer also dislikes earning more than others
+> 4. The parameters satisfy $\alpha_i \ge \beta_i$ (envy is stronger than guilt) and $1 > \beta_i \ge 0$
+>
+> **Intuition:** Fehr-Schmidt preferences capture that people care about fairness, not just absolute payoff. If $\alpha_i = \beta_i = 0$, we're back to standard selfish preferences. This model explains cooperation in public goods games and rejection in ultimatum games.
 
 $$u_i(x_i, x_j) = x_i - \alpha_i \max\{x_j - x_i, 0\} - \beta_i \max\{x_i - x_j, 0\}$$
 
@@ -923,6 +1220,15 @@ A Negroni cocktail requires G = V = C = $q$ (fixed 1:1:1 proportions).
 
 Budget: $p_G G + p_V V + p_C C = w$. With $G = V = C = q$: $q(p_G + p_V + p_C) = w$
 
+> **Derivation Walkthrough:**
+> Starting from $u(G,V,C) = \min(G,V,C)$ with budget $p_G G + p_V V + p_C C = w$:
+> 1. At the optimum for perfect complements, the consumer consumes in fixed proportion: $G = V = C = q$
+> 2. Substitute into the budget: $p_G q + p_V q + p_C q = w \;\Rightarrow\; q(p_G + p_V + p_C) = w$
+> 3. Solve for $q$: $q = \frac{w}{p_G + p_V + p_C}$
+> 4. Hence each Marshallian demand equals this common quantity: $G(p,w) = V(p,w) = C(p,w) = \frac{w}{p_G + p_V + p_C}$
+>
+> **Intuition:** With perfect complements, the consumer buys goods in fixed proportions — all demands scale with total wealth and are decreasing in the sum of all prices. There is no substitution response to relative price changes.
+
 $$G(p, w) = V(p, w) = C(p, w) = \frac{w}{p_G + p_V + p_C}$$
 
 **Properties:** HD(0) holds; Walras' Law holds; own-price effect: $\partial G/\partial p_G = -w/(\sum p_k)^2 < 0$.
@@ -933,11 +1239,27 @@ EMP: minimize $p_G G + p_V V + p_C C$ subject to $\min(G, V, C) \ge \bar{u}$.
 
 Optimal: $G = V = C = q = \bar{u}$. So:
 
+> **Derivation Walkthrough:**
+> Starting from the EMP with $u = \min(G,V,C) \ge \bar{u}$:
+> 1. To achieve utility $\bar{u}$, we need $\min(G,V,C) \ge \bar{u}$, so each good must be at least $\bar{u}$
+> 2. Cost minimization implies we set each exactly at $\bar{u}$ (no excess)
+> 3. Hence $h_C(p,u) = h_G(p,u) = h_V(p,u) = \bar{u}$
+>
+> **Intuition:** Hicksian (compensated) demands for Leontief utility are **independent of prices** — there is zero substitution possibility. Even if one good becomes much cheaper, you cannot substitute toward it because the goods must be consumed in fixed proportions.
+
 $$h_C(p, u) = h_G(p, u) = h_V(p, u) = \bar{u}$$
 
 The Hicksian demands are **independent of prices** (no substitution possible).
 
 **Expenditure function:**
+
+> **Derivation Walkthrough:**
+> Starting from the Hicksian demands for Leontief utility:
+> 1. The expenditure function is $e(p,u) = p_G h_G + p_V h_V + p_C h_C$
+> 2. Substitute $h_G = h_V = h_C = \bar{u}$: $e(p,u) = \bar{u}(p_G + p_V + p_C)$
+> 3. This is simply the cost of buying $\bar{u}$ units of each good
+>
+> **Intuition:** The expenditure function is linear in prices (HD(1)) and linear in $\bar{u}$. Shephard's lemma gives: $\partial e/\partial p_C = \bar{u} = h_C$, confirming consistency. $e(p, v(p,w)) = w$ and $v(p, e(p,u)) = \bar{u}$ verify duality.
 
 $$e(p, u) = \bar{u}(p_G + p_V + p_C)$$
 
@@ -971,6 +1293,15 @@ $$e(p, u) = \bar{u}(p_G + p_V + p_C)$$
 So $y^* = p_x/p_y$ (independent of income $I$).
 
 **Step 2: Demand for $x$ from budget constraint.**
+
+> **Derivation Walkthrough:**
+> Starting from $u(x,y) = x + \ln y$ with budget $p_x x + p_y y = I$:
+> 1. Tangency condition from $MRS = p_x/p_y$: $y^* = p_x/p_y$ (MRS $= y$ from $MU_x=1$, $MU_y=1/y$)
+> 2. Note $y^*$ is **independent of income** — the first key property of quasilinear utility
+> 3. Substitute $y^*$ into the budget: $p_x x + p_y(p_x/p_y) = I \;\Rightarrow\; p_x x + p_x = I$
+> 4. Solve: $x^* = \frac{I - p_x}{p_x} = \frac{I}{p_x} - 1$
+>
+> **Intuition:** For quasilinear utility, the nonlinear good ($y$) has **zero income effect** — its demand is purely a function of relative prices. All additional income is spent on the linear good ($x$). The corner condition $I \ge p_x$ ensures $x^* \ge 0$.
 
 $$x^* = \frac{I - p_y y^*}{p_x} = \frac{I - p_x}{p_x} = \frac{I}{p_x} - 1$$
 
@@ -1008,6 +1339,14 @@ Since $MU_y < 0$, the consumer would prefer $y = 0$.
 If $y = 0$: $x = I / p_x = 400 / 20 = 20$, Utility: $u(20, 0) = 20 - 3(0) = 20$
 
 **Step 3: Verify no interior solution is optimal.**
+
+> **Derivation Walkthrough:**
+> Starting from $u(x,y) = x - 3y$ (where $y$ is a "bad"):
+> 1. Compute marginal utilities: $MU_x = \partial u/\partial x = 1$ (positive — good), $MU_y = \partial u/\partial y = -3$ (negative — **bad**)
+> 2. The MRS formula still applies: $MRS_{xy} = \frac{MU_x}{MU_y} = \frac{1}{-3} = -\frac{1}{3}$
+> 3. The negative MRS indicates the consumer would need to be **compensated** with more $x$ to accept additional $y$
+>
+> **Intuition:** When one good is a "bad" (gives disutility), the standard tangency condition $MRS = p_x/p_y$ identifies a minimum, not a maximum. The optimum is a corner solution: consume zero of the bad and spend all income on the good.
 
 $$MRS_{xy} = \frac{MU_x}{MU_y} = \frac{1}{-3} = -\frac{1}{3}$$
 
@@ -1060,7 +1399,22 @@ So $Y = \frac{2p_X}{p_Y} X$
 
 Substitute into budget $p_X X + p_Y Y = I$:
 
+> **Derivation Walkthrough:**
+> Solving for CD demands with $u = XY^2$:
+> 1. Tangency condition: $\frac{MU_X}{MU_Y} = \frac{Y^2}{2XY} = \frac{Y}{2X} = \frac{p_X}{p_Y} \;\Rightarrow\; Y = \frac{2p_X}{p_Y} X$
+> 2. Substitute $Y$ into the budget $p_X X + p_Y Y = I$: $p_X X + p_Y \cdot \frac{2p_X}{p_Y} X = I$
+> 3. Simplify: $p_X X + 2p_X X = I \;\Rightarrow\; 3p_X X = I$
+>
+> **Intuition:** The expenditure share of $X$ is $1/3$ (coefficient on $p_X X$ is 3), reflecting that good $X$ contributes 1 of the 3 total exponent units in $U = X^1 Y^2$.
+
 $$p_X X + p_Y \left(\frac{2p_X}{p_Y} X\right) = I \Rightarrow p_X X + 2p_X X = I \Rightarrow 3p_X X = I$$
+
+> **Derivation Walkthrough:**
+> Continuing from $3p_X X = I$:
+> 1. Solve for $X$: $X(p,I) = \frac{I}{3p_X}$
+> 2. From $Y = \frac{2p_X}{p_Y} X$: $Y(p,I) = \frac{2p_X}{p_Y} \cdot \frac{I}{3p_X} = \frac{2I}{3p_Y}$
+>
+> **Intuition:** Demands follow the standard CD pattern: expenditure shares are proportional to the exponents. $X$ gets $1/3$ of income ($\alpha=1$), $Y$ gets $2/3$ ($\beta=2$), and $(\alpha+\beta)=3$.
 
 $$X(p, I) = \frac{I}{3p_X}, \qquad Y(p, I) = \frac{2I}{3p_Y}$$
 
@@ -1078,7 +1432,22 @@ At the optimum, the consumer consumes in fixed proportion: $2X = Y$.
 
 Budget: $p_X X + p_Y Y = I$. Substituting $Y = 2X$:
 
+> **Derivation Walkthrough:**
+> Starting from $U = \min(2X, Y)$ with budget $p_X X + p_Y Y = I$:
+> 1. At the optimum for Leontief: $2X = Y$ (the arguments inside $\min$ must be equal at the kink)
+> 2. Substitute $Y = 2X$ into the budget: $p_X X + p_Y(2X) = I$
+> 3. Factor: $X(p_X + 2p_Y) = I$
+>
+> **Intuition:** The coefficient 2 on $p_Y$ reflects that one unit of $X$ requires two units of $Y$ in the optimal proportion ($2X = Y$). The goods must be consumed in a 1:2 ratio.
+
 $$p_X X + p_Y(2X) = I \Rightarrow X(p_X + 2p_Y) = I$$
+
+> **Derivation Walkthrough:**
+> Continuing from $X(p_X + 2p_Y) = I$:
+> 1. Solve for $X$: $X(p,I) = \frac{I}{p_X + 2p_Y}$
+> 2. Since $Y = 2X$: $Y(p,I) = \frac{2I}{p_X + 2p_Y}$
+>
+> **Intuition:** Both demands decline when either price rises, but the coefficient 2 on $p_Y$ means changes in $p_Y$ affect demand twice as much as changes in $p_X$ (since the proportion requires 2 units of $Y$ per $X$).
 
 $$X(p, I) = \frac{I}{p_X + 2p_Y}, \qquad Y(p, I) = \frac{2I}{p_X + 2p_Y}$$
 
@@ -1161,15 +1530,38 @@ $$X(p, I) = \frac{I}{p_X + 2p_Y}, \qquad Y(p, I) = \frac{2I}{p_X + 2p_Y}$$
 
 Note: $U = (xy)^2$ is a monotonic transformation of $U = xy$ (take square root). Since preferences are ordinal, Marshallian demands are the same as for $U = xy$.
 
+> **Derivation Walkthrough:**
+> Computing marginal utilities for $U = (xy)^2$:
+> 1. Partial derivative w.r.t $x$: $MU_x = \frac{\partial}{\partial x} (x^2 y^2) = 2x y^2$
+> 2. Partial derivative w.r.t $y$: $MU_y = \frac{\partial}{\partial y} (x^2 y^2) = 2x^2 y$
+> 3. Tangency: $\frac{MU_x}{MU_y} = \frac{2xy^2}{2x^2 y} = \frac{y}{x} = \frac{p_x}{p_y}$
+>
+> **Intuition:** The MRS simplifies to $y/x$ — the same as for $u=xy$ (since squaring is a monotonic transformation). This confirms that monotonic transformations preserve the MRS and thus the demand functions.
+
 $$MU_x = 2xy^2, \quad MU_y = 2x^2y$$
 
 Tangency: $\frac{2xy^2}{2x^2y} = \frac{y}{x} = \frac{p_x}{p_y} \Rightarrow y = \frac{p_x}{p_y} x$
 
 Budget: $p_x x + p_y y = I \Rightarrow p_x x + p_y \cdot \frac{p_x}{p_y} x = 2p_x x = I$
 
+> **Derivation Walkthrough:**
+> Solving the tangency condition $y/x = p_x/p_y$ with the budget:
+> 1. From tangency: $y = \frac{p_x}{p_y} x$
+> 2. Substitute into $p_x x + p_y y = I$: $p_x x + p_y \cdot \frac{p_x}{p_y} x = 2p_x x = I$
+> 3. Solve: $x(p,I) = \frac{I}{2p_x}$, $y(p,I) = \frac{I}{2p_y}$
+>
+> **Intuition:** Same demands as $u=xy$ — confirming ordinality. The monotonic transformation $(xy)^2$ does not change the optimal consumption choices.
+
 $$x(p, I) = \frac{I}{2p_x}, \quad y(p, I) = \frac{I}{2p_y}$$
 
 **Indirect utility:**
+
+> **Derivation Walkthrough:**
+> Substituting demands back into $v(p,I) = u(x(p,I), y(p,I))$:
+> 1. $v(p,I) = (x \cdot y)^2 = \left(\frac{I}{2p_x} \cdot \frac{I}{2p_y}ight)^2$
+> 2. Simplify: $= \frac{I^4}{16 p_x^2 p_y^2}$
+>
+> **Intuition:** The indirect utility is HD(4) in $I$ (since $U$ is HD(4)) and HD(0) in $(p,I)$ — doubling both prices and income leaves $v$ unchanged. The exponent 4 reflects the homogeneity degree of the original utility function.
 
 $$v(p, I) = (x \cdot y)^2 = \left(\frac{I}{2p_x} \cdot \frac{I}{2p_y}\right)^2 = \frac{I^4}{16 p_x^2 p_y^2}$$
 
@@ -1177,9 +1569,22 @@ $$v(p, I) = (x \cdot y)^2 = \left(\frac{I}{2p_x} \cdot \frac{I}{2p_y}\right)^2 =
 
 Again, a monotonic transformation of $U = xy$. Marshallian demands are the same:
 
+> **Derivation Walkthrough:**
+> For $U = (xy)^{1/2}$, a monotonic transformation of $U=xy$ (square root):
+> 1. Since preferences are ordinal, Marshallian demands are identical to those of $U=xy$
+> 2. Same tangency condition $y/x = p_x/p_y$ leads to $x(p,I) = \frac{I}{2p_x}$, $y(p,I) = \frac{I}{2p_y}$
+>
+> **Intuition:** This demonstrates the ordinality of utility — taking the square root of a function doesn't change the optimal choices because it's a strictly increasing transformation.
+
 $$x(p, I) = \frac{I}{2p_x}, \quad y(p, I) = \frac{I}{2p_y}$$
 
 **Indirect utility:**
+
+> **Derivation Walkthrough:**
+> Substituting demands into $U = \sqrt{xy}$:
+> 1. $v(p,I) = \sqrt{\frac{I}{2p_x} \cdot \frac{I}{2p_y}} = \frac{I}{2\sqrt{p_x p_y}}$
+>
+> **Intuition:** Unlike $U=(xy)^2$ which gives $v \propto I^4$, here $v \propto I^1$ — reflecting the homogeneity degree of $1/2 + 1/2 = 1$ for $U = x^{1/2}y^{1/2}$. Indirect utility is HD(1) in $I$.
 
 $$v(p, I) = \sqrt{xy} = \sqrt{\frac{I}{2p_x} \cdot \frac{I}{2p_y}} = \frac{I}{2\sqrt{p_x p_y}}$$
 
@@ -1189,9 +1594,24 @@ At optimum: $x = 2y$. Budget: $p_x x + p_y y = I$.
 
 Substitute $x = 2y$: $p_x(2y) + p_y y = y(2p_x + p_y) = I$
 
+> **Derivation Walkthrough:**
+> For $U = \min(x, 2y)$ with budget $p_x x + p_y y = I$:
+> 1. At the Leontief optimum: $x = 2y$ (arguments inside $\min$ equalize)
+> 2. Substitute into budget: $p_x(2y) + p_y y = y(2p_x + p_y) = I$
+> 3. Solve: $y(p,I) = \frac{I}{2p_x + p_y}$, $x(p,I) = \frac{2I}{2p_x + p_y}$
+>
+> **Intuition:** The proportion $x:y = 2:1$ means $x$ consumption is twice $y$ consumption. The effective "price per unit of the composite" is $2p_x + p_y$.
+
 $$y(p, I) = \frac{I}{2p_x + p_y}, \quad x(p, I) = \frac{2I}{2p_x + p_y}$$
 
 **Indirect utility:**
+
+> **Derivation Walkthrough:**
+> Substituting Leontief demands into $U = \min(x, 2y)$:
+> 1. $v(p,I) = \min\left(\frac{2I}{2p_x + p_y}, 2 \cdot \frac{I}{2p_x + p_y}ight) = \frac{I}{2p_x + p_y}$
+> 2. Both arguments equal $I/(2p_x + p_y)$, confirming the optimum is at the kink
+>
+> **Intuition:** Indirect utility for Leontief is simply total wealth divided by the "price index" $2p_x + p_y$ — the cost of buying one unit of the composite consumption bundle in fixed proportions.
 
 $$v(p, I) = \min(x, 2y) = \min\left(\frac{2I}{2p_x + p_y}, 2 \cdot \frac{I}{2p_x + p_y}\right) = \frac{I}{2p_x + p_y}$$
 
@@ -1216,13 +1636,41 @@ Tangency: $\frac{MU_x}{MU_y} = \frac{2xy^2 + y}{2x^2 y + x} = \frac{y(2xy + 1)}{
 
 So $y = \frac{p_x}{p_y} x$. Then $xy = \frac{p_x}{p_y} x^2 = z$ (the value defined above).
 
+> **Derivation Walkthrough:**
+> For $U = x^2 y^2 + xy$, solving the tangency condition:
+> 1. Tangency: $\frac{MU_x}{MU_y} = \frac{2xy^2 + y}{2x^2 y + x} = \frac{y(2xy+1)}{x(2xy+1)} = \frac{y}{x} = \frac{p_x}{p_y}$
+> 2. Hence $y = \frac{p_x}{p_y} x$, giving $xy = \frac{p_x}{p_y} x^2$
+> 3. Let $z = \frac{-1 + \sqrt{1+4\bar{u}}}{2}$ (solving $z^2 + z = \bar{u}$ where $z = xy$)
+> 4. Then $x = \sqrt{\frac{p_y}{p_x} z}$ and $y = \sqrt{\frac{p_x}{p_y} z}$
+>
+> **Intuition:** The $2xy+1$ terms cancel in the MRS ratio (as long as $2xy+1 
+eq 0$), leaving the familiar $y/x$ tangency — the same as $U=xy$. The utility transformation $U = xy(xy+1)$ preserves the MRS.
+
 $$x = \sqrt{\frac{p_y}{p_x} z}, \quad y = \sqrt{\frac{p_x}{p_y} z}$$
 
 **Hicksian demands:**
 
+> **Derivation Walkthrough:**
+> Expressing the optimal $x$ and $y$ in terms of $p$ and $\bar{u}$:
+> 1. From $x = \sqrt{\frac{p_y}{p_x} z}$ and $y = \sqrt{\frac{p_x}{p_y} z}$ with $z = \frac{-1+\sqrt{1+4\bar{u}}}{2}$
+> 2. Write as Hicksian demands:
+>    $h_x(p,\bar{u}) = \sqrt{\frac{p_y}{p_x} \cdot \frac{-1+\sqrt{1+4\bar{u}}}{2}}$
+>    $h_y(p,\bar{u}) = \sqrt{\frac{p_x}{p_y} \cdot \frac{-1+\sqrt{1+4\bar{u}}}{2}}$
+>
+> **Intuition:** Each Hicksian demand depends on the price ratio $(p_y/p_x)^{1/2}$ and on $\bar{u}$ through the transformed variable $z$. The square root reflects the Cobb-Douglas-like structure of the underlying $xy$ core.
+
 $$h_x(p, \bar{u}) = \sqrt{\frac{p_y}{p_x} \cdot \frac{-1 + \sqrt{1 + 4\bar{u}}}{2}}, \quad h_y(p, \bar{u}) = \sqrt{\frac{p_x}{p_y} \cdot \frac{-1 + \sqrt{1 + 4\bar{u}}}{2}}$$
 
 **Expenditure function:**
+
+> **Derivation Walkthrough:**
+> Building the expenditure function from the Hicksian demands:
+> 1. $e(p,\bar{u}) = p_x h_x + p_y h_y = p_x \sqrt{\frac{p_y}{p_x} z} + p_y \sqrt{\frac{p_x}{p_y} z}$
+> 2. Simplify each term: $\sqrt{p_x p_y z} + \sqrt{p_y p_x z} = 2\sqrt{p_x p_y z}$
+> 3. Substitute $z = \frac{-1+\sqrt{1+4\bar{u}}}{2}$:
+>    $e(p,\bar{u}) = 2\sqrt{p_x p_y \cdot \frac{-1+\sqrt{1+4\bar{u}}}{2}}$
+>
+> **Intuition:** The expenditure function factorizes into a price index $\sqrt{p_x p_y}$ and a utility transformation. It is HD(1) in prices and increasing in $\bar{u}$.
 
 $$e(p, \bar{u}) = p_x h_x + p_y h_y = 2\sqrt{p_x p_y \cdot \frac{-1 + \sqrt{1+4\bar{u}}}{2}}$$
 
@@ -1233,15 +1681,46 @@ EMP: minimize $p_x x + p_y y$ subject to $2x^2 + y^2 = \bar{u}$.
 Lagrangian: $\mathcal{L} = p_x x + p_y y + \mu(\bar{u} - 2x^2 - y^2)$
 
 FOCs:
+> **Derivation Walkthrough:**
+> For $U = 2x^2 + y^2$ with EMP Lagrangian $\mathcal{L} = p_x x + p_y y + \mu(\bar{u} - 2x^2 - y^2)$:
+> 1. $\partial\mathcal{L}/\partial x = p_x - 4\mu x = 0$ (note $4 = 2 \times 2$ from derivative of $2x^2$)
+> 2. $\partial\mathcal{L}/\partial y = p_y - 2\mu y = 0$
+> 3. These give: $p_x = 4\mu x$ and $p_y = 2\mu y$
+>
+> **Intuition:** The FOCs set the price of each good equal to the marginal cost of tightening the constraint ($\mu$) times the marginal product of that good in generating utility. The factor 4 vs 2 reflects the different exponents on $x$ and $y$.
+
 $$p_x - 4\mu x = 0, \quad p_y - 2\mu y = 0$$
 
 Tangency: $\frac{p_x}{p_y} = \frac{4\mu x}{2\mu y} = \frac{2x}{y} \Rightarrow y = \frac{2p_x}{p_y} x$
 
 Substitute into constraint: $2x^2 + \left(\frac{2p_x}{p_y} x\right)^2 = \bar{u}$
 
+> **Derivation Walkthrough:**
+> Substituting $y = \frac{2p_x}{p_y} x$ into the utility constraint $2x^2 + y^2 = \bar{u}$:
+> 1. $2x^2 + \left(\frac{2p_x}{p_y} xight)^2 = \bar{u}$
+> 2. $2x^2 + \frac{4p_x^2}{p_y^2} x^2 = \bar{u}$
+> 3. Factor $x^2$: $x^2\left(2 + \frac{4p_x^2}{p_y^2}ight) = \bar{u}$
+>
+> **Intuition:** The term in parentheses is the "effective price" of $x$ in utility terms — it incorporates both the direct contribution ($2x^2$) and the indirect contribution through the required $y$ ($4p_x^2/p_y^2$).
+
 $$2x^2 + \frac{4p_x^2}{p_y^2} x^2 = \bar{u} \Rightarrow x^2\left(2 + \frac{4p_x^2}{p_y^2}\right) = \bar{u}$$
 
+> **Derivation Walkthrough:**
+> Solving for $h_x$ from the constrained equation:
+> 1. $x^2 = \frac{\bar{u}}{2 + 4p_x^2/p_y^2}$
+> 2. Multiply numerator and denominator by $p_y^2$: $x^2 = \frac{\bar{u} p_y^2}{2p_y^2 + 4p_x^2}$
+> 3. Take the positive square root: $h_x(p,\bar{u}) = \sqrt{\frac{\bar{u} p_y^2}{2p_y^2 + 4p_x^2}}$
+>
+> **Intuition:** Hicksian demand for $x$ decreases when $p_x$ rises (the denominator increases) and increases with $\bar{u}$ (higher utility target requires more of both goods). It rises with $p_y$ since $p_y$ makes $y$ more expensive, inducing substitution toward $x$.
+
 $$h_x(p, \bar{u}) = \sqrt{\frac{\bar{u}}{2 + 4p_x^2/p_y^2}} = \sqrt{\frac{\bar{u} p_y^2}{2p_y^2 + 4p_x^2}}$$
+
+> **Derivation Walkthrough:**
+> From the tangency condition $y = \frac{2p_x}{p_y} x$ and $h_x$:
+> 1. $h_y(p,\bar{u}) = \frac{2p_x}{p_y} \cdot h_x(p,\bar{u})$
+> 2. $h_y(p,\bar{u}) = \frac{2p_x}{p_y} \cdot \sqrt{\frac{\bar{u} p_y^2}{2p_y^2 + 4p_x^2}}$
+>
+> **Intuition:** $h_y$ inherits the substitution properties from $h_x$ scaled by the optimal proportion $2p_x/p_y$. Since $y$ is more costly to substitute (higher exponent in utility), its compensated demand is more sensitive to price changes.
 
 $$h_y(p, \bar{u}) = \frac{2p_x}{p_y} \cdot \sqrt{\frac{\bar{u} p_y^2}{2p_y^2 + 4p_x^2}}$$
 
@@ -1253,11 +1732,31 @@ Since $(xy)^{1/2}$ is a monotonic transformation of $xy$, we can use the same ap
 
 Using the standard CD formulas with $\alpha = \beta = 1/2$, $\alpha+\beta = 1$:
 
+> **Derivation Walkthrough:**
+> For $U = (xy)^{1/2} = x^{1/2} y^{1/2}$ (CD with $\alpha = \beta = 1/2$, $\alpha+\beta=1$):
+> 1. Using the standard CD Hicksian demand formula: $h_x = \bar{u} \cdot \left(\frac{\alpha}{\beta}ight)^\beta \cdot \left(\frac{p_y}{p_x}ight)^\beta$
+> 2. With $\alpha = \beta = 1/2$: $\left(\frac{1/2}{1/2}ight)^{1/2} = 1$, so $h_x(p,\bar{u}) = \bar{u} \sqrt{\frac{p_y}{p_x}}$
+>
+> **Intuition:** When both exponents are equal, the constant term simplifies to 1, and Hicksian demand depends only on $\bar{u}$ and the square root of the price ratio.
+
 $$h_x(p, \bar{u}) = \bar{u} \cdot \left(\frac{1/2}{1/2}\right)^{1/2} \cdot \left(\frac{p_y}{p_x}\right)^{1/2} = \bar{u} \sqrt{\frac{p_y}{p_x}}$$
+
+> **Derivation Walkthrough:**
+> By symmetry with $h_x$:
+> 1. $h_y(p,\bar{u}) = \bar{u} \cdot \left(\frac{\beta}{\alpha}ight)^\alpha \cdot \left(\frac{p_x}{p_y}ight)^\alpha = \bar{u} \cdot 1 \cdot \left(\frac{p_x}{p_y}ight)^{1/2} = \bar{u} \sqrt{\frac{p_x}{p_y}}$
+>
+> **Intuition:** The two Hicksian demands are symmetric: $h_x$ depends on $(p_y/p_x)^{1/2}$ and $h_y$ on $(p_x/p_y)^{1/2}$, reflecting the equal importance ($\alpha = \beta$) of both goods.
 
 $$h_y(p, \bar{u}) = \bar{u} \cdot \left(\frac{1/2}{1/2}\right)^{1/2} \cdot \left(\frac{p_x}{p_y}\right)^{1/2} = \bar{u} \sqrt{\frac{p_x}{p_y}}$$
 
 **Expenditure function:**
+
+> **Derivation Walkthrough:**
+> Building from the Hicksian demands:
+> 1. $e(p,\bar{u}) = p_x h_x + p_y h_y = p_x \cdot \bar{u} \sqrt{\frac{p_y}{p_x}} + p_y \cdot \bar{u} \sqrt{\frac{p_x}{p_y}}$
+> 2. Simplify: $= \bar{u} \sqrt{p_x p_y} + \bar{u} \sqrt{p_y p_x} = 2\bar{u} \sqrt{p_x p_y}$
+>
+> **Intuition:** The expenditure function is proportional to $\sqrt{p_x p_y}$, the geometric mean of the two prices, scaled by $2\bar{u}$. This is HD(1) in prices and linear in $\bar{u}$. Shephard's lemma: $\partial e/\partial p_x = \bar{u} \sqrt{p_y/p_x} = h_x$ ✓.
 
 $$e(p, \bar{u}) = p_x \cdot \bar{u} \sqrt{\frac{p_y}{p_x}} + p_y \cdot \bar{u} \sqrt{\frac{p_x}{p_y}} = 2\bar{u} \sqrt{p_x p_y}$$
 
@@ -1266,6 +1765,17 @@ $$e(p, \bar{u}) = p_x \cdot \bar{u} \sqrt{\frac{p_y}{p_x}} + p_y \cdot \bar{u} \
 #### Practice Problem 7: Log-Linear Demand Elasticities
 
 **Q (from Final Exam Q2b):** The log of an individual's demand for good X is:
+
+> **Derivation Walkthrough:**
+> Starting from a log-linear (constant-elasticity) demand specification:
+> 1. The demand function is written in **log-log form**: $\ln X = a \ln P_x + \gamma \ln P_y + \delta \ln P_z + \eta \ln I$
+> 2. In this form, each coefficient is a **constant elasticity**:
+>    - $a = \partial \ln X / \partial \ln P_x$: own-price elasticity
+>    - $\gamma = \partial \ln X / \partial \ln P_y$: cross-price elasticity w.r.t $P_y$
+>    - $\delta = \partial \ln X / \partial \ln P_z$: cross-price elasticity w.r.t $P_z$
+>    - $\eta = \partial \ln X / \partial \ln I$: income elasticity
+>
+> **Intuition:** The log-log form is convenient because elasticities are constant parameters rather than functions of prices and income. An $\eta = 0.8$ means a 1% increase in income raises demand by 0.8% (necessity good).
 
 $$\ln X(P_x, P_y, P_z, I) = a \ln P_x + \gamma \ln P_y + \delta \ln P_z + \eta \ln I$$
 
@@ -1310,6 +1820,16 @@ Since $MRS < P_X/P_Y$, the marginal utility per dollar for good X is:
 - $MU_Y/P_Y = 3/40 = 0.075$
 
 $MU_X/P_X < MU_Y/P_Y$, so the consumer gets more utility per dollar from good Y. The consumer should spend **all income on good Y**.
+
+> **Derivation Walkthrough:**
+> For $U = X + 3Y$ (perfect substitutes) with $P_X=20$, $P_Y=40$, $I=400$:
+> 1. Compute marginal utility per dollar:
+>    - $MU_X/P_X = 1/20 = 0.05$
+>    - $MU_Y/P_Y = 3/40 = 0.075$
+> 2. Since $MU_Y/P_Y > MU_X/P_X$, the consumer gets more "bang per buck" from good Y
+> 3. Hence spend **all** income on Y: $Y^* = I/P_Y = 400/40 = 10$, $X^* = 0$
+>
+> **Intuition:** For perfect substitutes, the optimum is always at a corner unless $MRS$ exactly equals the price ratio. Compare $MU_i/p_i$ across goods and spend everything on the highest. Utility: $U(0,10) = 30 > U(20,0) = 20$, confirming Y-corner is best.
 
 $$Y^* = I/P_Y = 400/40 = 10, \quad X^* = 0$$
 
@@ -1362,15 +1882,38 @@ This is a Leontief (perfect complements) utility function -- all three goods mus
 
 Budget: $p_G G + p_V V + p_C C = w \Rightarrow q(p_G + p_V + p_C) = w$
 
+> **Derivation Walkthrough:**
+> For $U(G,V,C) = \min(G,V,C)$ with budget $p_G G + p_V V + p_C C = w$:
+> 1. At the Leontief optimum, all goods are consumed in fixed 1:1:1 proportion: $G = V = C = q$
+> 2. Substitute: $p_G q + p_V q + p_C q = w \;\Rightarrow\; q(p_G + p_V + p_C) = w$
+> 3. Solve: $q = w/(p_G + p_V + p_C)$
+> 4. Hence $G(p,w) = w/(p_G + p_V + p_C)$
+>
+> **Intuition:** The Negroni requires equal parts of Gin, Vermouth, and Campari. The Marshallian demand treats all three as a composite good with "price" $p_G + p_V + p_C$ (the cost of one cocktail).
+
 $$G(p, w) = \frac{w}{p_G + p_V + p_C}$$
 
 (iii) **Hicksian demand for Campari:** From the EMP, at optimum $G = V = C = \bar{u}$.
+
+> **Derivation Walkthrough:**
+> For the EMP with $U = \min(G,V,C) \ge \bar{u}$:
+> 1. The minimum utility constraint $\min(G,V,C) \ge \bar{u}$ requires each good $\ge \bar{u}$
+> 2. Cost minimization sets each exactly at $\bar{u}$ (no excess)
+> 3. Hence $h_C(p,u) = h_G(p,u) = h_V(p,u) = \bar{u}$
+>
+> **Intuition:** Hicksian demand for Campari (and other goods) is **independent of prices** — with Leontief preferences, there is zero substitution elasticity. Even if Campari becomes very expensive, you still must consume exactly $\bar{u}$ ounces.
 
 $$h_C(p, u) = \bar{u}$$
 
 (Price-independent -- no substitution.)
 
 (iv) **Expenditure function:**
+
+> **Derivation Walkthrough:**
+> Building from the Hicksian demands:
+> 1. $e(p,u) = p_G h_G + p_V h_V + p_C h_C = p_G \bar{u} + p_V \bar{u} + p_C \bar{u} = \bar{u}(p_G + p_V + p_C)$
+>
+> **Intuition:** The expenditure function is the cost of buying $\bar{u}$ units of each input, i.e., $\bar{u}$ Negroni cocktails at price $p_G + p_V + p_C$ each. It is HD(1) in $p$ and linear in $\bar{u}$. Duality checks: $e(p,v(p,w)) = w$ and $v(p,e(p,\bar{u})) = \bar{u}$.
 
 $$e(p, u) = \bar{u}(p_G + p_V + p_C)$$
 
@@ -1387,6 +1930,14 @@ From 1B-Q7: Marshallian demands are:
 - $y(p, I) = p_x/p_y$
 
 With $I = 0.01$ (1 cent), assuming $p_x \ge 0.01$ in most reasonable settings, we have $I < p_x$, so $x$ would be negative. Therefore:
+
+> **Derivation Walkthrough:**
+> For $U = X + \ln Y$ with $I = 0.01$:
+> 1. Interior solution would require $x = I/p_x - 1$ (from derived Marshallian demand)
+> 2. With $I = 0.01$, if $p_x \ge 0.01$, then $I/p_x - 1 \le 0$ — the interior solution is infeasible
+> 3. Corner solution: set $x^* = 0$, spend all income on $y$: $y^* = I/p_y$
+>
+> **Intuition:** With very low income, the consumer cannot afford the "fixed cost" ($p_x$) of buying positive $x$. All income goes to the log-good $y$ where marginal utility $1/y$ starts infinitely high, giving the best initial "bang per buck."
 
 $$x^* = 0, \quad y^* = I/p_y$$
 
@@ -1429,6 +1980,10 @@ The consumer buys only good Y (the log-good). **Why?** Because the marginal util
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+<!-- ============================================================
+TOPIC 2: DEMAND, ELASTICITIES & CONSUMER BEHAVIOR
+============================================================ -->
+
 ## <a id="topic-2"></a>Topic 2: Demand Theory & Elasticities
 
 > **Exam weight:** 14–20 marks (typically 1 question). Common question types: log-linear demand interpretation, Burger King demand problem, Lerner Index pricing.
@@ -1450,13 +2005,37 @@ The consumer buys only good Y (the log-good). **Why?** Because the marginal util
 
 The most common functional form in empirical demand estimation:
 
+> **Derivation Walkthrough:**
+> Starting from the constant-elasticity (log-linear) demand specification:
+> 1. Assume demand takes the multiplicative form $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$, where $\alpha$ is a scale parameter and $\gamma, \delta, \varepsilon, \eta$ are the elasticities.
+> 2. This form is chosen because it yields **constant elasticities** — the marginal effect of each variable depends on the current level of all variables, but the elasticity (percentage response) is constant.
+> 3. Taking natural logs transforms this into a linear-in-logs function suitable for OLS estimation.
+>
+> **Intuition:** Multiplicative demand is the empirical workhorse because coefficients are directly interpretable as elasticities: a 1% change in $P_X$ changes $X$ by $\gamma\%$, holding other factors constant.
+
 $$X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$$
 
 Taking natural logs:
 
+> **Derivation Walkthrough:**
+> Starting from the multiplicative demand $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$:
+> 1. Apply the natural logarithm to both sides: $\ln(X) = \ln(\alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta)$.
+> 2. Use log properties: $\ln(AB) = \ln A + \ln B$ and $\ln(A^b) = b \ln A$.
+> 3. This yields $\ln X = \ln \alpha + \gamma \ln P_X + \delta \ln P_Z + \varepsilon \ln P_W + \eta \ln I$, which is linear in the log-variables.
+>
+> **Intuition:** Log-linearization converts a multiplicative demand function into a linear regression model. The slope coefficients $\gamma, \delta, \varepsilon, \eta$ are the elasticities, and $\ln \alpha$ is the intercept.
+
 $$\ln X = \ln \alpha + \gamma \ln P_X + \delta \ln P_Z + \varepsilon \ln P_W + \eta \ln I$$
 
 **Key insight:** In the log-linear form, each exponent IS the elasticity:
+
+> **Derivation Walkthrough:**
+> Starting from the log-linear form $\ln X = \ln \alpha + \gamma \ln P_X + \delta \ln P_Z + \varepsilon \ln P_W + \eta \ln I$:
+> 1. The elasticity is defined as $\varepsilon_{X,P_X} = \frac{\partial X}{\partial P_X} \cdot \frac{P_X}{X} = \frac{\partial \ln X}{\partial \ln P_X}$ (by the chain rule for log-derivatives).
+> 2. Differentiate $\ln X$ with respect to $\ln P_X$: $\frac{\partial \ln X}{\partial \ln P_X} = \gamma$, since all other terms do not involve $P_X$.
+> 3. By the same reasoning, $\frac{\partial \ln X}{\partial \ln P_Z} = \delta$ and $\frac{\partial \ln X}{\partial \ln I} = \eta$.
+>
+> **Intuition:** In log-linear demand, each exponent IS the corresponding elasticity. This is the key advantage of this functional form: elasticities can be read directly from the regression coefficients, with no further calculation needed.
 
 $$\varepsilon_{X,P_X} = \frac{\partial \ln X}{\partial \ln P_X} = \gamma, \quad
 \varepsilon_{X,P_Z} = \frac{\partial \ln X}{\partial \ln P_Z} = \delta, \quad
@@ -1485,6 +2064,14 @@ $$\varepsilon_{X,P_X} = \frac{\partial \ln X}{\partial \ln P_X} = \gamma, \quad
 
 **Slutsky equation in elasticity form** (Munoz-Garcia, p.197):
 
+> **Derivation Walkthrough:**
+> Starting from the Slutsky equation in levels: $\frac{\partial x}{\partial p_y} = \frac{\partial h}{\partial p_y} - x_y \frac{\partial x}{\partial w}$.
+> 1. Multiply both sides by $\frac{p_y}{x}$ to convert to elasticities: $\frac{\partial x}{\partial p_y} \cdot \frac{p_y}{x} = \frac{\partial h}{\partial p_y} \cdot \frac{p_y}{x} - x_y \frac{\partial x}{\partial w} \cdot \frac{p_y}{x}$.
+> 2. The left-hand side is $\varepsilon_{x,p_y}$ by definition. The first term on the right is the Hicksian elasticity $\varepsilon_{x,p_y}^h = \frac{\partial h}{\partial p_y} \cdot \frac{p_y}{x}$, since along the compensated demand curve, $h(p,u) = x$ at the initial optimum.
+> 3. For the second term: $x_y \frac{\partial x}{\partial w} \cdot \frac{p_y}{x} = \frac{p_y x_y}{w} \cdot \frac{\partial x}{\partial w} \cdot \frac{w}{x} = \theta_y \cdot \varepsilon_{x,w}$, where $\theta_y = \frac{p_y x_y}{w}$ is the budget share of good $y$ and $\varepsilon_{x,w}$ is the income elasticity.
+>
+> **Intuition:** The cross-price elasticity of Walrasian demand equals the compensated (Hicksian) cross-price elasticity minus the budget share of good $y$ times the income elasticity. This shows why cross-price effects are ambiguous: the substitution and income effects can pull in opposite directions.
+
 $$\varepsilon_{x,p_y} = \varepsilon_{x,p_y}^h - \theta_y \varepsilon_{x,w}$$
 
 where $\theta_y$ is the budget share of good $y$ and $\varepsilon^h$ is the Hicksian (compensated) elasticity. This decomposition shows why cross-price effects are ambiguous: substitution effect (always positive for substitutes) and income effect (sign depends on normality/inferiority) pull in opposite directions.
@@ -1493,9 +2080,26 @@ where $\theta_y$ is the budget share of good $y$ and $\varepsilon^h$ is the Hick
 >
 > The Slutsky equation can be generalized to an $L \times L$ matrix of substitution effects. For a differentiable Walrasian demand function $x(p,w)$, totally differentiate and impose the Slutsky wealth compensation $dw = x(p,w) \cdot dp$:
 >
+> > **Derivation Walkthrough:**
+> > Starting from the Walrasian demand function $x(p,w)$:
+> > 1. Take the total differential: $dx = D_p x(p,w) \, dp + D_w x(p,w) \, dw$, where $D_p x$ is the $L \times L$ matrix of price derivatives and $D_w x$ is the $L \times 1$ vector of income derivatives.
+> > 2. Impose the **Slutsky wealth compensation**: $dw = x(p,w) \cdot dp = \sum_k x_k \, dp_k$. This adjusts income so the consumer can just afford the original bundle at the new prices, holding utility constant.
+> > 3. Substitute $dw$ into the total differential: $dx = D_p x(p,w) \, dp + D_w x(p,w) \, [x(p,w) \cdot dp]$.
+> > 4. Factor $dp$ to the right: $dx = \big[D_p x(p,w) + D_w x(p,w) \, x(p,w)^\top\big] \, dp$, where $x(p,w)^\top$ is the row vector of demands.
+> >
+> > **Intuition:** The total change in demand from a compensated price change is the sum of the ordinary price effect (substitution + income) and the income effect from the compensation itself. The bracketed term is the Slutsky matrix — the pure substitution effect.
+>
 > $$dx = D_p x(p,w) dp + D_w x(p,w) [x(p,w) \cdot dp] = \big[D_p x(p,w) + D_w x(p,w) x(p,w)^\top\big] dp$$
 >
 > The term in brackets is the **Slutsky (substitution) matrix** $S(p,w)$ with elements:
+>
+> > **Derivation Walkthrough:**
+> > Starting from the definition $S(p,w) = D_p x(p,w) + D_w x(p,w) \, x(p,w)^\top$:
+> > 1. The matrix product $D_w x(p,w) \, x(p,w)^\top$ expands to an $L \times L$ matrix where the $(l,k)$ entry is $\frac{\partial x_l}{\partial w} \cdot x_k$.
+> > 2. Adding $D_p x(p,w)$ (with entries $\partial x_l / \partial p_k$) gives the element: $s_{lk}(p,w) = \frac{\partial x_l(p,w)}{\partial p_k} + \frac{\partial x_l(p,w)}{\partial w} \cdot x_k(p,w)$.
+> > 3. This element decomposes the total price effect of good $k$ on demand for good $l$ into the substitution effect ($s_{lk}$) and the income effect ($-x_k \cdot \partial x_l / \partial w$).
+> >
+> > **Intuition:** Each element $s_{lk}$ measures the compensated price effect. The diagonal $s_{ll} \leq 0$ must be non-positive — the compensated own-price effect always slopes downward, unlike uncompensated demand which can be Giffen.
 >
 > $$s_{lk}(p,w) = \frac{\partial x_l(p,w)}{\partial p_k} + \frac{\partial x_l(p,w)}{\partial w} \cdot x_k(p,w) \quad \text{for every pair of goods } l,k$$
 >
@@ -1519,9 +2123,26 @@ Total expenditure (revenue): $E = P \times X(P)$
 
 **Marginal Revenue derivation:**
 
+> **Derivation Walkthrough:**
+> Starting from total revenue $E = P \times Q$, where $Q = X(P)$ is the demand function:
+> 1. Differentiate $E$ with respect to quantity $Q$: $MR = \frac{dE}{dQ} = \frac{d(PQ)}{dQ}$.
+> 2. Apply the product rule: $\frac{d(PQ)}{dQ} = P \cdot \frac{dQ}{dQ} + Q \cdot \frac{dP}{dQ} = P + Q\frac{dP}{dQ}$.
+> 3. Factor $P$: $P + Q\frac{dP}{dQ} = P\left(1 + \frac{Q}{P} \cdot \frac{dP}{dQ}\right) = P\left(1 + \frac{1}{\frac{P}{Q} \cdot \frac{dQ}{dP}}\right)$.
+> 4. Recognize that the price elasticity $\varepsilon = \frac{dQ}{dP} \cdot \frac{P}{Q}$, so $\frac{1}{\varepsilon} = \frac{dP}{dQ} \cdot \frac{Q}{P}$. Substituting gives $MR = P\left(1 + \frac{1}{\varepsilon}\right)$.
+>
+> **Intuition:** Marginal revenue equals price times $(1 + 1/\varepsilon)$. When demand is elastic ($|\varepsilon| > 1$), $MR > 0$, so cutting price raises total revenue. When inelastic ($|\varepsilon| < 1$), $MR < 0$, so cutting price lowers revenue.
+
 $$MR = \frac{dE}{dQ} = P + Q\frac{dP}{dQ} = P\left(1 + \frac{dP}{dQ}\cdot\frac{Q}{P}\right) = P\left(1 + \frac{1}{\varepsilon}\right)$$
 
 Since $\varepsilon < 0$ (Law of Demand), write $\varepsilon = -\eta$ where $\eta = |\varepsilon| > 0$:
+
+> **Derivation Walkthrough:**
+> Starting from $MR = P\left(1 + \frac{1}{\varepsilon}\right)$:
+> 1. By the Law of Demand, $\frac{dQ}{dP} < 0$, so the price elasticity $\varepsilon = \frac{dQ}{dP} \cdot \frac{P}{Q}$ is always negative.
+> 2. Define $\eta = |\varepsilon| > 0$, so $\varepsilon = -\eta$.
+> 3. Substitute: $MR = P\left(1 + \frac{1}{-\eta}\right) = P\left(1 - \frac{1}{\eta}\right)$.
+>
+> **Intuition:** Expressing MR in terms of the absolute elasticity $\eta$ makes the revenue test more intuitive: if $\eta > 1$ (elastic), $1 - 1/\eta > 0$ and $MR > 0$; if $\eta < 1$ (inelastic), $MR < 0$. Revenue is maximized at $\eta = 1$ where $MR = 0$.
 
 $$MR = P\left(1 - \frac{1}{\eta}\right)$$
 
@@ -1537,13 +2158,39 @@ $$MR = P\left(1 - \frac{1}{\eta}\right)$$
 
 #### 2.1.6 Lerner Index (Monopoly Pricing)
 
+> **Derivation Walkthrough:**
+> The Lerner Index measures a firm's market power as the markup of price over marginal cost as a fraction of price.
+> 1. Start from the profit-maximizing condition for any firm: $MR = MC$.
+> 2. Substitute the MR formula $MR = P(1 + 1/\varepsilon)$ derived above: $P(1 + 1/\varepsilon) = MC$.
+> 3. Rearrange: $P + P/\varepsilon = MC \;\Rightarrow\; P - MC = -P/\varepsilon$.
+> 4. Divide both sides by $P$: $\frac{P - MC}{P} = -\frac{1}{\varepsilon}$.
+>
+> **Intuition:** The Lerner Index ranges from 0 (perfect competition, $P = MC$) to 1 (pure monopoly). The markup is inversely related to demand elasticity — the less elastic the demand, the greater the market power. A monopolist facing $\varepsilon = -2$ has a 50% markup; one facing $\varepsilon = -1.1$ has a 91% markup.
+
 $$L = \frac{P - MC}{P} = -\frac{1}{\varepsilon_{Q,P}}$$
 
 **Derivation:** Set $MR = MC$:
 
+> **Derivation Walkthrough:**
+> Starting from the MR formula $MR = P(1 + 1/\varepsilon)$ and the profit-maximizing condition $MR = MC$:
+> 1. Set $P(1 + 1/\varepsilon) = MC$.
+> 2. Expand the left side: $P + P/\varepsilon = MC$.
+> 3. Bring $P$ terms together: $P - MC = -P/\varepsilon$.
+> 4. Solve for the Lerner Index: $\frac{P - MC}{P} = -\frac{1}{\varepsilon}$.
+>
+> **Intuition:** This is the algebraic proof of the Lerner Index. The equation shows the monopolist's optimal markup depends only on the elasticity of demand, not on the shape of the cost curve beyond marginal cost.
+
 $$P\left(1 + \frac{1}{\varepsilon}\right) = MC \;\Longrightarrow\; \frac{P - MC}{P} = -\frac{1}{\varepsilon}$$
 
 **Inverse Elasticity Pricing Rule (IEPR):**
+
+> **Derivation Walkthrough:**
+> Starting from the same first-order condition $P(1 + 1/\varepsilon) = MC$:
+> 1. Write $1 + 1/\varepsilon = \frac{\varepsilon + 1}{\varepsilon}$.
+> 2. Then $P \cdot \frac{\varepsilon + 1}{\varepsilon} = MC$.
+> 3. Solve for $P$: $P^* = MC \cdot \frac{\varepsilon}{\varepsilon + 1} = \frac{MC}{1 + 1/\varepsilon}$.
+>
+> **Intuition:** The IEPR gives the profit-maximizing price directly. The monopolist must operate on the elastic portion of demand ($\varepsilon < -1$) for the formula to yield a positive price. As demand becomes perfectly elastic ($\varepsilon \to -\infty$), price approaches marginal cost (perfect competition).
 
 $$P^* = \frac{MC}{1 + 1/\varepsilon}$$
 
@@ -1573,11 +2220,29 @@ $$P^* = \frac{MC}{1 + 1/\varepsilon}$$
 
 For any price change from $p$ to $p'$ with utility held constant at $u$:
 
+> **Derivation Walkthrough:**
+> Starting from the definition of Hicksian (compensated) demand $h(p,u)$ as the solution to the Expenditure Minimization Problem:
+> 1. At prices $p$, the bundle $h(p,u)$ minimizes expenditure to achieve utility $u$. Therefore, $p \cdot h(p,u) \leq p \cdot h(p',u)$ — any other bundle (including $h(p',u)$) costs at least as much at prices $p$.
+> 2. Similarly, at prices $p'$, the bundle $h(p',u)$ minimizes expenditure, so $p' \cdot h(p',u) \leq p' \cdot h(p,u)$.
+> 3. Subtract the first inequality from the second: $p' \cdot h(p',u) - p \cdot h(p,u) \leq p' \cdot h(p,u) - p \cdot h(p',u)$.
+> 4. Rearranging: $(p' - p) \cdot (h(p',u) - h(p,u)) \leq 0$.
+>
+> **Intuition:** The compensated law of demand states that Hicksian demand curves always slope downward. Unlike Walrasian demand (which can be upward-sloping for Giffen goods), the CLD is a **theorem** — it follows directly from utility maximization / expenditure minimization and holds for all goods, with no exceptions.
+
 $$(p' - p) \cdot \big(h(p',u) - h(p,u)\big) \leq 0$$
 
 **Implication:** For every good $k$, $(p'_k - p_k) \cdot (h_k(p',u) - h_k(p,u)) \leq 0$. This means Hicksian demand curves are always downward-sloping — a price increase (decrease) for good $k$ leads to a decrease (increase) in its Hicksian quantity demanded. This is **always true** for compensated demand, unlike Walrasian (uncompensated) demand which can slope upward for Giffen goods.
 
 **Relationship between WARP and the CLD:** WARP is equivalent to the CLD under Slutsky compensation, but WARP does **not** imply the uncompensated law of demand (ULD). That is:
+
+> **Derivation Walkthrough:**
+> Starting from the definitions of WARP and the Compensated Law of Demand:
+> 1. **WARP:** If bundle $x$ is revealed preferred to bundle $y$ (i.e., $x$ is chosen when $y$ is affordable), then $y$ cannot be revealed preferred to $x$ at any other price–income pair. This is a consistency condition on observable choice.
+> 2. **CLD:** $(p' - p) \cdot (h(p',u) - h(p,u)) \leq 0$, derived above from expenditure minimization.
+> 3. Under **Slutsky compensation** (where income is adjusted to make the original bundle just affordable at the new prices), WARP implies the Slutsky matrix is negative semi-definite, which is equivalent to the CLD.
+> 4. However, WARP does **not** imply the uncompensated law of demand (ULD), because the income effect can offset the substitution effect for Giffen goods.
+>
+> **Intuition:** This is a key theoretical result: WARP is testable on observable (uncompensated) demand data, yet it guarantees the compensated law of demand. This means the Slutsky matrix negative semi-definiteness can be tested without needing to observe compensated demands.
 
 $$\text{WARP} \iff \text{CLD} \quad \text{but} \quad \text{WARP} \nRightarrow \text{ULD}$$
 
@@ -1597,9 +2262,28 @@ $$\text{WARP} \iff \text{CLD} \quad \text{but} \quad \text{WARP} \nRightarrow \t
 
 The Hicksian and Walrasian demands are related through the **Slutsky equation** and the **expenditure function**. For any $(p,w)$ with associated utility $u = v(p,w)$:
 
+> **Derivation Walkthrough:**
+> Starting from the relationship between the expenditure function and the indirect utility function:
+> 1. The expenditure function $e(p,u)$ gives the minimum expenditure needed to achieve utility $u$ at prices $p$. The indirect utility function $v(p,w)$ gives the maximum utility achievable at prices $p$ and income $w$. These are inverses: $e(p, v(p,w)) = w$ and $v(p, e(p,u)) = u$.
+> 2. The Hicksian demand $h_l(p,u)$ is the demand for good $l$ that minimizes expenditure to achieve utility $u$. The Walrasian demand $x_l(p,w)$ is the demand that maximizes utility given income $w$.
+> 3. At the optimum, they coincide: when $w = e(p,u)$ (income equals the minimum expenditure needed for utility $u$), the consumer demands the same bundle: $h_l(p,u) = x_l(p, e(p,u))$.
+> 4. Conversely, setting income to $w$ and achieving utility $u = v(p,w)$, we have $x_l(p,w) = h_l(p, v(p,w))$.
+>
+> **Intuition:** This identity bridges the two approaches to consumer theory — utility maximization (Walrasian demand) and expenditure minimization (Hicksian demand). The Hicksian demand holds utility constant and varies income; the Walrasian demand holds income constant and varies utility. They coincide when income equals the expenditure needed to achieve the utility level.
+
 $$h_l(p,u) = x_l(p, e(p,u)) \quad \text{and equivalently} \quad x_l(p,w) = h_l(p, v(p,w))$$
 
 Differentiating the identity $h_l(p,u) = x_l(p, e(p,u))$ with respect to $p_k$ and applying Shephard's lemma ($\partial e(p,u)/\partial p_k = h_k(p,u)$) recovers the Slutsky equation:
+
+> **Derivation Walkthrough:**
+> Starting from the identity $h_l(p,u) = x_l(p, e(p,u))$:
+> 1. Differentiate both sides with respect to $p_k$. The left side is $\frac{\partial h_l(p,u)}{\partial p_k}$.
+> 2. For the right side, apply the chain rule: $\frac{\partial}{\partial p_k} x_l(p, e(p,u)) = \frac{\partial x_l(p,w)}{\partial p_k} + \frac{\partial x_l(p,w)}{\partial w} \cdot \frac{\partial e(p,u)}{\partial p_k}$, where $w = e(p,u)$.
+> 3. By **Shephard's lemma**, $\frac{\partial e(p,u)}{\partial p_k} = h_k(p,u)$, which equals $x_k(p,w)$ at the optimum where $w = e(p,u)$.
+> 4. Substituting: $\frac{\partial h_l(p,u)}{\partial p_k} = \frac{\partial x_l(p,w)}{\partial p_k} + \frac{\partial x_l(p,w)}{\partial w} \cdot x_k(p,w)$.
+> 5. The right-hand side is precisely the Slutsky matrix element $s_{lk}(p,w)$.
+>
+> **Intuition:** The Slutsky equation decomposes the total price effect ($\partial x_l/\partial p_k$) into the substitution effect ($\partial h_l/\partial p_k = s_{lk}$) and the income effect ($-x_k \cdot \partial x_l/\partial w$). The substitution effect is the change in Hicksian (compensated) demand, which holds utility constant.
 
 $$\frac{\partial h_l(p,u)}{\partial p_k} = \frac{\partial x_l(p,w)}{\partial p_k} + \frac{\partial x_l(p,w)}{\partial w} \cdot x_k(p,w) = s_{lk}(p,w)$$
 
@@ -1626,6 +2310,15 @@ When the budget share $\theta_k$ and/or the income elasticity $\varepsilon_{x,w}
 **Problem:** Demand function: $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$
 
 **(i) What is the cross-price elasticity of demand for X with respect to $P_Z$?**
+
+> **Derivation Walkthrough:**
+> Starting from the log-linear demand $X = \alpha P_X^\gamma P_Z^\delta P_W^\varepsilon I^\eta$:
+> 1. The cross-price elasticity is defined as $\varepsilon_{X,P_Z} = \frac{\partial X}{\partial P_Z} \cdot \frac{P_Z}{X}$.
+> 2. Compute $\frac{\partial X}{\partial P_Z}$ from the multiplicative form: $X = \alpha P_X^\gamma \cdot \delta P_Z^{\delta-1} \cdot P_W^\varepsilon I^\eta = \delta \cdot \frac{X}{P_Z}$.
+> 3. Multiply by $\frac{P_Z}{X}$: $\varepsilon_{X,P_Z} = \delta \cdot \frac{X}{P_Z} \cdot \frac{P_Z}{X} = \delta$.
+> 4. Equivalently, using log-derivatives: $\frac{\partial \ln X}{\partial \ln P_Z} = \frac{\partial X / X}{\partial P_Z / P_Z} = \varepsilon_{X,P_Z}$, and from $\ln X = \ln \alpha + \gamma \ln P_X + \delta \ln P_Z + \varepsilon \ln P_W + \eta \ln I$, we get $\frac{\partial \ln X}{\partial \ln P_Z} = \delta$.
+>
+> **Intuition:** In log-linear demand, the exponent on each price variable IS the corresponding elasticity. Here $\delta$ directly measures the percentage change in $X$ from a 1% change in $P_Z$, with no further calculation needed.
 
 $$\varepsilon_{X,P_Z} = \frac{\partial X}{\partial P_Z} \cdot \frac{P_Z}{X} = \frac{\partial \ln X}{\partial \ln P_Z} = \delta$$
 
@@ -1673,6 +2366,14 @@ For contrast, if $\gamma = -1.8$ (elastic), a 10% price cut raises Q by 18%, exp
 
 **The terrible problem:** The coefficient on $P_B$ (own price) is **positive** (+1.3).
 
+> **Derivation Walkthrough:**
+> Starting from the estimated linear demand: $Q = 10 + 1.3P_B + 0.4P_M - 3P_F + 2.2I$:
+> 1. Take the partial derivative with respect to own price $P_B$: $\frac{\partial Q}{\partial P_B} = 1.3$.
+> 2. In a linear demand function $Q = a + bP_B + \dots$, the coefficient $b$ IS the partial derivative $\partial Q / \partial P_B$.
+> 3. The Law of Demand requires $\partial Q / \partial P_B < 0$ (downward-sloping demand), but here it is $+1.3 > 0$.
+>
+> **Intuition:** A positive own-price coefficient in a linear demand regression violates the fundamental Law of Demand. This is a tell-tale sign of model misspecification — the estimated equation does not represent a structural demand curve.
+
 $$\frac{\partial Q}{\partial P_B} = 1.3 > 0$$
 
 The demand curve slopes **upward** (Giffen-like). This violates the **Law of Demand**.
@@ -1680,6 +2381,15 @@ The demand curve slopes **upward** (Giffen-like). This violates the **Law of Dem
 **Why this is NOT a Giffen good:** A Giffen good (inferior good where income effect dominates substitution effect) still has a downward-sloping *compensated* demand curve. A positive coefficient on $P_B$ in a regression is a **symptom of model misspecification**, not a genuine Giffen effect.
 
 **The Slutsky decomposition:**
+
+> **Derivation Walkthrough:**
+> Starting from the general Slutsky equation $\frac{\partial x}{\partial p} = \frac{\partial h}{\partial p} - x \frac{\partial x}{\partial w}$:
+> 1. Apply it to the Burger King demand context: $\frac{\partial X_B}{\partial P_B} = \frac{\partial h_B}{\partial P_B} - X_B \frac{\partial X_B}{\partial w}$.
+> 2. The first term $\frac{\partial h_B}{\partial P_B}$ is the **substitution effect (SE)** — the change in Hicksian (compensated) demand holding utility constant. Theory guarantees this is always $\leq 0$.
+> 3. The second term $X_B \frac{\partial X_B}{\partial w}$ is the **income effect (IE)** — the change in demand from the real-income change caused by the price change. Its sign depends on whether the good is normal ($\partial X_B/\partial w > 0$) or inferior ($\partial X_B/\partial w < 0$).
+> 4. The total effect $\partial X_B/\partial P_B$ is the sum: SE (always $\leq 0$) minus IE (sign varies). For a Giffen good, IE is negative (inferior) and large enough in magnitude to make the total effect positive.
+>
+> **Intuition:** The Slutsky decomposition separates the total price effect into its two components. Even when the total effect is positive (as in this problematic regression), the substitution effect remains non-positive — which is why the regression result cannot be a genuine Giffen good and must indicate misspecification.
 
 $$\frac{\partial X_B}{\partial P_B} = \underbrace{\frac{\partial h_B}{\partial P_B}}_{\text{SE }(\leq 0)} - \underbrace{X_B \frac{\partial X_B}{\partial w}}_{\text{IE }(\lessgtr 0)}$$
 
@@ -1730,6 +2440,15 @@ Whopper quantity **increases by 12.5%**.
 
 Own-price elasticity $\varepsilon = -1.5$.
 
+> **Derivation Walkthrough:**
+> Starting from the Inverse Elasticity Pricing Rule (IEPR) $P^* = MC/(1 + 1/\varepsilon)$:
+> 1. Given $MC = 1.00$ and own-price elasticity $\varepsilon = -1.5$, substitute into the IEPR: $P^* = \frac{1.00}{1 + 1/(-1.5)}$.
+> 2. Simplify $1/(-1.5) = -2/3$, so the denominator is $1 - 2/3 = 1/3$.
+> 3. Therefore $P^* = 1.00 / (1/3) = 3.00$.
+> 4. Verify: $MR = P(1 + 1/\varepsilon) = 3(1 - 2/3) = 3(1/3) = 1 = MC$ ✓.
+>
+> **Intuition:** With an elasticity of $-1.5$, the monopolist marks up price to three times marginal cost. The Lerner Index confirms: $(3-1)/3 = 2/3 = -1/\varepsilon = 2/3$.
+
 $$P\left(1 + \frac{1}{-1.5}\right) = 1 \;\Rightarrow\; P\left(1 - \frac{2}{3}\right) = 1 \;\Rightarrow\; P\left(\frac{1}{3}\right) = 1 \;\Rightarrow\; P = 3$$
 
 **Profit-maximizing price = $3.00.** Markup = $(3-1)/3 = 2/3$ (or $-1/\varepsilon = 2/3$).
@@ -1741,6 +2460,15 @@ Big Mac is r1 (substitute). $\varepsilon_{Q,P_{r1}} = 0.75$.
 If Big Mac price ↓ 10% → Whopper $Q$ falls $0.75 \times 10\% = 7.5\%$.
 
 To neutralize: BK must lower $P_B$ to raise $Q$ by 7.5%. Own-price elasticity $\varepsilon_{Q,P_B} = -1.5$.
+
+> **Derivation Walkthrough:**
+> Starting from the definition of own-price elasticity: $\varepsilon_{Q,P_B} = \frac{\% \Delta Q}{\% \Delta P_B}$.
+> 1. We know $\varepsilon_{Q,P_B} = -1.5$ and we need $\% \Delta Q = +7.5\%$ to offset the loss from Big Mac's price cut.
+> 2. Rearranging: $\% \Delta P_B = \frac{\% \Delta Q}{\varepsilon_{Q,P_B}} = \frac{7.5\%}{-1.5}$.
+> 3. Computing: $\% \Delta P_B = -5\%$, meaning BK must cut its price by 5%.
+> 4. Verification: The substitution effect from Big Mac's price cut reduces Whopper demand by 7.5%. The own-price cut of 5% stimulates Whopper demand by $(-1.5) \times (-5\%) = +7.5\%$. Net effect = 0%.
+>
+> **Intuition:** To fully neutralize a competitor's price cut, the firm must lower its own price by the ratio of the cross-price elasticity to the own-price elasticity, weighted by the competitor's price change. Here, $5\% = (0.75 / 1.5) \times 10\%$.
 
 $$\% \Delta P_B = \frac{\% \Delta Q}{-1.5} = \frac{7.5\%}{-1.5} = -5\%$$
 
@@ -1768,11 +2496,30 @@ $$\% \Delta P_B = \frac{\% \Delta Q}{-1.5} = \frac{7.5\%}{-1.5} = -5\%$$
 
 **(i) Production function (Leontief/fixed proportions):**
 
+> **Derivation Walkthrough:**
+> Starting from the input requirements: 3 lb flour, 2.5 lb sugar, 2 lb butter per batch of cookies:
+> 1. With $F$ lb of flour, the maximum number of batches producible from flour alone is $F/3$.
+> 2. With $S$ lb of sugar, the maximum from sugar alone is $S/2.5$.
+> 3. With $B$ lb of butter, the maximum from butter alone is $B/2$.
+> 4. Since all three inputs are **perfect complements** (must be used in fixed proportions), the actual output is limited by the most constraining input: $Q = \min\{F/3,\; S/2.5,\; B/2\}$.
+>
+> **Intuition:** Leontief production functions represent technologies where inputs must be used in fixed ratios — you cannot substitute flour for sugar. Output is determined by the "bottleneck" input. This is the dual of the perfect substitutes case.
+
 $$Q = \min\left\{\frac{F}{3}, \frac{S}{2.5}, \frac{B}{2}\right\}$$
 
 **(ii) Cost function:**
 
 At the cost-minimizing optimum, $F^* = 3Q$, $S^* = 2.5Q$, $B^* = 2Q$.
+
+> **Derivation Walkthrough:**
+> Starting from the Leontief production function:
+> 1. At the cost-minimizing optimum, there is no waste — all inputs are used in exact proportion to output. For output $Q$, the required input quantities are $F^* = 3Q$, $S^* = 2.5Q$, $B^* = 2Q$.
+> 2. Total cost is the sum of input costs: $c(Q) = P_f \cdot F^* + P_s \cdot S^* + P_b \cdot B^*$.
+> 3. Substituting the optimal input demands: $c(Q) = P_f \cdot 3Q + P_s \cdot 2.5Q + P_b \cdot 2Q$.
+> 4. Factor out $Q$: $c(Q) = Q(3P_f + 2.5P_s + 2P_b)$.
+> 5. Marginal cost $MC = c'(Q) = 3P_f + 2.5P_s + 2P_b$ is constant — the production function exhibits constant returns to scale.
+>
+> **Intuition:** With fixed-proportions technology, the cost function is linear in output. The marginal cost is simply the cost of one batch's worth of inputs, and it does not vary with output level.
 
 $$c(Q) = P_f \cdot 3Q + P_s \cdot 2.5Q + P_b \cdot 2Q = Q(3P_f + 2.5P_s + 2P_b)$$
 
@@ -1783,6 +2530,16 @@ Marginal cost: $MC = 3P_f + 2.5P_s + 2P_b$ (constant — CRS).
 $$MC = 3(1.50) + 2.5(2) + 2(3) = 4.50 + 5 + 6 = 15.50$$
 
 Demand: $Q = 20P^{-3} P_0^{2.2} I^{1.8}$. Own-price elasticity $\varepsilon = -3$.
+
+> **Derivation Walkthrough:**
+> Starting from the Inverse Elasticity Pricing Rule $P^* = MC/(1 + 1/\varepsilon)$:
+> 1. Marginal cost from part (ii) is $MC = 15.50$. Own-price elasticity from the log-linear demand is $\varepsilon = -3$ (the exponent on $P$).
+> 2. Substitute into the IEPR: $P^* = \frac{15.50}{1 + 1/(-3)} = \frac{15.50}{1 - 1/3}$.
+> 3. Simplify the denominator: $1 - 1/3 = 2/3$.
+> 4. Therefore $P^* = \frac{15.50}{2/3} = 15.50 \times \frac{3}{2} = 23.25$.
+> 5. Lerner Index check: $(23.25 - 15.50)/23.25 = 7.75/23.25 = 1/3 = -1/\varepsilon = 1/3$ ✓.
+>
+> **Intuition:** With elasticity $-3$, the optimal markup is $1/3$ (33% margin). The IEPR gives the profit-maximizing price of \$23.25, which is 50% above marginal cost ($15.50 \times 1.5 = 23.25$).
 
 Using IEPR: $P^* = \frac{MC}{1 + 1/\varepsilon} = \frac{15.50}{1 + 1/(-3)} = \frac{15.50}{1 - 1/3} = \frac{15.50}{2/3} = 23.25$
 
@@ -1815,6 +2572,16 @@ Using IEPR: $P^* = \frac{MC}{1 + 1/\varepsilon} = \frac{15.50}{1 + 1/(-3)} = \fr
 
 **The Pragmatic Approach:** Rather than deriving demand from utility maximization, the pragmatic approach directly specifies demand as a multivariate function of observable variables:
 
+> **Derivation Walkthrough:**
+> Starting from the general concept that quantity demanded depends on a set of observable economic variables:
+> 1. $P_x$ is the good's **own price** — the primary determinant of quantity demanded via the Law of Demand.
+> 2. $P_0$ is a **vector of related prices** — prices of substitutes (positive cross-effect) and complements (negative cross-effect).
+> 3. $Y$ is **aggregate income** or consumer's budget — captures the ability to purchase, with sign depending on whether the good is normal ($+$) or inferior ($-$).
+> 4. $T$ is a **time trend** or taste shifter — captures changes in preferences, demographics, advertising, or technology over time.
+> 5. Unlike the structural approach (which derives demand from utility maximization), the pragmatic approach estimates $f(\cdot)$ directly from market data using regression techniques.
+>
+> **Intuition:** The pragmatic approach is a reduced-form empirical strategy: it models demand as a function of observable determinants without imposing the full structure of utility maximization. Its flexibility makes it the most common approach in applied demand analysis, but it requires careful attention to the identification problem.
+
 $$Q_x = f(P_x, P_0, Y, T)$$
 
 where $P_x$ = own price, $P_0$ = vector of related prices, $Y$ = aggregate income, $T$ = trend for tastes.
@@ -1846,6 +2613,11 @@ where $P_x$ = own price, $P_0$ = vector of related prices, $Y$ = aggregate incom
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 3: PRODUCTION, COSTS & SUPPLY
+============================================================ -->
+
 ## <a id="topic-3"></a>Topic 3: Production & Supply
 
 > **Exam weight:** 28–35 marks (2 questions). Production function analysis, cost minimization, profit maximization, and competitive equilibrium are staple topics.
@@ -1894,6 +2666,17 @@ where $P_x$ = own price, $P_0$ = vector of related prices, $Y$ = aggregate incom
 
 #### 3.1.3 Returns to Scale
 
+> **Derivation Walkthrough:**
+> Starting from the definition of returns to scale (RTS):
+> 1. Multiply ALL inputs by a common scalar factor $t > 0$: evaluate $f(tK, tL)$
+> 2. Factor $t$ out of the production function expression
+> 3. The exponent $k$ on $t$ captures the degree of returns to scale:
+>    - $k > 1$: output rises proportionally MORE than inputs $\rightarrow$ IRS
+>    - $k = 1$: output rises proportionally $\rightarrow$ CRS
+>    - $k < 1$: output rises proportionally LESS $\rightarrow$ DRS
+> 
+> **Intuition:** RTS describes how output responds when the firm scales ALL inputs simultaneously. It is a technological property of the production function, distinct from diminishing marginal returns (which vary one input at a time).
+
 $$f(tK, tL) = t^k f(K, L)$$
 
 | $k$ | Returns to Scale | Implication |
@@ -1906,6 +2689,14 @@ $$f(tK, tL) = t^k f(K, L)$$
 
 #### 3.1.4 Elasticity of Substitution (EoS)
 
+> **Derivation Walkthrough:**
+> Starting from the definition of the elasticity of substitution ($\sigma$):
+> 1. $\sigma$ measures the percentage change in the input ratio $(K/L)$ divided by the percentage change in the Marginal Rate of Technical Substitution ($MRTS$)
+> 2. Express as: $\displaystyle \sigma = \frac{\% \Delta (K/L)}{\% \Delta MRTS}$
+> 3. Convert percentage changes to log-differentials: $\displaystyle \sigma = \frac{d \ln(K/L)}{d \ln(MRTS)}$
+> 
+> **Intuition:** $\sigma$ quantifies how easily one input can be substituted for another along an isoquant. High $\sigma$ means inputs are close substitutes; low $\sigma$ means they are complements. The log-derivative form makes $\sigma$ unit-free and symmetric.
+
 $$\sigma = \frac{\% \Delta (K/L)}{\% \Delta MRTS} = \frac{d\ln(K/L)}{d\ln(MRTS)}$$
 
 | Production Function | $\sigma$ | Pattern |
@@ -1917,8 +2708,31 @@ $$\sigma = \frac{\% \Delta (K/L)}{\% \Delta MRTS} = \frac{d\ln(K/L)}{d\ln(MRTS)}
 
 **CES derivation:**
 
+> **Derivation Walkthrough:**
+> Starting from the CES production function $q = [\alpha K^\rho + (1-\alpha)L^\rho]^{\gamma/\rho}$:
+> 1. Compute $MP_L = \partial q/\partial L = \gamma (1-\alpha) L^{\rho-1} [\alpha K^\rho + (1-\alpha)L^\rho]^{\gamma/\rho - 1}$
+> 2. Compute $MP_K = \partial q/\partial K = \gamma \alpha K^{\rho-1} [\alpha K^\rho + (1-\alpha)L^\rho]^{\gamma/\rho - 1}$
+> 3. Take the ratio: $\displaystyle MRTS_{L,K} = \frac{MP_L}{MP_K} = \frac{1-\alpha}{\alpha} \left(\frac{K}{L}\right)^{1-\rho}$
+> 
+> **Intuition:** The MRTS for a CES function depends only on the capital-labor ratio $(K/L)$ and the substitution parameter $\rho$. When $\rho$ is large (close to 1), MRTS responds strongly to changes in $K/L$, indicating high substitutability.
+
 $$MRTS_{L,K} = \frac{MP_L}{MP_K} = \left(\frac{K}{L}\right)^{1-\rho}$$
+> **Derivation Walkthrough:**
+> Continuing from the CES MRTS expression:
+> 1. Take natural logs: $\ln(MRTS) = \ln\left(\frac{1-\alpha}{\alpha}\right) + (1-\rho)\ln\left(\frac{K}{L}\right)$
+> 2. Solve for $\ln(K/L)$: $\displaystyle \ln\left(\frac{K}{L}\right) = \frac{1}{1-\rho}\ln(MRTS) - \frac{1}{1-\rho}\ln\left(\frac{1-\alpha}{\alpha}\right)$
+> 
+> **Intuition:** The log-linear relationship between $K/L$ and $MRTS$ reveals that $(1-\rho)$ is the elasticity of $MRTS$ with respect to the input ratio.
+
 $$\ln(MRTS) = (1-\rho)\ln\left(\frac{K}{L}\right) \;\Rightarrow\; \ln\left(\frac{K}{L}\right) = \frac{1}{1-\rho}\ln(MRTS)$$
+> **Derivation Walkthrough:**
+> From the log-linearized MRTS expression:
+> 1. The elasticity of substitution is $\sigma = \partial \ln(K/L) / \partial \ln(MRTS)$
+> 2. Differentiate: $\displaystyle \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac{1}{1-\rho}$
+> 3. Hence $\displaystyle \sigma = \frac{1}{1-\rho}$
+> 
+> **Intuition:** For the CES function, $\sigma$ is constant and fully determined by the single parameter $\rho$. When $\rho = 0$, $\sigma = 1$ (Cobb-Douglas); when $\rho = 1$, $\sigma = \infty$ (linear/perfect substitutes); as $\rho \to -\infty$, $\sigma \to 0$ (Leontief/fixed proportions).
+
 $$\sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac{1}{1-\rho}$$
 
 **Polar cases of CES:**
@@ -1934,6 +2748,15 @@ $$\sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac{1}{1-\rho}$$
 >
 > **1. $\rho \to 0$ (Cobb-Douglas limit):** Apply L'Hôpital's rule to $\ln q = \frac{\gamma}{\rho} \ln[\alpha K^\rho + (1-\alpha)L^\rho]$. As $\rho \to 0$, both numerator and denominator go to 0. Differentiating numerator and denominator with respect to $\rho$:
 >
+> **Derivation Walkthrough:**
+> Starting from $\ln q = \frac{\gamma}{\rho} \ln[\alpha K^\rho + (1-\alpha)L^\rho]$ as $\rho \to 0$:
+> 1. Both numerator and denominator $\to 0$, so apply L'Hopital's rule: differentiate w.r.t. $\rho$
+> 2. Numerator derivative: $\frac{d}{d\rho} \ln[\alpha K^\rho + (1-\alpha)L^\rho] = \frac{\alpha K^\rho \ln K + (1-\alpha)L^\rho \ln L}{\alpha K^\rho + (1-\alpha)L^\rho}$
+> 3. Denominator derivative: $\frac{d}{d\rho} \rho = 1$
+> 4. As $\rho \to 0$, $K^\rho \to 1$ and $L^\rho \to 1$, giving: $\displaystyle \lim_{\rho \to 0} \ln q = \gamma \cdot \frac{\alpha \ln K + (1-\alpha)\ln L}{\alpha + (1-\alpha)} = \ln(K^\alpha L^{1-\alpha})^\gamma$
+> 
+> **Intuition:** The CES function smoothly nests the Cobb-Douglas as a limiting case when $\rho \to 0$ (i.e., $\sigma \to 1$). This is why Cobb-Douglas is so widely used -- it sits at the boundary between substitutes and complements.
+
 > $$\lim_{\rho \to 0} \ln q = \gamma \cdot \frac{\alpha \ln K + (1-\alpha)\ln L}{\alpha + (1-\alpha)} = \ln(K^\alpha L^{1-\alpha})^\gamma$$
 >
 > Hence $q \to (K^\alpha L^{1-\alpha})^\gamma$ — the Cobb-Douglas form with $\sigma = 1$.
@@ -1955,6 +2778,14 @@ $$\sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac{1}{1-\rho}$$
 ### 3.2 Cost Functions & Cost Minimization
 
 #### 3.2.1 The Cost Minimization Problem (CMP)
+
+> **Derivation Walkthrough:**
+> Starting from the definition of total cost $w \cdot z = \sum_i w_i z_i$:
+> 1. The firm chooses input vector $z \geq 0$ to minimize expenditure $w \cdot z$
+> 2. Subject to the constraint that output meets or exceeds target $q$: $f(z) \geq q$
+> 3. Formally: $\displaystyle \min_{z \geq 0} \; w \cdot z \quad \text{s.t.} \quad f(z) \geq q$
+> 
+> **Intuition:** The Cost Minimization Problem (CMP) is the dual of output maximization. The firm takes input prices $w$ as given and asks: "What is the cheapest way to produce $q$ units?" This is the foundation for deriving conditional factor demands and the cost function.
 
 $$\min_{z \geq 0} \; w \cdot z \quad \text{subject to} \quad f(z) \geq q$$
 
@@ -2000,6 +2831,15 @@ From $D_w z(w,q) = D_w^2 c(w,q)$ (since Hessian of a concave function is NSD):
 
 If $c(w,q) = w \cdot z(w,q)$ is differentiable in $w$, then by the envelope theorem:
 
+> **Derivation Walkthrough:**
+> Starting from the cost function identity $c(w,q) = w \cdot z(w,q)$:
+> 1. Differentiate w.r.t. $w_k$ using the product rule:
+>    $\displaystyle \frac{\partial c(w,q)}{\partial w_k} = z_k(w,q) + \sum_j w_j \frac{\partial z_j}{\partial w_k}$
+> 2. At the optimum, the first-order condition $w_j = \lambda MP_j$ holds, and the Envelope Theorem implies the summation term vanishes (re-optimization has zero first-order effect)
+> 3. Therefore: $\displaystyle \frac{\partial c(w,q)}{\partial w_k} = z_k(w,q)$
+> 
+> **Intuition:** A small increase in input price $w_k$ raises total cost by exactly the amount of input $k$ the firm was already using. The firm's re-optimization (substituting away from the now-costlier input) has only a second-order effect on cost.
+
 $$\frac{\partial c(w,q)}{\partial w_k} = z_k(w,q) + \sum_j w_j \frac{\partial z_j}{\partial w_k} = z_k(w,q)$$
 
 The summation term vanishes at the optimum by the FOCs (first-order effect of price change on input choice is zero).
@@ -2009,6 +2849,15 @@ The summation term vanishes at the optimum by the FOCs (first-order effect of pr
 >
 > Formally, for a given output level $q$, define the set $S(q) = \{z \geq 0 : f(z) \geq q\}$. The cost function $c(w,q) = \min_{z \in S(q)} w \cdot z$ is the support function of $S(q)$. By the duality theorem, if $c(w,q)$ is differentiable at $w$, then:
 >
+> **Derivation Walkthrough:**
+> Starting from the cost function as a support function:
+> 1. Define the feasible input set $S(q) = \{z \geq 0 : f(z) \geq q\}$
+> 2. The cost function $c(w,q) = \min_{z \in S(q)} w \cdot z$ is the support function of $S(q)$
+> 3. By the duality theorem for convex sets, if $c(w,q)$ is differentiable at $w$, the gradient gives the unique supporting hyperplane:
+>    $\displaystyle \frac{\partial c(w,q)}{\partial w_k} = z_k(w,q)$
+> 
+> **Intuition:** This is the production analogue of $h_k(p,u) = \partial e(p,u)/\partial p_k$ in consumer theory. In both cases, the derivative of the minimum-value function (cost/expenditure) w.r.t. a price yields the compensated demand for that good.
+
 > $$\frac{\partial c(w,q)}{\partial w_k} = z_k(w,q)$$
 >
 > This mirrors the consumer theory result where the expenditure function $e(p,u)$ is the support function of the Hicksian demand correspondence, yielding Shephard's lemma $h_k(p,u) = \partial e(p,u)/\partial p_k$.
@@ -2029,16 +2878,40 @@ The summation term vanishes at the optimum by the FOCs (first-order effect of pr
 
 Consider the Cobb-Douglas production function $f(z_1, z_2) = z_1^\alpha z_2^\beta$ with $\alpha, \beta \geq 0$. The firm solves:
 
+> **Derivation Walkthrough:**
+> Starting from the CMP with Cobb-Douglas technology $f(z_1, z_2) = z_1^\alpha z_2^\beta$:
+> 1. Set up the minimization problem: minimize $w_1 z_1 + w_2 z_2$ subject to $z_1^\alpha z_2^\beta \geq q$
+> 2. The Lagrangian method will convert this constrained problem into an unconstrained one by incorporating the production constraint with a Lagrange multiplier $\lambda$
+> 3. Solution proceeds through FOCs $\rightarrow$ tangency condition $\rightarrow$ substitution into constraint
+> 
+> **Intuition:** This is the canonical Cobb-Douglas CMP. It yields closed-form conditional factor demands and a log-linear cost function -- properties that make Cobb-Douglas the workhorse of production theory.
+
 $$\min_{z_1, z_2 \geq 0} \; w_1 z_1 + w_2 z_2 \quad \text{subject to} \quad z_1^\alpha z_2^\beta \geq q$$
 
 **Step 1 — Lagrangian:** $\mathcal{L} = w_1 z_1 + w_2 z_2 + \lambda[q - z_1^\alpha z_2^\beta]$
 
 **Step 2 — FOCs (interior solution):**
 
+> **Derivation Walkthrough:**
+> Starting from the Lagrangian $\mathcal{L} = w_1 z_1 + w_2 z_2 + \lambda[q - z_1^\alpha z_2^\beta]$:
+> 1. Differentiate w.r.t. $z_1$: $\displaystyle \frac{\partial \mathcal{L}}{\partial z_1} = w_1 - \lambda \alpha z_1^{\alpha-1} z_2^\beta = 0$
+> 2. Differentiate w.r.t. $z_2$: $\displaystyle \frac{\partial \mathcal{L}}{\partial z_2} = w_2 - \lambda \beta z_1^\alpha z_2^{\beta-1} = 0$
+> 3. At the optimum, $w_1 = \lambda \alpha z_1^{\alpha-1} z_2^\beta$ and $w_2 = \lambda \beta z_1^\alpha z_2^{\beta-1}$
+> 
+> **Intuition:** Each FOC sets input price $w_i$ equal to the marginal benefit of using that input -- the Lagrange multiplier $\lambda$ times the marginal product $MP_i$. The multiplier $\lambda$ equals marginal cost $MC(q)$ in equilibrium.
+
 $$\frac{\partial \mathcal{L}}{\partial z_1} = w_1 - \lambda \alpha z_1^{\alpha-1} z_2^\beta = 0, \qquad
 \frac{\partial \mathcal{L}}{\partial z_2} = w_2 - \lambda \beta z_1^\alpha z_2^{\beta-1} = 0$$
 
 **Step 3 — Tangency condition:** Dividing the two FOCs:
+
+> **Derivation Walkthrough:**
+> Starting from the two FOCs:
+> 1. Divide the first FOC by the second: $\displaystyle \frac{w_1}{w_2} = \frac{\lambda \alpha z_1^{\alpha-1} z_2^\beta}{\lambda \beta z_1^\alpha z_2^{\beta-1}}$
+> 2. Cancel $\lambda$ and simplify: $\displaystyle \frac{\alpha z_1^{\alpha-1} z_2^\beta}{\beta z_1^\alpha z_2^{\beta-1}} = \frac{\alpha z_2}{\beta z_1}$
+> 3. Therefore: $\displaystyle \frac{w_1}{w_2} = \frac{\alpha z_2}{\beta z_1}$
+> 
+> **Intuition:** The tangency condition equates the input price ratio $(w_1/w_2)$ to the MRTS ($\alpha z_2 / \beta z_1$). At the optimum, the slope of the isocost line equals the slope of the isoquant.
 
 $$\frac{w_1}{w_2} = \frac{\alpha z_1^{\alpha-1} z_2^\beta}{\beta z_1^\alpha z_2^{\beta-1}} = \frac{\alpha z_2}{\beta z_1}$$
 
@@ -2046,15 +2919,52 @@ Solving for $z_2$: $z_2 = \frac{\beta}{\alpha} \cdot \frac{w_1}{w_2} \cdot z_1$
 
 **Step 4 — Conditional factor demands:** Substitute into the production constraint:
 
+> **Derivation Walkthrough:**
+> Starting from the tangency condition $z_2 = \frac{\beta}{\alpha} \cdot \frac{w_1}{w_2} \cdot z_1$:
+> 1. Substitute $z_2$ into the production constraint $q = z_1^\alpha z_2^\beta$:
+>    $q = z_1^\alpha \left(\frac{\beta}{\alpha} \cdot \frac{w_1}{w_2} \cdot z_1\right)^\beta$
+> 2. Combine terms: $z_1^\alpha \cdot z_1^\beta = z_1^{\alpha+\beta}$ and separate the constant:
+>    $q = z_1^{\alpha+\beta} \left(\frac{\beta w_1}{\alpha w_2}\right)^\beta$
+> 
+> **Intuition:** This expresses the production constraint entirely in terms of $z_1$, allowing us to solve for the conditional factor demand $z_1(w,q)$.
+
 $$q = z_1^\alpha \left(\frac{\beta}{\alpha} \cdot \frac{w_1}{w_2} \cdot z_1\right)^\beta = z_1^{\alpha+\beta} \left(\frac{\beta w_1}{\alpha w_2}\right)^\beta$$
+
+> **Derivation Walkthrough:**
+> Continuing from $q = z_1^{\alpha+\beta} \left(\frac{\beta w_1}{\alpha w_2}\right)^\beta$:
+> 1. Isolate $z_1^{\alpha+\beta}$: $z_1^{\alpha+\beta} = q \left(\frac{\beta w_1}{\alpha w_2}\right)^{-\beta}$
+> 2. Simplify: $z_1^{\alpha+\beta} = q \left(\frac{\alpha w_2}{\beta w_1}\right)^{\beta}$
+> 3. Take the $(\alpha+\beta)$-th root:
+>    $\displaystyle z_1(w,q) = \left(\frac{\alpha w_2}{\beta w_1}\right)^{\beta/(\alpha+\beta)} \cdot q^{1/(\alpha+\beta)}$
+> 
+> **Intuition:** The conditional factor demand for $z_1$ depends on relative input prices (bracketed term) and the output level $q$. It is decreasing in its own price $w_1$ and increasing in output.
 
 $$z_1(w,q) = \left(\frac{\alpha w_2}{\beta w_1}\right)^{\beta/(\alpha+\beta)} \cdot q^{1/(\alpha+\beta)}$$
 
 Similarly:
 
+> **Derivation Walkthrough:**
+> From the tangency condition, $z_2 = \frac{\beta}{\alpha} \cdot \frac{w_1}{w_2} \cdot z_1$:
+> 1. Substitute the solution for $z_1(w,q)$:
+>    $\displaystyle z_2 = \frac{\beta}{\alpha} \cdot \frac{w_1}{w_2} \cdot \left(\frac{\alpha w_2}{\beta w_1}\right)^{\beta/(\alpha+\beta)} \cdot q^{1/(\alpha+\beta)}$
+> 2. Simplify powers of $w_1$, $w_2$, $\alpha$, $\beta$:
+>    $\displaystyle z_2(w,q) = \left(\frac{\beta w_1}{\alpha w_2}\right)^{\alpha/(\alpha+\beta)} \cdot q^{1/(\alpha+\beta)}$
+> 
+> **Intuition:** By symmetry, $z_2$ is decreasing in its own price $w_2$ and increasing in the cross-price $w_1$ (substitution effect) and output $q$.
+
 $$z_2(w,q) = \left(\frac{\beta w_1}{\alpha w_2}\right)^{\alpha/(\alpha+\beta)} \cdot q^{1/(\alpha+\beta)}$$
 
 **Step 5 — Cost function:**
+
+> **Derivation Walkthrough:**
+> Starting from $c(w,q) = w_1 z_1(w,q) + w_2 z_2(w,q)$:
+> 1. Substitute the conditional factor demands:
+>    $\displaystyle c = w_1 \left(\frac{\alpha w_2}{\beta w_1}\right)^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} + w_2 \left(\frac{\beta w_1}{\alpha w_2}\right)^{\alpha/(\alpha+\beta)} q^{1/(\alpha+\beta)}$
+> 2. Combine powers of $w_1$ and $w_2$:
+>    $\displaystyle c = w_1^{\alpha/(\alpha+\beta)} w_2^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} \cdot K$
+>    where $K \equiv \left(\frac{\alpha}{\beta}\right)^{\beta/(\alpha+\beta)} + \left(\frac{\beta}{\alpha}\right)^{\alpha/(\alpha+\beta)}$ is a constant
+> 
+> **Intuition:** The Cobb-Douglas cost function is multiplicative in input prices. The exponent on each input price equals its production exponent share of total factor returns.
 
 $$c(w,q) = w_1 z_1(w,q) + w_2 z_2(w,q) = w_1^{\alpha/(\alpha+\beta)} w_2^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} \cdot K$$
 
@@ -2062,17 +2972,50 @@ where $K \equiv \left(\frac{\alpha}{\beta}\right)^{\beta/(\alpha+\beta)} + \left
 
 **Step 6 — Verify Shephard's Lemma:**
 
+> **Derivation Walkthrough:**
+> Starting from $c(w,q) = w_1^{\alpha/(\alpha+\beta)} w_2^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} \cdot K$:
+> 1. Differentiate w.r.t. $w_1$: $\displaystyle \frac{\partial c}{\partial w_1} = \frac{\alpha}{\alpha+\beta} w_1^{\alpha/(\alpha+\beta)-1} w_2^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} \cdot K$
+> 2. Note that $c(w,q)/w_1 = w_1^{\alpha/(\alpha+\beta)-1} w_2^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} \cdot K$
+> 3. Therefore: $\displaystyle \frac{\partial c}{\partial w_1} = \frac{\alpha}{\alpha+\beta} \cdot \frac{c(w,q)}{w_1}$
+> 4. But from $z_1(w,q)$: $\frac{\alpha}{\alpha+\beta} \cdot \frac{c}{w_1} = z_1(w,q)$ $\checkmark$
+> 
+> **Intuition:** This confirms Shephard's lemma: the derivative of the cost function w.r.t. $w_1$ recovers the conditional factor demand $z_1(w,q)$. Verification confirms the derivation is consistent.
+
 $$\frac{\partial c(w,q)}{\partial w_1} = \frac{\alpha}{\alpha+\beta} \cdot \frac{c(w,q)}{w_1} = z_1(w,q) \quad \checkmark$$
+
+> **Derivation Walkthrough:**
+> By symmetry with the $w_1$ verification:
+> 1. $\displaystyle \frac{\partial c}{\partial w_2} = \frac{\beta}{\alpha+\beta} w_1^{\alpha/(\alpha+\beta)} w_2^{\beta/(\alpha+\beta)-1} q^{1/(\alpha+\beta)} \cdot K$
+> 2. Since $c/w_2 = w_1^{\alpha/(\alpha+\beta)} w_2^{\beta/(\alpha+\beta)-1} q^{1/(\alpha+\beta)} \cdot K$
+> 3. $\displaystyle \frac{\partial c}{\partial w_2} = \frac{\beta}{\alpha+\beta} \cdot \frac{c(w,q)}{w_2} = z_2(w,q)$ $\checkmark$
+> 
+> **Intuition:** Both cross-verifications confirm the internal consistency of the Cobb-Douglas CMP solution. The cost function exponents $\alpha/(\alpha+\beta)$ and $\beta/(\alpha+\beta)$ are the cost shares of each input.
 
 $$\frac{\partial c(w,q)}{\partial w_2} = \frac{\beta}{\alpha+\beta} \cdot \frac{c(w,q)}{w_2} = z_2(w,q) \quad \checkmark$$
 
 **Step 7 — Log-linear form:**
+
+> **Derivation Walkthrough:**
+> Starting from the Cobb-Douglas cost function $c(w,q) = w_1^{\alpha/(\alpha+\beta)} w_2^{\beta/(\alpha+\beta)} q^{1/(\alpha+\beta)} \cdot K$:
+> 1. Take natural logs of both sides:
+>    $\displaystyle \ln c = \frac{\alpha}{\alpha+\beta} \ln w_1 + \frac{\beta}{\alpha+\beta} \ln w_2 + \frac{1}{\alpha+\beta} \ln q + \ln K$
+> 2. The exponents become coefficients in a linear function of logarithms
+> 
+> **Intuition:** The log-linear form is the foundation of the translog cost function, a flexible empirical specification widely used in industrial organization. The coefficients directly estimate the cost shares of each input and returns to scale ($1/(\alpha+\beta)$).
 
 $$\ln c(w,q) = \frac{\alpha}{\alpha+\beta} \ln w_1 + \frac{\beta}{\alpha+\beta} \ln w_2 + \frac{1}{\alpha+\beta} \ln q + \ln K$$
 
 The cost function is linear in the logs of output and input prices — a property exploited in the **translog cost function** used extensively in empirical industrial organization.
 
 **Step 8 — Expansion path derivation:** The expansion path traces cost-minimizing $(z_1, z_2)$ combinations as $q$ varies, holding input prices constant. From the tangency condition:
+
+> **Derivation Walkthrough:**
+> Starting from the tangency condition $\frac{w_1}{w_2} = \frac{\alpha z_2}{\beta z_1}$:
+> 1. Solve for $z_2$ in terms of $z_1$:
+>    $\displaystyle z_2 = \frac{\beta w_1}{\alpha w_2} \cdot z_1$
+> 2. Since $w_1, w_2, \alpha, \beta$ are all constants, this is a linear relationship through the origin
+> 
+> **Intuition:** The expansion path is a ray from the origin -- the optimal input ratio $z_2/z_1$ is constant at $(\beta w_1)/(\alpha w_2)$ for ALL output levels. This is the homothetic property of Cobb-Douglas: the input mix is independent of scale.
 
 $$z_2 = \frac{\beta w_1}{\alpha w_2} \cdot z_1$$
 
@@ -2083,6 +3026,14 @@ Since $w_1, w_2, \alpha, \beta$ are constants, the expansion path is a **straigh
 ### 3.3 Profit Maximization
 
 #### 3.3.1 Profit Function
+
+> **Derivation Walkthrough:**
+> Starting from the definition of profit $\pi = p \cdot y$:
+> 1. The firm chooses a production plan $y \in \mathbb{R}^L$ from the feasible set $Y$
+> 2. Subject only to technological feasibility: $y \in Y$
+> 3. The profit function is the maximum value: $\displaystyle \pi(p) = \max_{y \in Y} p \cdot y$
+> 
+> **Intuition:** Unlike consumer optimization (which has a budget constraint), the firm faces no resource constraint -- only technological constraints. This is why the profit function has no wealth effects, leading to the robust Law of Supply (supply curves always slope upward).
 
 $$\pi(p) = \max_{y \in Y} p \cdot y$$
 
@@ -2097,6 +3048,16 @@ $$\pi(p) = \max_{y \in Y} p \cdot y$$
 
 **Proof of convexity:** For any $p, p'$ and $\alpha \in [0,1]$, let $\bar p = \alpha p + (1-\alpha)p'$:
 
+> **Derivation Walkthrough:**
+> Starting from the definition of convexity: for $p, p'$ and $\alpha \in [0,1]$, let $\bar p = \alpha p + (1-\alpha)p'$:
+> 1. Write $\pi(\bar p) = \bar p \cdot y(\bar p)$ where $y(\bar p)$ is the profit-maximizing supply at $\bar p$
+> 2. Expand: $\pi(\bar p) = \alpha[p \cdot y(\bar p)] + (1-\alpha)[p' \cdot y(\bar p)]$
+> 3. Since $y(\bar p)$ is feasible but not necessarily optimal at $p$ or $p'$:
+>    $p \cdot y(\bar p) \leq \pi(p)$ and $p' \cdot y(\bar p) \leq \pi(p')$
+> 4. Therefore: $\pi(\bar p) \leq \alpha \pi(p) + (1-\alpha)\pi(p')$
+> 
+> **Intuition:** The profit function is convex in prices because the firm benefits more from extreme prices than from a muddled average. Under high output prices, the firm expands; under low input prices, it hires aggressively. A convex combination of price vectors prevents the firm from fully exploiting either favorable scenario.
+
 $$\pi(\bar p) = \bar p \cdot y(\bar p) = \alpha[p \cdot y(\bar p)] + (1-\alpha)[p' \cdot y(\bar p)] \leq \alpha \pi(p) + (1-\alpha)\pi(p')$$
 
 since $p \cdot y(\bar p) \leq \pi(p)$ by definition of $\pi(p)$ as maximum.
@@ -2104,10 +3065,26 @@ since $p \cdot y(\bar p) \leq \pi(p)$ by definition of $\pi(p)$ as maximum.
 > **Munoz-Garcia Insight — Convexity via Support Function (Ch.4, §4.4):**
 > The profit function $\pi(p)$ can be understood as the **support function** of the negative production set $-Y$:
 >
+> **Derivation Walkthrough:**
+> Starting from the definition of the support function of a convex set:
+> 1. The negative production set $-Y = \{-y : y \in Y\}$ is convex (if $Y$ satisfies convexity and free disposal)
+> 2. The support function of $-Y$ is $\displaystyle \mu_{-Y}(p) = \min_{y \in Y} \{ p \cdot (-y) \} = -\max_{y \in Y} \{ p \cdot y \}$
+> 3. But $\max_{y \in Y} \{ p \cdot y \} = \pi(p)$, hence $\mu_{-Y}(p) = \pi(p)$
+> 
+> **Intuition:** The profit function is the support function of $-Y$, which immediately implies it is convex and HD(1) in $p$. This dual characterization lets us recover the production set from the profit function: $Y = \{ y : p \cdot y \leq \pi(p) \text{ for all } p \gg 0 \}$.
+
 > $$\pi(p) = \mu_{-Y}(p) = \min_{y \in Y} \{ p \cdot (-y) \} = \max_{y \in Y} \{ p \cdot y \}$$
 >
 > As a support function of a convex set, $\pi(p)$ is **convex in prices**. This representation yields a dual characterization of the production set:
 >
+> **Derivation Walkthrough:**
+> Starting from the support-function representation of the profit function:
+> 1. For any feasible production plan $y \in Y$, profit at prices $p$ cannot exceed $\pi(p)$: $p \cdot y \leq \pi(p)$
+> 2. Conversely, if a plan $y$ satisfies $p \cdot y \leq \pi(p)$ for ALL positive price vectors $p \gg 0$, then $y$ must be feasible
+> 3. Therefore: $\displaystyle Y = \{ y \in \mathbb{R}^L : p \cdot y \leq \pi(p) \text{ for all } p \gg 0 \}$
+> 
+> **Intuition:** This is the duality between the profit function and the production set -- each completely characterizes the other. The production set can be recovered as the intersection of half-spaces defined by the profit function at every price vector.
+
 > $$Y = \{ y \in \mathbb{R}^L : p \cdot y \leq \pi(p) \text{ for all } p \gg 0 \}$$
 >
 > **Economic intuition for convexity:** The firm benefits more from extreme price vectors than from balanced ones. Consider two price scenarios $p$ (high output price, low input price) and $p'$ (low output price, high input price). Under $p$, the firm produces aggressively; under $p'$, it scales back. A convex combination $\bar p = \alpha p + (1-\alpha)p'$ represents "muddled" prices where the firm cannot fully exploit either favorable scenario. Hence $\pi(\bar p) \leq \alpha\pi(p) + (1-\alpha)\pi(p')$.
@@ -2118,9 +3095,27 @@ since $p \cdot y(\bar p) \leq \pi(p)$ by definition of $\pi(p)$ as maximum.
 
 #### 3.3.2 Hotelling's Lemma — Envelope Theorem Proof
 
+> **Derivation Walkthrough:**
+> Starting from the profit function identity $\pi(p) = p \cdot y(p)$:
+> 1. Differentiate w.r.t. $p_k$ using the product rule:
+>    $\displaystyle \frac{\partial \pi(p)}{\partial p_k} = y_k(p) + \sum_j p_j \frac{\partial y_j}{\partial p_k}$
+> 2. At the optimum, the Envelope Theorem applies: the summation term $\sum_j p_j (\partial y_j/\partial p_k) = 0$ because $y(p)$ was chosen to maximize $p \cdot y$
+> 3. Hence: $\displaystyle \frac{\partial \pi(p)}{\partial p_k} = y_k(p)$
+> 
+> **Intuition:** A \$1 increase in the price of output $k$ raises profit by exactly $y_k$ -- the amount of output $k$ the firm produces. Any adjustment to the production plan has only a second-order effect on profit (envelope condition).
+
 $$\pi(p) = p \cdot y(p)$$
 
 Apply the envelope theorem:
+
+> **Derivation Walkthrough:**
+> Applying the envelope theorem directly to $\pi(p) = \max_{y \in Y} p \cdot y$:
+> 1. At the optimum, fix the supply vector at $y = y(p)$
+> 2. Differentiate the maximand w.r.t. $p_k$ while holding $y$ constant:
+>    $\displaystyle \frac{\partial \pi(p)}{\partial p_k} = \left. \frac{\partial}{\partial p_k} (p \cdot y) \right|_{y = y(p)} = y_k(p)$
+> 3. The envelope theorem guarantees that ignoring the endogenous response of $y(p)$ yields the correct derivative
+> 
+> **Intuition:** The envelope theorem simplifies derivative calculations: we differentiate the objective (not the value function) while holding the choice variables fixed at their optimal values. This eliminates the need to solve for $\partial y_j/\partial p_k$.
 
 $$\frac{\partial \pi(p)}{\partial p_k} = \left. \frac{\partial}{\partial p_k} (p \cdot y) \right|_{y = y(p)} = y_k(p)$$
 
@@ -2129,6 +3124,15 @@ $$\frac{\partial \pi(p)}{\partial p_k} = \left. \frac{\partial}{\partial p_k} (p
 > **Munoz-Garcia Insight — Formal Hotelling's Lemma and Supply Properties (Ch.4, §4.4):**
 > **Proof via duality theorem:** Hotelling's lemma is an immediate application of the duality theorem from consumer theory. Since $\pi(p) = \max_{y \in Y} p \cdot y$ is the support function of $Y$, by the duality theorem, if the supply correspondence $y(p)$ is single-valued, then $\pi(p)$ is differentiable at $p$ and:
 >
+> **Derivation Walkthrough:**
+> Starting from the profit function as support function $\pi(p) = \max_{y \in Y} p \cdot y$:
+> 1. By the duality theorem for convex sets, if the supply correspondence $y(p)$ is single-valued, $\pi(p)$ is differentiable at $p$ and:
+>    $\nabla_p \pi(p) = y(p)$
+> 2. Component-wise: $\displaystyle \frac{\partial \pi(p)}{\partial p_k} = y_k(p)$
+> 3. The Hessian $D^2\pi(p) = Dy(p)$ is symmetric positive semidefinite (since $\pi$ is convex), giving the Law of Supply
+> 
+> **Intuition:** The duality theorem provides a one-line proof of Hotelling's lemma -- it follows directly from the profit function being a support function. The PSD property of the Hessian implies $\partial y_k/\partial p_k \geq 0$ (supply slopes upward) and cross-price symmetry $\partial y_k/\partial p_l = \partial y_l/\partial p_k$.
+
 > $$\nabla_p \pi(p) = y(p) \quad \text{or equivalently} \quad \frac{\partial \pi(p)}{\partial p_k} = y_k(p)$$
 >
 > **Matrix properties of supply:** If $y(p)$ is differentiable at $p$, then the derivative matrix $D y(p) = D^2 \pi(p)$ (the Hessian of the profit function) has three key properties:
@@ -2147,11 +3151,29 @@ $$\frac{\partial \pi(p)}{\partial p_k} = \left. \frac{\partial}{\partial p_k} (p
 
 **Proof:** Total differentiate $F(q_x, q_y, z) = 0$ along frontier:
 
+> **Derivation Walkthrough:**
+> Starting from the transformation frontier $F(q_x, q_y, z) = 0$:
+> 1. Total differentiate along the frontier: $\displaystyle \frac{\partial F}{\partial q_x} dq_x + \frac{\partial F}{\partial q_y} dq_y = 0$
+> 2. Solve for $dq_y/dq_x$: $\displaystyle -\frac{dq_y}{dq_x} = \frac{\partial F/\partial q_x}{\partial F/\partial q_y}$
+> 3. By definition, $MRPT_{x,y} \equiv -\frac{dq_y}{dq_x}$ along $F=0$
+> 4. Therefore: $\displaystyle MRPT_{x,y} = \frac{\partial F/\partial q_x}{\partial F/\partial q_y}$
+> 
+> **Intuition:** The MRPT measures the rate at which one output must be reduced to increase another output, given fixed inputs -- the "opportunity cost" of producing good $x$ in terms of good $y$.
+
 $$\frac{\partial F}{\partial q_x} dq_x + \frac{\partial F}{\partial q_y} dq_y = 0 \;\Rightarrow\; MRPT_{x,y} = -\frac{dq_y}{dq_x} = \frac{\partial F/\partial q_x}{\partial F/\partial q_y}$$
 
 Profit function: $\pi = p_x q_x + p_y q_y - c(q_x, q_y)$. FOCs: $p_x = MC_x$, $p_y = MC_y$.
 
 Tangency condition of PMP: $MRPT_{x,y} = p_x/p_y$. Substituting:
+
+> **Derivation Walkthrough:**
+> Starting from the profit function $\pi = p_x q_x + p_y q_y - c(q_x, q_y)$:
+> 1. FOCs: $\partial \pi/\partial q_x = p_x - MC_x = 0 \Rightarrow p_x = MC_x$
+>    Similarly $p_y = MC_y$
+> 2. The profit-maximizing tangency condition along the PPF requires $MRPT_{x,y} = p_x/p_y$
+> 3. Substituting the FOCs: $\displaystyle MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$
+> 
+> **Intuition:** In competitive equilibrium, the rate at which the economy transforms good $x$ into good $y$ (MRPT) equals the price ratio, which in turn equals the marginal cost ratio. This is the product-mix efficiency condition.
 
 $$MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 
@@ -2161,16 +3183,58 @@ $$MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 > In the two-consumer, two-firm, two-factor (2×2×2) general equilibrium model, firm behavior feeds into the equilibrium through three channels:
 >
 > **1. First-order conditions from PMP:** Each firm $j$ hires capital and labor until the value of marginal product equals the factor price:
+> **Derivation Walkthrough:**
+> Starting from the profit maximization problem for firm 1: $\max \pi_1 = p_1 F_1(K_1, L_1) - rK_1 - wL_1$:
+> 1. FOC w.r.t. $K_1$: $\displaystyle p_1 \frac{\partial F_1}{\partial K_1} - r = 0 \Rightarrow p_1 F_{1K} = r$
+> 2. FOC w.r.t. $L_1$: $\displaystyle p_1 \frac{\partial F_1}{\partial L_1} - w = 0 \Rightarrow p_1 F_{1L} = w$
+> 
+> **Intuition:** The firm hires each factor until the value of its marginal product ($p_i \cdot MP_i$) equals the factor price ($r$ for capital, $w$ for labor).
+
 > $$p_1 F_{1K} = r, \quad p_1 F_{1L} = w \quad \text{(firm 1 producing good 1)}$$
+> **Derivation Walkthrough:**
+> By the same logic for firm 2: $\max \pi_2 = p_2 F_2(K_2, L_2) - rK_2 - wL_2$:
+> 1. FOC w.r.t. $K_2$: $p_2 F_{2K} = r$
+> 2. FOC w.r.t. $L_2$: $p_2 F_{2L} = w$
+> 
+> **Intuition:** Both firms face the same factor prices ($r, w$) in competitive factor markets. Hence the value of marginal product of each factor is equalized across firms -- a necessary condition for production efficiency.
+
 > $$p_2 F_{2K} = r, \quad p_2 F_{2L} = w \quad \text{(firm 2 producing good 2)}$$
 >
 > **2. Factor market equilibrium:** Combining firms' FOCs yields the equality of MRTS across firms:
+> **Derivation Walkthrough:**
+> Starting from the FOCs for both firms:
+> 1. For firm 1: $p_1 F_{1K} = r$ and $p_1 F_{1L} = w$ $\rightarrow$ $\displaystyle \frac{w}{r} = \frac{F_{1L}}{F_{1K}}$
+> 2. For firm 2: $p_2 F_{2K} = r$ and $p_2 F_{2L} = w$ $\rightarrow$ $\displaystyle \frac{w}{r} = \frac{F_{2L}}{F_{2K}}$
+> 3. The $(w/r)$ ratio is common, hence: $\displaystyle \frac{F_{1L}}{F_{1K}} = \frac{F_{2L}}{F_{2K}}$
+> 4. But $F_{iL}/F_{iK} \equiv MRTS^i_{L,K}$, therefore: $\displaystyle MRTS^1_{L,K} = \frac{w}{r} = MRTS^2_{L,K}$
+> 
+> **Intuition:** In equilibrium, both firms face the same factor prices, so their MRTS are equalized. This is the production efficiency condition -- factors cannot be reallocated to increase total output.
+
 > $$MRTS^1_{L,K} = \frac{w}{r} = MRTS^2_{L,K}$$
 > This is the **efficient factor allocation** condition — factors cannot be reallocated between firms to increase total output.
 >
 > **3. Product-mix efficiency:** Dividing the FOCs for each firm yields:
+> **Derivation Walkthrough:**
+> Starting from each firm's FOCs:
+> 1. For firm 1: $p_1 F_{1K} = r$ and $p_1 F_{1L} = w$
+> 2. For firm 2: $p_2 F_{2K} = r$ and $p_2 F_{2L} = w$
+> 3. Dividing firm 2's FOCs by firm 1's:
+>    $\displaystyle \frac{p_2}{p_1} \cdot \frac{F_{2K}}{F_{1K}} = 1 \quad\Rightarrow\quad \frac{p_1}{p_2} = \frac{F_{2K}}{F_{1K}}$
+>    $\displaystyle \frac{p_2}{p_1} \cdot \frac{F_{2L}}{F_{1L}} = 1 \quad\Rightarrow\quad \frac{p_1}{p_2} = \frac{F_{2L}}{F_{1L}}$
+> 4. Therefore: $\displaystyle \frac{p_1}{p_2} = \frac{F_{2K}}{F_{1K}} = \frac{F_{2L}}{F_{1L}} \equiv MRT_{1,2}$
+> 
+> **Intuition:** The Marginal Rate of Transformation (MRT) equals the ratio of marginal products of each factor across firms. Together with $MRS = p_1/p_2$ from consumer optimization, we get $MRS = MRT$ -- the condition for Pareto optimality.
+
 > $$\frac{p_1}{p_2} = \frac{F_{2K}}{F_{1K}} = \frac{F_{2L}}{F_{1L}} \equiv MRT_{1,2}$$
 > Together with consumer optimization $(MRS = p_1/p_2)$, we obtain:
+> **Derivation Walkthrough:**
+> Combining the three efficiency conditions:
+> 1. Consumption efficiency: $MRS^i_{1,2} = p_1/p_2$ from consumer utility maximization (both consumers face same prices)
+> 2. Product-mix efficiency: $MRT_{1,2} = p_1/p_2$ from producer profit maximization
+> 3. Hence: $\displaystyle MRS^i_{1,2} = MRT_{1,2} = \frac{p_1}{p_2}$
+> 
+> **Intuition:** This chain of equalities is the First Welfare Theorem with production -- a competitive equilibrium achieves Pareto optimality. The rate at which consumers are willing to trade goods (MRS) equals the rate at which the economy can transform one good into another (MRT).
+
 > $$MRS^i_{1,2} = MRT_{1,2} = \frac{p_1}{p_2}$$
 > This chain — **$MRS = MRT = p_1/p_2$** — is the fundamental efficiency condition for Pareto optimality in a production economy (product-mix efficiency).
 >
@@ -2189,9 +3253,26 @@ $$MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 
 See §3.1.1 for all definitions. Key formula:
 
+> **Derivation Walkthrough:**
+> Starting from the transformation function $F(y)$:
+> 1. $MRPT_{k,l}(y)$ measures the rate at which output $l$ must be reduced to increase output $k$
+> 2. From total differentiation of $F(y)=0$: $\displaystyle \frac{dy_l}{dy_k} = -\frac{\partial F/\partial y_k}{\partial F/\partial y_l}$
+> 3. By definition $MRPT_{k,l} = -\frac{dy_l}{dy_k} = \frac{\partial F/\partial y_k}{\partial F/\partial y_l}$
+> 4. From profit maximization $p_k = MC_k$ and $p_l = MC_l$, with tangency $MRPT = p_k/p_l$
+> 5. Therefore: $\displaystyle MRPT_{k,l} = \frac{MC_k}{MC_l}$
+> 
+> **Intuition:** The MRPT equals the ratio of marginal costs -- the opportunity cost of producing one more unit of good $k$ is the marginal cost of $k$ relative to $l$.
+
 $$MRPT_{k,l}(y) = \frac{\partial F(y)/\partial y_k}{\partial F(y)/\partial y_l} = -\frac{dy_l}{dy_k} = \frac{MC_k}{MC_l}$$
 
 **Derivation of MRPT = MC ratio:** Along $F(y)=0$, total differentiate: $dF = (\partial F/\partial y_k)dy_k + (\partial F/\partial y_l)dy_l = 0$.
+
+> **Derivation Walkthrough:**
+> Starting from the transformation frontier $F(q_x, q_y, z) = 0$:
+> 1. Total differentiate holding $z$ fixed: $dF = (\partial F/\partial q_k)dq_k + (\partial F/\partial q_l)dq_l = 0$
+> 2. Rearranged: $\displaystyle \frac{dq_l}{dq_k} = -\frac{\partial F/\partial q_k}{\partial F/\partial q_l} \equiv -MRPT_{k,l}$
+> 
+> **Intuition:** This is the same derivation as in Section 3.3.3, repeated here for completeness in the solved problem. The sign convention ensures MRPT is positive (increasing $q_k$ requires decreasing $q_l$ given fixed inputs).
 
 $$\frac{dy_l}{dy_k} = -\frac{\partial F/\partial y_k}{\partial F/\partial y_l} \equiv -MRPT_{k,l}$$
 
@@ -2225,15 +3306,38 @@ See §3.1.2 table above. Key exam nuances:
 
 **(iii) Cobb-Douglas $Q = AK^\alpha L^\beta$:** 
 
+> **Derivation Walkthrough:**
+> Starting from the Cobb-Douglas production function $Q = AK^\alpha L^\beta$:
+> 1. $MP_L = \partial Q/\partial L = \beta A K^\alpha L^{\beta-1} = \beta Q/L$
+> 2. $MP_K = \partial Q/\partial K = \alpha A K^{\alpha-1} L^\beta = \alpha Q/K$
+> 3. Take the ratio: $\displaystyle MRTS = \frac{MP_L}{MP_K} = \frac{\beta Q/L}{\alpha Q/K} = \frac{\beta}{\alpha} \cdot \frac{K}{L}$
+> 
+> **Intuition:** The CD-MRTS is proportional to the capital-labor ratio $(K/L)$. The constant of proportionality $\beta/\alpha$ captures the relative importance of each input in production.
+
 $$MRTS = \frac{MP_L}{MP_K} = \frac{\beta}{\alpha} \cdot \frac{K}{L}$$
 
 Taking logs: $\ln(MRTS) = \ln(\beta/\alpha) + \ln(K/L)$ ⇒ $\ln(K/L) = \ln(MRTS) - \ln(\beta/\alpha)$
+
+> **Derivation Walkthrough:**
+> Continuing from $MRTS = (\beta/\alpha)(K/L)$:
+> 1. Take logs: $\ln(MRTS) = \ln(\beta/\alpha) + \ln(K/L)$
+> 2. Differentiate: $\displaystyle \sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = 1$
+> 3. Therefore $\sigma = 1$
+> 
+> **Intuition:** ALL Cobb-Douglas production functions have unitary elasticity of substitution ($\sigma = 1$), regardless of the exponent values $\alpha$ and $\beta$. This is because the MRTS is exactly proportional to $K/L$.
 
 $$\sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = 1$$
 
 All Cobb-Douglas functions have $\sigma = 1$ regardless of $\alpha, \beta$.
 
 **(iv) CES: $q = [\alpha K^\rho + (1-\alpha)L^\rho]^{\gamma/\rho}$:**
+
+> **Derivation Walkthrough:**
+> Starting from the CES production function $q = [\alpha K^\rho + (1-\alpha)L^\rho]^{\gamma/\rho}$:
+> 1. The elasticity of substitution was derived earlier as $\sigma = 1/(1-\rho)$ (see CES derivation in Section 3.1.4)
+> 2. This is a constant, independent of $K$, $L$, or output level $q$
+> 
+> **Intuition:** The CES parameter $\rho$ determines substitutability. When $\rho \to 0$, $\sigma \to 1$ (Cobb-Douglas); $\rho = 1$ gives $\sigma = \infty$ (linear); $\rho \to -\infty$ gives $\sigma \to 0$ (Leontief).
 
 $$\sigma = \frac{1}{1-\rho}$$
 
@@ -2273,15 +3377,58 @@ Let $f(K,L)$ be the production function. Multiply all inputs by $t > 0$:
 
 **EoS for function (c) — detailed derivation:**
 
+> **Derivation Walkthrough:**
+> Starting from the production function $q = \frac{4KL}{K+L}$:
+> 1. This is a CRS production function known as the "CES with $\sigma = 1/2$"
+> 2. To find $\sigma$, we first compute the marginal products, then the MRTS, then the log-derivative
+> 3. The function is symmetric in $K$ and $L$ -- useful for checking derivations
+> 
+> **Intuition:** This is a common exam production function because it yields a clean $\sigma = 1/2$ and demonstrates the step-by-step EoS derivation process.
+
 $$q = \frac{4KL}{K+L}$$
+
+> **Derivation Walkthrough:**
+> Starting from $q = 4KL/(K+L)$:
+> 1. Apply the quotient rule: $\partial q/\partial L = \frac{4K(K+L) - 4KL(1)}{(K+L)^2}$
+> 2. Simplify numerator: $4K(K+L) - 4KL = 4K^2 + 4KL - 4KL = 4K^2$
+> 3. Therefore: $\displaystyle MP_L = \frac{4K^2}{(K+L)^2}$
+> 
+> **Intuition:** By symmetry, $MP_K$ will have the same form with $K$ and $L$ swapped. The marginal products are always positive, and each is increasing in the OTHER input (complementarity).
 
 $$MP_L = \frac{\partial q}{\partial L} = \frac{4K(K+L) - 4KL}{(K+L)^2} = \frac{4K^2}{(K+L)^2}$$
 
+> **Derivation Walkthrough:**
+> By symmetry with $MP_L$:
+> 1. $\partial q/\partial K = \frac{4L(K+L) - 4KL(1)}{(K+L)^2}$
+> 2. Simplify numerator: $4L(K+L) - 4KL = 4L^2$
+> 3. Therefore: $\displaystyle MP_K = \frac{4L^2}{(K+L)^2}$
+> 
+> **Intuition:** $MP_K$ depends positively on $L$, and $MP_L$ depends positively on $K$ -- reflecting the factor complementarity inherent in this production function.
+
 $$MP_K = \frac{\partial q}{\partial K} = \frac{4L(K+L) - 4KL}{(K+L)^2} = \frac{4L^2}{(K+L)^2}$$
+
+> **Derivation Walkthrough:**
+> Take the ratio of the two marginal products:
+> 1. $\displaystyle MRTS = \frac{MP_L}{MP_K} = \frac{4K^2/(K+L)^2}{4L^2/(K+L)^2} = \frac{K^2}{L^2} = \left(\frac{K}{L}\right)^2$
+> 
+> **Intuition:** The MRTS is the square of the capital-labor ratio. For this function, a doubling of $K/L$ quadruples the MRTS -- substitution becomes harder as the input ratio becomes more extreme, consistent with $\sigma = 1/2 < 1$.
 
 $$MRTS = \frac{MP_L}{MP_K} = \frac{K^2}{L^2} = \left(\frac{K}{L}\right)^2$$
 
+> **Derivation Walkthrough:**
+> From $MRTS = (K/L)^2$:
+> 1. Take natural logs: $\ln(MRTS) = 2 \ln(K/L)$
+> 2. Solve for $\ln(K/L)$: $\displaystyle \ln(K/L) = \frac{1}{2} \ln(MRTS)$
+> 
+> **Intuition:** The log-linear relationship reveals the elasticity directly -- the coefficient relating $\ln(K/L)$ to $\ln(MRTS)$ is $1/2$, which will be the elasticity of substitution.
+
 $$\ln(MRTS) = 2\ln\left(\frac{K}{L}\right) \;\Rightarrow\; \ln\left(\frac{K}{L}\right) = \frac12 \ln(MRTS)$$
+
+> **Derivation Walkthrough:**
+> Continuing from $\ln(K/L) = \frac12 \ln(MRTS)$:
+> 1. Differentiate: $\displaystyle \sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac12$
+> 
+> **Intuition:** $\sigma = 1/2$ means that a 1% increase in MRTS leads to only a 0.5% increase in $K/L$. Inputs are less substitutable than in Cobb-Douglas ($\sigma = 1$).
 
 $$\sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac12$$
 
@@ -2300,7 +3447,23 @@ $$\sigma = \frac{\partial \ln(K/L)}{\partial \ln(MRTS)} = \frac12$$
 
 **(c) $q = \frac{4KL}{K+L} = \frac{256L}{64+L}$:**
 
+> **Derivation Walkthrough:**
+> Starting from $q = 256L/(64+L)$ with $K=64$ fixed:
+> 1. Multiply both sides: $q(64+L) = 256L$
+> 2. Expand: $64q + qL = 256L$
+> 3. Collect $L$ terms: $64q = 256L - qL = (256-q)L$
+> 4. Solve for $L$: $L = 64q/(256-q)$
+> 
+> **Intuition:** As $q$ approaches 256, the denominator goes to zero and labor becomes infinite -- this is the short-run capacity constraint with fixed capital. Each additional unit of output requires increasingly more labor.
+
 $$q(64+L) = 256L \;\Rightarrow\; 64q + qL = 256L \;\Rightarrow\; 64q = (256 - q)L$$
+
+> **Derivation Walkthrough:**
+> Continuing from $L = 64q/(256-q)$:
+> 1. Short-run total cost: $SRTC = wL + r\bar K$
+> 2. Substitute $L$: $\displaystyle SRTC = w\frac{64q}{256-q} + 64r$
+> 
+> **Intuition:** The short-run cost function consists of variable cost ($w \cdot L(q, \bar K)$) plus fixed cost ($r\bar K$). With fixed capital, labor must increase more than proportionally to increase output, leading to rising marginal cost as output approaches capacity.
 
 $$L = \frac{64q}{256 - q}, \quad SRTC = w\frac{64q}{256 - q} + 64r$$
 
@@ -2358,7 +3521,23 @@ Substitute: $100 = \frac{4K(2K)}{K+2K} = \frac{8K^2}{3K} = \frac{8}{3}K \Rightar
 
 **(a) $q = K^{1/2}L^{1/2}$:** From tangency $K/L = w/r \Rightarrow K = (w/r)L$. Substitute:
 
+> **Derivation Walkthrough:**
+> For $q = K^{1/2}L^{1/2}$ with tangency $K/L = w/r$:
+> 1. From tangency: $K = (w/r)L$
+> 2. Substitute into $q = ((w/r)L \cdot L)^{1/2} = (w/r)^{1/2} L$
+> 3. Solve for $L$: $L^* = (r/w)^{1/2} q$
+> 4. Then $K^* = (w/r)^{1/2} q$ from the tangency condition
+> 
+> **Intuition:** For Cobb-Douglas with CRS (exponents sum to 1), the conditional factor demands are linear in $q$. The input ratio $K/L = w/r$ depends only on relative input prices.
+
 $$q = ((w/r)L \cdot L)^{1/2} = (w/r)^{1/2} L \;\Rightarrow\; L^* = (r/w)^{1/2} q, \quad K^* = (w/r)^{1/2} q$$
+
+> **Derivation Walkthrough:**
+> Substitute the conditional factor demands into total cost:
+> 1. $LRTC = wL^* + rK^* = w(r/w)^{1/2} q + r(w/r)^{1/2} q$
+> 2. Factor $q$: $= q[\sqrt{wr} + \sqrt{wr}] = 2\sqrt{wr} \cdot q$
+> 
+> **Intuition:** LRTC is proportional to output $q$ with constant $MC = 2\sqrt{wr}$. Since the production function is CRS (exponents sum to 1), the cost function is linear in output.
 
 $$LRTC = wL + rK = w(r/w)^{1/2} q + r(w/r)^{1/2} q = 2\sqrt{wr} \cdot q$$
 
@@ -2368,13 +3547,42 @@ If $w/r = 1/2$: any mix works.
 
 **(c) $q = 4KL/(K+L)$:** From tangency $K/L = \sqrt{w/r}$:
 
+> **Derivation Walkthrough:**
+> For $q = 4KL/(K+L)$ with tangency $K/L = \sqrt{w/r}$:
+> 1. From tangency: $K = \sqrt{w/r} \cdot L$ and $L = \sqrt{r/w} \cdot K$
+> 2. Substitute into the production function and solve for each input:
+>    $q = \frac{4KL}{K+L} \Rightarrow$ solving yields $L^* = \frac{q}{4}\left(1 + \sqrt{r/w}\right)^2$ and $K^* = \frac{q}{4}\left(1 + \sqrt{w/r}\right)^2$
+> 
+> **Intuition:** These conditional factor demands are linear in $q$ (the function is CRS). The expressions are symmetric in $(w,r)$ -- swapping $w$ and $r$ swaps the $K$ and $L$ formulas.
+
 $$L^* = \frac{q}{4}\left(1 + \sqrt{\frac{r}{w}}\right)^2, \quad K^* = \frac{q}{4}\left(1 + \sqrt{\frac{w}{r}}\right)^2$$
+
+> **Derivation Walkthrough:**
+> Substitute the conditional factor demands into the cost function:
+> 1. $LRTC = wL^* + rK^* = \frac{q}{4}\left[w\left(1+\sqrt{r/w}\right)^2 + r\left(1+\sqrt{w/r}\right)^2\right]$
+> 
+> **Intuition:** This simplifies to a linear function of $q$. While the expression looks complex, it reflects the underlying CRS technology -- total cost is proportional to output.
 
 $$LRTC = wL^* + rK^* = \frac{q}{4}\left[w\left(1+\sqrt{\frac{r}{w}}\right)^2 + r\left(1+\sqrt{\frac{w}{r}}\right)^2\right]$$
 
 **(d) $q = KL$:** From $K/L = w/r \Rightarrow L = (r/w)K$:
 
+> **Derivation Walkthrough:**
+> For $q = KL$ with tangency $K/L = w/r$:
+> 1. From tangency: $L = (r/w)K$
+> 2. Substitute into $q = K \cdot (r/w)K = (r/w)K^2$
+> 3. Solve: $K^* = \sqrt{(w/r)q}$ and $L^* = \sqrt{(r/w)q}$
+> 
+> **Intuition:** With IRS (sum of exponents = 2), conditional factor demands are concave in $q$ -- doubling output requires less than double the inputs.
+
 $$q = K \cdot (r/w)K = (r/w)K^2 \;\Rightarrow\; K^* = \sqrt{\frac{w}{r} q}, \quad L^* = \sqrt{\frac{r}{w} q}$$
+
+> **Derivation Walkthrough:**
+> Substitute the conditional factor demands:
+> 1. $LRTC = w \cdot \sqrt{(r/w)q} + r \cdot \sqrt{(w/r)q}$
+> 2. Simplify: $= \sqrt{wr q} + \sqrt{wr q} = 2\sqrt{wr q}$
+> 
+> **Intuition:** $LRTC$ is concave in $q$ (since $q$ enters under a square root), reflecting IRS. This is the key distinguishing feature from the CRS case where cost was linear in $q$.
 
 $$LRTC = w\sqrt{\frac{r}{w} q} + r\sqrt{\frac{w}{r} q} = 2\sqrt{wr q}$$
 
@@ -2391,6 +3599,14 @@ $$LRTC = w\sqrt{\frac{r}{w} q} + r\sqrt{\frac{w}{r} q} = 2\sqrt{wr q}$$
 
 **(i) Production function:**
 
+> **Derivation Walkthrough:**
+> For Leontief (fixed proportions) production, inputs must be used in fixed ratios:
+> 1. Each sausage requires 3 oz pork ($P$) and 2 oz veal ($V$) to produce 5 oz sausage ($Q$)
+> 2. The production function is $Q = \min\{P/3, V/2\}$ -- output is limited by the scarcer input
+> 3. At the optimum, the firm uses inputs in the exact proportion: $P/3 = V/2 = Q$
+> 
+> **Intuition:** Leontief production implies zero substitutability ($\sigma = 0$). To produce $Q$ sausages, the firm MUST use $3Q$ oz pork and $2Q$ oz veal -- no possibility of trading one input for the other.
+
 $$Q = \min\left\{\frac{P}{3}, \frac{V}{2}\right\}$$
 
 **(ii) Conditional factor demand for pork:**
@@ -2398,6 +3614,14 @@ $$Q = \min\left\{\frac{P}{3}, \frac{V}{2}\right\}$$
 At optimum: $P/3 = V/2 = Q \Rightarrow P^* = 3Q$, $V^* = 2Q$.
 
 **(iii) Cost function:**
+
+> **Derivation Walkthrough:**
+> From the optimal input ratios $P^* = 3Q$ and $V^* = 2Q$:
+> 1. Total cost: $c(Q) = p_P \cdot P^* + p_V \cdot V^*$
+> 2. Substitute prices ($p_P = 0.30$, $p_V = 0.80$): $c(Q) = 0.30(3Q) + 0.80(2Q)$
+> 3. $= 0.90Q + 1.60Q = 2.50Q$
+> 
+> **Intuition:** Cost is linear in $Q$ with constant $MC = 2.50$. The Leontief technology with constant returns yields constant marginal cost -- each additional sausage costs exactly \$2.50 regardless of scale.
 
 $$c(Q) = p_P \cdot 3Q + p_V \cdot 2Q = 0.30(3Q) + 0.80(2Q) = 0.90Q + 1.60Q = 2.50Q$$
 
@@ -2407,7 +3631,22 @@ $MC = 2.50$ (constant — CRS technology).
 
 Method 1 — Direct $\pi(P)$ maximization:
 
+> **Derivation Walkthrough:**
+> Starting from the demand function $Q = 200P^{-6}$ and cost function $c(Q) = 2.50Q$:
+> 1. Profit: $\pi(P) = P \cdot Q(P) - c(Q(P)) = P \cdot 200P^{-6} - 2.50(200P^{-6})$
+> 2. Simplify: $= 200P^{-5} - 500P^{-6}$
+> 
+> **Intuition:** Profit is expressed as a function of price $P$ by substituting the demand function into both revenue and cost. This allows direct maximization by setting $d\pi/dP = 0$.
+
 $$\pi(P) = P \cdot 200P^{-6} - 2.50(200P^{-6}) = 200P^{-5} - 500P^{-6}$$
+
+> **Derivation Walkthrough:**
+> Maximizing $\pi(P) = 200P^{-5} - 500P^{-6}$:
+> 1. Differentiate: $\displaystyle \frac{d\pi}{dP} = 200(-5)P^{-6} - 500(-6)P^{-7} = -1000P^{-6} + 3000P^{-7}$
+> 2. Set equal to zero: $-1000P^{-6} + 3000P^{-7} = 0$
+> 3. Multiply by $P^7$: $-1000P + 3000 = 0 \Rightarrow P = 3$
+> 
+> **Intuition:** The first-order condition yields a unique profit-maximizing price $P = 3$. This is the standard $MR = MC$ condition expressed in price-space.
 
 $$\frac{d\pi}{dP} = -1000P^{-6} + 3000P^{-7} = 0 \;\Rightarrow\; 3000 = 1000P \;\Rightarrow\; P = 3$$
 
@@ -2452,13 +3691,36 @@ Tangency: $w/r = K/L \Rightarrow K = (w/r)L$.
 
 Substitute: $Q = ((w/r)L \cdot L)^{1/3} = (w/r)^{1/3} L^{2/3}$
 
+> **Derivation Walkthrough:**
+> From the tangency condition $K/L = w/r$ and production constraint $Q = (KL)^{1/3}$:
+> 1. From tangency: $K = (w/r)L$
+> 2. Substitute: $Q = ((w/r)L \cdot L)^{1/3} = (w/r)^{1/3} L^{2/3}$
+> 3. Solve: $L^{2/3} = Q \cdot (r/w)^{1/3} \Rightarrow L = Q^{3/2} (r/w)^{1/2}$
+> 4. By symmetry: $\displaystyle L(w,r,Q) = (r/w)^{1/2} Q^{3/2}$, $\displaystyle K(w,r,Q) = (w/r)^{1/2} Q^{3/2}$
+> 
+> **Intuition:** With DRS (sum of exponents $= 2/3 < 1$), conditional factor demands are convex in $q$ -- each additional unit of output requires increasingly more inputs, unlike the CRS case. The function is homothetic: $K/L$ depends only on relative prices.
+
 $$L(w,r,Q) = (r/w)^{1/2} Q^{3/2}, \quad K(w,r,Q) = (w/r)^{1/2} Q^{3/2}$$
 
 **(ix) LR cost function:**
 
+> **Derivation Walkthrough:**
+> Substitute the conditional factor demands into $LRTC = wL + rK$:
+> 1. $LRTC = w \cdot (r/w)^{1/2} Q^{3/2} + r \cdot (w/r)^{1/2} Q^{3/2}$
+> 2. $= \sqrt{wr} \cdot Q^{3/2} + \sqrt{wr} \cdot Q^{3/2} = 2\sqrt{wr} \cdot Q^{3/2}$
+> 
+> **Intuition:** $LRTC$ is proportional to $Q^{3/2}$ -- convex in output. This is the signature of DRS: each additional unit of output costs more to produce. The $2\sqrt{wr}$ term captures the effect of input prices.
+
 $$LRTC = wL + rK = 2\sqrt{wr} \cdot Q^{3/2}$$
 
 **Verify Shephard's Lemma:**
+
+> **Derivation Walkthrough:**
+> Differentiate $LRTC = 2\sqrt{wr} \cdot Q^{3/2}$ w.r.t. $w$:
+> 1. $\displaystyle \frac{\partial LRTC}{\partial w} = 2 \cdot \frac{1}{2} \sqrt{r/w} \cdot Q^{3/2} = \sqrt{r/w} \cdot Q^{3/2}$
+> 2. This equals $L(w,r,Q) = (r/w)^{1/2} Q^{3/2}$ $\checkmark$
+> 
+> **Intuition:** Shephard's lemma is verified. The derivative of the cost function w.r.t. the wage rate recovers the conditional labor demand. This cross-check confirms internal consistency.
 
 $$\frac{\partial LRTC}{\partial w} = \sqrt{r/w} \cdot Q^{3/2} = L(w,r,Q) \quad \checkmark$$
 
@@ -2480,6 +3742,15 @@ Upward-sloping due to DRS. HD(0) in $(w,r)$.
 **Reasoning:** Food/beverage production exhibits economies of scale in packaging, serving, and overhead. Fixed costs (labor, rent, equipment) are spread over more output.
 
 **Formal AC-MC relationship:** When $AC$ is declining, $MC < AC$:
+
+> **Derivation Walkthrough:**
+> Starting from the definition of average cost $AC = TC/Q$:
+> 1. Differentiate $AC$ w.r.t. $Q$:
+>    $\displaystyle \frac{dAC}{dQ} = \frac{MC \cdot Q - TC}{Q^2} = \frac{MC - AC}{Q}$
+> 2. Rearrange: $MC - AC = Q \cdot dAC/dQ$
+> 3. Therefore: $\displaystyle MC = AC + Q \cdot \frac{dAC}{dQ}$
+> 
+> **Intuition:** When $AC$ is declining (economies of scale, $dAC/dQ < 0$), $MC < AC$. When $AC$ is rising (diseconomies, $dAC/dQ > 0$), $MC > AC$. At the minimum of $AC$ ($dAC/dQ = 0$), $MC = AC$.
 
 $$MC = AC + Q \cdot dAC/dQ$$
 
@@ -2507,6 +3778,14 @@ Total cost rises 32% for a 100% increase in output — **less than twice**.
 
 **Hotelling's Lemma proof (envelope theorem):**
 
+> **Derivation Walkthrough:**
+> Starting from the profit function $\pi(p) = p \cdot y(p)$:
+> 1. Differentiate w.r.t. $p_k$: $\displaystyle \frac{\partial \pi(p)}{\partial p_k} = y_k(p) + \sum_j p_j \frac{\partial y_j}{\partial p_k}$
+> 2. The envelope theorem applies: at the profit-maximizing $y(p)$, the marginal benefit of adjusting $y_j$ in response to a price change is zero
+> 3. Therefore $\sum_j p_j (\partial y_j/\partial p_k) = 0$ and $\displaystyle \frac{\partial \pi(p)}{\partial p_k} = y_k(p)$
+> 
+> **Intuition:** See the full discussion in Section 3.3.2. This is Hotelling's lemma: the derivative of the profit function w.r.t. an output price gives the supply of that output.
+
 $$\pi(p) = p \cdot y(p) \;\Rightarrow\; \frac{\partial \pi(p)}{\partial p_k} = y_k(p) + \sum_j p_j \frac{\partial y_j}{\partial p_k} = y_k(p)$$
 
 The summation term vanishes by the envelope condition (first-order optimality of $y(p)$).
@@ -2528,9 +3807,25 @@ The summation term vanishes by the envelope condition (first-order optimality of
 
 Along $F(q_x, q_y, z) = 0$: $(\partial F/\partial q_x)dq_x + (\partial F/\partial q_y)dq_y = 0$
 
+> **Derivation Walkthrough:**
+> Starting from the transformation frontier $F(q_x, q_y, z) = 0$:
+> 1. Total differentiate: $(\partial F/\partial q_x)dq_x + (\partial F/\partial q_y)dq_y = 0$
+> 2. Solve for $-\frac{dq_y}{dq_x} = \frac{\partial F/\partial q_x}{\partial F/\partial q_y} \equiv MRPT_{x,y}$
+> 
+> **Intuition:** This is the same core derivation as in Section 3.3.3, repeated in the solved problem context.
+
 $$MRPT_{x,y} = -\frac{dq_y}{dq_x} = \frac{\partial F/\partial q_x}{\partial F/\partial q_y}$$
 
 Profit max FOCs: $p_x = MC_x$, $p_y = MC_y$. Tangency: $MRPT = p_x/p_y$.
+
+> **Derivation Walkthrough:**
+> From profit maximization FOCs and tangency condition:
+> 1. Profit max: $p_x = MC_x$, $p_y = MC_y$
+> 2. Tangency along PPF: $MRPT_{x,y} = p_x/p_y$
+> 3. Substituting: $\displaystyle MRPT_{x,y} = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$
+> 4. GE chain: $MRPT = MC_x/MC_y = p_x/p_y = MRS$ (product-mix efficiency)
+> 
+> **Intuition:** In competitive equilibrium, the technological rate of transformation equals the economic rate (price ratio) equals consumers' marginal rate of substitution.
 
 $$\therefore MRPT = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 
@@ -2556,10 +3851,29 @@ $$\therefore MRPT = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 > - **Supply indeterminacy at the firm level:** If $p < c$, the firm supplies $q = 0$; if $p > c$, the firm would want to supply infinite output; if $p = c$, any output level yields zero profit
 >
 > **Case 2: CRS with fixed costs (nonsunk):** With fixed cost $K > 0$ (e.g., a license fee recoverable upon exit):
+> **Derivation Walkthrough:**
+> Starting from a CRS technology with an additional fixed cost $K$:
+> 1. Variable cost is linear in output: $VC(q) = c \cdot q$ (constant MC from CRS)
+> 2. Total cost: $TC(q) = K + c \cdot q$
+> 3. Average cost: $AC(q) = TC/q = K/q + c$ (declining in $q$, approaching $c$ asymptotically)
+> 4. Marginal cost: $MC(q) = dTC/dq = c$
+> 
+> **Intuition:** Fixed costs make AC decline in output but do not affect MC. The firm must produce enough to spread the fixed cost over many units -- it needs $p \geq AC(q)$ to break even. Since $AC(q) > c$ for all finite $q$, price must exceed marginal cost for the firm to survive.
+
 > $$TC(q) = K + c \cdot q, \quad AC(q) = \frac{K}{q} + c, \quad MC(q) = c$$
 > Average cost declines in $q$ (approaching $c$ asymptotically), while marginal cost is constant. The firm supplies only when $p \geq AC(q)$; since $AC(q) > c$ for all finite $q$, the firm must charge above marginal cost to recover fixed costs.
 >
 > **Aggregate supply with free entry (long run):** Under free entry, firms enter until profits are driven to zero. With CRS and a U-shaped average cost curve (due to a fixed factor or fixed cost in the short run), the LR industry supply is:
+> **Derivation Walkthrough:**
+> Starting from the free-entry long-run equilibrium condition:
+> 1. With free entry, firms enter until economic profits are driven to zero
+> 2. Zero profit condition: $P = AC$
+> 3. Profit-maximizing output: $P = MC$
+> 4. Therefore: $P = MC = AC$, which occurs at the minimum of AC
+> 5. Hence: $\displaystyle P_{LR}^* = \min AC$
+> 
+> **Intuition:** In the long run with free entry and identical firms, price equals minimum average cost. The industry supply curve is horizontal at this price -- firms can supply any quantity at $P = \min AC$ by adjusting the number of firms.
+
 > $$P_{LR}^* = \min AC$$
 > - **Horizontal LR supply:** The industry can supply any quantity at $P = \min AC$ because firms are identical and entry/exit is costless
 > - **Zero profits:** Each firm operates at minimum efficient scale where $P = MC = AC$
@@ -2570,6 +3884,18 @@ $$\therefore MRPT = \frac{p_x}{p_y} = \frac{MC_x}{MC_y}$$
 #### 3.5.2 Tax Incidence & Deadweight Loss
 
 **Incidence formula:**
+
+> **Derivation Walkthrough:**
+> Starting from the competitive equilibrium with a per-unit tax $t$:
+> 1. After tax, the price wedge is $P_b - P_s = t$ where $P_b$ is buyer price and $P_s$ is seller price
+> 2. Market clearing requires $Q_D(P_b) = Q_S(P_s)$
+> 3. Linearizing around the no-tax equilibrium $(P^*, Q^*)$:
+>    $\Delta Q = \varepsilon_D (Q^*/P^*) (P_b - P^*)$ and $\Delta Q = \varepsilon_S (Q^*/P^*) (P^* - P_s)$
+> 4. Using $P_b - P_s = t$ and solving:
+>    $\displaystyle \frac{P_b - P^*}{t} = \frac{\varepsilon_S}{\varepsilon_S - \varepsilon_D}$,
+>    $\displaystyle \frac{P^* - P_s}{t} = \frac{-\varepsilon_D}{\varepsilon_S - \varepsilon_D}$
+> 
+> **Intuition:** Tax incidence depends on relative elasticities. The less elastic side bears more of the tax. If demand is perfectly inelastic ($\varepsilon_D = 0$), consumers bear the entire tax; if supply is perfectly inelastic ($\varepsilon_S = 0$), producers bear it all.
 
 $$\frac{P_b - P^*}{t} = \frac{\varepsilon_S}{\varepsilon_S - \varepsilon_D} \quad \text{(consumer share)}, \qquad
 \frac{P^* - P_s}{t} = \frac{-\varepsilon_D}{\varepsilon_S - \varepsilon_D} \quad \text{(producer share)}$$
@@ -2583,11 +3909,29 @@ $$\frac{P_b - P^*}{t} = \frac{\varepsilon_S}{\varepsilon_S - \varepsilon_D} \qua
 
 **DWL formula:**
 
+> **Derivation Walkthrough:**
+> Starting from the Harberger triangle formula for deadweight loss:
+> 1. DWL is the area of the triangle between the demand and supply curves from $Q^*$ to $Q_t$:
+>    $DWL = \frac12 \times t \times \Delta Q$
+> 2. Using the linearized approximation $\Delta Q = \frac{\varepsilon_S \varepsilon_D}{\varepsilon_S - \varepsilon_D} \cdot \frac{t}{P^*} \cdot Q^*$
+> 3. Substituting: $\displaystyle DWL = \frac12 \cdot \frac{\varepsilon_S \varepsilon_D}{\varepsilon_S - \varepsilon_D} \cdot \frac{t^2}{P^*} \cdot Q^*$
+> 
+> **Intuition:** DWL is quadratic in $t$ -- doubling the tax rate quadruples the deadweight loss. This is the Laffer curve logic: beyond some point, higher tax rates reduce tax revenue more than they increase it because the tax base shrinks rapidly.
+
 $$DWL = \frac12 \times t \times \Delta Q = \frac12 \cdot \frac{\varepsilon_S \varepsilon_D}{\varepsilon_S - \varepsilon_D} \cdot \frac{t^2}{P^*} \cdot Q^*$$
 
 > **Key insight:** DWL is **quadratic in $t$** — doubling the tax quadruples the DWL (Laffer curve logic).
 
 #### 3.5.3 Walras' Law
+
+> **Derivation Walkthrough:**
+> Starting from the definition of aggregate excess demand $Z(p) = \sum_i (x_i(p) - e_i) - \sum_j y_j(p)$:
+> 1. Each consumer satisfies budget constraint: $p \cdot x_i(p) = p \cdot e_i$ (no savings)
+> 2. Each firm's profit is distributed to consumers; Firm's revenue $p \cdot y_j = \pi_j$ distributed as dividends
+> 3. Summing budget constraints across all agents: $p \cdot \sum_i (x_i - e_i) - p \cdot \sum_j y_j = 0$
+> 4. Hence: $\displaystyle p \cdot Z(p) = 0$ for all price vectors $p$
+> 
+> **Intuition:** Walras' Law states that the value of aggregate excess demand is identically zero. This implies that if $L-1$ markets clear, the $L$-th market must also clear -- a crucial result for general equilibrium analysis. It also means only relative prices matter (the numeraire property).
 
 $$p \cdot Z(p) = 0 \quad \text{for all price vectors } p$$
 
@@ -2604,6 +3948,16 @@ $$p \cdot Z(p) = 0 \quad \text{for all price vectors } p$$
 **Given:** 1,000 identical firms, $C_{SR}(q) = 0.5q^2 + 2q + 80$. Market demand: $Q_D = 44,000 - 1000P$.
 
 **(i) SR firm supply:** $MC = q + 2$, $AVC = 0.5q + 2$, min $AVC = 2$ at $q=0$.
+
+> **Derivation Walkthrough:**
+> Starting from $C_{SR}(q) = 0.5q^2 + 2q + 80$:
+> 1. Marginal cost: $MC = dC/dq = q + 2$
+> 2. Average variable cost: $AVC = (0.5q^2 + 2q)/q = 0.5q + 2$
+> 3. Minimum AVC occurs at $q=0$: $\min AVC = 2$
+> 4. The firm's supply curve is $P = MC$ above the shutdown price: $P = q + 2$ for $P \geq 2$
+> 5. Solving: $\displaystyle q(P) = P - 2$ for $P \geq 2$
+> 
+> **Intuition:** The competitive firm's supply curve is its marginal cost curve above the minimum of AVC. Below $\min AVC$, the firm shuts down and supplies zero.
 
 $$q(P) = P - 2 \text{ for } P \geq 2$$
 
@@ -2652,9 +4006,23 @@ $P_s = 2 + 4\sqrt{10} \approx 14.65$, $P_b = 34.65$, $Q = 9,350$, $N \approx 739
 
 **(i) Find $Z_1$ using Walras' Law: $p_1 Z_1 + p_2 Z_2 + p_3 Z_3 = 0$.**
 
+> **Derivation Walkthrough:**
+> Starting from Walras' Law $p_1 Z_1 + p_2 Z_2 + p_3 Z_3 = 0$:
+> 1. Solve for $Z_1$: $Z_1 = -(p_2/p_1)Z_2 - (p_3/p_1)Z_3$
+> 
+> **Intuition:** Given any two excess demand functions, the third is determined by Walras' Law. This is why we can focus on just $L-1$ markets in general equilibrium analysis.
+
 $$Z_1 = -\frac{p_2}{p_1}Z_2 - \frac{p_3}{p_1}Z_3$$
 
 Substituting and simplifying:
+
+> **Derivation Walkthrough:**
+> Substitute the expressions for $Z_2$ and $Z_3$ into the Walras' Law equation:
+> 1. $Z_1 = -\frac{p_2}{p_1}\left(-3 + \frac{p_3}{p_2} + \frac{p_1}{p_2}\right) - \frac{p_3}{p_1}\left(\frac{3p_1}{p_3} + \frac{4p_2}{p_3} - 7\right)$
+> 2. Simplify: $= \frac{3p_2}{p_1} - \frac{p_3}{p_1} - 1 - 3 - \frac{4p_2}{p_1} + \frac{7p_3}{p_1}$
+> 3. Combine terms: $\displaystyle Z_1(p) = -4 + \frac{6p_3 - p_2}{p_1}$
+> 
+> **Intuition:** Walras' Law provides a consistency check. Once $Z_2 = 0$ and $Z_3 = 0$ are solved, $Z_1 = 0$ is automatically satisfied -- confirming that only two of the three excess demand equations are independent.
 
 $$Z_1(p) = -4 + \frac{6p_3 - p_2}{p_1}$$
 
@@ -2673,6 +4041,16 @@ Substitute (1) into (2): $3 + 4r_2 = 7(3r_2 - 1) \Rightarrow 10 = 17r_2 \Rightar
 From (1): $r_3 = 3(10/17) - 1 = 13/17$.
 
 Check $Z_1 = 0$: $-4 + (6\cdot 13/17 - 10/17)/1 = -4 + (78-10)/17 = -4 + 4 = 0$ ✓
+
+> **Derivation Walkthrough:**
+> From solving the simultaneous system $Z_2 = 0$ and $Z_3 = 0$:
+> 1. Let $r_2 = p_2/p_1$, $r_3 = p_3/p_1$ (normalizing $p_1$ as numeraire)
+> 2. From $Z_2 = 0$: $r_3 + 1 = 3r_2$  $\rightarrow$ (1)
+> 3. From $Z_3 = 0$: $3 + 4r_2 = 7r_3$  $\rightarrow$ (2)
+> 4. Substitute (1) into (2): $3 + 4r_2 = 7(3r_2 - 1) \Rightarrow 10 = 17r_2 \Rightarrow r_2 = 10/17$
+> 5. Then $r_3 = 3(10/17) - 1 = 13/17$
+> 
+> **Intuition:** With Walras' Law, setting $Z_2 = 0$ and $Z_3 = 0$ suffices to find all equilibrium price ratios. Only relative prices ($r_2, r_3$) matter -- the absolute price level is indeterminate.
 
 $$\frac{p_2}{p_1} = \frac{10}{17}, \quad \frac{p_3}{p_1} = \frac{13}{17}$$
 
@@ -2722,9 +4100,27 @@ The firm production theory developed in this topic feeds directly into the gener
 
 Individual firm supply curves $q_j(p)$ (derived from $P = MC$ above shutdown) are summed horizontally to obtain industry supply:
 
+> **Derivation Walkthrough:**
+> Starting from individual firm supply curves $q_j(p)$:
+> 1. Each firm chooses $q_j$ to satisfy $P = MC_j$ above its shutdown point
+> 2. Industry supply is the horizontal sum of individual supplies at each price level:
+>    $\displaystyle Q_S(p) = \sum_{j=1}^N q_j(p)$
+> 3. At price $p$, each firm supplies $q_j(p)$; total industry output is the sum
+> 
+> **Intuition:** Horizontal summation means we add quantities at each price (not prices at each quantity). This reflects the fact that all firms are price-takers facing the same market price.
+
 $$Q_S(p) = \sum_{j=1}^N q_j(p)$$
 
 Under free entry with identical firms and CRS, the LR industry supply is horizontal at $P = \min AC$, with the number of firms determined by market demand:
+
+> **Derivation Walkthrough:**
+> Starting from the free-entry LR equilibrium:
+> 1. In LR, $P_{LR}^* = \min AC$ (zero profit) and each firm produces $q^*$ at $\min AC$
+> 2. Market demand at this price is $Q_D(p^*)$
+> 3. With identical firms, the equilibrium number of firms is:
+>    $\displaystyle N^* = \frac{Q_D(p^*)}{q^*(p^*)}$
+> 
+> **Intuition:** The number of firms in LR equilibrium is endogenous -- determined by the market size relative to each firm's minimum efficient scale. This is a central result in industrial organization: entry erodes profits until each firm operates at minimum AC.
 
 $$N^* = \frac{Q_D(p^*)}{q^*(p^*)}$$
 
@@ -2748,6 +4144,14 @@ The chain $MRS = MRT = p_1/p_2$ in competitive equilibrium ensures Pareto optima
 > **Lagrangian:** $\Phi = X + \lambda(C - wL - rK)$
 >
 > **FOCs:**
+> **Derivation Walkthrough:**
+> Starting from the Lagrangian for output maximization: $\Phi = X + \lambda(C - wL - rK)$:
+> 1. $\partial \Phi/\partial L = \partial X/\partial L - \lambda w = 0$ $\rightarrow$ $MP_L = \lambda w$
+> 2. $\partial \Phi/\partial K = \partial X/\partial K - \lambda r = 0$ $\rightarrow$ $MP_K = \lambda r$
+> 3. $\partial \Phi/\partial \lambda = C - wL - rK = 0$ $\rightarrow$ cost constraint binds
+> 
+> **Intuition:** This is the dual of cost minimization -- maximize output subject to a cost budget. The Lagrange multiplier $\lambda$ measures the marginal product of an additional dollar of expenditure. The equilibrium condition $MP_L/w = MP_K/r$ says the firm should equalize the marginal product per dollar spent across all inputs.
+
 > $$\frac{\partial \Phi}{\partial L} = \frac{\partial X}{\partial L} - \lambda w = 0, \quad
 > \frac{\partial \Phi}{\partial K} = \frac{\partial X}{\partial K} - \lambda r = 0, \quad
 > \frac{\partial \Phi}{\partial \lambda} = C - wL - rK = 0$$
@@ -2768,6 +4172,11 @@ The chain $MRS = MRT = p_1/p_2$ in competitive equilibrium ensures Pareto optima
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 4: WELFARE ECONOMICS
+============================================================ -->
+
 ## <a id="topic-4"></a>Topic 4: Welfare Economics
 
 ### 4.1 Compensating Variation, Equivalent Variation & Consumer Surplus
@@ -2794,7 +4203,28 @@ Let $p^0$ and $p^1$ be initial and final price vectors, $w$ be income (constant)
 
 **Relationship via expenditure functions:**
 
+> **Derivation Walkthrough:**
+> Starting from the definition of CV as the compensating payment after a price change:
+> 1. CV = amount paid to restore original utility $u^0$ after prices move to $p^1$
+> 2. Expenditure needed at new prices to reach original utility: $e(p^1, u^0)$
+> 3. Expenditure needed at new prices to reach new utility: $e(p^1, u^1) = w$ (by definition of the expenditure function)
+> 4. So CV = $e(p^1, u^1) - e(p^1, u^0) = w - e(p^1, u^0)$
+> 5. → Final form: $$CV = e(p^1, u^1) - e(p^1, u^0) = w - e(p^1, u^0)$$
+>
+> **Intuition:** CV is the income adjustment that makes the consumer just as well off *after* the price change as she was *before* — it measures the compensating payment at new prices.
+
 $$CV = e(p^1, u^1) - e(p^1, u^0) = w - e(p^1, u^0)$$
+
+> **Derivation Walkthrough:**
+> Starting from the definition of EV as the equivalent payment before a price change:
+> 1. EV = amount given/taken *before* the price change to reach the *new* utility $u^1$
+> 2. Expenditure needed at old prices to reach new utility: $e(p^0, u^1)$
+> 3. Expenditure needed at old prices to reach original utility: $e(p^0, u^0) = w$
+> 4. So EV = $e(p^0, u^1) - e(p^0, u^0) = e(p^0, u^1) - w$
+> 5. → Final form: $$EV = e(p^0, u^1) - e(p^0, u^0) = e(p^0, u^1) - w$$
+>
+> **Intuition:** EV is the income change *equivalent* to the price change — how much income would need to change at *old* prices to produce the same utility change as the price change itself.
+
 $$EV = e(p^0, u^1) - e(p^0, u^0) = e(p^0, u^1) - w$$
 
 CV anchors on **original utility at new prices**; EV anchors on **new utility at old prices**. CS is empirically observable (Marshallian demand is estimable) but theoretically approximate unless income effects are zero.
@@ -2805,7 +4235,25 @@ CV anchors on **original utility at new prices**; EV anchors on **new utility at
 >
 > The expenditure-function definition of CV and EV can be transformed into **areas left of the Hicksian demand curve** using Shephard's lemma ($\partial e(p, u)/\partial p_1 = h_1(p, u)$). For a price decrease of good 1 from $p_1^0$ to $p_1^1$ (where $p_1^1 < p_1^0$), holding all other prices $p_{-1}$ constant:
 >
+> > **Derivation Walkthrough:**
+> > Starting from the definition $CV = e(p^0, u^0) - e(p^1, u^0)$ (rearranged for a price decrease):
+> > 1. By the fundamental theorem of calculus, $e(p^0, u^0) - e(p^1, u^0) = \int_{p_1^1}^{p_1^0} \frac{\partial e(p_1, p_{-1}, u^0)}{\partial p_1} dp_1$
+> > 2. Shephard's lemma: $\partial e(p, u)/\partial p_1 = h_1(p, u)$ — the derivative of expenditure w.r.t. price equals Hicksian demand
+> > 3. Substituting: $CV = \int_{p_1^1}^{p_1^0} h_1(p_1, p_{-1}, u^0) dp_1$
+> > 4. → Final form: $$CV = e(p_1^0, p_{-1}, u^0) - e(p_1^1, p_{-1}, u^0) = \int_{p_1^1}^{p_1^0} h_1(p_1, p_{-1}, u^0)\,dp_1$$
+> >
+> > **Intuition:** CV is the area left of the Hicksian demand curve at $u^0$ between the two prices — it represents the minimum compensation needed at the original utility level.
+>
 > $$CV = e(p_1^0, p_{-1}, u^0) - e(p_1^1, p_{-1}, u^0) = \int_{p_1^1}^{p_1^0} h_1(p_1, p_{-1}, u^0)\,dp_1$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the definition $EV = e(p^0, u^1) - e(p^1, u^1)$ (rearranged for a price decrease):
+> > 1. By the fundamental theorem of calculus, $e(p^0, u^1) - e(p^1, u^1) = \int_{p_1^1}^{p_1^0} \frac{\partial e(p_1, p_{-1}, u^1)}{\partial p_1} dp_1$
+> > 2. Shephard's lemma: $\partial e(p, u)/\partial p_1 = h_1(p, u)$
+> > 3. Substituting: $EV = \int_{p_1^1}^{p_1^0} h_1(p_1, p_{-1}, u^1) dp_1$
+> > 4. → Final form: $$EV = e(p_1^0, p_{-1}, u^1) - e(p_1^1, p_{-1}, u^1) = \int_{p_1^1}^{p_1^0} h_1(p_1, p_{-1}, u^1)\,dp_1$$
+> >
+> > **Intuition:** EV is the area left of the Hicksian demand curve at $u^1$ between the two prices — it measures the income change equivalent to the price change at the new utility level.
 >
 > $$EV = e(p_1^0, p_{-1}, u^1) - e(p_1^1, p_{-1}, u^1) = \int_{p_1^1}^{p_1^0} h_1(p_1, p_{-1}, u^1)\,dp_1$$
 >
@@ -2819,9 +4267,31 @@ CV anchors on **original utility at new prices**; EV anchors on **new utility at
 
 For a **price decrease** ($p \downarrow$) and a **normal good**:
 
+> **Derivation Walkthrough:**
+> Starting from the Hicksian/Marshallian demand relationships for a normal good:
+> 1. For a normal good, the income effect is positive: $\partial x_1/\partial w > 0$
+> 2. A price decrease raises real income, so $u^1 > u^0$
+> 3. At $u^1 > u^0$, Hicksian demand lies to the right: $h(p, u^1) > h(p, u^0)$
+> 4. By the Slutsky equation, $h(p, u^0)$ is steeper than Marshallian $x(p,w)$, which is steeper than $h(p, u^1)$
+> 5. Since CV, CS, EV are left-of-demand-curve areas, the steepest curve ($h$ at $u^0$) gives the smallest area for a price decrease
+> 6. → Final form: $$EV \;>\; CS \;>\; CV$$
+>
+> **Intuition:** For a price decrease on a normal good, EV (anchored at higher utility) gives the largest welfare gain, CV (anchored at original utility) gives the smallest, and CS lies in between.
+
 $$EV \;>\; CS \;>\; CV$$
 
 For a **price increase** ($p \uparrow$) and a **normal good**:
+
+> **Derivation Walkthrough:**
+> Starting from the same relationships but for a price increase:
+> 1. For a price increase on a normal good, $u^1 < u^0$ (utility falls)
+> 2. CV uses $h(p, u^0)$ — the steeper curve — so the welfare loss area is larger
+> 3. EV uses $h(p, u^1)$ — the flatter curve — so the welfare loss area is smaller
+> 4. CS (Marshallian) lies in between
+> 5. Since demand curves slope downward, a price increase measures a welfare *loss*, and the ordering of areas reverses
+> 6. → Final form: $$CV \;>\; CS \;>\; EV$$
+>
+> **Intuition:** For a price increase, CV (compensation needed after the fact) overstates the welfare loss relative to CS, while EV (equivalent variation before the fact) understates it.
 
 $$CV \;>\; CS \;>\; EV$$
 
@@ -2833,6 +4303,17 @@ $$CV \;>\; CS \;>\; EV$$
 **Formal relationship between Hicksian and Walrasian demands for welfare measurement:**
 
 For a normal good, the Slutsky equation $\frac{\partial h_1}{\partial p_1} = \frac{\partial x_1}{\partial p_1} + \frac{\partial x_1}{\partial w} x_1$ implies $\left|\frac{\partial h_1}{\partial p_1}\right| < \left|\frac{\partial x_1}{\partial p_1}\right|$ (since $\frac{\partial x_1}{\partial w} > 0$ for normal goods, the compensated demand is *steeper* than the Marshallian demand). Moreover, since $u^1 > u^0$, the Hicksian demand at $u^1$ lies to the right of the Hicksian demand at $u^0$. Putting these together:
+
+> **Derivation Walkthrough:**
+> Starting from the Slutsky equation and the properties of normal goods:
+> 1. Slutsky: $\frac{\partial h_1}{\partial p_1} = \frac{\partial x_1}{\partial p_1} + \frac{\partial x_1}{\partial w} x_1$
+> 2. For a normal good, $\frac{\partial x_1}{\partial w} > 0$ and $x_1 > 0$, so $\frac{\partial h_1}{\partial p_1} = \frac{\partial x_1}{\partial p_1} + \text{positive term}$
+> 3. Since $\frac{\partial x_1}{\partial p_1} < 0$ (downward-sloping demand), the compensated (Hicksian) slope is more negative (steeper): $\left|\frac{\partial h_1}{\partial p_1}\right| < \left|\frac{\partial x_1}{\partial p_1}\right|$
+> 4. For $u^1 > u^0$, Hicksian demand at the higher utility level is shifted right: $h(p, u^1) > h(p, u^0)$
+> 5. Since $h(p, u^0)$ is steeper than $x(p,w)$ which is steeper than $h(p, u^1)$, for any given price, the slope ordering holds
+> 6. → Final form: $$\left.\frac{\partial h_1}{\partial p_1}\right|_{u=u^0} < \frac{\partial x_1}{\partial p_1} < \left.\frac{\partial h_1}{\partial p_1}\right|_{u=u^1} \quad \Rightarrow \quad h(p, u^0) \text{ steeper than } x(p,w) \text{ steeper than } h(p, u^1)$$
+>
+> **Intuition:** The compensated demand curve at the original utility is steepest (substitution effect only, no income effect reinforcing it), the Marshallian is intermediate (includes both effects), and the compensated demand at the new utility is flattest (income effect partially offsets the substitution effect at the higher utility level).
 
 $$\left.\frac{\partial h_1}{\partial p_1}\right|_{u=u^0} < \frac{\partial x_1}{\partial p_1} < \left.\frac{\partial h_1}{\partial p_1}\right|_{u=u^1} \quad \Rightarrow \quad h(p, u^0) \text{ steeper than } x(p,w) \text{ steeper than } h(p, u^1)$$
 
@@ -2858,6 +4339,17 @@ At $p_1^1 < p_1^0$, for a normal good: $h(p, u^1) > x(p, w) > h(p, u^0)$. The th
 **Willig (1976) bounds — detailed derivation:**
 
 Willig (1976) provided rigorous bounds on the percentage error from using CS instead of CV or EV. For a price change from $p_1^0$ to $p_1^1$ with income elasticity $\eta = \frac{\partial x_1}{\partial w} \cdot \frac{w}{x_1}$:
+
+> **Derivation Walkthrough:**
+> Starting from the Slutsky equation and the relationship between Hicksian and Marshallian demands:
+> 1. The difference between Marshallian CS and Hicksian CV/EV arises from the income effect term in the Slutsky equation: $\frac{\partial h_1}{\partial p_1} - \frac{\partial x_1}{\partial p_1} = \frac{\partial x_1}{\partial w} x_1$
+> 2. Integrating this difference over the price change gives the gap between CS and CV: $CS - CV = \int_{p_1^0}^{p_1^1} \frac{\partial x_1}{\partial w} x_1 dp_1$
+> 3. Using the income elasticity $\eta = \frac{\partial x_1}{\partial w} \cdot \frac{w}{x_1}$, rewrite $\frac{\partial x_1}{\partial w} = \eta \cdot \frac{x_1}{w}$
+> 4. Substituting: $CS - CV \approx \int_{p_1^0}^{p_1^1} \frac{\eta}{w} x_1^2 dp_1$
+> 5. Bounding the integral using the mean value theorem and assuming constant $\eta$ yields the leading-order error bound proportional to $\eta \cdot (\Delta p / p) / 2$
+> 6. → Final form: $$\frac{|CS - CV|}{|CV|} \le \frac{\eta \cdot |\Delta p / p|}{2}, \qquad \frac{|CS - EV|}{|EV|} \le \frac{\eta \cdot |\Delta p / p|}{2}$$
+>
+> **Intuition:** The Willig bounds show that the percentage error from using CS instead of CV or EV is proportional to the income elasticity times the relative price change, divided by 2. For small price changes or goods with low income elasticity, CS is an excellent approximation.
 
 $$\frac{|CS - CV|}{|CV|} \le \frac{\eta \cdot |\Delta p / p|}{2}, \qquad \frac{|CS - EV|}{|EV|} \le \frac{\eta \cdot |\Delta p / p|}{2}$$
 
@@ -2886,15 +4378,55 @@ For realistic income elasticities ($\eta \approx 0.5$ to $1.5$) and moderate pri
 - $v^1 = v(2,4,300) = \sqrt{75 \times 37.5} \approx 53.03$
 
 **Expenditure function** (for $u = x_1^{1/2} x_2^{1/2}$):
+
+> **Derivation Walkthrough:**
+> Starting from the Cobb-Douglas utility function $u = x_1^{1/2} x_2^{1/2}$:
+> 1. Hicksian demands for Cobb-Douglas with $\alpha = 1/2$: $h_1 = u\left(\frac{p_2}{p_1}\right)^{1/2},\; h_2 = u\left(\frac{p_1}{p_2}\right)^{1/2}$
+> 2. Expenditure function: $e(p, u) = p_1 h_1 + p_2 h_2$
+> 3. Substituting: $e(p, u) = p_1 u \left(\frac{p_2}{p_1}\right)^{1/2} + p_2 u \left(\frac{p_1}{p_2}\right)^{1/2}$
+> 4. Simplifying: $e(p, u) = u \sqrt{p_1 p_2} + u \sqrt{p_1 p_2} = 2u\sqrt{p_1 p_2}$
+> 5. → Final form: $$e(p, u) = 2u \sqrt{p_1 p_2}$$
+>
+> **Intuition:** For Cobb-Douglas with equal exponents, the expenditure function is proportional to the geometric mean of prices times utility — a familiar form where $e(p,u)$ is linear in $u$ and homogeneous of degree 1 in prices.
+
 $$e(p, u) = 2u \sqrt{p_1 p_2}$$
 
 **CV** (price decrease):
+
+> **Derivation Walkthrough:**
+> Starting from $CV = w - e(p^1, u^0)$:
+> 1. $u^0 = 37.5$, $p^1 = (2, 4)$, so $e(p^1, u^0) = 2(37.5)\sqrt{2 \times 4} = 75\sqrt{8} = 75 \times 2.828 = 212.1$
+> 2. $w = 300$, so $CV = 300 - 212.1 = 87.9$
+> 3. → Final form: $$CV = w - e(p^1, u^0) = 300 - 2(37.5)\sqrt{2 \times 4} = 300 - 212.1 = 87.9$$
+>
+> **Intuition:** The consumer needs \$87.9 taken away after the price decrease to keep her at the original utility level — her gain from the price drop is \$87.9.
+
 $$CV = w - e(p^1, u^0) = 300 - 2(37.5)\sqrt{2 \times 4} = 300 - 212.1 = 87.9$$
 
 **EV:**
+
+> **Derivation Walkthrough:**
+> Starting from $EV = e(p^0, u^1) - w$:
+> 1. $u^1 \approx 53.03$, $p^0 = (4, 4)$, so $e(p^0, u^1) = 2(53.03)\sqrt{4 \times 4} = 106.06 \times 4 = 424.24$
+> 2. $w = 300$, so $EV = 424.24 - 300 = 124.24$
+> 3. → Final form: $$EV = e(p^0, u^1) - w = 2(53.03)\sqrt{4 \times 4} - 300 = 424.24 - 300 = 124.24$$
+>
+> **Intuition:** The consumer would need to be given \$124.24 at old prices to achieve the same utility gain as the price decrease — this is larger than CV because the income effect is substantial with Cobb-Douglas preferences.
+
 $$EV = e(p^0, u^1) - w = 2(53.03)\sqrt{4 \times 4} - 300 = 424.24 - 300 = 124.24$$
 
 **CS:**
+
+> **Derivation Walkthrough:**
+> Starting from the definition of CS as the area under Marshallian demand:
+> 1. Marshallian demand for good 1: $x_1 = \frac{150}{p_1}$
+> 2. $CS = \int_{p_1^0}^{p_1^1} x_1(p_1)\,dp_1 = \int_4^2 \frac{150}{p_1} dp_1$ (note: $p_1^0 = 4$, $p_1^1 = 2$, so the integral goes from higher to lower price)
+> 3. Evaluating: $150[\ln p_1]_4^2 = 150(\ln 2 - \ln 4) = 150 \ln(0.5)$
+> 4. $\ln(0.5) \approx -0.6931$, so $CS = 150 \times (-0.6931) \approx -103.98$ (the negative sign indicates a gain from price decrease; we report the magnitude)
+> 5. → Final form: $$CS = \int_{4}^{2} \frac{150}{p_1}\,dp_1 = 150[\ln p_1]_{4}^{2} = 150\ln(0.5) \approx 103.98$$
+>
+> **Intuition:** CS gives the welfare gain as the area under the Marshallian demand curve between the old and new prices, yielding an intermediate value between CV (87.9) and EV (124.24).
+
 $$CS = \int_{4}^{2} \frac{150}{p_1}\,dp_1 = 150[\ln p_1]_{4}^{2} = 150\ln(0.5) \approx 103.98$$
 
 **Summary:** $EV = 124.24 > CS = 103.98 > CV = 87.9$ — confirms both goods are **normal goods**. The gap $EV - CV = 36.34 > 0$ indicates a substantial income effect, consistent with Cobb-Douglas (unit income elasticity).
@@ -2914,6 +4446,15 @@ For a price decrease with a normal good:
 #### 4.2.1 Definition and Concept
 
 An allocation $\mathbf{x}$ is **Pareto-optimal** (Pareto-efficient) if no feasible reallocation can make at least one individual better off without making any other individual worse off:
+
+> **Derivation Walkthrough:**
+> Starting from the verbal definition of Pareto optimality:
+> 1. Let $\mathbf{x}$ be the current allocation and $\mathbf{x}'$ any feasible alternative
+> 2. For $\mathbf{x}$ to be Pareto-optimal, there must be NO feasible $\mathbf{x}'$ such that everyone is at least as well off ($U_i(\mathbf{x}') \ge U_i(\mathbf{x})$ for all $i$) and at least one person is strictly better off ($U_j(\mathbf{x}') > U_j(\mathbf{x})$ for some $j$)
+> 3. The $\nexists$ symbol captures the non-existence of such an alternative
+> 4. → Final form: $$\text{Allocation } \mathbf{x} \text{ is PO } \iff \nexists \ \mathbf{x}' \text{ s.t. } U_i(\mathbf{x}') \ge U_i(\mathbf{x}) \ \forall i \text{ and } U_j(\mathbf{x}') > U_j(\mathbf{x}) \text{ for some } j$$
+>
+> **Intuition:** Pareto optimality is a minimal efficiency criterion — if a reallocation could make someone better off without harming anyone, the current allocation is wasteful (Pareto-inefficient). The definition is ordinal: no cardinal utility or interpersonal comparisons needed.
 
 $$\text{Allocation } \mathbf{x} \text{ is PO } \iff \nexists \ \mathbf{x}' \text{ s.t. } U_i(\mathbf{x}') \ge U_i(\mathbf{x}) \ \forall i \text{ and } U_j(\mathbf{x}') > U_j(\mathbf{x}) \text{ for some } j$$
 
@@ -2935,26 +4476,81 @@ The $2\times2\times2$ model has two factors ($L$, $K$), two goods ($X$, $Y$), an
 
 **1. Consumption efficiency (efficiency in exchange):**
 
+> **Derivation Walkthrough:**
+> Starting from the requirement that no mutually beneficial trade remains:
+> 1. In an exchange economy, consumer A trades off $X$ and $Y$ at rate $MRS_{XY}^A = MU_X^A / MU_Y^A$
+> 2. Consumer B trades off at $MRS_{XY}^B = MU_X^B / MU_Y^B$
+> 3. If $MRS^A > MRS^B$, then A values $X$ more than B does → both gain from A giving $Y$ to B in exchange for $X$
+> 4. Gains from trade are exhausted only when rates of substitution are equalized
+> 5. → Final form: $$MRS_{XY}^A = MRS_{XY}^B$$
+>
+> **Intuition:** If two consumers have different marginal rates of substitution, they can mutually benefit by trading. Efficiency requires that the marginal willingness to trade one good for another is the same for all consumers.
+
 $$MRS_{XY}^A = MRS_{XY}^B$$
 
 The marginal rate of substitution between goods must be equal across all consumers. This ensures no mutually beneficial trade remains.
 
 *Lagrangian derivation (fixed supply $\bar{X}$, $\bar{Y}$):*
 
+> **Derivation Walkthrough:**
+> Starting from the planner's problem of maximizing A's utility subject to B reaching a minimum utility level and fixed total supplies:
+> 1. Objective: maximize $U_A(X_A, Y_A)$
+> 2. Constraint 1: $U_B(X_B, Y_B) \ge \bar{U}_B$ (B must achieve at least $\bar{U}_B$)
+> 3. Resource constraints: $X_A + X_B = \bar{X}$, $Y_A + Y_B = \bar{Y}$ (total supply fixed)
+> 4. Substitute $X_B = \bar{X} - X_A$, $Y_B = \bar{Y} - Y_A$ into B's utility constraint
+> 5. Lagrangian: $\mathcal{L} = U_A(X_A, Y_A) + \lambda[U_B(\bar{X} - X_A, \bar{Y} - Y_A) - \bar{U}_B]$
+> 6. → Final form: $$\mathcal{L} = U_A(X_A, Y_A) + \lambda[U_B(\bar{X} - X_A, \bar{Y} - Y_A) - \bar{U}_B]$$
+>
+> **Intuition:** The Lagrangian combines the two consumers' utilities into a single optimization, where $\lambda$ represents the marginal social cost of tightening B's utility constraint — it measures how much A's utility must be sacrificed to increase B's utility.
+
 $$\mathcal{L} = U_A(X_A, Y_A) + \lambda[U_B(\bar{X} - X_A, \bar{Y} - Y_A) - \bar{U}_B]$$
 
 FOCs:
+
+> **Derivation Walkthrough:**
+> Starting from the Lagrangian and taking partial derivatives:
+> 1. $\partial\mathcal{L}/\partial X_A = \frac{\partial U_A}{\partial X_A} + \lambda \cdot \frac{\partial U_B}{\partial X_B} \cdot \frac{\partial X_B}{\partial X_A} = 0$ where $\partial X_B/\partial X_A = -1$
+> 2. So: $\frac{\partial U_A}{\partial X_A} - \lambda \frac{\partial U_B}{\partial X_B} = 0$ → $\frac{\partial U_A}{\partial X_A} = \lambda \frac{\partial U_B}{\partial X_B}$
+> 3. $\partial\mathcal{L}/\partial Y_A = \frac{\partial U_A}{\partial Y_A} + \lambda \cdot \frac{\partial U_B}{\partial Y_B} \cdot \frac{\partial Y_B}{\partial Y_A} = 0$ where $\partial Y_B/\partial Y_A = -1$
+> 4. So: $\frac{\partial U_A}{\partial Y_A} = \lambda \frac{\partial U_B}{\partial Y_B}$
+> 5. Dividing the two FOCs: $\frac{\partial U_A/\partial X_A}{\partial U_A/\partial Y_A} = \frac{\partial U_B/\partial X_B}{\partial U_B/\partial Y_B}$
+> 6. This is $MRS_{XY}^A = MRS_{XY}^B$
+> 7. → Final form: $$\frac{\partial U_A/\partial X_A}{\partial U_A/\partial Y_A} = \frac{\partial U_B/\partial X_B}{\partial U_B/\partial Y_B} \quad\Rightarrow\quad MRS_{XY}^A = MRS_{XY}^B$$
+>
+> **Intuition:** The first-order conditions from the exchange Lagrangian confirm that Pareto efficiency in consumption requires the equalization of marginal rates of substitution — the central condition for the contract curve in the Edgeworth box.
+
 $$\frac{\partial U_A/\partial X_A}{\partial U_A/\partial Y_A} = \frac{\partial U_B/\partial X_B}{\partial U_B/\partial Y_B} \quad\Rightarrow\quad MRS_{XY}^A = MRS_{XY}^B$$
 
 The locus of such points in the Edgeworth exchange box is the **contract curve**.
 
 **2. Production efficiency (efficiency in factor allocation):**
 
+> **Derivation Walkthrough:**
+> Starting from the requirement that factor reallocation cannot increase output of one good without reducing the other:
+> 1. In producing good $X$, the rate at which labor substitutes for capital is $MRTS_{LK}^X = MP_L^X / MP_K^X$
+> 2. For good $Y$, the same rate is $MRTS_{LK}^Y = MP_L^Y / MP_K^Y$
+> 3. If $MRTS^X > MRTS^Y$, then labor is relatively more productive in $X$ than in $Y$ → reallocating labor to $X$ and capital to $Y$ can increase total output
+> 4. Such gains are exhausted only when both MRTS are equal
+> 5. → Final form: $$MRTS_{LK}^X = MRTS_{LK}^Y$$
+>
+> **Intuition:** Just as exchange efficiency requires equal MRS across consumers, production efficiency requires equal MRTS across firms — the marginal productivity of each factor relative to the other must be the same in all uses.
+
 $$MRTS_{LK}^X = MRTS_{LK}^Y$$
 
 The marginal rate of technical substitution between factors must be equal across all firms. This ensures no reallocation of $L$ and $K$ can increase output of one good without reducing the other.
 
 **3. Product-mix efficiency (efficiency in output composition):**
+
+> **Derivation Walkthrough:**
+> Starting from the condition that the economy must produce the right mix of goods:
+> 1. $MRPT_{XY}$ is the rate at which the economy can transform $Y$ into $X$ along the production possibility curve (PPC)
+> 2. $MRS_{XY}$ is the rate at which consumers are willing to substitute $X$ for $Y$
+> 3. If $MRPT > MRS$, the economy can produce one more unit of $X$ by sacrificing less $Y$ than consumers are willing to accept → welfare can be improved
+> 4. Under perfect competition, $MRPT = MC_X/MC_Y$ and $P = MC$, so $MRPT = P_X/P_Y$
+> 5. Consumers optimize where $MRS = P_X/P_Y$, hence $MRPT = MRS$
+> 6. → Final form: $$MRPT_{XY} = MRS_{XY}$$
+>
+> **Intuition:** The marginal rate at which society can transform one good into another must equal the marginal rate at which consumers are willing to substitute between them — otherwise a different output mix would make everyone better off.
 
 $$MRPT_{XY} = MRS_{XY}$$
 
@@ -2997,6 +4593,18 @@ When externalities exist, private optimization does not yield Pareto optimality.
 - Total private profit = $290 + 17.5 = 307.5$
 
 **Social optimum** (maximize joint profit, internalize externalities):
+
+> **Derivation Walkthrough:**
+> Starting from the individual cost functions and summing them to get total social cost:
+> 1. $C_1 = 0.1q_1^2 + 5q_1 - 0.1q_2^2$ and $C_2 = 0.2q_2^2 + 7q_2 + 0.025q_1^2$
+> 2. Total cost: $TC = C_1 + C_2 = (0.1q_1^2 + 5q_1 - 0.1q_2^2) + (0.2q_2^2 + 7q_2 + 0.025q_1^2)$
+> 3. Grouping $q_1$ terms: $0.1q_1^2 + 0.025q_1^2 = 0.125q_1^2$
+> 4. Grouping $q_2$ terms: $-0.1q_2^2 + 0.2q_2^2 = 0.1q_2^2$
+> 5. Linear terms: $5q_1 + 7q_2$
+> 6. → Final form: $$TC = C_1 + C_2 = 0.125q_1^2 + 0.1q_2^2 + 5q_1 + 7q_2$$
+>
+> **Intuition:** The social cost function internalizes the externalities — the cross-effect terms from Firm 2 on Firm 1 (negative, reducing Firm 1's costs) and from Firm 1 on Firm 2 (positive, increasing Firm 2's costs) are consolidated into the quadratic coefficients.
+
 $$TC = C_1 + C_2 = 0.125q_1^2 + 0.1q_2^2 + 5q_1 + 7q_2$$
 - $SMC_1 = 0.25q_1 + 5 = 15 \Rightarrow q_1^* = 40$
 - $SMC_2 = 0.2q_2 + 7 = 15 \Rightarrow q_2^* = 40$
@@ -3042,13 +4650,49 @@ $$TC = C_1 + C_2 = 0.125q_1^2 + 0.1q_2^2 + 5q_1 + 7q_2$$
 >
 > Munoz-Garcia (§6.5) shows that the three Pareto conditions emerge from a single constrained optimization problem. The social planner maximizes one consumer's utility subject to (i) a minimum utility constraint for the other consumer, (ii) technological feasibility, and (iii) input feasibility:
 >
+> > **Derivation Walkthrough:**
+> > Starting from the planner's problem of maximizing social welfare in the $2\times2\times2$ economy:
+> > 1. Choose consumer 1's utility as the objective to maximize
+> > 2. Constrain consumer 2's utility to be at least $\bar{u}_2$
+> > 3. Production feasibility: total consumption of each good cannot exceed total production
+> > 4. Factor feasibility: total labor and capital used in production cannot exceed endowments
+> > 5. Choice variables: consumption allocations $(x_1^A, x_2^A, x_1^B, x_2^B)$ and factor allocations $(L_1, K_1, L_2, K_2)$
+> > 6. → Final form: $$\max_{x_1^A, x_2^A, x_1^B, x_2^B, L_1, K_1, L_2, K_2} u_1(x_1^1, x_2^1)$$
+> >
+> > **Intuition:** The social planner chooses consumption and production plans simultaneously, subject to technological and resource constraints — a general equilibrium optimization.
+>
 > $$\max_{x_1^A, x_2^A, x_1^B, x_2^B, L_1, K_1, L_2, K_2} u_1(x_1^1, x_2^1)$$
+>
+> > **Derivation Walkthrough:**
+> > The constraints of the planner's problem:
+> > 1. Consumer 2's utility must be at least $\bar{u}_2$: $u_2(x_1^2, x_2^2) \ge \bar{u}_2$
+> > 2. Good 1 feasibility: total consumption $\le$ total production: $x_1^1 + x_1^2 \le F_1(L_1, K_1)$
+> > 3. Good 2 feasibility: $x_2^1 + x_2^2 \le F_2(L_2, K_2)$
+> > 4. Labor constraint: $L_1 + L_2 \le \bar{L}$
+> > 5. Capital constraint: $K_1 + K_2 \le \bar{K}$
+> > 6. → Final forms:
+> >    $$\text{s.t.}\quad u_2(x_1^2, x_2^2) \ge \bar{u}_2$$
+> >    $$x_1^1 + x_1^2 \le F_1(L_1, K_1),\quad x_2^1 + x_2^2 \le F_2(L_2, K_2)$$
+> >    $$L_1 + L_2 \le \bar{L},\quad K_1 + K_2 \le \bar{K}$$
+> >
+> > **Intuition:** These five constraints capture the entire general equilibrium system: utility, technology, and resource endowments all bind the planner's choices.
 >
 > $$\text{s.t.}\quad u_2(x_1^2, x_2^2) \ge \bar{u}_2$$
 > $$x_1^1 + x_1^2 \le F_1(L_1, K_1),\quad x_2^1 + x_2^2 \le F_2(L_2, K_2)$$
 > $$L_1 + L_2 \le \bar{L},\quad K_1 + K_2 \le \bar{K}$$
 >
 > The Lagrangian is:
+>
+> > **Derivation Walkthrough:**
+> > Starting from the objective and constraints assembled above:
+> > 1. Objective: $u_1(x_1^1, x_2^1)$
+> > 2. Lagrange multiplier $\lambda$ for the utility constraint with term $\lambda[u_2(\cdot) - \bar{u}_2]$
+> > 3. Lagrange multipliers $\mu_1, \mu_2$ for the two production feasibility constraints
+> > 4. Lagrange multipliers $\delta_L, \delta_K$ for the two factor endowment constraints
+> > 5. Combine all terms into the Lagrangian sum: objective + weighted constraints
+> > 6. → Final form: $$\mathcal{L} = u_1(\cdot) + \lambda[u_2(\cdot) - \bar{u}_2] + \mu_1[F_1(\cdot) - x_1^1 - x_1^2] + \mu_2[F_2(\cdot) - x_2^1 - x_2^2] + \delta_L[\bar{L} - L_1 - L_2] + \delta_K[\bar{K} - K_1 - K_2]$$
+> >
+> > **Intuition:** Each Lagrange multiplier represents the shadow price of relaxing the corresponding constraint — $\mu_1$ is the marginal social value of good 1, $\delta_L$ is the marginal social value of labor, etc. The FOCs will replicate competitive equilibrium prices.
 >
 > $$\mathcal{L} = u_1(\cdot) + \lambda[u_2(\cdot) - \bar{u}_2] + \mu_1[F_1(\cdot) - x_1^1 - x_1^2] + \mu_2[F_2(\cdot) - x_2^1 - x_2^2] + \delta_L[\bar{L} - L_1 - L_2] + \delta_K[\bar{K} - K_1 - K_2]$$
 >
@@ -3067,9 +4711,30 @@ $$TC = C_1 + C_2 = 0.125q_1^2 + 0.1q_2^2 + 5q_1 + 7q_2$$
 
 Assume $(x, y)$ is a WEA at prices $p^*$ but is not Pareto efficient. Then there exists a feasible allocation $(\hat{x}, \hat{y})$ such that $u_i(\hat{x}_i) \ge u_i(x_i)$ for all $i$ with strict inequality for at least one $i$. Since utility functions are strictly increasing, this implies $p^* \cdot \hat{x}_i \ge p^* \cdot x_i$ for all $i$, with strict inequality for at least one $i$. Summing:
 
+> **Derivation Walkthrough:**
+> Starting from the assumption that $(\hat{x}, \hat{y})$ is a Pareto improvement over the WEA $(x, y)$ at prices $p^*$:
+> 1. For all consumers $i$: $u_i(\hat{x}_i) \ge u_i(x_i)$, with strict for some $i$
+> 2. By local non-satiation and utility maximization, $p^* \cdot \hat{x}_i \ge p^* \cdot x_i$ (otherwise $\hat{x}_i$ would be affordable and preferred)
+> 3. For at least one $i$ where $u_i(\hat{x}_i) > u_i(x_i)$, we have strict inequality: $p^* \cdot \hat{x}_i > p^* \cdot x_i$
+> 4. Summing over all consumers: $\sum_i p^* \cdot \hat{x}_i > \sum_i p^* \cdot x_i$
+> 5. Factor out $p^*$: $p^* \cdot \sum_i \hat{x}_i > p^* \cdot \sum_i x_i$
+> 6. → Final form: $$p^* \cdot \sum_i \hat{x}_i > p^* \cdot \sum_i x_i$$
+>
+> **Intuition:** A Pareto improvement must have strictly greater total expenditure at equilibrium prices — otherwise it could not make anyone strictly better off. This is the key inequality that leads to the contradiction.
+
 $$p^* \cdot \sum_i \hat{x}_i > p^* \cdot \sum_i x_i$$
 
 By feasibility, $\sum_i \hat{x}_i = \sum_i e_i + \sum_j \hat{y}_j$ and $\sum_i x_i = \sum_i e_i + \sum_j y_j$. Substituting:
+
+> **Derivation Walkthrough:**
+> Starting from the feasibility conditions and the inequality derived above:
+> 1. Total consumption equals total endowment plus total production: $\sum_i \hat{x}_i = \sum_i e_i + \sum_j \hat{y}_j$ and $\sum_i x_i = \sum_i e_i + \sum_j y_j$
+> 2. Substituting into $p^* \cdot \sum_i \hat{x}_i > p^* \cdot \sum_i x_i$:
+> 3. $p^* \cdot (\sum_i e_i + \sum_j \hat{y}_j) > p^* \cdot (\sum_i e_i + \sum_j y_j)$
+> 4. The endowment terms cancel: $p^* \cdot \sum_i e_i$ on both sides
+> 5. → Final form: $$p^* \cdot \sum_j \hat{y}_j > p^* \cdot \sum_j y_j$$
+>
+> **Intuition:** After canceling endowments, the inequality reduces to total production value at the candidate allocation exceeding total production value at the equilibrium — which contradicts profit maximization.
 
 $$p^* \cdot \sum_j \hat{y}_j > p^* \cdot \sum_j y_j$$
 
@@ -3086,6 +4751,16 @@ Thus $p^* \cdot \hat{y}_j > p^* \cdot y_j$ for some firm $j$, meaning $y_j$ was 
 **Key assumptions:** Convex preferences, convex production sets, lump-sum transfers (fixed transfers independent of choices, preserving marginal incentives).
 
 **Direction:**
+
+> **Derivation Walkthrough:**
+> Starting from the directional relationship between the two welfare theorems:
+> 1. First Welfare Theorem (FWT): A Competitive Equilibrium (CE) is Pareto Optimal (PO), requiring only local non-satiation
+> 2. Second Welfare Theorem (SWT): A Pareto Optimal allocation can be decentralized as a Competitive Equilibrium, requiring convexity and lump-sum transfers
+> 3. The arrows show the logical direction: CE → PO for FWT; PO → CE for SWT
+> 4. → Final form: $$\text{FWT: CE } \xrightarrow{\text{local non-satiation}} \text{ PO} \qquad \text{SWT: PO } \xrightarrow{\text{convexity + transfers}} \text{ CE}$$
+>
+> **Intuition:** The two theorems are converses: the First says markets deliver efficiency (minimal assumptions), the Second says any efficient outcome can be implemented through markets (stronger assumptions needed). Together they justify the separation of efficiency from equity.
+
 $$\text{FWT: CE } \xrightarrow{\text{local non-satiation}} \text{ PO} \qquad \text{SWT: PO } \xrightarrow{\text{convexity + transfers}} \text{ CE}$$
 
 > **Munoz-Garcia Insight: The Second Welfare Theorem and Redistribution**
@@ -3157,6 +4832,16 @@ $$\text{FWT: CE } \xrightarrow{\text{local non-satiation}} \text{ PO} \qquad \te
 
 A **Social Welfare Function (SWF)** is a rule $W = F(U_1, U_2, \dots, U_n)$ that ranks alternative social states based on individual utility levels. Introduced by Bergson (1938) and developed by Samuelson, it embodies society's value judgements about distribution:
 
+> **Derivation Walkthrough:**
+> Starting from the concept of aggregating individual utilities into a social ranking:
+> 1. Let $U_i$ represent the utility of individual $i$ (typically an ordinal index)
+> 2. A social welfare function $W$ maps the vector of individual utilities into a real number
+> 3. The Pareto principle requires $\partial W / \partial U_i > 0$ for all $i$ — if anyone's utility rises (all else equal), social welfare rises
+> 4. This is the minimal ethical restriction: society should never prefer a Pareto-inferior outcome
+> 5. → Final form: $$W = F(U_1, U_2, \dots, U_n) \quad \text{with} \quad \partial W / \partial U_i > 0 \ \forall i$$
+>
+> **Intuition:** The SWF formalizes society's distributional preferences as a mathematical function. The positivity restriction on partial derivatives ensures the SWF respects the Pareto criterion — a fundamental normative requirement.
+
 $$W = F(U_1, U_2, \dots, U_n) \quad \text{with} \quad \partial W / \partial U_i > 0 \ \forall i$$
 
 Social welfare contours (in $U_A$-$U_B$ space) are downward-sloping, do not intersect, and higher contours represent higher welfare.
@@ -3170,6 +4855,16 @@ Social welfare contours (in $U_A$-$U_B$ space) are downward-sloping, do not inte
 > 3. **Convexity/concavity:** The degree of concavity reflects society's inequality aversion
 >
 > **Connection to the GUPF:** The Grand Utility Possibility Frontier (GUPF) is the locus of Pareto-efficient utility pairs $(U_A, U_B)$ satisfying all three marginal conditions. Social welfare maximization occurs at the point of tangency:
+>
+> > **Derivation Walkthrough:**
+> > Starting from the problem of choosing the social optimum:
+> > 1. Society maximizes $\mathcal{W}(U_A, U_B)$ subject to the constraint that $(U_A, U_B)$ lies on the GUPF
+> > 2. The GUPF represents the maximum utility combinations feasible given all resource and technology constraints
+> > 3. Form the Lagrangian: $\mathcal{L} = \mathcal{W}(U_A, U_B) - \lambda(\text{GUPF constraint})$
+> > 4. The first-order condition equates the marginal rate of substitution along the SWF to the slope of the GUPF
+> > 5. → Final form: $$\max_{U_A, U_B} \mathcal{W}(U_A, U_B) \quad \text{s.t.} \quad (U_A, U_B) \in \text{GUPF}$$
+> >
+> > **Intuition:** Social welfare maximization is a constrained optimization problem: pick the feasible utility pair that reaches the highest social indifference curve, which occurs at tangency with the GUPF.
 >
 > $$\max_{U_A, U_B} \mathcal{W}(U_A, U_B) \quad \text{s.t.} \quad (U_A, U_B) \in \text{GUPF}$$
 >
@@ -3201,7 +4896,28 @@ Social welfare contours (in $U_A$-$U_B$ space) are downward-sloping, do not inte
 
 **Condition at bliss point:**
 
+> **Derivation Walkthrough:**
+> Starting from the three Pareto conditions that must hold along the entire GUPF:
+> 1. Consumption efficiency requires $MRS_{XY}^A = MRS_{XY}^B$ — common MRS across all consumers
+> 2. Production efficiency requires $MRTS_{LK}^X = MRTS_{LK}^Y$ — common MRTS across all firms
+> 3. Product-mix efficiency requires $MRPT_{XY} = MRS_{XY}$ — the output transformation rate equals consumers' common MRS
+> 4. These three equalities hold at every Pareto-efficient point, hence everywhere on the GUPF
+> 5. → Final form: $$MRPT_{XY} = MRS^A_{XY} = MRS^B_{XY} \quad \text{(Pareto efficiency — holds on entire GUPF)}$$
+>
+> **Intuition:** The entire GUPF is characterized by all three Pareto conditions holding simultaneously. These conditions say nothing about distribution — they only ensure efficiency.
+
 $$MRPT_{XY} = MRS^A_{XY} = MRS^B_{XY} \quad \text{(Pareto efficiency — holds on entire GUPF)}$$
+
+> **Derivation Walkthrough:**
+> Starting from the welfare maximization problem at the bliss point:
+> 1. Social welfare is maximized where the highest social indifference curve touches the GUPF
+> 2. At the point of tangency, the slope of the social indifference curve equals the slope of the GUPF
+> 3. The slope of the social indifference curve is given by the ratio of marginal social weights: $-(\partial W/\partial U_A) / (\partial W/\partial U_B)$
+> 4. This tangency condition selects one unique point among all Pareto-efficient points on the GUPF
+> 5. → Final form: $$\text{Slope(GUPF)} = \text{Slope(Social Indifference Contour)} \quad \text{(distributional judgement — only at bliss)}$$
+>
+> **Intuition:** While Pareto efficiency holds everywhere on the GUPF, the distributional judgement (which point is "best") is determined by the shape of the SWF — the tangency condition selects the social optimum.
+
 $$\text{Slope(GUPF)} = \text{Slope(Social Indifference Contour)} \quad \text{(distributional judgement — only at bliss)}$$
 
 The bliss point determines all ten unknowns in the $2\times2\times2$ model: $X^*, Y^*, X_A^*, X_B^*, Y_A^*, Y_B^*, L_X^*, L_Y^*, K_X^*, K_Y^*$.
@@ -3218,6 +4934,16 @@ The bliss point determines all ten unknowns in the $2\times2\times2$ model: $X^*
 
 **Kaldor-Hicks compensation principle (1939):** A change from state $A$ to state $B$ improves social welfare if the gainers could *potentially* compensate the losers and still remain better off — regardless of whether compensation is actually paid:
 
+> **Derivation Walkthrough:**
+> Starting from the compensation principle's logic:
+> 1. A change from $A$ to $B$ creates gainers (who would pay to secure the change) and losers (who would pay to avoid it)
+> 2. WTP (willingness to pay) of gainers measures the maximum they would pay for the change
+> 3. WTA (willingness to accept) of losers measures the minimum they would accept to permit the change
+> 4. If total WTP exceeds total WTA, the gainers could hypothetically compensate the losers and still be better off
+> 5. → Final form: $$\text{Change } A \to B \text{ is K-H efficient } \iff \sum \text{WTP}_{\text{gainers}} > \sum \text{WTA}_{\text{losers}}$$
+>
+> **Intuition:** Kaldor-Hicks uses a monetary metric to compare welfare changes across individuals. The "potential compensation" criterion sidesteps the need for actual redistribution — if the gainers could compensate, the change is considered efficient regardless of whether they do.
+
 $$\text{Change } A \to B \text{ is K-H efficient } \iff \sum \text{WTP}_{\text{gainers}} > \sum \text{WTA}_{\text{losers}}$$
 
 **Critical assumption — Equal MU of money:** For monetary amounts to be comparable across individuals, each unit of money must represent the same utility change for everyone. If the MU of money differs (e.g., millionaire vs. poor person), the comparison breaks down.
@@ -3231,6 +4957,16 @@ $$\text{Change } A \to B \text{ is K-H efficient } \iff \sum \text{WTP}_{\text{g
 | Constant MU unrealistic | NO — MU of money declines with income |
 
 **Scitovsky paradox (1941):** Kaldor-Hicks can produce contradictory rankings when utility possibility curves intersect:
+
+> **Derivation Walkthrough:**
+> Starting from the definition of the Scitovsky paradox:
+> 1. Under Kaldor-Hicks, state $A$ is preferred to $B$ if gainers from $A \to B$ can compensate losers: $A \succ_{KH} B$
+> 2. The paradox arises when $A \succ_{KH} B$ AND $B \succ_{KH} A$ simultaneously — a cycle
+> 3. This occurs when utility possibility frontiers intersect: the compensating tests pass in both directions
+> 4. → Final form: $$A \succ_{KH} B \quad \text{AND} \quad B \succ_{KH} A$$
+>
+> **Intuition:** The Kaldor-Hicks criterion is not transitive when UPFs intersect. The ranking depends on the starting point, producing contradictory welfare judgements. This motivated Scitovsky's double test as a consistency check.
+
 $$A \succ_{KH} B \quad \text{AND} \quad B \succ_{KH} A$$
 
 > **Scitovsky Reversal Test — Numerical Example**
@@ -3358,6 +5094,11 @@ Arrow (1951) proved that no SWF can simultaneously satisfy:
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 5: GENERAL EQUILIBRIUM
+============================================================ -->
+
 ## <a id="topic-5"></a>Topic 5: General Equilibrium
 
 > **Exam weight:** 14 marks (typically 1 question). Common question types: GE vs PE comparison, existence/uniqueness/stability analysis, Walras' Law and numeraire, Edgeworth box problems with numerical solutions, the three Pareto conditions and welfare theorems.
@@ -3368,6 +5109,15 @@ Arrow (1951) proved that no SWF can simultaneously satisfy:
 ### 5.1 General Equilibrium vs Partial Equilibrium
 
 **Definition:** General equilibrium (GE) is a state in which *all* markets and *all* decision-making units are simultaneously in equilibrium -- every market cleared at positive prices, every consumer maximising utility given their budget, and every firm maximising profit given its technology (Koutsoyiannis, Ch.22, p.486).
+
+> **Derivation Walkthrough:**
+> Starting from the definition of market-clearing: an equilibrium price vector $p^*$ satisfies $D_i(p^*) = S_i(p^*)$ for every good $i$:
+> 1. Define excess demand in market $i$ as $z_i(p) = D_i(p) - S_i(p)$ — the difference between quantity demanded and supplied at price vector $p$.
+> 2. Market $i$ clears when $z_i(p^*) = 0$, i.e. demand equals supply.
+> 3. General equilibrium requires $z_i(p) = 0$ for all $i$ simultaneously, so $\sum_i z_i(p) = 0$ is the system of $n$ market-clearing conditions.
+> 4. → Compact notation: $\sum_i z_i(p) = 0$ for all $i$, where $z_i(p) = D_i(p) - S_i(p)$.
+>
+> **Intuition:** GE is a state where no excess demand or excess supply exists in any market — all markets clear simultaneously at a positive price vector.
 
 $$\text{GE: } \sum_i z_i(p) = 0 \text{ for all } i \text{, where } z_i(p) = D_i(p) - S_i(p)$$
 
@@ -3413,6 +5163,17 @@ In GE terms, existence requires continuous excess demand functions satisfying bo
 > 4. **Boundary behaviour**: As $p_i \to 0$, $z_i(p) \to +\infty$ (consumers demand infinite amounts of a free good).
 >
 > Define a continuous mapping $g : \Delta \to \Delta$ by:
+>
+> > **Derivation Walkthrough:**
+> > Starting from the need to construct a continuous mapping whose fixed point corresponds to an equilibrium:
+> > 1. Normalise prices to the unit simplex $\Delta = \{ p \in \mathbb{R}^L_{++} : \sum p_i = 1 \}$ — possible because $z(p)$ is HD(0), so only relative prices matter.
+> > 2. Construct $g: \Delta \to \Delta$ that increases prices of goods in excess demand and decreases (via normalisation) prices in excess supply.
+> > 3. For each good $i$: $p_i$ is adjusted upward by $\max\{0, z_i(p)\}$ (the positive part of excess demand) if $z_i(p) > 0$; otherwise $p_i$ enters unchanged.
+> > 4. The denominator $1 + \sum_j \max\{0, z_j(p)\}$ ensures $\sum_i g_i(p) = 1$, keeping the image in $\Delta$.
+> > 5. → $g_i(p) = \frac{p_i + \max\{0, z_i(p)\}}{1 + \sum_{j=1}^L \max\{0, z_j(p)\}}$ for each good $i$.
+> >
+> > **Intuition:** $g(p)$ "raises" prices of goods with excess demand and "lowers" (via normalisation) prices of goods with excess supply. By Brouwer's fixed-point theorem, $g$ has a fixed point $p^* = g(p^*)$, which implies $z(p^*) = 0$ — a Walrasian equilibrium.
+>
 > $$g_i(p) = \frac{p_i + \max\{0, z_i(p)\}}{1 + \sum_{j=1}^L \max\{0, z_j(p)\}} \quad \text{for each good } i$$
 >
 > By **Brouwer's fixed-point theorem** (every continuous function from a compact, convex set to itself has a fixed point), there exists $p^*$ such that $g(p^*) = p^*$. At this fixed point, the excess demand must satisfy $z_i(p^*) \le 0$ for all $i$, and by Walras' Law, $z_i(p^*) = 0$ for all $i$ — a Walrasian equilibrium. (For correspondences, **Kakutani's fixed-point theorem** generalises the result; Munoz-Garcia, Mathematical Appendix §A.12, pp.845-847.)
@@ -3438,6 +5199,15 @@ Equilibrium is unique if the excess demand function satisfies **gross substituta
 - Walrasian **tatonnement**: auctioneer adjusts prices proportionally to excess demand: $\dot{p}_i = k_i \cdot z_i(p)$. Stable if $\partial E/\partial P < 0$ at equilibrium.
 
 **Formal tatonnement process (Munoz-Garcia §6.3; Koutsoyiannis pp.516-517):** Walras' adjustment mechanism posits an auctioneer who calls out prices and receives demand/supply bids before any transactions occur (a "recontracting" assumption). Prices adjust according to:
+
+> **Derivation Walkthrough:**
+> Starting from Walras' adjustment hypothesis — market forces push prices toward equilibrium:
+> 1. Define $\dot{p}_i = \frac{d p_i}{d t}$ as the instantaneous rate of change of $p_i$ over time.
+> 2. The tatonnement rule posits that price changes are proportional to excess demand: when demand exceeds supply ($z_i > 0$), price rises; when supply exceeds demand ($z_i < 0$), price falls.
+> 3. Introduce the adjustment speed parameter $k_i > 0$, which may differ across markets.
+> 4. → Final form: $\dot{p}_i = k_i \cdot z_i(p)$, with the sign of $\dot{p}_i$ matching the sign of $z_i(p)$.
+>
+> **Intuition:** The auctioneer raises prices for goods in excess demand and lowers them for goods in excess supply. At equilibrium ($z_i = 0$), prices stabilise ($\dot{p}_i = 0$). This is a dynamic adjustment process, not actual trading — recontracting ensures no transactions occur at disequilibrium prices.
 
 $$\dot{p}_i = \frac{d p_i}{d t} = k_i \cdot z_i(p), \quad k_i > 0$$
 
@@ -3465,12 +5235,43 @@ where $\dot{p}_i$ is the time derivative of $p_i$. The equilibrium $p^*$ is **lo
 
 **Walras' Law:** The sum of the values of excess demands across all markets is identically zero:
 
+> **Derivation Walkthrough:**
+> Starting from individual budget constraints in a pure exchange economy:
+> 1. Each consumer $h$ has a binding budget constraint: $p \cdot x^h = p \cdot \omega^h$ (income exhaustion from local non-satiation).
+> 2. Consumer $h$'s excess demand vector is $z^h(p) = x^h(p) - \omega^h$, so $p \cdot z^h(p) = 0$ for each $h$.
+> 3. Aggregate excess demand is $z(p) = \sum_{h=1}^H (x^h(p) - \omega^h) = \sum_{h=1}^H z^h(p)$.
+> 4. Summing the budget constraints: $\sum_{h=1}^H p \cdot z^h(p) = p \cdot \sum_{h=1}^H z^h(p) = p \cdot z(p) = 0$.
+> 5. Expanding the dot product: $\sum_{i=1}^n p_i \cdot z_i(p) = 0$.
+> 6. → Walras' Law: $\sum_{i=1}^n p_i \cdot z_i(p) = 0$ for all $p \gg 0$.
+>
+> **Intuition:** The aggregate value of excess demand is identically zero — the economy's total spending equals its total income. Excess demand in some markets ($z_i > 0$) must be exactly offset by excess supply in others ($z_j < 0$). This is an identity, not an equilibrium condition — it holds for every price vector.
+
 $$\sum_{i=1}^n p_i \cdot z_i(p) = 0 \quad \text{for all } p \gg 0$$
 
 **Proof from individual budget constraints (Munoz-Garcia, p.332):** Each consumer $h$ has utility functions that are strictly increasing, so the budget constraint in the UMP binds:
+
+> **Derivation Walkthrough:**
+> Starting from the consumer's UMP with strictly increasing (locally non-satiated) utility:
+> 1. The consumer maximises $u^h(x^h)$ subject to $p \cdot x^h \le p \cdot \omega^h$.
+> 2. If $p \cdot x^h < p \cdot \omega^h$, the consumer has unspent income. With local non-satiation, there exists a strictly preferred bundle costing less than income, contradicting optimality.
+> 3. Therefore the budget constraint must bind at the optimum: the consumer spends all income.
+> 4. → Income exhaustion: $p \cdot x^h(p) = p \cdot \omega^h$.
+>
+> **Intuition:** Non-satiation ensures that any free income would be spent on additional consumption that raises utility. Hence all income is exhausted — the budget constraint holds with equality for every consumer.
+
 $$p \cdot x^h(p) = p \cdot \omega^h \quad \text{(income exhaustion)}$$
 
 Thus $p \cdot (x^h - \omega^h) = 0$ for each $h$. The excess demand vector for consumer $h$ is $z^h(p) = x^h(p) - \omega^h$, and summing the budget constraints over all $H$ consumers:
+
+> **Derivation Walkthrough:**
+> Starting from the individual binding budget constraints for each consumer $h$:
+> 1. For each $h$: $p \cdot x^h = p \cdot \omega^h$, so $p \cdot (x^h - \omega^h) = 0$.
+> 2. Define $z^h(p) = x^h(p) - \omega^h$ as consumer $h$'s excess demand vector.
+> 3. Sum over all $H$ consumers: $\sum_{h=1}^H p \cdot (x^h - \omega^h) = p \cdot \sum_{h=1}^H (x^h - \omega^h)$.
+> 4. The aggregate excess demand is $z(p) = \sum_{h=1}^H (x^h - \omega^h)$.
+> 5. → $\sum_{h=1}^H p \cdot (x^h - \omega^h) = p \cdot z(p) = 0$.
+>
+> **Intuition:** Summing binding budget constraints across all consumers yields Walras' Law: the aggregate value of excess demand is identically zero. This is an accounting identity — it holds for every price vector, not just at equilibrium.
 
 $$\sum_{h=1}^H p \cdot (x^h - \omega^h) = p \cdot \sum_{h=1}^H (x^h - \omega^h) = p \cdot z(p) = 0$$
 
@@ -3504,7 +5305,6 @@ $P_3/P_2 = (P_3/P_1) / (P_2/P_1) = (-11/3) / (-5/3) = 11/5$
 
 **Key insight:** In an $n$-good Walrasian system, you only need to solve $n-1$ market-clearing equations. The $n$th is automatically satisfied by Walras' Law. Price levels are indeterminate -- only ratios matter.
 
----
 
 ### 5.4 The Edgeworth Box and the $2 \times 2 \times 2$ Model
 
@@ -3528,11 +5328,33 @@ The Edgeworth production box has dimensions equal to total K (width) and total L
 - In perfect competition, profit maximisation requires each firm to set MRTS = w/r. Since w/r is the same for both, equilibrium must lie on the contract curve.
 
 **General equilibrium of production condition:**
+
+> **Derivation Walkthrough:**
+> Starting from cost minimisation by competitive firms:
+> 1. Firm X chooses labour $L_X$ and capital $K_X$ to minimise cost $w L_X + r K_X$ subject to producing target output $\bar{X}$.
+> 2. At the cost-minimising input mix, the isoquant is tangent to the isocost line: the slope of the isoquant ($\text{MRTS}^X_{LK} = -dK/dL|_{\text{isoquant}}$) equals the slope of the isocost ($-w/r$).
+> 3. → Firm X's optimality condition: $\text{MRTS}^X_{LK} = w/r$.
+> 4. Similarly for firm Y: $\text{MRTS}^Y_{LK} = w/r$.
+> 5. Since both firms face the same factor prices $w$ and $r$ in competitive markets, their MRTS must be equal.
+> 6. → $\text{MRTS}^X_{L,K} = \text{MRTS}^Y_{L,K} = w/r$.
+>
+> **Intuition:** If MRTS differed across firms, total output could be increased by reallocating inputs — moving a unit of labour from the low-MRTS firm to the high-MRTS firm would increase output. Equalisation ensures production efficiency: the economy is on its contract curve.
+
 $$\text{MRTS}^X_{L,K} = \text{MRTS}^Y_{L,K} = \frac{w}{r}$$
 
 The production equilibrium is not unique (any point on contract curve is Pareto-optimal). With perfect competition, the specific point where MRTS = w/r is selected. The contract curve maps to the **Production Possibility Curve (PPC)** in product space.
 
 **Mapping from contract curve to PPC (Koutsoyiannis, pp.535-538; Munoz-Garcia, pp.448-450):** Each point on the Edgeworth contract curve of production simultaneously defines: (i) the allocation of K and L between the two industries; and (ii) the maximum output pair $(X, Y)$ that can be produced from these factor allocations. Plotting these output pairs in $(X, Y)$-space traces out the **Production Possibility Curve (PPC)**, also called the product transformation curve. The slope of the PPC is the **Marginal Rate of Product Transformation** (MRPT):
+
+> **Derivation Walkthrough:**
+> Starting from the Production Possibility Curve in output space:
+> 1. The PPC traces maximum feasible $Y$ for each level of $X$, given fixed total endowments of L and K and the available technology.
+> 2. The slope of the PPC at any point is $dY/dX$, which is negative (producing more X requires sacrificing Y).
+> 3. Define MRPT as the absolute value of this slope: $\text{MRPT}_{xy} = -dY/dX$.
+> 4. By the envelope theorem, reallocating one unit of resources from Y to X: the cost of the marginal unit of X is $MC_X$, and the saving from reducing Y by one unit is $MC_Y$. The trade-off is $MC_X/MC_Y$.
+> 5. → $\text{MRPT}_{xy} = -dY/dX = MC_X/MC_Y$.
+>
+> **Intuition:** MRPT measures the opportunity cost of producing an additional unit of X — the amount of Y the economy must forgo. Under perfect competition, this equals the price ratio $P_X/P_Y$ since profit maximisation sets $P = MC$.
 
 $$\text{MRPT}_{xy} = -\frac{dY}{dX} = \frac{MC_X}{MC_Y}$$
 
@@ -3568,6 +5390,16 @@ The transmission mechanism describes how an exogenous shock propagates through i
 
 **Stolper-Samuelson Theorem:** An increase in the relative price of a good raises the real return to the factor used intensively in its production and lowers the real return to the other factor (Stolper & Samuelson, 1941; Koutsoyiannis, p.505).
 
+> **Derivation Walkthrough:**
+> Starting from the zero-profit condition in competitive markets:
+> 1. In competitive equilibrium, $P_X = MC_X$ and $P_Y = MC_Y$.
+> 2. From cost minimisation, $MC_X$ depends on factor prices $(w, r)$ and the input coefficients $(a_{LX}, a_{KX})$: $MC_X = w a_{LX} + r a_{KX}$.
+> 3. An increase in $P_X/P_Y$ makes X production more profitable → resources shift into X, out of Y.
+> 4. If X is labour-intensive ($a_{LX}/a_{KX} > a_{LY}/a_{KY}$), the relative demand for labour rises → $w$ rises relative to $r$.
+> 5. → $\frac{P_X}{P_Y} \uparrow$ (with X labour-intensive) $\Rightarrow \frac{w}{r} \uparrow$.
+>
+> **Intuition:** The factor used intensively in the industry whose relative price rises unambiguously gains, while the other factor loses. The change in factor prices is magnified beyond the change in output prices (Jones' magnification effect).
+
 $$\text{If } \frac{P_X}{P_Y} \uparrow \text{ and } X \text{ is labour-intensive, then } \frac{w}{r} \uparrow$$
 
 **Magnification effect (Jones algebra):** $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$ in proportional terms.
@@ -3600,30 +5432,116 @@ For a general equilibrium to be Pareto-optimal, three marginal conditions must h
 **Formal derivation from Lagrangian optimisation (Munoz-Garcia §6.5, pp.380-390):**
 
 **Condition 1 — Efficiency in exchange:** A social planner maximises a weighted sum of utilities subject to the resource constraint:
+
+> **Derivation Walkthrough:**
+> Starting from the social planner's allocation problem — find all Pareto-efficient distributions of goods:
+> 1. The planner assigns Pareto weights $\alpha_h > 0$ to each consumer $h$ and maximises the weighted sum of utilities $W = \sum_{h=1}^H \alpha_h u_h(x_{1h}, \dots, x_{Lh})$.
+> 2. Varying the weights $(\alpha_1, \dots, \alpha_H)$ traces out the entire Pareto frontier.
+> 3. The resource constraints require that for each good $i$, total consumption $\sum_h x_{ih}$ does not exceed total endowment $\sum_h \omega_{ih}$.
+> 4. → Maximise $W$ subject to $L$ inequality constraints, one per good.
+>
+> **Intuition:** The Pareto problem allocates goods across consumers to maximise social welfare at given weights. Each solution corresponds to a Pareto-efficient allocation where no consumer can be made better off without making another worse off.
+
 $$\max_{x_{ih}} \; W = \sum_{h=1}^H \alpha_h u_h(x_{1h}, \dots, x_{Lh}) \quad \text{s.t.} \quad \sum_{h=1}^H x_{ih} \le \sum_{h=1}^H \omega_{ih} \; \forall i$$
 
 The Lagrangian is:
+
+> **Derivation Walkthrough:**
+> Starting from the constrained maximisation above:
+> 1. Assign Lagrange multiplier $\lambda_i \ge 0$ to each resource constraint $\sum_h x_{ih} \le \sum_h \omega_{ih}$.
+> 2. The Lagrangian adds each constraint (rearranged as slack) to the objective: $\mathcal{L} = W + \sum_i \lambda_i (\sum_h \omega_{ih} - \sum_h x_{ih})$.
+> 3. The term $\lambda_i (\sum_h \omega_{ih} - \sum_h x_{ih})$ penalises violation of the resource constraint for good $i$ — if $\sum_h x_{ih} > \sum_h \omega_{ih}$, the slack is negative and the objective is reduced.
+> 4. → $\mathcal{L} = \sum_{h=1}^H \alpha_h u_h(\cdot) + \sum_{i=1}^L \lambda_i (\sum_{h=1}^H \omega_{ih} - \sum_{h=1}^H x_{ih})$.
+>
+> **Intuition:** The Lagrangian transforms the constrained problem into an unconstrained one. Each $\lambda_i$ is the shadow price — the marginal social value of an additional unit of endowment of good $i$.
+
 $$\mathcal{L} = \sum_{h=1}^H \alpha_h u_h(\cdot) + \sum_{i=1}^L \lambda_i \left( \sum_{h=1}^H \omega_{ih} - \sum_{h=1}^H x_{ih} \right)$$
 
 FOC for consumer $h$ and goods $i, j$:
+
+> **Derivation Walkthrough:**
+> Starting from the Lagrangian, differentiate with respect to consumption $x_{ih}$:
+> 1. $\frac{\partial \mathcal{L}}{\partial x_{ih}} = \alpha_h \frac{\partial u_h}{\partial x_{ih}} - \lambda_i = 0$: the marginal social benefit of giving consumer $h$ more of good $i$ ($\alpha_h \cdot MU_{ih}$) equals the shadow cost $\lambda_i$.
+> 2. Similarly for good $j$: $\frac{\partial \mathcal{L}}{\partial x_{jh}} = \alpha_h \frac{\partial u_h}{\partial x_{jh}} - \lambda_j = 0$.
+> 3. → Two first-order conditions linking marginal utilities to shadow prices.
+>
+> **Intuition:** The planner allocates each good to each consumer up to the point where the weighted marginal utility just equals the social opportunity cost of using that good. The shadow prices $\lambda_i$ are common across all consumers because resources are freely reallocable.
+
 $$\frac{\partial \mathcal{L}}{\partial x_{ih}} = \alpha_h \frac{\partial u_h}{\partial x_{ih}} - \lambda_i = 0, \quad \frac{\partial \mathcal{L}}{\partial x_{jh}} = \alpha_h \frac{\partial u_h}{\partial x_{jh}} - \lambda_j = 0$$
 
 Dividing the FOCs for goods $i$ and $j$ for the same consumer $h$:
+
+> **Derivation Walkthrough:**
+> Starting from the two FOCs and eliminating the consumer-specific weight $\alpha_h$:
+> 1. From FOC$_i$: $\alpha_h \cdot \partial u_h/\partial x_{ih} = \lambda_i$ ⇒ $\partial u_h/\partial x_{ih} = \lambda_i / \alpha_h$.
+> 2. From FOC$_j$: $\alpha_h \cdot \partial u_h/\partial x_{jh} = \lambda_j$ ⇒ $\partial u_h/\partial x_{jh} = \lambda_j / \alpha_h$.
+> 3. Dividing: $\frac{\partial u_h / \partial x_{ih}}{\partial u_h / \partial x_{jh}} = \frac{\lambda_i / \alpha_h}{\lambda_j / \alpha_h} = \frac{\lambda_i}{\lambda_j}$.
+> 4. The LHS is precisely the marginal rate of substitution $\text{MRS}^h_{ij}$ between goods $i$ and $j$ for consumer $h$.
+> 5. → $\text{MRS}^h_{ij} = \lambda_i / \lambda_j$.
+>
+> **Intuition:** At a Pareto optimum, each consumer's MRS between any two goods equals the ratio of the shadow prices of those goods. Since $\lambda_i$ and $\lambda_j$ are common across all consumers (they come from the resource constraints, not individual preferences), all consumers must have the same MRS.
+
 $$\frac{\partial u_h / \partial x_{ih}}{\partial u_h / \partial x_{jh}} = \frac{\lambda_i}{\lambda_j} \equiv \text{MRS}^h_{ij}$$
 
 Since the RHS $\lambda_i / \lambda_j$ is the same for all consumers $h$, we obtain:
+
+> **Derivation Walkthrough:**
+> Starting from $\text{MRS}^h_{ij} = \lambda_i / \lambda_j$ for each consumer $h$:
+> 1. The ratio $\lambda_i / \lambda_j$ depends only on the resource constraints and Pareto weights — it is not consumer-specific.
+> 2. For any two consumers A and B: $\text{MRS}^A_{ij} = \lambda_i / \lambda_j$ and $\text{MRS}^B_{ij} = \lambda_i / \lambda_j$.
+> 3. The right-hand sides are identical, so the left-hand sides must be equal.
+> 4. → $\text{MRS}^A_{ij} = \text{MRS}^B_{ij}$ for all consumers A, B and all good pairs i, j.
+>
+> **Intuition:** If $\text{MRS}^A > \text{MRS}^B$, consumer A values good i more relative to good j than B does. A Pareto improvement is possible: A gives j to B, B gives i to A, making both better off. Equal MRS across all consumers is the necessary condition for exchange efficiency.
+
 $$\text{MRS}^A_{ij} = \text{MRS}^B_{ij} \quad \text{for all consumers } A, B$$
 
 **Condition 2 — Efficiency in production:** Choose input allocations $(k_{jf}, l_{jf})$ for firms $f$ producing goods $j$ to maximise total output:
+
+> **Derivation Walkthrough:**
+> Starting from the problem of allocating scarce factors across firms to maximise output value:
+> 1. The planner chooses capital $k_{jf}$ and labour $l_{jf}$ for each firm $j$ producing good $j$.
+> 2. The objective is total output value $\sum_{j=1}^M p_j f_j(k_{jf}, l_{jf})$ at given output prices.
+> 3. Constraints: total capital used $\sum_j k_{jf} \le \bar{K}$ and total labour used $\sum_j l_{jf} \le \bar{L}$.
+> 4. → Maximise output value subject to factor endowment constraints.
+>
+> **Intuition:** This determines the efficient allocation of inputs across production activities. Under competitive markets, each firm hires factors until the value of the marginal product equals the factor price, decentralising the planner's solution.
+
 $$\max \; \sum_{j=1}^M p_j f_j(k_{jf}, l_{jf}) \quad \text{s.t.} \quad \sum_{j=1}^M k_{jf} \le \bar{K}, \; \sum_{j=1}^M l_{jf} \le \bar{L}$$
 
 The FOCs imply:
+
+> **Derivation Walkthrough:**
+> Starting from the production efficiency problem, consider two firms X and Y producing different goods:
+> 1. For firm X, the FOC for labour: $p_X \cdot \partial f_X/\partial l_X = \mu$ (where $\mu$ is the Lagrange multiplier on the labour constraint).
+> 2. For firm X, the FOC for capital: $p_X \cdot \partial f_X/\partial k_X = \nu$ (where $\nu$ is the Lagrange multiplier on the capital constraint).
+> 3. Dividing: $\frac{\partial f_X / \partial l_X}{\partial f_X / \partial k_X} = \mu / \nu$.
+> 4. Similarly for firm Y: $\frac{\partial f_Y / \partial l_Y}{\partial f_Y / \partial k_Y} = \mu / \nu$.
+> 5. The RHS $\mu / \nu$ is common across firms (same shadow prices of labour and capital), so the LHS must be equal.
+> 6. The LHS is the MRTS (the rate at which labour can substitute for capital while holding output constant).
+> 7. → $\text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK}$.
+>
+> **Intuition:** If $\text{MRTS}^X > \text{MRTS}^Y$, moving a unit of capital from Y to X (and labour from X to Y) would increase total output. Equalisation of MRTS across firms is the necessary condition for production efficiency.
+
 $$\frac{\partial f_X / \partial l_X}{\partial f_X / \partial k_X} = \frac{\partial f_Y / \partial l_Y}{\partial f_Y / \partial k_Y} \quad \Rightarrow \quad \text{MRTS}^X_{LK} = \text{MRTS}^Y_{LK}$$
 
 **Condition 3 — Efficiency in product-mix:** The MRPT between goods X and Y from the production side equals the common MRS among consumers:
+
+> **Derivation Walkthrough:**
+> Starting from the requirement that production and consumption decisions be coordinated:
+> 1. On the production side, the economy transforms X into Y at rate $\text{MRPT}_{xy} = -dY/dX|_{\text{PPC}} = MC_X/MC_Y$.
+> 2. On the consumption side, consumers trade X for Y at rate $\text{MRS}_{xy} = MU_X/MU_Y$.
+> 3. For Pareto efficiency, the rate at which the economy can transform X into Y must equal the rate at which consumers are willing to substitute X for Y — otherwise a reallocation of resources between sectors could make everyone better off.
+> 4. Under perfect competition, profit maximisation sets $P_X = MC_X$ and $P_Y = MC_Y$, so $\text{MRPT}_{xy} = MC_X/MC_Y = P_X/P_Y$.
+> 5. Utility maximisation sets $\text{MRS}_{xy} = P_X/P_Y$.
+> 6. → $\text{MRPT}_{xy} = MC_X/MC_Y = P_X/P_Y = \text{MRS}_{xy}$.
+>
+> **Intuition:** If $\text{MRPT} > \text{MRS}$, the economy could produce one less X (saving $MC_X$) and one more Y (costing $MC_Y$). The saved resources from reducing X exceed what consumers need to compensate for losing X — a Pareto improvement. Equality of MRPT and MRS ensures the output mix is socially optimal.
+
 $$\text{MRPT}_{xy} = -\frac{dY}{dX}\bigg|_{\text{PPC}} = \frac{MC_X}{MC_Y} = \frac{P_X}{P_Y} = \text{MRS}_{xy}$$
 
 In perfect competition, $P_X = MC_X$ and $P_Y = MC_Y$, so MRPT = $P_X/P_Y$ = MRS, ensuring the top-level efficiency condition holds automatically.
+
 
 ---
 
@@ -3661,6 +5579,18 @@ $U_a(10,50) = 500$; $U_B(50,10) = 60$
 Consider a pure exchange economy with two goods (1, 2) and two consumers (A, B), both with Cobb-Douglas utility $u^i(x_1^i, x_2^i) = x_1^i x_2^i$. Endowments: $e^A = (100, 350)$, $e^B = (100, 50)$. Solve for the Walrasian equilibrium.
 
 **Step 1: Set up the UMP for consumer A.**
+
+> **Derivation Walkthrough:**
+> Starting from consumer A's utility maximisation given endowment $(100, 350)$:
+> 1. A's utility is Cobb-Douglas: $u^A(x_1^A, x_2^A) = x_1^A x_2^A$.
+> 2. A's income (endowment value): $p_1(100) + p_2(350)$.
+> 3. The UMP: $\max x_1^A x_2^A$ s.t. $p_1 x_1^A + p_2 x_2^A = 100 p_1 + 350 p_2$.
+> 4. Tangency: $\text{MRS}^A = x_2^A/x_1^A = p_1/p_2$ (from Cobb-Douglas) ⇒ $p_1 x_1^A = p_2 x_2^A$.
+> 5. Substitute into the budget constraint: $p_1 x_1^A + p_1 x_1^A = 2 p_1 x_1^A = 100 p_1 + 350 p_2$.
+> 6. Solve: $x_1^A = 50 + 175 p_2/p_1$ and (by symmetry) $x_2^A = 175 + 50 p_1/p_2$.
+>
+> **Intuition:** With Cobb-Douglas utility, A spends equal shares of income on each good. A's large endowment of good 2 (350) gives her higher income, enabling more consumption of both goods.
+
 $$\max_{x_1^A, x_2^A} x_1^A x_2^A \quad \text{s.t.} \quad p_1 x_1^A + p_2 x_2^A = p_1(100) + p_2(350)$$
 Tangency condition: $\text{MRS}^A = x_2^A / x_1^A = p_1/p_2 \;\Rightarrow\; p_1 x_1^A = p_2 x_2^A$.
 Budget constraint: $p_1 x_1^A + p_2 x_2^A = 100 p_1 + 350 p_2$.
@@ -3675,13 +5605,66 @@ Then $x_2^B = 25 + 50 \frac{p_1}{p_2}$.
 
 **Step 3: Impose market-clearing conditions.**
 Good 1 market: $x_1^A + x_1^B = 100 + 100 = 200$.
+
+> **Derivation Walkthrough:**
+> Starting from individual demand functions and the market-clearing condition:
+> 1. Total demand for good 1: $x_1^A + x_1^B = (50 + 175 p_2/p_1) + (50 + 25 p_2/p_1)$.
+> 2. Simplify: $= 100 + (175 + 25) p_2/p_1 = 100 + 200 p_2/p_1$.
+> 3. Total supply of good 1: $\omega_1^A + \omega_1^B = 100 + 100 = 200$.
+> 4. Market-clearing requires total demand = total supply: $100 + 200 p_2/p_1 = 200$.
+> 5. → $\left(50 + 175 \frac{p_2}{p_1}\right) + \left(50 + 25 \frac{p_2}{p_1}\right) = 100 + 200 \frac{p_2}{p_1} = 200$.
+>
+> **Intuition:** The market-clearing condition for good 1 yields one equation in the relative price $p_2/p_1$. By Walras' Law, the good 2 market automatically clears when good 1 does — only one price ratio needs to be determined.
+
 $$\left(50 + 175 \frac{p_2}{p_1}\right) + \left(50 + 25 \frac{p_2}{p_1}\right) = 100 + 200 \frac{p_2}{p_1} = 200$$
+
+> **Derivation Walkthrough:**
+> Starting from the market-clearing equation and solving for the equilibrium price ratio:
+> 1. From $100 + 200(p_2/p_1) = 200$, subtract 100 from both sides: $200(p_2/p_1) = 100$.
+> 2. Divide both sides by 200: $p_2/p_1 = 100/200 = 1/2$.
+> 3. Invert the ratio: $p_1/p_2 = 2$.
+> 4. → Equilibrium relative prices: good 1 is twice as expensive as good 2.
+>
+> **Intuition:** The price ratio $p_1/p_2 = 2$ reflects the relative scarcity and marginal rates of substitution at equilibrium. Consumer A has a large endowment of good 2 (350) and low endowment of good 1 (100), so good 1 commands a premium.
+
 $$200 \frac{p_2}{p_1} = 100 \;\Rightarrow\; \frac{p_2}{p_1} = \frac{1}{2} \;\Rightarrow\; \frac{p_1}{p_2} = 2$$
 
 **Step 4: Compute equilibrium allocations.**
+
+> **Derivation Walkthrough:**
+> Starting from A's demand for good 1 and substituting the equilibrium price ratio $p_2/p_1 = 1/2$:
+> 1. $x_1^{A*} = 50 + 175(p_2/p_1) = 50 + 175(1/2) = 50 + 87.5 = 137.5$.
+> 2. → A consumes 137.5 units of good 1 at equilibrium.
+>
+> **Intuition:** A's large endowment of good 2 gives her substantial purchasing power. At the equilibrium price ratio, she chooses 137.5 units of good 1 — more than her initial endowment of 100 — financing the extra by selling good 2.
+
 $$x_1^{A*} = 50 + 175 \cdot \frac{1}{2} = 50 + 87.5 = 137.5$$
+
+> **Derivation Walkthrough:**
+> Starting from A's demand for good 2 and substituting the equilibrium price ratio $p_1/p_2 = 2$:
+> 1. $x_2^{A*} = 175 + 50(p_1/p_2) = 175 + 50(2) = 175 + 100 = 275$.
+> 2. → A consumes 275 units of good 2 at equilibrium.
+>
+> **Intuition:** A starts with 350 units of good 2 and consumes 275 — she sells 75 units to finance her purchase of good 1. Her total spending equals her total income, satisfying the budget constraint with equality.
+
 $$x_2^{A*} = 175 + 50 \cdot 2 = 175 + 100 = 275$$
+
+> **Derivation Walkthrough:**
+> Starting from B's demand for good 1 and substituting $p_2/p_1 = 1/2$:
+> 1. $x_1^{B*} = 50 + 25(p_2/p_1) = 50 + 25(1/2) = 50 + 12.5 = 62.5$.
+> 2. → B consumes 62.5 units of good 1 at equilibrium.
+>
+> **Intuition:** B has a smaller endowment than A (only 50 of good 2) and thus lower purchasing power. B's consumption of good 1 (62.5) is less than A's (137.5) but still more than his initial endowment of 100 — he must sell good 2 to finance the excess.
+
 $$x_1^{B*} = 50 + 25 \cdot \frac{1}{2} = 50 + 12.5 = 62.5$$
+
+> **Derivation Walkthrough:**
+> Starting from B's demand for good 2 and substituting $p_1/p_2 = 2$:
+> 1. $x_2^{B*} = 25 + 50(p_1/p_2) = 25 + 50(2) = 25 + 100 = 125$.
+> 2. → B consumes 125 units of good 2 at equilibrium.
+>
+> **Intuition:** B starts with 50 units of good 2 and consumes 125 — he buys 75 additional units. His good 1 consumption falls from 100 to 62.5 (sells 37.5), financing the good 2 purchase. The trades of A and B exactly offset: A sells 75 of good 2 to B, B sells 37.5 of good 1 to A.
+
 $$x_2^{B*} = 25 + 50 \cdot 2 = 25 + 100 = 125$$
 
 **Step 5: Verify Walras' Law.** $p \cdot z(p) = p_1(137.5 + 62.5 - 200) + p_2(275 + 125 - 400) = p_1(0) + p_2(0) = 0$.
@@ -3737,6 +5720,11 @@ The $2 \times 2 \times 2$ model **assumes away** consumption externalities (assu
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 6: GAME THEORY & INDUSTRIAL ORGANIZATION
+============================================================ -->
+
 ## <a id="topic-6"></a>Topic 6: Game Theory & Industrial Organization
 
 > **Exam weight:** 14 marks (typically 1 question). Common question types: Nash equilibrium calculation (Bertrand/Cournot), prisoners' dilemma and oligopoly, extensive form entry games with backward induction, repeated games with grim trigger (discount factor threshold), centipede game paradox.
@@ -3748,11 +5736,26 @@ The $2 \times 2 \times 2$ model **assumes away** consumption externalities (assu
 
 **Definition (Nash, 1950):** A strategy profile $(s_1^*, s_2^*, \dots, s_n^*)$ such that no player can gain by unilaterally deviating:
 
-$$ u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \quad \text{for all } s_i \in S_i \text{ and all } i $$
+> **Derivation Walkthrough:**
+> Starting from the principle of rational self-interested play — each player $i$ chooses $s_i$ to maximise their own payoff $u_i$, taking opponents' strategies $s_{-i}$ as given:
+> 1. Player $i$'s optimisation problem: $\max_{s_i \in S_i} u_i(s_i, s_{-i}^*)$
+> 2. At a Nash equilibrium $s^* = (s_1^*, \dots, s_n^*)$, all $n$ players are simultaneously solving this problem
+> 3. Hence $s_i^*$ must yield at least as high a payoff as any alternative $s_i$, holding $s_{-i}^*$ fixed: $u_i(s_i^*, s_{-i}^*) \ge u_i(s_i, s_{-i}^*)$
+> 4. This must hold for every player $i$ and every possible deviation $s_i \in S_i$
+> 5. → Final form: $$u_i(s_i^*, s_{-i}^*) \ge u_i(s_i, s_{-i}^*) \quad \text{for all } s_i \in S_i \text{ and all } i$$
+>
+> **Intuition:** No player can improve their payoff by changing strategy alone. Each strategy is a **best response** to the others'. The equilibrium is a "mutual best response" — a fixed point of the best-response correspondence.
 
 **Best Response:** Player $i$'s best response $BR_i(s_{-i})$ is the set of strategies that maximise $i$'s payoff given opponents' strategies:
 
-$$ BR_i(s_{-i}) = \arg\max_{s_i \in S_i} u_i(s_i, s_{-i}) $$
+> **Derivation Walkthrough:**
+> Starting from player $i$'s payoff-maximisation problem for a fixed $s_{-i}$:
+> 1. For a given $s_{-i}$, player $i$ solves $\max_{s_i \in S_i} u_i(s_i, s_{-i})$
+> 2. The solution to this problem is (potentially) a set of strategies that all achieve the maximum
+> 3. This set is the **best response correspondence**: all $s_i$ that are optimal against $s_{-i}$
+> 4. → $$BR_i(s_{-i}) = \arg\max_{s_i \in S_i} u_i(s_i, s_{-i})$$
+>
+> **Intuition:** $BR_i$ maps opponents' strategies to player $i$'s optimal replies. A Nash equilibrium occurs when $s_i^* \in BR_i(s_{-i}^*)$ for all $i$ — each player's strategy is a best response to the others'.
 
 A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_i^* \in BR_i(s_{-i}^*)$ for all $i$.
 
@@ -3761,8 +5764,16 @@ A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_
 > Nash (1950) proved that **every finite game has at least one Nash equilibrium** (in pure or mixed strategies). The proof applies Kakutani's fixed-point theorem:
 >
 > Define the **best-response correspondence** $BR: S \to S$ as the product of individual best responses:
-> $$ BR(s) = \times_{i=1}^n BR_i(s_{-i}) $$
+
+> **Derivation Walkthrough:**
+> Starting from the individual best-response correspondences $BR_i(s_{-i})$:
+> 1. Define the joint correspondence $BR: S \to S$ as the Cartesian product of each player's best response: $BR(s) = \times_{i=1}^n BR_i(s_{-i})$
+> 2. A Nash equilibrium $s^*$ requires $s_i^* \in BR_i(s_{-i}^*)$ for every player $i$
+> 3. This is equivalent to the profile-level condition $s^* \in BR(s^*)$ — a **fixed point** of $BR$
+> 4. → $$BR(s) = \times_{i=1}^n BR_i(s_{-i})$$
 >
+> **Intuition:** The Nash equilibrium is a fixed point of the product best-response correspondence. Kakutani's fixed-point theorem guarantees existence when $BR$ is upper hemicontinuous, non-empty, and convex-valued.
+
 > A Nash equilibrium is a **fixed point** of $BR$: a strategy profile $s^*$ such that $s^* \in BR(s^*)$.
 >
 > Kakutani's fixed-point theorem states: If $F: A \to A$ is an **upper-semicontinuous** and **convex-valued** correspondence on a nonempty, compact, convex set $A$, then $F$ has at least one fixed point $x^* \in A$ such that $x^* \in F(x^*)$.
@@ -3787,8 +5798,17 @@ A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_
 > **Munoz-Garcia Insight: Mixed Strategy Nash Equilibrium** (Ch.8, §8.1.1)
 >
 > **Definition:** A strategy profile $\sigma = (\sigma_1, \sigma_2, \dots, \sigma_n)$, where $\sigma_i$ is a probability distribution over $S_i$, is a mixed strategy Nash equilibrium (msNE) iff:
-> $$ \pi_i(\sigma_i, \sigma_{-i}) \geq \pi_i(s_i', \sigma_{-i}) \quad \text{for all } s_i' \in S_i \text{ and all } i $$
+
+> **Derivation Walkthrough:**
+> Starting from the Nash equilibrium definition extended to allow randomised strategies:
+> 1. Let $\sigma_i$ be a probability distribution (mixed strategy) over pure strategies $S_i$
+> 2. Player $i$'s expected payoff from $\sigma_i$ given opponents' mixtures $\sigma_{-i}$ is $\pi_i(\sigma_i, \sigma_{-i})$
+> 3. A msNE requires no profitable deviation to any **pure** strategy $s_i' \in S_i$
+> 4. This is sufficient because if no pure-strategy deviation is profitable, no mixed deviation can be either (expected payoff of a mixture is a convex combination of pure-strategy payoffs)
+> 5. → $$\pi_i(\sigma_i, \sigma_{-i}) \geq \pi_i(s_i', \sigma_{-i}) \quad \text{for all } s_i' \in S_i \text{ and all } i$$
 >
+> **Intuition:** In a mixed-strategy NE, each player's mixture makes the opponent **indifferent** among the pure strategies they randomise over. The indifference condition pins down the mixing probabilities. Strictly dominated strategies receive zero probability.
+
 > **Key properties:**
 > 1. If a player randomises, they must be **indifferent** among all pure strategies played with positive probability — otherwise they would put 100% on the strictly better one.
 > 2. Strictly dominated strategies receive zero probability in any msNE.
@@ -3807,15 +5827,75 @@ A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_
 > This game has two pure-strategy NEs: (Adopt, Adopt) and (Not adopt, Not adopt). There is also a **mixed-strategy NE**.
 >
 > Let $p$ be the probability Firm A adopts, and $q$ the probability Firm B adopts. **Indifference condition for Firm A:**
+
+> **Derivation Walkthrough:**
+> Starting from the mixed-strategy NE indifference condition — if Firm A randomises, it must be indifferent between Adopt and Not adopt:
+> 1. Compute Firm A's expected payoff from Adopt given B adopts with prob $q$: $EU_A(\text{Adopt}) = 3q + 0(1-q) = 3q$
+> 2. Compute Firm A's expected payoff from Not adopt: $EU_A(\text{Not adopt}) = 0q + 1(1-q) = 1 - q$
+> 3. Indifference requires $EU_A(\text{Adopt}) = EU_A(\text{Not adopt})$
+> 4. Solving $3q = 1 - q$ gives $q = 1/4$
+> 5. → Firm A's indifference pins down Firm B's mixing probability, not its own
 >
+> **Intuition:** In mixed-strategy NE, each player's mixing probability makes the **other** player indifferent. Firm A's indifference condition determines $q$ (B's adoption probability), not $p$ (A's own probability). This is the key insight of the indifference method.
+
 > $$ EU_A(\text{Adopt}) = EU_A(\text{Not adopt}) $$
+>
+> > **Derivation Walkthrough:**
+> > Substituting the payoff matrix values into the indifference condition:
+> > 1. If Firm B adopts (prob $q$): Firm A's payoffs are 3 (Adopt) and 0 (Not adopt)
+> > 2. If Firm B does not adopt (prob $1-q$): Firm A's payoffs are 0 (Adopt) and 1 (Not adopt)
+> > 3. Expected value of Adopt: $3q + 0(1-q)$; Not adopt: $0q + 1(1-q)$
+> > 4. → Indifference requires $3q + 0(1-q) = 0q + 1(1-q)$
+> >
+> > **Intuition:** Each term is the product of the payoff in that state and the probability of that state. This expands the formal indifference condition using the specific payoffs from the technology adoption game.
+>
 > $$ 3q + 0(1-q) = 0q + 1(1-q) $$
+>
+> > **Derivation Walkthrough:**
+> > Simplifying the indifference equation algebraically:
+> > 1. $3q + 0(1-q) = 3q$ and $0q + 1(1-q) = 1 - q$
+> > 2. Setting them equal: $3q = 1 - q$
+> > 3. Solving: $3q + q = 1 \;\rightarrow\; 4q = 1 \;\rightarrow\; q = 1/4$
+> > 4. → $3q = 1 - q \Rightarrow q = 1/4$
+> >
+> > **Intuition:** Firm B must adopt with probability exactly $1/4$ for Firm A to be indifferent between adopting and not adopting. If $q > 1/4$, Firm A strictly prefers to Adopt; if $q < 1/4$, Firm A strictly prefers Not adopt.
+>
 > $$ 3q = 1 - q \quad \Rightarrow \quad q = \frac{1}{4} $$
 >
 > **Indifference condition for Firm B:**
+
+> **Derivation Walkthrough:**
+> Starting from the same indifference principle applied to Firm B:
+> 1. Compute Firm B's expected payoff from Adopt given A adopts with prob $p$: $EU_B(\text{Adopt}) = 1p + 0(1-p) = p$
+> 2. Compute Firm B's expected payoff from Not adopt: $EU_B(\text{Not adopt}) = 0p + 3(1-p) = 3(1-p)$
+> 3. Indifference requires $p = 3(1-p)$
+> 4. Solving: $p = 3 - 3p \rightarrow 4p = 3 \rightarrow p = 3/4$
+> 5. → Firm B's indifference pins down Firm A's mixing probability $p = 3/4$
 >
+> **Intuition:** Firm B (which prefers opposite actions — payoff 3 when firms choose different actions) randomises with low probability of Adopt ($q = 1/4$). Firm A (which prefers coordinated outcomes — payoff 3 when both adopt) randomises with high probability of Adopt ($p = 3/4$). The msNE is $(p, q) = (3/4, 1/4)$.
+
 > $$ EU_B(\text{Adopt}) = EU_B(\text{Not adopt}) $$
+>
+> > **Derivation Walkthrough:**
+> > Substituting the payoff matrix values for Firm B:
+> > 1. If Firm A adopts (prob $p$): Firm B's payoffs are 1 (Adopt) and 0 (Not adopt)
+> > 2. If Firm A does not adopt (prob $1-p$): Firm B's payoffs are 0 (Adopt) and 3 (Not adopt)
+> > 3. Expected value of Adopt: $1p + 0(1-p) = p$; Not adopt: $0p + 3(1-p) = 3(1-p)$
+> > 4. → Indifference requires $1p + 0(1-p) = 0p + 3(1-p)$
+> >
+> > **Intuition:** Firm B's payoffs are structured so it prefers the opposite action from Firm A. When A adopts, B prefers Not adopting (payoff 0 vs 1); when A does not adopt, B prefers adopting (payoff 3 vs 0).
+>
 > $$ 1p + 0(1-p) = 0p + 3(1-p) $$
+>
+> > **Derivation Walkthrough:**
+> > Simplifying Firm B's indifference equation algebraically:
+> > 1. $1p + 0(1-p) = p$ and $0p + 3(1-p) = 3 - 3p$
+> > 2. Setting them equal: $p = 3 - 3p$
+> > 3. Solving: $p + 3p = 3 \;\rightarrow\; 4p = 3 \;\rightarrow\; p = 3/4$
+> > 4. → $p = 3 - 3p \Rightarrow p = 3/4$
+> >
+> > **Intuition:** Firm A must adopt with probability exactly $3/4$ for Firm B to be indifferent. The full msNE is $(p, q) = (3/4, 1/4)$ — Firm A randomises with high probability of Adopt (it prefers coordinated outcomes), while Firm B randomises with low probability of Adopt (it prefers opposite actions).
+>
 > $$ p = 3 - 3p \quad \Rightarrow \quad p = \frac{3}{4} $$
 >
 > **Mixed-strategy NE:** $\left( \frac{3}{4} \text{ Adopt}, \frac{1}{4} \text{ Not adopt} \right)$ for Firm A, $\left( \frac{1}{4} \text{ Adopt}, \frac{3}{4} \text{ Not adopt} \right)$ for Firm B.
@@ -3828,7 +5908,14 @@ A Nash equilibrium is a **fixed point** of the best-response correspondence: $s_
 
 **Dominant strategy:** A strategy $s_i^*$ is dominant if it yields a strictly higher payoff than any other strategy **regardless** of what opponents do (Fudenberg & Tirole, SS1.1):
 
-$$ u_i(s_i^*, s_{-i}) > u_i(s_i, s_{-i}) \quad \text{for all } s_i \neq s_i^* \text{ and all } s_{-i} $$
+> **Derivation Walkthrough:**
+> Starting from the definition of a strictly dominant strategy — one that outperforms all alternatives no matter what opponents choose:
+> 1. For a given player $i$, compare strategy $s_i^*$ against any alternative $s_i \neq s_i^*$
+> 2. The comparison must hold for **every possible** opponent strategy profile $s_{-i} \in S_{-i}$
+> 3. If $u_i(s_i^*, s_{-i}) > u_i(s_i, s_{-i})$ for all $s_i \neq s_i^*$ **and** all $s_{-i}$, then $s_i^*$ strictly dominates $s_i$
+> 4. → $$u_i(s_i^*, s_{-i}) > u_i(s_i, s_{-i}) \quad \text{for all } s_i \neq s_i^* \text{ and all } s_{-i}$$
+>
+> **Intuition:** A dominant strategy is optimal regardless of what others do — it requires no beliefs or conjectures about opponents' behaviour. If all players have a dominant strategy, the outcome is a **dominant-strategy equilibrium**, which is a particularly strong solution concept (no need for equilibrium reasoning).
 
 **Prisoners' Dilemma (PD):** A $2 \times 2$ game where each player has a dominant strategy (Defect), yet mutual defection is Pareto-inferior to mutual cooperation (Koutsoyiannis, p.412-413).
 
@@ -3901,16 +5988,29 @@ $\pi_1 = (40 - 10)(60) = 1800$, $\pi_2 = 1800$
 > **Munoz-Garcia Insight: Strategic Complements** (Ch.8, §8.4.1)
 >
 > In Bertrand competition with differentiated products, firms' pricing decisions are **strategic complements**: an increase in firm $j$'s price raises firm $i$'s optimal price. Formally, the cross-partial derivative of firm $i$'s marginal profit with respect to its rival's price is positive:
->
-> $$ \frac{\partial^2 \pi_i}{\partial p_i \partial p_j} > 0 $$
->
-> This implies best-response functions are **upward-sloping** in price space. Intuitively, when your rival raises price, your demand increases, and raising your own price becomes more profitable. The general condition (Munoz-Garcia, Ch.8) for strategic complements in price competition is:
->
-> $$ \frac{\partial \pi_i(p_i, p_j)}{\partial p_i \partial p_j} = \frac{\partial q_i}{\partial p_j} + (p_i - c) \frac{\partial^2 q_i}{\partial p_i \partial p_j} > 0 $$
->
-> which holds for linear demand since $\partial q_i/\partial p_j > 0$ (goods are substitutes) and the second term vanishes.
 
-**Homogeneous Bertrand:** If products are identical and firms compete in prices with constant MC, the unique NE is $p = MC$ (zero profits) -- the **Bertrand paradox**.
+> **Derivation Walkthrough:**
+> Starting from the definition of strategic complements — an increase in $p_j$ raises $i$'s optimal $p_i$:
+> 1. Firm $i$'s marginal profit is $\partial \pi_i / \partial p_i$
+> 2. Strategic complements means $\partial (\partial \pi_i / \partial p_i) / \partial p_j > 0$ — the cross-partial derivative is positive
+> 3. When $p_j$ rises, firm $i$'s demand increases (substitute goods), raising the marginal profitability of $i$'s own price increase
+> 4. → $$\frac{\partial^2 \pi_i}{\partial p_i \partial p_j} > 0$$
+>
+> **Intuition:** A positive cross-partial means best-response functions slope **upward** in price space. When your rival raises price, your optimal response is to raise your price too. This contrasts with Cournot competition where best-response functions slope downward.
+
+> This implies best-response functions are **upward-sloping** in price space. Intuitively, when your rival raises price, your demand increases, and raising your own price becomes more profitable. The general condition (Munoz-Garcia, Ch.8) for strategic complements in price competition is:
+
+> **Derivation Walkthrough:**
+> Starting from firm $i$'s profit function $\pi_i(p_i, p_j) = (p_i - c) q_i(p_i, p_j)$:
+> 1. Marginal profit: $\partial \pi_i / \partial p_i = q_i + (p_i - c) (\partial q_i / \partial p_i)$
+> 2. Cross-partial derivative w.r.t. $p_j$: $\frac{\partial^2 \pi_i}{\partial p_i \partial p_j} = \frac{\partial q_i}{\partial p_j} + \frac{\partial (p_i - c)}{\partial p_j} \frac{\partial q_i}{\partial p_i} + (p_i - c) \frac{\partial^2 q_i}{\partial p_i \partial p_j}$
+> 3. Since $\partial (p_i - c)/\partial p_j = 0$, this simplifies to: $\frac{\partial q_i}{\partial p_j} + (p_i - c) \frac{\partial^2 q_i}{\partial p_i \partial p_j}$
+> 4. For linear demand $\frac{\partial^2 q_i}{\partial p_i \partial p_j} = 0$, so the sign depends on $\frac{\partial q_i}{\partial p_j} > 0$ (substitute goods)
+> 5. → $$\frac{\partial \pi_i(p_i, p_j)}{\partial p_i \partial p_j} = \frac{\partial q_i}{\partial p_j} + (p_i - c) \frac{\partial^2 q_i}{\partial p_i \partial p_j} > 0$$
+>
+> **Intuition:** The cross-partial has two terms: a demand-shifting effect ($\partial q_i / \partial p_j > 0$ — rival's price increase raises own demand) and a curvature term (zero for linear demand). Since goods are substitutes, the first term is positive, confirming strategic complements. Best-response functions slope upward.
+
+> **Homogeneous Bertrand:** If products are identical and firms compete in prices with constant MC, the unique NE is $p = MC$ (zero profits) -- the **Bertrand paradox**.
 
 ---
 
@@ -3937,12 +6037,31 @@ Similarly: $q_2 = (a - c - bq_1)/(2b)$ (BR of Firm 2)
 > **Munoz-Garcia Insight: Strategic Substitutes** (Ch.8, §8.3)
 >
 > In Cournot competition, firms' output decisions are **strategic substitutes**: an increase in firm $j$'s output reduces firm $i$'s optimal output. The formal condition involves the cross-derivative of firm $i$'s marginal profit with respect to its rival's quantity:
+
+> **Derivation Walkthrough:**
+> Starting from firm $j$'s profit in Cournot competition with inverse demand $p(q)$ where total output $q = \sum_k q_k$:
+> 1. Profit: $\pi_j = p(q) q_j - c(q_j)$
+> 2. First-order condition (marginal profit = 0): $\partial \pi_j / \partial q_j = p'(q) q_j + p(q) - c'(q_j) = 0$
+> 3. To determine whether quantities are strategic substitutes, compute the cross-partial of marginal profit w.r.t. rival output $q_k$ ($k \neq j$):
+>    - $\frac{\partial}{\partial q_k}[p'(q) q_j] = p''(q) \cdot \frac{\partial q}{\partial q_k} \cdot q_j + p'(q) \cdot \frac{\partial q_j}{\partial q_k} = p''(q) q_j$ (since $\partial q_j / \partial q_k = 0$)
+>    - $\frac{\partial}{\partial q_k}[p(q)] = p'(q) \cdot \frac{\partial q}{\partial q_k} = p'(q)$
+>    - $\frac{\partial}{\partial q_k}[-c'(q_j)] = 0$ (cost depends only on own output)
+> 4. The cross-partial derivative equals $p''(q) q_j + p'(q)$. For standard downward-sloping demand ($p'(q) < 0$) with linear or concave demand ($p''(q) \le 0$), this is negative. Writing the expression as in the text:
+> 5. → $$\frac{\partial \left( \partial \pi_j / \partial q_j \right)}{\partial q_k} = \frac{\partial}{\partial q_k} \left[ p'(q) q_j + p(q) - c'(q_j) \right] = p''(q) q_j - p'(q) < 0 \quad \text{for all } k \neq j$$
 >
-> $$ \frac{\partial \left( \partial \pi_j / \partial q_j \right)}{\partial q_k} = \frac{\partial}{\partial q_k} \left[ p'(q) q_j + p(q) - c'(q_j) \right] = p''(q) q_j - p'(q) < 0 \quad \text{for all } k \neq j $$
->
+> **Intuition:** The cross-partial is negative, confirming that quantities are **strategic substitutes**: an increase in rival output $q_k$ lowers market price, reducing firm $j$'s marginal revenue. Firm $j$'s optimal response is to contract its own output. Hence best-response functions slope **downward** in quantity space.
+
 > For linear demand $p(q) = a - bq$, this simplifies to:
-> $$ \frac{\partial^2 \pi_j}{\partial q_j \partial q_k} = -b < 0 $$
+
+> **Derivation Walkthrough:**
+> Starting from the general cross-partial expression with $p(q) = a - bq$:
+> 1. Linear inverse demand: $p(q) = a - bq$, so $p'(q) = -b$ and $p''(q) = 0$
+> 2. The cross-partial from firm $j$'s FOC: $\frac{\partial^2 \pi_j}{\partial q_j \partial q_k} = \frac{\partial}{\partial q_k}[p'(q) q_j + p(q) - c'(q_j)]$
+> 3. Substituting $p'(q) = -b$ and $p''(q) = 0$: $\frac{\partial}{\partial q_k}[(-b) q_j + (a - bq)] = 0 \cdot q_j + (-b) = -b$
+> 4. → $$\frac{\partial^2 \pi_j}{\partial q_j \partial q_k} = -b < 0$$
 >
+> **Intuition:** With linear demand, the cross-partial simplifies to $-b < 0$, confirming strategic substitutes. Each additional unit produced by the rival reduces market price by $b$, which directly lowers the marginal revenue of own output by $b$. Best-response functions are linear and slope downward with gradient $-1/2$.
+
 > Hence best-response functions slope **downward** in quantity space. When your rival produces more, market price falls, reducing your marginal revenue and your optimal quantity.
 >
 > **Comparison:** The sign of the cross-partial derivative (positive for Bertrand prices, negative for Cournot quantities) determines whether best-response functions slope up or down. This classification is critical for merger analysis, entry deterrence, and policy evaluation.
@@ -3957,6 +6076,8 @@ Similarly: $q_2 = (a - c - bq_1)/(2b)$ (BR of Firm 2)
 | Profits | Positive | Zero (homogeneous goods) |
 
 **Key insight:** Cournot yields higher prices and profits than Bertrand with homogeneous goods because quantity competition is softer than price competition.
+
+---
 
 #### 6.4.1 Stackelberg Model (Sequential Cournot)
 
@@ -4048,7 +6169,18 @@ Decision tree: A chooses IN/OUT; B observes and chooses IN/OUT.
 
 **Sustaining condition:** Cooperation is an SPNE under grim trigger if the discount factor $\delta$ satisfies:
 
-$$ \delta \geq \frac{\pi_{\text{dev}} - \pi_{\text{coop}}}{\pi_{\text{dev}} - \pi_{\text{pun}}} $$
+> **Derivation Walkthrough:**
+> Starting from the present-value comparison between cooperation and deviation with grim trigger punishment:
+> 1. **Cooperate forever:** earn $\pi_{\text{coop}}$ each period → PV = $\pi_{\text{coop}} + \delta \pi_{\text{coop}} + \delta^2 \pi_{\text{coop}} + \cdots = \frac{\pi_{\text{coop}}}{1-\delta}$
+> 2. **Deviation:** earn $\pi_{\text{dev}}$ today (higher one-shot gain), then $\pi_{\text{pun}}$ forever (trigger punishment) → PV = $\pi_{\text{dev}} + \frac{\delta \pi_{\text{pun}}}{1-\delta}$
+> 3. Cooperation is sustainable if the PV of cooperation ≥ PV of deviation:
+>    $\frac{\pi_{\text{coop}}}{1-\delta} \ge \pi_{\text{dev}} + \frac{\delta \pi_{\text{pun}}}{1-\delta}$
+> 4. Multiply both sides by $(1-\delta)$: $\pi_{\text{coop}} \ge \pi_{\text{dev}}(1-\delta) + \delta \pi_{\text{pun}}$
+> 5. Collect $\delta$ terms: $\pi_{\text{coop}} \ge \pi_{\text{dev}} - \delta(\pi_{\text{dev}} - \pi_{\text{pun}})$
+> 6. Rearranged: $\delta(\pi_{\text{dev}} - \pi_{\text{pun}}) \ge \pi_{\text{dev}} - \pi_{\text{coop}}$
+> 7. → $$\delta \geq \frac{\pi_{\text{dev}} - \pi_{\text{coop}}}{\pi_{\text{dev}} - \pi_{\text{pun}}}$$
+>
+> **Intuition:** The threshold discount factor $\delta^*$ is the ratio of the one-period gain from cheating ($\pi_{\text{dev}} - \pi_{\text{coop}}$) to the one-period cost of punishment ($\pi_{\text{dev}} - \pi_{\text{pun}}$). If $\delta$ is high enough (players are patient enough), the long-run cost of punishment outweighs the short-run gain from deviation, making cooperation sustainable.
 
 where $\pi_{\text{dev}}$ is the one-period gain from deviation, $\pi_{\text{coop}}$ is the cooperative per-period payoff, and $\pi_{\text{pun}}$ is the punishment (NE) payoff.
 
@@ -4091,9 +6223,18 @@ So (Up, Left) = (3,3) can be sustained as SPNE with grim trigger if $\delta \ge 
 > **The problem:** If players anticipate that renegotiation will occur in the future, the threat of punishment loses its bite. A rational player who deviates knows that after a brief punishment, both will renegotiate back to cooperation. Hence the discounted cost of deviation is much smaller than under the permanent punishment of grim trigger, making cooperation **harder to sustain**.
 >
 > **Formally:** With renegotiation, the punishment is finite (say $k$ periods), so the deviation constraint becomes:
+
+> **Derivation Walkthrough:**
+> Starting from the grim trigger condition but with finite $k$-period punishment followed by renegotiation back to cooperation:
+> 1. **Cooperate forever:** PV = $\frac{\pi_{\text{coop}}}{1-\delta}$ (same as grim trigger)
+> 2. **Deviation with renegotiation:** earn $\pi_{\text{dev}}$ today (deviation gain), then $\pi_{\text{pun}}$ for $k$ periods (punishment), then $\pi_{\text{coop}}$ forever (renegotiation)
+> 3. Deviation PV = $\pi_{\text{dev}} + \delta \pi_{\text{pun}} + \delta^2 \pi_{\text{pun}} + \cdots + \delta^k \pi_{\text{pun}} + \delta^{k+1} \pi_{\text{coop}} + \delta^{k+2} \pi_{\text{coop}} + \cdots$
+> 4. Group the punishment phase: $\sum_{t=1}^{k} \delta^t \pi_{\text{pun}}$ and the post-punishment phase: $\sum_{t=k+1}^{\infty} \delta^t \pi_{\text{coop}}$
+> 5. The cooperation condition is: $\frac{\pi_{\text{coop}}}{1-\delta} \ge \pi_{\text{dev}} + \sum_{t=1}^{k} \delta^t \pi_{\text{pun}} + \sum_{t=k+1}^{\infty} \delta^t \pi_{\text{coop}}$
+> 6. → $$\pi_{\text{dev}} + \delta \pi_{\text{pun}} + \delta^2 \pi_{\text{pun}} + \cdots + \delta^{k} \pi_{\text{pun}} + \delta^{k+1} \pi_{\text{coop}} + \cdots \geq \pi_{\text{coop}}/(1-\delta)$$
 >
-> $$ \pi_{\text{dev}} + \delta \pi_{\text{pun}} + \delta^2 \pi_{\text{pun}} + \cdots + \delta^{k} \pi_{\text{pun}} + \delta^{k+1} \pi_{\text{coop}} + \cdots \geq \pi_{\text{coop}}/(1-\delta) $$
->
+> **Intuition:** Because the punishment phase is now finite ($k$ periods rather than infinite), the discounted cost of deviation is smaller. For cooperation to be sustained, players must be **more patient** (higher $\delta$) than under grim trigger. As $k \to \infty$, the condition converges to the grim trigger condition; as $k \to 0$, only self-enforcing agreements (where $\pi_{\text{coop}}$ is itself a NE) survive.
+
 > Since the punishment phase is now limited, the required discount factor $\delta$ for sustaining cooperation is **higher** than under grim trigger.
 >
 > **Solutions:** More sophisticated strategies can achieve renegotiation-proofness:
@@ -4205,16 +6346,32 @@ When players have **private information** (e.g., unknown costs, unknown demand, 
 > **Munoz-Garcia Insight: Bayesian Nash Equilibrium** (Ch.8, §8.1.3)
 >
 > **Definition:** A strategy profile $(s_1^*(\theta_1), s_2^*(\theta_2), \dots, s_N^*(\theta_N))$ is a Bayesian Nash equilibrium (BNE) of a game of incomplete information if, for every player $i$, every type $\theta_i \in \Theta_i$, and every feasible strategy $s_i(\theta_i)$:
+
+> **Derivation Walkthrough:**
+> Starting from the Nash equilibrium definition extended to games with private information and type-contingent strategies:
+> 1. Each player $i$ has private type $\theta_i$; opponents hold beliefs $p(\theta_{-i} | \theta_i)$
+> 2. A strategy $s_i(\theta_i)$ is a function mapping $i$'s type to an action — a **type-contingent strategy**
+> 3. In BNE, every type $\theta_i$ of every player $i$ must be playing optimally: $s_i^*(\theta_i)$ maximises $i$'s expected utility given its beliefs about opponents' types and their equilibrium strategies $s_{-i}^*(\theta_{-i})$
+> 4. The condition must hold for every feasible deviation $s_i(\theta_i)$ and every type $\theta_i$
+> 5. → $$EU_i(s_i^*(\theta_i), s_{-i}^*(\theta_{-i}); \theta_i, \theta_{-i}) \geq EU_i(s_i(\theta_i), s_{-i}^*(\theta_{-i}); \theta_i, \theta_{-i})$$
 >
-> $$ EU_i(s_i^*(\theta_i), s_{-i}^*(\theta_{-i}); \theta_i, \theta_{-i}) \geq EU_i(s_i(\theta_i), s_{-i}^*(\theta_{-i}); \theta_i, \theta_{-i}) $$
->
+> **Intuition:** BNE extends NE by requiring optimality **type-by-type**. Each type of each player maximises expected payoff given correct beliefs about opponents' type-contingent strategies. This is a "Nash equilibrium in type-contingent strategies" — a fixed point in strategy functions rather than actions.
+
 > **Key elements:**
 > - **Types:** $\theta_i \in \Theta_i$ captures player $i$'s private information (e.g., high or low cost).
 > - **Beliefs:** Common prior $p(\theta_1, \dots, \theta_N)$ over type profiles. Players update using Bayes' rule after observing their own type.
 > - **Expected payoffs:** Since player $i$ does not observe $\theta_{-i}$, they maximise expected utility given their beliefs about opponents' types:
+
+> **Derivation Walkthrough:**
+> Starting from the definition of expected utility when player $i$ faces uncertainty about opponents' types:
+> 1. Player $i$ knows their own type $\theta_i$ but not $\theta_{-i}$
+> 2. After observing $\theta_i$, $i$ forms posterior beliefs $p(\theta_{-i} | \theta_i)$ using Bayes' rule
+> 3. Opponents play type-contingent strategies $s_{-i}(\theta_{-i})$
+> 4. Player $i$'s expected payoff from choosing $s_i$ is the sum over all possible opponent type profiles, weighted by beliefs:
+> 5. $$EU_i(s_i, s_{-i}; \theta_i) = \sum_{\theta_{-i}} p(\theta_{-i} | \theta_i) \cdot u_i(s_i, s_{-i}(\theta_{-i}); \theta_i, \theta_{-i})$$
 >
-> $$ EU_i(s_i, s_{-i}; \theta_i) = \sum_{\theta_{-i}} p(\theta_{-i} | \theta_i) \cdot u_i(s_i, s_{-i}(\theta_{-i}); \theta_i, \theta_{-i}) $$
->
+> **Intuition:** The expectation integrates over opponent types because $i$ does not observe them. This is analogous to expected utility in decision theory under uncertainty — the opponent's type-contingent strategy $s_{-i}(\theta_{-i})$ translates type uncertainty into payoff uncertainty. The posterior $p(\theta_{-i} | \theta_i)$ reflects correlation in types (if any) updated from the prior.
+
 > **Finding BNE -- Four-step procedure (Munoz-Garcia Ch.8):**
 > 1. **Strategy sets:** Identify strategies as functions of each player's private type.
 > 2. **Bayesian normal form:** Construct expected payoff matrix using the prior distribution over types.
@@ -4237,9 +6394,17 @@ In **sequential-move games with incomplete information**, BNE is insufficient be
 > **Intuition:** Condition (1) strengthens BNE by requiring optimality **off the equilibrium path** -- even at information sets that are never reached in equilibrium, players must be playing optimally given their beliefs. Condition (2) ensures that beliefs are not arbitrary: at on-equilibrium-path information sets, they must be derived from the prior and the equilibrium strategies via Bayes' rule.
 >
 > **Bayes' rule for belief updating:**
+
+> **Derivation Walkthrough:**
+> Starting from Bayes' theorem for updating the uninformed player's belief after observing an action (e.g., receiving an offer):
+> 1. Let $B$ and $NB$ be two states (e.g., beneficial investment or not), with prior probabilities $p(B)$ and $p(NB)$
+> 2. The uninformed player observes an action "Offer" and wants the posterior $\mu(B|\text{Offer}) = p(B|\text{Offer})$
+> 3. Bayes' rule: $p(B|\text{Offer}) = \frac{p(B \cap \text{Offer})}{p(\text{Offer})} = \frac{p(B) \cdot p(\text{Offer}|B)}{p(\text{Offer})}$
+> 4. The denominator expands using the law of total probability: $p(\text{Offer}) = p(B) \cdot p(\text{Offer}|B) + p(NB) \cdot p(\text{Offer}|NB)$
+> 5. → $$\mu(B|\text{Offer}) = p(B|\text{Offer}) = \frac{p(B) \cdot p(\text{Offer}|B)}{p(\text{Offer})} = \frac{p(B) \cdot p(\text{Offer}|B)}{p(B) \cdot p(\text{Offer}|B) + p(NB) \cdot p(\text{Offer}|NB)}$$
 >
-> $$ \mu(B|\text{Offer}) = p(B|\text{Offer}) = \frac{p(B) \cdot p(\text{Offer}|B)}{p(\text{Offer})} = \frac{p(B) \cdot p(\text{Offer}|B)}{p(B) \cdot p(\text{Offer}|B) + p(NB) \cdot p(\text{Offer}|NB)} $$
->
+> **Intuition:** The posterior belief combines prior information $p(B)$ with new evidence (the likelihood $p(\text{Offer}|B)$ of observing the action in each state). The denominator normalises so that beliefs sum to 1. At off-equilibrium-path information sets (zero probability events), Bayes' rule does not apply — PBE places no restrictions on off-path beliefs, which creates multiplicity.
+
 > where $\mu$ is the uninformed player's posterior belief that the state is $B$ (e.g., beneficial investment) after observing an action (e.g., receiving an offer).
 >
 > **Off-the-equilibrium-path beliefs:** At information sets that are reached with zero probability under the candidate equilibrium, Bayes' rule does not apply. The PBE concept does **not** restrict what beliefs players can hold off the equilibrium path, which is why multiple PBEs can often be sustained (different off-path beliefs support different equilibria).
@@ -4252,9 +6417,21 @@ In **sequential-move games with incomplete information**, BNE is insufficient be
 > 5. Check consistency: if the informed player's optimal strategy coincides with the candidate profile, it is a PBE.
 >
 > **Relationship between concepts:**
-> $$
-> \text{NE} \supset \text{SPNE} \supset \text{PBE} \supset \text{BNE (in sequential games)}
-> $$
+
+> **Derivation Walkthrough:**
+> Starting from the definitions of each equilibrium concept, ordered by how restrictive they are:
+> 1. **Nash Equilibrium (NE):** No profitable unilateral deviation **in the full game** — the weakest condition
+> 2. **Subgame Perfect NE (SPNE):** NE in **every subgame** — eliminates non-credible threats in sequential games, strictly stronger than NE
+> 3. **Perfect Bayesian Equilibrium (PBE):** SPNE + **sequential rationality** at every information set + **belief consistency** via Bayes' rule — applies to games with incomplete information
+> 4. **Bayesian NE (BNE):** NE in type-contingent strategies with expected payoffs — applies to static games of incomplete information; in sequential games, PBE is stronger
+> 5. The set inclusion relationships follow from the logical hierarchy of constraints:
+>    - Every SPNE is a NE (subgame perfection is a refinement)
+>    - Every PBE satisfies SPNE (if the game has perfect information) and BNE (sequential rationality + Bayes consistency)
+>    - Every BNE satisfies the NE condition (type-contingent NE is a special case of NE)
+> 6. → $$\text{NE} \supset \text{SPNE} \supset \text{PBE} \supset \text{BNE (in sequential games)}$$
+>
+> **Intuition:** Each refinement adds restrictions: SPNE adds subgame consistency, PBE adds belief-based sequential rationality and Bayesian updating, BNE (in sequential games) is the weakest incomplete-information concept. The "$\supset$" indicates set inclusion — the set of PBE is a subset of SPNE, which is a subset of NE. As we move rightward, equilibria become harder to find but more credible.
+
 > Every PBE is a BNE and an SPNE (in games with perfect information), but the converse does not hold. PBE imposes stronger requirements on off-equilibrium beliefs and sequential rationality.
 
 ---
@@ -4284,6 +6461,11 @@ In **sequential-move games with incomplete information**, BNE is insufficient be
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 7: EXTERNALITIES & PUBLIC GOODS
+============================================================ -->
+
 ## <a id="topic-7"></a>Topic 7: Externalities & Public Goods
 
 ### 7.1 Overview: Market Failure and Externalities
@@ -4320,19 +6502,60 @@ A steel mill (S) produces steel $S$ and pollution $x$ as a byproduct. A downstre
 #### (i) Unregulated (Individual Profit Maximisation)
 
 **Steel mill:**
+
+> **Derivation Walkthrough:**
+> Starting from the definition of profit (revenue minus cost):
+> 1. Revenue = Price × Quantity = $P_S \cdot S$
+> 2. Cost = $C_S(S, x)$ — steel production cost that depends on both output $S$ and pollution $x$
+> 3. → Profit = Revenue − Cost = $P_S \cdot S - C_S(S, x)$
+>
+> **Intuition:** The steel mill's profit is decreasing in pollution costs ($\partial C_S/\partial x < 0$), so pollution acts as a cost-reducing byproduct that the mill has an incentive to increase.
+
 $$\pi_S = P_S \cdot S - C_S(S, x)$$
 
 FOCs:
+
+> **Derivation Walkthrough:**
+> Starting from the profit function $\pi_S = P_S S - C_S(S, x)$:
+> 1. Take $\partial/\partial S$ treating $x$ as fixed: $\partial \pi_S/\partial S = P_S - \partial C_S/\partial S$
+> 2. Set = 0 for profit maximisation: $P_S - \partial C_S/\partial S = 0$
+> 3. → Rearranging: $P_S = \partial C_S/\partial S = MC_S$
+>
+> **Intuition:** Standard profit-maximising condition — produce steel until marginal revenue ($P_S$) equals marginal cost ($MC_S$). No externality appears at this stage.
+
 $$\frac{\partial \pi_S}{\partial S} = P_S - \frac{\partial C_S}{\partial S} = 0 \quad\Rightarrow\quad P_S = MC_S$$
+
+> **Derivation Walkthrough:**
+> Starting from the profit function $\pi_S = P_S S - C_S(S, x)$:
+> 1. Take $\partial/\partial x$ treating $S$ as fixed: $\partial \pi_S/\partial x = -\partial C_S/\partial x$
+> 2. Set = 0 for profit maximisation: $-\partial C_S/\partial x = 0$
+> 3. → Therefore $\partial C_S/\partial x = 0$
+>
+> **Intuition:** The steel mill increases pollution $x$ until the marginal private benefit ($-\partial C_S/\partial x$, the cost saving from additional pollution) falls to zero. **Critically, the mill ignores the damage imposed on the fishery** — this is the externality.
+
 $$\frac{\partial \pi_S}{\partial x} = -\frac{\partial C_S}{\partial x} = 0 \quad\Rightarrow\quad \frac{\partial C_S}{\partial x} = 0$$
 
-The steel mill uses pollution until the marginal private benefit of pollution ($-\partial C_S/\partial x$) falls to zero. It ignores the damage imposed on the fishery.
-
 **Fishery:**
-$$\pi_F = P_F \cdot F - C_F(F, x)$$
-$$\frac{\partial \pi_F}{\partial F} = P_F - \frac{\partial C_F}{\partial F} = 0 \quad\Rightarrow\quad P_F = MC_F$$
 
-The fishery treats pollution as an exogenous cost.
+> **Derivation Walkthrough:**
+> Starting from the definition of profit for the fishery:
+> 1. Revenue = $P_F \cdot F$
+> 2. Cost = $C_F(F, x)$ — fishing cost depends on own output $F$ and exogenous pollution $x$
+> 3. → Profit = $P_F \cdot F - C_F(F, x)$
+>
+> **Intuition:** The fishery's costs increase with pollution ($\partial C_F/\partial x > 0$), but the fishery has no control over $x$ — it treats pollution as an exogenous cost shifter.
+
+$$\pi_F = P_F \cdot F - C_F(F, x)$$
+
+> **Derivation Walkthrough:**
+> Starting from the profit function $\pi_F = P_F F - C_F(F, x)$:
+> 1. Take $\partial/\partial F$ treating $x$ as exogenous: $\partial \pi_F/\partial F = P_F - \partial C_F/\partial F$
+> 2. Set = 0: $P_F - \partial C_F/\partial F = 0$
+> 3. → $P_F = \partial C_F/\partial F = MC_F$
+>
+> **Intuition:** The fishery optimises output given pollution, equating price to marginal cost. It passively absorbs the external damage from pollution.
+
+$$\frac{\partial \pi_F}{\partial F} = P_F - \frac{\partial C_F}{\partial F} = 0 \quad\Rightarrow\quad P_F = MC_F$$
 
 **Result:** Pollution level $x^*$ is **too high** relative to the social optimum $x^\circ$ because the steel mill internalises only its private cost, not the external damage.
 
@@ -4341,7 +6564,24 @@ The fishery treats pollution as an exogenous cost.
 Maximise: $\Pi_J = P_S S - C_S(S, x) + P_F F - C_F(F, x)$
 
 FOCs for $S$ and $F$ unchanged. For pollution:
+
+> **Derivation Walkthrough:**
+> Starting from joint profit $\Pi_J = P_S S - C_S(S, x) + P_F F - C_F(F, x)$:
+> 1. Take $\partial/\partial x$: $\partial \Pi_J/\partial x = -\partial C_S/\partial x - \partial C_F/\partial x$
+> 2. Set = 0: $-\partial C_S/\partial x - \partial C_F/\partial x = 0$
+> 3. → Both firms' pollution-related costs are now internalised in the same objective
+>
+> **Intuition:** Unlike the unregulated case where the steel mill sets $-\partial C_S/\partial x = 0$, the merged firm also accounts for the fishery's marginal damage $\partial C_F/\partial x$. The externality is **internalised** by joint ownership.
+
 $$\frac{\partial \Pi_J}{\partial x} = -\frac{\partial C_S}{\partial x} - \frac{\partial C_F}{\partial x} = 0$$
+
+> **Derivation Walkthrough:**
+> Starting from the joint profit FOC $-\partial C_S/\partial x - \partial C_F/\partial x = 0$:
+> 1. Add $\partial C_F/\partial x$ to both sides: $-\partial C_S/\partial x = \partial C_F/\partial x$
+> 2. This is the **optimality condition** for the merged firm
+>
+> **Intuition:** The social optimum $x^\circ$ equates the **marginal benefit of pollution** to the steel mill (cost saving $-\partial C_S/\partial x$) with the **marginal damage** to the fishery ($\partial C_F/\partial x$). Since $\partial C_F/\partial x > 0$, we require $-\partial C_S/\partial x > 0$, meaning **less pollution than in the unregulated case**: $x^\circ < x^*$.
+
 $$\Rightarrow \boxed{-\frac{\partial C_S}{\partial x} = \frac{\partial C_F}{\partial x}}$$
 
 The social optimum $x^\circ$ equates the marginal benefit of pollution to the steel mill (cost saving) with the marginal damage to the fishery. Since $\partial C_F/\partial x > 0$, we require $-\partial C_S/\partial x > 0$ — less pollution than in the unregulated case: $x^\circ < x^*$.
@@ -4369,6 +6609,15 @@ MC ($)
 #### (iii) Pigouvian Tax (Pigou, 1920)
 
 A per-unit tax on pollution $\tau$ internalises the externality:
+
+> **Derivation Walkthrough:**
+> Starting from the social optimum condition $-\partial C_S/\partial x = \partial C_F/\partial x$ at $x = x^\circ$:
+> 1. The Pigouvian tax $\tau$ modifies the steel mill's FOC: with tax, profit is $\pi_S = P_S S - C_S(S, x) - \tau x$
+> 2. New FOC: $\partial \pi_S/\partial x = -\partial C_S/\partial x - \tau = 0 \Rightarrow -\partial C_S/\partial x = \tau$
+> 3. To align private and social incentives, set $\tau$ equal to the marginal damage at the social optimum: $\tau^* = \partial C_F/\partial x|_{x=x^\circ}$
+> 4. Then the firm's private FOC $-\partial C_S/\partial x = \tau^*$ reproduces the social optimum $-\partial C_S/\partial x = \partial C_F/\partial x$
+>
+> **Intuition:** The tax makes the steel mill **internalise the external cost** by raising its effective marginal cost of pollution. When $\tau = MEC$ at $x^\circ$, the firm voluntarily chooses the socially optimal pollution level.
 
 $$\tau^* = \left. \frac{\partial C_F}{\partial x} \right|_{x = x^\circ}$$
 
@@ -4423,15 +6672,56 @@ $$\tau^* = \left. \frac{\partial C_F}{\partial x} \right|_{x = x^\circ}$$
 > **Munoz-Garcia Insight — Formal Coase Proof:**
 >
 > **Property rights assigned to the affected individual (fishery):** The fishery makes a take-it-or-leave-it offer: the steel mill pays $T$ for the right to pollute $x$ units. The mill accepts iff $\pi(x) - T \geq \pi(0)$ (participation constraint). The fishery then solves:
-> $$\max_{x \geq 0, T} v(x) + w_F + T \quad \text{s.t.} \quad \pi(x) - T \geq \pi(0)$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the fishery's optimisation when it holds property rights:
+> > 1. Fishery's utility = value from pollution $v(x)$ + initial wealth $w_F$ + transfer received $T$
+> > 2. Constraint: steel mill accepts iff profit after payment $\pi(x) - T$ is at least as good as shutting down pollution $\pi(0)$
+> > 3. → Maximise $v(x) + w_F + T$ subject to $\pi(x) - T \geq \pi(0)$
+> >
+> > **Intuition:** The fishery chooses both the pollution level $x$ and the transfer $T$ to maximise its own utility, subject to the mill's participation.
+>
+> > $$\max_{x \geq 0, T} v(x) + w_F + T \quad \text{s.t.} \quad \pi(x) - T \geq \pi(0)$$
+>
 > The constraint binds ($T = \pi(x) - \pi(0)$), so the problem reduces to:
-> $$\max_{x \geq 0} v(x) + w_F + \pi(x) - \pi(0)$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the constrained maximisation:
+> > 1. The participation constraint binds because the fishery can always increase $T$ (its own utility) until the mill is just indifferent
+> > 2. Set $\pi(x) - T = \pi(0)$, so $T = \pi(x) - \pi(0)$
+> > 3. Substitute into objective: $v(x) + w_F + \pi(x) - \pi(0)$
+> > 4. The constant $w_F - \pi(0)$ does not affect the choice of $x$
+> >
+> > **Intuition:** The transfer $T$ drops out as a transfer payment — only the efficiency condition for $x$ matters.
+>
+> > $$\max_{x \geq 0} v(x) + w_F + \pi(x) - \pi(0)$$
+>
 > FOC: $v'(x) + \pi'(x) = 0 \Rightarrow \pi'(x) = -v'(x)$
 >
 > **Property rights assigned to the polluter (steel mill):** The fishery pays $T$ for pollution reduction. Starting from $x^*$, the mill accepts iff $\pi(x) + T \geq \pi(x^*)$. The fishery solves:
-> $$\max_{x \geq 0, T} v(x) + w_F - T \quad \text{s.t.} \quad \pi(x) + T \geq \pi(x^*)$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the fishery's optimisation when the steel mill holds property rights:
+> > 1. Fishery's utility = value $v(x)$ + initial wealth $w_F$ − payment to mill $T$
+> > 2. Constraint: mill accepts iff profit + payment $\pi(x) + T$ is at least as good as status quo $\pi(x^*)$
+> > 3. → Maximise $v(x) + w_F - T$ subject to $\pi(x) + T \geq \pi(x^*)$
+> >
+> > **Intuition:** Here the fishery pays the mill for pollution reduction, so $T$ enters negatively in the objective.
+>
+> > $$\max_{x \geq 0, T} v(x) + w_F - T \quad \text{s.t.} \quad \pi(x) + T \geq \pi(x^*)$$
+>
 > The constraint binds ($T = \pi(x^*) - \pi(x)$), reducing to:
-> $$\max_{x \geq 0} v(x) + w_F - \pi(x^*) + \pi(x)$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the constrained maximisation:
+> > 1. Bind the constraint: $\pi(x) + T = \pi(x^*)$, so $T = \pi(x^*) - \pi(x)$
+> > 2. Substitute into objective: $v(x) + w_F - [\pi(x^*) - \pi(x)] = v(x) + w_F - \pi(x^*) + \pi(x)$
+> > 3. The constant $w_F - \pi(x^*)$ does not affect the choice of $x$
+> >
+> > **Intuition:** Same structure as Case A — only the constant term differs, so the FOC for $x$ is identical.
+>
+> > $$\max_{x \geq 0} v(x) + w_F - \pi(x^*) + \pi(x)$$
+>
 > FOC: $v'(x) + \pi'(x) = 0 \Rightarrow \pi'(x) = -v'(x)$
 >
 > **Conclusion:** In both cases, the FOC yields $\pi'(x) = -v'(x)$, i.e., $-\partial C_S/\partial x = \partial C_F/\partial x$ at $x = x^\circ$. The bargaining outcome is the **same efficient pollution level** regardless of who holds the property rights. Only the **distribution of welfare** differs:
@@ -4454,13 +6744,39 @@ Let us specify functional forms to obtain explicit numerical solutions.
 
 **Setup:** The steel mill produces steel $S$ and pollution $x$ as a byproduct. Output is $S = \alpha x$, where $\alpha > 0$ is the output-pollution ratio. The steel mill's profit function is $\pi_S = P_S S - c S^2$, which in terms of $x$ becomes:
 
+> **Derivation Walkthrough:**
+> Starting from the steel mill's profit in terms of $S$: $\pi_S = P_S S - c S^2$ with production $S = \alpha x$:
+> 1. Substitute $S = \alpha x$: $\pi_S(\alpha x) = P_S \cdot (\alpha x) - c(\alpha x)^2$
+> 2. Expand: $\pi_S(x) = (P_S \alpha)x - c\alpha^2 x^2$
+> 3. This expresses profit directly as a function of pollution $x$, since steel output $S$ is proportional to pollution
+>
+> **Intuition:** Pollution is a **productive input** for the steel mill — more pollution enables more steel output, but at a diminishing rate due to the quadratic cost term.
+
 $$\pi_S(x) = P_S \cdot \alpha x - c(\alpha x)^2 = (P_S \alpha)x - c\alpha^2 x^2$$
 
 Define $a \equiv P_S \alpha$ and $b \equiv 2c\alpha^2$. The marginal profit from pollution is:
 
+> **Derivation Walkthrough:**
+> Starting from $\pi_S(x) = (P_S \alpha)x - c\alpha^2 x^2$:
+> 1. Rewrite using $a = P_S \alpha$: $\pi_S(x) = a x - c\alpha^2 x^2$
+> 2. Differentiate: $\pi_S'(x) = a - 2c\alpha^2 x$
+> 3. Define $b \equiv 2c\alpha^2$, so $\pi_S'(x) = a - bx$
+> 4. Note this is linear and decreasing in $x$ (since $b > 0$), reflecting diminishing returns to pollution
+>
+> **Intuition:** The marginal benefit of pollution is a downward-sloping line — each additional unit of pollution adds less to profit as pollution increases.
+
 $$\pi_S'(x) = a - bx$$
 
 The fishery suffers damage $v(x)$ from pollution. Let the damage function be:
+
+> **Derivation Walkthrough:**
+> Starting from a quadratic specification for the fishery's damage from pollution:
+> 1. Damage function: $v(x) = \beta - cx - \frac{d}{2}x^2$
+> 2. Differentiate: $v'(x) = -c - dx$
+> 3. Marginal damage (positive) is $-v'(x) = c + dx$, which increases linearly in $x$
+> 4. $\beta$ is a constant representing baseline fishery value without pollution
+>
+> **Intuition:** The quadratic damage function generates linear marginal damage — each unit of pollution causes progressively more harm to the fishery.
 
 $$v(x) = \beta - cx - \frac{d}{2}x^2 \quad \Rightarrow \quad v'(x) = -c - dx$$
 
@@ -4469,18 +6785,63 @@ so the marginal damage is $-v'(x) = c + dx$, which increases in $x$.
 **Parameter values:** Let $\alpha = 2$, $P_S = 10$, $c = 1$, so $a = P_S \alpha = 20$ and $b = 2c\alpha^2 = 2(1)(4) = 8$. For the fishery, let $c = 2$, $d = 4$ (these are damage function parameters, distinct from the steel mill's $c$).
 
 Thus:
+
+> **Derivation Walkthrough:**
+> Starting from $\pi_S'(x) = a - bx$ with $a = 20$, $b = 8$:
+> 1. Substitute: $\pi_S'(x) = 20 - 8x$
+> 2. This is the linear marginal benefit of pollution for the steel mill
+>
+> **Intuition:** At $x = 0$, marginal benefit is 20; at $x = 2.5$, marginal benefit falls to zero. The mill would never pollute beyond $x = 2.5$.
+
 $$\pi_S'(x) = 20 - 8x$$
+
+> **Derivation Walkthrough:**
+> Starting from $-v'(x) = c + dx$ with $c = 2$, $d = 4$:
+> 1. Substitute: $-v'(x) = 2 + 4x$
+> 2. This is the linear marginal damage function for the fishery
+>
+> **Intuition:** At $x = 0$, marginal damage is 2; at $x = 1.5$, marginal damage is 8. The fishery suffers increasing harm from each unit of pollution.
+
 $$-v'(x) = 2 + 4x$$
 
 **Step 1: Unregulated equilibrium $x^*$**
 
 The steel mill maximises $\pi_S(x)$ alone:
+
+> **Derivation Walkthrough:**
+> Starting from the unregulated profit-maximisation condition $\pi_S'(x^*) = 0$:
+> 1. $\pi_S'(x^*) = 20 - 8x^* = 0$
+> 2. Solve: $8x^* = 20$
+> 3. → $x^* = 20/8 = 2.5$
+>
+> **Intuition:** Without regulation, the steel mill pollutes until marginal private benefit is zero. It ignores all harm to the fishery.
+
 $$\pi_S'(x^*) = 0 \quad \Rightarrow \quad 20 - 8x^* = 0 \quad \Rightarrow \quad x^* = 2.5$$
 
 **Step 2: Social optimum $x^\circ$**
 
 The social planner maximises $\pi_S(x) + v(x)$:
+
+> **Derivation Walkthrough:**
+> Starting from the social optimum condition $\pi_S'(x^\circ) = -v'(x^\circ)$:
+> 1. Substitute the functional forms: $20 - 8x^\circ = 2 + 4x^\circ$
+> 2. Collect terms: $20 - 2 = 8x^\circ + 4x^\circ$
+> 3. Simplify: $18 = 12x^\circ$
+> 4. → $x^\circ = 18/12 = 1.5$
+>
+> **Intuition:** The social planner equates marginal benefit to the steel mill with marginal damage to the fishery. The socially optimal pollution $x^\circ = 1.5$ is well below the unregulated level $x^* = 2.5$.
+
 $$\pi_S'(x^\circ) = -v'(x^\circ) \quad \Rightarrow \quad 20 - 8x^\circ = 2 + 4x^\circ$$
+
+> **Derivation Walkthrough:**
+> Solving the social optimum condition step by step:
+> 1. $20 - 8x^\circ = 2 + 4x^\circ$
+> 2. Subtract 2: $18 - 8x^\circ = 4x^\circ$
+> 3. Add $8x^\circ$: $18 = 12x^\circ$
+> 4. → $x^\circ = 18/12 = 1.5$
+>
+> **Intuition:** Each additional unit of pollution generates $MB = 20 - 8x$ for the mill but costs $MD = 2 + 4x$ to the fishery. The optimum balances these at the margin.
+
 $$20 - 2 = 8x^\circ + 4x^\circ \quad \Rightarrow \quad 18 = 12x^\circ \quad \Rightarrow \quad x^\circ = 1.5$$
 
 The socially optimal pollution level $x^\circ = 1.5$ is well below the unregulated level $x^* = 2.5$.
@@ -4488,16 +6849,72 @@ The socially optimal pollution level $x^\circ = 1.5$ is well below the unregulat
 **Step 3: Pigouvian tax**
 
 The per-unit tax that restores efficiency is:
+
+> **Derivation Walkthrough:**
+> Starting from the Pigouvian tax formula $\tau^* = -v'(x)$ evaluated at $x = x^\circ$:
+> 1. Marginal damage function: $-v'(x) = 2 + 4x$
+> 2. Evaluate at $x^\circ = 1.5$: $\tau^* = 2 + 4(1.5)$
+> 3. → $\tau^* = 2 + 6 = 8$
+>
+> **Intuition:** The optimal tax equals the marginal damage caused by pollution at the social optimum — 8 per unit. This forces the mill to internalise the external cost.
+
 $$\tau^* = \left. -v'(x) \right|_{x = x^\circ} = 2 + 4(1.5) = 8$$
 
 Verification: With tax $\tau = 8$, the steel mill's FOC becomes $\pi_S'(x) = \tau$:
+
+> **Derivation Walkthrough:**
+> Starting from the steel mill's profit-maximisation with tax $\tau$: $\max \pi_S(x) - \tau x$:
+> 1. FOC: $\pi_S'(x) = \tau$, i.e., $20 - 8x = 8$
+> 2. Solve: $20 - 8 = 8x$, so $12 = 8x$
+> 3. → $x = 12/8 = 1.5$
+> 4. This exactly equals $x^\circ$ — verification successful
+>
+> **Intuition:** With the Pigouvian tax, the mill's private marginal benefit net of tax ($20 - 8x - 8$) is zero at $x = 1.5$, exactly the social optimum.
+
 $$20 - 8x = 8 \quad \Rightarrow \quad 8x = 12 \quad \Rightarrow \quad x = 1.5 \quad \checkmark$$
 
 **Step 4: Welfare comparison**
 
+> **Derivation Walkthrough:**
+> Starting from $\pi_S(x^*) = \int_0^{x^*} \pi_S'(x)dx$ (integral of marginal profit):
+> 1. $\pi_S'(x) = 20 - 8x$
+> 2. Integrate from 0 to $x^* = 2.5$: $\int_0^{2.5} (20 - 8x)dx = [20x - 4x^2]_0^{2.5}$
+> 3. Evaluate: $20(2.5) - 4(6.25) = 50 - 25 = 25$
+> 4. This is the total profit the steel mill earns at the unregulated equilibrium
+>
+> **Intuition:** The integral of marginal profit gives total profit (up to a constant). At $x^* = 2.5$, the mill earns $\pi_S = 25$.
+
 $$\pi_S(x^*) = \int_0^{2.5} (20 - 8x)dx = [20x - 4x^2]_0^{2.5} = 50 - 25 = 25$$
+
+> **Derivation Walkthrough:**
+> Starting from $\pi_S(x^\circ) = \int_0^{x^\circ} \pi_S'(x)dx$:
+> 1. Integrate $\pi_S'(x) = 20 - 8x$ from 0 to $x^\circ = 1.5$
+> 2. $\int_0^{1.5} (20 - 8x)dx = [20x - 4x^2]_0^{1.5}$
+> 3. Evaluate: $20(1.5) - 4(2.25) = 30 - 9 = 21$
+> 4. The mill's profit is lower at $x^\circ$ (21 < 25) — but social welfare is higher
+>
+> **Intuition:** The steel mill loses 4 in profit from reduced pollution, but the fishery gains more than this in reduced damage.
+
 $$\pi_S(x^\circ) = \int_0^{1.5} (20 - 8x)dx = [20x - 4x^2]_0^{1.5} = 30 - 9 = 21$$
+
+> **Derivation Walkthrough:**
+> Starting from the fishery damage function $v(x) = \beta - cx - \frac{d}{2}x^2$ with $c = 2$, $d = 4$:
+> 1. At $x^* = 2.5$: $v(x^*) = \beta - 2(2.5) - 2(2.5)^2$
+> 2. = $\beta - 5 - 2(6.25) = \beta - 5 - 12.5 = \beta - 17.5$
+> 3. The fishery suffers damage of $17.5$ (relative to baseline $\beta$) at the unregulated equilibrium
+>
+> **Intuition:** The fishery's value is substantially reduced by the high pollution level $x^* = 2.5$.
+
 $$v(x^*) = \beta - 2(2.5) - 2(2.5)^2 = \beta - 5 - 12.5 = \beta - 17.5$$
+
+> **Derivation Walkthrough:**
+> Starting from $v(x)$ evaluated at $x^\circ = 1.5$:
+> 1. $v(x^\circ) = \beta - 2(1.5) - 2(1.5)^2$
+> 2. = $\beta - 3 - 2(2.25) = \beta - 3 - 4.5 = \beta - 7.5$
+> 3. Damage is only $7.5$ at the social optimum, compared to $17.5$ at $x^*$ — a reduction of 10
+>
+> **Intuition:** Reducing pollution from $x^* = 2.5$ to $x^\circ = 1.5$ reduces damage to the fishery by 10, while the steel mill loses only 4 in profit — net social gain of 6.
+
 $$v(x^\circ) = \beta - 2(1.5) - 2(1.5)^2 = \beta - 3 - 4.5 = \beta - 7.5$$
 
 Social welfare at unregulated equilibrium: $\pi_S(x^*) + v(x^*) = 25 + \beta - 17.5 = \beta + 7.5$
@@ -4557,6 +6974,16 @@ Both cases reach $x^\circ = 1.5$, but the steel mill's profit is $\{0, 25\}$ and
 **Samuelson Condition for Efficient Provision (Samuelson, 1954):**
 
 For a public good $G$ and private good $X$, efficiency requires:
+
+> **Derivation Walkthrough:**
+> Starting from the efficiency condition for a public good:
+> 1. For a **private good**, efficiency requires $\text{MRS}^i_{G,X} = \text{MRT}_{G,X}$ for each consumer $i$ — each person's marginal willingness to pay equals the marginal cost
+> 2. For a **public good**, the same unit of $G$ is consumed by everyone simultaneously (non-rivalry)
+> 3. The social benefit of one more unit of $G$ is the **sum** of all individuals' marginal benefits: $\sum_i \text{MRS}^i_{G,X}$
+> 4. Efficiency requires this sum to equal the marginal cost: $\sum_i \text{MRS}^i_{G,X} = \text{MRT}_{G,X}$
+>
+> **Intuition:** Unlike private goods where each individual can consume different amounts, everyone consumes the same $G$. The Samuelson condition says: sum everyone's marginal willingness to pay = marginal cost of provision. This is the key departure from private goods.
+
 $$\sum_{i=1}^n \text{MRS}^i_{G,X} = \text{MRT}_{G,X}$$
 
 The sum of individuals' marginal willingness to pay (MRS) must equal the marginal cost of production (MRT). This differs from private goods, where each individual's MRS = MRT individually.
@@ -4567,32 +6994,81 @@ The sum of individuals' marginal willingness to pay (MRS) must equal the margina
 >
 > Step 1 — **Social planner's problem:** The planner maximises a weighted sum of utilities subject to the resource constraint:
 >
-> $$\max_{G, x_1, \ldots, x_I} W = \sum_{i=1}^I \alpha_i U_i(x_i, G) + \lambda \left( \sum_{i=1}^I x_i + C(G) - \overline{W} \right)$$
+> > **Derivation Walkthrough:**
+> > Starting from the social planner's resource allocation problem:
+> > 1. Objective: maximise social welfare $W = \sum_{i=1}^I \alpha_i U_i(x_i, G)$ where $\alpha_i$ are welfare weights
+> > 2. Constraint: total private consumption $\sum_i x_i$ plus cost of public good $C(G)$ cannot exceed aggregate endowment $\overline{W}$
+> > 3. Form Lagrangian: $\mathcal{L} = \sum_i \alpha_i U_i(x_i, G) + \lambda(\overline{W} - \sum_i x_i - C(G))$
+> > 4. → The Lagrangian with the constraint rearranged: $W = \sum_i \alpha_i U_i(x_i, G) + \lambda(\sum_i x_i + C(G) - \overline{W})$ where $\lambda$ is the Lagrange multiplier (marginal value of relaxing the resource constraint)
+> >
+> > **Intuition:** The social planner balances the marginal utility of allocating resources to private consumption versus public good provision, subject to the economy-wide resource constraint.
 >
-> where $\lambda$ is the Lagrange multiplier on the resource constraint (aggregate endowment $\overline{W}$).
+> > $$\max_{G, x_1, \ldots, x_I} W = \sum_{i=1}^I \alpha_i U_i(x_i, G) + \lambda \left( \sum_{i=1}^I x_i + C(G) - \overline{W} \right)$$
 >
 > Step 2 — **FOCs:**
 >
 > For each private good $x_i$:
-> $$\frac{\partial W}{\partial x_i} = \alpha_i \frac{\partial U_i}{\partial x_i} + \lambda = 0 \quad \Rightarrow \quad \alpha_i \frac{\partial U_i}{\partial x_i} = -\lambda$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the Lagrangian and taking partial derivative w.r.t. $x_i$:
+> > 1. $\partial W/\partial x_i = \alpha_i \cdot \partial U_i/\partial x_i + \lambda \cdot 1 = 0$
+> > 2. → $\alpha_i \cdot \partial U_i/\partial x_i = -\lambda$
+> > 3. The Lagrange multiplier $\lambda$ is negative (since increasing the resource constraint reduces the objective), so $-\lambda > 0$ represents the shadow value of resources
+> >
+> > **Intuition:** At the optimum, each consumer's weighted marginal utility of private consumption equals the common shadow price of resources $(-\lambda)$.
+>
+> > $$\frac{\partial W}{\partial x_i} = \alpha_i \frac{\partial U_i}{\partial x_i} + \lambda = 0 \quad \Rightarrow \quad \alpha_i \frac{\partial U_i}{\partial x_i} = -\lambda$$
 >
 > For the public good $G$:
-> $$\frac{\partial W}{\partial G} = \sum_{i=1}^I \alpha_i \frac{\partial U_i}{\partial G} + \lambda C'(G) = 0 \quad \Rightarrow \quad \sum_{i=1}^I \alpha_i \frac{\partial U_i}{\partial G} = -\lambda C'(G)$$
+>
+> > **Derivation Walkthrough:**
+> > Starting from the Lagrangian and taking partial derivative w.r.t. $G$:
+> > 1. $\partial W/\partial G = \sum_{i=1}^I \alpha_i \cdot \partial U_i/\partial G + \lambda \cdot C'(G) = 0$
+> > 2. → $\sum_{i=1}^I \alpha_i \cdot \partial U_i/\partial G = -\lambda \cdot C'(G)$
+> > 3. Note the **sum** over $i$ — because $G$ is non-rival, one unit of $G$ enters every consumer's utility
+> >
+> > **Intuition:** The sum of weighted marginal utilities from the public good equals the shadow cost of the resources used to produce it.
+>
+> > $$\frac{\partial W}{\partial G} = \sum_{i=1}^I \alpha_i \frac{\partial U_i}{\partial G} + \lambda C'(G) = 0 \quad \Rightarrow \quad \sum_{i=1}^I \alpha_i \frac{\partial U_i}{\partial G} = -\lambda C'(G)$$
 >
 > Step 3 — **Combine the FOCs:** Divide the public good FOC by the private good FOC for each consumer:
 >
 > From the private good FOC: $\alpha_i = -\lambda / (\partial U_i/\partial x_i)$
 >
 > Substituting into the public good FOC:
-> $$\sum_{i=1}^I \left( -\frac{\lambda}{\partial U_i/\partial x_i} \right) \frac{\partial U_i}{\partial G} = -\lambda C'(G)$$
+>
+> > **Derivation Walkthrough:**
+> > Substituting $\alpha_i = -\lambda / (\partial U_i/\partial x_i)$ into the public good FOC:
+> > 1. $\sum_{i=1}^I \left( -\frac{\lambda}{\partial U_i/\partial x_i} \right) \frac{\partial U_i}{\partial G} = -\lambda C'(G)$
+> > 2. The $-\lambda$ on both sides cancels (assuming $\lambda \neq 0$, which holds at an interior optimum)
+> >
+> > **Intuition:** The substitution eliminates the unobservable welfare weights $\alpha_i$, yielding a condition that depends only on observable marginal rates of substitution.
+>
+> > $$\sum_{i=1}^I \left( -\frac{\lambda}{\partial U_i/\partial x_i} \right) \frac{\partial U_i}{\partial G} = -\lambda C'(G)$$
 >
 > Cancelling $-\lambda$ (which is nonzero):
-> $$\sum_{i=1}^I \frac{\partial U_i/\partial G}{\partial U_i/\partial x_i} = C'(G)$$
+>
+> > **Derivation Walkthrough:**
+> > Cancelling $-\lambda$ from both sides:
+> > 1. $\sum_{i=1}^I \frac{\partial U_i/\partial G}{\partial U_i/\partial x_i} = C'(G)$
+> > 2. By definition, $\text{MRS}^i_{G,x} = (\partial U_i/\partial G) / (\partial U_i/\partial x_i)$
+> > 3. → $\sum_{i=1}^I \text{MRS}^i_{G,x} = C'(G)$
+> >
+> > **Intuition:** The welfare weights $\alpha_i$ and the Lagrange multiplier $\lambda$ cancel out, leaving a condition that depends only on preferences and technology.
+>
+> > $$\sum_{i=1}^I \frac{\partial U_i/\partial G}{\partial U_i/\partial x_i} = C'(G)$$
 >
 > Step 4 — **Samuelson rule:**
-> $$\boxed{\sum_{i=1}^I \text{MRS}^i_{G,x} = \text{MC}(G) = \text{MRT}_{G,x}}$$
 >
-> The sum of individual marginal rates of substitution (willingness to pay for $G$ in terms of $x$) equals the marginal cost of providing $G$. For private goods, each individual's MRS separately equals MRT; for public goods, it is the **sum** of MRS that equals MRT due to nonrivalry — the same unit of $G$ is consumed by everyone simultaneously.
+> > **Derivation Walkthrough:**
+> > Starting from $\sum_i \text{MRS}^i_{G,x} = C'(G)$:
+> > 1. $\text{MRS}^i_{G,x}$ is consumer $i$'s marginal willingness to pay for $G$ in units of $x$
+> > 2. $C'(G)$ is the marginal cost of $G$, which equals the marginal rate of transformation $\text{MRT}_{G,x}$ (how many units of $x$ must be sacrificed to produce one more $G$)
+> > 3. → The Samuelson rule: $\sum_i \text{MRS}^i_{G,x} = \text{MC}(G) = \text{MRT}_{G,x}$
+> >
+> > **Intuition:** The sum of individual marginal rates of substitution (willingness to pay for $G$ in terms of $x$) equals the marginal cost of providing $G$. For private goods, each individual's MRS separately equals MRT; for public goods, it is the **sum** of MRS that equals MRT due to nonrivalry — the same unit of $G$ is consumed by everyone simultaneously.
+>
+> > $$\boxed{\sum_{i=1}^I \text{MRS}^i_{G,x} = \text{MC}(G) = \text{MRT}_{G,x}}$$
 >
 > (Munoz-Garcia, Ch.9, §9.11, pp.692-693)
 
@@ -4601,8 +7077,29 @@ The sum of individuals' marginal willingness to pay (MRS) must equal the margina
 Consider $I$ consumers with quasi-linear utility $u_i(x_i, G) = x_i + m_i \log G$, where $G = \sum_{i=1}^I g_i$ is total private contribution to the public good, $g_i$ is individual $i$'s contribution, and $x_i$ is private consumption. Each consumer has budget $w_i$, with the price of both goods normalised to 1, so $x_i = w_i - g_i$.
 
 **Private provision (Nash equilibrium):** Each consumer $i$ chooses $g_i$ to maximise:
+
+> **Derivation Walkthrough:**
+> Starting from consumer $i$'s utility $u_i(x_i, G) = x_i + m_i \log G$ with budget $x_i = w_i - g_i$ and $G = g_i + G_{-i}$:
+> 1. Substitute budget into utility: $u_i = (w_i - g_i) + m_i \log(g_i + G_{-i})$
+> 2. Each consumer takes others' contributions $G_{-i} = \sum_{j \neq i} g_j$ as given (Nash assumption)
+> 3. → Maximise $w_i - g_i + m_i \log(g_i + G_{-i})$ by choosing $g_i \geq 0$
+>
+> **Intuition:** Consumer $i$ balances the private cost of contributing (one unit of private consumption foregone) against the private benefit of a higher total public good $G$. The benefit depends on total provision, not just own contribution — creating the free-rider incentive.
+
 $$\max_{g_i \geq 0} w_i - g_i + m_i \log(g_i + G_{-i})$$
+
 where $G_{-i} = \sum_{j \neq i} g_j$ is taken as given. FOC:
+
+> **Derivation Walkthrough:**
+> Starting from the maximand $f(g_i) = w_i - g_i + m_i \log(g_i + G_{-i})$:
+> 1. Differentiate w.r.t. $g_i$: $f'(g_i) = -1 + \frac{m_i}{g_i + G_{-i}}$
+> 2. Set = 0 (assuming interior solution $g_i > 0$): $-1 + \frac{m_i}{g_i + G_{-i}} = 0$
+> 3. Solve: $\frac{m_i}{g_i + G_{-i}} = 1$, so $m_i = g_i + G_{-i}$
+> 4. → $g_i(G_{-i}) = m_i - G_{-i}$
+> 5. This is $i$'s best-response function: contribute $m_i$ minus what others contribute
+>
+> **Intuition:** The FOC says: contribute until marginal benefit $\frac{m_i}{G}$ equals marginal cost (1). The best-response function shows **perfect crowding out** — each dollar others contribute reduces $i$'s contribution by exactly one dollar.
+
 $$-1 + \frac{m_i}{g_i + G_{-i}} = 0 \quad \Rightarrow \quad g_i(G_{-i}) = m_i - G_{-i}$$
 
 This yields a best-response function: contribute up to $m_i$, but reduce one-for-one as others contribute more (perfect crowding out). The Nash equilibrium has contributions $g_i^*$ such that:
@@ -4612,14 +7109,52 @@ This yields a best-response function: contribute up to $m_i$, but reduce one-for
 The equilibrium total provision is: $G^* = \max_i m_i$.
 
 **Social optimum:** The social planner maximises:
+
+> **Derivation Walkthrough:**
+> Starting from total surplus $W = \sum_{i=1}^I [x_i + m_i \log G]$:
+> 1. Using $x_i = w_i - g_i$ and $G = \sum_i g_i$: $W = \sum_i (w_i - g_i) + (\sum_i m_i) \log(\sum_i g_i)$
+> 2. The social planner chooses the total $G$ directly, not individual contributions
+> 3. Rewrite $W = \sum_i w_i - G + (\sum_i m_i) \log G$ since $\sum_i g_i = G$
+> 4. → Maximise $\sum_i w_i - G + (\sum_i m_i) \log G$ by choosing $G$
+>
+> **Intuition:** The social planner internalises the benefit to **all** consumers, not just one. The social marginal benefit of one more unit of $G$ is $\sum_i m_i / G$, which sums across all beneficiaries.
+
 $$\max_{G} \sum_{i=1}^I (w_i - g_i) + \left( \sum_{i=1}^I m_i \right) \log G$$
+
 FOC: $-1 + (\sum_i m_i)/G = 0 \quad \Rightarrow \quad G^\circ = \sum_{i=1}^I m_i$
 
 Since $\max_i m_i < \sum_i m_i$ (for $I > 1$), we have $G^* < G^\circ$ — **underprovision**.
 
 **Effect of group size:** With $N$ symmetric individuals ($m_i = m$ for all $i$):
+
+> **Derivation Walkthrough:**
+> Starting from the symmetric case where all $N$ individuals have identical $m_i = m$:
+> 1. Nash equilibrium: only the highest-$m$ individual contributes. With symmetry, $G^* = m$ (one person contributes $m$, the other $N-1$ contribute zero)
+> 2. Social optimum: $G^\circ = \sum_i m_i = N \cdot m$ (summing across all $N$ individuals)
+> 3. → Ratio $G^*/G^\circ = m/(Nm) = 1/N$
+>
+> **Intuition:** As group size $N$ grows, the free-rider problem becomes more severe. Each individual's incentive to contribute shrinks because their private benefit ($m/G$) is diluted across the group. In the limit $N \to \infty$, the private provision ratio approaches zero.
+
 $$G^* = m \quad \text{(only one contributes, others free-ride)}$$
+
+> **Derivation Walkthrough:**
+> The social optimum for $N$ symmetric agents:
+> 1. Social planner maximises $\sum_i U_i = N \cdot w - G + N \cdot m \log G$
+> 2. FOC: $-1 + N \cdot m / G = 0 \Rightarrow G = N \cdot m$
+> 3. → $G^\circ = N \cdot m$
+>
+> **Intuition:** The social planner aggregates all $N$ individuals' marginal benefits, resulting in $N$ times the individual provision.
+
 $$G^\circ = N \cdot m \quad \text{(social optimum)}$$
+
+> **Derivation Walkthrough:**
+> Comparing private and social provision:
+> 1. $G^* / G^\circ = m / (N \cdot m) = 1/N$
+> 2. As $N \to \infty$, $1/N \to 0$
+> 3. → The private market provides an infinitesimally small fraction of the efficient public good level in large groups
+>
+> **Intuition:** The free-rider problem grows more severe as the group size increases — each individual's incentive to contribute diminishes because their share of the total benefit shrinks while they bear the full cost.
+
 $$\frac{G^*}{G^\circ} = \frac{1}{N} \to 0 \text{ as } N \to \infty$$
 
 The free-rider problem grows more severe as the group size increases — each individual's incentive to contribute diminishes because their share of the total benefit shrinks while they bear the full cost.
@@ -4642,11 +7177,35 @@ The free-rider problem grows more severe as the group size increases — each in
 Each user $i$ chooses extraction $q_i$ to maximise private benefit $B_i(q_i)$, while the cost of resource depletion $C(\sum_j q_j)$ is shared by all.
 
 **Private optimum (Nash equilibrium):**
+
+> **Derivation Walkthrough:**
+> Starting from each user's private optimisation:
+> 1. User $i$ maximises $\pi_i = B_i(q_i) - \frac{q_i}{Q} C(Q)$ where $Q = \sum_j q_j$ is total extraction
+> 2. The user bears only their **share** $q_i/Q$ of the total cost $C(Q)$, ignoring the cost imposed on others
+> 3. FOC: $B_i'(q_i^*) - \frac{\partial}{\partial q_i}\left(\frac{q_i}{Q}C(Q)\right) = 0$
+> 4. In equilibrium with symmetric users, this simplifies to $B_i'(q_i^*) = C'(Q^*)/n + \text{(cost-sharing term)}$
+> 5. For large $n$, the dominant effect is $B_i'(q_i^*) \approx C'(Q^*)/n$
+>
+> **Intuition:** Each user equates marginal private benefit to just their **share** of marginal cost ($C'/n$), not the full marginal social cost ($C'$). This is the fundamental wedge driving over-exploitation.
+
 $$B_i'(q_i^*) = C'(Q^*)$$
+
 Each user equates marginal private benefit to marginal private cost, ignoring the external cost on others.
 
 **Social optimum:**
+
+> **Derivation Walkthrough:**
+> Starting from the social planner's perspective (maximising total surplus):
+> 1. Total surplus = $\sum_i B_i(q_i) - C(Q) = n \cdot B(q_i) - C(n q_i)$ (symmetric users)
+> 2. FOC w.r.t. $q_i$: $B_i'(q_i^\circ) - C'(Q^\circ) \cdot \partial Q/\partial q_i = 0$
+> 3. Since $\partial Q/\partial q_i = 1$ (increasing own extraction increases total extraction one-for-one):
+> 4. → $B_i'(q_i^\circ) = C'(Q^\circ)$
+> 5. Alternatively, expressed as sum over all users: $B_i'(q_i^\circ) = \sum_j C'(Q^\circ)$
+>
+> **Intuition:** The social planner accounts for the full marginal cost $C'(Q)$ imposed on the entire resource, not just each user's share. The social FOC applies to **all** users simultaneously.
+
 $$B_i'(q_i^\circ) = \sum_j C'(Q^\circ) = \text{MSC}$$
+
 The sum of marginal costs across all users is the marginal social cost.
 
 Since $C'(Q^*) < \sum_j C'(Q^*)$, each user extracts too much: $q_i^* > q_i^\circ$ and $Q^* > Q^\circ$.
@@ -4656,24 +7215,101 @@ Since $C'(Q^*) < \sum_j C'(Q^*)$, each user extracts too much: $q_i^* > q_i^\cir
 Consider $n$ symmetric users, each choosing extraction $q_i \geq 0$. Let total extraction be $Q = \sum_{j=1}^n q_j$. Each user receives benefit $B(q_i)$ (increasing, concave) and shares the total cost $C(Q)$ (increasing, convex).
 
 **Private (Nash) equilibrium:** Each user $i$ chooses $q_i$ to maximise:
+
+> **Derivation Walkthrough:**
+> Starting from user $i$'s net benefit:
+> 1. Benefit = $B(q_i)$ — increasing in own extraction
+> 2. Cost share = $\frac{q_i}{Q} C(Q)$ — user pays fraction of total cost proportional to their share of total extraction
+> 3. → $\pi_i = B(q_i) - \frac{q_i}{Q} C(Q)$
+> 4. In a Nash equilibrium, each user chooses $q_i$ taking others' extraction $Q_{-i}$ as given
+>
+> **Intuition:** Each user's cost depends on their share of total extraction. If you extract more, you bear a larger share of the total cost — but you also push up total cost $C(Q)$, which you share with others.
+
 $$\pi_i = B(q_i) - \frac{q_i}{Q} C(Q)$$
 
 Taking FOC with respect to $q_i$, treating $Q_{-i}$ as given:
+
+> **Derivation Walkthrough:**
+> Differentiating $\pi_i = B(q_i) - \frac{q_i}{Q}C(Q)$ w.r.t. $q_i$:
+> 1. First term: $B'(q_i)$
+> 2. Second term uses quotient rule: $\frac{\partial}{\partial q_i} \left( \frac{q_i}{Q} C(Q) \right)$
+> 3. = $\frac{1 \cdot Q - q_i \cdot 1}{Q^2} C(Q) + \frac{q_i}{Q} \cdot C'(Q) \cdot 1$
+> 4. = $\frac{Q - q_i}{Q^2} C(Q) + \frac{q_i}{Q} C'(Q)$
+> 5. Set FOC = 0: $B'(q_i^*) = \frac{Q^* - q_i^*}{(Q^*)^2} C(Q^*) + \frac{q_i^*}{Q^*} C'(Q^*)$
+> 6. The RHS is user $i$'s **private marginal cost** of extraction
+>
+> **Intuition:** The private marginal cost has two components: (i) the change in cost share from altering total extraction $Q$, and (ii) the direct effect of own extraction on total cost. Both are fractions of the true social cost.
+
 $$B'(q_i^*) - \underbrace{\left[ \frac{Q^* - q_i^*}{(Q^*)^2} C(Q^*) + \frac{q_i^*}{Q^*} C'(Q^*) \right]}_{\text{private marginal cost}} = 0$$
 
 In symmetric equilibrium ($q_i^* = q^*$ for all $i$, so $Q^* = nq^*$):
+
+> **Derivation Walkthrough:**
+> Imposing symmetry ($q_i^* = q^*$, $Q^* = n q^*$):
+> 1. $\frac{Q^* - q_i^*}{(Q^*)^2} C(Q^*) = \frac{nq^* - q^*}{(nq^*)^2} C(nq^*) = \frac{(n-1)q^*}{n^2 (q^*)^2} C(nq^*) = \frac{n-1}{n^2 q^*} C(nq^*)$
+> 2. $\frac{q_i^*}{Q^*} C'(Q^*) = \frac{q^*}{n q^*} C'(n q^*) = \frac{C'(nq^*)}{n}$
+> 3. → $B'(q^*) = \frac{C'(nq^*)}{n} + \frac{n-1}{n^2 q^*} C(nq^*)$
+>
+> **Intuition:** In symmetric equilibrium, the private marginal cost consists of $1/n$ of the marginal cost $C'(nq^*)$ plus a term reflecting the infra-marginal cost sharing.
+
 $$B'(q^*) = \frac{C'(nq^*)}{n} + \frac{n-1}{n^2 q^*} C(nq^*)$$
 
 For large $n$, the dominant term is:
+
+> **Derivation Walkthrough:**
+> For large $n$, approximating the symmetric equilibrium FOC:
+> 1. $\frac{C'(nq^*)}{n}$ becomes very small as $n$ grows
+> 2. $\frac{n-1}{n^2 q^*} C(nq^*) \approx \frac{1}{n} \cdot \frac{C(nq^*)}{n q^*}$ which is also small for large $n$ if average cost is bounded
+> 3. The dominant effect: $B'(q^*) \approx \frac{C'(Q^*)}{n}$
+> 4. While social optimum requires $B'(q^\circ) = C'(Q^\circ)$
+> 5. For linear cost $C(Q) = cQ$, $B'(q^*) = c/n$ vs. $B'(q^\circ) = c$
+>
+> **Intuition:** Each user equates private MB to just $1/n$ of the marginal social cost. The wedge grows linearly with $n$ — more users means worse over-exploitation. This is the **n-person prisoner's dilemma** of the commons.
+
 $$\boxed{B'(q^*) \approx \frac{C'(Q^*)}{n}}$$
 
 **Social optimum:** Maximise total surplus $nB(q_i) - C(nq_i)$:
+
+> **Derivation Walkthrough:**
+> Starting from the social planner's problem with symmetric users:
+> 1. Total surplus = $\sum_{i=1}^n [B(q_i)] - C(\sum_{i=1}^n q_i)$
+> 2. With symmetry: $TS = n \cdot B(q_i) - C(n \cdot q_i)$
+> 3. FOC w.r.t. $q_i$: $n \cdot B'(q_i^\circ) \cdot \frac{\partial q_i}{\partial q_i} - C'(n q_i^\circ) \cdot n \cdot \frac{\partial q_i}{\partial q_i} = 0$
+> 4. Wait — more carefully: the planner chooses $q_1, ..., q_n$. FOC for $q_i$:
+> 5. $\partial TS/\partial q_i = B'(q_i) - C'(Q) \cdot 1 = 0$ (since $\partial Q/\partial q_i = 1$)
+> 6. With symmetry: $B'(q^\circ) = C'(n \cdot q^\circ) = C'(Q^\circ)$
+>
+> **Intuition:** The social planner recognises that increasing $q_i$ increases total extraction one-for-one, so the full marginal cost $C'(Q)$ must be considered — not just $1/n$ of it.
+
 $$B'(q^\circ) = C'(n q^\circ) = C'(Q^\circ)$$
 
 **Comparison:**
+
+> **Derivation Walkthrough:**
+> Taking the ratio of private to social FOCs:
+> 1. Private: $B'(q^*) \approx C'(Q^*)/n$
+> 2. Social: $B'(q^\circ) = C'(Q^\circ)$
+> 3. → $\frac{B'(q^*)}{B'(q^\circ)} = \frac{C'(Q^*)/n}{C'(Q^\circ)}$
+> 4. Assuming similar $C'$, the ratio $\approx 1/n$, implying $q^* \gg q^\circ$ (since $B$ is concave, lower $B'$ means higher $q$)
+>
+> **Intuition:** The ratio shows the dramatic gap between private and social incentives. Each user's private marginal benefit at equilibrium is only $1/n$ of the efficient level, meaning extraction is far too high.
+
 $$\frac{B'(q^*)}{B'(q^\circ)} = \frac{C'(Q^*)/n}{C'(Q^\circ)}$$
 
 For linear cost $C(Q) = cQ$, this simplifies to:
+
+> **Derivation Walkthrough:**
+> With linear cost $C(Q) = cQ$:
+> 1. $C'(Q) = c$ for any $Q$ (constant marginal cost)
+> 2. Private FOC: $B'(q^*) = c/n$
+> 3. Social FOC: $B'(q^\circ) = c$
+> 4. With concave benefit (e.g., $B(q) = aq - bq^2/2$), $B'(q) = a - bq$
+> 5. Then $a - bq^* = c/n$ and $a - bq^\circ = c$
+> 6. → $q^* = (a - c/n)/b$ and $q^\circ = (a - c)/b$
+> 7. For $n = 2$: $q^*/q^\circ = (a - c/2)/(a - c)$
+>
+> **Intuition:** Each user equates private MB to $c/n$ rather than $c$, leading to **over-extraction by a factor of approximately $n:1$** relative to the social optimum. The wedge between private and social marginal cost grows with $n$ — the more users, the worse the over-exploitation.
+
 $$B'(q^*) = \frac{c}{n} \quad \text{vs.} \quad B'(q^\circ) = c$$
 
 Each user equates private MB to $c/n$ rather than $c$, leading to **over-extraction by a factor of approximately $n:1$** relative to the social optimum. The wedge between private and social marginal cost grows with $n$ — the more users, the worse the over-exploitation.
@@ -4696,14 +7332,49 @@ Each user equates private MB to $c/n$ rather than $c$, leading to **over-extract
 **Formalisation (Munoz-Garcia, pp.704-707):**
 
 **Consumer $i$'s problem:** Each consumer $i$ chooses $g_i$ facing personalised price $p_i^{**}$:
+
+> **Derivation Walkthrough:**
+> Starting from consumer $i$'s utility maximisation with personalised price $p_i$:
+> 1. Utility: $v_i(g_i) + w_i$ where $v_i$ is the benefit from public good consumption and $w_i$ is numeraire wealth
+> 2. Budget constraint: $w_i - p_i g_i$ for private consumption
+> 3. Net utility: $v_i(g_i) + w_i - p_i g_i$
+> 4. FOC: $v_i'(g_i^{**}) - p_i^{**} \leq 0$, with equality if $g_i^{**} > 0$
+> 5. → $p_i^{**} = v_i'(g_i^{**})$ — the personalised price equals the marginal benefit at the chosen quantity
+>
+> **Intuition:** Unlike a standard market where all consumers face the same price, here each consumer receives a **personalised price** equal to their marginal willingness to pay. High-valuation consumers pay more per unit.
+
 $$\max_{g_i \geq 0} v_i(g_i) + w_i - p_i^{**} g_i$$
+
 FOC: $v_i'(g_i^{**}) - p_i^{**} \leq 0$, equality if $g_i^{**} > 0$. So $p_i^{**} = v_i'(g_i^{**})$.
 
 **Firm's problem:** The firm produces a bundle of $I$ personalised goods:
+
+> **Derivation Walkthrough:**
+> Starting from the firm's profit maximisation with personalised prices:
+> 1. The firm produces $g$ units of the public good and sells a "bundle" to all $I$ consumers
+> 2. Revenue: $\sum_{i=1}^I p_i^{**} \cdot g$ (each consumer $i$ pays $p_i^{**}$ per unit of $g$)
+> 3. Cost: $C(g)$
+> 4. Profit: $\sum_{i=1}^I p_i^{**} g - C(g)$
+> 5. FOC: $\sum_{i=1}^I p_i^{**} - C'(g^{**}) \leq 0$, equality if $g^{**} > 0$
+>
+> **Intuition:** The firm supplies the public good until the **sum** of personalised prices equals marginal cost. This is the supply-side analogue of the Samuelson condition.
+
 $$\max_{g \geq 0} \sum_{i=1}^I p_i^{**} g - C(g)$$
+
 FOC: $\sum_{i=1}^I p_i^{**} - C'(g^{**}) \leq 0$, equality if $g^{**} > 0$.
 
 **Equilibrium condition:** Combining the consumer and firm FOCs:
+
+> **Derivation Walkthrough:**
+> Combining consumer and firm equilibrium conditions:
+> 1. From consumer's FOC: $p_i^{**} = v_i'(g^{**})$ for each $i$
+> 2. From firm's FOC: $\sum_{i=1}^I p_i^{**} = C'(g^{**})$
+> 3. Substitute consumer FOCs into firm FOC: $\sum_{i=1}^I v_i'(g^{**}) = C'(g^{**})$
+> 4. Note $\text{MRS}_i = v_i'(g)$ in this quasi-linear setup, and $\text{MRT} = C'(g)$
+> 5. → $\sum_{i=1}^I \text{MRS}_i = \text{MRT}$ — the Samuelson condition!
+>
+> **Intuition:** The Lindahl equilibrium achieves the efficient level of public good provision $g^{**} = g^\circ$ through a decentralised price mechanism. Each individual pays their marginal willingness to pay, and the sum covers marginal cost. No one free-rides because the price is tailored to their valuation.
+
 $$\sum_{i=1}^I v_i'(g^{**}) = \sum_{i=1}^I p_i^{**} = C'(g^{**})$$
 
 This is exactly the **Samuelson condition** $\sum_i \text{MRS}_i = \text{MRT}$! Thus $g^{**} = g^\circ$ — the Lindahl equilibrium achieves the efficient level of public good provision.
@@ -4711,7 +7382,23 @@ This is exactly the **Samuelson condition** $\sum_i \text{MRS}_i = \text{MRT}$! 
 **Intuition:** Each individual pays a personalised price $p_i$ equal to their marginal willingness to pay (MRS). The sum of these payments exactly covers the marginal cost. No one free-rides because the price is tailored to their valuation.
 
 **Example (Munoz-Garcia, Example 9.8, p.706):** Three graduate students (Eric, Chris, Matt) buying a microwave (public good). Utility: $u_i = \ln x_i + m_i \ln G$ where $x_i$ is private consumption (numeraire) and $G$ is the microwave. With prices normalised and wealth = 1, the Lindahl prices are:
+
+> **Derivation Walkthrough:**
+> Starting from Lindahl pricing for quasi-linear utility $u_i = \ln x_i + m_i \ln G$:
+> 1. Budget: $x_i + p_i G = 1$ (wealth normalised to 1, price of $x$ = 1)
+> 2. Substitute $x_i = 1 - p_i G$: $u_i = \ln(1 - p_i G) + m_i \ln G$
+> 3. FOC w.r.t. $G$: $\frac{-p_i}{1 - p_i G} + \frac{m_i}{G} = 0 \Rightarrow \frac{m_i}{G} = \frac{p_i}{1 - p_i G}$
+> 4. → $m_i(1 - p_i G) = p_i G \Rightarrow m_i = p_i G(1 + m_i)$
+> 5. → $p_i = \frac{m_i}{G(1+m_i)}$
+> 6. Equilibrium: $\sum_i p_i = C'(G) = 1$ (marginal cost of microwave is 1)
+> 7. So $\sum_i \frac{m_i}{G(1+m_i)} = 1 \Rightarrow G = \sum_i \frac{m_i}{1+m_i}$
+> 8. → $p_i^* = \frac{m_i/(1+m_i)}{\sum_j m_j/(1+m_j)}$
+> 9. For $m_E = 1$, $m_C = m_M = 0.6$: $p_E = 0.4$, $p_C = p_M = 0.3$, $G = 1.25$
+>
+> **Intuition:** Each student pays according to their marginal willingness to pay ($m_i$). Eric values the microwave most ($m=1$) and pays the highest share (0.4). Chris and Matt value it less ($m=0.6$) and pay less (0.3 each). The sum (1.0) exactly covers the cost.
+
 $$p_i^* = \frac{m_i/(1+m_i)}{\sum_{j} m_j/(1+m_j)}$$
+
 For $m_E = 1$, $m_C = m_M = 0.6$: $p_E = 0.4$, $p_C = p_M = 0.3$, and $G = 1.25$.
 
 **Limitations:**
@@ -4782,7 +7469,7 @@ The $2\times 2\times 2$ model explicitly assumes away externalities (assumption 
 
 **Q:** Two firms — Firm A (upstream steel mill, produces pollution $x$) and Firm B (downstream fishery, harmed by pollution). Show the private and social costs and production levels under: (i) individual profit maximisation, (ii) joint profit maximisation, and (iii) different property rights.
 
-**A:** This is the canonical steel-fishery model. See SS7.2 for the full treatment.
+**A:** This is the canonical steel-fishery model. See §7.2 for the full treatment.
 
 **(i) Individual profit maximisation (unregulated):**
 
@@ -4813,7 +7500,24 @@ The social optimum equates the marginal benefit of pollution (cost saving to A) 
 #### Question 2(b) — 46 Final, Part A: External Economies & Diseconomies (Tax/Subsidy) [7 marks]
 
 **Q:** Firm 1 experiences external economies and Firm 2 experiences external diseconomies. Both sell in a competitive market at $p_1 = p_2 = 15$. Cost functions:
+
+> **Derivation Walkthrough:**
+> Starting from the cost functions that capture cross-firm externalities:
+> 1. Firm 1's cost: $C_1 = 0.1q_1^2 + 5q_1 - 0.1q_2^2$ — the term $-0.1q_2^2$ reduces Firm 1's cost when Firm 2 produces more (positive externality)
+> 2. Firm 2's cost: $C_2 = 0.2q_2^2 + 7q_2 + 0.025q_1^2$ — the term $+0.025q_1^2$ raises Firm 2's cost when Firm 1 produces more (negative externality)
+>
+> **Intuition:** The cost functions are designed so that each firm's cost depends partly on the other's output. Firm 2's production helps Firm 1 (external economy), but Firm 1's production hurts Firm 2 (external diseconomy).
+
 $$C_1 = 0.1q_1^2 + 5q_1 - 0.1q_2^2$$
+
+> **Derivation Walkthrough:**
+> Starting from the general quadratic cost form with cross-firm externality:
+> 1. Firm 2's cost: $C_2 = 0.2q_2^2 + 7q_2 + 0.025q_1^2$
+> 2. The $0.025q_1^2$ term: when Firm 1 produces more, Firm 2's cost increases — a **negative production externality** (external diseconomy)
+> 3. The $0.2q_2^2$ term: convex own-cost, so $MC_2 = 0.4q_2 + 7$ (increasing in own output)
+>
+> **Intuition:** Firm 2 is doubly burdened — its own costs rise with output, and Firm 1's production makes things worse. This asymmetry (Firm 2 helps Firm 1, but Firm 1 hurts Firm 2) is the key to the policy design.
+
 $$C_2 = 0.2q_2^2 + 7q_2 + 0.025q_1^2$$
 
 Show how Pareto optimality can be achieved through appropriate taxes and subsidies. Find the social dividend.
@@ -4861,6 +7565,16 @@ We need to design taxes/subsidies $t_1(q_1)$ and $t_2(q_2)$ such that each firm'
 For Firm 1, the social marginal benefit of increasing $q_1$ includes the **external damage** on Firm 2: $\partial C_2/\partial q_1 = 0.05q_1$. At $q_1^\circ = 40$, this equals $0.05(40) = 2$.
 
 Firm 1 ignores this cost. We impose a **Pigouvian tax** on Firm 1:
+
+> **Derivation Walkthrough:**
+> Starting from the principle that the Pigouvian tax should equal the marginal external damage at the social optimum:
+> 1. External damage from Firm 1 on Firm 2: $\partial C_2/\partial q_1 = 0.05 q_1$
+> 2. Evaluate at social optimum $q_1^\circ = 40$: $0.05 \times 40 = 2$
+> 3. → $t_1 = 2$ per unit of $q_1$
+> 4. Verification: Firm 1's new FOC with tax: $15 - (0.2q_1 + 5) - 2 = 0 \Rightarrow 8 - 0.2q_1 = 0 \Rightarrow q_1 = 40$ ✓
+>
+> **Intuition:** The tax forces Firm 1 to internalise the cost its output imposes on Firm 2. At $t_1 = 2$, Firm 1's private optimum coincides with the social optimum.
+
 $$t_1 = \left.\frac{\partial C_2}{\partial q_1}\right|_{q_1^\circ} = 0.05 \times 40 = 2 \text{ per unit of } q_1$$
 
 Firm 1's new FOC with tax: $15 - \partial C_1/\partial q_1 - t_1 = 15 - (0.2q_1 + 5) - 2 = 0$
@@ -4869,6 +7583,16 @@ $15 - 0.2q_1 - 5 - 2 = 0 \Rightarrow 8 - 0.2q_1 = 0 \Rightarrow q_1 = 40$ ✓
 For Firm 2, the social marginal benefit of increasing $q_2$ includes the **external economy** for Firm 1: $-\partial C_1/\partial q_2 = 0.2q_2$. At $q_2^\circ = 40$, this equals $0.2(40) = 8$.
 
 Firm 2 does not receive this benefit. We provide a **Pigouvian subsidy** to Firm 2:
+
+> **Derivation Walkthrough:**
+> Starting from the principle that the Pigouvian subsidy should equal the marginal external benefit at the social optimum:
+> 1. External benefit from Firm 2 on Firm 1 (reduction in Firm 1's cost): $-\partial C_1/\partial q_2 = 0.2 q_2$
+> 2. Evaluate at social optimum $q_2^\circ = 40$: $0.2 \times 40 = 8$
+> 3. → $s_2 = 8$ per unit of $q_2$
+> 4. Verification: Firm 2's new FOC with subsidy: $15 - (0.4q_2 + 7) + 8 = 0 \Rightarrow 16 - 0.4q_2 = 0 \Rightarrow q_2 = 40$ ✓
+>
+> **Intuition:** The subsidy rewards Firm 2 for the positive spillover its production generates for Firm 1. At $s_2 = 8$, Firm 2's private optimum aligns with the social optimum.
+
 $$s_2 = \left.-\frac{\partial C_1}{\partial q_2}\right|_{q_2^\circ} = 0.2 \times 40 = 8 \text{ per unit of } q_2$$
 
 Firm 2's new FOC with subsidy: $15 - \partial C_2/\partial q_2 + s_2 = 15 - (0.4q_2 + 7) + 8 = 0$
@@ -4913,6 +7637,11 @@ This $52.5$ is the potential welfare gain from internalising the externalities. 
 ---
 
 <!-- Enhanced by Munoz-Garcia & Koutsoyiannis textbook references -->
+
+<!-- ============================================================
+TOPIC 8: INFORMATION ECONOMICS & TRADE
+============================================================ -->
+
 ## <a id="topic-8"></a>Topic 8: Information & Trade
 
 ### 8.1 Asymmetric Information & Adverse Selection
@@ -4941,6 +7670,16 @@ This $52.5$ is the potential welfare gain from internalising the externalities. 
 **Full information benchmark:** Two separate markets clear — peaches trade at $8,000-$10,000; lemons at $3,000-$5,000.
 
 **Asymmetric information:** Buyers know only the **average** quality. Willingness to pay:
+
+> **Derivation Walkthrough:**
+> Starting from the fact that buyers cannot observe individual car quality:
+> 1. Buyers know the population distribution: 50% peaches ($10,000 value) and 50% lemons ($5,000 value).
+> 2. Since they cannot distinguish types ex ante, they form an expected value: $E[V] = \sum p_i \cdot V_i$.
+> 3. Substituting: $E[V] = 0.5 \times 10,000 + 0.5 \times 5,000$.
+> 4. → Final form: $E[V] = 7,500$.
+>
+> **Intuition:** Under asymmetric information, the buyer's willingness to pay equals the probability-weighted average of possible values. This is the rational response when quality is unobservable — but it systematically undervalues high-quality goods and overvalues low-quality ones, creating the conditions for adverse selection.
+
 $$E[V] = 0.5 \times 10,000 + 0.5 \times 5,000 = 7,500$$
 
 **Adverse selection mechanism:**
@@ -4954,6 +7693,17 @@ $$E[V] = 0.5 \times 10,000 + 0.5 \times 5,000 = 7,500$$
 **Complete market collapse:** If the proportion of lemons is high enough that $E[V]$ falls below the reservation price of even lemon sellers, the market collapses entirely — no trade occurs.
 
 **General condition for market collapse:**
+
+> **Derivation Walkthrough:**
+> Starting from the adverse selection mechanism:
+> 1. Trade occurs only if the buyer's willingness to pay (the expected value $E[V]$) exceeds the seller's reservation price.
+> 2. If $E[V]$ is below the reservation price of the highest-quality sellers, they exit.
+> 3. This lowers average quality, further reducing $E[V]$, causing more exits.
+> 4. The market collapses entirely when $E[V]$ falls below the reservation price of *all* sellers — i.e., when even the lowest-quality seller refuses to trade.
+> 5. → Final form: $E[V] < \max\{\text{reservation price of sellers}\}$.
+>
+> **Intuition:** The market collapses when the expected value — the maximum any buyer will pay — is less than what the most optimistic seller requires to part with their good. No mutually beneficial trade exists under these conditions.
+
 $$E[V] < \max\{\text{reservation price of sellers}\}$$
 
 **Solutions:**
@@ -4988,6 +7738,17 @@ $$E[V] < \max\{\text{reservation price of sellers}\}$$
 - Further restricts offered cars to $[0, Q^3/4]$.
 
 **Complete unraveling:** Repeating this argument iteratively:
+
+> **Derivation Walkthrough:**
+> Starting from the iterative expectation-updating process:
+> 1. **Iteration 0:** $E^{(0)}[q] = Q/2$ (unconditional mean of $U[0, Q]$).
+> 2. **Iteration 1:** Only cars with $q \leq Q \cdot E^{(0)}[q] = Q^2/$ remain. Conditional on $q \in [0, Q^2/2]$, the mean is $E^{(1)}[q] = (Q^2/2)/2 = Q^2/4$.
+> 3. **Iteration 2:** Only cars with $q \leq Q \cdot E^{(1)}[q] = Q \cdot Q^2/4 = Q^3/4$ remain. Conditional mean: $E^{(2)}[q] = (Q^3/4)/2 = Q^3/8$.
+> 4. **General pattern:** At iteration $n$, the cutoff is $Q^{n+1}/2^{n+1}$ and the conditional mean is $E^{(n)}[q] = Q^{n+1}/2^{n+1}$.
+> 5. → Final form: $E^{(n)}[q] = \frac{Q^{n+1}}{2^{n+1}} \to 0$ as $n \to \infty$.
+>
+> **Intuition:** Each iteration shrinks the set of cars offered, which lowers expected quality, which further tightens the cutoff. This "unraveling" continues until only $q = 0$ remains — the market for all positive-quality cars is destroyed. The speed of unraveling depends on $Q$: if $Q$ is small, collapse is faster.
+
 $$E^{(n)}[q] = \frac{Q^{n+1}}{2^{n+1}} \quad \text{cutoff} \to 0 \text{ as } n \to \infty$$
 
 The market **unravels** to $q = 0$ only — the market for all cars $q > 0$ ceases to exist. This is the strong form of Akerlof's result: asymmetric information can **completely destroy** a market that would function efficiently under full information.
@@ -5044,6 +7805,19 @@ H-types acquire education ($e=1$), L-types do not ($e=0$).
 H-type prefers $e=1$: $w(1) - c_H \ge w(0)$ $\Rightarrow$ $q_H - c_H \ge q_L$
 L-type prefers $e=0$: $w(0) \ge w(1) - c_L$ $\Rightarrow$ $q_L \ge q_H - c_L$
 
+Combined:
+
+> **Derivation Walkthrough:**
+> Starting from the two incentive compatibility (IC) constraints that define a separating equilibrium:
+> 1. **H-type IC** (prefers education): $w(1) - c_H \ge w(0)$. Substituting equilibrium wages $w(1) = q_H$, $w(0) = q_L$: $q_H - c_H \ge q_L$.
+> 2. Rearranging H-type IC: $c_H \le q_H - q_L$.
+> 3. **L-type IC** (prefers no education): $w(0) \ge w(1) - c_L$. Substituting: $q_L \ge q_H - c_L$.
+> 4. Rearranging L-type IC: $q_H - q_L \le c_L$.
+> 5. Combining steps 2 and 4: $c_H \le q_H - q_L \le c_L$.
+> 6. → Final form: $\boxed{c_H \le q_H - q_L \le c_L}$.
+>
+> **Intuition:** The wage premium for education ($q_H - q_L$) must lie **between** the education costs of the two types. It must be large enough to incentivise H-types to invest in education, but small enough that L-types do not find it profitable to mimic. This is only possible if $c_L > c_H$ (single-crossing).
+
 Combined: $$\boxed{c_H \le q_H - q_L \le c_L}$$
 
 The wage gap $w_H - w_L = q_H - q_L$ must lie in the interval $[c_H, c_L]$.
@@ -5068,18 +7842,62 @@ The binary-type model can be extended to a continuum of productivity types $\the
 - Worker productivity $\theta$ is distributed on $[\underline{\theta}, \overline{\theta}]$ with CDF $F(\theta)$.
 - Worker chooses education level $e \in \mathbb{R}_+$ at cost $c(e, \theta)$.
 - **Single-crossing property (Spence-Mirrlees condition):** $c_{e\theta} < 0$, i.e., the marginal cost of education is decreasing in ability:
+
+> **Derivation Walkthrough:**
+> Starting from the definition of the cost function $c(e, \theta)$:
+> 1. The Spence-Mirrlees single-crossing condition requires that the marginal cost of education $\partial c / \partial e$ is **decreasing** in ability $\theta$.
+> 2. Formally: $\frac{\partial}{\partial \theta} \left( \frac{\partial c}{\partial e} \right) < 0$.
+> 3. By Clairaut's theorem on equality of mixed partials: $\frac{\partial^2 c}{\partial \theta \partial e} = \frac{\partial^2 c}{\partial e \partial \theta}$.
+> 4. → Final form: $\frac{\partial^2 c(e,\theta)}{\partial e \partial \theta} < 0$.
+>
+> **Intuition:** This condition ensures that higher-ability workers find it cheaper to acquire additional education at the margin. It guarantees that the indifference curves of different types cross only once — a necessary condition for education to serve as a credible signal. Without it, low-ability workers could costlessly mimic the education choices of high-ability workers, and the signal would be meaningless.
+
   $$\frac{\partial^2 c(e,\theta)}{\partial e \partial \theta} < 0$$
   This implies that higher-ability workers find it cheaper to acquire additional education — education is a credible signal because it is differentially costly.
 
 - Firms observe $e$, form beliefs $\mu(\theta|e)$, and pay wage $w(e) = E[\theta|e]$ (competitive zero-profit condition).
 
 **Worker's optimization:**
+
+> **Derivation Walkthrough:**
+> Starting from the worker's objective in the signalling game:
+> 1. A worker of type $\theta$ chooses education $e \ge 0$ to maximize their net payoff (wage minus education cost).
+> 2. The wage $w(e)$ is set by firms based on their beliefs about the worker's type given observed education.
+> 3. The cost of education $c(e, \theta)$ depends on both the education level and the worker's ability.
+> 4. The worker's maximization problem is therefore: $\max_{e \ge 0} [w(e) - c(e, \theta)]$.
+> 5. → Final form: $\max_{e \ge 0} \; w(e) - c(e, \theta)$.
+>
+> **Intuition:** The worker trades off the wage benefit of more education (higher $e$ signals higher $\theta$, commanding higher $w$) against its cost (which is lower for high-ability workers). The optimal $e$ equates marginal benefit to marginal cost.
+
 $$\max_{e \ge 0} \; w(e) - c(e, \theta)$$
 
 **First-order condition (for interior separating equilibrium):**
+
+> **Derivation Walkthrough:**
+> Starting from the worker's maximization problem $\max_e [w(e) - c(e, \theta)]$:
+> 1. Take the derivative with respect to $e$ and set equal to zero (first-order condition for an interior solution):
+>    $\frac{d}{de}[w(e) - c(e, \theta)] = 0$.
+> 2. Applying the sum rule: $w'(e) - \frac{\partial c(e,\theta)}{\partial e} = 0$.
+> 3. Rearranging: $w'(e) = \frac{\partial c(e,\theta)}{\partial e}$.
+> 4. → Final form: $w'(e) = \frac{\partial c(e,\theta)}{\partial e}$.
+>
+> **Intuition:** At the optimal education level, the marginal wage gain from an additional unit of education ($w'(e)$) equals the marginal cost of that education ($\partial c/\partial e$). This is the standard marginal-benefit-equals-marginal-cost condition.
+
 $$w'(e) = \frac{\partial c(e,\theta)}{\partial e}$$
 
 **Equilibrium wage schedule:** In a separating equilibrium where types are fully revealed, the wage function must satisfy the differential equation:
+
+> **Derivation Walkthrough:**
+> Starting from the first-order condition and the separating equilibrium property:
+> 1. In a separating equilibrium, each type $\theta$ chooses a distinct education level $e(\theta)$, and firms perfectly infer type from $e$.
+> 2. The wage equals expected productivity conditional on observed $e$: $w(e) = E[\theta | e]$.
+> 3. In a fully separating equilibrium, $e$ perfectly reveals $\theta$, so $w(e(\theta)) = \theta$.
+> 4. Differentiating $w(e(\theta)) = \theta$ with respect to $\theta$: $w'(e) \cdot e'(\theta) = 1$, so $w'(e) = 1/e'(\theta)$.
+> 5. Alternatively, using the FOC $w'(e) = \partial c(e,\theta)/\partial e$ and noting that $\theta = \theta(e)$ (the inverse of $e(\theta)$):
+> 6. → Final form: $w'(e) = \frac{\partial c(e,\theta)}{\partial e}$ where $\theta = \theta(e)$.
+>
+> **Intuition:** In a separating equilibrium, the wage schedule must be incentive-compatible: it must induce each type to choose the education level intended for them. This creates a differential equation linking the wage function to the cost structure. The wage grows at a rate equal to the marginal cost of education for the type at that education level.
+
 $$w'(e) = \frac{\partial c(e,\theta)}{\partial e} \quad \text{where} \quad \theta = \theta(e) \text{ is the inverse of } e(\theta)$$
 
 **Explicit example (quadratic costs):** Suppose $c(e, \theta) = \alpha e^2 / \theta$ where $\alpha > 0$. Then:
@@ -5101,13 +7919,45 @@ A refinement for signaling games that eliminates **unreasonable** pooling equili
 An equilibrium fails the Intuitive Criterion if there exists a deviation (an out-of-equilibrium message) such that:
 
 1. **Condition 1:** All types for whom the deviation is **dominated** by their equilibrium payoff would never choose it. Specifically, type $\theta$ would never deviate if:
+
+> **Derivation Walkthrough:**
+> Starting from the definition of "dominated by equilibrium payoff":
+> 1. Type $\theta$'s equilibrium payoff is $u^{eq}(\theta)$ — what they receive in the candidate equilibrium.
+> 2. Consider a deviation $e'$ (an education level not chosen in equilibrium).
+> 3. For this deviation to be dominated, it must yield **lower** utility than the equilibrium payoff for **every possible** response of the uninformed player (i.e., for all wage offers the firm could make).
+> 4. Formally: $u^*(e', \theta) < u^{eq}(\theta)$ where $u^*$ is the supremum (best possible) payoff from deviating, taken over all possible off-equilibrium beliefs.
+> 5. → Final form: $u^*(e', \theta) < u^{eq}(\theta)$ for all possible responses to $e'$.
+>
+> **Intuition:** Condition 1 identifies types that would **never** benefit from deviating, regardless of how the firm interprets the deviation. These types can be "eliminated" from consideration when evaluating the reasonableness of off-equilibrium beliefs.
+
    $$u^*(e', \theta) < u^{eq}(\theta) \quad \text{for all possible responses to } e'$$
 
 2. **Condition 2:** After eliminating those "dominated" types, the remaining types (if any) would **strictly benefit** from the deviation, assuming the uninformed player holds beliefs concentrated on the remaining types.
 
 **Formal definition (Cho-Kreps):** An equilibrium $(a^*, \mu^*)$ fails the Intuitive Criterion if there exists a deviation $a' \notin \text{supp}(a^*)$ and a type $\theta'$ such that:
+
+> **Derivation Walkthrough:**
+> Starting from the construction of the set of types that could potentially benefit from deviation:
+> 1. Define $\Theta^{**}(a')$ as the set of types $\theta$ for whom the deviation $a'$ is **not** dominated by the equilibrium payoff.
+> 2. Formally: $\Theta^{**}(a') = \{\theta \in \Theta : u^*(a', \theta) \ge u^{eq}(\theta)\}$.
+> 3. For the Intuitive Criterion to fail, this set must be **non-empty** — otherwise no type could possibly benefit from the deviation, and the off-equilibrium belief is irrelevant.
+> 4. → Final form: $\Theta^{**}(a') \equiv \{\theta \in \Theta : u^*(a', \theta) \ge u^{eq}(\theta)\} \neq \emptyset$.
+>
+> **Intuition:** $\Theta^{**}$ contains types that are "candidates" for deviating. These are types whose best possible payoff from deviation is at least as good as what they get in equilibrium. If this set is empty, no type could rationally deviate and the equilibrium is robust to the Intuitive Criterion.
+
 $$\Theta^{**}(a') \equiv \{\theta \in \Theta : u^*(a', \theta) \ge u^{eq}(\theta)\} \neq \emptyset$$
+
 and for all $\theta \in \Theta^{**}(a')$:
+
+> **Derivation Walkthrough:**
+> Starting from the second condition of the Intuitive Criterion:
+> 1. After eliminating dominated types, we focus on $\Theta^{**}(a')$ — types that could potentially benefit from deviation.
+> 2. The Intuitive Criterion asks: if the uninformed player (firm) believes the deviator must be in $\Theta^{**}(a')$ (i.e., $\mu(\Theta^{**}(a')|a') = 1$), do **all** types in $\Theta^{**}(a')$ strictly prefer deviating?
+> 3. For each $\theta \in \Theta^{**}(a')$, compare: $u(a', \theta, \mu(\Theta^{**}(a')=1)) > u^{eq}(\theta)$.
+> 4. → Final form: $u(a', \theta, \mu(\Theta^{**}(a')=1)) > u^{eq}(\theta)$.
+>
+> **Intuition:** If every type that could possibly benefit from the deviation does strictly benefit when the firm's beliefs are concentrated on the set of potential deviators, then the off-equilibrium belief that sustains the equilibrium (e.g., $\mu(H|e=1)=0$) is "unreasonable." The equilibrium fails the Intuitive Criterion.
+
 $$u(a', \theta, \mu(\Theta^{**}(a')=1)) > u^{eq}(\theta)$$
 
 **Application to Spence model:**
@@ -5158,6 +8008,17 @@ The distinction between screening and signaling is fundamental:
 - Low-risk contract: $(\alpha_L, \beta_L)$ with less-than-full coverage to deter H-type mimicking.
 - The H-type receives full insurance: $\alpha_H = p_H L$, $\beta_H = L$.
 - The L-type receives partial insurance with a **deductible** $D = L - \beta_L$:
+
+> **Derivation Walkthrough:**
+> Starting from the requirement that the low-risk contract be actuarially fair and incentive-compatible:
+> 1. **Actuarially fair condition:** The premium equals the expected payout: $\alpha_L = p_L \beta_L$. This ensures the L-type contract breaks even for the insurer.
+> 2. **H-type incentive compatibility:** The H-type must not prefer the L-type contract. The H-type's utility from their own contract (full insurance at fair odds) is $u(W - p_H L)$.
+> 3. If the H-type deviates to the L-type contract, their expected utility is: $p_H u(W - \alpha_L - L + \beta_L) + (1-p_H)u(W - \alpha_L)$.
+> 4. The IC constraint requires: $u(W - p_H L) \ge p_H u(W - \alpha_L - L + \beta_L) + (1-p_H)u(W - \alpha_L)$.
+> 5. The deductible $D = L - \beta_L$ is set to make this constraint **bind** (just enough to deter the H-type).
+>
+> **Intuition:** The L-type's contract is distorted away from full insurance to create self-selection. The H-type, being more likely to suffer the loss, values full coverage more and thus finds the partial coverage contract less attractive. The deductible is calibrated so that the H-type is indifferent — any smaller deductible would attract the H-type and destroy the separating equilibrium.
+
   $$\alpha_L = p_L \beta_L \quad \text{(actuarially fair for L)}$$
   $$\text{H-type IC: } u(W - p_H L) \ge p_H u(W - \alpha_L - L + \beta_L) + (1-p_H)u(W - \alpha_L)$$
   The deductible is set just large enough to make the H-type indifferent between his full-insurance contract and the L-type's partial-insurance contract.
@@ -5252,6 +8113,17 @@ Area b: Consumption distortion DWL = 1/2 * t * (Q_d^{FT} - Q_d^T)
 Total DWL = a + b
 ```
 
+> **Derivation Walkthrough:**
+> Starting from the geometry of the deadweight loss triangles:
+> 1. The production distortion triangle (area a) has base $t$ (price wedge) and height $\Delta Q_s = Q_s^T - Q_s^{FT}$ (change in domestic supply). Area = $\frac12 \times t \times \Delta Q_s$.
+> 2. The consumption distortion triangle (area b) has base $t$ and height $\Delta Q_d = Q_d^{FT} - Q_d^T$ (change in domestic demand). Area = $\frac12 \times t \times \Delta Q_d$.
+> 3. Total DWL = $\frac12 t (\Delta Q_s + \Delta Q_d)$.
+> 4. Expressing quantity changes in terms of slopes: $\Delta Q_s / \Delta P = \text{supply slope}$, $\Delta Q_d / \Delta P = \text{demand slope}$, and $\Delta P = t$.
+> 5. Therefore: $\text{DWL} = \frac12 t (t \cdot \frac{\Delta Q_s}{\Delta P} + t \cdot \frac{\Delta Q_d}{\Delta P}) = \frac12 t^2 (\frac{\Delta Q_s}{\Delta P} + \frac{\Delta Q_d}{\Delta P})$.
+> 6. → Final form: $\text{DWL} = \frac{1}{2} t (\Delta Q_s + \Delta Q_d) = \frac{1}{2} t^2 \left( \frac{\Delta Q_s}{\Delta P} + \frac{\Delta Q_d}{\Delta P} \right)$.
+>
+> **Intuition:** The DWL of a tariff is the sum of two Harberger triangles. It is quadratic in the tariff rate $t$ — doubling the tariff quadruples the deadweight loss. This is because both the price wedge and the quantity reduction grow linearly with $t$, and their product grows quadratically.
+
 $$\text{DWL} = \frac{1}{2} t (\Delta Q_s + \Delta Q_d) = \frac{1}{2} t^2 \left( \frac{\Delta Q_s}{\Delta P} + \frac{\Delta Q_d}{\Delta P} \right)$$
 
 #### 8.3.3 Tariff vs Quota vs VER
@@ -5265,6 +8137,18 @@ $$\text{DWL} = \frac{1}{2} t (\Delta Q_s + \Delta Q_d) = \frac{1}{2} t^2 \left( 
 **Voluntary Export Restraint (VER):** Equivalent to a quota whose rent is captured by **foreign producers**. This makes VER strictly worse than an equivalent tariff for the importing country — the same DWL triangles PLUS the quota rent goes abroad.
 
 **Key Policy Insight:** Among the three trade restrictions achieving the same import reduction:
+
+> **Derivation Walkthrough:**
+> Starting from the welfare decomposition for each policy:
+> 1. **Tariff:** Net welfare change = $-\text{DWL} + \text{tariff revenue (domestic)}$.
+> 2. **Quota (free licences):** Net welfare change = $-\text{DWL} + \text{quota rent (domestic licence holders)}$.
+> 3. **VER:** Net welfare change = $-\text{DWL} + \text{quota rent (FOREIGN exporters)}$.
+> 4. For the same import restriction, the DWL is identical across all three policies (same price wedge, same quantity changes).
+> 5. The difference is who captures the rent. Tariff revenue stays domestic; quota rent may stay domestic (if auctioned) or go to licence holders; VER rent goes abroad.
+> 6. → Final form: $\text{Welfare loss: Tariff} < \text{Quota} < \text{VER}$.
+>
+> **Intuition:** The ranking follows directly from rent destination. Tariffs are best because the government can use the revenue to offset consumer losses. VERs are worst because the rent leaks abroad, making the policy doubly costly — domestic consumers pay higher prices AND the scarcity premium enriches foreign producers.
+
 $$\text{Welfare loss: Tariff} < \text{Quota} < \text{VER}$$
 
 #### 8.3.4 Detailed Welfare Comparison — Rent Dissipation
@@ -5300,9 +8184,33 @@ The welfare difference between tariff, quota, and VER arises from **who captures
 **Mechanism (Koutsoyiannis, p.505; Munoz-Garcia, SS6.6, p.404):**
 
 If $X$ is labour-intensive and $Y$ is capital-intensive:
+
+> **Derivation Walkthrough:**
+> Starting from the relationship between output prices and factor returns:
+> 1. The Stolper-Samuelson theorem is derived from the zero-profit conditions in a two-sector general equilibrium model.
+> 2. If $X$ is labour-intensive, an increase in $P_X/P_Y$ (relative price of $X$) makes $X$ production more profitable.
+> 3. Resources flow: $X$ expands, $Y$ contracts (Rybczynski effect in reverse).
+> 4. Expanding $X$ increases derived demand for labour; contracting $Y$ releases capital.
+> 5. The wage $w$ rises, the rental rate $r$ falls, so $w/r$ rises.
+> 6. → Final form: $\frac{P_X}{P_Y} \uparrow \;\Rightarrow\; X\text{ expands, } Y\text{ contracts} \;\Rightarrow\; \frac{w}{r} \uparrow$.
+>
+> **Intuition:** The mechanism is a general-equilibrium chain: a change in output prices changes the output mix, which changes factor demands, which changes factor prices. The factor used intensively in the expanding sector benefits; the factor used intensively in the contracting sector loses.
+
 $$\frac{P_X}{P_Y} \uparrow \;\Rightarrow\; X\text{ expands, } Y\text{ contracts} \;\Rightarrow\; \frac{w}{r} \uparrow$$
 
 **Magnification effect (Jones algebra):** Factor price changes are **magnified** relative to output price changes:
+
+> **Derivation Walkthrough:**
+> Starting from the formal Jones algebra solution (derived below in §8.3.6):
+> 1. Using Cramer's rule on the system of differentiated zero-profit conditions, we obtain $\hat{w} = (\theta_{KY}\hat{P}_X - \theta_{KX}\hat{P}_Y)/|\Theta|$ and $\hat{r} = (\theta_{LX}\hat{P}_Y - \theta_{LY}\hat{P}_X)/|\Theta|$.
+> 2. Suppose $\hat{P}_X > \hat{P}_Y$ (the relative price of labour-intensive $X$ increases).
+> 3. By the factor intensity assumption ($\theta_{LX} > \theta_{LY}$), the determinant $|\Theta| \in (0, 1)$.
+> 4. Solving: $\hat{w}$ gets a positive weight on $\hat{P}_X$ divided by $|\Theta| < 1$, so $\hat{w} > \hat{P}_X$.
+> 5. Similarly, $\hat{r}$ gets a negative weight on $\hat{P}_X$, so $\hat{r} < \hat{P}_Y$.
+> 6. → Final form: $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$.
+>
+> **Intuition:** Factor price changes **magnify** output price changes because factor intensities differ across sectors. The factor cost share matrix $|\Theta|$ acts as a "lever": dividing by $|\Theta| < 1$ amplifies the price change. This explains why trade liberalisation can have large distributional effects even when price changes are modest.
+
 $$\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$$
 
 where $\hat{x} = dx/x$ (proportional change).
@@ -5318,19 +8226,62 @@ where $\hat{x} = dx/x$ (proportional change).
 Based on the full general equilibrium model (Munoz-Garcia, Ch.6, pp.461–463):
 
 **Setup:** Two goods ($X, Y$), two factors ($L$ labour, $K$ capital). Competitive firms:
+
+> **Derivation Walkthrough:**
+> Starting from the zero-profit condition in competitive equilibrium:
+> 1. In a perfectly competitive economy with constant returns to scale, firms earn zero economic profit.
+> 2. This means the unit cost of producing each good must equal its output price.
+> 3. Unit costs depend on factor prices ($w$ for labour, $r$ for capital) through the cost functions $c_X(w, r)$ and $c_Y(w, r)$.
+> 4. The zero-profit conditions are: $c_X(w, r) = P_X$ and $c_Y(w, r) = P_Y$.
+> 5. → Final form: $c_X(w, r) = P_X \quad \text{and} \quad c_Y(w, r) = P_Y$.
+>
+> **Intuition:** These two equations are the foundation of the Jones algebra. They link output prices to factor prices through the technology embodied in the cost functions. The system has 2 equations and 2 unknowns ($w, r$) — prices pin down factor returns in the Heckscher-Ohlin model.
+
 $$c_X(w, r) = P_X \quad \text{and} \quad c_Y(w, r) = P_Y$$
 
 where $c_X$ and $c_Y$ are unit cost functions (Shephard's lemma gives factor demands).
 
 **Differentiate both sides:**
+
+> **Derivation Walkthrough:**
+> Starting from the zero-profit conditions and taking total differentials:
+> 1. Totally differentiate $c_X(w, r) = P_X$: $\frac{\partial c_X}{\partial w} dw + \frac{\partial c_X}{\partial r} dr = dP_X$.
+> 2. Totally differentiate $c_Y(w, r) = P_Y$: $\frac{\partial c_Y}{\partial w} dw + \frac{\partial c_Y}{\partial r} dr = dP_Y$.
+> 3. → Final forms: $\frac{\partial c_X}{\partial w} dw + \frac{\partial c_X}{\partial r} dr = dP_X$ and $\frac{\partial c_Y}{\partial w} dw + \frac{\partial c_Y}{\partial r} dr = dP_Y$.
+>
+> **Intuition:** Total differentiation converts the levels equations into a linear system in changes. This allows us to solve for how factor prices ($dw, dr$) respond to changes in output prices ($dP_X, dP_Y$) — the core comparative static of the Stolper-Samuelson theorem.
+
 $$\frac{\partial c_X}{\partial w} dw + \frac{\partial c_X}{\partial r} dr = dP_X$$
 $$\frac{\partial c_Y}{\partial w} dw + \frac{\partial c_Y}{\partial r} dr = dP_Y$$
 
 **Apply Shephard's lemma** ($\partial c_i/\partial w = a_{Li}$, the labour requirement per unit output):
+
+> **Derivation Walkthrough:**
+> Starting from the total differentials and applying Shephard's lemma:
+> 1. **Shephard's lemma** states that the derivative of the cost function with respect to a factor price equals the cost-minimising input coefficient for that factor.
+> 2. For good $X$: $\partial c_X/\partial w = a_{LX}$ (labour per unit of $X$), $\partial c_X/\partial r = a_{KX}$ (capital per unit of $X$).
+> 3. For good $Y$: $\partial c_Y/\partial w = a_{LY}$, $\partial c_Y/\partial r = a_{KY}$.
+> 4. Substituting into the differential system: $a_{LX} dw + a_{KX} dr = dP_X$ and $a_{LY} dw + a_{KY} dr = dP_Y$.
+> 5. → Final forms: $a_{LX} dw + a_{KX} dr = dP_X$ and $a_{LY} dw + a_{KY} dr = dP_Y$.
+>
+> **Intuition:** Shephard's lemma transforms abstract cost derivatives into economically meaningful input-output coefficients. The system now directly links input requirements to factor price and output price changes.
+
 $$a_{LX} dw + a_{KX} dr = dP_X$$
 $$a_{LY} dw + a_{KY} dr = dP_Y$$
 
 **Convert to proportional rates of change** ($\hat{x} = dx/x$):
+
+> **Derivation Walkthrough:**
+> Starting from the input-coefficient system and converting to proportional changes:
+> 1. Divide each equation by the respective output price. For $X$: $\frac{a_{LX} dw}{P_X} + \frac{a_{KX} dr}{P_X} = \frac{dP_X}{P_X} = \hat{P}_X$.
+> 2. Using the zero-profit condition $P_X = a_{LX} w + a_{KX} r$ (from cost function properties), rewrite: $\frac{a_{LX} w}{P_X} \cdot \frac{dw}{w} + \frac{a_{KX} r}{P_X} \cdot \frac{dr}{r} = \hat{P}_X$.
+> 3. Define factor cost shares: $\theta_{LX} = \frac{wa_{LX}}{P_X}$ (labour's share in $X$), $\theta_{KX} = \frac{ra_{KX}}{P_X}$ (capital's share in $X$). Note $\theta_{LX} + \theta_{KX} = 1$.
+> 4. Substituting: $\theta_{LX} \hat{w} + \theta_{KX} \hat{r} = \hat{P}_X$.
+> 5. Similarly for $Y$: $\theta_{LY} \hat{w} + \theta_{KY} \hat{r} = \hat{P}_Y$.
+> 6. → Final forms: $\theta_{LX} \hat{w} + \theta_{KX} \hat{r} = \hat{P}_X$ and $\theta_{LY} \hat{w} + \theta_{KY} \hat{r} = \hat{P}_Y$.
+>
+> **Intuition:** Converting to proportional changes and cost shares standardises the system. The $\theta$ coefficients are pure numbers (shares of total cost) between 0 and 1 that sum to 1 in each sector, making the algebra tractable and economically interpretable.
+
 $$\theta_{LX} \hat{w} + \theta_{KX} \hat{r} = \hat{P}_X$$
 $$\theta_{LY} \hat{w} + \theta_{KY} \hat{r} = \hat{P}_Y$$
 
@@ -5338,20 +8289,71 @@ where $\theta_{Li} = wa_{Li}/P_i$ and $\theta_{Ki} = ra_{Ki}/P_i$ are **factor c
 
 **Factor intensity assumption:**
 If $X$ is labour-intensive and $Y$ is capital-intensive:
+
+> **Derivation Walkthrough:**
+> Starting from the definition of factor cost shares:
+> 1. Labour intensity means labour's share of total cost is larger in $X$ than in $Y$: $\theta_{LX} > \theta_{LY}$.
+> 2. Since $\theta_{Li} + \theta_{Ki} = 1$ in each sector, it follows that capital's share is smaller in $X$ than in $Y$: $\theta_{KX} < \theta_{KY}$.
+> 3. → Final form: $\theta_{LX} > \theta_{LY} \quad \text{and} \quad \theta_{KX} < \theta_{KY}$.
+>
+> **Intuition:** Factor intensity is expressed in terms of cost shares rather than physical input ratios. This is because the Jones algebra works in value terms — the cost shares determine how changes in factor prices translate into changes in output prices. The inequalities define which factor is intensively used in which sector.
+
 $$\theta_{LX} > \theta_{LY} \quad \text{and} \quad \theta_{KX} < \theta_{KY}$$
 
 **Solve for factor price changes:**
 Using Cramer's rule:
+
+> **Derivation Walkthrough:**
+> Starting from the system of proportional-change equations:
+> 1. Write the system in matrix form: $\begin{bmatrix} \theta_{LX} & \theta_{KX} \\ \theta_{LY} & \theta_{KY} \end{bmatrix} \begin{bmatrix} \hat{w} \\ \hat{r} \end{bmatrix} = \begin{bmatrix} \hat{P}_X \\ \hat{P}_Y \end{bmatrix}$.
+> 2. The determinant of the cost-share matrix is: $|\Theta| = \theta_{LX}\theta_{KY} - \theta_{LY}\theta_{KX}$.
+> 3. By the factor intensity assumption ($\theta_{LX} > \theta_{LY}, \theta_{KX} < \theta_{KY}$): $\theta_{LX}\theta_{KY} > \theta_{LY}\theta_{KX}$, so $|\Theta| > 0$.
+> 4. → Final form: $|\Theta| = \theta_{LX}\theta_{KY} - \theta_{LY}\theta_{KX} > 0$.
+>
+> **Intuition:** The determinant is strictly positive when factor intensities differ across sectors. If both sectors had identical factor intensities ($\theta_{LX} = \theta_{LY}, \theta_{KX} = \theta_{KY}$), the determinant would be zero and factor prices would not be uniquely determined by output prices — the Stolper-Samuelson link would break.
+
 $$|\Theta| = \theta_{LX}\theta_{KY} - \theta_{LY}\theta_{KX} > 0 \quad \text{(by factor intensity)}$$
+
+> **Derivation Walkthrough:**
+> Starting from Cramer's rule applied to the $2\times2$ system:
+> 1. For $\hat{w}$: replace the first column of the $\Theta$ matrix with the price change vector:
+>    $\hat{w} = \frac{\det\begin{bmatrix} \hat{P}_X & \theta_{KX} \\ \hat{P}_Y & \theta_{KY} \end{bmatrix}}{|\Theta|} = \frac{\theta_{KY}\hat{P}_X - \theta_{KX}\hat{P}_Y}{|\Theta|}$.
+> 2. For $\hat{r}$: replace the second column:
+>    $\hat{r} = \frac{\det\begin{bmatrix} \theta_{LX} & \hat{P}_X \\ \theta_{LY} & \hat{P}_Y \end{bmatrix}}{|\Theta|} = \frac{\theta_{LX}\hat{P}_Y - \theta_{LY}\hat{P}_X}{|\Theta|}$.
+> 3. → Final forms: $\hat{w} = \frac{\theta_{KY}\hat{P}_X - \theta_{KX}\hat{P}_Y}{|\Theta|}$ and $\hat{r} = \frac{\theta_{LX}\hat{P}_Y - \theta_{LY}\hat{P}_X}{|\Theta|}$.
+>
+> **Intuition:** These closed-form solutions show how each factor price is a weighted average (or difference) of the two output price changes. The weights are the cost shares from the *other* sector — a reflection of the general equilibrium nature of the model. Changes in both output prices affect both factor prices.
 
 $$\hat{w} = \frac{\theta_{KY}\hat{P}_X - \theta_{KX}\hat{P}_Y}{|\Theta|}$$
 $$\hat{r} = \frac{\theta_{LX}\hat{P}_Y - \theta_{LY}\hat{P}_X}{|\Theta|}$$
 
 **Magnification effect:** If $\hat{P}_X > 0$ and $\hat{P}_Y = 0$ (price of labour-intensive good rises):
+
+> **Derivation Walkthrough:**
+> Starting from the Cramer's rule solutions with $\hat{P}_X > 0$ and $\hat{P}_Y = 0$:
+> 1. Substituting $\hat{P}_Y = 0$: $\hat{w} = \frac{\theta_{KY}}{|\Theta|} \hat{P}_X$ and $\hat{r} = \frac{-\theta_{LY}}{|\Theta|} \hat{P}_X$.
+> 2. Since $\theta_{LX} + \theta_{KX} = 1$ and $\theta_{LX} > \theta_{LY}$, we have $\theta_{KX} < \theta_{KY}$ and thus $|\Theta| = \theta_{LX}\theta_{KY} - \theta_{LY}\theta_{KX} < \theta_{LX}\theta_{KY} < \theta_{KY}$ (since $\theta_{LX} < 1$).
+> 3. Therefore $|\Theta| < \theta_{KY}$, so $\hat{w} = \frac{\theta_{KY}}{|\Theta|} \hat{P}_X > \hat{P}_X$.
+> 4. For $\hat{r}$: $\hat{r} = \frac{-\theta_{LY}}{|\Theta|} \hat{P}_X < 0$ (since numerator negative, denominator positive).
+> 5. Since $\hat{P}_Y = 0$: $\hat{r} < 0 < \hat{P}_Y = 0$.
+> 6. → Final forms: $\hat{w} = \frac{\theta_{KY}}{|\Theta|} \hat{P}_X > \hat{P}_X$ and $\hat{r} = \frac{-\theta_{LY}}{|\Theta|} \hat{P}_X < 0 < \hat{P}_Y = 0$.
+>
+> **Intuition:** When only one output price changes, the factor used intensively in that sector benefits more than proportionally ($\hat{w} > \hat{P}_X$), while the other factor unambiguously loses ($\hat{r} < 0$). The magnification factor $1/|\Theta| > 1$ amplifies the price change because factor intensities differ.
+
 $$\hat{w} = \frac{\theta_{KY}}{|\Theta|} \hat{P}_X > \hat{P}_X \quad \text{(since } |\Theta| < \theta_{KY} \text{ by the factor intensity assumption)}$$
 $$\hat{r} = \frac{-\theta_{LY}}{|\Theta|} \hat{P}_X < 0 < \hat{P}_Y = 0$$
 
 **General case** ($\hat{P}_X > \hat{P}_Y$):
+
+> **Derivation Walkthrough:**
+> Starting from the general solutions and the ranking $\hat{P}_X > \hat{P}_Y$:
+> 1. From $\hat{w} = (\theta_{KY}\hat{P}_X - \theta_{KX}\hat{P}_Y)/|\Theta|$, we can show $\hat{w} > \hat{P}_X$ because $\theta_{KY} > |\Theta|$ (as shown above) and the weight on $\hat{P}_Y$ is negative.
+> 2. From $\hat{r} = (\theta_{LX}\hat{P}_Y - \theta_{LY}\hat{P}_X)/|\Theta|$, we can show $\hat{r} < \hat{P}_Y$ because the coefficient on $\hat{P}_X$ (which is larger than $\hat{P}_Y$) is negative.
+> 3. Combining: $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$.
+> 4. → Final form: $\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$.
+>
+> **Intuition:** The magnification effect in its general form establishes a complete chain of inequalities. Trade-induced changes in output prices produce even larger changes in factor prices, with one factor gaining and the other losing. This is the most important distributional result in international trade theory.
+
 $$\hat{w} > \hat{P}_X > \hat{P}_Y > \hat{r}$$
 
 This is the **magnification effect**: factor prices respond more than proportionally to output price changes. Trade's distributional effects are amplified through the factor-intensity structure of production.
@@ -5361,7 +8363,20 @@ This is the **magnification effect**: factor prices respond more than proportion
 
 **Extension — Magnification with both prices changing:**
 When both output prices change, the full ranking holds:
+
+> **Derivation Walkthrough:**
+> Starting from the solutions for $\hat{w}$ and $\hat{r}$:
+> 1. Subtract the factor price solutions: $\hat{w} - \hat{r} = \frac{\theta_{KY}\hat{P}_X - \theta_{KX}\hat{P}_Y}{|\Theta|} - \frac{\theta_{LX}\hat{P}_Y - \theta_{LY}\hat{P}_X}{|\Theta|}$.
+> 2. Collect terms: $\hat{w} - \hat{r} = \frac{\theta_{KY}\hat{P}_X + \theta_{LY}\hat{P}_X - \theta_{KX}\hat{P}_Y - \theta_{LX}\hat{P}_Y}{|\Theta|}$.
+> 3. Simplify: $\hat{w} - \hat{r} = \frac{(\theta_{KY} + \theta_{LY})\hat{P}_X - (\theta_{KX} + \theta_{LX})\hat{P}_Y}{|\Theta|}$.
+> 4. Since $\theta_{KX} + \theta_{LX} = 1$ and $\theta_{KY} + \theta_{LY} = 1$: $\hat{w} - \hat{r} = \frac{\hat{P}_X - \hat{P}_Y}{|\Theta|}$.
+> 5. Since $|\Theta| \in (0, 1)$: $\frac{\hat{P}_X - \hat{P}_Y}{|\Theta|} > \hat{P}_X - \hat{P}_Y$.
+> 6. → Final form: $\hat{w} - \hat{r} = \frac{(\hat{P}_X - \hat{P}_Y)}{|\Theta|} > \hat{P}_X - \hat{P}_Y$.
+>
+> **Intuition:** The difference between wage and rental rate changes exceeds the difference between output price changes by the factor $1/|\Theta| > 1$. This is a powerful statement: even small changes in relative output prices (e.g., from trade liberalisation) translate into large changes in relative factor prices, explaining the intense distributional conflict often associated with trade policy.
+
 $$\hat{w} - \hat{r} = \frac{(\hat{P}_X - \hat{P}_Y)}{|\Theta|} > \hat{P}_X - \hat{P}_Y$$
+
 since $|\Theta| \in (0, 1)$. The factor price differential exceeds the output price differential — trade-induced price changes produce **magnified** distributional consequences.
 
 **Empirical implication:** Even modest changes in trade prices can produce large changes in factor returns (wages and rents). This explains why trade policy generates intense distributional conflict — the losers lose a lot, and the winners win a lot.
@@ -5375,6 +8390,16 @@ since $|\Theta| \in (0, 1)$. The factor price differential exceeds the output pr
 **Q:** Show that asymmetric information may lead to the disappearance of good from the market.
 
 **A:** This is Akerlof's "Market for Lemons" (1970). Asymmetric information exists when sellers know the quality of their good but buyers cannot distinguish quality ex ante. Because buyers know only the average quality, they are willing to pay only the expected value:
+
+> **Derivation Walkthrough:**
+> Starting from the setup with two possible quality types:
+> 1. With probability $\mu$, the good is high-quality (value $V_H$ to the buyer).
+> 2. With probability $(1-\mu)$, the good is low-quality (value $V_L$ to the buyer).
+> 3. The buyer, unable to observe quality, forms the mathematical expectation: $E[V] = \mu \cdot V_H + (1-\mu) \cdot V_L$.
+> 4. → Final form: $E[V] = \mu V_H + (1-\mu) V_L$.
+>
+> **Intuition:** This is the buyer's rational willingness-to-pay under asymmetric information — the probability-weighted average of possible values. It is less than $V_H$ (so high-quality sellers are underpaid) and greater than $V_L$ (so low-quality sellers are overpaid). This mispricing drives the adverse selection process.
+
 $$E[V] = \mu V_H + (1 - \mu) V_L$$
 
 If this expected value falls below the reservation price of high-quality sellers, those sellers **withdraw from the market**. This reduces the average quality of goods available, further lowering buyers' willingness to pay. The process feeds on itself:
@@ -5446,11 +8471,49 @@ The separating equilibrium is **socially inefficient** — resources are spent o
 **A:**
 
 **Step 1: Autarky equilibrium.**
+
+> **Derivation Walkthrough:**
+> Starting from the market-clearing condition (domestic demand = domestic supply):
+> 1. Set $Q_d = Q_s$: $250,000 - 100P = 250P - 30,000$.
+> 2. Bring terms: $250,000 + 30,000 = 250P + 100P$.
+> 3. Simplify: $280,000 = 350P$.
+> 4. Solve: $P_{\text{autarky}} = 280,000 / 350 = 800$.
+> 5. → Final form: $250,000 - 100P = 250P - 30,000 \;\Rightarrow\; 280,000 = 350P \;\Rightarrow\; P_{\text{autarky}} = 800$.
+>
+> **Intuition:** The autarky price is where domestic supply meets domestic demand. At prices above 800, quantity supplied exceeds quantity demanded; below 800, there is excess demand. The autarky equilibrium serves as the benchmark for evaluating the effects of trade.
+
 $$250,000 - 100P = 250P - 30,000 \;\Rightarrow\; 280,000 = 350P \;\Rightarrow\; P_{\text{autarky}} = 800$$
+
+> **Derivation Walkthrough:**
+> Starting from the autarky price $P = 800$:
+> 1. Substitute $P = 800$ into either the demand or supply equation.
+> 2. Using demand: $Q_{\text{autarky}} = 250,000 - 100(800) = 250,000 - 80,000$.
+> 3. → Final form: $Q_{\text{autarky}} = 250,000 - 100(800) = 170,000$.
+>
+> **Intuition:** At the autarky price, 170,000 units are produced and consumed domestically with no international trade. This is the quantity that exactly clears the domestic market.
+
 $$Q_{\text{autarky}} = 250,000 - 100(800) = 170,000$$
 
 **Step 2: Free trade ($P_W = 600$).**
+
+> **Derivation Walkthrough:**
+> Starting from the free trade price $P_W = 600$ (below autarky price of 800, so the country imports):
+> 1. Domestic demand at $P_W$: $Q_d(600) = 250,000 - 100(600) = 250,000 - 60,000 = 190,000$.
+> 2. Domestic supply at $P_W$: $Q_s(600) = 250(600) - 30,000 = 150,000 - 30,000 = 120,000$.
+> 3. → Final forms: $Q_d(600) = 190,000$ and $Q_s(600) = 120,000$.
+>
+> **Intuition:** At the lower world price, domestic consumers demand more (190,000) while domestic producers supply less (120,000) than under autarky. The difference is made up by imports — the country benefits from cheaper foreign goods.
+
 $$Q_d(600) = 190,000,\; Q_s(600) = 120,000$$
+
+> **Derivation Walkthrough:**
+> Starting from the free trade quantities:
+> 1. Imports = Domestic demand - Domestic supply at world price.
+> 2. $\text{Imports} = Q_d(600) - Q_s(600) = 190,000 - 120,000$.
+> 3. → Final form: $\text{Imports} = 190,000 - 120,000 = 70,000$.
+>
+> **Intuition:** Under free trade, the country imports 70,000 units — the gap between what consumers want and what domestic producers can supply at the world price. This imports quantity is the baseline against which trade restrictions are measured.
+
 $$\text{Imports} = 190,000 - 120,000 = 70,000$$
 
 **Step 3: Tariff of \$50 ($P_T = 650$).**
@@ -5473,7 +8536,27 @@ $$\text{Imports} = 190,000 - 120,000 = 70,000$$
 **Step 4: VER of 20,000 units.**
 
 At domestic price $P$: $Q_d - Q_s = 20,000$
+
+> **Derivation Walkthrough:**
+> Starting from the condition that imports under VER are restricted to 20,000 units:
+> 1. The VER fixes imports at 20,000: $Q_d(P) - Q_s(P) = 20,000$.
+> 2. Substitute the demand and supply functions: $(250,000 - 100P) - (250P - 30,000) = 20,000$.
+> 3. Simplify: $250,000 - 100P - 250P + 30,000 = 20,000$.
+> 4. → $280,000 - 350P = 20,000$.
+>
+> **Intuition:** The VER creates an artificial scarcity that raises the domestic price above the world price. The price adjusts until the gap between quantity demanded and quantity supplied equals the VER limit.
+
 $$(250,000 - 100P) - (250P - 30,000) = 20,000$$
+
+> **Derivation Walkthrough:**
+> Starting from the import restriction equation:
+> 1. From $280,000 - 350P = 20,000$, bring terms: $280,000 - 20,000 = 350P$.
+> 2. Simplify: $260,000 = 350P$.
+> 3. Solve: $P_{\text{VER}} = 260,000 / 350 \approx 742.86$.
+> 4. → Final form: $280,000 - 350P = 20,000 \;\Rightarrow\; P_{\text{VER}} = 742.86$.
+>
+> **Intuition:** The VER drives the domestic price up to \$742.86 — well above the world price of \$600 and even above the tariff-inclusive price of \$650. This is because the VER restricts imports much more tightly (20,000 vs 52,500 under the tariff), creating a larger scarcity premium.
+
 $$280,000 - 350P = 20,000 \;\Rightarrow\; P_{\text{VER}} = 742.86$$
 
 **Welfare effects of VER vs free trade:**
@@ -5523,6 +8606,10 @@ $$280,000 - 350P = 20,000 \;\Rightarrow\; P_{\text{VER}} = 742.86$$
 
 
 ---
+
+<!-- ============================================================
+APPENDICES
+============================================================ -->
 
 ## Appendix A: Exam Cheat Sheet — All Key Formulas
 

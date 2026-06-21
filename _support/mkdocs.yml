@@ -173,6 +173,30 @@ nav:
       - David Romer (Text): extracted-content/502_Macroeconomics/TUTORIALS/david-romer-advanced-macroeconomics.md
       - Final Syllabus: extracted-content/502_Macroeconomics/TUTORIALS/502-final-syllabus-1.md
       - Exam Suggestion: extracted-content/502_Macroeconomics/TUTORIALS/502-macro-suggestion-2.md
+      - 🧩 Model Notes:
+        - 🏗️ Solow Model:
+          - The Solow Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/the-solow-model.md"
+          - Empirical Application: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/empirical-application_solow-chatgpt.md"
+        - 💎 Diamond / OLG:
+          - The Diamond Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Diamond/the-diamond-model.md"
+          - Dynamic Efficiency: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Diamond/dynamic_efficiency.md"
+        - 🔄 RBC:
+          - Real Business Cycle Theory: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/real_business-cycle_theory.md"
+          - Alvin Hansen: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/alvin_hansen.md"
+          - Edward C. Prescott: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/edward_c_prescott.md"
+          - Hodrick-Prescott Filter: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/hodrickprescott_filter.md"
+        - 📈 R&D / Romer:
+          - R&D Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/R&D/rd-model1.md"
+          - The Romer Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Romer/the-romer-model.md"
+          - Romer Model (incomplete): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Romer/romer-model-incomplete.md"
+        - ⚖️ RCK:
+          - RCK Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RCK/rck-model.md"
+          - RCK 47th Batch Typed: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RCK/rck_model_47th-batch_typed.md"
+        - 🆕 New Keynesian DSGE:
+          - Calvo Staggered Contracts: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/calvo_staggered_contracts.md"
+          - Divine Coincidence: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/divine_coincidence.md"
+          - Leibniz Integral Rule: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/leibniz_integral_rule.md"
+          - Blanchard-Galli (Real Wage Rigidities): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/olivier-blanchard-and-galli-real-wage-rigidities-and-the-new-keynesian-model.md"
     - 📚 Textbooks:
       - Heijdra Foundations: extracted-content/502_Macroeconomics/TEXTBOOKS/ben-j-heijdra-foumdations-of-modern-macro.md
       - Heijdra 2017: extracted-content/502_Macroeconomics/TEXTBOOKS/heijdra-2017.md
@@ -180,6 +204,7 @@ nav:
       - Ackley ch 4-5: extracted-content/502_Macroeconomics/TEXTBOOKS/ackley-ch-45.md
       - Arnold Economics: extracted-content/502_Macroeconomics/TEXTBOOKS/roger-a-arnold-economics.md
       - Economics by Arnold: extracted-content/502_Macroeconomics/TEXTBOOKS/economics-by-arnold.md
+      - Campante et al. (RBC): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/filipe-campante-federico-sturzenegger-andrés-velasco-advanced-macroeconomics_-an-easy-guide-lse-press-2021.md"
     - 📝 Class Notes:
       - Solow Model Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md
 

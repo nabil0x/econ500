@@ -165,6 +165,23 @@ nav:
       - By Topic (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise.md
       - By Year (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise-answered.md
       - By Year (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise.md
+    - 📦 Tutorials:
+      - Solow Tutorial 1: extracted-content/502_Macroeconomics/TUTORIALS/502_solow_1st_tutorial.md
+      - Solow, RCK, R&D: extracted-content/502_Macroeconomics/TUTORIALS/502-solow-rck-rd-tutorial.md
+      - Tutorial Q48: extracted-content/502_Macroeconomics/TUTORIALS/502-tutorial-question-48.md
+      - Macro Tutorial Solve: extracted-content/502_Macroeconomics/TUTORIALS/macro-tutorial-solve.md
+      - David Romer (Text): extracted-content/502_Macroeconomics/TUTORIALS/david-romer-advanced-macroeconomics.md
+      - Final Syllabus: extracted-content/502_Macroeconomics/TUTORIALS/502-final-syllabus-1.md
+      - Exam Suggestion: extracted-content/502_Macroeconomics/TUTORIALS/502-macro-suggestion-2.md
+    - 📚 Textbooks:
+      - Heijdra Foundations: extracted-content/502_Macroeconomics/TEXTBOOKS/ben-j-heijdra-foumdations-of-modern-macro.md
+      - Heijdra 2017: extracted-content/502_Macroeconomics/TEXTBOOKS/heijdra-2017.md
+      - Classical Macro Theory: extracted-content/502_Macroeconomics/TEXTBOOKS/classical_macroeconomics_classical_monetary__employment_theory.md
+      - Ackley ch 4-5: extracted-content/502_Macroeconomics/TEXTBOOKS/ackley-ch-45.md
+      - Arnold Economics: extracted-content/502_Macroeconomics/TEXTBOOKS/roger-a-arnold-economics.md
+      - Economics by Arnold: extracted-content/502_Macroeconomics/TEXTBOOKS/economics-by-arnold.md
+    - 📝 Class Notes:
+      - Solow Model Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md
 
   # ─── DEVELOPMENT ECONOMICS (503) ─────────────────────────────────
   - 🌱 Development (503):
@@ -310,10 +327,6 @@ nav:
     - 📐 Micro 501:
       - Answers: extracted-content/501_Microeconomics/Answers/README.md
       - Tutorials: extracted-content/501_Microeconomics/TUTORIALS/README.md
-    - 📈 Macro 502:
-      - Textbooks: extracted-content/502_Macroeconomics/TEXTBOOKS/README.md
-      - Tutorials: extracted-content/502_Macroeconomics/TUTORIALS/README.md
-      - Solow Class Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md
     - 🌱 Development 503:
       - Materials: extracted-content/503_Development_Economics/README.md
     - 🌐 International Econ 512:

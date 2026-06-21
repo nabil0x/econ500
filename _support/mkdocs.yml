@@ -142,37 +142,37 @@ nav:
 
   # ─── MACROECONOMICS (502) ─────────────────────────────────────────
   - 📈 Macroeconomics (502):
-    - Overview: 502-Macroeconomics/GUIDE/README.md
-    - Study Roadmap: 502-Macroeconomics/GUIDE/STUDY-ROADMAP.md
-    - Exam Cheat Sheet: 502-Macroeconomics/GUIDE/EXAM-CHEAT-SHEET.md
-    - Exam Answer Template: 502-Macroeconomics/GUIDE/EXAM-ANSWER-TEMPLATE.md
-    - Exam Priority Matrix: 502-Macroeconomics/GUIDE/EXAM-PRIORITY-MATRIX.md
-    - Exam Common Mistakes: 502-Macroeconomics/GUIDE/EXAM-COMMON-MISTAKES.md
-    - Exam Simulations: 502-Macroeconomics/GUIDE/EXAM-SIMULATIONS.md
-    - Basics: 502-Macroeconomics/GUIDE/basics.md
-    - Equation Explainer: 502-Macroeconomics/GUIDE/EQUATION-EXPLAINER.md
-    - 📖 Glossary (Detailed): 502-Macroeconomics/GUIDE/GLOSSARY-DETAILED.md
-    - 📖 Glossary: 502-Macroeconomics/GUIDE/GLOSSARY.md
-    - ✅ Answer Files:
+    - 🎯 Start Here:
+      - Overview: 502-Macroeconomics/GUIDE/README.md
+      - Study Roadmap: 502-Macroeconomics/GUIDE/STUDY-ROADMAP.md
+    - 📖 Core Theory:
+      - Basics: 502-Macroeconomics/GUIDE/basics.md
+      - Equation Explainer: 502-Macroeconomics/GUIDE/EQUATION-EXPLAINER.md
+      - 📖 Glossary (Detailed): 502-Macroeconomics/GUIDE/GLOSSARY-DETAILED.md
+      - 📖 Glossary: 502-Macroeconomics/GUIDE/GLOSSARY.md
+    - 📝 Exam Strategy:
+      - Exam Cheat Sheet: 502-Macroeconomics/GUIDE/EXAM-CHEAT-SHEET.md
+      - Exam Answer Template: 502-Macroeconomics/GUIDE/EXAM-ANSWER-TEMPLATE.md
+      - Exam Priority Matrix: 502-Macroeconomics/GUIDE/EXAM-PRIORITY-MATRIX.md
+      - Exam Common Mistakes: 502-Macroeconomics/GUIDE/EXAM-COMMON-MISTAKES.md
+      - Exam Simulations: 502-Macroeconomics/GUIDE/EXAM-SIMULATIONS.md
+    - ✅ Solved Answers:
       - All Answers: 502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md
       - Macroeconomics: 502-Macroeconomics/ANSWERS/answers-macroeconomics.md
       - RBC: 502-Macroeconomics/ANSWERS/answers-rbc.md
       - New Keynesian: 502-Macroeconomics/ANSWERS/answers-new-keynesian.md
       - R&D / Monopolistic: 502-Macroeconomics/ANSWERS/answers-rd-monopolistic.md
       - OLG: 502-Macroeconomics/ANSWERS/answers-olg.md
-    - ❓ Question Indexes:
+    - ❓ Question Banks:
       - By Topic (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise-answered.md
       - By Topic (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise.md
       - By Year (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise-answered.md
       - By Year (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise.md
-    - 📦 Tutorials:
+    - 📦 Tutorials & Model Notes:
       - Solow Tutorial 1: extracted-content/502_Macroeconomics/TUTORIALS/502_solow_1st_tutorial.md
       - Solow, RCK, R&D: extracted-content/502_Macroeconomics/TUTORIALS/502-solow-rck-rd-tutorial.md
       - Tutorial Q48: extracted-content/502_Macroeconomics/TUTORIALS/502-tutorial-question-48.md
       - Macro Tutorial Solve: extracted-content/502_Macroeconomics/TUTORIALS/macro-tutorial-solve.md
-      - David Romer (Text): extracted-content/502_Macroeconomics/TUTORIALS/david-romer-advanced-macroeconomics.md
-      - Final Syllabus: extracted-content/502_Macroeconomics/TUTORIALS/502-final-syllabus-1.md
-      - Exam Suggestion: extracted-content/502_Macroeconomics/TUTORIALS/502-macro-suggestion-2.md
       - 🧩 Model Notes:
         - 🏗️ Solow Model:
           - The Solow Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/the-solow-model.md"
@@ -204,6 +204,7 @@ nav:
       - Ackley ch 4-5: extracted-content/502_Macroeconomics/TEXTBOOKS/ackley-ch-45.md
       - Arnold Economics: extracted-content/502_Macroeconomics/TEXTBOOKS/roger-a-arnold-economics.md
       - Economics by Arnold: extracted-content/502_Macroeconomics/TEXTBOOKS/economics-by-arnold.md
+      - David Romer Advanced Macro: extracted-content/502_Macroeconomics/TUTORIALS/david-romer-advanced-macroeconomics.md
       - Campante et al. (RBC): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/filipe-campante-federico-sturzenegger-andrés-velasco-advanced-macroeconomics_-an-easy-guide-lse-press-2021.md"
     - 📝 Class Notes:
       - Solow Model Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md

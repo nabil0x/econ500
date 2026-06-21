@@ -1,0 +1,228 @@
+# Masters Exam Study Hub — MkDocs Configuration
+site_name: Economics Mastery
+site_description: Free MSc Economics exam resources — Department of Economics, Jahangirnagar University. Solved past papers, exam guides, and interactive study tools for Microeconomics, Macroeconomics, Development, Political Economy & Health Economics.
+site_author: Department of Economics, Jahangirnagar University
+site_url: https://nabil0x.github.io/econ500/
+repo_url: https://github.com/nabil0x/econ500
+repo_name: econ500
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: ju
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: ju-dark
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  logo: assets/ju-logo.svg
+  favicon: assets/ju-logo.svg
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nabil0x/econ500
+      name: GitHub
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/nabil.ann
+      name: Facebook
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX  # ← Replace with real GA4 ID to enable analytics
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/visitor-logger.css
+  - stylesheets/dashboard.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/visitor-logger.js
+  - javascripts/dashboard.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 2-4
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+
+# =====================================================================
+# NAVIGATION
+# =====================================================================
+nav:
+  - Home: index.md
+  # ─── MICROECONOMICS (501) ─────────────────────────────────────────
+  - 📐 Microeconomics (501):
+    - Overview: 501-Microeconomics/README.md
+    - Study Roadmap: 501-Microeconomics/STUDY-ROADMAP.md
+    - 📘 Master Study Guide: 501-Microeconomics/501-MASTER-STUDY-GUIDE.md
+    - 📘 Master Study Guide (PDF): 501-Microeconomics/501-MASTER-STUDY-GUIDE.pdf
+    - Exam Cheat Sheet: 501-Microeconomics/EXAM-CHEAT-SHEET.md
+    - Exam Answer Template: 501-Microeconomics/EXAM-ANSWER-TEMPLATE.md
+    - Exam Priority Matrix: 501-Microeconomics/EXAM-PRIORITY-MATRIX.md
+    - Exam Common Mistakes: 501-Microeconomics/EXAM-COMMON-MISTAKES.md
+    - Exam Simulations: 501-Microeconomics/EXAM-SIMULATIONS.md
+    - Basics & Formulas: 501-Microeconomics/basics.md
+    - Welfare Change Reference: 501-Microeconomics/welfare-change-reference.md
+    - Equation Explainer: 501-Microeconomics/EQUATION-EXPLAINER.md
+    - 📖 Glossary (Detailed): 501-Microeconomics/GLOSSARY-DETAILED.md
+    - 📖 Glossary: 501-Microeconomics/GLOSSARY.md
+    - ✅ Answer Files:
+      - Consumer Theory: 501-Microeconomics/answers-consumer-theory.md
+      - Demand & Production: 501-Microeconomics/answers-demand-production.md
+      - Welfare: 501-Microeconomics/answers-welfare.md
+      - GE, Game Theory & Trade: 501-Microeconomics/answers-ge-game-extern-trade.md
+    - ❓ Question Indexes:
+      - By Topic (Answered): 501-Microeconomics/micro-questions-topic-wise-answered.md
+      - By Year (Answered): 501-Microeconomics/micro-questions-year-wise-answered.md
+      - By Topic (Questions Only): 501-Microeconomics/micro-questions-topic-wise.md
+      - By Year (Questions Only): 501-Microeconomics/micro-questions-year-wise.md
+    - 🔗 Cross-Reference: 501-Microeconomics/answers-cross-reference.md
+    - 📋 ANSWERS Index: 501-Microeconomics/ANSWERS-INDEX.md
+    - 📦 Resources Index: 501-Microeconomics/resources/README.md
+    - 📦 Master Notes Index: 501-Microeconomics/resources/master-notes-501/README.md
+
+  # ─── MACROECONOMICS (502) ─────────────────────────────────────────
+  - 📈 Macroeconomics (502):
+    - Overview: macroeconomics/README.md
+    - Basics: macroeconomics/basics.md
+    - ✅ Answers: 502-Macroeconomics/ANSWERS-INDEX.md
+
+  # ─── DEVELOPMENT ECONOMICS (503) ─────────────────────────────────
+  - 🌱 Development (503):
+    - Overview: 503-Development/README.md
+    - Course Basics: 503-Development/basics.md
+    - ✅ Answers: 503-Development/answers-development.md
+    - 📝 Topics:
+      - Naila Kabeer:
+        - Basics: 503-Development/naila-kabeer/basics.md
+        - Full Notes: 503-Development/naila-kabeer/README.md
+      - Venezuela:
+        - Basics: 503-Development/venezuela/basics.md
+        - Full Notes: 503-Development/venezuela/README.md
+      - Labour Force Survey:
+        - Basics: 503-Development/labour-force-survey/basics.md
+        - Full Notes: 503-Development/labour-force-survey/README.md
+      - Bangladesh Trade:
+        - Basics: 503-Development/bangladesh-trade/basics.md
+        - Full Notes: 503-Development/bangladesh-trade/README.md
+
+  # ─── POLITICAL ECONOMY (512) ────────────────────────────────────────
+  - 🏛️ Political Economy (512):
+    - Overview: 512-Political-Economy/README.md
+    - Course Basics: 512-Political-Economy/basics.md
+    - ✅ Answers: 512-Political-Economy/answers-political-economy.md
+    - 📝 Topics:
+      - Modernization Theory:
+        - Basics: 512-Political-Economy/modernization-theory/basics.md
+        - Full Notes: 512-Political-Economy/modernization-theory/README.md
+      - Dependency Theory:
+        - Basics: 512-Political-Economy/dependency-theory/basics.md
+        - Full Notes: 512-Political-Economy/dependency-theory/README.md
+      - Washington Consensus:
+        - Basics: 512-Political-Economy/washington-consensus/basics.md
+        - Full Notes: 512-Political-Economy/washington-consensus/README.md
+      - Free Trade in Agriculture:
+        - Basics: 512-Political-Economy/free-trade-agriculture/basics.md
+        - Full Notes: 512-Political-Economy/free-trade-agriculture/README.md
+      - Food Crisis (Patnaik):
+        - Basics: 512-Political-Economy/food-crisis/basics.md
+        - Full Notes: 512-Political-Economy/food-crisis/README.md
+      - Bangladesh Dairy:
+        - Basics: 512-Political-Economy/bangladesh-dairy/basics.md
+        - Full Notes: 512-Political-Economy/bangladesh-dairy/README.md
+      - RMG Sector:
+        - Basics: 512-Political-Economy/rmg-sector/basics.md
+        - Full Notes: 512-Political-Economy/rmg-sector/README.md
+      - Cash Crops vs Food Crops:
+        - Basics: 512-Political-Economy/cash-crops/basics.md
+        - Full Notes: 512-Political-Economy/cash-crops/README.md
+
+  # ─── HEALTH ECONOMICS (507) ────────────────────────────────────────
+  - 🏥 Health Economics (507):
+    - Overview: health-economics/README.md
+    - Basics: health-economics/basics.md
+
+  # ─── BATCH FINALS ──────────────────────────────────────────────────
+  - 🎯 Batch Finals:
+    - All Batches: batch-finals/README.md
+    - Batch 47 (2022 MSc):
+      - Overview: batch-finals/batch-47/README.md
+      - Micro 501: batch-finals/batch-47/micro-501.md
+      - Micro 501 Tutorial: batch-finals/batch-47/micro-501-tutorial.md
+      - Macro 502: batch-finals/batch-47/macro-502.md
+      - Macro 502 Tutorial: batch-finals/batch-47/macro-502-tutorial.md
+      - Dev 503: batch-finals/batch-47/dev-503.md
+      - Health 507: batch-finals/batch-47/health-507.md
+      - Health 507 Tutorial: batch-finals/batch-47/health-507-tutorial.md
+      - Political 512: batch-finals/batch-47/political-512.md
+      - Econometrics 504: batch-finals/batch-47/econometrics-504.md
+      - Econometrics 504 Tutorial: batch-finals/batch-47/econometrics-504-tutorial.md
+      - Environmental 506: batch-finals/batch-47/environmental-506.md
+      - Labor 510: batch-finals/batch-47/labor-510.md
+      - Labor 510 Tutorial: batch-finals/batch-47/labor-510-tutorial.md
+    - Batch 48 (2023 MSc):
+      - Overview: batch-finals/batch-48/README.md
+      - Micro 501: batch-finals/batch-48/micro-501.md
+      - Macro 502: batch-finals/batch-48/macro-502.md
+      - Dev 503: batch-finals/batch-48/dev-503.md
+      - Health 507: batch-finals/batch-48/health-507.md
+      - Econometrics 504: batch-finals/batch-48/econometrics-504.md
+      - Labor 510: batch-finals/batch-48/labor-510.md
+    - Batch 46 (2020 Hons):
+      - Overview: batch-finals/batch-46/README.md
+      - Micro 401: batch-finals/batch-46/micro-401.md
+      - Macro 402: batch-finals/batch-46/macro-402.md
+      - Health 404: batch-finals/batch-46/health-404.md
+
+  # ─── EXAM GUIDES ───────────────────────────────────────────────────
+  - 🧪 Exam Guides:
+    - Theorists Quick Reference: exam-guides/theorists-reference.md
+    - Exam Answer Frameworks: exam-guides/exam-frameworks.md
+    - Key Statistics Reference: exam-guides/statistics-reference.md
+
+  # ─── MASTER NOTES ──────────────────────────────────────────────────
+  - 📚 Master Study Notes (503+512): MASTER_STUDY_NOTES.md

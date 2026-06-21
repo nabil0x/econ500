@@ -1,0 +1,1201 @@
+Question 1: Define social welfare. Critically explain the following criteria as a
+measure of social welfare: (i) Growth of GNP, (ii) Bentham's Criteria, (iii) Cardinalist
+approach.
+Social welfare refers to the overall well-being of a society as a whole. Welfare economics, as defined by
+Koutsoyiannis, is concerned with the evaluation of alternative economic situations (states, configurations) from the
+point of view of the society's well-being. To illustrate, suppose total welfare in a country is W, but given factor
+endowments and technology, welfare could potentially be larger, say W*. The tasks of welfare economics are: (a) to
+show that in the present state W < W*, and (b) to suggest ways of raising W to W*. The measurement of social
+welfare requires some ethical standard and interpersonal comparisons, both of which involve subjective value
+judgements. Objective comparisons of the deservingness or worthiness of different individuals are virtually
+impossible. Various criteria of social welfare have been suggested by economists at different times.
+
+(i) Growth of GNP
+Adam Smith implicitly accepted the growth of the wealth of a society — that is, the growth of the gross national
+product — as a welfare criterion. He believed that economic growth resulted in an increase in social welfare because
+growth increased employment and the goods available for consumption by the community. To Adam Smith,
+economic growth meant bringing W closer to W*.
+The growth criterion, however, implies an acceptance of the status quo of income distribution as 'ethical' or 'just'.
+This is a strong normative assumption that may not be defensible. Consider a society where economic growth is
+driven by a small elite while the majority of the population experiences stagnant or declining real incomes. The
+aggregate GNP may increase substantially, but if the distribution of the additional income is highly skewed, the
+majority may experience a deterioration in their well-being despite the growing GNP.
+Furthermore, growth may lead to a reduction in social welfare depending on who benefits most from it. For
+example, industrial growth that creates environmental pollution, urban congestion, and health hazards may increase
+GNP while simultaneously reducing the quality of life for large segments of the population. The growth criterion also
+fails to account for the composition of output — an economy may produce more military goods at the expense of
+healthcare and education, raising GNP without necessarily improving social welfare.
+Despite these limitations, the growth criterion highlights the importance of economic efficiency in social welfare
+analysis. Given that social welfare depends on the amount of goods and services produced (as well as on their
+distribution), efficiency is a necessary prerequisite for the maximisation of the level of welfare. Economic efficiency
+can be defined objectively, and modern welfare economics is mainly concerned with the examination (comparison)
+of the Pareto-efficiency of different economic situations. However, efficiency, although a necessary condition, is not
+sufficient to guarantee the maximisation of social welfare. Efficiency does not dispose of the need for having an
+ethical standard of comparing alternative economic states.
+
+(ii) Bentham's Criterion
+Jeremy Bentham, an English economist and philosopher, argued that welfare is improved when 'the greatest good (is
+secured) for the greatest number'. Implicit in this dictum is the assumption that the total welfare is the sum of the
+utilities of the individuals of the society. The application of Bentham's ethical system to economics has serious
+shortcomings.
+To illustrate the pitfalls, assume that society consists of three individuals, A, B, and C, so that
+                                                  𝑊 = 𝑈𝐴 + 𝑈𝐵 + 𝑈𝐶
+According to Bentham ∆𝑊 > 0 if (∆𝑈𝐴 + ∆𝑈𝐵 + ∆𝑈𝐶 ) > 0. However, consider a change where A's and B's utility
+increases while C's utility decreases, but the sum of the gains to A and B exceeds the loss to C: (𝛥𝑈𝐴 + 𝛥𝑈𝐵 ) >
+ |𝛥𝑈𝐶 |. Under Bentham's criterion, two individuals are better-off while the third is worse-off, but the total utility has
+increased, so the change is declared a welfare improvement. This obviously implies that A and B have a greater
+
+                                                            Page 1
+'worthiness' than C. Thus, implicit in Bentham's criterion is an interpersonal comparison of the deservingness of the
+members of society — precisely the kind of subjective judgement that welfare economics seeks to avoid.
+There is another difficulty with the application of Bentham's criterion: it cannot be applied to compare situations
+where 'the greatest good' and the 'greatest numbers' do not exist simultaneously. For example, assume that in
+situation 1, UA = 200, UB = 50, UC = 30, so that total utility is 280. In situation 2, after a redistribution, UA = 100, UB =
+80, UC = 80, so that total utility is 260. The first situation has 'the greatest good' (280 > 260), but the second involves
+a more even distribution of a smaller total good among the 'greatest number'. Bentham's criterion provides no basis
+for choosing between these two fundamentally different configurations.
+
+(iii) Cardinalist Approach
+Several economists proposed the use of the 'law of diminishing marginal utility' as a criterion of welfare. Their
+argument runs as follows. Assume that society consists of three individuals: A has an income of £1,000, while B and C
+have an income of £500 each. Consumer A can buy double the quantities of goods as compared to B and C. However,
+given the law of diminishing marginal utility, A's total utility is less than double the total utility of either B or C,
+because A's marginal utility of money is less than that of B or C. Thus, W < W* in this situation. To increase social
+welfare, income should be redistributed from A to B and C. In fact, cardinal welfare theorists would maintain that
+social welfare would be maximised if income were equally distributed among all members of society.
+The cardinalist approach to welfare has a serious flaw: it assumes that all individuals have identical utility functions
+for money, so that with an equal income distribution, all would have the same marginal utility of money. This
+assumption is too strong. Individuals differ in their attitudes toward money. A rich person may still derive more
+utility from additional income due to different preferences, family circumstances, health needs, or entrepreneurial
+ambitions. Conversely, a poor person may not experience the same increase in utility from additional income if, for
+instance, their consumption needs are already being met through social programmes.
+Furthermore, the cardinalist approach ignores the incentive effects of redistribution. If income is redistributed to
+achieve equality, the incentive to work, save, and invest may be diminished, potentially reducing the total national
+income available for distribution. As the textbook notes, excessive redistribution may result in Pareto inefficiency in
+the use of resources and a reduction in social welfare, even though it achieves a more equal distribution of income.
+
+
+
+
+                                                            Page 2
+Question 2: Pareto optimality is a necessary but not sufficient condition for social
+welfare maximization' — justify the statement considering a 2×2×2 model.
+The Pareto criterion, named after the Italian economist Vilfredo Pareto (1848–1923), refers to economic efficiency
+which can be objectively measured. According to this criterion, any change that makes at least one individual better-
+off and no one worse-off is an improvement in social welfare. Conversely, a change that makes no one better-off and
+at least one worse-off is a decrease in social welfare. A situation is defined as Pareto-optimal (or Pareto-efficient) if it
+is impossible to make anyone better-off without making someone worse-off.
+In a 2×2×2 model (two factors, two commodities, two consumers), a Pareto-optimal state requires three marginal
+conditions:
+ 1. Efficiency in distribution: 𝑀𝑅𝑆𝑥𝐴,𝑦 = 𝑀𝑅𝑆𝑥𝐵,𝑦 (equal marginal rate of substitution for all consumers)
+ 2. Efficiency in production: 𝑀𝑅𝑇𝑆 𝑥 = 𝑀𝑅𝑇𝑆𝑦 (equal marginal rate of technical substitution for all firms)
+                                     𝐿,𝐾         𝐿, 𝐾
+ 3. Efficiency in product-mix: 𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑀𝑅𝑆𝑥𝐴,𝑦 = 𝑀𝑅𝑆𝑥𝐵,𝑦 (marginal rate of product transformation equals
+    MRS)
+
+The Three Marginal Conditions for Pareto Optimality in the 2×2×2 Model
+In the two-factor (L, K), two-commodity (X, Y), two-consumer (A, B) model, three marginal conditions must
+be satisfied for a Pareto-efficient allocation:
+ 1. Efficiency in the distribution of commodities among consumers (efficiency in exchange): 𝑀𝑅𝑆𝑥𝐴,𝑦 = 𝑀𝑅𝑆𝑥𝐵,𝑦.
+    This condition requires that the marginal rate of substitution between any two goods be equal for all
+    consumers. It is satisfied at all points on the Edgeworth contract curve of exchange. Points off this curve are
+    Pareto-inefficient because a redistribution can increase at least one consumer's utility without reducing the
+    other's.
+                                                                                                             𝑦
+ 2. Efficiency in the allocation of factors among firms (efficiency in production): 𝑀𝑅𝑇𝑆𝐿𝑥,𝐾 = 𝑀𝑅𝑇𝑆𝐿,𝐾    . This
+    condition requires that the marginal rate of technical substitution between any two inputs be equal for all
+    commodities. It is satisfied at all points on the Edgeworth contract curve of production.
+ 3. Efficiency in the composition of output (product-mix): 𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑀𝑅𝑆𝑥𝐴,𝑦 = 𝑀𝑅𝑆𝑥𝐵,𝑦. This condition requires
+    that the marginal rate of product transformation between any two commodities be equal to the marginal rate of
+    substitution for any two goods. The MRPT is the slope of the production possibility curve; the MRS is the
+    slope of the indifference curves.
+
+
+
+
+                                                            Page 3
+Why Necessary but Not Sufficient
+Welfare maximisation occurs at a point on the grand utility possibility frontier (UU'). The grand utility frontier is the
+envelope of all utility possibility curves, each derived from a different Pareto-efficient product-mix on the
+production possibility curve. Since every point on the grand utility frontier satisfies all three marginal conditions of
+Pareto efficiency, any welfare-maximising point must necessarily be Pareto-optimal. This establishes necessity: one
+cannot maximise social welfare without first achieving Pareto efficiency.
+
+
+
+
+Figure – The Point of Bliss (Tangency of Social Indifference Contour with Grand Utility Frontier)
+There exists a very large number of Pareto-optimal states. All points on the production possibility curve are
+Pareto-efficient, but they represent vastly different allocations of resources, different output combinations, and
+different distributions of income between consumers A and B. The Pareto criterion alone cannot rank these
+alternative Pareto-optimal states because ranking them requires an interpersonal comparison of utility —
+precisely what the Pareto criterion avoids.
+                                                           Page 4
+To choose among Pareto-optimal states, a social welfare function is required. Consider a point N on the grand utility
+frontier that is Pareto-optimal, and a point L that is NOT Pareto-optimal (lying below the grand frontier). As shown in
+the Figure, point L may lie on a higher social indifference contour than point N, meaning that the non-Pareto-optimal
+state yields higher social welfare than the Pareto-optimal state. However, it can be shown that given any inefficient
+point (below the grand utility frontier), there will exist some point(s) on the grand utility frontier that represents an
+improvement in social welfare over that inefficient point.
+The point of maximum social welfare — the 'bliss point' w* — occurs where the grand utility possibility frontier is
+tangent to the highest attainable social indifference contour. At this point, and only at this point, all three Pareto
+conditions are satisfied AND social welfare is maximised.
+
+
+
+
+                                                          Page 5
+Question 3: Explain the underlying assumption about the marginal utility of money
+for the Hicks-Kaldor compensation criterion to be correct.
+Nicholas Kaldor and John Hicks suggested an approach to evaluating welfare changes that involves the concept of
+hypothetical compensation. Assume that a change in the economy is being considered, which will benefit some
+('gainers') and hurt others ('losers'). One asks the 'gainers' how much money they would be prepared to pay in order
+to have the change implemented, and the 'losers' how much money they would be prepared to pay in order to
+prevent the change. If the amount of money of the 'gainers' is greater than the amount of the 'losers', the change
+constitutes an improvement in social welfare, because the 'gainers' could compensate the 'losers' and still be left
+with some 'net gain'. Thus, the criterion states: a change constitutes an improvement in social welfare if those who
+benefit from it could compensate those who are hurt, and still be left with some 'net gain'.
+
+The Critical Assumption — Equal Marginal Utility of Money
+The Kaldor-Hicks criterion evaluates alternative situations on the basis of monetary valuations of different persons.
+In doing so, it implicitly assumes that the marginal utility of money is the same for all individuals in the society. The
+logic is as follows: when comparing the amount that gainers are willing to pay with the amount that losers would
+require as compensation, we are effectively comparing utils (units of utility). For monetary amounts to be
+comparable across individuals in utility terms, each unit of money must represent the same amount of utility for
+each person. If the marginal utility of money differs across individuals, then a gain of £1,000 to a millionaire
+represents far fewer utils than a loss of £1,000 to a poor person, and the comparison becomes meaningless.
+
+Why This Assumption Is Unrealistic
+In the real world, income distribution is highly unequal, and the marginal utility of money varies significantly across
+individuals. Consider an economy with two individuals: A, who is a millionaire, and B, who has an income of £4,000.
+Suppose the government considers a change that will benefit A and hurt B. A is willing to pay £2,000 for this change,
+while B would pay £1,000 to prevent it. According to the Kaldor-Hicks criterion, the change improves welfare (net
+gain of £1,000 after hypothetical compensation). However, the gain of £2,000 provides very little additional utility to
+the millionaire A, whose marginal utility of money is extremely low, while the loss of £1,000 represents a substantial
+reduction in well-being for B, whose marginal utility of money is very high. The total welfare may actually decrease,
+not increase, if the change takes place.
+
+Additional Criticisms
+The Kaldor-Hicks criterion also suffers from the Scitovsky paradox: it is possible for situation K to be declared
+superior to situation J by the Kaldor criterion, while simultaneously J is declared superior to K by the same criterion.
+This intransitivity arises because the distribution of income differs between the two situations, affecting the marginal
+utility of money and hence the willingness to pay or accept compensation.
+Furthermore, the criterion is based on hypothetical compensation, not actual compensation. The 'gainers' are not
+required to actually compensate the 'losers'; the test is purely hypothetical. This means that the criterion can declare
+a change a welfare improvement even when the losers are made significantly worse-off in reality. The criterion
+ignores the existing income distribution and makes implicit interpersonal comparisons by assuming that the same
+amounts of money have the same utility for individuals with vastly different incomes. Only if the marginal utility of
+money were equal for all individuals would the Kaldor-Hicks criterion be a 'correct' welfare measure — but this
+condition can only hold under perfectly equal income distribution.
+
+
+
+
+                                                           Page 6
+Question 4: Define social welfare function. How could it be used as a criterion to
+measure social welfare? Explain.
+The social welfare function (SWF) was introduced by Abram Bergson as an explicit set of ethical value judgements
+that permits a unique preference-ordering of all possible economic states (configurations) in which different
+individuals enjoy different utility levels. If the economy consists of two individuals A and B, the social welfare
+function can be written as
+
+                                                    𝑊 = 𝑓(𝑈𝐴 , 𝑈𝐵 )
+where 𝑈𝐴 and 𝑈𝐵 are the utility levels (in ordinal indexes) of consumers A and B, respectively.
+
+Graphical Representation
+
+
+
+
+Figure – Bergson's Welfare Contours (Social Indifference Curves in Utility Space)
+The social welfare function can be represented by a set of social indifference contours (also called Bergson welfare
+contours) in utility space. On a graph whose axes measure the utilities of A and B, each social indifference contour
+is the locus of combinations of (UA, UB) that yield the same level of social welfare. The contours have the standard
+properties of indifference curves: they are downward-sloping (more utility for one individual must be offset by less
+for the other to maintain the same welfare level), they do not intersect, and higher contours (further to the
+northeast) represent higher levels of social welfare.
+With such a set of social indifference contours, alternative economic states can be unambiguously evaluated. For
+example, a change which would move the society from point b to point c (or d) increases social welfare. A change
+moving the society from point a to point b leaves the level of social welfare unaltered.
+
+Use as a Criterion for Measuring Social Welfare
+The social welfare function serves as a comprehensive welfare criterion when used in conjunction with the grand
+utility possibility frontier. The procedure is as follows:
+ Step 1: Derive the grand utility possibility frontier, which shows the maximum utility attainable by one consumer
+    given the utility of the other, across all possible product-mixes and efficient distributions.
+ Step 2: Superimpose the social indifference contours on the grand utility frontier.
+ Step 3: The social welfare-maximising point is the point of tangency between the grand utility frontier and the
+    highest attainable social indifference contour. This point is called the 'bliss point'.
+The social welfare function thus provides a complete and unambiguous method for selecting among all Pareto-
+optimal states. While the Pareto criterion can identify efficient states, it cannot rank them. The SWF fills this gap by
+incorporating ethical judgements about the relative deservingness of individuals into the ranking mechanism.
+
+
+
+
+                                                          Page 7
+Determination of Welfare-Maximising Variables
+At the bliss point, the welfare-maximising values of all ten unknowns in the 2×2×2 model are determined uniquely:
+the total quantities of the two products (X* and Y*), the quantities consumed by each consumer (𝑋𝐴∗ , 𝑋𝐵∗ , 𝑌𝐴∗ , 𝑌𝐵∗ ), and
+the allocation of resources between industries (𝐿∗𝑥 , 𝐿∗𝑦 , 𝐾𝑥∗ , 𝐾𝑦∗ )). The bliss point is associated with a unique
+commodity-mix on the PPC, a unique distribution of commodities on the Edgeworth contract curve of exchange, and
+a unique allocation of factors on the Edgeworth contract curve of production.
+
+The Problem of Construction
+The fundamental limitation of the social welfare function is that there is no objective method of constructing it. Its
+existence is axiomatically assumed in welfare economics. The SWF requires somebody to compare various
+individuals or groups and rank them according to what they think their worthiness is — an inherently subjective
+exercise involving value judgements. A democratically elected government could be assumed to make such value
+judgements acceptable to the society as a whole, but this remains an implicit assumption.
+Arrow's Impossibility Theorem demonstrates that no social welfare function can be constructed from individual
+preference orderings that simultaneously satisfies a set of reasonable conditions (unrestricted domain, Pareto
+principle, independence of irrelevant alternatives, and non-dictatorship). This further underscores the difficulty of
+constructing a consistent and democratic SWF.
+It should also be noted that the social welfare function cannot be used to derive community indifference curves in
+output space without taking into account the distribution of income among individuals. The community MRS at a
+given point in commodity space depends on how the goods are distributed among individuals, i.e., on which utility
+combination on the Edgeworth contract curve of exchange is chosen.
+
+
+
+
+                                                           Page 8
+Question 5: What are the major assumptions of social welfare maximization in a
+2×2×2 model?
+The social welfare maximisation problem in the 2×2×2 model is formulated under the following set of assumptions,
+each of which plays a critical role in ensuring that the model yields a determinate solution:
+1. There are two factors, labour L, and capital K, whose quantities are given (in perfectly inelastic supply).
+   These factors are homogeneous and perfectly divisible.
+2. Two products, X and Y, are produced by two firms. Each firm produces only one commodity. The
+   production functions give rise to smooth isoquants, convex to the origin, with constant returns to scale.
+   Indivisibilities in the production processes are ruled out.
+3. There are two consumers whose preferences are represented by indifference curves, which are
+   continuous, convex to the origin and do not intersect.
+4. The goal of consumers is utility maximisation and the goal of firms is profit maximisation.
+5. The production functions are independent. This rules out joint products and external economies and
+   diseconomies in production.
+6. The utilities of consumers are independent. Bandwagon, snob and Veblen effects are ruled out. There
+   are no external economies or diseconomies in consumption.
+7. The ownership of factors, that is, the distribution of the given L and K between the two consumers, is
+   exogenously determined.
+8. A social welfare function, W = f(UA, UB ), exists. This permits a unique preference-ordering of all
+   possible states, based on the positions of the two consumers in their own preference maps. This welfare
+   function incorporates an ethical valuation of the relative deservingness or worthiness of the two
+   consumers.
+The problem is to determine the welfare-maximizing values of ten variables: the total quantities of X and Y, their
+distribution between the two consumers (𝑋𝐴, 𝑋𝐵, 𝑌𝐴, 𝑌𝐵), and the welfare-maximising allocation of resources
+(𝐿𝑥 , 𝐿𝑦, 𝐾𝑥 , 𝐾𝑦).
+
+
+
+
+                                                        Page 9
+Question 6: Derive the grand utility possibility frontier and determine the 'point of
+bliss.'
+
+Derivation of the Grand Utility Possibility Frontier
+Step 1: Start with the production possibility curve (PPC), which is the locus of all Pareto-efficient output
+combinations (X, Y) derived from the Edgeworth contract curve of production.
+
+
+
+
+Figure – Product-mixes on the PPC and Edgeworth Boxes of Exchange
+Step 2: For each product-mix on the PPC (e.g., 𝑌0, 𝑋0 denoted by point a), construct the Edgeworth box of
+exchange. Points on the contract curve of exchange (0a) represent Pareto-optimal distributions of that product-mix
+between consumers A and B.
+
+
+
+
+Figure – The Grand Utility Possibility Frontier (Envelope of Utility Frontiers)
+Step 3: Each point on the contract curve corresponds to a different utility combination (𝑈𝐴, 𝑈𝐵). Map all such utility
+combinations from contract curve 0𝑎 into utility space to obtain the utility possibility frontier SS' for the specific
+product-mix (𝑌0, 𝑋0).
+Step 4: Using the third Pareto condition (𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑀𝑅𝑆𝑥𝐴,𝑦 = 𝑀𝑅𝑆𝑥𝐵,𝑦), for each product-mix on the PPC, identify
+the single point on the corresponding utility frontier where 𝑀𝑅𝑃𝑇 = 𝑀𝑅𝑆. This gives the "grand" utility for that
+product-mix.
+Step 5: The envelope of all such points (one from each utility possibility frontier) forms the grand utility possibility
+frontier (𝑈𝑈′). It shows the maximum utility attainable by one consumer given the utility of the other, across all
+possible product-mixes and optimal distributions.
+In summary, each point on the PPC gives rise to a utility possibility frontier. The envelope of these utility possibility
+frontiers is the grand utility possibility frontier of the economy.
+
+
+                                                          Page 10
+Alternative Derivation
+Using the third marginal condition (𝑀𝑅𝑃𝑇 = 𝑀𝑅𝑆), for each point on the PPC, pick the point on the corresponding
+contract curve with the same slope as the PPC. From the utilities at this point, plot a single point in utility space.
+Repeating for all PPC points yields the envelope frontier.
+Thus, all points on the grand utility possibility frontier satisfy all the Pareto marginal conditions of efficiency:
+efficiency in production, efficiency in distribution, efficiency in product composition.
+
+Determination of the Point of Bliss
+
+
+
+
+Figure – The Point of Bliss (Tangency of Social Indifference Contour with Grand Utility Frontier)
+Social welfare is maximised at the point of tangency of the grand utility possibility frontier UU' with the highest
+possible social indifference contour. This tangency point is called the 'point of bliss', denoted w*. At w*, the
+maximum social welfare attainable in the economy is the level implied by the indifference contour W3. The two
+consumers enjoy utility levels 𝑈𝐴∗ and 𝑈𝐵∗respectively.
+From the bliss point, all ten unknowns of the 2×2×2 model can be determined uniquely by retracing the derivation steps:
+(1) w* corresponds to a unique utility combination (𝑈𝐴∗ ,𝑈*B ) ; (2)This utility combination belongs to a specific utility
+possibility frontier; (3) That utility frontier corresponds to a unique point on the PPC — this defines the
+welfare-maximising commodity-mix (X*, Y*); (4) The Edgeworth box of exchange for (X*, Y*) contains the
+specific distribution point that yields (𝑈𝐴∗ , 𝑈𝐵* ) — this defines∗ 𝑋( 𝐴∗, 𝑋𝐵, 𝑌𝐴∗, 𝑌𝐵∗),); (5) The PPC point maps back to the
+Edgeworth box of production, defining the optimal resource allocation ((𝐿∗𝑥 , 𝐿∗𝑦, 𝐾𝑥∗, 𝐾𝑦∗).
+
+
+
+
+                                                           Page 11
+Question 7: Critically explain the three key things that Pigou dealt with in analyzing
+social welfare.
+A.C. Pigou, in his seminal work 'The Economics of Welfare' (1920), laid the foundations of welfare economics by
+identifying three fundamental dimensions of social welfare analysis. His three contributions — efficiency, equity
+through redistribution, and correcting externalities — remain the pillars of welfare economic analysis. The three key
+aspects that Pigou dealt with in analyzing social welfare are:
+
+1. The Size of the National Dividend (Economic Efficiency)
+Pigou's first concern was with the aggregate size of national output. He argued that social welfare depends
+fundamentally on the total quantity of goods and services available for consumption — the 'national dividend' in
+Pigou's terminology. A larger national dividend means that, in principle, more goods and services are available to
+satisfy the needs and wants of society's members. This aligns with the GNP growth criterion. Pigou emphasised that
+increasing the total output of the economy is a prerequisite for improving social welfare. In the language of the
+2×2×2 model, this means moving the economy to the production possibility frontier and operating at a point where
+all resources are efficiently employed. The efficiency dimension is captured by the three marginal conditions of
+Pareto optimality: efficiency in exchange, efficiency in production, and efficiency in the product-mix.
+However, Pigou recognised that efficiency alone is not sufficient. The size of the national dividend tells us nothing
+about how the output is distributed among members of society. Two economies with the same GNP can have vastly
+different levels of social welfare depending on how income is distributed.
+
+2. The Distribution of the National Dividend (Equity through Redistribution)
+Pigou's second concern was with the equitable distribution of income. He argued that, given the law of diminishing
+marginal utility, redistributing income from the rich to the poor would increase total social welfare even if total
+output remained unchanged. This is because the marginal utility of an additional pound of income is higher for a
+poor person than for a rich person. This is the cardinalist approach to welfar. Cardinal welfare theorists maintained
+that social welfare would be maximised if income were equally distributed among all members of society, since
+equal distribution would equalise the marginal utility of income across all individuals.
+Pigou's analysis of distribution directly connects to the social welfare function. The choice of a particular point on the
+grand utility possibility frontier — the selection of the bliss point — inherently involves an ethical judgement about
+the distribution of welfare between individuals A and B. Different social welfare functions, reflecting different ethical
+values, would select different bliss points and hence different distributions of income and output.
+
+3. Externalities and the Divergence Between Private and Social Costs/Benefits
+(Correcting Externalities)
+Pigou's third major contribution was his analysis of externalities — situations where the actions of an individual
+economic agent create costs or benefits for others that are not reflected in market prices.
+When private cost is less than social cost, the condition for optimal resource allocation is violated. For example,
+consider a firm producing alcohol in a perfectly competitive market. The firm is in equilibrium when 𝑀𝐶𝑥 = 𝑃𝑥 ,
+where 𝑀𝐶𝑥 is the private marginal cost. This does not include the cost of pollution, health hazards, and accidents
+caused by alcohol consumption. The marginal social cost is: 𝑀𝑆𝐶𝑥 = 𝑀𝐶𝑥 + 𝑀𝐸𝐶, where MEC is the marginal
+external cost. Since 𝑀𝐶𝑥 = 𝑃𝑥 , it follows that 𝑃𝑥 < 𝑀𝑆𝐶𝑥 , which implies that the allocation of resources to the
+production of alcohol is not socially optimal. The firm produces too much because it does not bear the full social cost
+of its production.
+Pigou's solution was to impose a tax (a 'Pigouvian tax') equal to the marginal external cost, so that the firm's
+effective marginal cost becomes equal to the social marginal cost. The firm would then produce where: 𝑃𝑥 =
+𝑀𝑆𝐶𝑥 = 𝑀𝐶𝑥 + 𝑀𝐸𝐶. This is the socially optimal level of output. Similarly, when there are external benefits
+
+
+                                                          Page 12
+(𝑀𝑆𝐵 > 𝑃), the socially optimal output is larger than the private equilibrium output, and Pigou recommended
+subsidies to correct the underproduction.
+                                                                                                       𝑀𝑆𝐵𝑥   𝑀𝑆𝐵𝑦
+The general condition for optimal resource allocation in a multi-product economy with externalities:        =      =
+                                                                                                       𝑀𝑆𝐶𝑥   𝑀𝑆𝐶𝑦
+     𝑀𝑆𝐵
+. . . = 𝑀𝑆𝐶𝑀 . Without externalities, 𝑀𝑆𝐵 = 𝑃 = 𝑀𝑆𝐶, and this condition reduces to the standard competitive
+         𝑀
+equilibrium condition.
+
+
+
+
+Figure – MSC > MC: Overproduction Due to External Cost
+
+
+
+
+Figure – MSB > P: Underproduction Due to External Benefit
+
+
+
+
+Figure – Equilibrium Where MSC = MSB
+
+Critical Evaluation
+While Pigou's framework was pioneering, it has limitations. The cardinalist approach to income distribution assumes
+identical utility functions, which is empirically implausible. The externality analysis assumes that the government
+can accurately measure marginal external costs and benefits — an assumption that is often violated in practice.
+Nevertheless, Pigou's three pillars — efficiency, equity, and externality correction — remain the foundation of
+modern welfare economics.
+
+
+
+
+                                                         Page 13
+Question 8: Does perfect competition ensure welfare maximization? Examine.
+Under the assumptions of the 2×2×2 model, perfect competition does ensure the attainment of maximum social
+welfare. This is the central result of modern welfare economics, often referred to as the First Welfare Theorem. The
+theorem states that a perfectly competitive equilibrium is Pareto-optimal. Combined with the existence of a social
+welfare function, this implies that the perfectly competitive equilibrium coincides with the point of maximum social
+welfare — the bliss point.
+
+Proof in the 2×2×2 Model
+(a) Efficiency in factor substitution (Production equilibrium)
+
+
+
+
+Figure – Optimal Allocation of Resources K* and L*
+Profit maximisation by the individual firm requires least-cost production of the profit-maximising output. The firm
+minimises cost by choosing the input combination where the marginal rate of technical substitution equals the factor
+price ratio:
+                                                           𝑥
+                                                                  𝑤
+                                                    𝑀𝑅𝑇𝑆𝐿,𝐾    =
+                                                                  𝑟
+Since in perfect competition all firms face the same factor prices, it follows that:
+                                                   𝑥                 𝑦    𝑤
+                                               𝑀𝑅𝑇𝑆𝐿,𝐾 = 𝑀𝑅𝑇𝑆𝐿,𝐾 =
+                                                                          𝑟
+
+This is the first marginal condition for Pareto optimality. In terms of the Edgeworth box of production, the common
+MRTS defines the point on the contract curve where the slope of the isoquants equals the slope of the isocost line.
+Since all firms face the same factor prices, the MRTS is equalized across firms. This is the first Pareto condition.
+
+(b) Efficiency in distribution (Consumption equilibrium)
+Utility maximisation by each consumer requires that the consumer choose the product-mix where the marginal rate
+of substitution equals the commodity price ratio:
+
+                                                         𝐴
+                                                                    𝑃𝑥
+                                                      𝑀𝑅𝑆𝑥,𝑦 =
+                                                                    𝑃𝑦
+Since in perfect competition all consumers face the same commodity prices, it follows that:
+
+                                                   𝐴
+                                                           𝑃𝑥      𝐵
+                                                𝑀𝑅𝑆𝑥,𝑦 =      = 𝑀𝑅𝑆𝑥,𝑦
+                                                           𝑃𝑦
+
+Since all consumers face the same commodity prices, the MRS is equalized across consumers. This is the second
+Pareto condition.
+
+
+
+
+                                                          Page 14
+(c) Efficiency in product-mix (Simultaneous equilibrium)
+At the bliss point, the equalised slope of the indifference curves (the common MRS) equals the slope of the
+                                                                             𝑀𝐶
+production possibility curve at the optimal product-mix. Since 𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑀𝐶𝑥 and firms set 𝑃 = 𝑀𝐶 in perfect
+                                                                                𝑦
+competition, we have:
+                                                     𝑃𝑥      𝐴        𝐵
+                                        𝑀𝑅𝑃𝑇𝑥,𝑦 =       = 𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦
+                                                     𝑃𝑦
+
+This is the third Pareto condition.
+
+
+
+
+Figure – Determination of Welfare-Maximising Outputs (W') and Distribution (W'')
+
+
+
+
+Figure – Isovalue Line Tangent to PPC at the Welfare-Maximising Product-Mix
+The "duality theorem" of welfare economics states that welfare maximization is independent of prices. However,
+implicit in the purely technocratic formulation is a set of constants that can be the prices of a perfectly competitive
+economy. When individual profit maximizers and utility maximizers act in response to these prices, their behavior
+leads to social welfare maximization. Adam Smith's "invisible hand" proposition is thus formalized: each individual,
+pursuing self-interest, is led to promote the general welfare.
+However, perfect competition is only one way of attaining welfare maximization. A decentralized socialist system
+(Lerner-Lange type), where the government estimates "shadow prices" and directs economic units to maximize
+their gains, can in principle achieve the same results. The model collapses when its assumptions are violated
+(externalities, increasing returns, indivisibilities, absence of social welfare function).
+
+
+
+
+                                                         Page 15
+Question 9: Graphically explain the problems of existence, uniqueness and stability in
+connection to general equilibrium.
+Three fundamental problems arise in connection with general equilibrium:
+
+1. Existence Poblem
+A general equilibrium solution exists if each market is cleared at a positive price, with each consumer maximising
+satisfaction and each firm maximising profit. In the partial-equilibrium context, an equilibrium exists when the
+demand and supply curves intersect at a positive price where 𝑄𝐷 = 𝑄𝑆 .
+The excess demand function 𝐸(𝑃) = 𝑄𝐷(𝑃) − 𝑄𝑆(𝑃) provides a powerful analytical tool. An equilibrium exists when
+𝐸(𝑃) = 0, i.e., when the excess demand curve intersects the vertical price-axis. If 𝐸(𝑃) lies entirely above the axis
+at all prices, excess demand is always positive and no equilibrium price exists (the market cannot clear). If 𝐸(𝑃) lies
+entirely below the axis, excess supply always prevails.
+In general equilibrium, Arrow and Debreu (1954) provided a rigorous proof of existence for perfectly competitive
+markets with no indivisibilities and no increasing returns to scale. The proof relies on fixed-point theorems
+(Brouwer's or Kakutani's) rather than simple equation counting. Arrow and Hahn (1971) extended the proof to
+economies with limited increasing returns and monopolistic competition, without indivisibilities. The key takeaway
+from the existence literature is that the mere equality of the number of equations and unknowns in the Walrasian
+system is neither necessary nor sufficient for existence. The existence proof requires well-behaved (continuous,
+convex) production and demand functions.
+
+
+
+
+Figure – No Equilibrium Exists (Demand and Supply Do Not Intersect)
+
+
+
+
+Figure – No Equilibrium Exists in Excess Demand Function
+
+2. Uniqueness Problem
+If an equilibrium exists, it may not be unique. Multiple equilibria arise when the excess demand function intersects
+the vertical price-axis more than once. In this case, there are several distinct price-quantity combinations at which
+markets clear. The number of equilibria equals the number of intersections of E(P) with the price-axis. In a partial
+equilibrium context, multiple equilibria can arise from non-linear demand and supply functions that cross more
+than once. In general equilibrium, multiple equilibria are more common because of the interdependence among
+markets.
+
+
+                                                         Page 16
+Uniqueness can be guaranteed under certain conditions. If all commodities are gross substitutes (i.e., the cross-price
+effect on excess demand is positive), then the equilibrium is unique. Uniqueness can also be guaranteed if the weak
+axiom of revealed preference holds in the aggregate.
+
+
+
+
+Figure – Multiple Equilibria
+
+
+
+
+Figure – Multiple Equilibria in Excess Demand Space
+
+3. Stability Problem
+If an equilibrium exists, it may be stable or unstable. An equilibrium is stable if, following a disturbance, the system
+converges back to the equilibrium. Stability depends on the dynamic adjustment process — the mechanism by
+which prices change in response to excess demand or supply.
+In terms of the excess demand function, stability requires that the slope of E(P) at the equilibrium point be negative.
+When the slope is negative: if price is above equilibrium, E(P) < 0 (excess supply), which pushes price down; if price
+is below equilibrium, E(P) > 0 (excess demand), which pushes price up. This self-correcting mechanism drives the
+system back to equilibrium. When the slope is positive: if price is above equilibrium, E(P) > 0 (excess demand), which
+pushes price further up; if price is below equilibrium, E(P) < 0 (excess supply), which pushes price further down. The
+system diverges from equilibrium — the equilibrium is unstable.
+Walras proposed the tâtonnement (groping) process as the adjustment mechanism: an external auctioneer adjusts
+prices iteratively, increasing prices in markets with excess demand and decreasing prices in markets with excess
+supply. Walras argued that the system would eventually converge because supply and demand respond more to
+own-price changes than to other-price changes. However, the tâtonnement process is unsatisfactory for several
+reasons: it is essentially timeless (no transactions occur until equilibrium is reached), it evades the real-time
+adjustment issue, and there is no guarantee of convergence in all cases. The textbook discusses two important
+stability theorems: (a) if all commodities are strict gross substitutes, the equilibrium is stable; and (b) if the weak
+axiom of revealed preference holds in the aggregate, the system is globally stable.
+
+
+
+
+Figure – Unique, Stable Equilibrium
+                                                          Page 17
+Figure – Unique, Unstable Equilibrium
+
+
+
+
+Figure – Stable Equilibrium: Negative Slope of 𝑬(𝑷)
+
+
+
+
+Figure – Stable Equilibrium: Positive Slope of 𝑬(𝑷)
+
+
+
+
+                                                      Page 18
+Question 10: Define consumption externality. Explain by Bandwagon effect and Snob
+effect.
+A consumption externality exists when the utility level (satisfaction) of one consumer is directly affected by the
+consumption pattern of another consumer. In the standard 2×2×2 model, it is assumed that consumer choices are
+independent — the consumption patterns of A do not affect B's utility, and vice versa. When this assumption of
+independence is violated, the standard conditions for Pareto optimality — particularly the equalisation of the
+marginal rate of substitution across consumers — do not ensure Pareto-optimal outcomes. The textbook explicitly
+states that when externalities in consumption are present, the equalisation of the marginal rate of substitution of
+commodities among consumers does not lead to Pareto optimality. This is because the private marginal rate of
+substitution no longer reflects the true social marginal rate of substitution when one consumer's utility depends on
+another's consumption.
+
+Bandwagon Effect
+The bandwagon effect occurs when a consumer's demand for a commodity increases because other consumers are
+also purchasing the same commodity. This is an imitation or conformity effect driven by fashion trends, social
+pressure, or the desire to belong to a group. When a new style of clothing becomes popular, for example, individuals
+may purchase it not because of its intrinsic utility but because they observe others wearing it and wish to conform.
+In terms of the formal model, the bandwagon effect means that consumer A's utility function depends positively on
+consumer B's consumption of good X. If A's indifference map is drawn in (X, Y) space, a change in B's consumption of
+X shifts A's entire indifference map — specifically, an increase in B's consumption of X shifts A's indifference curves
+outward (representing a positive externality in consumption). This creates an external economy for consumer A
+arising from B's consumption. Economically, the bandwagon effect means that the market demand curve for the
+commodity is more elastic than it would be in the absence of the externality. A small price decrease triggers a larger
+quantity increase because the initial purchasers attract additional purchasers through the imitation effect. This can
+lead to instability in the market and may result in overconsumption relative to the social optimum.
+
+Snob Effect
+The snob effect is the reverse of the bandwagon effect: a consumer's demand for a commodity decreases because
+others are also purchasing it. Snobs derive utility from exclusivity and uniqueness — they value goods precisely
+because few others possess them. If a luxury item (such as a designer handbag or a rare artwork) becomes widely
+adopted, a snob consumer's valuation of it decreases because it no longer serves as an effective status signal. In the
+formal model, consumer A's utility function depends negatively on consumer B's consumption of good X. An increase
+in B's consumption of X shifts A's indifference curves inward (representing a negative externality — an external
+diseconomy in consumption). The market demand curve under the snob effect is less elastic than it would be
+otherwise, because increased popularity of the good reduces the quantity demanded by snob consumers.
+
+Implication for Welfare
+When consumption externalities are present, the standard first-order conditions for Pareto optimality are no longer
+valid. The textbook illustrates this with a detailed example using following Figures. Suppose there is a consumption
+externality in commodity X (for example, tobacco smoking): A's consumption of X creates a negative externality for
+                                                            𝐴           𝐵
+B. Even though at the initial competitive equilibrium 𝑀𝑅𝑆𝑥,𝑦    = 𝑀𝑅𝑆𝑥,𝑦  , a redistribution of the same total output can
+increase welfare. If A's consumption of X is reduced, B's indifference map shifts upward (B's utility increases because
+of reduced exposure to the negative externality). In the new equilibrium, A remains on the same indifference curve,
+while B moves to a higher indifference curve — total welfare has increased despite the fact that the MRS of the two
+consumers is no longer equal. This demonstrates that the competitive equilibrium with consumption externalities is
+not Pareto-optimal, and that the standard condition of MRS equalisation is neither necessary nor sufficient for
+Pareto efficiency when utility functions are interdependent.
+
+
+
+                                                         Page 19
+Figure – Consumer A's Indifference Map (with External Effects)
+
+
+
+
+Figure – Consumer B's Indifference Map (shifted due to External Effects)
+
+
+
+
+                                                         Page 20
+Question 11: Does consumption externality affect the general equilibrium solution in
+a 2×2×2 model?
+Yes, consumption externality significantly affects the general equilibrium solution in a 2×2×2 model. The standard
+model assumes independent utility functions (Assumption 6), meaning the consumption patterns of A do not affect
+B's utility, and vice versa. When this assumption is violated by consumption externalities, the model's results change
+fundamentally.
+
+Specific Effects
+ 1. Failure of the MRS equalization condition: The standard general equilibrium solution requires three marginal
+    conditions to be satisfied simultaneously. The second condition — efficiency in exchange — requires that
+                                                          𝐴        𝐵
+                                                       𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦
+     When consumption externalities exist, this condition no longer ensures Pareto optimality. The equalisation of
+     private MRS does not account for the social effects of one consumer's consumption on the other's utility. The
+     social MRS of consumer A differs from the private MRS by the marginal external effect of A's consumption on
+     B's utility. Formally, if A's utility depends on B's consumption of X, then: 𝑆𝑜𝑐𝑖𝑎𝑙 𝑀𝑅𝑆𝐴 = 𝑃𝑟𝑖𝑣𝑎𝑡𝑒 𝑀𝑅𝑆𝐴 +
+       𝜕𝑈𝐵      𝜕𝑋
+      (    ) · ( 𝐴 ). The competitive equilibrium equates only the private MRS values, ignoring the external term.
+       𝜕𝑋𝐴      𝜕𝑌𝐴
+     The resulting allocation is not Pareto-optimal.
+ 2. Inefficiency of competitive equilibrium: Even if all three standard marginal conditions appear to be satisfied
+    simultaneously, the presence of consumption externalities means the economy is not truly at a Pareto-optimal
+    point. Look at the following figures. Consider a competitive equilibrium where A consumes tobacco (good X)
+    and the consumption of tobacco creates a negative externality for B. At the competitive equilibrium, 𝑀𝑅𝑆𝐴 =
+     𝑀𝑅𝑆𝐵 . However, if A's consumption of X is reduced (and the released X is redistributed), B's indifference map
+    shifts upward due to the reduction in the negative externality. The new allocation has A on the same
+    indifference curve and B on a higher one — proving that the original equilibrium was NOT Pareto-optimal.
+
+
+
+
+     Figure – Consumer A's Indifference Map (with External Effects)
+
+
+
+
+     Figure – Consumer B's Indifference Map (shifted due to External Effects)
+ 3. Divergence Between Private and Social Valuation: If externalities exist, the model breaks down for two
+    reasons: first, the Pareto optimality conditions are violated; second, there is a difference between the private
+    cost (or benefit) of an action to the society as a whole.' In other words, externalities create a divergence
+    between private and social costs and benefits. Because externalities are not reflected in market prices, these
+    prices provide misleading information (signals) for an optimal allocation of resources. Consumers base their
+                                                          Page 21
+   decisions on private valuations (private MRS) rather than social valuations (social MRS), leading to a
+   misallocation of resources.
+4. Redistribution can improve welfare: When consumption externalities exist, redistributing the same total
+   output of goods between consumers can increase social welfare in multiple ways. One consumer remains on
+   the same indifference curve while the other moves to a higher indifference curve due to the externality. The
+   direction of the welfare-improving redistribution depends on the sign of the externality: for negative
+   externalities, reducing the consuming individual's quantity of the externality-generating good improves
+   welfare; for positive externalities, increasing it may improve welfare.
+
+
+
+
+                                                      Page 22
+Question 12: Graphically explain how an external shock in the product market affects
+the factor market and the mechanism through which equilibrium is restored in both
+markets.
+
+Initial Setup
+Consider a 2×2×2 economy with the following initial conditions: two substitute commodities, X and Y, produced in
+perfectly competitive industries; two factors of production, capital K and labour L, in fixed supply with perfectly
+competitive factor markets; production functions are continuous with diminishing MRTS and decreasing returns to
+                                                    𝐾         𝐾
+scale; Industry X is less capital-intensive than Y: ( 𝐿 ) < ( 𝐿 ) ; consumers maximise utility; firms maximise profit; the
+                                                        𝑥         𝑦
+system is initially in simultaneous equilibrium in all four markets (X, Y, L, K).
+
+
+
+
+Figure – Left Panel: Industry X: Demand Shift and Price Increase; Right Panel: A Firm in Industry X: Short-Run Profit
+
+
+
+
+Figure – Left Panel: Industry Y: Demand Shift and Price Decrease; Right Panel: A Firm in Industry Y: Short-Run Loss
+
+Step 1 — External Shock in the Product Market
+An exogenous change in consumer tastes shifts the demand for X rightward from 𝐷0 to 𝐷1. This is the initial
+disturbance that sets in motion the chain of adjustments across all markets. In the short run: Price of X rises from
+𝑃0 to 𝑃1; Quantity of X sold increases from 𝑋0 to 𝑋1. Since X and Y are substitutes (they cannot be complementary
+in the 2×2×2 model), the increase in demand for X is accompanied by a decrease in demand for Y. Demand for Y
+shifts leftward; 𝑃𝑌 falls and quantity of Y decreases from𝑌0 to 𝑌1.
+
+Step 2 — Firm-Level Response in Producr Markets
+
+
+
+
+Figure – Movement Along the Production Possibility Curve from A to B
+                                                            Page 23
+The increase in 𝑃𝑥 creates excess profits for producers of X (𝑃1 > 𝐴𝐶 at the original output). The decrease in 𝑃𝑦
+creates losses for producers of Y (𝑃1 < 𝐴𝐶 at the original output). In the short run, each firm in X expands output
+along its MC curve to the point where 𝑀𝐶 = 𝑃1 . Each firm in Y contracts output. In the long run, excess profits
+attract entry of new firms in industry X, while losses induce exit of firms from industry Y. The economy moves from
+point A to point B on the production possibility curve, reflecting the reallocation of resources from Y to X.
+
+Step 3 — Effect on Factor Markets (Disequilibrium)
+
+
+
+
+Figure – Left Panel: Labour Market for Industry X; Right Panel: Demand for Labour by a firm in industry X
+The expansion of industry X and entry of new firms increase the demand for both labour and capital in industry
+X. The demand curves 𝐷𝐿𝑥 and 𝐷𝐾𝑥 shift outward. The wage rate𝑤𝑥 and the rental rate𝑟𝑥 in industry X rise.
+
+
+
+
+Figure – Left Panel: Market for Capital in Industry X; Right Panel: Demand for Capital by a firm in industry X
+
+
+
+
+Figure – Left Panel: Market for Labour in Industry Y; Right Panel: Demand for Labour by a firm in industry Y
+
+
+
+
+                                                          Page 24
+Figure – Left Panel: Market for Capital in Industry Y; Right Panel: Demand for Capital by a firm in industry Y
+Employment of both factors increases in industry X (from 𝐿0 to 𝐿1 and from 𝐾0 to 𝐾1, respectively). Simultaneously,
+the contraction of industry Y and exit of firms reduce the demand for both factors in industry Y. The demand
+curves 𝐷𝐿𝑦 and 𝐷𝐾𝑦 shift inward. The wage rate 𝑤𝑦 and the rental rate 𝑟𝑦 in industry Y fall. At this stage,
+disequilibrium
+prevails in the factor markets because factor prices differ across industries: 𝑤𝑥 > 𝑤𝑦 and 𝑟𝑥 > 𝑟𝑦. This creates an
+incentive for factor mobility.
+
+Step 4 — Factor Mobility and Restoring Equilibrium
+With perfect factor mobility, the owners of labour and capital withdraw their services from industry Y (where w
+and r are lower) and offer them to firms in industry X (where w and r are higher). This causes: Supply of factors in
+industry X shifts rightward (downward), putting downward pressure on wx and rx; Supply of factors in industry Y
+shifts leftward (upward), putting upward pressure on wy and ry. This process continues until factor prices are
+equalised across industries: wx = wy = w* and rx = ry= r*. Due to the different factor intensities of the two industries
+  𝐾        𝐾
+(( ) < ( 𝐿 ) ), the new equilibrium factor prices differ from the initial ones: the demand of industry X for labour is
+  𝐿   𝑥        𝑦
+stronger than for capital (X is more labour-intensive); the release of labour by Y is smaller than X requires; the
+release of capital by Y is larger than X needs. Therefore, in the new equilibrium: w* > w0 (wage is higher) and r* < r0
+(rental is lower).
+
+Step 5 — Final Product Market Equilibrium
+Entry in industry X shifts the supply curve downward, reducing price from P1 to P2 (still above the original P0, since X
+is an increasing-cost industry). Exit from industry Y shifts supply curve upward, raising price. Firms in both industries
+earn normal profits in the long run. Individual firms adjust their outputs and factor demands in response to the new
+factor prices.
+
+
+
+
+                                                          Page 25
+Question 13: Explain the production equilibrium/consumption
+equilibrium/simultaneous equilibrium in a simple general equilibrium model through
+Edgeworth box diagram.
+In the two-factor (K, L), two-commodity (X, Y), two-consumer (A, B) general equilibrium model, three static
+properties characterise a general equilibrium state. These properties are called the marginal conditions of Pareto
+optimality. Each can be analysed through a specific Edgeworth box diagram.
+
+(a) Production Equilibrium (Edgeworth Box of Production)
+The Edgeworth box of production is constructed as follows. On the horizontal axis, measure the total quantity of
+labour L. On the vertical axis, measure the total quantity of capital K. The width of the box represents the total L; the
+height represents the total K. Any point inside the box represents a specific allocation of K and L between the two
+industries. Isoquants of commodity X are plotted with origin at the south-west corner. Higher X-isoquants lie further
+to the northeast. Isoquants of commodity Y are plotted with origin at the north-east corner, inverted. Higher Y-
+isoquants lie further to the southwest.
+The locus of tangency points between X and Y isoquants is the Edgeworth contract curve of production. At each
+point on this curve, the slopes of the isoquants are equal:
+                                                     𝑥                  𝑦
+                                                 𝑀𝑅𝑇𝑆𝐿,𝐾 = 𝑀𝑅𝑇𝑆𝐿,𝐾
+
+This equality is the condition for efficient allocation of factors between firms. Points off the contract curve are
+inefficient: a reallocation of factors can increase the output of at least one commodity without reducing the other.
+                                                                                     𝑤
+In perfect competition, the factor prices w and r define the slope of isocost lines ( 𝑟 ). Firms, being profit maximisers,
+choose the factor combination where the isoquant is tangent to the isocost line. Since all firms face the same factor
+prices, the production equilibrium occurs at the point on the contract curve where:
+
+                                                   𝑥                𝑦       𝑤
+                                               𝑀𝑅𝑇𝑆𝐿,𝐾 = 𝑀𝑅𝑇𝑆𝐿,𝐾 =
+                                                                            𝑟
+This point defines the allocation of K and L between the two industries, and hence the specific quantities of X and Y
+produced.
+
+
+
+
+Figure – Edgeworth Box of Production with Contract Curve
+The production possibility curve (PPC) is derived by mapping all points on the contract curve from factor space
+into output space. Each point on the PPC represents a Pareto-efficient combination of X and Y.
+
+(b) Consumption Equilibrium (Edgeworth Box of Exchange)
+For a given product-mix (Ye, Xe) — determined by the production equilibrium — construct the Edgeworth box of
+exchange. The width of the box is Xe (the total quantity of X produced); the height is Ye (the total quantity of Y). A's
+indifference curves are plotted from the south-west corner; B's from the north-east corner.
+                                                          Page 26
+The locus of tangency points between A's and B's indifference curves is the Edgeworth contract curve of exchange.
+At each point on this curve:
+                                                       𝐴        𝐵
+                                                    𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦
+
+This is the condition for efficient distribution of commodities between consumers. Points off this curve are
+inefficient: a redistribution of goods can increase at least one consumer's utility without reducing the other's.
+                                                                                                                    𝑃
+With perfect competition, consumers face the same commodity prices Px and Py. The budget line has slope − 𝑥 .
+                                                                                                                    𝑃𝑦
+Consumer equilibrium occurs at the point on the contract curve where:
+
+                                                   𝐴        𝐵
+                                                                      𝑃𝑥
+                                                𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦 =
+                                                                      𝑃𝑦
+
+At this point (denoted T in the textbook), consumer A buys OM of X and ON of Y, reaching utility level A2. Consumer
+B buys the remaining MXe of X and NYe of Y, reaching utility level B4.
+
+
+
+
+Figure – Edgeworth Box of Exchange for Product-Mix (Ye, Xe)
+
+(c) Simultaneous Equilibrium
+General equilibrium of the entire system requires that the production plans of firms are consistent with
+the consumption plans of households. This is captured by the third marginal condition:
+                                                         𝐴        𝐵
+                                            𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦
+
+The MRPT (slope of the PPC) shows the rate at which Y can be transformed into X in production. The MRS (slope of
+the indifference curves) shows the rate at which consumers are willing to exchange Y for X. If these rates are
+unequal, there is a disequilibrium: either the economy produces too much of one good and too little of the other,
+relative to consumer preferences.
+                            2𝑌                 1𝑌
+For example, if 𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑋 and 𝑀𝑅𝑆𝑥,𝑦 = 𝑋 , the economy can produce 2 units of Y by sacrificing 1 unit of X,
+while consumers are only willing to exchange 1 unit of Y for 1 unit of X. The economy produces too much X and too
+little Y. Firms must reduce X and increase Y to restore equilibrium.
+At the simultaneous equilibrium point T on the PPC, the slope of the PPC equals the common MRS. In perfect
+competition, this is automatically satisfied because:
+                                                    𝑀𝐶𝑥 𝑃𝑥    𝐴        𝐵
+                                     𝑀𝑅𝑃𝑇𝑥,𝑦 =         = = 𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦
+                                                    𝑀𝐶𝑦 𝑃𝑦
+
+The three conditions can be stated compactly:
+
+                                                         Page 27
+        𝑥              𝑦        𝑤
+(1) 𝑀𝑅𝑇𝑆𝐿,𝐾 = 𝑀𝑅𝑇𝑆𝐿,𝐾 =           (production equilibrium);
+                                𝑟
+       𝐴        𝐵          𝑃
+(2) 𝑀𝑅𝑆𝑥,𝑦 = 𝑀𝑅𝑆𝑥,𝑦 = 𝑥 (consumption equilibrium);
+                           𝑃𝑦
+
+               𝑃
+(3) 𝑀𝑅𝑃𝑇𝑥,𝑦 = 𝑥 (simultaneous equilibrium, connecting (1) and (2)).
+               𝑃𝑦
+
+
+
+
+ Figure – General Equilibrium of Production with Perfect Competition
+
+
+
+
+Figure – Disequilibrium When MRPT ≠ MRS
+
+
+
+
+                                                         Page 28
+Question 14: Define general equilibrium. In what respect does it differ from partial
+equilibrium? Examine with example.
+
+Definition of General Equilibrium
+A general equilibrium is defined as a state in which all markets and all decision-making units are in simultaneous
+equilibrium. More formally, a general equilibrium exists if each market in the economy is cleared at a positive price
+(i.e., there is neither excess demand nor excess supply), with each consumer maximising satisfaction (utility) and
+each firm maximising profit. The scope of general equilibrium analysis is the examination of how this state can be
+reached — that is, how prices are determined simultaneously in all markets so that the plans of all economic agents
+are mutually consistent.
+General equilibrium emerges from the solution of a simultaneous equation model. In the Walrasian system, the
+unknowns are the prices of all factors and all commodities, and the quantities purchased and sold by each consumer
+and each producer. The equations are of two types: behavioural equations (demand and supply functions derived
+from optimisation) and clearing-the-market equations. The system captures the fundamental interdependence of all
+markets: consumers' demands depend on incomes, incomes depend on factor prices, factor prices depend on
+demand for inputs by firms, and firms' input demands depend on demand for final goods.
+
+Definition of Partial Equilibrium
+Partial equilibrium analysis, developed by Alfred Marshall, concentrates on decisions in a particular segment of the
+economy in isolation, under the ceteris paribus assumption. In this approach, the price and quantity in each market
+are determined by demand and supply curves drawn on the ceteris paribus clause. Each market is regarded
+independently of the others. The partial equilibrium approach is also known as the 'Marshallian approach'.
+
+Key Differences
+ 1. Scope: Partial equilibrium examines one market at a time (e.g., the market for good X), holding all other market
+     conditions constant. General equilibrium examines all markets simultaneously (e.g., markets for X, Y, labour,
+     and capital together).
+ 2. Interdependence: Partial equilibrium ignores interdependence between markets. General equilibrium explicitly
+     accounts for the circular interdependence: consumers' demands depend on incomes, incomes depend on factor
+     prices, factor prices depend on demand for inputs by firms, and firms' demands depend on demand for final
+     goods.
+ 3. Price determination: In partial equilibrium, price is determined by supply and demand in a single market. In
+     general equilibrium, prices in all markets are simultaneously determined as a solution to a system of
+     simultaneous equations.
+ 4. Number of variables: Partial equilibrium deals with a few variables (price and quantity in one market). General
+    equilibrium involves millions of variables (prices and quantities of all commodities and factors, and their
+    allocation among all consumers and producers).
+ 5. Completeness of Results: Partial equilibrium results are valid only for the market under study. General
+     equilibrium results account for all cross-market effects.
+
+Example
+Partial equilibrium analysis:
+A tax on commodity X shifts the supply curve upward. The equilibrium price rises (but by less than the full tax), the
+quantity falls, consumer surplus decreases, producer surplus decreases, and the government collects tax revenue.
+Deadweight loss is created. The analysis stops here.
+
+
+
+                                                        Page 29
+General equilibrium analysis:
+In addition to the direct effects on the X market, the tax triggers a cascade of adjustments across the economy: (a)
+The market for substitute good Y: Demand for Y increases (since X is now more expensive). PY rises and QY increases.
+(b) Factor markets: As X production decreases and Y production increases, the demand for factors shifts. If X and Y
+have different factor intensities, factor prices change. If X is labour-intensive and Y is capital-intensive, the demand
+for labour decreases and the demand for capital increases, leading to a decrease in wages and an increase in the
+rental rate of capital. (c) Income distribution: The change in factor prices affects the distribution of income between
+labour and capital owners. Workers (whose wages have fallen) reduce their demand for both X and Y. Capital owners
+(whose rental income has risen) increase their demand. These income effects feed back into the product markets.
+(d) General equilibrium: A new set of equilibrium prices (𝑃𝑋∗ , 𝑃𝑌∗ , 𝑤 ∗ , 𝑟 ∗ ) emerges, at which all four markets clear
+simultaneously. The final effects on prices and quantities differ from the partial equilibrium predictions because of
+the cross-market feedback effects.
+
+
+
+
+Figure – Circular Flows in a Two-Sector Economy
+
+
+
+
+                                                          Page 30
+Question 15: Present a 2×2×2 Walrasian system. Does the general equilibrium
+solution exist in such a model? Explain.
+
+The 2×2×2 Walrasian System
+The Walrasian system, developed by the French economist Léon Walras (1834–1910), is the most ambitious general
+equilibrium model. In the simplified 2×2×2 version, the economy consists of: two consumers (A and B) who buy
+commodities and supply factor services; two commodities (X and Y), each produced by one firm; two factors of
+production (K and L) owned by the consumers.
+
+Unknowns (18 total):
+ Quantities demanded of X and Y by consumers: 2 × 2 = 4
+ Quantities supplied of K and L by consumers: 2 × 2 = 4
+ Quantities demanded of K and L by firms: 2 × 2 = 4
+ Quantities of X and Y supplied by firms: 2
+ Prices of commodities (Px, Py): 2
+ Prices of factors (w, r): 2
+
+Equations (18 total):
+ Consumer demand functions: 2 × 2 = 4
+ Consumer factor supply functions: 2 × 2 = 4
+ Firm factor demand functions: 2 × 2 = 4
+ Firm commodity supply functions: 2
+ Commodity market clearing: 2
+ Factor market clearing: 2
+
+Does a Solution Exist?
+Although the number of equations equals the number of unknowns (18 each), a general equilibrium solution is not
+guaranteed for several reasons:
+ 1. Redundant equation: One equation is not independent of the others (proved via Walras's Law: if aggregate
+     expenditures equal aggregate income as an identity, then if N−1 markets clear, the Nth must also clear). This
+     means the number of independent equations is 17, less than the 18 unknowns. Prices can only be determined
+     as ratios.
+ 2. Numeraire device: By choosing one commodity as numeraire (setting its price = 1), we reduce unknowns to 17,
+    matching the 17 independent equations. However, this determines only relative prices, not absolute price
+    levels.
+ 3. Existence proof: Arrow and Debreu (1954) proved that a general equilibrium exists in perfectly competitive
+     markets with no indivisibilities and no increasing returns to scale, provided production and demand functions
+     are continuous and well-behaved (convex). The proof relies on fixed-point theorems rather than simple
+     equation counting.
+ 4. Counting is insufficient: Equality of equations and unknowns is neither necessary nor sufficient for existence.
+     The system may have no solution, a unique solution, or multiple solutions depending on the shapes and
+     properties of the underlying functions.
+Under the assumptions of the model (perfect competition, convex preferences, constant returns to scale, no
+externalities), a general equilibrium solution does exist in the 2×2×2 model, as proved by Arrow and Debreu.
+However, this existence depends critically on the restrictive assumptions. The system determines relative prices and
+quantities uniquely; absolute prices require the introduction of money.
+                                                          Page 31
+Question 16: What are the assumptions of a 2×2×2 model? How does general
+equilibrium is reached in such a model?
+
+Assumptions
+ 1. Two factors of production (L and K) in given (fixed) quantities; homogeneous and perfectly divisible.
+ 2. Two commodities (X and Y) produced by two firms; technology given with smooth, convex-to-origin isoquants
+     and constant returns to scale. Production functions are independent (no externalities).
+ 3. Two consumers (A and B) with ordinal indifference curves convex to the origin, exhibiting diminishing MRS.
+     Consumer choices are independent (no bandwagon, snob, or Veblen effects).
+ 4. Consumers maximize utility subject to income constraint; firms maximize profit subject to production function
+     constraint.
+ 5. Factors are owned by consumers.
+ 6. Full employment of factors; all incomes are spent.
+ 7. Perfect competition in commodity and factor markets; all agents face the same prices (Px, Py, w, r).
+
+How General Equilibrium Is Reached
+The process begins from an initial equilibrium state that is disturbed by an exogenous change (e.g., a shift in
+consumer tastes).
+
+1. Product market adjustment
+Suppose demand for X increases. Px rises, creating excess profits. Demand for substitute Y decreases; Py falls,
+creating losses. Firms in X expand output; firms in Y contract. The economy moves along the PPC from the initial to a
+new product-mix.
+
+2. Factor market adjustment
+Expansion of X increases demand for L and K in industry X (𝐷𝐿𝑥 and 𝐷𝐾𝑥 shift right; wx and rx rise). Contraction of Y
+reduces demand for L and K in industry Y (DLy and DKy shift left; wy and ry fall).
+
+3. Factor mobility
+Factor owners withdraw services from Y and seek employment in X where factor prices are higher. Supply of factors
+in X shifts rightward (reducing wx and rx); supply in Y shifts leftward (increasing wy and ry). This process continues
+until factor prices are equalized: wx = wy = w*; rx = ry = r*.
+
+4. Final equilibrium
+                                       𝐾         𝐾
+Due to different factor intensities (( 𝐿 ) < ( 𝐿 ) ), the new equilibrium wage w* is higher than initially, and r* is
+                                           𝑥         𝑦
+lower. Entry in X shifts Sx down (Px falls but stays above P0); exit from Y shifts Sy up (Py rises but stays below original).
+Firms in both industries earn normal profits. All four markets clear simultaneously.
+The key mechanism is factor mobility combined with entry and exit. The system converges because perfect
+competition ensures that market signals (price changes) are transmitted correctly and agents respond optimally.
+
+
+
+
+                                                            Page 32
+Figure – Movement Along the Production Possibility Curve
+
+
+Question 17: Show that 𝑴𝑹𝑷𝑻𝒙,𝒚 = 𝑴𝑪𝒙 /𝑴𝑪𝒚
+Derivation
+The Marginal Rate of Product Transformation (MRPT) is defined as the negative of the slope of the production
+possibility curve (PPC):
+                                                                   𝑑𝑌
+                                                   𝑀𝑅𝑃𝑇𝑥,𝑦 = −
+                                                                   𝑑𝑋
+By definition, marginal cost is the change in total cost per unit change in output:
+                                                              𝑑(𝑇𝐶𝑥 )
+                                                    𝑀𝐶𝑥 =
+                                                                𝑑𝑋
+                                                              𝑑(𝑇𝐶𝑦 )
+                                                    𝑀𝐶𝑦 =
+                                                                𝑑𝑌
+Dividing these expressions:
+                                            𝑀𝐶𝑥    𝑑(𝑇𝐶𝑥 )      𝑑(𝑇𝐶𝑦 )
+                                                =[         ] / [ 𝑑𝑌 ] ... (1)
+                                            𝑀𝐶𝑦      𝑑𝑋
+
+Now, the change in total cost for each commodity equals the sum of changes in factor payments:
+
+                                         𝑑(𝑇𝐶𝑥 ) = 𝑤 · 𝑑𝐿𝑥 + 𝑟 · 𝑑𝐾𝑥 ... (2)
+                                         𝑑(𝑇𝐶𝑦 ) = 𝑤 · 𝑑𝐿𝑦 + 𝑟 · 𝑑𝐾𝑦 ... (3)
+
+To remain on the PPC (i.e., to maintain full employment of factors), the factors released from decreasing Y must be
+absorbed by increasing X:
+                                                  𝑑𝐿𝑥 = −𝑑𝐿𝑦 ... (4)
+
+                                                  𝑑𝐾𝑥 = −𝑑𝐾𝑦 ... (5)
+
+Substituting (4) into (2):
+
+                      𝑑(𝑇𝐶𝑥 ) = 𝑤 · (−𝑑𝐿𝑦 ) + 𝑟 · (−𝑑𝐾𝑦 ) = −[𝑤 · 𝑑𝐿𝑦 + 𝑟 · 𝑑𝐾𝑦 ] ... (6)
+
+Now substituting (3) and (6) into (1):
+                              𝑀𝐶𝑥
+                                  = −[𝑤 · 𝑑𝐿𝑦 + 𝑟 · 𝑑𝐾𝑦 ] / [ 𝑤 · 𝑑𝐿𝑦 + 𝑟 · 𝑑𝐾𝑦 ]
+                              𝑀𝐶𝑦
+                                            𝑀𝐶𝑥          𝑑𝑌         𝑑𝑌
+                                            𝑀𝐶𝑦
+                                                  = −1 [𝑑𝑋] = − 𝑑𝑋 ... (7)
+
+But from the definition:
+                                                                   𝑑𝑌
+                                                   𝑀𝑅𝑃𝑇𝑥,𝑦 = −
+                                                                   𝑑𝑋
+                                                         Page 33
+Therefore:
+                                                 𝑴𝑪𝑥
+                                                     = 𝑴𝑹𝑷𝑻𝑥,𝑦
+                                                 𝑴𝑪𝑦
+                                                          𝑴𝑪𝑥
+                                             𝑴𝑹𝑷𝑻𝑥,𝑦 =                Q.E.D.
+                                                          𝑴𝑪𝑦
+
+
+Intuition
+The MRPT shows the rate at which the economy can transform Y into X. To produce one more unit of X, the
+economy must absorb additional factors whose cost equals MCx. Simultaneously, to release these factors, the
+economy must reduce Y by an amount whose cost saving equals MCy. The ratio MCx/MCy precisely captures the rate
+at which Y must be sacrificed (in cost terms) to obtain an additional unit of X.
+
+Corollary (in Perfect Competition)
+Since firms set P = MC in perfect competition:
+                                                                 𝑃𝑥
+                                                   𝑀𝑅𝑃𝑇𝑥,𝑦 =
+                                                                 𝑃𝑦
+                                                                               𝑃
+This connects the production side (MRPT) with the consumption side (𝑀𝑅𝑆 = 𝑃𝑥 ) , ensuring that the third Pareto
+                                                                               𝑦
+optimality condition (MRPT = MRS) is satisfied under perfect competition.
+
+
+
+
+Figure – Production Possibility Curve Derived from Edgeworth Contract Curve
+
+
+
+
+                                                       Page 34
+

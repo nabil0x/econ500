@@ -1,0 +1,63 @@
+1.0 What is economics about? 
+Economics is the social science that studies how to make decisions in face of resource scarcity and/or information asymmetry. Specifically, it studies economic behavior, economic phenomena, and how rational economic agents, including individuals, families, firms, institutions, organizations, and government agencies, make optimal trade-off choices subject to the constraint of limited resources. 
+It is actually because of the fundamental inconsistence and conflict between resource scarcity and individuals’ unlimited desires (or wants) that economics could come into being. The core idea is that individuals, who are under the basic constraint of limited resources (limited information, capital, time, capacity and freedom) and driven by unlimited desires, must make trade-off choices in resource allocation to make the best use of limited resources to maximize the satisfaction of their needs. 
+2.0
+ Four Basic Questions That Must Be Answered
+ For any economic system, regardless of whether it is the planned economy wherein the government plays a decisive role, the free economy wherein the market plays a decisive role, or the semi-market and semi-planned mixed economy wherein the state-owned economy plays a 
+leading role, when it comes to the allocation of resources, all face the following four basic questions: 
+(1) What should be produced and in what quantity?
+ (2) How should the product be produced? 
+(3) For whom should it be produced and how should it be distributed? 
+(4) Who makes the decision on production? 
+These questions must be answered in all economic systems, but different economic institutional arrangements provide different answers. Whether an institutional 
+arrangeent
+ can effectively resolve these problems depends on whether it can properly deal with the issues induced by information and incentives. 
+As such, two basic economic institutional arrangements have been used in the real world: 
+(1) The institutional arrangement of planned economies: All the four questions are answered by the government who determines most economic activities and monopolizes decision
+ 
+making processes and all industries; it makes decisions on market access, product catalog, infrastructure investment allocation, individual job assignment, product price, employment wage, and among others, and the risk is borne by the government. 
+(2) The institutional arrangement of market economies: Most economic activities are organized through free market; the decisions on what product to produce, how to produce and for whom to produce are mainly made by decentralized firms and consumers, and the risk is borne by individuals. 
+While almost every real-world economic system is somewhere in between these two extremes, the key is which extreme is in the dominant position. The fundamental flaw of the planned economic system is that it cannot effectively resolve the problems induced by information and incentives, which in turn results in inefficient allocation of resources, whereas free-market economic system can be a good solution in these respects. This is the fundamental reason why countries that once adopted planned economic system inevitably failed and why China carried out market-oriented reforms and wishes to bring market to the decisive role in resource allocation.
+3.0
+ What is Modern Economics? 
+Modern economics, which has developed mainly since the 1940s and was built on the basic recognition of individuals’ pursuit of self-interest, systematically studies individuals’ economic behavior and social economic phenomena by adopting scientific methods for rigorous 
+reasoning and utilizing mathematical tools – specifically, it makes historical and empirical observations of the real world, elevates the observations towards the formation of theory through rigorous logical analysis, and then again test the theory in the continuing real world – thus making itself a branch of science equipped with scientific analytical framework and research methods. Such systematic study involves formal theory and also provides analytical tools for testing economic data
+.
+4.0 The Difference between Economics and Natural Science
+ There are three major differences between modern economics and natural science: 
+(1) Economics studies human behavior and needs to impose some associated assumptions, while natural science in general does not involve the behavior of human being. Once individuals are involved, the information is very much asymmetric and easy to disguise because their behavior is unpredictable without appropriated mechanisms, making it very difficult and complicated to deal with. 
+(2) In the discussion and study of economic problems, descriptive empirical analysis and normative analysis of value judgment are both needed. As people have different values and self-interests, controversies 
+often emerge, while natural science generally makes descriptive empirical analysis only and the conclusions can be verified through practice.
+ (3) Society cannot be simply taken for experiment or test of most conclusions in economics because policies have broad impact and large externalities, while this is not a problem for almost all branches of natural science
+5.0 Three Roles of Economic Theory
+Economic theory has at least three roles. 
+The first role is to provide a benchmark and a reference system to set up goals to catch up with or create so as to point a direction for improving. Through reform and innovation guided by theory, the economy in the real world is impelled increasingly closer to the ideal state. 
+The second role is that it can be used to learn and understand the real economic world, and to explain economic phenomena and economic behavior so as to solve real problems, which is the major content of modern economics. 
+The third role is that it can be used to make logically inherent inferences and predictions. Practice is the sole criteria for testing truth but not the 
+sole criteria for predicting truth. In many cases, problems may still arise if only historic examination and existing data are used for economic prediction, so theoretic analysis with inherent logic is needed.
+6.0 Microeconomic Theory
+ A notable feature of microeconomic theory is to set up theoretical hypothesis or modeling for economic activities of self-interested individuals, especially in market economy, and conduct rigorous analysis and examine how the market works on such basis. The whole microeconomics runs through a main theme – price or pricing: which factors affect pricing? whether enterprises have pricing power? how to have pricing advantages? and how to make optimal pricing? Therefore, we need to study the demand, supply, characteristics and functions of market and the pricing in all kinds of markets and various economic environments so as to maximize profits or utilities. As a result, microeconomics is also called price theory. 
+Microeconomics is the core of economics and the theoretical foundation of all branches of modern economics. It enables us to use simplified assumptions for in-depth analysis of complex problems so as to find clues from the complex, making the complex problems become relatively simple. It can help us to extract the most useful information from things unrelated and think of various issues using the method of economics so as to make explanations and predictions that conform to reality. Other branches, such as macroeconomics, finance, applied econometrics, etc., all rely on the support of microeconomic theory
+7.0 Market and Market Mechanism 
+Market: Market is a trade mode where buyer and seller conduct voluntary exchanges. It refers not only to the place where buyer and seller conduct exchanges but also to any form of trading activities, such as auction and bargaining mechanisms. When learning microeconomics, it should be noted that the buyer and the seller are both important in any trade in the market. For a buyer of any good, there is a corresponding seller. The final 
+result of the market process is determined by the rivalry of relative forces of sellers and buyers in the market. There are three forms of competition for such rivalry: consumer-producer competition, consumer-consumer competition, and producer-producer competition. In the market, the position of consumers who bargain with producers is constrained by the three forms of competition. Every form of competition is like a disciplinary mechanism leading the market and exerts different influences upon different markets. Market mechanism: Market mechanism, or price mechanism, is an economic mechanism where individuals make decentralized decisions guided by price, which is usually a rather narrow definition of market mechanism. Market mechanism or market system is the set of all systems and mechanisms closely related with market (including the system of market laws and regulations). As a form of economic organization featuring decentralized decision-making, voluntary cooperation, and voluntary exchange of products and services, it is one of the greatest inventions in human history and by far the most successful means for human beings to solve their own economic problems. The establishment of market mechanism is not a conscious, purposeful 
+human design, but a natural process of evolution. In the opinion of Hayek, market order is a spontaneous extended order of economy which evolves through long-term choices and trials and errors. The emergence, development and further extension of modern economics are mainly based on the study of market system. At first glance, the operation of market is amazing and beyond comprehension. In the market system, decisions on resource allocation are independently made by producers and consumers who pursue their own interests under the guidance of market price without the imposition of any command or order. Market system unknowingly solves the four basic questions that no economic system can evade: what to produce, how to produce, for whom to produce, and who makes the decision. Under market system, firms and individuals make the decision on voluntary exchange and cooperation. Consumers seek the maximal satisfaction of their demand while firms pursue profits. In order to maximize profits, firms must have meticulous plans for the most effective use of resources. That is to say, for resources with similar utility or effect, they will choose the ones of the lowest possible cost. The best use of things originally has different meanings from the standpoints of 
+firms and society, respectively, but price links them up, which, as a result, harmonizes the interest of firms and that of the whole society and leads to efficient allocation of resources. The price level reflects the supply and demand of resources in society and the degree of scarcity of resources. 
+8.0 Three Functions of Price 
+The normal operation of market system is realized via the price mechanism. As analyzed by the Nobel laureate in economics, Milton Friedman (1912-2006), when organizing constantly changing economic activities that involve hundreds of millions of individuals, price fulfills three functions of: 
+(1) Transmitting information: price transmits production and consumption information in the most efficient way; 
+(2) Providing incentive: price provides incentives for people to carry out consumption and production in an optimal way;
+ (3) Determining income distribution: resource endowment, price, and the efficiency of economic activities determine the income distribution.
+9.0 
+Key Points in Modern Economics 
+Economists usually base the study of economic issues on some key points, constraints, basic axioms or principles: 
+(1) Scarcity of resources; 
+(2) Information asymmetry and decentralized decision-making: individuals prefer decentralized decision-making; 
+(3) Economic freedom: voluntary cooperation and voluntary exchange; 
+(4) Decision-making under constraints; 
+(5) Incentive compatibility: the system or economic mechanism should solve the problem of interest conflicts among individuals or economic units;
+(6) Well-defined property rights; 
+(7) Equity in opportunity; 
+(8) Allocative efficiency of resources. 
+Relaxing any of these assumptions and constraints may result in different conclusions. The consideration and application of these assumptions, constraints and principles are also useful for people to deal with daily 
+affairs. Although they seem to be simple, it is not easy to thoroughly understand and skillfully use them in reality

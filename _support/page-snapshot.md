@@ -1,0 +1,982 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#course-navigation"
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - img [ref=e6] [cursor=pointer]
+      - generic [ref=e9]:
+        - generic [ref=e11]: Masters Exam Study Hub
+        - generic:
+          - generic: Home
+      - generic [ref=e12]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+        - radio "Switch to light mode"
+      - img [ref=e17] [cursor=pointer]
+      - dialog:
+        - search:
+          - generic:
+            - textbox "Search" [ref=e19]
+            - img [ref=e21] [cursor=pointer]
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e24]: Type to start searching
+  - generic [ref=e25]:
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - navigation "Navigation" [ref=e30]:
+          - generic [ref=e31] [cursor=pointer]:
+            - link "Masters Exam Study Hub" [ref=e32]:
+              - /url: .
+              - img [ref=e33]
+            - text: Masters Exam Study Hub
+          - link "Study Hub" [ref=e36] [cursor=pointer]:
+            - /url: https://github.com/USERNAME/REPONAME
+            - img [ref=e38]
+            - generic [ref=e40]: Study Hub
+          - list [ref=e41]:
+            - listitem [ref=e42]:
+              - generic [ref=e44]: Home
+              - navigation "Table of contents" [ref=e46]:
+                - generic [ref=e47] [cursor=pointer]: Table of contents
+                - list [ref=e49]:
+                  - listitem [ref=e50]:
+                    - link "🧭 Course Navigation" [ref=e51] [cursor=pointer]:
+                      - /url: "#course-navigation"
+                      - generic [ref=e52]: 🧭 Course Navigation
+                  - listitem [ref=e53]:
+                    - link "📐 ECON 501 — Microeconomics" [ref=e54] [cursor=pointer]:
+                      - /url: "#econ-501-microeconomics"
+                      - generic [ref=e55]: 📐 ECON 501 — Microeconomics
+                  - listitem [ref=e56]:
+                    - link "📈 ECON 502 — Macroeconomics" [ref=e57] [cursor=pointer]:
+                      - /url: "#econ-502-macroeconomics"
+                      - generic [ref=e58]: 📈 ECON 502 — Macroeconomics
+                  - listitem [ref=e59]:
+                    - link "🌱 ECON 503 — Development Economics" [ref=e60] [cursor=pointer]:
+                      - /url: "#econ-503-development-economics"
+                      - generic [ref=e61]: 🌱 ECON 503 — Development Economics
+                  - listitem [ref=e62]:
+                    - link "🏛️ ECON 512 — Political Economy" [ref=e63] [cursor=pointer]:
+                      - /url: "#econ-512-political-economy"
+                      - generic [ref=e64]: 🏛️ ECON 512 — Political Economy
+                  - listitem [ref=e65]:
+                    - link "🏥 ECON 507 — Health Economics" [ref=e66] [cursor=pointer]:
+                      - /url: "#econ-507-health-economics"
+                      - generic [ref=e67]: 🏥 ECON 507 — Health Economics
+                  - listitem [ref=e68]:
+                    - link "🎯 Previous Final Exams by Batch" [ref=e69] [cursor=pointer]:
+                      - /url: "#previous-final-exams-by-batch"
+                      - generic [ref=e70]: 🎯 Previous Final Exams by Batch
+                  - listitem [ref=e71]:
+                    - link "🧪 Exam Guides" [ref=e72] [cursor=pointer]:
+                      - /url: "#exam-guides"
+                      - generic [ref=e73]: 🧪 Exam Guides
+                  - listitem [ref=e74]:
+                    - link "🔗 Key Cross-Cutting Themes" [ref=e75] [cursor=pointer]:
+                      - /url: "#key-cross-cutting-themes"
+                      - generic [ref=e76]: 🔗 Key Cross-Cutting Themes
+            - listitem [ref=e77]:
+              - link "📐 Microeconomics (501)" [ref=e79] [cursor=pointer]:
+                - /url: 501-Microeconomics/
+                - generic [ref=e80]: 📐 Microeconomics (501)
+              - navigation [ref=e83]:
+                - generic [ref=e84] [cursor=pointer]: 📐 Microeconomics (501)
+                - list [ref=e86]:
+                  - listitem [ref=e87]:
+                    - link "Study Roadmap" [ref=e88] [cursor=pointer]:
+                      - /url: 501-Microeconomics/STUDY-ROADMAP/
+                      - generic [ref=e89]: Study Roadmap
+                  - listitem [ref=e90]:
+                    - link "Exam Cheat Sheet" [ref=e91] [cursor=pointer]:
+                      - /url: 501-Microeconomics/EXAM-CHEAT-SHEET/
+                      - generic [ref=e92]: Exam Cheat Sheet
+                  - listitem [ref=e93]:
+                    - link "Exam Answer Template" [ref=e94] [cursor=pointer]:
+                      - /url: 501-Microeconomics/EXAM-ANSWER-TEMPLATE/
+                      - generic [ref=e95]: Exam Answer Template
+                  - listitem [ref=e96]:
+                    - link "Exam Priority Matrix" [ref=e97] [cursor=pointer]:
+                      - /url: 501-Microeconomics/EXAM-PRIORITY-MATRIX/
+                      - generic [ref=e98]: Exam Priority Matrix
+                  - listitem [ref=e99]:
+                    - link "Exam Common Mistakes" [ref=e100] [cursor=pointer]:
+                      - /url: 501-Microeconomics/EXAM-COMMON-MISTAKES/
+                      - generic [ref=e101]: Exam Common Mistakes
+                  - listitem [ref=e102]:
+                    - link "Exam Simulations" [ref=e103] [cursor=pointer]:
+                      - /url: 501-Microeconomics/EXAM-SIMULATIONS/
+                      - generic [ref=e104]: Exam Simulations
+                  - listitem [ref=e105]:
+                    - link "Basics & Formulas" [ref=e106] [cursor=pointer]:
+                      - /url: 501-Microeconomics/basics/
+                      - generic [ref=e107]: Basics & Formulas
+                  - listitem [ref=e108]:
+                    - link "Welfare Change Reference" [ref=e109] [cursor=pointer]:
+                      - /url: 501-Microeconomics/welfare-change-reference/
+                      - generic [ref=e110]: Welfare Change Reference
+                  - listitem [ref=e111]:
+                    - generic [ref=e113]: ✅ Answer Files
+                    - navigation "✅ Answer Files" [ref=e115]:
+                      - generic [ref=e116] [cursor=pointer]: ✅ Answer Files
+                      - list [ref=e118]:
+                        - listitem [ref=e119]:
+                          - link "Consumer Theory" [ref=e120] [cursor=pointer]:
+                            - /url: 501-Microeconomics/answers-consumer-theory/
+                            - generic [ref=e121]: Consumer Theory
+                        - listitem [ref=e122]:
+                          - link "Demand & Production" [ref=e123] [cursor=pointer]:
+                            - /url: 501-Microeconomics/answers-demand-production/
+                            - generic [ref=e124]: Demand & Production
+                        - listitem [ref=e125]:
+                          - link "Welfare" [ref=e126] [cursor=pointer]:
+                            - /url: 501-Microeconomics/answers-welfare/
+                            - generic [ref=e127]: Welfare
+                        - listitem [ref=e128]:
+                          - link "GE, Game Theory & Trade" [ref=e129] [cursor=pointer]:
+                            - /url: 501-Microeconomics/answers-ge-game-extern-trade/
+                            - generic [ref=e130]: GE, Game Theory & Trade
+                  - listitem [ref=e131]:
+                    - generic [ref=e133]: ❓ Question Indexes
+                    - navigation "❓ Question Indexes" [ref=e135]:
+                      - generic [ref=e136] [cursor=pointer]: ❓ Question Indexes
+                      - list [ref=e138]:
+                        - listitem [ref=e139]:
+                          - link "By Topic (Answered)" [ref=e140] [cursor=pointer]:
+                            - /url: 501-Microeconomics/micro-questions-topic-wise-answered/
+                            - generic [ref=e141]: By Topic (Answered)
+                        - listitem [ref=e142]:
+                          - link "By Year (Answered)" [ref=e143] [cursor=pointer]:
+                            - /url: 501-Microeconomics/micro-questions-year-wise-answered/
+                            - generic [ref=e144]: By Year (Answered)
+                        - listitem [ref=e145]:
+                          - link "By Topic (Questions Only)" [ref=e146] [cursor=pointer]:
+                            - /url: 501-Microeconomics/micro-questions-topic-wise/
+                            - generic [ref=e147]: By Topic (Questions Only)
+                        - listitem [ref=e148]:
+                          - link "By Year (Questions Only)" [ref=e149] [cursor=pointer]:
+                            - /url: 501-Microeconomics/micro-questions-year-wise/
+                            - generic [ref=e150]: By Year (Questions Only)
+                  - listitem [ref=e151]:
+                    - link "🔗 Cross-Reference" [ref=e152] [cursor=pointer]:
+                      - /url: 501-Microeconomics/answers-cross-reference/
+                      - generic [ref=e153]: 🔗 Cross-Reference
+                  - listitem [ref=e154]:
+                    - link "📋 ANSWERS Index" [ref=e155] [cursor=pointer]:
+                      - /url: 501-Microeconomics/ANSWERS-INDEX/
+                      - generic [ref=e156]: 📋 ANSWERS Index
+                  - listitem [ref=e157]:
+                    - link "📖 Glossary" [ref=e158] [cursor=pointer]:
+                      - /url: 501-Microeconomics/GLOSSARY/
+                      - generic [ref=e159]: 📖 Glossary
+                  - listitem [ref=e160]:
+                    - link "📦 Resources Index" [ref=e161] [cursor=pointer]:
+                      - /url: 501-Microeconomics/resources/
+                      - generic [ref=e162]: 📦 Resources Index
+            - listitem [ref=e163]:
+              - link "📈 Macroeconomics (502)" [ref=e165] [cursor=pointer]:
+                - /url: macroeconomics/
+                - generic [ref=e166]: 📈 Macroeconomics (502)
+              - navigation [ref=e169]:
+                - generic [ref=e170] [cursor=pointer]: 📈 Macroeconomics (502)
+                - list [ref=e172]:
+                  - listitem [ref=e173]:
+                    - link "Basics" [ref=e174] [cursor=pointer]:
+                      - /url: macroeconomics/basics/
+                      - generic [ref=e175]: Basics
+            - listitem [ref=e176]:
+              - link "🌱 Development (503)" [ref=e178] [cursor=pointer]:
+                - /url: 503-Development/
+                - generic [ref=e179]: 🌱 Development (503)
+              - navigation [ref=e182]:
+                - generic [ref=e183] [cursor=pointer]: 🌱 Development (503)
+                - list [ref=e185]:
+                  - listitem [ref=e186]:
+                    - link "Course Basics" [ref=e187] [cursor=pointer]:
+                      - /url: 503-Development/basics/
+                      - generic [ref=e188]: Course Basics
+                  - listitem [ref=e189]:
+                    - generic [ref=e191]: 📝 Topics
+                    - navigation "📝 Topics" [ref=e193]:
+                      - generic [ref=e194] [cursor=pointer]: 📝 Topics
+                      - list [ref=e196]:
+                        - listitem [ref=e197]:
+                          - link "Naila Kabeer" [ref=e199] [cursor=pointer]:
+                            - /url: 503-Development/naila-kabeer/
+                            - generic [ref=e200]: Naila Kabeer
+                          - navigation [ref=e203]:
+                            - generic [ref=e204] [cursor=pointer]: Naila Kabeer
+                            - list [ref=e206]:
+                              - listitem [ref=e207]:
+                                - link "Basics" [ref=e208] [cursor=pointer]:
+                                  - /url: 503-Development/naila-kabeer/basics/
+                                  - generic [ref=e209]: Basics
+                        - listitem [ref=e210]:
+                          - link "Venezuela" [ref=e212] [cursor=pointer]:
+                            - /url: 503-Development/venezuela/
+                            - generic [ref=e213]: Venezuela
+                          - navigation [ref=e216]:
+                            - generic [ref=e217] [cursor=pointer]: Venezuela
+                            - list [ref=e219]:
+                              - listitem [ref=e220]:
+                                - link "Basics" [ref=e221] [cursor=pointer]:
+                                  - /url: 503-Development/venezuela/basics/
+                                  - generic [ref=e222]: Basics
+                        - listitem [ref=e223]:
+                          - link "Labour Force Survey" [ref=e225] [cursor=pointer]:
+                            - /url: 503-Development/labour-force-survey/
+                            - generic [ref=e226]: Labour Force Survey
+                          - navigation [ref=e229]:
+                            - generic [ref=e230] [cursor=pointer]: Labour Force Survey
+                            - list [ref=e232]:
+                              - listitem [ref=e233]:
+                                - link "Basics" [ref=e234] [cursor=pointer]:
+                                  - /url: 503-Development/labour-force-survey/basics/
+                                  - generic [ref=e235]: Basics
+                        - listitem [ref=e236]:
+                          - link "Bangladesh Trade" [ref=e238] [cursor=pointer]:
+                            - /url: 503-Development/bangladesh-trade/
+                            - generic [ref=e239]: Bangladesh Trade
+                          - navigation [ref=e242]:
+                            - generic [ref=e243] [cursor=pointer]: Bangladesh Trade
+                            - list [ref=e245]:
+                              - listitem [ref=e246]:
+                                - link "Basics" [ref=e247] [cursor=pointer]:
+                                  - /url: 503-Development/bangladesh-trade/basics/
+                                  - generic [ref=e248]: Basics
+            - listitem [ref=e249]:
+              - link "🏛️ Political Economy (512)" [ref=e251] [cursor=pointer]:
+                - /url: 512-Political-Economy/
+                - generic [ref=e252]: 🏛️ Political Economy (512)
+              - navigation [ref=e255]:
+                - generic [ref=e256] [cursor=pointer]: 🏛️ Political Economy (512)
+                - list [ref=e258]:
+                  - listitem [ref=e259]:
+                    - link "Course Basics" [ref=e260] [cursor=pointer]:
+                      - /url: 512-Political-Economy/basics/
+                      - generic [ref=e261]: Course Basics
+                  - listitem [ref=e262]:
+                    - generic [ref=e264]: 📝 Topics
+                    - navigation "📝 Topics" [ref=e266]:
+                      - generic [ref=e267] [cursor=pointer]: 📝 Topics
+                      - list [ref=e269]:
+                        - listitem [ref=e270]:
+                          - link "Modernization Theory" [ref=e272] [cursor=pointer]:
+                            - /url: 512-Political-Economy/modernization-theory/
+                            - generic [ref=e273]: Modernization Theory
+                          - navigation [ref=e276]:
+                            - generic [ref=e277] [cursor=pointer]: Modernization Theory
+                            - list [ref=e279]:
+                              - listitem [ref=e280]:
+                                - link "Basics" [ref=e281] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/modernization-theory/basics/
+                                  - generic [ref=e282]: Basics
+                        - listitem [ref=e283]:
+                          - link "Dependency Theory" [ref=e285] [cursor=pointer]:
+                            - /url: 512-Political-Economy/dependency-theory/
+                            - generic [ref=e286]: Dependency Theory
+                          - navigation [ref=e289]:
+                            - generic [ref=e290] [cursor=pointer]: Dependency Theory
+                            - list [ref=e292]:
+                              - listitem [ref=e293]:
+                                - link "Basics" [ref=e294] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/dependency-theory/basics/
+                                  - generic [ref=e295]: Basics
+                        - listitem [ref=e296]:
+                          - link "Washington Consensus" [ref=e298] [cursor=pointer]:
+                            - /url: 512-Political-Economy/washington-consensus/
+                            - generic [ref=e299]: Washington Consensus
+                          - navigation [ref=e302]:
+                            - generic [ref=e303] [cursor=pointer]: Washington Consensus
+                            - list [ref=e305]:
+                              - listitem [ref=e306]:
+                                - link "Basics" [ref=e307] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/washington-consensus/basics/
+                                  - generic [ref=e308]: Basics
+                        - listitem [ref=e309]:
+                          - link "Free Trade in Agriculture" [ref=e311] [cursor=pointer]:
+                            - /url: 512-Political-Economy/free-trade-agriculture/
+                            - generic [ref=e312]: Free Trade in Agriculture
+                          - navigation [ref=e315]:
+                            - generic [ref=e316] [cursor=pointer]: Free Trade in Agriculture
+                            - list [ref=e318]:
+                              - listitem [ref=e319]:
+                                - link "Basics" [ref=e320] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/free-trade-agriculture/basics/
+                                  - generic [ref=e321]: Basics
+                        - listitem [ref=e322]:
+                          - link "Food Crisis (Patnaik)" [ref=e324] [cursor=pointer]:
+                            - /url: 512-Political-Economy/food-crisis/
+                            - generic [ref=e325]: Food Crisis (Patnaik)
+                          - navigation [ref=e328]:
+                            - generic [ref=e329] [cursor=pointer]: Food Crisis (Patnaik)
+                            - list [ref=e331]:
+                              - listitem [ref=e332]:
+                                - link "Basics" [ref=e333] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/food-crisis/basics/
+                                  - generic [ref=e334]: Basics
+                        - listitem [ref=e335]:
+                          - link "Bangladesh Dairy" [ref=e337] [cursor=pointer]:
+                            - /url: 512-Political-Economy/bangladesh-dairy/
+                            - generic [ref=e338]: Bangladesh Dairy
+                          - navigation [ref=e341]:
+                            - generic [ref=e342] [cursor=pointer]: Bangladesh Dairy
+                            - list [ref=e344]:
+                              - listitem [ref=e345]:
+                                - link "Basics" [ref=e346] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/bangladesh-dairy/basics/
+                                  - generic [ref=e347]: Basics
+                        - listitem [ref=e348]:
+                          - link "RMG Sector" [ref=e350] [cursor=pointer]:
+                            - /url: 512-Political-Economy/rmg-sector/
+                            - generic [ref=e351]: RMG Sector
+                          - navigation [ref=e354]:
+                            - generic [ref=e355] [cursor=pointer]: RMG Sector
+                            - list [ref=e357]:
+                              - listitem [ref=e358]:
+                                - link "Basics" [ref=e359] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/rmg-sector/basics/
+                                  - generic [ref=e360]: Basics
+                        - listitem [ref=e361]:
+                          - link "Cash Crops vs Food Crops" [ref=e363] [cursor=pointer]:
+                            - /url: 512-Political-Economy/cash-crops/
+                            - generic [ref=e364]: Cash Crops vs Food Crops
+                          - navigation [ref=e367]:
+                            - generic [ref=e368] [cursor=pointer]: Cash Crops vs Food Crops
+                            - list [ref=e370]:
+                              - listitem [ref=e371]:
+                                - link "Basics" [ref=e372] [cursor=pointer]:
+                                  - /url: 512-Political-Economy/cash-crops/basics/
+                                  - generic [ref=e373]: Basics
+            - listitem [ref=e374]:
+              - link "🏥 Health Economics (507)" [ref=e376] [cursor=pointer]:
+                - /url: health-economics/
+                - generic [ref=e377]: 🏥 Health Economics (507)
+              - navigation [ref=e380]:
+                - generic [ref=e381] [cursor=pointer]: 🏥 Health Economics (507)
+                - list [ref=e383]:
+                  - listitem [ref=e384]:
+                    - link "Basics" [ref=e385] [cursor=pointer]:
+                      - /url: health-economics/basics/
+                      - generic [ref=e386]: Basics
+            - listitem [ref=e387]:
+              - link "🎯 Batch Finals" [ref=e389] [cursor=pointer]:
+                - /url: batch-finals/
+                - generic [ref=e390]: 🎯 Batch Finals
+              - navigation [ref=e393]:
+                - generic [ref=e394] [cursor=pointer]: 🎯 Batch Finals
+                - list [ref=e396]:
+                  - listitem [ref=e397]:
+                    - link "Batch 47 (2022 MSc)" [ref=e399] [cursor=pointer]:
+                      - /url: batch-finals/batch-47/
+                      - generic [ref=e400]: Batch 47 (2022 MSc)
+                    - navigation [ref=e403]:
+                      - generic [ref=e404] [cursor=pointer]: Batch 47 (2022 MSc)
+                      - list [ref=e406]:
+                        - listitem [ref=e407]:
+                          - link "Micro 501" [ref=e408] [cursor=pointer]:
+                            - /url: batch-finals/batch-47/micro-501/
+                            - generic [ref=e409]: Micro 501
+                        - listitem [ref=e410]:
+                          - link "Macro 502" [ref=e411] [cursor=pointer]:
+                            - /url: batch-finals/batch-47/macro-502/
+                            - generic [ref=e412]: Macro 502
+                        - listitem [ref=e413]:
+                          - link "Dev 503" [ref=e414] [cursor=pointer]:
+                            - /url: batch-finals/batch-47/dev-503/
+                            - generic [ref=e415]: Dev 503
+                        - listitem [ref=e416]:
+                          - link "Health 507" [ref=e417] [cursor=pointer]:
+                            - /url: batch-finals/batch-47/health-507/
+                            - generic [ref=e418]: Health 507
+                        - listitem [ref=e419]:
+                          - link "Political 512" [ref=e420] [cursor=pointer]:
+                            - /url: batch-finals/batch-47/political-512/
+                            - generic [ref=e421]: Political 512
+                  - listitem [ref=e422]:
+                    - link "Batch 48 (2023 MSc)" [ref=e424] [cursor=pointer]:
+                      - /url: batch-finals/batch-48/
+                      - generic [ref=e425]: Batch 48 (2023 MSc)
+                    - navigation [ref=e428]:
+                      - generic [ref=e429] [cursor=pointer]: Batch 48 (2023 MSc)
+                      - list [ref=e431]:
+                        - listitem [ref=e432]:
+                          - link "Micro 501" [ref=e433] [cursor=pointer]:
+                            - /url: batch-finals/batch-48/micro-501/
+                            - generic [ref=e434]: Micro 501
+                        - listitem [ref=e435]:
+                          - link "Macro 502" [ref=e436] [cursor=pointer]:
+                            - /url: batch-finals/batch-48/macro-502/
+                            - generic [ref=e437]: Macro 502
+                        - listitem [ref=e438]:
+                          - link "Dev 503" [ref=e439] [cursor=pointer]:
+                            - /url: batch-finals/batch-48/dev-503/
+                            - generic [ref=e440]: Dev 503
+                        - listitem [ref=e441]:
+                          - link "Health 507" [ref=e442] [cursor=pointer]:
+                            - /url: batch-finals/batch-48/health-507/
+                            - generic [ref=e443]: Health 507
+                  - listitem [ref=e444]:
+                    - link "Batch 46 (2020 Hons)" [ref=e446] [cursor=pointer]:
+                      - /url: batch-finals/batch-46/
+                      - generic [ref=e447]: Batch 46 (2020 Hons)
+                    - navigation [ref=e450]:
+                      - generic [ref=e451] [cursor=pointer]: Batch 46 (2020 Hons)
+                      - list [ref=e453]:
+                        - listitem [ref=e454]:
+                          - link "Micro 401" [ref=e455] [cursor=pointer]:
+                            - /url: batch-finals/batch-46/micro-401/
+                            - generic [ref=e456]: Micro 401
+                        - listitem [ref=e457]:
+                          - link "Macro 402" [ref=e458] [cursor=pointer]:
+                            - /url: batch-finals/batch-46/macro-402/
+                            - generic [ref=e459]: Macro 402
+                        - listitem [ref=e460]:
+                          - link "Health 404" [ref=e461] [cursor=pointer]:
+                            - /url: batch-finals/batch-46/health-404/
+                            - generic [ref=e462]: Health 404
+            - listitem [ref=e463]:
+              - generic [ref=e465]: 🧪 Exam Guides
+              - navigation "🧪 Exam Guides" [ref=e467]:
+                - generic [ref=e468] [cursor=pointer]: 🧪 Exam Guides
+                - list [ref=e470]:
+                  - listitem [ref=e471]:
+                    - link "Theorists Quick Reference" [ref=e472] [cursor=pointer]:
+                      - /url: exam-guides/theorists-reference/
+                      - generic [ref=e473]: Theorists Quick Reference
+                  - listitem [ref=e474]:
+                    - link "Exam Answer Frameworks" [ref=e475] [cursor=pointer]:
+                      - /url: exam-guides/exam-frameworks/
+                      - generic [ref=e476]: Exam Answer Frameworks
+                  - listitem [ref=e477]:
+                    - link "Key Statistics Reference" [ref=e478] [cursor=pointer]:
+                      - /url: exam-guides/statistics-reference/
+                      - generic [ref=e479]: Key Statistics Reference
+            - listitem [ref=e480]:
+              - link "📚 Master Study Notes (503+512)" [ref=e481] [cursor=pointer]:
+                - /url: MASTER_STUDY_NOTES/
+                - generic [ref=e482]: 📚 Master Study Notes (503+512)
+        - article [ref=e484]:
+          - heading "📚 Masters Exam Study Hub ¶" [level=1] [ref=e485]:
+            - text: 📚 Masters Exam Study Hub
+            - link "¶" [ref=e486] [cursor=pointer]:
+              - /url: "#masters-exam-study-hub"
+          - blockquote [ref=e487]:
+            - paragraph [ref=e488]:
+              - strong [ref=e489]: "Courses:"
+              - text: Microeconomics (Econ 501) · Macroeconomics (Econ 502) · Development Economics (Econ 503) · Political Economy (Econ 512) · Health Economics (Econ 507)
+              - strong [ref=e490]: "Structure:"
+              - text: Each topic has its own page with key arguments, definitions, statistics, and cross-links
+              - strong [ref=e491]:
+                - text: 🎯
+                - link "Browse Previous Final Exams by Batch →" [ref=e492] [cursor=pointer]:
+                  - /url: batch-finals/
+          - separator [ref=e493]
+          - heading "🧭 Course Navigation ¶" [level=2] [ref=e494]:
+            - text: 🧭 Course Navigation
+            - link "¶" [ref=e495] [cursor=pointer]:
+              - /url: "#course-navigation"
+          - table [ref=e498]:
+            - rowgroup [ref=e499]:
+              - row "Course Code Topics" [ref=e500]:
+                - columnheader "Course" [ref=e501]
+                - columnheader "Code" [ref=e502]
+                - columnheader "Topics" [ref=e503]
+            - rowgroup [ref=e504]:
+              - row "Microeconomics Econ 501 Consumer Theory, Welfare, Production, General Equilibrium" [ref=e505]:
+                - cell "Microeconomics" [ref=e506]:
+                  - strong [ref=e507]: Microeconomics
+                - cell "Econ 501" [ref=e508]
+                - cell "Consumer Theory, Welfare, Production, General Equilibrium" [ref=e509]
+              - row "Macroeconomics Econ 502 Solow, Ramsey, Endogenous Growth" [ref=e510]:
+                - cell "Macroeconomics" [ref=e511]:
+                  - strong [ref=e512]: Macroeconomics
+                - cell "Econ 502" [ref=e513]
+                - cell "Solow, Ramsey, Endogenous Growth" [ref=e514]
+              - row "Development Econ 503 Naila Kabeer, Venezuela, Labour Force Survey, Bangladesh Trade" [ref=e515]:
+                - cell "Development" [ref=e516]:
+                  - strong [ref=e517]: Development
+                - cell "Econ 503" [ref=e518]
+                - cell "Naila Kabeer, Venezuela, Labour Force Survey, Bangladesh Trade" [ref=e519]
+              - row "Political Economy Econ 512 Modernization, Dependency, Washington Consensus, Agriculture, Food Crisis, Dairy, RMG" [ref=e520]:
+                - cell "Political Economy" [ref=e521]:
+                  - strong [ref=e522]: Political Economy
+                - cell "Econ 512" [ref=e523]
+                - cell "Modernization, Dependency, Washington Consensus, Agriculture, Food Crisis, Dairy, RMG" [ref=e524]
+              - row "Health Economics Econ 507 Health care markets, CDA, insurance, CEA/CUA" [ref=e525]:
+                - cell "Health Economics" [ref=e526]:
+                  - strong [ref=e527]: Health Economics
+                - cell "Econ 507" [ref=e528]
+                - cell "Health care markets, CDA, insurance, CEA/CUA" [ref=e529]
+          - separator [ref=e530]
+          - heading "📐 ECON 501 — Microeconomics ¶" [level=2] [ref=e531]:
+            - text: 📐 ECON 501 — Microeconomics
+            - link "¶" [ref=e532] [cursor=pointer]:
+              - /url: "#econ-501-microeconomics"
+          - table [ref=e535]:
+            - rowgroup [ref=e536]:
+              - row "Resource Link" [ref=e537]:
+                - columnheader "Resource" [ref=e538]
+                - columnheader "Link" [ref=e539]
+            - rowgroup [ref=e540]:
+              - row "📖 Study Roadmap 10-day study plan →" [ref=e541]:
+                - cell "📖 Study Roadmap" [ref=e542]:
+                  - text: 📖
+                  - strong [ref=e543]: Study Roadmap
+                - cell "10-day study plan →" [ref=e544]:
+                  - link "10-day study plan →" [ref=e545] [cursor=pointer]:
+                    - /url: 501-Microeconomics/STUDY-ROADMAP/
+              - row "📝 Basics & Formulas Key definitions & formulas →" [ref=e546]:
+                - cell "📝 Basics & Formulas" [ref=e547]:
+                  - text: 📝
+                  - strong [ref=e548]: Basics & Formulas
+                - cell "Key definitions & formulas →" [ref=e549]:
+                  - link "Key definitions & formulas →" [ref=e550] [cursor=pointer]:
+                    - /url: 501-Microeconomics/basics/
+              - row "🃏 Exam Cheat Sheet Quick reference →" [ref=e551]:
+                - cell "🃏 Exam Cheat Sheet" [ref=e552]:
+                  - text: 🃏
+                  - strong [ref=e553]: Exam Cheat Sheet
+                - cell "Quick reference →" [ref=e554]:
+                  - link "Quick reference →" [ref=e555] [cursor=pointer]:
+                    - /url: 501-Microeconomics/EXAM-CHEAT-SHEET/
+              - row "✅ Consumer Theory 18 questions answered →" [ref=e556]:
+                - cell "✅ Consumer Theory" [ref=e557]:
+                  - text: ✅
+                  - strong [ref=e558]: Consumer Theory
+                - cell "18 questions answered →" [ref=e559]:
+                  - link "18 questions answered →" [ref=e560] [cursor=pointer]:
+                    - /url: 501-Microeconomics/answers-consumer-theory/
+              - row "✅ Demand & Production ~15 questions answered →" [ref=e561]:
+                - cell "✅ Demand & Production" [ref=e562]:
+                  - text: ✅
+                  - strong [ref=e563]: Demand & Production
+                - cell "~15 questions answered →" [ref=e564]:
+                  - link "~15 questions answered →" [ref=e565] [cursor=pointer]:
+                    - /url: 501-Microeconomics/answers-demand-production/
+              - row "✅ Welfare 20 questions answered →" [ref=e566]:
+                - cell "✅ Welfare" [ref=e567]:
+                  - text: ✅
+                  - strong [ref=e568]: Welfare
+                - cell "20 questions answered →" [ref=e569]:
+                  - link "20 questions answered →" [ref=e570] [cursor=pointer]:
+                    - /url: 501-Microeconomics/answers-welfare/
+              - row "✅ GE, Game Theory & Trade 25 questions answered →" [ref=e571]:
+                - cell "✅ GE, Game Theory & Trade" [ref=e572]:
+                  - text: ✅
+                  - strong [ref=e573]: GE, Game Theory & Trade
+                - cell "25 questions answered →" [ref=e574]:
+                  - link "25 questions answered →" [ref=e575] [cursor=pointer]:
+                    - /url: 501-Microeconomics/answers-ge-game-extern-trade/
+              - row "🔗 Cross-Reference Map Technique & source maps →" [ref=e576]:
+                - cell "🔗 Cross-Reference Map" [ref=e577]:
+                  - text: 🔗
+                  - strong [ref=e578]: Cross-Reference Map
+                - cell "Technique & source maps →" [ref=e579]:
+                  - link "Technique & source maps →" [ref=e580] [cursor=pointer]:
+                    - /url: 501-Microeconomics/answers-cross-reference/
+              - row "❓ Questions by Topic Topic-wise index with answers →" [ref=e581]:
+                - cell "❓ Questions by Topic" [ref=e582]:
+                  - text: ❓
+                  - strong [ref=e583]: Questions by Topic
+                - cell "Topic-wise index with answers →" [ref=e584]:
+                  - link "Topic-wise index with answers →" [ref=e585] [cursor=pointer]:
+                    - /url: 501-Microeconomics/micro-questions-topic-wise-answered/
+              - row "❓ Questions by Year Year-wise index with answers →" [ref=e586]:
+                - cell "❓ Questions by Year" [ref=e587]:
+                  - text: ❓
+                  - strong [ref=e588]: Questions by Year
+                - cell "Year-wise index with answers →" [ref=e589]:
+                  - link "Year-wise index with answers →" [ref=e590] [cursor=pointer]:
+                    - /url: 501-Microeconomics/micro-questions-year-wise-answered/
+              - row "🎯 Batch 47 (2022) MSc past paper →" [ref=e591]:
+                - cell "🎯 Batch 47 (2022)" [ref=e592]:
+                  - text: 🎯
+                  - strong [ref=e593]: Batch 47 (2022)
+                - cell "MSc past paper →" [ref=e594]:
+                  - link "MSc past paper →" [ref=e595] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/micro-501/
+              - row "🎯 Batch 48 (2023) MSc past paper →" [ref=e596]:
+                - cell "🎯 Batch 48 (2023)" [ref=e597]:
+                  - text: 🎯
+                  - strong [ref=e598]: Batch 48 (2023)
+                - cell "MSc past paper →" [ref=e599]:
+                  - link "MSc past paper →" [ref=e600] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/micro-501/
+          - paragraph [ref=e601]:
+            - strong [ref=e602]: "Topics:"
+            - text: Consumer Theory & Preferences · Welfare & Production · General Equilibrium · CV/EV/CS · Edgeworth Box · Pareto Optimality · Duality · Slutsky
+          - separator [ref=e603]
+          - heading "📈 ECON 502 — Macroeconomics ¶" [level=2] [ref=e604]:
+            - text: 📈 ECON 502 — Macroeconomics
+            - link "¶" [ref=e605] [cursor=pointer]:
+              - /url: "#econ-502-macroeconomics"
+          - table [ref=e608]:
+            - rowgroup [ref=e609]:
+              - row "Resource Link" [ref=e610]:
+                - columnheader "Resource" [ref=e611]
+                - columnheader "Link" [ref=e612]
+            - rowgroup [ref=e613]:
+              - row "📖 Overview README →" [ref=e614]:
+                - cell "📖 Overview" [ref=e615]:
+                  - text: 📖
+                  - strong [ref=e616]: Overview
+                - cell "README →" [ref=e617]:
+                  - link "README →" [ref=e618] [cursor=pointer]:
+                    - /url: macroeconomics/
+              - row "📝 Basics Foundational concepts →" [ref=e619]:
+                - cell "📝 Basics" [ref=e620]:
+                  - text: 📝
+                  - strong [ref=e621]: Basics
+                - cell "Foundational concepts →" [ref=e622]:
+                  - link "Foundational concepts →" [ref=e623] [cursor=pointer]:
+                    - /url: macroeconomics/basics/
+              - row "🎯 Batch 47 (2022) MSc past paper →" [ref=e624]:
+                - cell "🎯 Batch 47 (2022)" [ref=e625]:
+                  - text: 🎯
+                  - strong [ref=e626]: Batch 47 (2022)
+                - cell "MSc past paper →" [ref=e627]:
+                  - link "MSc past paper →" [ref=e628] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/macro-502/
+              - row "🎯 Batch 48 (2023) MSc past paper →" [ref=e629]:
+                - cell "🎯 Batch 48 (2023)" [ref=e630]:
+                  - text: 🎯
+                  - strong [ref=e631]: Batch 48 (2023)
+                - cell "MSc past paper →" [ref=e632]:
+                  - link "MSc past paper →" [ref=e633] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/macro-502/
+          - paragraph [ref=e634]:
+            - strong [ref=e635]: "Topics:"
+            - text: Solow Growth Model · Ramsey-Cass-Koopmans · Endogenous Growth & R&D · Golden Rule · Phase Diagrams
+          - separator [ref=e636]
+          - heading "🌱 ECON 503 — Development Economics ¶" [level=2] [ref=e637]:
+            - text: 🌱 ECON 503 — Development Economics
+            - link "¶" [ref=e638] [cursor=pointer]:
+              - /url: "#econ-503-development-economics"
+          - table [ref=e641]:
+            - rowgroup [ref=e642]:
+              - row "Topic Basics Full Notes" [ref=e643]:
+                - columnheader "Topic" [ref=e644]
+                - columnheader "Basics" [ref=e645]
+                - columnheader "Full Notes" [ref=e646]
+            - rowgroup [ref=e647]:
+              - row "1. Naila Kabeer Basics → Full Notes →" [ref=e648]:
+                - cell "1. Naila Kabeer" [ref=e649]
+                - cell "Basics →" [ref=e650]:
+                  - link "Basics →" [ref=e651] [cursor=pointer]:
+                    - /url: 503-Development/naila-kabeer/basics/
+                - cell "Full Notes →" [ref=e652]:
+                  - link "Full Notes →" [ref=e653] [cursor=pointer]:
+                    - /url: 503-Development/naila-kabeer/
+              - row "2. Venezuela Basics → Full Notes →" [ref=e654]:
+                - cell "2. Venezuela" [ref=e655]
+                - cell "Basics →" [ref=e656]:
+                  - link "Basics →" [ref=e657] [cursor=pointer]:
+                    - /url: 503-Development/venezuela/basics/
+                - cell "Full Notes →" [ref=e658]:
+                  - link "Full Notes →" [ref=e659] [cursor=pointer]:
+                    - /url: 503-Development/venezuela/
+              - row "3. Labour Force Survey Basics → Full Notes →" [ref=e660]:
+                - cell "3. Labour Force Survey" [ref=e661]
+                - cell "Basics →" [ref=e662]:
+                  - link "Basics →" [ref=e663] [cursor=pointer]:
+                    - /url: 503-Development/labour-force-survey/basics/
+                - cell "Full Notes →" [ref=e664]:
+                  - link "Full Notes →" [ref=e665] [cursor=pointer]:
+                    - /url: 503-Development/labour-force-survey/
+              - row "4. Bangladesh Trade Basics → Full Notes →" [ref=e666]:
+                - cell "4. Bangladesh Trade" [ref=e667]
+                - cell "Basics →" [ref=e668]:
+                  - link "Basics →" [ref=e669] [cursor=pointer]:
+                    - /url: 503-Development/bangladesh-trade/basics/
+                - cell "Full Notes →" [ref=e670]:
+                  - link "Full Notes →" [ref=e671] [cursor=pointer]:
+                    - /url: 503-Development/bangladesh-trade/
+          - paragraph [ref=e672]:
+            - strong [ref=e673]: "Key Focus:"
+            - text: Bangladesh paradox, women's empowerment, oil dependency, LFS definitions, RMG concentration
+          - separator [ref=e674]
+          - heading "🏛️ ECON 512 — Political Economy ¶" [level=2] [ref=e675]:
+            - text: 🏛️ ECON 512 — Political Economy
+            - link "¶" [ref=e676] [cursor=pointer]:
+              - /url: "#econ-512-political-economy"
+          - table [ref=e679]:
+            - rowgroup [ref=e680]:
+              - row "Topic Basics Full Notes" [ref=e681]:
+                - columnheader "Topic" [ref=e682]
+                - columnheader "Basics" [ref=e683]
+                - columnheader "Full Notes" [ref=e684]
+            - rowgroup [ref=e685]:
+              - row "1. Modernization Theory Basics → Full Notes →" [ref=e686]:
+                - cell "1. Modernization Theory" [ref=e687]
+                - cell "Basics →" [ref=e688]:
+                  - link "Basics →" [ref=e689] [cursor=pointer]:
+                    - /url: 512-Political-Economy/modernization-theory/basics/
+                - cell "Full Notes →" [ref=e690]:
+                  - link "Full Notes →" [ref=e691] [cursor=pointer]:
+                    - /url: 512-Political-Economy/modernization-theory/
+              - row "2. Dependency Theory Basics → Full Notes →" [ref=e692]:
+                - cell "2. Dependency Theory" [ref=e693]
+                - cell "Basics →" [ref=e694]:
+                  - link "Basics →" [ref=e695] [cursor=pointer]:
+                    - /url: 512-Political-Economy/dependency-theory/basics/
+                - cell "Full Notes →" [ref=e696]:
+                  - link "Full Notes →" [ref=e697] [cursor=pointer]:
+                    - /url: 512-Political-Economy/dependency-theory/
+              - row "3. Washington Consensus Basics → Full Notes →" [ref=e698]:
+                - cell "3. Washington Consensus" [ref=e699]
+                - cell "Basics →" [ref=e700]:
+                  - link "Basics →" [ref=e701] [cursor=pointer]:
+                    - /url: 512-Political-Economy/washington-consensus/basics/
+                - cell "Full Notes →" [ref=e702]:
+                  - link "Full Notes →" [ref=e703] [cursor=pointer]:
+                    - /url: 512-Political-Economy/washington-consensus/
+              - row "4. Free Trade in Agriculture Basics → Full Notes →" [ref=e704]:
+                - cell "4. Free Trade in Agriculture" [ref=e705]
+                - cell "Basics →" [ref=e706]:
+                  - link "Basics →" [ref=e707] [cursor=pointer]:
+                    - /url: 512-Political-Economy/free-trade-agriculture/basics/
+                - cell "Full Notes →" [ref=e708]:
+                  - link "Full Notes →" [ref=e709] [cursor=pointer]:
+                    - /url: 512-Political-Economy/free-trade-agriculture/
+              - row "5. Food Crisis (Patnaik) Basics → Full Notes →" [ref=e710]:
+                - cell "5. Food Crisis (Patnaik)" [ref=e711]
+                - cell "Basics →" [ref=e712]:
+                  - link "Basics →" [ref=e713] [cursor=pointer]:
+                    - /url: 512-Political-Economy/food-crisis/basics/
+                - cell "Full Notes →" [ref=e714]:
+                  - link "Full Notes →" [ref=e715] [cursor=pointer]:
+                    - /url: 512-Political-Economy/food-crisis/
+              - row "6. Bangladesh Dairy Basics → Full Notes →" [ref=e716]:
+                - cell "6. Bangladesh Dairy" [ref=e717]
+                - cell "Basics →" [ref=e718]:
+                  - link "Basics →" [ref=e719] [cursor=pointer]:
+                    - /url: 512-Political-Economy/bangladesh-dairy/basics/
+                - cell "Full Notes →" [ref=e720]:
+                  - link "Full Notes →" [ref=e721] [cursor=pointer]:
+                    - /url: 512-Political-Economy/bangladesh-dairy/
+              - row "7. RMG Sector Basics → Full Notes →" [ref=e722]:
+                - cell "7. RMG Sector" [ref=e723]
+                - cell "Basics →" [ref=e724]:
+                  - link "Basics →" [ref=e725] [cursor=pointer]:
+                    - /url: 512-Political-Economy/rmg-sector/basics/
+                - cell "Full Notes →" [ref=e726]:
+                  - link "Full Notes →" [ref=e727] [cursor=pointer]:
+                    - /url: 512-Political-Economy/rmg-sector/
+              - row "8. Cash Crops vs Food Crops Basics → Full Notes →" [ref=e728]:
+                - cell "8. Cash Crops vs Food Crops" [ref=e729]
+                - cell "Basics →" [ref=e730]:
+                  - link "Basics →" [ref=e731] [cursor=pointer]:
+                    - /url: 512-Political-Economy/cash-crops/basics/
+                - cell "Full Notes →" [ref=e732]:
+                  - link "Full Notes →" [ref=e733] [cursor=pointer]:
+                    - /url: 512-Political-Economy/cash-crops/
+          - separator [ref=e734]
+          - heading "🏥 ECON 507 — Health Economics ¶" [level=2] [ref=e735]:
+            - text: 🏥 ECON 507 — Health Economics
+            - link "¶" [ref=e736] [cursor=pointer]:
+              - /url: "#econ-507-health-economics"
+          - table [ref=e739]:
+            - rowgroup [ref=e740]:
+              - row "Resource Link" [ref=e741]:
+                - columnheader "Resource" [ref=e742]
+                - columnheader "Link" [ref=e743]
+            - rowgroup [ref=e744]:
+              - row "📖 Overview README →" [ref=e745]:
+                - cell "📖 Overview" [ref=e746]:
+                  - text: 📖
+                  - strong [ref=e747]: Overview
+                - cell "README →" [ref=e748]:
+                  - link "README →" [ref=e749] [cursor=pointer]:
+                    - /url: health-economics/
+              - row "📝 Basics Foundational concepts →" [ref=e750]:
+                - cell "📝 Basics" [ref=e751]:
+                  - text: 📝
+                  - strong [ref=e752]: Basics
+                - cell "Foundational concepts →" [ref=e753]:
+                  - link "Foundational concepts →" [ref=e754] [cursor=pointer]:
+                    - /url: health-economics/basics/
+              - row "🎯 Batch 47 (2022) MSc past paper →" [ref=e755]:
+                - cell "🎯 Batch 47 (2022)" [ref=e756]:
+                  - text: 🎯
+                  - strong [ref=e757]: Batch 47 (2022)
+                - cell "MSc past paper →" [ref=e758]:
+                  - link "MSc past paper →" [ref=e759] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/health-507/
+              - row "🎯 Batch 48 (2023) MSc past paper →" [ref=e760]:
+                - cell "🎯 Batch 48 (2023)" [ref=e761]:
+                  - text: 🎯
+                  - strong [ref=e762]: Batch 48 (2023)
+                - cell "MSc past paper →" [ref=e763]:
+                  - link "MSc past paper →" [ref=e764] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/health-507/
+          - separator [ref=e765]
+          - heading "🎯 Previous Final Exams by Batch ¶" [level=2] [ref=e766]:
+            - text: 🎯 Previous Final Exams by Batch
+            - link "¶" [ref=e767] [cursor=pointer]:
+              - /url: "#previous-final-exams-by-batch"
+          - table [ref=e770]:
+            - rowgroup [ref=e771]:
+              - row "Batch Year Level Subjects" [ref=e772]:
+                - columnheader "Batch" [ref=e773]
+                - columnheader "Year" [ref=e774]
+                - columnheader "Level" [ref=e775]
+                - columnheader "Subjects" [ref=e776]
+            - rowgroup [ref=e777]:
+              - row "47 2022 MSc Micro 501, Macro 502, Dev 503, Health 507, Political 512" [ref=e778]:
+                - cell "47" [ref=e779]:
+                  - strong [ref=e780]: "47"
+                - cell "2022" [ref=e781]
+                - cell "MSc" [ref=e782]:
+                  - strong [ref=e783]: MSc
+                - cell "Micro 501, Macro 502, Dev 503, Health 507, Political 512" [ref=e784]:
+                  - link "Micro 501" [ref=e785] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/micro-501/
+                  - text: ","
+                  - link "Macro 502" [ref=e786] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/macro-502/
+                  - text: ","
+                  - link "Dev 503" [ref=e787] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/dev-503/
+                  - text: ","
+                  - link "Health 507" [ref=e788] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/health-507/
+                  - text: ","
+                  - link "Political 512" [ref=e789] [cursor=pointer]:
+                    - /url: batch-finals/batch-47/political-512/
+              - row "48 2023 MSc Micro 501, Macro 502, Dev 503, Health 507" [ref=e790]:
+                - cell "48" [ref=e791]:
+                  - strong [ref=e792]: "48"
+                - cell "2023" [ref=e793]
+                - cell "MSc" [ref=e794]:
+                  - strong [ref=e795]: MSc
+                - cell "Micro 501, Macro 502, Dev 503, Health 507" [ref=e796]:
+                  - link "Micro 501" [ref=e797] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/micro-501/
+                  - text: ","
+                  - link "Macro 502" [ref=e798] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/macro-502/
+                  - text: ","
+                  - link "Dev 503" [ref=e799] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/dev-503/
+                  - text: ","
+                  - link "Health 507" [ref=e800] [cursor=pointer]:
+                    - /url: batch-finals/batch-48/health-507/
+              - row "46 2020 Hons Micro 401, Macro 402, Health 404" [ref=e801]:
+                - cell "46" [ref=e802]
+                - cell "2020" [ref=e803]
+                - cell "Hons" [ref=e804]
+                - cell "Micro 401, Macro 402, Health 404" [ref=e805]:
+                  - link "Micro 401" [ref=e806] [cursor=pointer]:
+                    - /url: batch-finals/batch-46/micro-401/
+                  - text: ","
+                  - link "Macro 402" [ref=e807] [cursor=pointer]:
+                    - /url: batch-finals/batch-46/macro-402/
+                  - text: ","
+                  - link "Health 404" [ref=e808] [cursor=pointer]:
+                    - /url: batch-finals/batch-46/health-404/
+          - separator [ref=e809]
+          - heading "🧪 Exam Guides ¶" [level=2] [ref=e810]:
+            - text: 🧪 Exam Guides
+            - link "¶" [ref=e811] [cursor=pointer]:
+              - /url: "#exam-guides"
+          - table [ref=e814]:
+            - rowgroup [ref=e815]:
+              - row "Guide What It Contains" [ref=e816]:
+                - columnheader "Guide" [ref=e817]
+                - columnheader "What It Contains" [ref=e818]
+            - rowgroup [ref=e819]:
+              - row "Theorists Quick Reference All key theorists with core contributions (sorted by course)" [ref=e820]:
+                - cell "Theorists Quick Reference" [ref=e821]:
+                  - link "Theorists Quick Reference" [ref=e822] [cursor=pointer]:
+                    - /url: exam-guides/theorists-reference/
+                - cell "All key theorists with core contributions (sorted by course)" [ref=e823]
+              - row "Exam Answer Frameworks 5 structured outlines for common question types" [ref=e824]:
+                - cell "Exam Answer Frameworks" [ref=e825]:
+                  - link "Exam Answer Frameworks" [ref=e826] [cursor=pointer]:
+                    - /url: exam-guides/exam-frameworks/
+                - cell "5 structured outlines for common question types" [ref=e827]
+              - row "Key Statistics Reference All essential numbers for both courses" [ref=e828]:
+                - cell "Key Statistics Reference" [ref=e829]:
+                  - link "Key Statistics Reference" [ref=e830] [cursor=pointer]:
+                    - /url: exam-guides/statistics-reference/
+                - cell "All essential numbers for both courses" [ref=e831]
+              - row "Master Study Notes Comprehensive notes for Econ 503 & 512" [ref=e832]:
+                - cell "Master Study Notes" [ref=e833]:
+                  - link "Master Study Notes" [ref=e834] [cursor=pointer]:
+                    - /url: MASTER_STUDY_NOTES/
+                - cell "Comprehensive notes for Econ 503 & 512" [ref=e835]
+          - separator [ref=e836]
+          - heading "🔗 Key Cross-Cutting Themes ¶" [level=2] [ref=e837]:
+            - text: 🔗 Key Cross-Cutting Themes
+            - link "¶" [ref=e838] [cursor=pointer]:
+              - /url: "#key-cross-cutting-themes"
+          - table [ref=e841]:
+            - rowgroup [ref=e842]:
+              - row "Theme Appears In" [ref=e843]:
+                - columnheader "Theme" [ref=e844]
+                - columnheader "Appears In" [ref=e845]
+            - rowgroup [ref=e846]:
+              - row "Export dependency / resource curse Venezuela, Bangladesh Trade (503); RMG, Cash Crops, Food Crisis (512)" [ref=e847]:
+                - cell "Export dependency / resource curse" [ref=e848]:
+                  - strong [ref=e849]: Export dependency / resource curse
+                - cell "Venezuela, Bangladesh Trade (503); RMG, Cash Crops, Food Crisis (512)" [ref=e850]
+              - row "State vs market Venezuela (503); Modernization, Dependency, WC (512)" [ref=e851]:
+                - cell "State vs market" [ref=e852]:
+                  - strong [ref=e853]: State vs market
+                - cell "Venezuela (503); Modernization, Dependency, WC (512)" [ref=e854]
+              - row "Role of IFIs (WB/IMF) Trade policy (503); Washington Consensus, Agriculture (512)" [ref=e855]:
+                - cell "Role of IFIs (WB/IMF)" [ref=e856]:
+                  - strong [ref=e857]: Role of IFIs (WB/IMF)
+                - cell "Trade policy (503); Washington Consensus, Agriculture (512)" [ref=e858]
+              - row "Food security & land use Free Trade, Food Crisis, Dairy (512)" [ref=e859]:
+                - cell "Food security & land use" [ref=e860]:
+                  - strong [ref=e861]: Food security & land use
+                - cell "Free Trade, Food Crisis, Dairy (512)" [ref=e862]
+              - row "Value addition / industrialization Bangladesh Trade (503); RMG Sector (512)" [ref=e863]:
+                - cell "Value addition / industrialization" [ref=e864]:
+                  - strong [ref=e865]: Value addition / industrialization
+                - cell "Bangladesh Trade (503); RMG Sector (512)" [ref=e866]
+              - row "Gender & development Naila Kabeer (503)" [ref=e867]:
+                - cell "Gender & development" [ref=e868]:
+                  - strong [ref=e869]: Gender & development
+                - cell "Naila Kabeer (503)" [ref=e870]
+              - row "Growth & convergence Solow, Ramsey (Macro); Bangladesh as outlier (503)" [ref=e871]:
+                - cell "Growth & convergence" [ref=e872]:
+                  - strong [ref=e873]: Growth & convergence
+                - cell "Solow, Ramsey (Macro); Bangladesh as outlier (503)" [ref=e874]
+              - row "Pareto optimality & welfare General Equilibrium (Micro)" [ref=e875]:
+                - cell "Pareto optimality & welfare" [ref=e876]:
+                  - strong [ref=e877]: Pareto optimality & welfare
+                - cell "General Equilibrium (Micro)" [ref=e878]
+              - row "General equilibrium thinking Micro GE → Macro steady state → Development sectoral linkages" [ref=e879]:
+                - cell "General equilibrium thinking" [ref=e880]:
+                  - strong [ref=e881]: General equilibrium thinking
+                - cell "Micro GE → Macro steady state → Development sectoral linkages" [ref=e882]
+          - separator [ref=e883]
+          - blockquote [ref=e884]:
+            - paragraph [ref=e885]:
+              - strong [ref=e886]: "Study Tip:"
+              - text: Start with a
+              - strong [ref=e887]: Basics
+              - text: page if you're new to a topic, move to the
+              - strong [ref=e888]: Full Notes
+              - text: for exam depth, follow
+              - strong [ref=e889]: cross-links
+              - text: to related topics, then test yourself using
+              - strong [ref=e890]: past exam papers
+              - text: .
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e891]:
+      - generic [ref=e893]:
+        - generic [ref=e894]:
+          - text: Made with
+          - link "Material for MkDocs" [ref=e895] [cursor=pointer]:
+            - /url: https://squidfunk.github.io/mkdocs-material/
+        - link "github.com" [ref=e897] [cursor=pointer]:
+          - /url: https://github.com/USERNAME/REPONAME
+          - img [ref=e898]

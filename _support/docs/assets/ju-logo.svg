@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B5E20;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="book-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Shield background -->
+  <path d="M100 10 L180 50 L180 110 C180 155 145 185 100 195 C55 185 20 155 20 110 L20 50 Z"
+        fill="url(#shield-grad)" stroke="#0D3B0F" stroke-width="2"/>
+  <!-- Inner shield border -->
+  <path d="M100 22 L168 56 L168 108 C168 148 138 174 100 183 C62 174 32 148 32 108 L32 56 Z"
+        fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <!-- Book icon -->
+  <g transform="translate(100, 95) scale(1.2)">
+    <!-- Book spine -->
+    <rect x="-4" y="-28" width="8" height="50" rx="2" fill="url(#book-grad)"/>
+    <!-- Left page -->
+    <path d="M-4 -26 Q-24 -30 -36 -26 L-36 22 Q-24 18 -4 22 Z"
+          fill="url(#book-grad)" opacity="0.9"/>
+    <!-- Right page -->
+    <path d="M4 -26 Q24 -30 36 -26 L36 22 Q24 18 4 22 Z"
+          fill="url(#book-grad)" opacity="0.7"/>
+    <!-- Page lines left -->
+    <line x1="-28" y1="-14" x2="-8" y2="-12" stroke="#FFF8E1" stroke-width="1.2" opacity="0.6"/>
+    <line x1="-28" y1="-6" x2="-8" y2="-4" stroke="#FFF8E1" stroke-width="1.2" opacity="0.6"/>
+    <line x1="-28" y1="2" x2="-8" y2="4" stroke="#FFF8E1" stroke-width="1.2" opacity="0.6"/>
+    <!-- Page lines right -->
+    <line x1="28" y1="-14" x2="8" y2="-12" stroke="#FFF8E1" stroke-width="1.2" opacity="0.6"/>
+    <line x1="28" y1="-6" x2="8" y2="-4" stroke="#FFF8E1" stroke-width="1.2" opacity="0.6"/>
+    <line x1="28" y1="2" x2="8" y2="4" stroke="#FFF8E1" stroke-width="1.2" opacity="0.6"/>
+  </g>
+  <!-- JU text -->
+  <text x="100" y="155" font-family="'Playfair Display', 'Georgia', serif" font-size="20"
+        font-weight="700" fill="#FFF8E1" text-anchor="middle" letter-spacing="3">JU</text>
+  <!-- Small book/wisdom dot -->
+  <circle cx="100" cy="173" r="3" fill="#FFB300"/>
+</svg>

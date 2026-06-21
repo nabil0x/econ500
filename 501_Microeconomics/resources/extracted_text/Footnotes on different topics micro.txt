@@ -1,0 +1,267 @@
+Preferences are subjective inclinations, whereas choices are decisions made in a specific context 
+Preference:
+A preference is a pre-existing inclination or bias towards a particular option. It's based on individual tastes, values, or past experiences. For example, someone might have a preference for tea over coffee, or for a certain type of music.
+Choice:
+A choice is the act of selecting one option from a set of available options. It can be influenced by preferences, but it can also be based on other factors like practicality, necessity, or external circumstances. For example, if someone is offered a choice between a coffee and a tea, they might choose tea because they prefer it, or they might choose coffee because it's the only option available at the moment. 
+Key differences summarized:
+Nature:
+Preference is a feeling or inclination, while choice is an action or decision.
+Timeframe:
+Preferences can be long-standing, while choices are made in specific situations.
+Influence:
+Preferences can influence choices, but choices can also be made without a strong preference. 
+Not all binary relations satisfy completeness
+, 
+meaning not all pairs of alternatives can be compared. ​ Examples include relations like "is the brother of" or "is the father of," where some pairs are not comparable.
+A binary relation is a way to compare two elements from a set. For example, given two alternatives x and y, a binary relation can express:
+Strict preference
+: 
+x
+≻
+y
+ (x is preferred to y). ​
+Indifference
+: 
+x
+∼
+y
+ (x and y are equally preferred). ​
+Weak preference
+: 
+x
+⪰
+y
+ (x is at least as preferred as y). ​
+Key properties of binary relations include:
+Completeness
+: Every pair of alternatives can be compared (e.g., 
+x
+≻
+y
+, 
+y
+≻
+x
+, or 
+x
+∼
+y
+). ​
+Transitivity
+: If 
+x
+⪰
+y
+ and 
+y
+⪰
+z
+, then 
+x
+⪰
+z
+. ​
+Not all binary relations satisfy completeness or transitivity. ​ For example:
+"Is the brother of" is not complete because not all individuals are brothers. ​
+"Is the father of" is not transitive because relationships don't extend beyond direct parentage.
+Reflexivity
+ is a property of a binary relation where every element is at least as preferred to itself. ​ In the context of preferences:
+A preference relation satisfies 
+reflexivity
+ if, for any alternative x, we have: 
+x
+∼
+x
+: The individual is indifferent to the same bundle. ​
+x
+⪰
+x
+: The bundle is weakly preferred to itself. ​
+This ensures that every alternative belongs to at least one indifference set, which includes itself. ​ Reflexivity is a basic assumption in rational preference relations. ​
+A 
+rational preference
+ is a binary relation that satisfies two key properties:
+Completeness
+: For any two alternatives x and y, the individual can compare them. ​ This means:
+Either 
+x
+⪰
+y
+ (x is at least as preferred as y), ​
+Or 
+y
+⪰
+x
+ (y is at least as preferred as x),
+Or both (
+x
+∼
+y
+, meaning the individual is indifferent between x and y). ​
+Transitivity
+: Preferences are consistent across comparisons. If:
+x
+⪰
+y
+ (x is at least as preferred as y), ​
+And 
+y
+⪰
+z
+ (y is at least as preferred as z),
+Then 
+x
+⪰
+z
+ (x is at least as preferred as z).
+These properties ensure that preferences are logically coherent and can be used to model decision-making behavior. ​
+An example of preferences violating 
+transitivity
+ is as follows:
+Suppose an individual has the following preferences for bundles of goods:
+a
+≻
+b
+ (the individual prefers a to b), ​
+b
+≻
+c
+ (the individual prefers b to c),
+c
+≻
+a
+ (the individual prefers c to a).
+This creates a 
+preference cycle
+: 
+a
+≻
+b
+≻
+c
+≻
+a
+, which violates transitivity because a should be preferred to c if 
+a
+≻
+b
+ and 
+b
+≻
+c
+. ​
+Such cycles can lead to irrational decision-making, as the individual could endlessly switch between options without settling on a choice. ​
+Sources of intransitivity 
+Sources of intransitivity in economics include psychological factors such as regret theory, costly information gathering, and imperfect discrimination, which lead to inconsistent choices. Furthermore, multiplicity of preference criteria (using different reasoning for each comparison), the presence of cyclical relationships (as in game theory), and the inherently approximate nature of subjective judgments can cause intransitive preferences to emerge.
+ 
+Psychological Factors
+Regret Theory
+:
+People may experience regret if their chosen option turns out to be inferior after the decision, leading to a reversal of preference in similar future choices.
+ 
+Costly Information
+:
+When acquiring and organizing information about options is costly, individuals may not fully evaluate all alternatives, resulting in potentially intransitive preferences.
+ 
+Imperfect Discrimination
+:
+The inability to perfectly distinguish or compare items, especially when comparisons are based on subjective and approximate judgments, can cause intransitivity.
+ 
+Structural and Systemic Factors
+Multiplicity of Criteria
+:
+When different criteria are used to compare options (e.g., price vs. quality for one pair and size for another), it can lead to intransitive patterns, as demonstrated in restaurant preferences.
+ 
+Cyclical Relationships
+:
+In systems with cyclic dynamics, like rock-paper-scissors, intransitivity is a known feature, where A is preferred to B, B to C, and C to A, creating an endless loop.
+ 
+Imperfect Measurement
+:
+In economic contexts, the "measurement" of an option is subjective and done by the decision-maker themselves, unlike objective physical measurements, leading to inconsistencies due to approximations and a 
+"
+just noticeable difference
+"
+ effect.
+ 
+Empirical and Theoretical Evidence
+Experimental studies in economics and psychology have found evidence of intransitive behavior in actual consumer and financial decisions.
+ 
+Models of preference have been developed that do not require the transitivity assumption, which can better explain observed empirical evidence of intransitive choices.
+ 
+The Condorcet paradox, also known as the 
+voting paradox
+, demonstrates that majority rule can lead to intransitive outcomes, meaning that even when a majority prefers one option over another, the overall outcome can be self-contradictory and inconsistent.
+Here's how it works: Imagine three voters (or groups of voters) with the following preferences over three options (A, B, and C): 
+Voter 1:
+ A > B > C (prefers A 
+over
+ B, and B over C)
+Voter 2:
+ B > C > A (prefers B over C, and 
+C over
+ A)
+Voter 3:
+ C > A > B (prefers 
+C over
+ A, and 
+A
+ 
+over
+ B)
+Now, let's consider pairwise comparisons: 
+A vs. B:
+ A majority (Voters 1 and 3) prefers A 
+over
+ B.
+B vs. C:
+ A majority (Voters 1 and 2) prefers B over C.
+C vs. A:
+ A majority (Voters 2 and 3) prefers 
+C over
+ A.
+Notice the circular preference: A is preferred to B, B is preferred to C, but C is preferred to A. This creates a paradox because there's no single option that is preferred by a majority over all other options, despite each option having a majority against one of the others. This highlights a fundamental challenge in collective decision-making using majority rule, as it can lead to inconsistent and potentially undesirable outcomes. 
+Monotonocity
+ 
+In economics, monotonicity means that "more is better," implying that increasing the quantity of any commodity, or increasing the quantity of a production factor, will always lead to a better outcome or allow for at least the same output. For consumer preferences, this means a bundle with more of a good is always preferred to a bundle with less. In production, it means a firm can produce at least the same amount of output with more inputs, or produce more output with the same inputs.
+ 
+Monotonic Preference 
+A consumer’s preferences are monotonic 
+iff
+ between any two bundles, the consumer prefers the bundle that has more of at least one of the goods and no less of the other good as compared to other bundles. Thus, monotonic preference means that a rational consumer always prefers more of a good as it offers the consumer a higher level of satisfaction. 
+Monotonicity of Consumer Preferences
+"More is Better":
+This is the core principle. A consumer will always prefer to have more of a good rather than less, assuming it's a "good" and not an "economic bad" like pollution.
+ 
+Indifference Curves
+:
+This assumption leads to downward-sloping indifference curves. To remain indifferent between two bundles, if you increase one commodity, you must decrease the other. If both increase, you must be better off.
+ 
+No "
+Bads
+":
+The assumption requires that all goods are beneficial. If a commodity is an economic "bad" (like pollution), then increasing it would make a consumer worse off, violating the assumption of monotonicity.
+ 
+Monotonicity in Production
+ 
+More Input, More or Same Output:
+This principle states that using more of a factor input will allow a producer to produce at least the same level of output, and potentially more.
+No Diminishing Returns to Scale at a Basic Level:
+While diminishing returns can occur at a point, the fundamental monotonicity in production means you can always increase output by adding more input, even if the marginal increase becomes smaller.
+Example:
+If you can produce 1 unit of output with 2 units of labor and 1 unit of capital, you can still produce 1 unit of output by increasing the capital to 2, or increasing the labor.
+Q. 
+Are Cobb-Douglas preferences monotone?
+local non-satiation 
+In economics, local non-satiation is an assumption about consumer preferences, stating that for any bundle of goods, there is always another, arbitrarily close bundle that the consumer would prefer. This means a consumer is never fully satisfied; they can always get a slightly better bundle by making small changes to their consumption, even if the changes are minute. It's a foundational concept for consumer theory, ensuring that consumers have an incentive to consume more and that their utility can be increased by adding to their goods. 
+Key Aspects of Local Non-Satiation
+Arbitrarily Close:
+The "local" part of the term signifies that the preferred bundle doesn't have to be significantly different; it just needs to be infinitesimally closer to the original bundle. 
+Strictly Preferred:
+The new bundle provides a higher level of satisfaction or utility, not just an equal one. 
+Axiom of Consumer Behavior:
+It's a basic assumption that economists use to model how consumers make choices and what factors influence their decisions. 
+Implication for Decisions:
+If a consumer always prefers a slightly better bundle, it implies that they will always want more goods, and any restriction on their choices (like a reduction in their wealth or available goods) will decrease their satisfaction. 
+Example
+Imagine you have a basket of 10 apples. According to local non-satiation, if you have just 10 apples, there is always a bundle with 10.00001 apples (or something very similar and close) that you would prefer. This concept applies to any collection of goods, not just apples. 

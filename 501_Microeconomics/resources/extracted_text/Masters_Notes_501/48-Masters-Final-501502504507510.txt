@@ -1,0 +1,712 @@
+Department ol Economics
+Jahangirnagar University
+M.Sc. Final Examination 2023
+Course No: 501 (Advanced Microcconomic Theory)
+Full Marks: 70 Time: Four Hours
+Answer any five of the following questions.
+All parts of a question mustbe answered consecutively
+
+1. a) Assume there are only two goods. X. and ¥ Prove that quasi-concave utility U (X, V) is
+identical to AMRS/dX < 0 &)
+
+b) Afler grading exams, your instructor only obtains utility from his favorite cocktail- the Negrom.
+
+Each Negroni consists of | ounce of Gin. | ounce of red Vermouth, and | ounce of Campari. Let
+
+G stand for ounces of Gin, I' stands for ounces of Vermouth, and C stands for ounces of Campari.
+
+Each good also has a pricc denoted by £y, P, and £, respectively.
+
+i) Write your instructor's utility function. ()
+i) Find his Marshallian demand for Gin. (2)
+iii) Find his Hicksian demand for Campari ()
+iv) Find the expenditure function ()
+
+¢) U =X + In (Y). Find the demands for X and Y. Suppose you only have /¢ Which goods do
+you buy? Why? (3)
+
+2. 2) A person’s preferences are presented by the utility function U= X + log(Y) (as always, the log
+is the base e or natural log). Does this person have convex indifference curves? Provide proof.
+
+_ 2)
+b) The following is the log of an individual s demand for good X as a function of prices and income
+
+X(Po, P, P, 1) = aPEPLR) I
+i) What is the cross-price elasticity with good 2? (2)
+For parts ii. iii, and iv, use the following values for the parameters:
+a=-05;y=04:6=08
+ii) What is income elasticity? Is X a luxury, necessity, or an inferior good? (2)
+iii) Is good Z a gross substitute or a gross complement for good X7 ()
+iv) If the price of ¥ were to fall by 5%, by what percent and in what direction would the quantity
+demanded of X change? )
+v) If the price of good X decreases, would this person’s expenditure on X increase, decrease. or
+remain the same? ()
+¢) An agent has preferences for goods X and ¥ represented by the utility function
+UXY)=X+3Y
+
+The price of good X is P, = 20. the price of good ¥'is P, = 40, and her income is [ = 400.
+
+Choose the quantitics of X and Y that maximize her utility for the given prices and income.
+
+@)
+
+Page 1 of 4
+
+(%] CamScanner
+
+
+3 a) You are hired by Burger King to estimate the demand for its Whopper sandwich. Initially,
+you choose a very simple demand function, and the following estimate
+
+| Q =10 + 1.3P, + 0.4Py, — 3P, + 221
+
+Where, Q is the quantity of Whoppers (in thousands), P, is the price of a Whopper, Py, is the
+price of a McDonald’s Big Mac (McDonald’s is Burger King’s largest competitor), Py is the price
+of an order of French fries at Burger King (all prices are in $’s), and I is the average income of the
+
+region (in thousands of $’s).
+i) You notice immediately that there is a terrible problem with thig estimate. What is the problem?
+
+2)
+b) To correct the problem, you change the structural form of your demand function and add one
+additional variable. The correctly estimated demand function is:
+
+Where, O, B, and I are defined as before, P,,, and Py, are the prices of related goods (in
+$’s), and 4 is advertising expenditure (in thousands of $’s). Use this correct demand function to
+answer the following questions.
+
+1) As before, the two related goods are McDonald’s Big Macs and Burger King French fries. Which
+related good (i.e., r1 or r2) is French ’fries? ()
+ii) Is the'Burger King Whooper a luxury, necessity, or inferior good? 2)
+iii) Suppose. Burger King increases its advertising expenditure by 50%. By what percentage and
+in what direction will the demand for Whoppers change? 2)
+iv) Burger King decides to lower the price of its French fries by 50%. By what percentage and in
+what direction (i.e., increase or decrease) will the quantity of Whoppers sold change? 2)
+v) Suppose the marginal cost of making a Whopper is $1.00. What is the profit-maximizing price
+of a Whopper? ‘ (2)
+vi) McDonald’s runs a sale and lowers its price of Big Macs by 10%. By what percentage must
+
+Burger King lower its price to not lose any customers. 2)
+
+3. a) Below are intuitive explanations of four properties of cost functions. Please write the formal
+mathematical property next to the correct intuitive explanation. You can use w; and [; to represent
+generic input prices and inputs, respectively.
+iS If all prices increase, the cost of producing a given output level must increase. (1.5)
+ii) If all prices increase by the same proportion, costs must increase by that same proportion. (1.5)
+iii) If prices increase but relative prices change, the input mixture will change, and costs will not
+go up by as much as they would if the input mix remained the same. (1.5)
+
+iv) If it costs more to make more. (1.5)
+
+b) A sausage maker uses three ounces of pork and two ounces of veal to make one 5-ounce*sausage.
+
+He pays 30 cents for an ounce of pork and 80 cents for an ounce of veal.
+
+Page 2 of 4
+
+CamScanner
+
+
+i) Let P stand for ounces of pork, ¥ stands for ounces o ¢ veal, and S stands for a number of sausages
+
+Write the production function for sausages. Q)
+
+ii) Find the conditional factor demand for pork. 2)
+
+iii) What is the cost function for sausages? )
+
+iv) Suppose the demand for sausages is given PY Q = 200P=6. What is the profit-maximizing
+
+price to charge for sausages? &
+
+5. a) A firm's technology is represented by the production function Q = (K L)l/ .
+
+In the short run, K is fixed at K = 64 = 43
+i) What is the firm's short-run production function? 1)
+ii) Find the short-run conditional factor demand for 7. (1)
+iii) What is the short-run cost function? )
+iv) What is the shutdown price? (1)
+v) Assume the firm is a price taker in output (let P be the output price). Find the firm’s short-run
+supply. (M
+Assume now we are in the long run, and X is no longer fixed
+
+vi) What are the returns to scale for this production function? €))
+vii) Calculate the elasticity of substitution O. m
+viii) Find the long-run conditional factor demands for L and K. (1)
+ix) Find the long-run cost function. 7 )]
+x) Again, assuming the firm is a price taker, find the long-run supply. @))]
+
+b) Starbucks decides to introduce a new “Jumbo” iced tea, which will come in a 62-ounce cup.
+
+The current Trenta cup holds 31 ounces. Will the Jumbo Cup cost twice as much, more than twice
+
+as much, or less than twice as much as the Trenta Cup? Please explain why you chose your answer.
+
+- 4)
+6. a) A competitive industry consists of 1,000 identical firms, each with short-run total costs
+given by Csr(g) = 0.5¢° + 2q + 80.
+i) What is the short-run supply for each firm? €))
+ii) What is the industry short-run supply? (1)
+' ~ Suppose market demand is O = 44,000 — 1000P
+iii) Find the equilibrium price and quantity. 2
+iv) What is each firm’s short-run profit? )
+v) Suppose the government adds a $20 per unit tax. Find the new equilibrium price demanders
+pay, the price suppliers keep, and the quantity produced. )
+vi) Calculate the welfare cost of the tax. )
+
+Page 3 of 4
+
+(%] CamScanner
+
+
+b) In a three-good world, the excess demand for good 2 i given by
+
+P, 2P
+
+and the excess demand for good 3 is given by
+
+P, 4P
+Z3(P) =3-E+ P,
+' )
+) Find the excess demand function for good 1.
+. P; P P, 3
+i) What arc the market-clearing price ratios P—z, , = and 29 ( )
+1 Pg P2
+7. The domestic demand for color printers is Q = 250,000 — 100P. The domestic supply is
+Q = 250P - 30,000
+a) Suppose no international trade takes place. Find the domestic autarky price and quantity. )
+
+b) Suppose this country can import or export as many printers as it wants at the world price of
+
+P\, =600. Would the country import or export 'prin'ters? How many would it import/export under
+Bentct
+
+free trade? 3)
+
+c) Suppose the domestic governmentputs a tariff of $50 per imported printer. What would be the
+new market equilibrium (i.e., P; domestic g4 and qs; and imports)? How much tariff revenue
+
+would the government gain? 3
+
+d) Assuming that supply = MC, what are the welfare effects of the tariff (i.e., ACS; APS; AW)?
+
+| ©)
+e) Assume instead that the exporting nation signs a Voluntary Export Restraint with the domestic
+govemment- that limits exportsto 20,000 printers. Find the welfare effects of the VER as compared
+to free trade. 3)
+
+8. a) Explain Hicks-Kaldor compensation principle of attaining social welfare. How did Scitovski
+
+correct the contradiction arises in this principle. (6)
+
+b) Derive the grand utility possibility frontier and determine the ‘point of bliss’. Does such point
+
+ensure maximum social welfare? Justify your explanation. - ®)
+
+Page 4 of 4
+
+(%] CamScanner
+
+
+1.
+
+Department of Economics
+Jahangimagar University
+M.Sc. Final Examination 2023
+Course No: 502 (Advanced Macroeconomic Theory)
+Full Marks: 70 Time: Four Hours
+
+Answer any five of the following questions.
+All parts of a question must he answered consecutively.
+
+Solow model focuses on four variables like output (Y), capital (K), labor (L) and knowledge [4+3+3+4]
+
+or “effectiveness of labor” (A). The growth rat€ of X r /X ;
+
+growth rate of A is g and caéit;)il depregciation rate js §, R sl e ar i/l
+
+a) Briefly discuss the assumptions about input. output and production function to construct
+SOIOW_ exogenous growth mpdel. What is the production function of capital augmenting
+and Hicks-neutral technological progress? E
+
+b) Brieflv—describe the dynamics of k (cap.ilal_) Why docs it is called the Balanced Growth
+Path (BGP)?
+
+¢) Describe how each of the following affects the break-even and actual investment in the
+basic diagram for the Solow model:
+
+i) Increase in the rate of capital depreciation.
+ii)  Improvement in the rate of technological progress.
+iii)  Capital’s share (a) rises for an intensive form of production function.
+
+d) Show the impacts of savings ratio in the steady state solution of Solow growth model and
+prove that exogenous changes in the savings ratio leave only level effects on k and y, but
+not on growth effects.
+
+In the Romer model of endogenous technological progress, the process of technological
+
+progress is given by A = A0.5LR, where LR is the share of researchers in the population. The
+
+population grows at the rate n.
+
+a) Find the steady state level of technological progress. Suppose that LR will increase by 10%
+(increased by 1.1 times).
+
+b) Calculate the effect of this change on technological progress at the moment of shock (on
+impact).
+
+¢) Calculate its effect on the steady state level of technological progress.
+
+d) Illustrate your answers on the main diagram of the model (g# on the horizontal axis,
+
+g*/9%on the vertical axis.
+
+Consider a Ramsey-Cass-Koopmans model with the production function ¥ = F(K, AL) and
+real interest rate r; household’s utility function takes the form
+U=[2 e Ptu(c(®) <2t
+and the instantaneous utility function takes the CRRA (constant. —relative —risk-aversion)
+1-6
+utility form U(ct) = %—;Where 0 determine the household’s willingness to shift
+consumption between different periods.
+a) Define Euler equation. Find out the Euler equation for households” maximization problem
+and interpret it.
+b) Describe the phase diagram in terms of the evolution of ¢ and k.
+c¢) What is the difference between the balanced grewth paths of the Solow and Ramsey—
+Cass—Koopmans on social optimum and the golden-rule level of capital?
+d) Determine the slope of the saddle path using [aylor approximation and the rate of
+
+adjustment.
+Suppose Y; = F (K, ALi), with having constant returns to scale and the intensive form of the
+production function satisfying the Inada conditions. Again, Awi = (1+ g) Ay, Lii = (1+n) L,
+and ki+1 = Li (WA(- C1). Assume time is discrete rather than continuous and each individual
+lives for only two periods.
+
+a) Solve the individual’s maximization problem where 6 determines how much individuals
+varies in response to diflcrences between r (real rate of return) and p (discount rate).
+b) Find the speed-of convergence of k to k. How does it differ from 8olow model?
+c) Describe how each of the following affects ki as a function of k;:
+(i) A rise in n.
+(ii) A fall in p.
+d) After relaxing the assumptions of logarithmic utility and Cobb-D i
+are the possibilities for the relationship between k and ks ? Is ‘t)llllfr]:s aI:'OdUCU.OI.L.What
+dynamic inefficiency? ' ¥ possibility of
+
+[4+4+3+3]
+
+[4+4+2+4]
+
+[4+3+2+5)
+
+(%] CamScanner
+
+
+Consider a simplified version of the models of R&D and growth model developed by P.Romer [2+4+ - y
+(1990), Gross and Helpman (1991) and Aghion and Howitt (1992) where 0 reflects the effect ‘
+of the existing stock of knowledge on the success of R&D and B is a shift parameter. Both the
+
+goods producing sector and R&D producing sector use the full stock of knowledge A.
+
+a) Cntlcally explain the role of a;. (the labor force uscd in the R&D Sector) for the dynamics
+of knowledge accumulation without considering capital into the model. Is there any long-
+run growth effect for change in a.?
+
+b) Assume that § + B <1 and n > 0, and that the economy is on its balanced growth path.
+Describe how each of the following changes affects the ga = 0 and gk= 0 lines and the
+position of the economy in (g4, gk) space at the moment of the change:
+
+(i) A decrease in n.
+(i) An increase in a.
+
+¢) There are two cases p+0<1 or p+0=1 and n=0; What is the difference on the dynamics of
+the growth rates of capital and knowledge between these two cases?
+
+d) Briefly explain the nature of Knowledge and the determinants of the allocation of resources
+to R & D including Léarning by Doing.
+
+Suppose firm i’s output is Y = [Lio L(i)?di] " and L(i) is used to denote both the quantity of [3+5+3+3]
+
+labor devoted to producing input i and the quantity of input i that goes into final-goods
+
+production. Individual’s discount rate is p and their instantaneous utility function is
+logarithmic. The utility of the representative household takes the constant-relative-risk
+aversion (CRRA) form is % = it;;p and 0 is the coefficient of the relative risk aversion.
+
+Knowledge creation, % = BL, .Growth rate of the wage equals the growth rate of output.
+
+Population growth is zero.
+
+a) Briefly discuss the assumptions to construct the model.
+
+b) How long-run growth will be determined by using the present value of profits from the
+discovery of a new idea at time t? What will be the equilibrium value of L » ‘
+
+c) What will be the socially optimal level of La> Explain how it is different from the
+equilibrium level of La
+
+d) Briefly explain the implications of this model and extensions of this modet. —
+
+Consider the infinitely lived representative household that derives utility from both [3+2+4+5]
+consumption (c;) and leisure (1-1i). The production function of the representative firm is given
+by '
+Sk b, z)= z ki 1
+Z+1= @ Zrt €
+where z is the productivity parameter and € is a white noise error term.
+
+a) Construct the household’s problem and using log utility derive the short-run labor supply
+curve. Explain the relationship among leisure, real wage, and interest rate.
+
+b) Prove that long run labor supply is independent of wage when (p=%
+
+c) Find the elasticity of labor supply and interpret it.
+
+d) Discuss Hansen’s indivisible labor supply solution as an attempt to overcome the
+limitations of previous model andcalibratios mechanism.
+
+The representative producer of good i has production function Q=L utility depends on [4+3+4+3]
+coasumption and Labor effort where P is known as perfect information. z; (good specific
+shock) and m (monetary shock) are normally distributed. Conditional expectation is a linear
+equation. On the other hand,
+
+For representative consumer C,= o (r(—p) Ciand Wicksellian interest rate
+
+"= p+0°'g. According to Yun (1996) Optimal price vi is
+
+Vi =pi+Q f:o[(vs —Ps) +1xs ]e—(a+p)(s—t)ds
+
+and k = a’n; where 1 is sensitivity parameter.
+
+a) Explain the role of rational expectation in dete:mining the effectiveness of macro policy
+when there is imperfect information by using L -cas” supply curve.
+
+b) Define New Keynesian DSGE model. Determine the new Keynesian IS equation for
+continuous time. S
+
+c) Determine new Keynesian PC curve for continuous time using Leibniz’s rule. Explain
+“divine coincidence” according to Blanchard and Gali.
+
+d) Describe Taylor rule in the canonical New Keynesian model where x (output) and 7
+(inflation) both are jump variables.
+
+(%] CamScanner
+
+
+0
+%.
+
+7
+7
+&
+
+T
+N
+
+1. a)
+b)
+
+c)
+
+d)
+
+b)
+
+c)
+
+Department of Economics
+Jahangirnagar University
+M.Sc. Final Examination 2023
+Course No: 503 (Pevelopment Economics)
+Full Marks: 70 Time: Four Hours
+Answer any five of the following questions.
+
+What is endogeneity in regression analysis. and how does it arise?
+
+Suppose you are cstimating the effect of health on labor market outcomes with the
+rescarch question: "Does better health improve an individual's labor market productivity
+(c.g., employment status or income)?"
+
+(1) Explain how health could be an endogenous variable in this context.
+
+(i) Explain how the Instrumental Variables (IV) method can be used to address and
+resolve the endogencity problem in estimating the effect of health on labor market
+outcomes.
+
+Suppose you are cxamining the relationship between health and income across different
+
+points of the income distribution.
+
+(i) ~ Why might ordinary least squares (OLS) regression be inadcquate in capturing
+this relationship?
+
+(ii) What is Quantile Regression? How can quantile regression provide deeper insights
+into the impact of health on income across different income levels?
+
+What is Canonical Correlation Analysis (CCA), and how is it used to examine the
+
+relationship between two sets of variables?
+
+Compare the logit and probit models in binary outcome analysis. What arc their key
+similarities and differences?
+
+In what situations is the multinomial logit model more appropriate than the binary logit
+model? Explain.
+
+Answer the following questions: '
+
+(1) A logit regression estimates the impact of cducation and cxperience on the
+probability of being employed. The coefficient of education is 0.5. Interpret this
+coefficient. What docs it imply about the rclationship between education and
+cmployment probability?
+
+(1) In the same logit regression model, the odds ratio for expericnce is estimated to
+be 1.7. Interpret this odds ratio.
+
+(iii)  Ina probit model, the marginal effect of income on the probability of owning a
+house is 0.12. What does this marginal effcct mean?
+
+(iv)  Inamultinomial logit model analyzing employment status, the outcome variable
+has three categories: Employed, Sclf-employed, and Unemployed (used as the
+base category). The estimated coefficient for "Male" in the "Sclf-employed"
+category is 1.2. Interpret this coefficient in the context of the model. Also,
+calculate and interpret the corresponding odds ratio.
+
+(%] CamScanner
+
+
+By
+
+b)
+
+<)
+
+a)
+
+b)
+
+<)
+
+a)
+b)
+
+c)
+
+b)
+c)
+
+d)
+
+a)
+b)
+c)
+d)
+
+a)
+b)
+
+c)
+
+What do you mean by autoregressive and distributed lag model? Explain with examples.
+What is the ad hoc approach to estimate distributed lag models? Does this approach have
+any limitations?
+
+Describe the kyock approach which is applied to distributed lag models? Is this an
+appropriate approach to convert a distributed lag model to an Autoregressive model?
+
+Discuss the potential limitations of the Adaptive Expectations Model and the Partial
+Adjustment Model in the context of estimating distributed lag models.
+
+What role does the Instrumental Variables (1V) method play in overcoming the limitations
+of estimating Koyck and Adaptive Expectations models? '
+
+Explain the Almon Polynomial Approach to estimating distributed lag models. How does
+it differ from the Koyck transformation and other distributed lag models? Discuss the key
+assumptions underlying the Almon approach, along with its'advantages and [imitations in
+pracfical econometric analysis.
+
+Define stationarity in the context of time series analysis. Why is it important in
+econometric modeling?
+What is unit root problem? How does the Dickey-Fuller (DF) test help detect the presence
+of a unit root in a time series? Explain the testing procedure.
+Critically explain the following unit root tests:
+
+1) Augmented Dickey-Fuller (ADF) unit root test
+
+(i)  Phillips-Perron (PP) unit root test, and
+
+(i)  Kwiatkowski—Phillips—Schmidt-Shin (KPSS) unit root test
+
+Why do structural breaks matter in unit root testing? Briefly explain their impact on
+standard unit root tests. ’
+
+What is the Zivot-Andrews test for unit root? Describe its procedure and how it accounts
+for structural breaks.
+
+What is cointegration in time series analysis? How can we test whether two or more
+variables are cointegrated? Explain. ' '
+Why might a researcher prefer the ARDL bounds testing approach over the Johansen
+cointegration test? Discuss the key differences that guide this choice.
+
+Consider the ARIMA (2,1,1) model. Write down its equation and explain its components
+in plain terms.
+
+How does the Box-Jenkins methodology guide the estimation and evaluation of ARIMA
+models? Explain briefly.
+
+Suppose you have two variables: inflation and unemployment. How could a VAR model
+help you understand their relationship over time? Explain.
+
+Define Granger causality and explain how it can be tested using a VAR model.
+
+What are the advantages of panel data over cross-section and time series data?
+
+What is the Fixed Effect Least-Squares Dummy Variable (LSDV) model in panel data
+analysis? Explain how it controls for unobserved heterogeneity and discuss its limitations.
+What is the Panel Random Effects Model? How does it differ from the Fixed Effects
+Model in terms of assumptions and estimation? When is it appropriate to use the Random
+Effects approach?
+
+CamScanner
+
+
+Department of Economics
+Jahangirnagar University
+M.Sc. Final Examination 2023
+Course No: 507 (Health Economics)
+Full Marks: 70 Time: Four Hours
+Answer any five of the following questions.
+All parts of a question must be answered consecutively
+_ What is the difference between affordable care act (ACA) and federal level dependent
+‘coverage? According to Da Jung Jun (2023) study, briefly explain the effects of
+dependent health insurance coverage mandates on father’s job mobility and
+compensation. 14
+- “Long Covid significantly impacts productivity losses and provision of informal care,
+exacerbated by high national prevalence of long Covid”. Justify this research result in the
+light of Kwon et al., (2023) study. 14
+
+. Briefly discuss the Louisiana family planning program (LAFPP). According to Gamino
+(2023) study, briefly explain the effect of a free family planning program on fertility. 14
+
+. Is supported employment effective for disability insurance recipients with mental health
+conditions? Discuss your answer in the light of Fontenay and Tojerow (2025) studies. 14
+
+. Briefly discuss the effects of the minimum wage on child health, in the light of Wehby et
+
+al., (2022) research. 14
+. a) “In a perfect health insurance market, a risk-averse individual will always be willing to
+pay full and fair premium for health insurance.” Discuss. 6
+b) Show that in case of adverse selection:
+i.  Pooling equilibrium is not sustainable 3
+ii.  Separating equilibrium is possible only if the proportion of high-risk individual’s
+is much lower than the low-risk individual in the pool. .
+
+. How can you define triage of the emergency departments for medical care? Briefly
+
+discuss the importance of the emergency departments and identify the challenges in Eds.
+14
+
+. Based on the Holford and Rabe (2024) studies, briefly discuss the impact on children’s
+body weight of switching from means-tested to universal provision of nutritious free
+school meals. 14
+
+(%] CamScanner
+
+
+1.
+
+Department of ECQBOm'ics
+Jahangirnagar University
+M.Sc. Final Examination 2023
+Course No: 510 (Labor Economics)
+Full Marks: 70 Time: Four Hours
+Answer any five of the following questions.
+
+All parts of a question must he answered consecutively
+
+a) Sketch the circular flow diagram to demonstrate the linkage between the labor
+market and the mainstream economy. 3]
+
+b) Briefly explain the distinctive features of the labor market which segregate this
+market from other types of market. [6)
+
+¢) Why does the employer set work schedules to signify an institutional restraint on
+individual choice? — Explain using a diagram. [5]
+
+Suppose an employer pays a specific Wage rate per hour when the total hours worked
+in a week are equal to or less than 40 hours. For every extra hour over 40 hours per
+week, the wage rate is 2 (two) times the above wage rate. Now use the labor/leisure
+model to answer the following questions:
+\
+
+a) First, draw a budget constraint for someone earning $10 per hour who receives
+$200 a week in non-labor income. What happens to the budget constraint with
+overtime laws? [3]
+
+b) Given your answer to (a), draw an indifference curve so that, given the original
+budget constraint, the person is working 40 hours per week. What now happens to
+hours of work, given the new budget constraint? Again, sketch an indifference curve
+to show this. Did work hours increase or decicase due to the overtime Jaw?-Explain
+why. [3]
+
+¢) In words, define the income and substitution effects of a wage change. Use
+diagram(s) to identify the income and substitution effects. Which one is more robust?
+
+(4]
+
+d) If the wage increases for all hours worked rather than just for those after 40 hours
+per week, would the change in hours of work be any different? Again, show this in
+the graph and explain why or why not. [4]
+
+a) Data from a recent study indicates that 32% of salaried workers work 45 hours or
+more (instead of 40 hours) per week. What can account for this apparent discrepancy
+between theory and fact? [7]
+
+b) There is a debate about whether the size of the labor force will expand or contract
+during periods of recession and depression. - explain the debate with the help of
+added worker effect and discourage worker effect. N
+
+a) “Time and monetary costs associated with working affect the shape of budget
+constraint thus influence the number of hours a person chooses to work” — Explain
+this statement using appropriate diagrams. (8]
+
+b) Why do policymakers initiate wage subsidy programs? Illustrate the effect of a
+wage subsidy program on the labor market. [6]
+
+(%] CamScanner
+
+
+5. a) How is the equilibrium level of employment determined in the long run? Why is
+the long-run labor demand curve more elastic than the short-run labor demand curve?
+
+(7]
+
+b) Despite the revolution in technology in the twentieth century, however, the number
+of jobs in the economy has not decreased rather has increased by many millions. How
+can this be accounted for? Explain the impact of technological change on
+employment with the long-run theory of labor demand. 7
+
+. a) Describe the wage determination model of a monopsony market. Illustrate how the
+
+monopsonist exploits labor. (6]
+
+b) What are the positive and negative aspects of minimum wage law in a competitive
+market? [s it possible to obtain competitive cutcomes if the government imposes a
+minimum wage law in a monopsony market? [8]
+
+. a) Illustrate the investment decision rules for taking higher education using
+age/earnings profile. - = (7]
+
+b) Differentiate between general on-the-job training and specific on-the-job training.
+Graphically analyze the benefits and costs of these two training. [7]
+
+. a) How can years of education be used as a good screening device in the employee
+selection process? Discuss using diagram(s) the signaling failure and the optimal
+signal when education is used as a screening device. (8]
+
+b) Briefly explain different factors that influence the achievement of the external
+alignment of pay level. (3]
+
+c) It has been suggested that one way to raise the quality of teaching at colleges and
+universities is to link professors’ pay to their classroom performance, say by making
+pay raises a positive function of the score [they receive on end-of-semester student
+course evaluations. Evaluate the pros and cons of this pay form. [3]
+
+(%] CamScanner

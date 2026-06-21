@@ -1,0 +1,949 @@
+>
+
+Jahangirnagar University
+Department of Economics
+M.Sc Final Examination 2022
+Course No. 501 (Advanced Microcconomic Theory)
+Time: 4 hours Full Marks: 70
+
+Answer any 5 of the following questions
+All questions arc of equal value
+a) What is preference based approach of consumer’s behavior? Explain and interpret the
+assumptions of preference based approach. 7
+b) Define indifference set. Examine that if a preference relation satisfies s:trong
+
+monotonicity, its indifference curves must be downward sloping. 7
+
+. a) What are the twin definitions of convexity? In what respect are they different from
+
+strong convexity-examine graphically? 4
+b) Show that, 5
+
+Convexity of preference <> USC\(x)is convex <> u(.)is quasiconcave
+
+¢) Prove that, if a preference relation satisfies monotonicity and continuity, then there
+
+exists a utility function u(.) representing such preference relation. 5
+
+. Consider the Cobb-Douglas utility function: 14
+
+u(x,x,)=K'x*  forsomeae(0,)andK >0
+
+i) Derive the Walrasian demand functions and examine their properties.
+
+ii) How do you get the indirect utility functions? Explain their properties and also
+
+verify Roy’s identity.
+iiiy  Solve the expenditure minimization problem and examine the characteristics of
+
+the compensated demand function.
+
+a) Define utility function. Explain the desirability of consumer’s preference by the axiom
+
+of monotonicity and strong monotonicity. 5
+b) Show that,
+StrongMonotonocity & Monotonocity @ LNS 5
+c) Examine the following properties of preference relations: 4
+i) Homogeneity
+i) Homotheticity
+
+a) Define production sets. Graphically explain the properties of the production set. 5
+
+¢
+
+(% CamScanner
+
+
+Nes
+
+. a) Distinguish between compe
+
+f substitution (EoS). Find the clasticity of substitution for the
+K ,L) = aK + bL . Whatwill be the oS if the
+6
+
+b) What is the clasticity 0
+
+production function 9 = f(
+n function is of fixed proportions?
+roduction set Y is closed and has free disposal, then what propertics do the
+3
+
+productio
+c)Ifthe p
+profit function satisfies?
+
+nsating variation (CV) and equivalent variation (EV). In
+
+m the consumer’s surplus (CS) 4
+
+what respect they are different fro
+e of a commodity (when both goods are normal)
+
+b) Illustrate that for a decrease in pric
+
+EV >CS > CV ' 5
+
+L oL
+: = fx2
+¢) Consider a consumer with the utility function: % (x1,% )= Xx'x; 5
+
+i) C_ons'idera){ €,m°}={4,4,300}
+wAp',m®y=1{2,4,300}
+
+Compute th¢f\in'<iirect utilities and costs.
+
+iiy  Caleulate EV,CV and CS. Based on their relationship examine the nature
+
+of the commodities.
+
+/
+/
+
+J ,
+
+. a) Explain the existence, uniqueness and _stability of a general equilibrium. Show that
+
+i) existence of an equilibrium occurs at a positive price, ii) stability depends on the
+relationship between the slopes of the demand and supply curves and iii) uniqueness is
+related to the slope of the excess demand function. 7
+
+b) Graphically explain how an external shock in the product market affects the factor
+
+market and the mechanism through which equilibrium is restored in both markets. 7
+
+. An exchange economy consists of two people, A and B, and two goods X and Y. A’s
+
+preferences are represented by the utility function Ua=XaYa ; B’s preferences are
+
+represented by the utility function Up=Xa+Yg; The initial endowments are given by-
+XaA%=10; YA? = 50; Xa’= 50; Yp’= 10
+
+a) Draw the initial allocation in an Edgeworth box. Draw each person’s indifference
+
+curve through the initial endowment. 3
+
+b) Is the initial endowment Pareto efficient? Explain why or why not? 3
+
+¢) What is the equation of the contract curve (write your answer as Yx-as a function of
+
+Xa)? - 4
+d) Is this allocation Xa=80, Xa= 120, Ya=50, Yp=150 Pareto efficient? Is it in the core?
+4
+
+(% CamScanner
+
+
+r 4
+
+Department of Economics
+Jahangirnagar Unlvcrsll‘y
+Master of Science (M.Sc) In Economics l',xumh?:!llon 2022
+Course No: 502 (Advanced Macrocconomic Theory)
+Full Marks: 70 Time: Four Hours
+
+Answer any five of the following questions.
+All parts of a question must be answered consecutively,
+i b 4434344)
+There are four variables like output (Y), capital (K), Iulmrl( L) and knowledge m'r i [
+“effectiveness of labor™ (A). The growth rate of X refers X/X; the growth rate of L is n;
+growth rate of A is g and capital depreciation rate is 8.
+a) Briefly discuss the assumptions about input, output and production function to constru
+
+Solow exogenous growth model.
+b) Briefly describe phase diagram for k. Why it does follow the Balanced Growth Path
+
+(BGP)? ) "
+Describe how each of the following affects the break-cven and actual investment:
+i) The rate of depreciation falls. .
+ii)  The rate of technological progress rises.
+iii)  Capital’s share, a rises. o odel and
+d) Show the impacts of saving.ratio in the steady §latc solution of Solt;f\:v ft;r(z):/ll}: :;d 7. but
+prove that exogenous changes in the saving ratio leave only level effects ’
+
+not growth effects. ,
+
+c)
+
+Consider a Solow economy that is on its balanced growth path and production function [3+5+3+3]
+follows Cobb-Douglas production function Y(t)=F(K(t), A(t)L(t)). Tbe fraction of output ;
+
+devoted to investment, s, is exogenous and capital depreciation rate is 5. The growth rate 0
+
+L and A are respectively n and g.
+
+a) Show the impacts of changes in the saving ratio on per capita consumption. Doe§ any
+steady state solution automatically imply golden rule of capital accumulation? Discuss.
+
+b) Explain the long run effect of a rise in saving on output. In the vicinity of the balanced
+growth path, how rapidly does the economy converge to the balanced growth path?
+
+¢) Find the elasticity of output per unit of effective labor on the balanced growth path, y,
+with respect to the rate of population growth, n. If ax (kx) = 1/3, g = 2%, and & = 3%, by
+about how much does a fall in n from 2 percent to 1 percent raise y*?
+
+d) Briefly explain growth accounting and convergence as empirical applications.
+
+Consider a version of the standard Ramsey Cass Koopmans model with the lifetime utility of  [3+4+7]
+the representative household Ug= Om u (c))e®'dt, where the number of families are large, but
+
+they are normalized to unity. N is the supply of labour and the population growth rate is
+
+exogenous n>0. Find the optimization problem of a representative family at time 0 (zero)
+
+while the constraint is given by d; = raa, + wi— ¢ - nay, where ry is the net rent on return
+
+capital. ‘
+
+a) Find a solution to the household problem.
+b) Define a competitive equilibrium.
+¢) Find an equation that determines the steady state equilibrium value of capital.
+
+Suppose Y1 =F (K, A(Ly) , with having constant returns to scale and the intensi
+. y , Wit nsive form of
+;Jhe production function satisfying the Inada conditions. Suppose also that A = (1+ g)A, ezl
+t+1 = (1+n)Ly and kys1 = Ly (wiA, Q). Assume time is discrete rather than contj ,
+. . . . ont
+each individual lives for only two periods. s and
+a) Solye t.he individual’s lmaximization problem where 8 determines how much individuals
+}\:ianles.m lrlespolnse fto differences between r (real rate of return) and p (discount rate)
+Xplain the role of income effect and substitution eff ine indivi o
+con e ect to determine individuals
+b)) ]F)md an expression for k+ as a function of ky.
+¢) Describe how each of the following affect i
+: S ki1 as :
+Babat g t+1as a function of k,:
+(ii) A fall in p.
+(iii) A permanent increase jn
+& Findo i s gowfemment purc.hases.
+onvergence of k to k*. How does it differ from Solow model?
+
+*\“‘
+
+(% CamScanner
+
+
+Consider a simplified version of the models of R&D and growth model developed by P. [2+4+444)
+Romer (1990), Gross and Helpman (1991) and Aghion and Howitt (1992) where 0 reflects
+the effect of the existing stock of knowledge on the success of R&D, and B is a shift
+parameter. Both goods producing sector and R&D producing sector use the full stock of
+knowledge A.
+a) How does the process to construct the framework differ from Solow model? .
+b) Critically explain the role of ai (the labor force used in the R&D sector) for the dynamics
+of knowledge accumulation without considering capital into the model.
+¢) Assume that 0+ < 1 and n> 0, and that the economy is on its balanced growth path.
+Describe how cach of the following changes affects the ga = 0 and gk= 0 lines and the
+position of the economy in (ga, gk) space at the moment of the change:
+*(i) An increase in n.
+(ii) An increase in a.
+d) There are two cases p+0<1 or p+6=1 and n=0;
+i) What is the difference on the dynamics of the growth rates of capital and
+knowledge between these two cases?
+i)  Distinguish between semi-endogenous growth model and fully endogenous growth
+model.
+
+- 3+4+443
+Suppose firm i’s output is Y = [ f‘io L(i)!ii] 8 and L(i)is used to denote both the quantity of | ]
+
+labor devoted to producing input i and the quantity of input  that goes into ﬁnal-gpods
+production. Individual’s discount rate is p and their instantaneous utility function Is
+logarithmic. The utility of the representative household takes the constant-relative-risk
+aversion (CRRA) form is A
+
+% = -r% and 0 is the coefficient of the relative risk aversion. Knowledge creation, 7 ©
+
+BL,. Growth rate of the wage equals the growth rate of output. Population growth is zero.
+
+a) When output is produced by competitive firms, what will be the demand for the holder of
+the patent on an idea and the profit of firm?
+
+b) Briefly discuss the assumptions to construct the model.
+
+¢) How the long-run growth will be determined by using the present value of profits from
+
+the discovery of a new idea at time t? What will be the equilibrium value of La
+
+What will be the socially optimal level of L? Explain how it is different from the
+
+equilibrium level of La.
+
+d
+
+~
+
+Consider the infinitely lived representative household that derives utility from both [3+2+445]
+consumption (c) & leisure (1-L). The production function of the representative firm is:
+
+[k, b,n)=zk” A
+
+Zi+1= Q Zet &
+where, zis the productivity parameter and € is a white noise error term.
+
+a) Construct the household’s problem and using log utility derive the short-run labor supply
+curve. Explain the relationship among leisure, real wage, interest rate.
+
+b) Prove that long run labersupply is independent of wage when (p=%
+
+c) Assuming %1 and functional form of utility of leisure is
+ag-1
+v(h)= -1% (h) 7o, find the elasticity of labor supply .
+d) Discuss Hansen’s indivisible labor supply solution as an attempt to overcome the
+limitations of previous model. .
+
+The representative producer of good / has production function Qi=Li; utility depends on [d+2+4+4]
+
+consumption and Labor effort where P is known as perfect information. z; ( good specific
+
+shock) and m (monetary shock) are normally distributed. Conditional expectation is a linear
+
+equation. On the other hand,
+
+For representative consumer Ci= 6 (r-p ) C; and wicksellian interest rate
+
+1"=p+0'g. According to Yun (1996) Optimal price v; is
+
+Vi =pr+a ft [(7s = ps) +nxs Jem(@P)s=0gs :
+
+and k = o’n; Where, 1 is sensitivity parameter.
+
+a) Explain the role of rational expectation in determining the effectiveness of macro policy
+
+when there is imperfect information by using Lucas’ supply curve.
+
+b) Determine new Keynesian IS equation for continuous time.
+
+c) Pe:le.nmne.ne'w Keynesian PC curve for continuous time using Leibniz’s rule. Explain
+divine coincidence” according to Blanchard and Gali.
+
+d) I?escri_be the Taylorlrulr: in the canonical New Keynesian model where x (output) and ©
+(inflation) both are jump variables.
+
+-THE END -
+
+R T
+
+(% CamScanner
+
+
+Department of Economics
+Jahangirnagar University
+MSc Final Exam, 2022
+Course No: ECON 503 (Development Economics)
+Full Marks: 70; Time: 4 Hours  ~
+
+Answer any five of the following questions
+All parts of a particular question must be answered consecutively
+
+1. A: How does the Neocolonial Dependence Model explain the existence and
+continuance of underdevelopment?
+
+B. Contrary ID.IJH: c!nims of the dependence theorists, how does the neoclassical
+counterrevolutionaries argue about underdevelopment? " (7+7)
+@ﬁ. What are the key arguments embraced by the Dualistic Development Thesis?
+
+How does the False Paradigm Mode! of International Dependence Model argue against
+structural models of economic development? (7+7)
+
+3. A. Does economic growth ensure gender equity? Explain your answer with empirical
+evidences.
+
+B. Why do we think that *feminization of Agriculture’ in Bangladesh has taken place?  (7+7)
+%‘L. Explain the concept of ‘convergence theory’.
+
+. What are the statistical Pitfalls in Baumol’s unconditional convergence theory? How
+these were addressed? (5+9)
+
+5. A. How does the IMF conditionality measure the impact of the economic and social policies
+of countries receiving assistance? What are the typical objectives behind these conditions?
+
+B. What are the potential benefits and drawbacks of IMF conditionality for the recipient countries,
+
+particularly in terms of economic stability, growth, and social welfare? (7+7)
+
+G@ Why did the world population grow so fast after the industrial revolution?
+/ i ypulati wth and economic
+B. What are the key components in the nexus of population gro
+development? Please explain why? (7+7)
+
+27. A. How does economic growth influence gender equality? What are the impacts on gender
+inequality on sustainable economic development? i
+B. Briefly explain the characteristics of gender prevailing among the current labour force in
+
+Bangladesh 7+
+” A. Write short notes on the following: (7+7)
+
+I. Comprador Group
+
+i, Unpaid employment
+
+B. In terms of *life expectancy’, why some of the countries are lagging behind from lh'c.
+countries with almost similar economic conditions? Please explain with country expenences.
+H—_-—*_ﬁ_—
+
+=The End-
+
+(%Y CamScanner
+
+
+Department of Economics |
+Jahangirnagar University
+M. Sc. Final Examination 2022
+Course: Econometrics (Econ 504)
+Time: 4 Hours Full Marks: 70
+« Answer any five (05) questions
+
+» All parts ofa gucxmm must be answered consecutively,
+
+I
+) . What are the advantages of panel data over cross-section or time series data? [esesi
+_ What'ls meant by a fixed effects model (FEM)? Since panel data have both
+dimensions, how does FEM allow for both dimensions? time and space
+C. What is meant by an error components model (ECM)? How does it differ from FEM’ 4
+ECM be appropriate? When will FEM be appropriate? ‘M? When will
+
+= >
+
+- 2!
+. What is a linear probability model (LPM)? What are its limitatigns? What are the advnlr‘n:‘g:lof
+Probit model over other models?
+. How would you explain the Logit model? What are the remarkable features of this model?
+. Car ownership is a binary variable. Y=1 if a person owns car, zero (0) otherwise.
+The model is estimated:
+
+L =-2.5423 + 0.4347 In Income
+t=(-2.98) (3.67)
+Where, L= Estimated logit model
+
+>
+
+(@R~
+
+L Interpret the estimated logit model.
+
+II. From this estimated model, how would you obtain the expression for the probability of car
+ownership?
+
+. What s the probability that a person with an income of $14,000 will own a car? And at an
+income level of $20,000? What is the rate of change of probability at the income level of
+
+$18,000?
+
++ 3 [3+3+4+4]
+A. What are the distributed-lag and dynamic model? Give examples.
+B. What is the role of lags in economics? Give two economic models as examples.
+C. How Koyck has proposed an ingenious method of estimating distributed-lag models?
+D. C. W. J. Granger (1969) has proposed to test the ‘causality’ between the variables. Explain the
+
+procedure using an appropriate economic example.
+4. [3+7+4]
+
+A. What is the simultaneous equation system? Explain it with an example.
+B. What is the problem(s) that may arise if we apply the OLS method in a simultaneous equation
+
+system? Show and explain your necessary derivation.
+C. Using the stock adjustment model, we obtained the following results for the period 1980-2022.
+
+LogT, =constant - 0.218log X, ,, -0.855log X, , + 0.86410g T,
+(0.051) (0.170) (0.035)
+R*=0.987
+where, the figures in the parentheses are the estimated standard errors.
+T = desired stock of tractors; X = relative price of tractors; X = interest rate
+I. What is the estimated coefficient of adjustment?
+I1. What are the short- and long-run price elasticities?
+I11. What are the corresponding interest elasticities?
+IV. What are the reasons for high or low rate of adjustment in the present model?
+
+3 1 [2+6+6=14]
+A. Define stationary and non-stationary time series.
+B. What do you mean by Random Walk Model? Show that Random Walk Models without drift and with
+drift are Non-stationary Stochastic Process.
+C. Explain the Unit root test. The following results are obtained for the US CPI series from January
+1947 to January 2000 for a total of 649 observations. Use the unit root test to determine the
+stationarity of the CPI series:
+ACPl, = -0.0094 + 0.00051t — 0.00066CPl,., +0.5473 A CPl,.,
+t= (-0.6538) (4.3431)  (1.5472) (16.448)
+R?=0.5177 d=2.1410
+
+(The 10 % critical § value is — 3.1317)
+
+(% CamScanner
+
+
+6.
+
+o 7
+
+[343+6+2)
+A. What is the structural ot behavioral and reduced-form equation system? Define those with examples.
+B. What Is identification problem? Lxplain the under identification and over identification problem with
+
+examples.
+ify the following equation w
+
+D. How could you test the “simultaneity™ of a model accordi
+
+[443+443)
+A. Explain with examples the steps of the Indirect Least Square (ILS) method to estimate a simultaneous
+equation, , s
+B. How would the recursive models be used to estimate the simultancous equations? Explain with
+proper example. . .
+C. What is the necessary condition for using the 2SL.S? Explain its steps with example.
+D. Given the results of two regression model's: )
+2SLS Regression Results: OLS Regression Results:
+
+f, =-3234.24+0.6210F,
+
+¥, =-3521.65+0.62307,
+se= (125.352) (0214) se= (135.352) (.0209)
+
+? - R*=0.9801
+
+) R? =0.9804
+
+Here, Y,=GDP; X, = private investment; X, = government expenditure; and Y, - money supply
+“Since the OLS and 2SLS results are practically identical, 2SLS is meaningless.” -Comment.
+
+[4+2+4+2+2)
+A. What is integrated stochastic process? Explain the AR, MA and ARIMA models with examples.
+B. What is the error correction mechanism (ECM)? What is its relationship with cointegration?
+C. What is the ‘unit root’ problem in a time series data? Explain the steps of Augmented Dickey-Fuller
+(ADF) test for the unit root problem.
+D. What are the limitations of the Vector Autoregressive (VAR) model?
+E. Given the results involving a variable with time series data. How many lags should be chosen and
+why?
+
+o e e e e e s s — s ——— +
+|lag | LL LR df P FPE AIC HQIC SBIC |
+| =mmmbmmmmmmm e T |
+| 0 -21.7346 .000065 1.71564  1.7754 1.90246 |
+| 1] 126.437 296.34 16 0.000 9.9e-09 =-7.09581 -6.79697 -6.16168* |
+| 2| 148.47 44.066 16 0.000 7.0e-09 -7.49799 -6.96009 -5.81656* |
+| 3| 168.722 40.505* 16 0.001 6.3e-09* -7.78148% =-7.0045% -5.35274 |
+| 41 193.517 49.59 16 0.000 5.0e-09 -8.36781 -7.35176 -5.19176 |
+*--——---------_--_-__________________._____.____..___-_.._-—-——-—--——‘ ——————————— +
+2
+
+(%Y CamScanner
+
+
+Department of Economics
+Jahangirnagar University
+M.Sc. Final Examination 2022
+
+CON: 506
+Course Title : Environmental Economics E
+Marks- 70 Time- 4 Hours
+
+wered consecutively.
+Answer any Five the following Questions. All parts of a question must be ans
+
+/t./a) What is the main concern of Utilitarianism?
+
+jon utilitarianism as a basis for
+b)  Critically explain the concept of preference-satisfaction utilitarian
+modern welfare economics,
+
+‘e ! ice' does challenges
+¢) What are Utilitarianism's weaknesses? How Rawl's “Theory of Justice g
+
+classical utilitarianism? Explain.
+
+3+5+6
+
+% 2) Evaluate the empirical evidence for the Environmental Kuznet's Curve (EKC) hypothesis.
+b) Discuss the policy implications of the EKC including the potential for decoupling
+
+economic growth from environmental degradation. 648
+
+/24 Distinguish between flow and stock pollutants. Analyze efficient levels of flow pollutants
+and stock pollutants.
+b) Explain the role of spatial differentiation for emission targets
+
+¢) Find the efficient solution(M* and A*) for uniformly mixed and short-lived stock
+pollutant with the following information
+
+Total Benefit, g = [°CM 02M* ;z: e
+Total Damage, D = 0.2A4% for A > 0
+
+and in sieady state assume that A = 2M
+
+wheiz,
+
+M is the Emissions flow
+
+A s Stock Pollutant
+
+6+4+4
+
+- a) What arc the environmental consideration for risk assessment? Explain the risk assessment
+process regarding environmental degradation.
+
+b) Whad is risk matrix? How much environmental risk is acceptable?
+c) Explain various tools for assessing/miligating risk.
+
+'\_\
+
+7+3+4
+
+(%Y CamScanner
+
+
+/E/mkﬁnc compensating variation (CV) and equivalent variation (EV) in consumer
+preference. Show the relation among CV, EV and Marshallian Consumer Surplus (MCS).
+b) Suppose that an individual has the utility function U= E*¥* + YO where E is the some
+index of environmental quality and Y is income. From an initial situation where F£ = [ and Y
+- lm.‘Cnlculaic Compensating Surplus (CS) and Equivalent surplus (ES) for an increase in
+E to the level 2 and for a decrease in [ 10 the level 0.5.
+¢) What is the difference between direct and indirect method of environmental valuation?
+f+5+3
+
+6. a) What are some examples of ways in which climate change will afTect people around the
+
+world unequally? What are the efTects of this inequality?
+b) Should the world focus efforts on mitigation or adaptation? Why?
+<) What is NDC? What are the benefits of letting each country decide its own NDC? What
+are the limitation of this approach? Why do you think negotiators choose this approach rather
+than negotiating each country's responsibility as they did in the Kyoto Protocol?
+
+6Hi345
+
+A
+
+/4 What is the CVM method of environmental valuation? In which regards Contingent
+valuation methed can_he conddared superior 1o all other techniques for valuing the
+environment?!
+by What is the Travel cost method of valuing environment? How the Travel cost method is an
+example of revealed preference? Explain the limitations of the Travel cost method
+
+7+
+
+8. Write short notes on: Any four
+
+a) Option price and option value
+
+b) Cenainty Equivalence and Risk premium
+¢) Residual risk
+
+d) Net zero emission.
+
+¢) Paris Treaty
+
+) Irreversibility and Uncertainty.
+
+P f ¢) Loss and Damage fund
+, Jixd =14
+
+(%Y CamScanner
+
+
+Department of Economics
+Jahangienagar University
+M.Se. Final Examination, 2022
+
+Course: ECON 507: Health Economlics
+
+A}
+
+Time: Four Hours Marker?0
+Answer ANY FIVE of the following questions
+All parts'(')f a particular question have to be answered consecutively
+Marks on the right margin
+o1 ‘ [6+4+4=14]
+A. Define Health Economics (HE). Explain HE as a separate discipline using a
+
+schematic chart.
+B. What are the distinguishing features of health care services, and their
+
+allocative implications?
+C. How are supply and demand tools applied in the health care sector?
+
+2 [6+4+4=14]
+A. What are the public instruments in health sector that impact private
+decisions? .
+B. How did the cost of health care services become a major challenge in the
+
+health care sector?
+'C. How would you overcome these challenges?
+
+: [7+7=14]
+o2 A. What major problems have been identified that have made health care system
+itself ‘sick’? . »
+B. Explain your opinion on the choices that must be made in health and health
+care related services. ,
+
+: [6+8=14]
+A. How does the tax system influence health insurance demand?
+B. Explain how health insurance may affect labour supply related to retirement
+age and job mobility. :
+
+- [4+10=14]
+A. What is Clinical Decision Analysis (CDA)?
+B. Consider a patient who is 56 years old with ‘heart-burn’ for several years. He
+may have coronary risk-factors and a six-week history of squeezing chest pain. In
+his negative physical examination, physicians assigned 5% coronary artery
+stenosis (prior-probability). Sensitivity and specificity of the exercise- ECG are
+60% and 90% respectively.
+(I) Calculate the posterior probabilities using Bayesian theorem.
+(I) Perform steps to reach a clinical decision on performing ECG test. Consider
+the following utility values for best to worst outcome: 1.00, 0.75, 0.60 and 0.30.
+(IIT) Graphically present a sensitivity analysis based on two pre-test likelihoods.
+
+_—
+-
+-1 of 2-
+
+(% CamScanner
+
+
+A [3+6+5=14]
+A. Describe approaches in obtammg uhllty values for health states in Cost Utility
+
+Analysis (CUA).
+B. Critically demonstrate Ratmg Scale (RS) Time Trade Off (TTO) and Standard
+
+Gamble (SG) methods for assessing preferences of respondents.
+C. Graphically explain the relationship of cardinal utility with TTO and SG
+
+method. }
+
+; ' [6+8=14]
+A.’In a perfect health insurance market, a risk-averse individual will always be
+
+willing to pay full and fair premium for health insurance’. Discuss.
+
+B. Show that in the case of adverse selectxon (I) pooling equilibrium is not
+
+sustainable and (II) separating equ111br1um is possible only if the proportion of
+
+high-risk individuals is much lower than that of the low-rlsk individuals in the
+
+pool.
+[7+7=14]
+
+Write Short Notes on ANY TWO of the following:
+A. Supplier Induced Demand (SID).
+
+B. Euro Qol-5D. -
+C. Cost-Effective Analysis (CEA).
+D. Measures of calculating the value of life.
+
+® GOOD LUCK @&
+
+(% CamScanner
+
+
+Department of eonomles
+Jahangirnagar Unlverslty
+M.S¢. Final Examination, 2022
+
+Course: KCON 510: Labor Economlies
+Time: Four Hours Marks:70
+Answer FIVE questions, taking at Teast two questions from each Part A and Part B
+All parts of a particular question have o be answered consecutively
+
+Marks on the right margin
+
+PART Al
+[4+10=14]
+
+/l' ok
+A. 'Over a perlod, the female participation rate In the labor market increases” Justify this
+
+statement. i
+B. How can a labor reach his/her most efficient time allocation point about the
+
+combination of the labor working hours and the leisure hours?
+[2+6+6=14]
+
+A. Ilustrate the investment decision rules for taking higher education.
+
+B. Differentiate between general on-the-job training and specific on-the-
+
+Graphically analyze the benefits and the costs of these two trainings,
+
+C. Discuss using diagram(s) the signaling failure and the optimal signal when education
+
+training.
+
+is used as a screening device.
+[7+7=14]
+
+A. What are the various issues in employee selection? Briefly discuss the reasons that
+
+firms pay to spend resources on employee selection,
+B. How do you explain the added worker effectand the discouraged worker effect in the
+
+labor force growth during recessions? Use graph(s) if necessary.
+[7+7=14]
+
+A. What are the positive and the negative aspects of the wage subsidy program? Briefly
+
+explain, ;
+B. Why did the labor market not give rise to the predicted one wage?
+
+PART B:
+5‘
+
+[14]
+
+*Rapid advances in robotics technology have led to a growing concern over the labor
+market impacts of robot adoption and the disparate effects it may have across different
+groups of workers and occupations. Recent research findings suggest that robot adoption
+affects employment and wages significantly. However, the impacts of robot adoption are
+not borne equally among different groups of workers and occupations’, Critically
+evaluate these statements in the light of Mohsin Javed's (2023) research findings.
+
+. [14]
+‘While the advantages of foreign language skills on the labor market are well-studied,
+literature on the cost of non-native learning is still not well established’, To fill this gap,
+how did Juliana Bernhofer and Mirco Tonin (2022) explore the impact of the language of
+
+" instruction on grades. Explain.
+
+4 (14]
+/ What do you mean by SAHO? Why was it mandatory during the COVID period? In light
+of this, Ran Gu and Ling Zhong (2023), discuss the effects of SAHO on the skill
+
+requirements in vacancy posting. Discuss their findings.
+3. [2+6+6=14]
+
+A. What are the assumptions of wage determination in a competitive labor market?
+
+B. ‘Monopsonist can exploit the workers'. Explain it graphically.
+C. What are the effects of a minimum wage in a monopsony market. Briefly discuss.
+
+CamScanner
+
+
+Department of Economics
+Jahangirnagar University
+Course 512, Political Economy of Globalization
+Final Exam
+November 24, 2024
+Marks: 70, Time: 4 Hour
+
+Answer FIVE questions.
+All parts of a question have to be answered consccutively.
+Marks on the right margin
+
+1. The Wor!d Bank has' been prescribing various policy conditionality to developing countries
+attached to its loans. Discuss the underlying motive as well as the impact of the following three
+policies commonly prescribed by the World Bank. [6+4+4=14]
+
+a. Fiscal Discipline
+b. Removal of trade barriers
+c. Privatization of state owned industries
+
+b, R SRR (TIQETIT® ST AT S1eoy R et fods S i FT o7
+(T FSIATE AT 1ff5®) | Srgier orreEa Sog gt e
+
+Tafe a6 SSq AR SIeAsA1 391 Royamss (@ 92 47 o ez s o
+G 0 e
+
+F) MO =&l
+
+¥) T &F remER Lo
+
+2. a..What led to the development of Modemization theory back in the 1940s?
+
+b. Discuss four critiques of Modernization theory with examples [4+10=14]
+R) ) BIHTTH 7o TOHRTer SR 81 13 A ot IS (17
+VOIS G 2|
+
+3. What led to the development of Dependency theory (known as world system theory as well)
+back in the 1950s?
+
+Discuss two main arguments and two major critiques of dependency theory with examples. "
+. [2+12=1
+
+(o) ) AT T Lot RIS Ry BSies (i SO vt GRrafeeen? ©
+
+%) o™ R5fAa 2f8 IS g3z 2fF TG GArZReT 1= WG ST
+
+4. a. How can international negotiation help to avoid a trade-war?
+b. Why does GATT-WTO system generally try to prevent non-tariff intervention in trade? How does
+
+the WTO differ from the GATT? Discuss.
+¢. How have the roles of the JMF and the World Bank, and the relationship between these two
+
+institutions, changed as a result of foreign debt and financial crisis? [3+5+6=14]
+
+8) F) WBYISS WG VLT [FOI AMTC0-J7 JOTAT T2
+
+2[) GATT-WTO TSTF (F W@GISF TG non-tariff intervention iy (7 f[FSE WTO,
+GATT (37 JqF?
+
+1) TR 4T @ SAE 5B (WP, WBGIOS o1 ©24e 8 oy Tze g
+A 207 NS W@ TrE [Fona fRIGe 2aR?
+
+
+5. a. Discuss your opinion on at least 2 major critiques of the export oriented development
+
+model.
+b. Discuss a specific export oriented industry in Bangladesh which has largely altered the land,
+
+labor, and environmental pattern of a particular region of the country.
+
+c. C_an you draw a parallel incident from the colonial history of Africa, which showed a very
+similar pattern? What does it tell about the continuation of international economic exploitation in
+[4+4+6=14]
+
+the developing part of the world?
+
+¢) F) IWIR CHEF NGTA WSS Hf6 HCEAH [FT2reT S|
+
+) LA 16 IR 1] AT SITETToT Sl 1 HETR (TR IO
+
+TR G, AR G3 MfE R WO SAfRTEH JR|
+WWW@?@H@W@’WWCW%WW%N
+wwmwwmwwuﬁwmmﬁawﬁmmq
+
+AR SFAYIS TN WS ATS ST
+
+6. What are the economic explanations for multi-
+major effects of MNC's on home and host states?
+positive or negative? [4+6+4=14]
+
+) ITGIOH SeFA WATOF 68 fF? Home & Host States J4 R IgaIfoP TEH T
+oo fF7? (OTNE TS, A2 HORSTE 2SA6E FS (NSIAGE?
+
+e? Discuss how removal of trade barriers may inflict
+
+national corporations? What are some of the
+Do you think the effects have been more
+
+7. a. Does free trade benefit everyon
+conflicting interest among different groups of the economy and society.
+
+been seen to throw their produced milk
+| dairy farming. The dairy association of
+
+imported milk products.
+[7+7=14]
+
+b. In recent times, the dairy farmers in Bangladesh have
+
+on the street, demanding for high protection for the loca
+Bangladesh has demanded a high tariff of as much as 50 percent on the
+
+What is your opinion on protectionism in the dairy industry?
+q) ) T MG 35 ST GO STASNI SorR? TS IfTen A BF AR 7 fPend TS
+m@r@ﬁmﬁ?@wﬁ@@mmm
+Wmcmlﬁmmﬁm%ﬁrﬁamm%wﬁwmﬁm@wﬁa
+ﬁﬁ%wwﬁﬁéch«@ﬂaeow:waﬂm@@%mﬁmmmﬁm
+
+2) SifSe e, JLECHCT R
+
+8. a. What is Mercantilism?
+
+b. Discuss how protectionist policies have played a vital role during the initial phase of
+
+industrial development of the western world.
+v, ) NTEBIferor JCe & (am?
+
+) Wmmmmmmca@mﬁﬁ%(m%)m
+e ¢ ST (EUARTE SEs = Sl
+
+[6+8]
+
+(% CamScanner

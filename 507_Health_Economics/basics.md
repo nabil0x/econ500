@@ -94,6 +94,6 @@ Medical care is:
 
 | Batch | Course | Link |
 |-------|--------|------|
-| 46 (Hons 2020) | Health 404 | [Open Questions](../batch-finals/batch-46/health-404.md) |
-| 47 (MSc 2022) | Health 507 | [Open Questions](../batch-finals/batch-47/health-507.md) |
-| 48 (MSc 2023) | Health 507 | [Open Questions](../batch-finals/batch-48/health-507.md) |
+| 46 (Hons 2020) | Health 404 | [Open Questions](../question-banks/batch-finals/batch-46/health-404.md) |
+| 47 (MSc 2022) | Health 507 | [Open Questions](../question-banks/batch-finals/batch-47/health-507.md) |
+| 48 (MSc 2023) | Health 507 | [Open Questions](../question-banks/batch-finals/batch-48/health-507.md) |

@@ -110,6 +110,6 @@ Adds: Phase diagram, saddle-path stability, speed of adjustment.
 
 | Batch | Course | Link |
 |-------|--------|------|
-| 46 (Hons 2020) | Macro 402 | [Open Questions](../batch-finals/batch-46/macro-402.md) |
-| 47 (MSc 2022) | Macro 502 | [Open Questions](../batch-finals/batch-47/macro-502.md) |
-| 48 (MSc 2023) | Macro 502 | [Open Questions](../batch-finals/batch-48/macro-502.md) |
+| 46 (Hons 2020) | Macro 402 | [Open Questions](../question-banks/../../question-banks/batch-finals/batch-46/macro-402.md) |
+| 47 (MSc 2022) | Macro 502 | [Open Questions](../question-banks/../../question-banks/batch-finals/batch-47/macro-502.md) |
+| 48 (MSc 2023) | Macro 502 | [Open Questions](../question-banks/../../question-banks/batch-finals/batch-48/macro-502.md) |

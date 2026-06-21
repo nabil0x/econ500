@@ -140,5 +140,5 @@ Development economics increasingly relies on rigorous quantitative methods. Thes
 
 | Batch | Course | Theme | Link |
 |-------|--------|-------|------|
-| 47 (MSc 2022) | Dev 503 | Dependence, Convergence, Gender, IMF | [Open Questions](../batch-finals/batch-47/dev-503.md) |
-| 48 (MSc 2023) | Dev 503 | Econometric Methods for Development | [Open Questions](../batch-finals/batch-48/dev-503.md) |
+| 47 (MSc 2022) | Dev 503 | Dependence, Convergence, Gender, IMF | [Open Questions](../question-banks/batch-finals/batch-47/dev-503.md) |
+| 48 (MSc 2023) | Dev 503 | Econometric Methods for Development | [Open Questions](../question-banks/batch-finals/batch-48/dev-503.md) |

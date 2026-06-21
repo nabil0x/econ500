@@ -62,7 +62,7 @@ c) What is the role of the state and domestic private investors in expanding dom
 a) What led to the development of Modernization theory back in the 1940s and 50s? (3 marks)
 b) Examine 4 critiques of Modernization theory. (12 marks)
 
-*Related: [Modernization Theory](./modernization-theory/README.md), see [Framework 1 in exam guides](../exam-guides/exam-frameworks.md)*
+*Related: [Modernization Theory](./modernization-theory/README.md), see [Framework 1 in exam guides](../question-banks/exam-guides/exam-frameworks.md)*
 
 > **Note:** 3+12 mark split suggests a short answer on the Cold War/Truman context, then four full paragraph-length critiques. Use the existing Framework 1 for the critiques section.
 

@@ -6,10 +6,10 @@
 
 | # | File | Type | Content |
 |---|------|------|---------|
-| 1 | [`../batch-finals/batch-46/macro-402.md`](../../batch-finals/batch-46/macro-402.md) | Exam (Hons) | Batch 46 (2020) — 4th Year Hons Macro 402 |
-| 2 | [`../batch-finals/batch-47/macro-502.md`](../../batch-finals/batch-47/macro-502.md) | Exam (MSc) | Batch 47 (2022) — MSc Macro 502 Final |
-| 3 | [`../batch-finals/batch-47/macro-502-tutorial.md`](../../batch-finals/batch-47/macro-502-tutorial.md) | Tutorial Exam | Batch 47 — Macro 502 Tutorial |
-| 4 | [`../batch-finals/batch-48/macro-502.md`](../../batch-finals/batch-48/macro-502.md) | Exam (MSc) | Batch 48 (2023) — MSc Macro 502 Final |
+| 1 | [`../../../question-banks/batch-finals/batch-46/macro-402.md`](../../../../question-banks/batch-finals/batch-46/macro-402.md) | Exam (Hons) | Batch 46 (2020) — 4th Year Hons Macro 402 |
+| 2 | [`../../../question-banks/batch-finals/batch-47/macro-502.md`](../../../../question-banks/batch-finals/batch-47/macro-502.md) | Exam (MSc) | Batch 47 (2022) — MSc Macro 502 Final |
+| 3 | [`../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md`](../../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) | Tutorial Exam | Batch 47 — Macro 502 Tutorial |
+| 4 | [`../../../question-banks/batch-finals/batch-48/macro-502.md`](../../../../question-banks/batch-finals/batch-48/macro-502.md) | Exam (MSc) | Batch 48 (2023) — MSc Macro 502 Final |
 
 ## Study Files (in 502-Macroeconomics/)
 
@@ -29,7 +29,7 @@ All study materials are directly in the [`../502-Macroeconomics/`](../) director
 | [`GLOSSARY.md`](../GLOSSARY.md) | Quick-reference glossary (63 terms) |
 | [`GLOSSARY-DETAILED.md`](../GLOSSARY-DETAILED.md) | Detailed glossary with exam context per entry |
 | [`ANSWERS-INDEX.md`](../ANSWERS-INDEX.md) | Master index of all answer files |
-| [`answers-solow-ramsey-endogenous.md`](../answers-solow-ramsey-endogenous.md) | 25 solved answers (Solow, Ramsey, Endogenous Growth) |
+| [`answers-macroeconomics.md`](../answers-macroeconomics.md) | 25 solved answers (Solow, Ramsey, Endogenous Growth) |
 | [`answers-olg.md`](../answers-olg.md) | 2 solved OLG answers |
 | [`answers-rd-monopolistic.md`](../answers-rd-monopolistic.md) | 2 solved R&D Monopolistic answers |
 | [`answers-rbc.md`](../answers-rbc.md) | 2 solved RBC answers |

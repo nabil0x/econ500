@@ -358,4 +358,4 @@ This is a system of two forward-looking difference equations in $(x_t, \pi_t)$.
 
 ---
 
-> **Cross-Reference:** For related material on the Solow model, Ramsey-Cass-Koopmans, and endogenous growth, see [`answers-solow-ramsey-endogenous.md`](./answers-solow-ramsey-endogenous.md). For the RBC model framework (which shares the Euler equation foundation), see the Tutorial section of the Batch 47/48 questions.
+> **Cross-Reference:** For related material on the Solow model, Ramsey-Cass-Koopmans, and endogenous growth, see [`answers-macroeconomics.md`](./answers-macroeconomics.md). For the RBC model framework (which shares the Euler equation foundation), see the Tutorial section of the Batch 47/48 questions.

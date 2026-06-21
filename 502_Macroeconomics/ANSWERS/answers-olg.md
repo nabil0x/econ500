@@ -5,7 +5,7 @@
 > **Math convention:** All equations use LaTeX notation. GitHub renders them natively.
 > Display equations use `$$ ... $$`, inline formulas use `$ ... $`.
 > Questions drawn from the Diamond (1965) OLG model, Batch 47 MSc 2022 and Batch 48 MSc 2023.
-> Sources: [GLOSSARY.md](./GLOSSARY.md) (#term-olgi, #term-dynamic-inefficiency), [EXAM-CHEAT-SHEET.md](./EXAM-CHEAT-SHEET.md) (OLG section), [answers-solow-ramsey-endogenous.md](./answers-solow-ramsey-endogenous.md).
+> Sources: [../GUIDE/GLOSSARY.md](./../GUIDE/GLOSSARY.md) (#term-olgi, #term-dynamic-inefficiency), [EXAM-CHEAT-SHEET.md](./EXAM-CHEAT-SHEET.md) (OLG section), [answers-macroeconomics.md](./answers-macroeconomics.md).
 
 ---
 
@@ -174,7 +174,7 @@ With $\alpha = 1/3$, this gives $\lambda_{OLG} \approx 0.667$ (per period in dis
 >
 > **Professor's Corner:** The OLG model's convergence speed being independent of $n+g+\delta$ (under log utility) is a striking result. It arises because saving is proportional to wages, and wages depend only on $k_t$ and $A_t$ — the $n$ and $g$ parameters affect the level of $k_{t+1}$ (through the denominator of $D$) but not the eigenvalue $\alpha$ governing the transition. With general CRRA, the convergence speed depends on $\theta$, creating richer dynamics.
 >
-> → *See also: GLOSSARY.md [#term-olgi-model](./GLOSSARY.md#term-olgi-model), [#term-speed-of-convergence](./GLOSSARY.md#term-speed-of-convergence), [#term-dynamic-inefficiency](./GLOSSARY.md#term-dynamic-inefficiency). Compare with [Ramsey convergence speed in Q9](./answers-solow-ramsey-endogenous.md#q-ramsey-03).*
+> → *See also: ../GUIDE/GLOSSARY.md [#term-olgi-model](./../GUIDE/GLOSSARY.md#term-olgi-model), [#term-speed-of-convergence](./../GUIDE/GLOSSARY.md#term-speed-of-convergence), [#term-dynamic-inefficiency](./../GUIDE/GLOSSARY.md#term-dynamic-inefficiency). Compare with [Ramsey convergence speed in Q9](./answers-macroeconomics.md#q-ramsey-03).*
 
 ---
 
@@ -318,7 +318,7 @@ In this case, reducing the saving rate would **increase** steady-state consumpti
 >
 > **Professor's Corner:** Dynamic inefficiency in OLG was first identified by Samuelson (1958) and Diamond (1965). The condition $r < n+g$ is sometimes called the "Samuelson condition." In practice, the empirical relevance of dynamic inefficiency is debated — Abel, Mankiw, Summers & Zeckhauser (1989) developed a test based on whether capital's cash flow exceeds investment, finding that the US economy appears dynamically efficient. However, the theoretical possibility remains a cornerstone of OLG analysis and motivates the study of social security and government debt.
 >
-> → *See also: GLOSSARY.md [#term-dynamic-inefficiency](./GLOSSARY.md#term-dynamic-inefficiency), [#term-olgi-model](./GLOSSARY.md#term-olgi-model). Compare with [Ramsey modified Golden Rule in Q8](./answers-solow-ramsey-endogenous.md#q-ramsey-02) and [Solow Golden Rule in Q4](./answers-solow-ramsey-endogenous.md#q-solow-04).*
+> → *See also: ../GUIDE/GLOSSARY.md [#term-dynamic-inefficiency](./../GUIDE/GLOSSARY.md#term-dynamic-inefficiency), [#term-olgi-model](./../GUIDE/GLOSSARY.md#term-olgi-model). Compare with [Ramsey modified Golden Rule in Q8](./answers-macroeconomics.md#q-ramsey-02) and [Solow Golden Rule in Q4](./answers-macroeconomics.md#q-solow-04).*
 
 ---
 
@@ -341,8 +341,8 @@ In this case, reducing the saving rate would **increase** steady-state consumpti
 ---
 
 > **Cross-Reference Index:**
-> - GLOSSARY.md: [#term-olgi](./GLOSSARY.md#term-olgi), [#term-dynamic-inefficiency](./GLOSSARY.md#term-dynamic-inefficiency), [#term-speed-of-convergence](./GLOSSARY.md#term-speed-of-convergence)
+> - ../GUIDE/GLOSSARY.md: [#term-olgi](./../GUIDE/GLOSSARY.md#term-olgi), [#term-dynamic-inefficiency](./../GUIDE/GLOSSARY.md#term-dynamic-inefficiency), [#term-speed-of-convergence](./../GUIDE/GLOSSARY.md#term-speed-of-convergence)
 > - EXAM-CHEAT-SHEET.md: [OLG section](./EXAM-CHEAT-SHEET.md) (lines 48-55)
-> - Solow model: [Q1–Q6](./answers-solow-ramsey-endogenous.md#q-solow-01)
-> - Ramsey model: [Q7–Q11](./answers-solow-ramsey-endogenous.md#q-ramsey-01)
-> - Endogenous growth: [Q12–Q15](./answers-solow-ramsey-endogenous.md#q-endogrowth-01)
+> - Solow model: [Q1–Q6](./answers-macroeconomics.md#q-solow-01)
+> - Ramsey model: [Q7–Q11](./answers-macroeconomics.md#q-ramsey-01)
+> - Endogenous growth: [Q12–Q15](./answers-macroeconomics.md#q-endogrowth-01)

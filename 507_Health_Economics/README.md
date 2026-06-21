@@ -2,7 +2,7 @@
 
 > **Source:** Batch 46 Hons 2020 (Health 404), Batch 47 MSc 2022 (Health 507), Batch 48 MSc 2023 (Health 507)
 > **Cross-links:** [Study Hub](../index.md) | [Microeconomics](../501-Microeconomics/README.md) | [Basics →](./basics.md)
-> **Batch files:** [Batch 46](../batch-finals/batch-46/health-404.md) · [Batch 47](../batch-finals/batch-47/health-507.md) · [Batch 48](../batch-finals/batch-48/health-507.md)
+> **Batch files:** [Batch 46](../question-banks/batch-finals/batch-46/health-404.md) · [Batch 47](../question-banks/batch-finals/batch-47/health-507.md) · [Batch 48](../question-banks/batch-finals/batch-48/health-507.md)
 
 ---
 

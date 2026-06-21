@@ -310,9 +310,9 @@ Microeconomic theory is the foundation for several other MSc economics courses. 
 | **Market failure (externalities)** | [Development (resource curse)](../503-Development/basics.md) · [Political Economy (intervention)](../512-Political-Economy/basics.md) | Venezuela oil dependency; state vs market debate |
 | **Comparative advantage** | [Dev (trade specialization)](../503-Development/basics.md) · [Pol Econ (free trade)](../512-Political-Economy/basics.md) | RMG export concentration; WTO AoA critique |
 | **DWL of tariffs/taxes** | [§9 Trade & Tariffs](#9-trade-tariffs) · [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) · [Pol Econ](../512-Political-Economy/basics.md) | $½ \times t \times \Delta Q$ applied to trade policy |
-| **Asymmetric information** | [Health (Lemons, SID)](../health-economics/basics.md) · [Pol Econ (MNC behavior)](../512-Political-Economy/basics.md) | Akerlof lemons → health insurance markets; OLI paradigm |
+| **Asymmetric information** | [Health (Lemons, SID)](../507-Health/basics.md) · [Pol Econ (MNC behavior)](../512-Political-Economy/basics.md) | Akerlof lemons → health insurance markets; OLI paradigm |
 | **Game theory (PD)** | [Political Economy (trade negotiations)](../512-Political-Economy/basics.md) | Prisoners' Dilemma models tariff wars and WTO enforcement |
-| **Consumer/producer surplus** | [Health (CEA/CUA, QALYs)](../health-economics/basics.md) · [Dev (project CBA)](../503-Development/basics.md) | Welfare measurement tools applied to health and development projects |
+| **Consumer/producer surplus** | [Health (CEA/CUA, QALYs)](../507-Health/basics.md) · [Dev (project CBA)](../503-Development/basics.md) | Welfare measurement tools applied to health and development projects |
 | **Production theory** | [Development (dual economy)](../503-Development/basics.md) | Lewis structural transformation; sectoral productivity gaps |
 
 **Full cross-course reference:** [Cross-Links in README](./README.md#cross-course-links)

@@ -127,4 +127,4 @@ Export-Oriented Growth  ↔  Domestic-Led Development
 
 | Batch | Course | Link |
 |-------|--------|------|
-| 47 (MSc 2022) | Political 512 | [Open Questions](../batch-finals/batch-47/political-512.md) |
+| 47 (MSc 2022) | Political 512 | [Open Questions](../question-banks/batch-finals/batch-47/political-512.md) |

@@ -142,7 +142,7 @@
 | Cross-reference map | [`answers-cross-reference.md`](./answers-cross-reference.md) |
 | Key definitions & formulas | [`basics.md`](./basics.md) |
 | Raw textbook material | [`resources/README.md`](./resources/README.md) |
-| Original exam papers | [`../batch-finals/batch-47/micro-501.md`](../batch-finals/batch-47/micro-501.md), [`../batch-finals/batch-48/micro-501.md`](../batch-finals/batch-48/micro-501.md), [`../batch-finals/batch-46/micro-401.md`](../batch-finals/batch-46/micro-401.md) |
+| Original exam papers | [`../batch-finals/batch-47/micro-501.md`](../question-banks/batch-finals/batch-47/micro-501.md), [`../batch-finals/batch-48/micro-501.md`](../question-banks/batch-finals/batch-48/micro-501.md), [`../batch-finals/batch-46/micro-401.md`](../question-banks/batch-finals/batch-46/micro-401.md) |
 | Resource index | [`resources/README.md`](./resources/README.md) |
 | Main hub | [`../index.md`](../index.md) |
 

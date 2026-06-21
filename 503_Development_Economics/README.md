@@ -86,8 +86,8 @@ Located in parent directories:
 
 ## 🎯 MSc Final Examination Questions
 
-> **Source:** [Batch 47 (2022)](../batch-finals/batch-47/dev-503.md) and [Batch 48 (2023)](../batch-finals/batch-48/dev-503.md) — MSc Final Exams, Jahangirnagar University
-> **Cross-links:** [Batch Finals Hub](../batch-finals/README.md) | [Master Study Notes](../MASTER_STUDY_NOTES.md)
+> **Source:** [Batch 47 (2022)](../question-banks/batch-finals/batch-47/dev-503.md) and [Batch 48 (2023)](../question-banks/batch-finals/batch-48/dev-503.md) — MSc Final Exams, Jahangirnagar University
+> **Cross-links:** [Batch Finals Hub](../question-banks/batch-finals/README.md) | [Master Study Notes](../MASTER_STUDY_NOTES.md)
 
 ### Batch 47 (2022) — Theories & Policy Debates
 

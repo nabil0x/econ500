@@ -66,6 +66,21 @@ extra_javascript:
 plugins:
   - search
 
+# Exclude non-markdown files from the build to keep it fast
+exclude_docs: |
+  *.pdf
+  *.jpg
+  *.jpeg
+  *.png
+  *.gif
+  *.docx
+  *.pptx
+  *.ppt
+  *.zip
+  !assets/*.png
+  !assets/*.jpg
+  !assets/*.svg
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -127,9 +142,29 @@ nav:
 
   # ─── MACROECONOMICS (502) ─────────────────────────────────────────
   - 📈 Macroeconomics (502):
-    - Overview: macroeconomics/README.md
-    - Basics: macroeconomics/basics.md
-    - ✅ Answers: 502-Macroeconomics/ANSWERS-INDEX.md
+    - Overview: 502-Macroeconomics/GUIDE/README.md
+    - Study Roadmap: 502-Macroeconomics/GUIDE/STUDY-ROADMAP.md
+    - Exam Cheat Sheet: 502-Macroeconomics/GUIDE/EXAM-CHEAT-SHEET.md
+    - Exam Answer Template: 502-Macroeconomics/GUIDE/EXAM-ANSWER-TEMPLATE.md
+    - Exam Priority Matrix: 502-Macroeconomics/GUIDE/EXAM-PRIORITY-MATRIX.md
+    - Exam Common Mistakes: 502-Macroeconomics/GUIDE/EXAM-COMMON-MISTAKES.md
+    - Exam Simulations: 502-Macroeconomics/GUIDE/EXAM-SIMULATIONS.md
+    - Basics: 502-Macroeconomics/GUIDE/basics.md
+    - Equation Explainer: 502-Macroeconomics/GUIDE/EQUATION-EXPLAINER.md
+    - 📖 Glossary (Detailed): 502-Macroeconomics/GUIDE/GLOSSARY-DETAILED.md
+    - 📖 Glossary: 502-Macroeconomics/GUIDE/GLOSSARY.md
+    - ✅ Answer Files:
+      - All Answers: 502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md
+      - Macroeconomics: 502-Macroeconomics/ANSWERS/answers-macroeconomics.md
+      - RBC: 502-Macroeconomics/ANSWERS/answers-rbc.md
+      - New Keynesian: 502-Macroeconomics/ANSWERS/answers-new-keynesian.md
+      - R&D / Monopolistic: 502-Macroeconomics/ANSWERS/answers-rd-monopolistic.md
+      - OLG: 502-Macroeconomics/ANSWERS/answers-olg.md
+    - ❓ Question Indexes:
+      - By Topic (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise-answered.md
+      - By Topic (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise.md
+      - By Year (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise-answered.md
+      - By Year (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise.md
 
   # ─── DEVELOPMENT ECONOMICS (503) ─────────────────────────────────
   - 🌱 Development (503):
@@ -183,46 +218,110 @@ nav:
 
   # ─── HEALTH ECONOMICS (507) ────────────────────────────────────────
   - 🏥 Health Economics (507):
-    - Overview: health-economics/README.md
-    - Basics: health-economics/basics.md
+    - Overview: 507-Health/README.md
+    - Basics: 507-Health/basics.md
+    - Course Materials: 507-Health/507/README.md
 
   # ─── BATCH FINALS ──────────────────────────────────────────────────
   - 🎯 Batch Finals:
-    - All Batches: batch-finals/README.md
+    - All Batches: question-banks/batch-finals/README.md
     - Batch 47 (2022 MSc):
-      - Overview: batch-finals/batch-47/README.md
-      - Micro 501: batch-finals/batch-47/micro-501.md
-      - Micro 501 Tutorial: batch-finals/batch-47/micro-501-tutorial.md
-      - Macro 502: batch-finals/batch-47/macro-502.md
-      - Macro 502 Tutorial: batch-finals/batch-47/macro-502-tutorial.md
-      - Dev 503: batch-finals/batch-47/dev-503.md
-      - Health 507: batch-finals/batch-47/health-507.md
-      - Health 507 Tutorial: batch-finals/batch-47/health-507-tutorial.md
-      - Political 512: batch-finals/batch-47/political-512.md
-      - Econometrics 504: batch-finals/batch-47/econometrics-504.md
-      - Econometrics 504 Tutorial: batch-finals/batch-47/econometrics-504-tutorial.md
-      - Environmental 506: batch-finals/batch-47/environmental-506.md
-      - Labor 510: batch-finals/batch-47/labor-510.md
-      - Labor 510 Tutorial: batch-finals/batch-47/labor-510-tutorial.md
+      - Overview: question-banks/batch-finals/batch-47/README.md
+      - Micro 501: question-banks/batch-finals/batch-47/micro-501.md
+      - Micro 501 Tutorial: question-banks/batch-finals/batch-47/micro-501-tutorial.md
+      - Macro 502: question-banks/batch-finals/batch-47/macro-502.md
+      - Macro 502 Tutorial: question-banks/batch-finals/batch-47/macro-502-tutorial.md
+      - Dev 503: question-banks/batch-finals/batch-47/dev-503.md
+      - Health 507: question-banks/batch-finals/batch-47/health-507.md
+      - Health 507 Tutorial: question-banks/batch-finals/batch-47/health-507-tutorial.md
+      - Political 512: question-banks/batch-finals/batch-47/political-512.md
+      - Econometrics 504: question-banks/batch-finals/batch-47/econometrics-504.md
+      - Econometrics 504 Tutorial: question-banks/batch-finals/batch-47/econometrics-504-tutorial.md
+      - Environmental 506: question-banks/batch-finals/batch-47/environmental-506.md
+      - Labor 510: question-banks/batch-finals/batch-47/labor-510.md
+      - Labor 510 Tutorial: question-banks/batch-finals/batch-47/labor-510-tutorial.md
     - Batch 48 (2023 MSc):
-      - Overview: batch-finals/batch-48/README.md
-      - Micro 501: batch-finals/batch-48/micro-501.md
-      - Macro 502: batch-finals/batch-48/macro-502.md
-      - Dev 503: batch-finals/batch-48/dev-503.md
-      - Health 507: batch-finals/batch-48/health-507.md
-      - Econometrics 504: batch-finals/batch-48/econometrics-504.md
-      - Labor 510: batch-finals/batch-48/labor-510.md
+      - Overview: question-banks/batch-finals/batch-48/README.md
+      - Micro 501: question-banks/batch-finals/batch-48/micro-501.md
+      - Macro 502: question-banks/batch-finals/batch-48/macro-502.md
+      - Dev 503: question-banks/batch-finals/batch-48/dev-503.md
+      - Health 507: question-banks/batch-finals/batch-48/health-507.md
+      - Econometrics 504: question-banks/batch-finals/batch-48/econometrics-504.md
+      - Labor 510: question-banks/batch-finals/batch-48/labor-510.md
     - Batch 46 (2020 Hons):
-      - Overview: batch-finals/batch-46/README.md
-      - Micro 401: batch-finals/batch-46/micro-401.md
-      - Macro 402: batch-finals/batch-46/macro-402.md
-      - Health 404: batch-finals/batch-46/health-404.md
+      - Overview: question-banks/batch-finals/batch-46/README.md
+      - Micro 401: question-banks/batch-finals/batch-46/micro-401.md
+      - Macro 402: question-banks/batch-finals/batch-46/macro-402.md
+      - Health 404: question-banks/batch-finals/batch-46/health-404.md
 
   # ─── EXAM GUIDES ───────────────────────────────────────────────────
   - 🧪 Exam Guides:
-    - Theorists Quick Reference: exam-guides/theorists-reference.md
-    - Exam Answer Frameworks: exam-guides/exam-frameworks.md
-    - Key Statistics Reference: exam-guides/statistics-reference.md
+    - Theorists Quick Reference: question-banks/exam-guides/theorists-reference.md
+    - Exam Answer Frameworks: question-banks/exam-guides/exam-frameworks.md
+    - Key Statistics Reference: question-banks/exam-guides/statistics-reference.md
+
+  # ─── LABOR ECONOMICS (510) ─────────────────────────────────────────
+  - 🔧 Labor Economics (510):
+    - Overview: 510-Labor/510/README.md
+    - Course Notes: 510-Labor/Class Note/README.md
+
+  # ─── ENVIRONMENTAL ECONOMICS (506) ─────────────────────────────────
+  - 🌿 Environmental Economics (506):
+    - Overview: 506-Environmental/README.md
+    - Batch Materials: 506-Environmental/506/README.md
+
+  # ─── INTERNATIONAL ECONOMICS (512B) ────────────────────────────────
+  - 🌐 International Economics (512):
+    - Overview: 512-International/512/README.md
+    - ✅ Answers: 512-International/answers-political-economy.md
+    - 📝 Topics:
+      - Modernization Theory:
+        - Basics: 512-International/modernization-theory/basics.md
+        - Full Notes: 512-International/modernization-theory/README.md
+      - Dependency Theory:
+        - Basics: 512-International/dependency-theory/basics.md
+        - Full Notes: 512-International/dependency-theory/README.md
+      - Washington Consensus:
+        - Basics: 512-International/washington-consensus/basics.md
+        - Full Notes: 512-International/washington-consensus/README.md
+      - Free Trade in Agriculture:
+        - Basics: 512-International/free-trade-agriculture/basics.md
+        - Full Notes: 512-International/free-trade-agriculture/README.md
+      - Food Crisis (Patnaik):
+        - Basics: 512-International/food-crisis/basics.md
+        - Full Notes: 512-International/food-crisis/README.md
+      - Bangladesh Dairy:
+        - Basics: 512-International/bangladesh-dairy/basics.md
+        - Full Notes: 512-International/bangladesh-dairy/README.md
+      - RMG Sector:
+        - Basics: 512-International/rmg-sector/basics.md
+        - Full Notes: 512-International/rmg-sector/README.md
+      - Cash Crops vs Food Crops:
+        - Basics: 512-International/cash-crops/basics.md
+        - Full Notes: 512-International/cash-crops/README.md
+
+  # ─── UNDERGRAD (404-408) ───────────────────────────────────────────
+  - 🎓 Undergrad Review (404-408):
+    - Overview: 404-408-Undergrad/README.md
+    - Econ 301: 404-408-Undergrad/OLDER_ECON__NOTES/301.md
+
+  # ─── EXTRACTED TEXTBOOK CONTENT ────────────────────────────────────
+  - 📖 Extracted Content:
+    - 📐 Micro 501:
+      - Answers: extracted-content/501_Microeconomics/Answers/README.md
+      - Tutorials: extracted-content/501_Microeconomics/TUTORIALS/README.md
+    - 📈 Macro 502:
+      - Textbooks: extracted-content/502_Macroeconomics/TEXTBOOKS/README.md
+      - Tutorials: extracted-content/502_Macroeconomics/TUTORIALS/README.md
+      - Solow Class Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md
+    - 🌱 Development 503:
+      - Materials: extracted-content/503_Development_Economics/README.md
+    - 🌐 International Econ 512:
+      - Materials: extracted-content/512_International_Economics/README.md
+    - 🏥 Health 507:
+      - Materials: extracted-content/507_Health_Economics/README.md
+    - 🎯 Question Banks:
+      - Content: extracted-content/Question_Banks/README.md
 
   # ─── MASTER NOTES ──────────────────────────────────────────────────
   - 📚 Master Study Notes (503+512): MASTER_STUDY_NOTES.md

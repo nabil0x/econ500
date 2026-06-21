@@ -301,7 +301,7 @@ where $B = [v(1) - v(1-\bar{l})]/\bar{l} > 0$ is a **constant** calibrated from 
 ---
 
 > **Cross-Reference Index:**
-> - Solow model: [answers-solow-ramsey-endogenous.md](./answers-solow-ramsey-endogenous.md#q-solow-01)
-> - Ramsey model: [answers-solow-ramsey-endogenous.md](./answers-solow-ramsey-endogenous.md#q-ramsey-01)
-> - Endogenous growth: [answers-solow-ramsey-endogenous.md](./answers-solow-ramsey-endogenous.md#q-endogrowth-01)
+> - Solow model: [answers-macroeconomics.md](./answers-macroeconomics.md#q-solow-01)
+> - Ramsey model: [answers-macroeconomics.md](./answers-macroeconomics.md#q-ramsey-01)
+> - Endogenous growth: [answers-macroeconomics.md](./answers-macroeconomics.md#q-endogrowth-01)
 > - New Keynesian DSGE: Batch 47 Q8, Batch 48 Q8

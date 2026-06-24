@@ -3,7 +3,7 @@
 > **Exam:** M.Sc. Final Examination 2022
 > **Time:** 4 Hours | **Full Marks:** 70
 > **Instructions:** Answer any five questions. All parts consecutively.
-> **✅ Solved answers:** [`../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md`](../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md) (Batch 47 Q1–Q6 covered)
+> **✅ Solved answers:** [`../../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md`](../../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md) (Batch 47 Q1–Q6 covered)
 
 ---
 

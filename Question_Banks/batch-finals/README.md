@@ -23,7 +23,7 @@
 | Subject | Course | Batch 46 | Batch 47 | Batch 48 | Answers File |
 |---------|--------|----------|----------|----------|-------------|
 | **Microeconomics** | 401/501 | ✅ | ✅ | ✅ | [`answers-*.md`](../501-Microeconomics/ANSWERS-INDEX.md) — 77 Qs |
-| **Macroeconomics** | 402/502 | ✅ | ✅ | ✅ | [`ANSWERS-INDEX.md`](../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md) — 33 Qs ✅ NEW |
+| **Macroeconomics** | 402/502 | ✅ | ✅ | ✅ | [`ANSWERS-INDEX.md`](../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md) — 33 Qs ✅ NEW |
 | **Development Econ** | 503 | — | ✅ | ✅ | [`answers-development.md`](../503-Development/answers-development.md) — 21 Qs ✅ NEW |
 | **Econometrics** | 504 | — | ✅ | ✅ | — |
 | **Environmental Econ** | 506 | — | ✅ | — | — |

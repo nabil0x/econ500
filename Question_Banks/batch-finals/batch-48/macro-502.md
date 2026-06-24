@@ -3,7 +3,18 @@
 > **Exam:** M.Sc. Final Examination 2023
 > **Time:** 4 Hours | **Full Marks:** 70
 > **Instructions:** Answer any five questions. All parts consecutively.
-> **✅ Solved answers:** [`../../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md`](../../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md) (Batch 48 Q1–Q5 covered)
+> **✅ Solved answers:** [`../../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md`](../../../502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md) (Batch 48 Q1–Q8 covered)
+>
+> | Q# | Topic | Answer |
+> |:--:|-------|:------:|
+> | Q1 | Solow Model | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-macroeconomics.md#q-batch48-macro-01) |
+> | Q2 | Romer Endogenous Growth | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-macroeconomics.md#q-batch48-macro-02) |
+> | Q3 | Ramsey-Cass-Koopmans | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-macroeconomics.md#q-batch48-macro-03) |
+> | Q4 | Overlapping Generations | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-olg.md#q-olg-batch48-q4) |
+> | Q5 | R&D Growth (Romer/GH/AGH) | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-macroeconomics.md#q-batch48-macro-04) |
+> | Q6 | R&D Monopolistic Competition | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-rd-monopolistic.md#q-rd-mono-batch48-q6) |
+> | Q7 | Real Business Cycle | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-rbc.md#q-rbc-batch48-q7) |
+> | Q8 | New Keynesian DSGE | [`→ Answer`](../../../502-Macroeconomics/ANSWERS/answers-new-keynesian.md#q-nk-batch48-q8) |
 
 ---
 

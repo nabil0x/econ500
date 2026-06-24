@@ -107,6 +107,14 @@
 | **Dynamic Efficiency** | Economy is dynamically efficient if $k \le k_{gold}$ (consumption not reducible by lowering saving); Solow can have $k > k_{gold}$ (oversaving), Ramsey always has $k^* < k_{gold}$ | [Q4](../ANSWERS/answers-macroeconomics.md#q-solow-04), [Q8](../ANSWERS/answers-macroeconomics.md#q-ramsey-02) | [→](#term-samuelson-condition-macro) |
 <a id="term-growth-accounting"></a>
 | **Growth Accounting** | $\dot{Y}/Y = \dot{A}/A + \alpha \dot{K}/K + (1-\alpha)\dot{L}/L$; decomposes growth into TFP (Solow residual) and factor accumulation | [Q17](../ANSWERS/answers-macroeconomics.md#q-batch47-macro-02) | [→](#term-growth-accounting) |
+<a id="term-taylor-principle"></a>
+| **Taylor Principle** | $\phi_\pi > 1$: central bank must raise nominal rate more than one-for-one with inflation for determinacy; $\phi_\pi < 1$ permits sunspot fluctuations | [Q8 batch-47](./../../question-banks/batch-finals/batch-47/macro-502.md), [Q8 batch-48](./../../question-banks/batch-finals/batch-48/macro-502.md) | [→](./GLOSSARY-DETAILED.md#detail-term-taylor-principle) |
+<a id="term-solow-neutral"></a>
+| **Solow-Neutral (Capital-Augmenting) Tech Progress** | $Y = F(AK, L)$; technology multiplies capital effectiveness; $K/Y$ ratio NOT constant on BGP; violates Uzawa's Theorem | [Q1 batch-48](../ANSWERS/answers-macroeconomics.md#q-batch48-macro-01) | [→](./GLOSSARY-DETAILED.md#detail-term-solow-neutral) |
+<a id="term-policy-ineffectiveness"></a>
+| **Policy Ineffectiveness Proposition** (Lucas-Sargent-Wallace) | Under rational expectations, perfectly anticipated monetary policy has no real effects on output or employment — only unanticipated policy matters | [Q8 batch-47](./../../question-banks/batch-finals/batch-47/macro-502.md), [Q8 batch-48](./../../question-banks/batch-finals/batch-48/macro-502.md) | [→](./GLOSSARY-DETAILED.md#detail-term-policy-ineffectiveness) |
+<a id="term-classical-dichotomy"></a>
+| **Classical Dichotomy / Neutrality of Money** | Real variables (output, employment) determined independently of nominal variables (money supply, price level); changes in $M$ affect only $P$ in long run | [Tutorial 1 Q3](./../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) | [→](./GLOSSARY-DETAILED.md#detail-term-classical-dichotomy) |
 
 ---
 
@@ -163,3 +171,20 @@
 | **Wicksellian (Natural) Rate** | $r_t^n = \rho + \sigma^{-1} g$; real interest rate that would prevail with flexible prices; benchmark for monetary policy in NK model | [../../question-banks/batch-finals/batch-47/macro-502.md](./../../question-banks/batch-finals/batch-47/macro-502.md) | [→](#term-wicksellian-rate) |
 <a id="term-learning-by-doing"></a>
 | **Learning by Doing** | $\dot{A} = \delta L$; knowledge accumulates as byproduct of production experience (Arrow, 1962); form of endogenous growth without formal R&D | [Q15](../ANSWERS/answers-macroeconomics.md#q-endogrowth-04), [Q24](../ANSWERS/answers-macroeconomics.md#q-batch48-macro-04) | [→](#term-learning-by-doing) |
+<a id="term-breakeven-investment"></a>
+| **Break-even Investment** | Amount of investment per effective worker required to keep $k$ constant: $(n+g+\delta)k$; replaces depreciated capital, equips new workers, and keeps up with technology | [Q1 batch-47](../ANSWERS/answers-macroeconomics.md#q-batch47-macro-01), [Q1 batch-48](../ANSWERS/answers-macroeconomics.md#q-batch48-macro-01) | [→](./GLOSSARY-DETAILED.md#detail-term-breakeven-investment) |
+<a id="term-actual-investment"></a>
+| **Actual Investment** | Flow of new capital per effective worker actually produced: $s f(k)$; determined by saving rate $s$ and output per effective worker $f(k)$ | [Q1 batch-47](../ANSWERS/answers-macroeconomics.md#q-batch47-macro-01), [Q1 batch-48](../ANSWERS/answers-macroeconomics.md#q-batch48-macro-01) | [→](./GLOSSARY-DETAILED.md#detail-term-actual-investment) |
+<a id="term-frisch-elasticity"></a>
+| **Frisch Elasticity of Labor Supply** | Elasticity of labor supply with respect to wage, holding marginal utility of wealth constant; measures intertemporal substitution of work; Hansen's value of $\infty$ breaks RBC labor volatility puzzle | [Q7 batch-47](../ANSWERS/answers-rbc.md#q-rbc-batch47-q7), [Q7 batch-48](../ANSWERS/answers-rbc.md#q-rbc-batch48-q7) | [→](./GLOSSARY-DETAILED.md#detail-term-frisch-elasticity) |
+<a id="term-hansen-labor"></a>
+| **Hansen Indivisible Labor (Rogerson Lottery)** | RBC labor market model where individuals work full-time or zero (lottery); aggregate hours vary along extensive margin, not intensive; generates near-infinite labor supply elasticity matching data | [Q7 batch-47](../ANSWERS/answers-rbc.md#q-rbc-batch47-q7), [Q7 batch-48](../ANSWERS/answers-rbc.md#q-rbc-batch48-q7) | [→](./GLOSSARY-DETAILED.md#detail-term-hansen-labor) |
+<a id="term-lucas-supply"></a>
+| **Lucas Supply Curve / Lucas Islands Model** | $y = \bar{y} + b(P - P^e)$; output deviates from natural rate only when actual price level differs from expected; rational expectations $\to$ only unanticipated monetary shocks affect real output; microfoundation in Lucas islands model with imperfect information | [Q8 batch-47](./../../question-banks/batch-finals/batch-47/macro-502.md), [Q8 batch-48](./../../question-banks/batch-finals/batch-48/macro-502.md) | [→](./GLOSSARY-DETAILED.md#detail-term-lucas-supply) |
+<a id="term-calvo-pricing"></a>
+| **Calvo Pricing** | In each period, a random fraction $(1-\theta)$ of firms reset prices, $\theta$ keep prices fixed; average price duration $= 1/(1-\theta)$; microfoundation of NK Phillips Curve; yields forward-looking inflation dynamics | [Q8 batch-47](./../../question-banks/batch-finals/batch-47/macro-502.md), [Q8 batch-48](./../../question-banks/batch-finals/batch-48/macro-502.md) | [→](./GLOSSARY-DETAILED.md#detail-term-calvo-pricing) |
+<a id="term-cost-push"></a>
+| **Cost-Push Shock** | Disturbance $u_t$ shifting NK Phillips Curve: $\pi_t = \beta E_t\pi_{t+1} + \kappa x_t + u_t$; creates inflation-output gap trade-off, breaking Divine Coincidence; examples: oil price spikes, markup shocks | [Q8 batch-47](./../../question-banks/batch-finals/batch-47/macro-502.md) | [→](./GLOSSARY-DETAILED.md#detail-term-cost-push) |
+<a id="term-rd-phase-diagram"></a>
+| **R&D Phase Diagram ($g_A,g_K$ Space)** | $(g_A,g_K)$ space with $\dot{g}_A=0$ and $\dot{g}_K=0$ loci; intersection determines BGP growth rates; $\dot{g}_A=0$ slopes upward (semi-endogenous) or horizontal (fully endogenous); central diagram for endogenous growth dynamics | [Q5 batch-47](../ANSWERS/answers-macroeconomics.md#q-batch47-macro-05), [Q5 batch-48](../ANSWERS/answers-macroeconomics.md#q-batch48-macro-04) | [→](./GLOSSARY-DETAILED.md#detail-term-rd-phase-diagram) |
+

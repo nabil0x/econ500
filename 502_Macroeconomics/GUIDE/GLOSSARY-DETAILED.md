@@ -308,8 +308,35 @@
 **Exam tip:** Rearrange to isolate $\dot{A}/A$ (Solow residual = TFP). With $\alpha = 1/3$, 1% output growth from 1% capital and 1% labour growth gives zero TFP growth — all factor accumulation.
 **Also see:** [Glossary](./GLOSSARY.md#term-growth-accounting) | [Eqn Explainer: Growth Accounting](./EQUATION-EXPLAINER.md#eq-growth-accounting)
 
----
+<a id="detail-term-taylor-principle"></a>
+### **Taylor Principle — $\phi_\pi > 1$ for Determinacy**
+**What it is:** Condition that the central bank must raise the nominal interest rate by MORE than one percentage point for each percentage point rise in inflation ($\phi_\pi > 1$). If $\phi_\pi < 1$, the real interest rate falls when inflation rises, amplifying shocks instead of damping them — leading to indeterminacy (sunspot fluctuations). This is a necessary condition for a unique equilibrium in the NK DSGE model.
+**Why it matters:** Without the Taylor principle, the economy can fluctuate for no fundamental reason — self-fulfilling expectations become possible (multiple equilibria). The Taylor principle is the single most important condition for monetary policy design. Central banks that violated it (e.g., 1970s) experienced unstable inflation.
+**Exam tip:** When analysing NK determinacy, always check $\phi_\pi > 1$. If asked "is this Taylor rule stabilizing?", answer: only if $\phi_\pi > 1$. $\phi_\pi = 1.5$ is the standard calibrated value (Taylor, 1993). A tax on interest (Friedman rule) violates the Taylor principle.
+**Also see:** [Glossary: Taylor Rule](./GLOSSARY.md#term-taylor-rule) | [Eqn Explainer: NK IS](./EQUATION-EXPLAINER.md#eq-nk-is)
 
+<a id="detail-term-solow-neutral"></a>
+### **Solow-Neutral (Capital-Augmenting) Tech Progress — $Y = F(AK, L)$**
+**What it is:** Technological progress that multiplies the effectiveness of capital: $Y = F(AK, L)$. Each unit of capital becomes $A$ times more productive. Contrast with Harrod-neutral (labour-augmenting: $Y = F(K, AL)$) and Hicks-neutral (output-augmenting: $Y = A F(K, L)$).
+**Why it matters:** Uzawa's Theorem says Solow-neutral tech progress is NOT consistent with a balanced growth path (constant $K/Y$ ratio). If tech is capital-augmenting, capital's share of income rises over time — contradicting the Kaldor facts. For Cobb-Douglas, all three forms are observationally equivalent because $Y = (AK)^\alpha L^{1-\alpha} = K^\alpha (A^{1/(1-\alpha)} L)^{1-\alpha}$ can be rewritten as Harrod-neutral.
+**Exam tip:** Always check the functional form when asked about tech progress. For CES production, the form matters greatly. Cobb-Douglas collapses the distinction. Uzawa's Theorem says sustained BGP requires Harrod-neutral — so Solow-neutral cannot sustain BGP.
+**Also see:** [Glossary: Harrod-Neutral](./GLOSSARY.md#term-harrod-neutral) | [Glossary: Hicks-Neutral](./GLOSSARY.md#term-hicks-neutral-macro) | [Glossary: Uzawa](./GLOSSARY.md#term-uzawa-theorem)
+
+<a id="detail-term-policy-ineffectiveness"></a>
+### **Policy Ineffectiveness Proposition — Lucas-Sargent-Wallace**
+**What it is:** Under rational expectations and flexible prices, perfectly anticipated monetary policy has NO effect on real output or employment. Only unanticipated monetary shocks matter: $y_t = \bar{y} + \alpha(m_t - E_{t-1}m_t)$. If the central bank announces a money increase, agents immediately raise price expectations, leaving real variables unchanged.
+**Why it matters:** The proposition challenged Keynesian demand management. If true, systematic countercyclical policy is useless — only "surprise" policy works. Combined with the Lucas Critique, it forced macroeconomists to build models with microfoundations. New Keynesian models overturn it by adding sticky prices: anticipated policy matters because prices cannot adjust instantly.
+**Exam tip:** Three assumptions needed: (1) rational expectations, (2) flexible prices, (3) complete information about policy. Violating any one overturns the proposition. NK models keep (1) but drop (2) to restore policy effectiveness.
+**Also see:** [Glossary: Lucas Supply Curve](./GLOSSARY.md#term-lucas-supply) | [Glossary: Rational Expectations](./GLOSSARY.md#term-rational-expectations)
+
+<a id="detail-term-classical-dichotomy"></a>
+### **Classical Dichotomy / Neutrality of Money**
+**What it is:** The separation of real variables (output, employment, relative prices, real interest rates) from nominal variables (money supply, price level, nominal wages). Changes in the money stock affect only nominal variables in the long run — real variables are determined by real factors (technology, preferences, endowments). The corollary: money is neutral in the long run.
+**Why it matters:** Classical dichotomy is the foundation of the quantity theory of money and the vertical long-run Phillips curve. It implies monetary policy cannot permanently affect real output — only inflation. It breaks down in the short run with sticky prices (New Keynesian). The dichotomy is "classical" because it characterized pre-Keynesian macroeconomics.
+**Exam tip:** The three "pillars of classical macroeconomics" are: (1) Say's Law (supply creates its own demand), (2) Classical dichotomy (money is a veil), (3) Flexible prices/wages ensure market clearing. Breaking the dichotomy requires sticky prices (NK) or money illusion.
+**Also see:** [Glossary: Policy Ineffectiveness](./GLOSSARY.md#term-policy-ineffectiveness) | [Glossary: Neutrality](./GLOSSARY.md#term-sticky-prices)
+
+---
 ## 4. Key Models
 
 <a id="detail-term-solow"></a>
@@ -462,6 +489,62 @@
 **Why it matters:** Simplest endogenous growth mechanism. Does not require monopolistic competition — learning is a byproduct, not a deliberate investment. Shares the scale effect problem. Implies trade protection (protecting manufacturing) can promote learning.
 **Exam tip:** Compare with R&D models: learning by doing has no resource cost but weaker microfoundations. Use in answers about knowledge spillovers and industrial policy in developing countries.
 **Also see:** [Glossary](./GLOSSARY.md#term-learning-by-doing)
+
+<a id="detail-term-breakeven-investment"></a>
+### **Break-even Investment — $(n+g+\delta)k$**
+**What it is:** The investment per effective worker required just to keep the capital-effective-labour ratio $k$ constant. Three components: $\delta k$ replaces worn-out capital, $g k$ equips new effective workers created by technological progress, $n k$ equips new workers from population growth. When actual investment $s f(k)$ equals break-even investment, the economy is in steady state ($\dot{k} = 0$).
+**Why it matters:** Break-even investment is the benchmark line in the Solow diagram. Comparing actual vs break-even tells you whether $k$ is rising or falling. The slope of break-even investment ($n+g+\delta$) determines how fast diminishing returns set in and thus the speed of convergence.
+**Exam tip:** Always draw the Solow diagram with $s f(k)$ curving down and $(n+g+\delta)k$ as a straight line. Where they cross is $k^*$. A fall in $n$ or $\delta$ flattens the break-even line, raising $k^*$. Memorise this comparative statics.
+**Also see:** [Glossary: Actual Investment](./GLOSSARY.md#term-actual-investment) | [Glossary: Solow Model](./GLOSSARY.md#term-solow)
+
+<a id="detail-term-actual-investment"></a>
+### **Actual Investment — $s f(k)$**
+**What it is:** The flow of new capital (per effective worker) actually produced by the economy: $s f(k)$. Since saving equals investment in the closed Solow model, it's the saving rate $s$ times output per effective worker $f(k)$. Because $f(k)$ is concave (diminishing returns), actual investment has diminishing slope.
+**Why it matters:** Actual investment is the curve in the Solow diagram that shifts with policy changes (e.g., $s \uparrow$ shifts it up, $n \uparrow$ reduces $k$ lowering it). The gap between actual and break-even investment determines capital accumulation. When actual > break-even, $k$ rises; when actual < break-even, $k$ falls.
+**Exam tip:** Unlike the break-even line (straight), actual investment slopes downward because of diminishing MPK. For Cobb-Douglas $f(k) = k^\alpha$, actual investment $= s k^\alpha$ with slope $\alpha s k^{\alpha-1}$. A higher $\alpha$ makes actual investment "less curved" — slower convergence.
+**Also see:** [Glossary: Break-even Investment](./GLOSSARY.md#term-breakeven-investment) | [Glossary: Steady State](./GLOSSARY.md#term-steady-state)
+
+<a id="detail-term-frisch-elasticity"></a>
+### **Frisch Elasticity of Labor Supply — $\varepsilon_{ls} = \partial \ln h / \partial \ln w$ (holding $\lambda$ constant)**
+**What it is:** The percentage change in hours worked when the wage rises by 1%, holding the marginal utility of wealth ($\lambda$) constant. It measures the pure substitution effect of wage changes on labour supply — isolating intertemporal labour substitution from income effects. In standard RBC calibration, the Frisch elasticity is low ($0.2-0.4$ for men) but Hansen's indivisible labour model generates near-infinite elasticity.
+**Why it matters:** The Frisch elasticity determines how much employment fluctuates over the business cycle. Standard utility functions (log with separable leisure) give Frisch elasticity = 1 (on the intensive margin). The data shows high employment volatility — which Hansen (1985) argued requires a very high Frisch elasticity, motivating the indivisible labour model.
+**Exam tip:** The Frisch elasticity is the key parameter in the RBC labour supply equation: $l_s = \eta (w - \lambda)$ where $\eta$ is the Frisch elasticity. Higher Frisch $\implies$ more volatile employment. Hansen showed the extensive margin (participation) generates much higher aggregate elasticity than the intensive margin (hours per worker).
+**Also see:** [Glossary: Hansen Indivisible Labor](./GLOSSARY.md#term-hansen-labor) | [Glossary: RBC Model](./GLOSSARY.md#term-rbc-model)
+
+<a id="detail-term-hansen-labor"></a>
+### **Hansen Indivisible Labor / Rogerson Lottery — Extensive Margin RBC**
+**What it is:** A labour market model (Hansen, 1985; Rogerson, 1988) where individuals work either full-time ($h=1$) or zero ($h=0$) — there is no part-time. Since individual preferences are non-convex, the economy uses a lottery: workers are randomly selected to work. This makes aggregate labour supply effectively linear in the real wage, generating near-infinite labour supply elasticity. This is the "extensive margin" of labour supply (participation) vs the "intensive margin" (hours per worker).
+**Why it matters:** Standard RBC models with divisible labour (intensive margin) cannot replicate the large employment fluctuations observed in US data. Hansen showed that indivisible labour increases the volatility of hours by a factor of 10, matching the data. This solved the "labour volatility puzzle" and became standard in DSGE models.
+**Exam tip:** The key equation: with indivisible labour, the representative household utility becomes $U(c, l) = \ln c + \alpha(1-h)$ — linear in leisure rather than concave. This linearity = infinite Frisch elasticity. Always cite Hansen (1985) when asked about RBC improvements.
+**Also see:** [Glossary: Frisch Elasticity](./GLOSSARY.md#term-frisch-elasticity) | [Glossary: RBC Model](./GLOSSARY.md#term-rbc-model)
+
+<a id="detail-term-lucas-supply"></a>
+### **Lucas Supply Curve / Lucas Islands Model — $y = \bar{y} + b(P - P^e)$**
+**What it is:** The Lucas supply function (Lucas, 1973) states that output deviates from its natural rate only when the actual price level differs from the expected price level. Microfounded by the "Lucas islands" model: producers on isolated islands see the price of their own good, but not the aggregate price level. When their price rises, they cannot tell if it's a relative price shift (good for them) or general inflation — so they increase supply. On average, only unanticipated inflation raises output.
+**Why it matters:** The Lucas supply curve embodies rational expectations and generates the Policy Ineffectiveness Proposition. It was the first microfounded aggregate supply curve and revolutionised how macroeconomists think about expectations. The Lucas Critique (1976) — that estimated Phillips curve parameters change with policy — follows from this framework.
+**Exam tip:** The Lucas supply curve implies a vertical long-run Phillips curve (since $P^e = P$ in equilibrium) but a downward-sloping short-run one (when $P \neq P^e$). The "surprise" supply function: $y_t = \bar{y} + b(m_t - E_{t-1}m_t)$ under rational expectations. NK replaces this with sticky-price microfounded NK PC.
+**Also see:** [Glossary: Policy Ineffectiveness](./GLOSSARY.md#term-policy-ineffectiveness) | [Glossary: Rational Expectations](./GLOSSARY.md#term-rational-expectations)
+
+<a id="detail-term-calvo-pricing"></a>
+### **Calvo Pricing — Random Price Adjustment**
+**What it is:** A model where in each period, a random fraction $(1-\theta)$ of firms can reset their price, while $\theta$ fraction keep their price unchanged. The probability of adjustment is independent of time since last adjustment. The average time between price changes is $1/(1-\theta)$. For quarterly calibration: $\theta = 0.75$ means prices last 4 quarters on average. This staggered price-setting micro-founds the NK Phillips Curve.
+**Why it matters:** Calvo pricing is the standard microfounded model of price stickiness because it is tractable (aggregate price level is a weighted average) and generates forward-looking inflation dynamics. The NK PC slope $\kappa = (1-\theta)(1-\beta\theta)/\theta \cdot (\sigma + \varphi)$ depends crucially on $\theta$. Without Calvo pricing, the NK model collapses to RBC.
+**Exam tip:** For the exam, higher $\theta$ = stickier prices = flatter PC = larger real effects of monetary policy. $\theta \to 0$ gives flexible prices (RBC). $\theta = 0.75$ is standard. The NK PC with Calvo: $\pi_t = \beta E_t\pi_{t+1} + \kappa \widetilde{MC}_t$ where $\widetilde{MC}$ is real marginal cost (proportional to output gap).
+**Also see:** [Glossary: NK DSGE Model](./GLOSSARY.md#term-nk-dsge) | [Glossary: Sticky Prices](./GLOSSARY.md#term-sticky-prices)
+
+<a id="detail-term-cost-push"></a>
+### **Cost-Push Shock — $u_t$ in NK PC: $\pi_t = \beta E_t\pi_{t+1} + \kappa x_t + u_t$**
+**What it is:** A disturbance that shifts the NK Phillips Curve independently of the output gap: $\pi_t = \beta E_t\pi_{t+1} + \kappa x_t + u_t$. Examples: oil price increases, import price shocks, wage-push shocks, or markup shocks from changes in competition. Unlike demand shocks, cost-push shocks create a trade-off between stabilising inflation and stabilising the output gap — breaking Divine Coincidence.
+**Why it matters:** Divine Coincidence (stabilising inflation = stabilising output gap) holds only when all shocks are demand shocks. Cost-push shocks force the central bank to choose: stabilise inflation (and accept output gap volatility) or stabilise output (and accept inflation volatility). Optimal policy under cost-push shocks uses "flexible inflation targeting" where the central bank only gradually returns inflation to target.
+**Exam tip:** The central bank's loss function under cost-push: $L = \frac12(\pi_t^2 + \lambda x_t^2)$. The optimal trade-off is $\pi_t = -(\lambda/\kappa)x_t$. This means the central bank tolerates some inflation to avoid large output losses. Always mention "cost-push shocks break divine coincidence" when discussing NK trade-offs.
+**Also see:** [Glossary: Divine Coincidence](./GLOSSARY.md#term-divine-coincidence) | [Glossary: NK DSGE](./GLOSSARY.md#term-nk-dsge)
+
+<a id="detail-term-rd-phase-diagram"></a>
+### **R&D Phase Diagram — $(g_A, g_K)$ Space**
+**What it is:** A two-dimensional diagram used in endogenous growth models to analyse the joint dynamics of technology growth ($g_A = \dot{A}/A$) and capital growth ($g_K = \dot{K}/K$). The $\dot{g}_A = 0$ locus shows where knowledge growth is stable (depends on $\phi$, $\beta$, $\theta$, $n$). The $\dot{g}_K = 0$ locus shows capital growth equilibrium. Their intersection determines the Balanced Growth Path. In semi-endogenous models ($\beta+\theta < 1$), $\dot{g}_A = 0$ slopes upward. In fully endogenous ($\beta+\theta=1$, $\phi=1$), it can be horizontal or vertical.
+**Why it matters:** The $(g_A, g_K)$ phase diagram is the endogenous-growth analogue of the Solow diagram. It reveals whether policy can permanently affect the growth rate (growth effect vs level effect). The slope of $\dot{g}_A = 0$ determines whether the economy has transitional dynamics or always jumps to the BGP.
+**Exam tip:** Draw $\dot{g}_A = 0$ (upward sloping in semi-endogenous case) and $\dot{g}_K = 0$ (downward sloping). The intersection gives $g_A^*$ and $g_K^*$. A permanent increase in $a_L$ shifts $\dot{g}_A = 0$ right temporarily but does not change $g_A^*$ in the long run under semi-endogenous. Under fully endogenous, it permanently raises $g_A^*$.
+**Also see:** [Glossary: Semi-Endogenous](./GLOSSARY.md#term-semi-endogenous) | [Glossary: Fully Endogenous](./GLOSSARY.md#term-fully-endogenous) | [Glossary: R&D Model](./GLOSSARY.md#term-endogenous-growth)
 
 ---
 

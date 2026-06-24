@@ -168,50 +168,61 @@ nav:
       - By Topic (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise.md
       - By Year (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise-answered.md
       - By Year (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise.md
-    - 📦 Tutorials & Model Notes:
-      - 📖 Overview: extracted-content/502_Macroeconomics/TUTORIALS/README.md
-      - Solow Tutorial 1: extracted-content/502_Macroeconomics/TUTORIALS/502_solow_1st_tutorial.md
-      - Solow, RCK, R&D: extracted-content/502_Macroeconomics/TUTORIALS/502-solow-rck-rd-tutorial.md
-      - Tutorial Q48: extracted-content/502_Macroeconomics/TUTORIALS/502-tutorial-question-48.md
-      - Macro Tutorial Solve: extracted-content/502_Macroeconomics/TUTORIALS/macro-tutorial-solve.md
-      - 📋 Final Syllabus: extracted-content/502_Macroeconomics/TUTORIALS/502-final-syllabus-1.md
-      - 📋 Macro Suggestions: extracted-content/502_Macroeconomics/TUTORIALS/502-macro-suggestion-2.md
-      - 🧩 Model Notes:
-        - 🏗️ Solow Model:
-          - The Solow Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/the-solow-model.md"
-          - Empirical Application: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/empirical-application_solow-chatgpt.md"
-        - 💎 Diamond / OLG:
-          - The Diamond Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Diamond/the-diamond-model.md"
-          - Dynamic Efficiency: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Diamond/dynamic_efficiency.md"
-        - 🔄 RBC:
-          - Real Business Cycle Theory: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/real_business-cycle_theory.md"
-          - Alvin Hansen: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/alvin_hansen.md"
-          - Edward C. Prescott: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/edward_c_prescott.md"
-          - Hodrick-Prescott Filter: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/hodrickprescott_filter.md"
-        - 📈 R&D / Romer:
-          - R&D Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/R&D/rd-model1.md"
-          - The Romer Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Romer/the-romer-model.md"
-          - Romer Model (incomplete): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Romer/romer-model-incomplete.md"
-        - ⚖️ RCK:
-          - RCK Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RCK/rck-model.md"
-          - RCK 47th Batch Typed: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RCK/rck_model_47th-batch_typed.md"
-        - 🆕 New Keynesian DSGE:
-          - Calvo Staggered Contracts: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/calvo_staggered_contracts.md"
-          - Divine Coincidence: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/divine_coincidence.md"
-          - Leibniz Integral Rule: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/leibniz_integral_rule.md"
-          - Blanchard-Galli (Real Wage Rigidities): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/olivier-blanchard-and-galli-real-wage-rigidities-and-the-new-keynesian-model.md"
     - 📚 Textbooks:
-      - 📖 Overview: extracted-content/502_Macroeconomics/TEXTBOOKS/README.md
-      - Heijdra Foundations: extracted-content/502_Macroeconomics/TEXTBOOKS/ben-j-heijdra-foumdations-of-modern-macro.md
-      - Heijdra 2017: extracted-content/502_Macroeconomics/TEXTBOOKS/heijdra-2017.md
-      - Classical Macro Theory: extracted-content/502_Macroeconomics/TEXTBOOKS/classical_macroeconomics_classical_monetary__employment_theory.md
-      - Ackley ch 4-5: extracted-content/502_Macroeconomics/TEXTBOOKS/ackley-ch-45.md
-      - Arnold Economics: extracted-content/502_Macroeconomics/TEXTBOOKS/roger-a-arnold-economics.md
-      - Economics by Arnold: extracted-content/502_Macroeconomics/TEXTBOOKS/economics-by-arnold.md
-      - David Romer Advanced Macro: extracted-content/502_Macroeconomics/TUTORIALS/david-romer-advanced-macroeconomics.md
-      - Campante et al. (RBC): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/RBC/filipe-campante-federico-sturzenegger-andrés-velasco-advanced-macroeconomics_-an-easy-guide-lse-press-2021.md"
-    - 📝 Class Notes:
-      - Solow Model Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md
+      - "Heijdra Foundations": "502-Macroeconomics/TEXTBOOKS/(Ben J. Heijdra) Foumdations of Modern Macro.pdf"
+      - "Heijdra 2017": "502-Macroeconomics/TEXTBOOKS/Heijdra 2017.pdf"
+      - "Classical Macro Theory": 502-Macroeconomics/TEXTBOOKS/Classical_Macroeconomics_Classical_Monetary_&_Employment_Theory.pdf
+      - "Ackley ch 4-5": "502-Macroeconomics/TEXTBOOKS/Ackley ch 4,5.pdf"
+      - "Arnold Economics": "502-Macroeconomics/TEXTBOOKS/(Roger A. Arnold) Economics.pdf"
+      - "Economics by Arnold": "502-Macroeconomics/TEXTBOOKS/Economics by arnold.pdf"
+      - Froyen: 502-Macroeconomics/TEXTBOOKS/Macroeconomics_by_Richard_T_Froyen_10th.pdf
+      - "Ackley Macro Theory": "502-Macroeconomics/TEXTBOOKS/Macroeconomic Theory and Policy (Gardner Ackley) (Z-Library).pdf"
+      - "OLG Model": 502-Macroeconomics/TEXTBOOKS/Overlapping_generations_model.pdf
+
+    - 📝 Tutorials:
+      - "Solow Tutorial 1": 502-Macroeconomics/TUTORIALS/502_solow_1st_tutorial.pdf
+      - Solow/RCK/R&D: "502-Macroeconomics/TUTORIALS/502 Solow, RCK, R&D (Tutorial).pdf"
+      - "Tutorial Q48": "502-Macroeconomics/TUTORIALS/502 tutorial question 48.pdf"
+      - "Macro Tutorial Solve": "502-Macroeconomics/TUTORIALS/Macro Tutorial Solve.pdf"
+      - "David Romer Macro": "502-Macroeconomics/TUTORIALS/(David Romer) Advanced Macroeconomics.pdf"
+      - "Solution Manual": "502-Macroeconomics/TUTORIALS/Solution Manual David Romer advanced Macroeconomics.pdf"
+      - "Final Syllabus": "502-Macroeconomics/TUTORIALS/502 final syllabus (1).pdf"
+      - "Macro Suggestions": "502-Macroeconomics/TUTORIALS/502-Macro Suggestion (2).pdf"
+
+    - 🧩 Model Notes:
+      - 🏗️ Solow Model:
+        - The Solow Model: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/The Solow Model.pdf"
+        - Solow Model: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Solow Model.pdf"
+        - SOLOW: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/SOLOW.pdf"
+        - Solow-Model-Mashruf: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Solow-Model-Mashruf.pdf"
+        - "Empirical Application_Solow (ChatGPT)": "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Empirical Application_Solow (ChatGPT).pdf"
+        - "Solow Problems": "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/7.10.2024-502-Solow-Model-Problems-1.3-and-1.7-Keynesian-DSGE-Model-necessary-derivations.pdf"
+      - 💎 Diamond / OLG:
+        - The Diamond Model: "502-Macroeconomics/TUTORIALS/MODELS/Diamond/The Diamond Model.pdf"
+        - Diamond math: "502-Macroeconomics/TUTORIALS/MODELS/Diamond/Diamond math.pdf"
+        - Dynamic_efficiency: 502-Macroeconomics/TUTORIALS/MODELS/Diamond/Dynamic_efficiency.pdf
+      - 🔄 RBC:
+        - Real_business-cycle_theory: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Real_business-cycle_theory.pdf
+        - RBC-Necessary-Derivations: 502-Macroeconomics/TUTORIALS/MODELS/RBC/RBC-Necessary-Derivations-using-log-utility-Except-Indivisible-Labor-Solution.pdf
+        - Alvin_Hansen: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Alvin_Hansen.pdf
+        - Edward_C._Prescott: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Edward_C._Prescott.pdf
+        - Hodrick–Prescott_filter: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Hodrick–Prescott_filter.pdf
+        - macro_RBC: 502-Macroeconomics/TUTORIALS/MODELS/RBC/macro_RBC.pdf
+        - "Campante et al.": "502-Macroeconomics/TUTORIALS/MODELS/RBC/Filipe Campante, Federico Sturzenegger, Andr\u00e9s Velasco - Advanced Macroeconomics_ An Easy Guide-LSE Press (2021).pdf"
+      - ⚖️ RCK:
+        - RCK Model: "502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK Model.pdf"
+        - "RCK_Model_47th Batch_typed": "502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK_Model_47th Batch_typed.pdf"
+        - RCK: 502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK.pdf
+      - 📈 R&D Model:
+        - R&D Model: "502-Macroeconomics/TUTORIALS/MODELS/R&D/R&D Model(1).pdf"
+      - 📈 Romer Growth:
+        - The-Romer-Model: 502-Macroeconomics/TUTORIALS/MODELS/Romer/The-Romer-Model.pdf
+        - "Romer Model (incomplete)": "502-Macroeconomics/TUTORIALS/MODELS/Romer/Romer Model (incomplete).pdf"
+      - 🆕 New Keynesian DSGE:
+        - Calvo: "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Calvo_(staggered)_contracts.pdf"
+        - Divine_coincidence: "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Divine_coincidence.pdf"
+        - Leibniz_integral_rule: "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Leibniz_integral_rule.pdf"
+        - "Blanchard-Galli": "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Olivier Blanchard and galli REAL WAGE RIGIDITIES AND THE NEW KEYNESIAN MODEL.pdf"
 
   # ─── DEVELOPMENT ECONOMICS (503) ─────────────────────────────────
   - 🌱 Development (503):
@@ -393,11 +404,15 @@ nav:
         - Tutorial Q48: "502-Macroeconomics/TUTORIALS/502 tutorial question 48.pdf"
         - Macro Tutorial Solve: 502-Macroeconomics/TUTORIALS/Macro Tutorial Solve.pdf
         - David Romer Macro: "502-Macroeconomics/TUTORIALS/(David Romer) Advanced Macroeconomics.pdf"
+        - Solution Manual: 502-Macroeconomics/TUTORIALS/Solution Manual David Romer advanced Macroeconomics.pdf
         - Syllabus: "502-Macroeconomics/TUTORIALS/502 final syllabus (1).pdf"
         - Suggestions: "502-Macroeconomics/TUTORIALS/502-Macro Suggestion (2).pdf"
       - 🧩 Model Notes:
         - Solow Model: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/The Solow Model.pdf"
+        - Solow Model (blank): "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Solow Model.pdf"
+        - SOLOW: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/SOLOW.pdf"
         - Solow Model (Mashruf): "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Solow-Model-Mashruf.pdf"
+        - Empirical Application: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Empirical Application_Solow (ChatGPT).pdf"
         - Solow Problems: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/7.10.2024-502-Solow-Model-Problems-1.3-and-1.7-Keynesian-DSGE-Model-necessary-derivations.pdf"
         - Diamond Model: 502-Macroeconomics/TUTORIALS/MODELS/Diamond/The Diamond Model.pdf
         - Diamond Math: 502-Macroeconomics/TUTORIALS/MODELS/Diamond/Diamond math.pdf
@@ -407,11 +422,14 @@ nav:
         - Alvin Hansen: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Alvin_Hansen.pdf
         - Edward Prescott: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Edward_C._Prescott.pdf
         - HP Filter: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Hodrick–Prescott_filter.pdf
+        - macro_RBC: 502-Macroeconomics/TUTORIALS/MODELS/RBC/macro_RBC.pdf
         - Campante et al.: "502-Macroeconomics/TUTORIALS/MODELS/RBC/Filipe Campante, Federico Sturzenegger, Andrés Velasco - Advanced Macroeconomics_ An Easy Guide-LSE Press (2021).pdf"
         - RCK Model: 502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK Model.pdf
         - RCK 47th Typed: 502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK_Model_47th Batch_typed.pdf
+        - RCK: 502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK.pdf
         - R&D Model: "502-Macroeconomics/TUTORIALS/MODELS/R&D/R&D Model(1).pdf"
         - Romer Model: 502-Macroeconomics/TUTORIALS/MODELS/Romer/The-Romer-Model.pdf
+        - Romer Model (incomplete): "502-Macroeconomics/TUTORIALS/MODELS/Romer/Romer Model (incomplete).pdf"
         - Calvo Contracts: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Calvo_(staggered)_contracts.pdf
         - Divine Coincidence: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Divine_coincidence.pdf
         - Leibniz Integral: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Leibniz_integral_rule.pdf

@@ -30,15 +30,15 @@
 
 | Theorist | Core Idea | Key Work | Topic |
 |----------|-----------|----------|-------|
-| **Robert Solow** | Solow growth model — saving rate drives capital accumulation; only technology drives long-run growth; conditional convergence | "A Contribution to the Theory of Economic Growth" (1956) | [Solow Model](../macroeconomics/README.md) |
-| **Frank Ramsey** | Ramsey-Cass-Koopmans model — endogenous saving rate; households optimize consumption path; CRRA utility | "A Mathematical Theory of Saving" (1928) | [Ramsey Model](../macroeconomics/README.md) |
-| **David Cass & Tjalling Koopmans** | Extended Ramsey with population growth; phase diagram analysis; saddle-path stability | — | [Ramsey Model](../macroeconomics/README.md) |
-| **Trevor Swan** | Simultaneous development of Solow-Swan growth model | — | [Solow Model](../macroeconomics/README.md) |
-| **Edmund Phelps** | Golden Rule of capital accumulation — k^gold maximizes steady-state consumption | "The Golden Rule of Accumulation" (1961) | [Solow Model](../macroeconomics/README.md) |
-| **Kenneth Arrow** | Learning-by-doing; endogenous growth theory; Arrow's "learning curve" | "The Economic Implications of Learning by Doing" (1962) | [Growth Theory](../macroeconomics/README.md) |
-| **Paul Romer** | Endogenous technological change — innovation driven by R&D; non-rival ideas | "Endogenous Technological Change" (1990) | [Growth Theory](../macroeconomics/README.md) |
-| **Robert Barro** | Convergence analysis; empirically tests conditional convergence; government spending in growth models | "Economic Growth in a Cross Section of Countries" (1991) | [Solow Model](../macroeconomics/README.md) |
-| **Gregory Mankiw, David Romer, David Weil** | Augmented Solow model (MRW) — adds human capital; explains cross-country income differences | "A Contribution to the Empirics of Economic Growth" (1992) | [Solow Model](../macroeconomics/README.md) |
+| **Robert Solow** | Solow growth model — saving rate drives capital accumulation; only technology drives long-run growth; conditional convergence | "A Contribution to the Theory of Economic Growth" (1956) | [Solow Model](../../502-Macroeconomics/GUIDE/README.md) |
+| **Frank Ramsey** | Ramsey-Cass-Koopmans model — endogenous saving rate; households optimize consumption path; CRRA utility | "A Mathematical Theory of Saving" (1928) | [Ramsey Model](../../502-Macroeconomics/GUIDE/README.md) |
+| **David Cass & Tjalling Koopmans** | Extended Ramsey with population growth; phase diagram analysis; saddle-path stability | — | [Ramsey Model](../../502-Macroeconomics/GUIDE/README.md) |
+| **Trevor Swan** | Simultaneous development of Solow-Swan growth model | — | [Solow Model](../../502-Macroeconomics/GUIDE/README.md) |
+| **Edmund Phelps** | Golden Rule of capital accumulation — k^gold maximizes steady-state consumption | "The Golden Rule of Accumulation" (1961) | [Solow Model](../../502-Macroeconomics/GUIDE/README.md) |
+| **Kenneth Arrow** | Learning-by-doing; endogenous growth theory; Arrow's "learning curve" | "The Economic Implications of Learning by Doing" (1962) | [Growth Theory](../../502-Macroeconomics/GUIDE/README.md) |
+| **Paul Romer** | Endogenous technological change — innovation driven by R&D; non-rival ideas | "Endogenous Technological Change" (1990) | [Growth Theory](../../502-Macroeconomics/GUIDE/README.md) |
+| **Robert Barro** | Convergence analysis; empirically tests conditional convergence; government spending in growth models | "Economic Growth in a Cross Section of Countries" (1991) | [Solow Model](../../502-Macroeconomics/GUIDE/README.md) |
+| **Gregory Mankiw, David Romer, David Weil** | Augmented Solow model (MRW) — adds human capital; explains cross-country income differences | "A Contribution to the Empirics of Economic Growth" (1992) | [Solow Model](../../502-Macroeconomics/GUIDE/README.md) |
 
 ---
 

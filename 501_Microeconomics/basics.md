@@ -303,10 +303,10 @@ Microeconomic theory is the foundation for several other MSc economics courses. 
 
 | Micro Concept | Appears In | Why It Matters There |
 |---|---|---|
-| **Cobb-Douglas production** | [Macro (Solow model)](../macroeconomics/basics.md) | $Y = K^\alpha(AL)^{1-\alpha}$ is the workhorse aggregate production function; determines steady-state income |
-| **Optimization (UMP/EMP)** | [Macro (Ramsey model)](../macroeconomics/basics.md) | Household intertemporal optimization uses same Lagrangian + FOC structure |
-| **General Equilibrium stability** | [Macro (Solow convergence)](../macroeconomics/basics.md) | Conditional convergence to steady state = GE uniqueness/stability logic |
-| **Pareto optimality** | [Macro (Golden Rule)](../macroeconomics/basics.md) | Golden Rule $f'(k^*) = n+g+\delta$ is a Pareto-efficient steady state |
+| **Cobb-Douglas production** | [Macro (Solow model)](../502-Macroeconomics/GUIDE/basics.md) | $Y = K^\alpha(AL)^{1-\alpha}$ is the workhorse aggregate production function; determines steady-state income |
+| **Optimization (UMP/EMP)** | [Macro (Ramsey model)](../502-Macroeconomics/GUIDE/basics.md) | Household intertemporal optimization uses same Lagrangian + FOC structure |
+| **General Equilibrium stability** | [Macro (Solow convergence)](../502-Macroeconomics/GUIDE/basics.md) | Conditional convergence to steady state = GE uniqueness/stability logic |
+| **Pareto optimality** | [Macro (Golden Rule)](../502-Macroeconomics/GUIDE/basics.md) | Golden Rule $f'(k^*) = n+g+\delta$ is a Pareto-efficient steady state |
 | **Market failure (externalities)** | [Development (resource curse)](../503-Development/basics.md) · [Political Economy (intervention)](../512-Political-Economy/basics.md) | Venezuela oil dependency; state vs market debate |
 | **Comparative advantage** | [Dev (trade specialization)](../503-Development/basics.md) · [Pol Econ (free trade)](../512-Political-Economy/basics.md) | RMG export concentration; WTO AoA critique |
 | **DWL of tariffs/taxes** | [§9 Trade & Tariffs](#9-trade-tariffs) · [GE 9.Q1](./answers-ge-game-extern-trade.md#q-trade-01) · [Pol Econ](../512-Political-Economy/basics.md) | $½ \times t \times \Delta Q$ applied to trade policy |

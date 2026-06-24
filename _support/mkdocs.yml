@@ -368,6 +368,10 @@ nav:
     - 📐 Micro 501:
       - Answers: extracted-content/501_Microeconomics/Answers/README.md
       - Tutorials: extracted-content/501_Microeconomics/TUTORIALS/README.md
+    - 📈 Macro 502:
+      - 📚 Textbook Notes: extracted-content/502_Macroeconomics/TEXTBOOKS/README.md
+      - 📝 Tutorial Notes: extracted-content/502_Macroeconomics/TUTORIALS/README.md
+      - 📝 Class Notes: extracted-content/502_Macroeconomics/CLASS_NOTES/Solow/README.md
     - 🌱 Development 503:
       - Materials: extracted-content/503_Development_Economics/README.md
     - 🌐 International Econ 512:

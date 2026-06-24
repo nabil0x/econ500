@@ -6,39 +6,38 @@
 
 | # | File | Type | Content |
 |---|------|------|---------|
-| 1 | [`../../../question-banks/batch-finals/batch-46/macro-402.md`](../../../../question-banks/batch-finals/batch-46/macro-402.md) | Exam (Hons) | Batch 46 (2020) — 4th Year Hons Macro 402 |
-| 2 | [`../../../question-banks/batch-finals/batch-47/macro-502.md`](../../../../question-banks/batch-finals/batch-47/macro-502.md) | Exam (MSc) | Batch 47 (2022) — MSc Macro 502 Final |
-| 3 | [`../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md`](../../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) | Tutorial Exam | Batch 47 — Macro 502 Tutorial |
-| 4 | [`../../../question-banks/batch-finals/batch-48/macro-502.md`](../../../../question-banks/batch-finals/batch-48/macro-502.md) | Exam (MSc) | Batch 48 (2023) — MSc Macro 502 Final |
+| 1 | [`../../question-banks/batch-finals/batch-46/macro-402.md`](../../question-banks/batch-finals/batch-46/macro-402.md) | Exam (Hons) | Batch 46 (2020) — 4th Year Hons Macro 402 |
+| 2 | [`../../question-banks/batch-finals/batch-47/macro-502.md`](../../question-banks/batch-finals/batch-47/macro-502.md) | Exam (MSc) | Batch 47 (2022) — MSc Macro 502 Final |
+| 3 | [`../../question-banks/batch-finals/batch-47/macro-502-tutorial.md`](../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) | Tutorial Exam | Batch 47 — Macro 502 Tutorial |
+| 4 | [`../../question-banks/batch-finals/batch-48/macro-502.md`](../../question-banks/batch-finals/batch-48/macro-502.md) | Exam (MSc) | Batch 48 (2023) — MSc Macro 502 Final |
 
-## Study Files (in 502-Macroeconomics/)
+## Study Files
 
-All study materials are directly in the [`../502-Macroeconomics/`](../) directory:
+All study materials are in the following directories under `502-Macroeconomics/`:
 
 | File | Content |
 |------|---------|
-| [`README.md`](../README.md) | Full tutorial questions (Solow, Ramsey, Endogenous Growth) |
-| [`basics.md`](../basics.md) | Foundational concepts |
-| [`STUDY-ROADMAP.md`](../STUDY-ROADMAP.md) | Exam strategy & 10-day study plan |
-| [`EXAM-CHEAT-SHEET.md`](../EXAM-CHEAT-SHEET.md) | Condensed formulas for last-minute review |
-| [`EXAM-PRIORITY-MATRIX.md`](../EXAM-PRIORITY-MATRIX.md) | All questions ranked by priority (A/B/C) |
-| [`EXAM-ANSWER-TEMPLATE.md`](../EXAM-ANSWER-TEMPLATE.md) | Structured answer writing framework |
-| [`EXAM-COMMON-MISTAKES.md`](../EXAM-COMMON-MISTAKES.md) | Common pitfalls to avoid |
-| [`EXAM-SIMULATIONS.md`](../EXAM-SIMULATIONS.md) | Mock exam simulation papers |
-| [`EQUATION-EXPLAINER.md`](../EQUATION-EXPLAINER.md) | Key equations with derivation, logic & intuition |
-| [`GLOSSARY.md`](../GLOSSARY.md) | Quick-reference glossary (63 terms) |
-| [`GLOSSARY-DETAILED.md`](../GLOSSARY-DETAILED.md) | Detailed glossary with exam context per entry |
-| [`ANSWERS-INDEX.md`](../ANSWERS-INDEX.md) | Master index of all answer files |
-| [`answers-macroeconomics.md`](../answers-macroeconomics.md) | 25 solved answers (Solow, Ramsey, Endogenous Growth) |
-| [`answers-olg.md`](../answers-olg.md) | 2 solved OLG answers |
-| [`answers-rd-monopolistic.md`](../answers-rd-monopolistic.md) | 2 solved R&D Monopolistic answers |
-| [`answers-rbc.md`](../answers-rbc.md) | 2 solved RBC answers |
-| [`answers-new-keynesian.md`](../answers-new-keynesian.md) | 2 solved New Keynesian answers |
-| [`macro-questions-topic-wise.md`](../macro-questions-topic-wise.md) | Questions by topic |
-| [`macro-questions-year-wise.md`](../macro-questions-year-wise.md) | Questions by source/year |
-| [`macro-questions-topic-wise-answered.md`](../macro-questions-topic-wise-answered.md) | Topic questions + answer briefs |
-| [`macro-questions-year-wise-answered.md`](../macro-questions-year-wise-answered.md) | Year-wise questions + answer briefs |
-| [`502-MASTER-STUDY-GUIDE.md`](../502-MASTER-STUDY-GUIDE.md) | Single-file comprehensive study guide |
+| [`README.md`](./README.md) | This file — resource index |
+| [`basics.md`](./basics.md) | Foundational concepts |
+| [`STUDY-ROADMAP.md`](./STUDY-ROADMAP.md) | Exam strategy & 10-day study plan |
+| [`EXAM-CHEAT-SHEET.md`](./EXAM-CHEAT-SHEET.md) | Condensed formulas for last-minute review |
+| [`EXAM-PRIORITY-MATRIX.md`](./EXAM-PRIORITY-MATRIX.md) | All questions ranked by priority (A/B/C) |
+| [`EXAM-ANSWER-TEMPLATE.md`](./EXAM-ANSWER-TEMPLATE.md) | Structured answer writing framework |
+| [`EXAM-COMMON-MISTAKES.md`](./EXAM-COMMON-MISTAKES.md) | Common pitfalls to avoid |
+| [`EXAM-SIMULATIONS.md`](./EXAM-SIMULATIONS.md) | Mock exam simulation papers |
+| [`EQUATION-EXPLAINER.md`](./EQUATION-EXPLAINER.md) | Key equations with derivation, logic & intuition |
+| [`GLOSSARY.md`](./GLOSSARY.md) | Quick-reference glossary (63 terms) |
+| [`GLOSSARY-DETAILED.md`](./GLOSSARY-DETAILED.md) | Detailed glossary with exam context per entry |
+| [`ANSWERS-INDEX.md`](../ANSWERS/ANSWERS-INDEX.md) | Master index of all answer files |
+| [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) | 25 solved answers (Solow, Ramsey, Endogenous Growth) |
+| [`answers-olg.md`](../ANSWERS/answers-olg.md) | 2 solved OLG answers |
+| [`answers-rd-monopolistic.md`](../ANSWERS/answers-rd-monopolistic.md) | 2 solved R&D Monopolistic answers |
+| [`answers-rbc.md`](../ANSWERS/answers-rbc.md) | 2 solved RBC answers |
+| [`answers-new-keynesian.md`](../ANSWERS/answers-new-keynesian.md) | 2 solved New Keynesian answers |
+| [`macro-questions-topic-wise.md`](../QUESTIONS/macro-questions-topic-wise.md) | Questions by topic |
+| [`macro-questions-year-wise.md`](../QUESTIONS/macro-questions-year-wise.md) | Questions by source/year |
+| [`macro-questions-topic-wise-answered.md`](../QUESTIONS/macro-questions-topic-wise-answered.md) | Topic questions + answer briefs |
+| [`macro-questions-year-wise-answered.md`](../QUESTIONS/macro-questions-year-wise-answered.md) | Year-wise questions + answer briefs |
 
 ## Key Textbooks (Not Included)
 

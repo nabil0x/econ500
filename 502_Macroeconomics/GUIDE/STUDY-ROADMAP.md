@@ -49,13 +49,13 @@
 | Layer | Files | Purpose |
 |-------|-------|---------|
 | **Entry** | [`STUDY-ROADMAP.md`](./STUDY-ROADMAP.md) | You are here |
-| **Answers** | [`answers-macroeconomics.md`](./answers-macroeconomics.md) | 25 fully solved questions — Solow, Ramsey, Endogenous Growth, Batch 47/48 |
+| **Answers** | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) | 25 fully solved questions — Solow, Ramsey, Endogenous Growth, Batch 47/48 |
 | **Basics** | [`basics.md`](./basics.md) | Foundational concepts & definitions |
-| **Formulas** | [`answers-macroeconomics.md`](./answers-macroeconomics.md#key-formulas) | Key formulas section at end of answers |
+| **Formulas** | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md#key-formulas) | Key formulas section at end of answers |
 | **Batch Finals** | [`../../../question-banks/batch-finals/batch-47/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502.md) | MSc 2022 exam (8 questions) |
 | **Batch Finals** | [`../../../question-banks/batch-finals/batch-48/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-48/macro-502.md) | MSc 2023 exam (8 questions) |
 | **Tutorials** | [`../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) | Tutorial exam questions |
-| **Cross-Course** | [`../index.md`](../index.md) | Study hub with cross-cutting themes |
+| **Cross-Course** | [`../index.md`](../../index.md) | Study hub with cross-cutting themes |
 
 ---
 
@@ -101,7 +101,7 @@
 
 | Day | Topic | Study | Practice |
 |-----|-------|-------|----------|
-| 1 | Neoclassical assumptions, k-dot derivation, steady state | [`answers-macroeconomics.md`](./answers-macroeconomics.md) Q1, Q6 | Derive $\dot{k}=sf(k)-(n+g+\delta)k$ from scratch |
+| 1 | Neoclassical assumptions, k-dot derivation, steady state | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) Q1, Q6 | Derive $\dot{k}=sf(k)-(n+g+\delta)k$ from scratch |
 | 2 | Golden Rule, saving rate effects, level vs growth effects | Q4, Q16d, Q17a | Prove $s_{gold}=\alpha$, compute $k^*$ elasticity |
 | 3 | Transition dynamics, convergence, comparative statics, growth accounting | Q2, Q3, Q5, Q17b–d, Q21 | Draw Solow diagram for $\delta\downarrow$ and $n\downarrow$ |
 
@@ -142,9 +142,9 @@
 
 | Activity | Resource |
 |----------|----------|
-| Scan all 25 answered questions | [`answers-macroeconomics.md`](./answers-macroeconomics.md) Sections 1–5 |
+| Scan all 25 answered questions | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) Sections 1–5 |
 | Practice 4 missing topics from batch finals | [`../../../question-banks/batch-finals/batch-47/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502.md) Q4, Q6, Q7, Q8 |
-| Formula review (Key Formulas section) | [`answers-macroeconomics.md`](./answers-macroeconomics.md#key-formulas) |
+| Formula review (Key Formulas section) | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md#key-formulas) |
 | Full mock exam (pick 5 from 8, 4 hours) | [`../../../question-banks/batch-finals/batch-48/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-48/macro-502.md) |
 | Cross-topic synthesis check | [`../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) |
 
@@ -154,17 +154,17 @@
 
 | What You Need | File |
 |--------------|------|
-| All 25 solved answers (Solow, Ramsey, Endogenous, Batch 47/48) | [`answers-macroeconomics.md`](./answers-macroeconomics.md) |
-| Key formulas (final section) | [`answers-macroeconomics.md#key-formulas`](./answers-macroeconomics.md#key-formulas) |
+| All 25 solved answers (Solow, Ramsey, Endogenous, Batch 47/48) | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) |
+| Key formulas (final section) | [`answers-macroeconomics.md#key-formulas`](../ANSWERS/answers-macroeconomics.md#key-formulas) |
 | Foundational concepts | [`basics.md`](./basics.md) |
 | Course README with cross-links | [`README.md`](./README.md) |
 | Batch 47 MSc 2022 exam (8 questions) | [`../../../question-banks/batch-finals/batch-47/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502.md) |
 | Batch 48 MSc 2023 exam (8 questions) | [`../../../question-banks/batch-finals/batch-48/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-48/macro-502.md) |
 | Batch 47 tutorial exams | [`../../../question-banks/batch-finals/batch-47/macro-502-tutorial.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502-tutorial.md) |
-| Study hub with cross-course themes | [`../index.md`](../index.md) |
+| Study hub with cross-course themes | [`../index.md`](../../index.md) |
 | Batch 46 Hons 2020 exam | [`../../../question-banks/batch-finals/batch-46/macro-402.md`](../question-banks/../../question-banks/batch-finals/batch-46/macro-402.md) |
-| Microeconomics (cross-links for Cobb-Douglas, duality, welfare) | [`../501-Microeconomics/README.md`](../501-Microeconomics/README.md) |
-| Development economics (Bangladesh growth context) | [`../503-Development/README.md`](../503-Development/README.md) |
+| Microeconomics (cross-links for Cobb-Douglas, duality, welfare) | [`../501-Microeconomics/README.md`](../../501-Microeconomics/README.md) |
+| Development economics (Bangladesh growth context) | [`../503-Development/README.md`](../../503-Development/README.md) |
 
 ---
 
@@ -174,7 +174,7 @@ These topics appear in **both Batch 47 and Batch 48** (highest probability):
 
 ### Solow (2+ appearances)
 
-- [ ] Neoclassical assumptions + derive $\dot{k} = sf(k) - (n+g+\delta)k$ → [`answers-macroeconomics.md`](./answers-macroeconomics.md) Q1, Q16
+- [ ] Neoclassical assumptions + derive $\dot{k} = sf(k) - (n+g+\delta)k$ → [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) Q1, Q16
 - [ ] Phase diagram for $k$ and Balanced Growth Path → Q1, Q16, Q21
 - [ ] Effects of changes in $\delta$, $g$, $\alpha$ on break-even and actual investment → Q2, Q16c, Q21c
 - [ ] Saving ratio: level effects, not growth effects (proof) → Q4, Q6, Q16d, Q17
@@ -211,7 +211,7 @@ These topics appear in **both Batch 47 and Batch 48** (highest probability):
 | # | File | Description |
 |---|------|-------------|
 | 1 | [`STUDY-ROADMAP.md`](./STUDY-ROADMAP.md) | 🎯 Entry point (you are here) |
-| 2 | [`answers-macroeconomics.md`](./answers-macroeconomics.md) | 25 solved questions: Solow Q1–Q6, Ramsey Q7–Q11, Endogenous Q12–Q15, Batch 47 Q16–Q20, Batch 48 Q21–Q25 |
+| 2 | [`answers-macroeconomics.md`](../ANSWERS/answers-macroeconomics.md) | 25 solved questions: Solow Q1–Q6, Ramsey Q7–Q11, Endogenous Q12–Q15, Batch 47 Q16–Q20, Batch 48 Q21–Q25 |
 | 3 | [`basics.md`](./basics.md) | Foundational concepts, definitions, and intuition |
 | 4 | [`README.md`](./README.md) | Course README with full notes, tutorial questions, and cross-links |
 | 5 | [`../../../question-banks/batch-finals/batch-47/macro-502.md`](../question-banks/../../question-banks/batch-finals/batch-47/macro-502.md) | MSc 2022 exam (8 questions × 14 marks) |

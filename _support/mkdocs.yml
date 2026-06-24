@@ -67,8 +67,8 @@ plugins:
   - search
 
 # Exclude non-markdown files from the build to keep it fast
+# PDFs are symlinked via course directories and served as original content
 exclude_docs: |
-  *.pdf
   *.jpg
   *.jpeg
   *.png
@@ -169,10 +169,13 @@ nav:
       - By Year (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise-answered.md
       - By Year (Questions Only): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise.md
     - 📦 Tutorials & Model Notes:
+      - 📖 Overview: extracted-content/502_Macroeconomics/TUTORIALS/README.md
       - Solow Tutorial 1: extracted-content/502_Macroeconomics/TUTORIALS/502_solow_1st_tutorial.md
       - Solow, RCK, R&D: extracted-content/502_Macroeconomics/TUTORIALS/502-solow-rck-rd-tutorial.md
       - Tutorial Q48: extracted-content/502_Macroeconomics/TUTORIALS/502-tutorial-question-48.md
       - Macro Tutorial Solve: extracted-content/502_Macroeconomics/TUTORIALS/macro-tutorial-solve.md
+      - 📋 Final Syllabus: extracted-content/502_Macroeconomics/TUTORIALS/502-final-syllabus-1.md
+      - 📋 Macro Suggestions: extracted-content/502_Macroeconomics/TUTORIALS/502-macro-suggestion-2.md
       - 🧩 Model Notes:
         - 🏗️ Solow Model:
           - The Solow Model: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/the-solow-model.md"
@@ -198,6 +201,7 @@ nav:
           - Leibniz Integral Rule: "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/leibniz_integral_rule.md"
           - Blanchard-Galli (Real Wage Rigidities): "extracted-content/502_Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/olivier-blanchard-and-galli-real-wage-rigidities-and-the-new-keynesian-model.md"
     - 📚 Textbooks:
+      - 📖 Overview: extracted-content/502_Macroeconomics/TEXTBOOKS/README.md
       - Heijdra Foundations: extracted-content/502_Macroeconomics/TEXTBOOKS/ben-j-heijdra-foumdations-of-modern-macro.md
       - Heijdra 2017: extracted-content/502_Macroeconomics/TEXTBOOKS/heijdra-2017.md
       - Classical Macro Theory: extracted-content/502_Macroeconomics/TEXTBOOKS/classical_macroeconomics_classical_monetary__employment_theory.md
@@ -364,3 +368,69 @@ nav:
 
   # ─── MASTER NOTES ──────────────────────────────────────────────────
   - 📚 Master Study Notes (503+512): MASTER_STUDY_NOTES.md
+
+  # ─── ORIGINAL PDF SOURCES ─────────────────────────────────────────
+  - 📄 Original PDFs:
+    - 📐 Micro 501 Resources:
+      - Master Study Guide: 501-Microeconomics/501-MASTER-STUDY-GUIDE.pdf
+      - Munoz-Garcia Textbook: 501-Microeconomics/501/Felix_Munoz-Garcia_-_Advanced_Microeconomic_Theory__An_Intuitive_Approach_with_Examples-The_MIT_Press_(2017)-1-.pdf
+      - General Equilibrium: 501-Microeconomics/501/General Equilibrium Theory.pdf
+      - Welfare Change: 501-Microeconomics/501/(question 22)WelfareChange (CV, EV and CS)_copy.pdf
+    - 📈 Macro 502 Resources:
+      - 📚 Textbooks:
+        - Heijdra Foundations: "502-Macroeconomics/TEXTBOOKS/(Ben J. Heijdra) Foumdations of Modern Macro.pdf"
+        - Heijdra 2017: 502-Macroeconomics/TEXTBOOKS/Heijdra 2017.pdf
+        - Classical Macro Theory: 502-Macroeconomics/TEXTBOOKS/Classical_Macroeconomics_Classical_Monetary_&_Employment_Theory.pdf
+        - Ackley ch 4-5: "502-Macroeconomics/TEXTBOOKS/Ackley ch 4,5.pdf"
+        - Arnold Economics: "502-Macroeconomics/TEXTBOOKS/(Roger A. Arnold) Economics.pdf"
+        - Economics by Arnold: 502-Macroeconomics/TEXTBOOKS/Economics by arnold.pdf
+        - Froyen: 502-Macroeconomics/TEXTBOOKS/Macroeconomics_by_Richard_T_Froyen_10th.pdf
+        - Ackley Macro Theory: "502-Macroeconomics/TEXTBOOKS/Macroeconomic Theory and Policy (Gardner Ackley) (Z-Library).pdf"
+        - OLG Model: 502-Macroeconomics/TEXTBOOKS/Overlapping_generations_model.pdf
+      - 📝 Tutorials:
+        - Solow Tutorial 1: 502-Macroeconomics/TUTORIALS/502_solow_1st_tutorial.pdf
+        - Solow/RCK/R&D: "502-Macroeconomics/TUTORIALS/502 Solow, RCK, R&D (Tutorial).pdf"
+        - Tutorial Q48: "502-Macroeconomics/TUTORIALS/502 tutorial question 48.pdf"
+        - Macro Tutorial Solve: 502-Macroeconomics/TUTORIALS/Macro Tutorial Solve.pdf
+        - David Romer Macro: "502-Macroeconomics/TUTORIALS/(David Romer) Advanced Macroeconomics.pdf"
+        - Syllabus: "502-Macroeconomics/TUTORIALS/502 final syllabus (1).pdf"
+        - Suggestions: "502-Macroeconomics/TUTORIALS/502-Macro Suggestion (2).pdf"
+      - 🧩 Model Notes:
+        - Solow Model: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/The Solow Model.pdf"
+        - Solow Model (Mashruf): "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/Solow-Model-Mashruf.pdf"
+        - Solow Problems: "502-Macroeconomics/TUTORIALS/MODELS/Solow (Romer)/7.10.2024-502-Solow-Model-Problems-1.3-and-1.7-Keynesian-DSGE-Model-necessary-derivations.pdf"
+        - Diamond Model: 502-Macroeconomics/TUTORIALS/MODELS/Diamond/The Diamond Model.pdf
+        - Diamond Math: 502-Macroeconomics/TUTORIALS/MODELS/Diamond/Diamond math.pdf
+        - Dynamic Efficiency: 502-Macroeconomics/TUTORIALS/MODELS/Diamond/Dynamic_efficiency.pdf
+        - RBC Theory: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Real_business-cycle_theory.pdf
+        - RBC Derivations: 502-Macroeconomics/TUTORIALS/MODELS/RBC/RBC-Necessary-Derivations-using-log-utility-Except-Indivisible-Labor-Solution.pdf
+        - Alvin Hansen: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Alvin_Hansen.pdf
+        - Edward Prescott: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Edward_C._Prescott.pdf
+        - HP Filter: 502-Macroeconomics/TUTORIALS/MODELS/RBC/Hodrick–Prescott_filter.pdf
+        - Campante et al.: "502-Macroeconomics/TUTORIALS/MODELS/RBC/Filipe Campante, Federico Sturzenegger, Andrés Velasco - Advanced Macroeconomics_ An Easy Guide-LSE Press (2021).pdf"
+        - RCK Model: 502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK Model.pdf
+        - RCK 47th Typed: 502-Macroeconomics/TUTORIALS/MODELS/RCK/RCK_Model_47th Batch_typed.pdf
+        - R&D Model: "502-Macroeconomics/TUTORIALS/MODELS/R&D/R&D Model(1).pdf"
+        - Romer Model: 502-Macroeconomics/TUTORIALS/MODELS/Romer/The-Romer-Model.pdf
+        - Calvo Contracts: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Calvo_(staggered)_contracts.pdf
+        - Divine Coincidence: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Divine_coincidence.pdf
+        - Leibniz Integral: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Leibniz_integral_rule.pdf
+        - Blanchard-Galli: "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Olivier Blanchard and galli REAL WAGE RIGIDITIES AND THE NEW KEYNESIAN MODEL.pdf"
+    - 🌱 Development 503:
+      - Todaro & Smith: "503-Development/503/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
+      - Debraj Ray: "503-Development/503/FOR FINAL/Development Economics (Debraj Ray) (Z-Library).pdf"
+      - Naila Kabeer (LSE): 503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf
+      - LFS 2022: 503-Development/LFS/LFS 2022.pdf
+      - Paris Agreement: 503-Development/paris_agreement.pdf
+    - 🏛️ Political Economy 512:
+      - Modernization Theory: 512-Political-Economy/modernization theory and its Critics .pdf
+      - Washington Consensus: "512-Political-Economy/babb_kentikelenis_ washington consensus.pdf"
+      - Dependency Critique: 512-Political-Economy/A_critique_of_modernization_and_dependen.pdf
+      - W.W. Policy Reform: 512-Political-Economy/What Washington Means by Policy Reform _ PIIE.pdf
+    - 🎯 Question Banks:
+      - Main Questions: question-banks/MainQ.pdf
+      - Masters Final 47: question-banks/Masters-Final-Q-47.pdf
+      - Batch 47 Tutorials: question-banks/47 Tutorial Masters.pdf
+      - Batch 46 Final: question-banks/Final batch 46.pdf
+      - Batch 47 Final: question-banks/Final Batch 47.pdf
+      - Batch 48 Final: question-banks/Fihnal Batch 48.pdf

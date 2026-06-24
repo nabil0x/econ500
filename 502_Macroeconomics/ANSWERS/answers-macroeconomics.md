@@ -126,7 +126,7 @@ For Bangladesh, the demographic dividend means:
 
 > **Professor's Corner:** The demographic transition in Bangladesh is one of the fastest in developing-country history. The Solow model predicts a permanent level effect on per-capita income from the decline in $n$. However, the empirical evidence (Bloom, Canning & Sevilla, 2003) suggests that the demographic dividend accounts for roughly one-third of East Asian growth — the rest comes from total factor productivity.
 >
-> → *See also: [Q5](#q-solow-05) (conditional convergence and developing countries), [Bangladesh Trade notes](../503-Development/bangladesh-trade/README.md)*
+> → *See also: [Q5](#q-solow-05) (conditional convergence and developing countries), [Bangladesh Trade notes](../../503-Development/bangladesh-trade/README.md)*
 
 ---
 
@@ -261,7 +261,7 @@ where $g_{y_i}$ is the growth rate, $\beta > 0$ is the speed of convergence, $y_
 
 > **Professor's Corner:** The strongest critique of the Solow convergence prediction is that the model assumes all countries have the same technology level $A(t)$ and converge to the same steady state. In reality, technology gaps persist because of absorptive capacity constraints, and steady states differ dramatically across countries. The "convergence club" literature (Durlauf & Johnson, 1995) shows that countries cluster into multiple convergence groups.
 >
-> → *See also: [Q25](#q-batch48-macro-05) (convergence clubs), [Venezuela notes](../503-Development/venezuela/README.md)*
+> → *See also: [Q25](#q-batch48-macro-05) (convergence clubs), [Venezuela notes](../../503-Development/venezuela/README.md)*
 
 ---
 
@@ -1760,7 +1760,7 @@ If $s(k)$ is S-shaped (low, then rising, then plateauing), there can be three in
 
 > **Professor's Corner:** The convergence club literature (Durlauf & Johnson, 1995; Quah, 1996) directly challenges the Barro/MRW convergence results. Using nonparametric methods, Quah shows the cross-country income distribution is becoming "twin-peaked" — rich and poor country clubs are diverging from each other, contradicting the simple convergence prediction. The policy implication is radical: aid and reform must be massive and coordinated (Sachs-style Big Push), not incremental.
 >
-> → *See also: [Q5](#q-solow-05) (conditional convergence critique), [Solow notes](../macroeconomics/README.md)*
+> → *See also: [Q5](#q-solow-05) (conditional convergence critique)*
 
 ---
 

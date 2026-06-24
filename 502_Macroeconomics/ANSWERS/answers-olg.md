@@ -5,7 +5,7 @@
 > **Math convention:** All equations use LaTeX notation. GitHub renders them natively.
 > Display equations use `$$ ... $$`, inline formulas use `$ ... $`.
 > Questions drawn from the Diamond (1965) OLG model, Batch 47 MSc 2022 and Batch 48 MSc 2023.
-> Sources: [../GUIDE/GLOSSARY.md](./../GUIDE/GLOSSARY.md) (#term-olgi, #term-dynamic-inefficiency), [EXAM-CHEAT-SHEET.md](./EXAM-CHEAT-SHEET.md) (OLG section), [answers-macroeconomics.md](./answers-macroeconomics.md).
+> Sources: [../GUIDE/GLOSSARY.md](../GUIDE/GLOSSARY.md) (#term-olgi, #term-dynamic-inefficiency), [EXAM-CHEAT-SHEET.md](../GUIDE/EXAM-CHEAT-SHEET.md) (OLG section), [answers-macroeconomics.md](./answers-macroeconomics.md).
 
 ---
 
@@ -342,7 +342,7 @@ In this case, reducing the saving rate would **increase** steady-state consumpti
 
 > **Cross-Reference Index:**
 > - ../GUIDE/GLOSSARY.md: [#term-olgi](./../GUIDE/GLOSSARY.md#term-olgi), [#term-dynamic-inefficiency](./../GUIDE/GLOSSARY.md#term-dynamic-inefficiency), [#term-speed-of-convergence](./../GUIDE/GLOSSARY.md#term-speed-of-convergence)
-> - EXAM-CHEAT-SHEET.md: [OLG section](./EXAM-CHEAT-SHEET.md) (lines 48-55)
+> - EXAM-CHEAT-SHEET.md: [OLG section](../GUIDE/EXAM-CHEAT-SHEET.md) (lines 48-55)
 > - Solow model: [Q1–Q6](./answers-macroeconomics.md#q-solow-01)
 > - Ramsey model: [Q7–Q11](./answers-macroeconomics.md#q-ramsey-01)
 > - Endogenous growth: [Q12–Q15](./answers-macroeconomics.md#q-endogrowth-01)

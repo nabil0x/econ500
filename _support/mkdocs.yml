@@ -231,6 +231,7 @@ nav:
     - Overview: 503-Development/README.md
     - Course Basics: 503-Development/basics.md
     - ✅ Answers: 503-Development/answers-development.md
+    - 📋 Master Questions: 503-Development/master-questions.md
     - 📝 Topics:
       - Naila Kabeer:
         - Basics: 503-Development/naila-kabeer/basics.md
@@ -441,11 +442,11 @@ nav:
         - Leibniz Integral: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Leibniz_integral_rule.pdf
         - Blanchard-Galli: "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Olivier Blanchard and galli REAL WAGE RIGIDITIES AND THE NEW KEYNESIAN MODEL.pdf"
     - 🌱 Development 503:
-      - Todaro & Smith: "503-Development/503/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
-      - Debraj Ray: "503-Development/503/FOR FINAL/Development Economics (Debraj Ray) (Z-Library).pdf"
-      - Naila Kabeer (LSE): 503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf
-      - LFS 2022: 503-Development/LFS/LFS 2022.pdf
-      - Paris Agreement: 503-Development/paris_agreement.pdf
+      - Todaro & Smith: "503-Development/503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
+      - Debraj Ray: "503-Development/503/books/Development Economics (Debraj Ray) (Z-Library).pdf"
+      - Naila Kabeer (LSE): "503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf"
+      - LFS 2022: "503-Development/LFS/LFS 2022.pdf"
+      - Paris Agreement: 503-Development/english_paris_agreement.pdf
     - 🏛️ Political Economy 512:
       - Modernization Theory: 512-Political-Economy/modernization theory and its Critics .pdf
       - Washington Consensus: "512-Political-Economy/babb_kentikelenis_ washington consensus.pdf"

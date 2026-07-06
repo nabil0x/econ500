@@ -109,6 +109,71 @@ markdown_extensions:
 # =====================================================================
 nav:
   - Home: index.md
+  # ─── QUESTIONS, ANSWERS & PDFS ────────────────────────────────────
+  - ❓ Q&A + PDFs:
+    - 📐 Micro 501:
+      - ✅ Answers:
+        - Consumer Theory: 501-Microeconomics/answers-consumer-theory.md
+        - Demand & Production: 501-Microeconomics/answers-demand-production.md
+        - Welfare: 501-Microeconomics/answers-welfare.md
+        - GE, Game Theory & Trade: 501-Microeconomics/answers-ge-game-extern-trade.md
+        - 📋 ANSWERS Index: 501-Microeconomics/ANSWERS-INDEX.md
+      - ❓ Questions:
+        - By Topic (Answered): 501-Microeconomics/micro-questions-topic-wise-answered.md
+        - By Year (Answered): 501-Microeconomics/micro-questions-year-wise-answered.md
+        - By Topic (Only): 501-Microeconomics/micro-questions-topic-wise.md
+        - By Year (Only): 501-Microeconomics/micro-questions-year-wise.md
+      - 📄 PDFs:
+        - Master Study Guide: 501-Microeconomics/501-MASTER-STUDY-GUIDE.pdf
+        - Munoz-Garcia Textbook: 501-Microeconomics/501/Felix_Munoz-Garcia_-_Advanced_Microeconomic_Theory__An_Intuitive_Approach_with_Examples-The_MIT_Press_(2017)-1-.pdf
+        - General Equilibrium: 501-Microeconomics/501/General Equilibrium Theory.pdf
+        - Welfare Change: 501-Microeconomics/501/(question 22)WelfareChange (CV, EV and CS)_copy.pdf
+    - 📈 Macro 502:
+      - ✅ Answers:
+        - 📋 ANSWERS Index: 502-Macroeconomics/ANSWERS/ANSWERS-INDEX.md
+        - Macroeconomics: 502-Macroeconomics/ANSWERS/answers-macroeconomics.md
+        - RBC: 502-Macroeconomics/ANSWERS/answers-rbc.md
+        - New Keynesian: 502-Macroeconomics/ANSWERS/answers-new-keynesian.md
+        - R&D / Monopolistic: 502-Macroeconomics/ANSWERS/answers-rd-monopolistic.md
+        - OLG: 502-Macroeconomics/ANSWERS/answers-olg.md
+      - ❓ Questions:
+        - By Topic (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise-answered.md
+        - By Year (Answered): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise-answered.md
+        - By Topic (Only): 502-Macroeconomics/QUESTIONS/macro-questions-topic-wise.md
+        - By Year (Only): 502-Macroeconomics/QUESTIONS/macro-questions-year-wise.md
+    - 🌱 Dev 503:
+      - ✅ Answers: 503-Development/answers-development.md
+      - ❓ Master Questions: 503-Development/master-questions.md
+      - 📄 PDFs:
+        - Todaro & Smith: "503-Development/503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
+        - Debraj Ray: "503-Development/503/books/Development Economics (Debraj Ray) (Z-Library).pdf"
+        - Naila Kabeer (LSE): "503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf"
+        - LFS 2022: "503-Development/LFS/LFS 2022.pdf"
+        - Paris Agreement: 503-Development/english_paris_agreement.pdf
+    - 🏛️ Pol Econ 512:
+      - ✅ Answers: 512-Political-Economy/answers-political-economy.md
+      - 📄 PDFs:
+        - Modernization Theory: 512-Political-Economy/modernization theory and its Critics .pdf
+        - Washington Consensus: "512-Political-Economy/babb_kentikelenis_ washington consensus.pdf"
+        - Dependency Critique: 512-Political-Economy/A_critique_of_modernization_and_dependen.pdf
+        - W.W. Policy Reform: 512-Political-Economy/What Washington Means by Policy Reform _ PIIE.pdf
+    - 🎯 Batch Finals:
+      - All Batches: question-banks/batch-finals/README.md
+      - Batch 47 (2022): question-banks/batch-finals/batch-47/README.md
+      - Batch 48 (2023): question-banks/batch-finals/batch-48/README.md
+      - Batch 46 (2020): question-banks/batch-finals/batch-46/README.md
+    - 🧪 Exam Guides:
+      - Theorists: question-banks/exam-guides/theorists-reference.md
+      - Frameworks: question-banks/exam-guides/exam-frameworks.md
+      - Statistics: question-banks/exam-guides/statistics-reference.md
+    - 📦 Question Bank PDFs:
+      - MainQ: question-banks/MainQ.pdf
+      - Masters Final 47: question-banks/Masters-Final-Q-47.pdf
+      - Batch 47 Tutorials: question-banks/47 Tutorial Masters.pdf
+      - Batch 46 Final: question-banks/Final batch 46.pdf
+      - Batch 47 Final: question-banks/Final Batch 47.pdf
+      - Batch 48 Final: question-banks/Fihnal Batch 48.pdf
+
   # ─── MICROECONOMICS (501) ─────────────────────────────────────────
   - 📐 Microeconomics (501):
     - Overview: 501-Microeconomics/README.md

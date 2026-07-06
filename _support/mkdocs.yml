@@ -67,7 +67,7 @@ plugins:
   - search
 
 # Exclude non-markdown files from the build to keep it fast
-# PDFs are symlinked via course directories and served as original content
+# Excluding 501 & 502 PDFs to keep site under 1 GB GitHub Pages limit
 exclude_docs: |
   *.jpg
   *.jpeg
@@ -77,6 +77,11 @@ exclude_docs: |
   *.pptx
   *.ppt
   *.zip
+  501-Microeconomics/**/*.pdf
+  502-Macroeconomics/**/*.pdf
+  510-Labor/**/*.pdf
+  404-408-Undergrad/**/*.pdf
+  question-banks/**/*.pdf
   !assets/*.png
   !assets/*.jpg
   !assets/*.svg

@@ -145,11 +145,48 @@ nav:
       - ✅ Answers: 503-Development/answers-development.md
       - ❓ Master Questions: 503-Development/master-questions.md
       - 📄 PDFs:
-        - Todaro & Smith: "503-Development/503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
-        - Debraj Ray: "503-Development/503/books/Development Economics (Debraj Ray) (Z-Library).pdf"
-        - Naila Kabeer (LSE): "503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf"
-        - LFS 2022: "503-Development/LFS/LFS 2022.pdf"
-        - Paris Agreement: 503-Development/english_paris_agreement.pdf
+        - 📚 Textbooks:
+          - Todaro & Smith: "503-Development/503/books/(Marked)Economic Development - Todaro and Smith.pdf"
+          - Todaro & Smith (clean): "503-Development/503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
+          - Debraj Ray: "503-Development/503/books/Development Economics (Debraj Ray) (Z-Library).pdf"
+          - Amartya Sen — Poverty & Famines: "503-Development/503/books/Poverty-and-famines│Amartya-Sen│1981.pdf"
+        - 📝 Topics:
+          - 🇧🇩 Kabeer — LSE paper: "503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf"
+          - 🇧🇩 Kabeer — Ch.1 (Unravelling paradox): "503-Development/Naila kabeer/Naila Kabeer chapter 1 Unravelling the paradox.pdf"
+          - 🇧🇩 Kabeer — Negotiating Patriarchy: "503-Development/Naila kabeer/Negotiating patriarchy (1).pdf"
+          - 🇧🇩 Kabeer — Combined tutorial (Kabeer+Venezuela): "503-Development/503 2nd tutorial Naila kabeer and Venezuela.pdf"
+          - 🇻🇪 Venezuela PPTX: "503-Development/venezuela/Venezuella presentation.pptx"
+          - 🇮🇷 Iran PPTX: "503-Development/Iran Ppt (1).pptx"
+          - 📊 LFS 2022 full report: "503-Development/LFS/LFS 2022.pdf"
+          - 📊 LFS PPTX: "503-Development/LFS/Labour-Force-Survey-2022-Development-Economics.pptx"
+          - 📊 LFS Concepts & Definitions: "503-Development/LFS/Concwpts and Definitions.pdf"
+          - 📊 LFS QLFS 2022: "503-Development/LFS/QLFS 2022.pdf"
+          - 📊 LFS raw data: "503-Development/503/data-reports/Labour-Force-Survey-2022-23.pdf"
+          - 🏭 Trade — External Trade BD (DOCX): "503-Development/2nd tuto/External Trade_BD.docx"
+          - 🏭 Trade — External Trade BD (PDF): "503-Development/2nd tuto/External Trade_BD(1).pdf"
+          - 🏭 Trade — GED Outlook Jan 2026: "503-Development/2nd tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf"
+        - 🎓 Lectures:
+          - L1-6: "503-Development/503/lectures/Development L(1-6).pdf"
+          - L7-10: "503-Development/503/lectures/Development lectures L07 - L10.pdf"
+          - L11 Gender Budgeting: "503-Development/503/lectures/L-11 Gender Budgeting .pdf"
+          - 1st tutorial (climate): "503-Development/503/lectures/503-1st tutorial classnote (climate change & PA).pdf"
+          - Preston curve (PPTX): "503-Development/503/lectures/preston curve.pptx"
+          - Women in Economics (PPT): "503-Development/503/lectures/Women in Economics-Basic Understanding [Autosaved].ppt"
+          - Sohan vai — LFS notes: "503-Development/503/lectures/Sohan vai note Labor force survey, 503.pdf"
+          - Climate Change (Bengali): "503-Development/503/lectures/জলবায়ু-পরিবর্তন.pdf"
+        - 🌍 Climate & Paris Agreement:
+          - Paris Agreement (English): "503-Development/english_paris_agreement.pdf"
+          - Paris Agreement (tuto): "503-Development/503/tutorial 2/paris_agreement_english_.pdf"
+          - CC-Basic (PPTX): "503-Development/CC-Basic.pptx"
+          - Development L12-14 (climate slides): "503-Development/development (L 12-14).pdf"
+        - 📋 Tutorial 2 Slides:
+          - Class 1 (PPTX): "503-Development/503/tutorial 2/C-503_M1_Class_1.pptx"
+          - Class 1 (PDF): "503-Development/503/tutorial 2/C-503_M1_Class_1.pptx.pdf"
+          - Class 2 (PPTX): "503-Development/503/tutorial 2/C-503_M1_Class_2.pptx"
+          - Class 2 (PDF): "503-Development/503/tutorial 2/C-503_M1_Class_2.pptx.pdf"
+        - 🧪 Exam Materials:
+          - Nilormi Mam imp sheet: "503-Development/503 development nilormi mam imp sheet.pdf"
+          - Question solve(503).pdf: "503-Development/503/exams/Question solve(503).pdf"
     - 🏛️ Pol Econ 512:
       - ✅ Answers: 512-Political-Economy/answers-political-economy.md
       - 📄 PDFs:
@@ -507,11 +544,48 @@ nav:
         - Leibniz Integral: 502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Leibniz_integral_rule.pdf
         - Blanchard-Galli: "502-Macroeconomics/TUTORIALS/MODELS/New Keynesian DSGE/Olivier Blanchard and galli REAL WAGE RIGIDITIES AND THE NEW KEYNESIAN MODEL.pdf"
     - 🌱 Development 503:
-      - Todaro & Smith: "503-Development/503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
-      - Debraj Ray: "503-Development/503/books/Development Economics (Debraj Ray) (Z-Library).pdf"
-      - Naila Kabeer (LSE): "503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf"
-      - LFS 2022: "503-Development/LFS/LFS 2022.pdf"
-      - Paris Agreement: 503-Development/english_paris_agreement.pdf
+      - 📚 Textbooks:
+        - Todaro & Smith (marked): "503-Development/503/books/(Marked)Economic Development - Todaro and Smith.pdf"
+        - Todaro & Smith (clean): "503-Development/503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf"
+        - Debraj Ray: "503-Development/503/books/Development Economics (Debraj Ray) (Z-Library).pdf"
+        - Sen — Poverty & Famines: "503-Development/503/books/Poverty-and-famines│Amartya-Sen│1981.pdf"
+      - 📝 Topics:
+        - Kabeer LSE paper: "503-Development/Naila kabeer/LSE-016-Kabeer_final.pdf"
+        - Kabeer Ch.1: "503-Development/Naila kabeer/Naila Kabeer chapter 1 Unravelling the paradox.pdf"
+        - Kabeer Negotiating Patriarchy: "503-Development/Naila kabeer/Negotiating patriarchy (1).pdf"
+        - Tutorial (Kabeer+Venezuela): "503-Development/503 2nd tutorial Naila kabeer and Venezuela.pdf"
+        - Venezuela PPTX: "503-Development/venezuela/Venezuella presentation.pptx"
+        - Iran PPTX: "503-Development/Iran Ppt (1).pptx"
+        - LFS 2022 report: "503-Development/LFS/LFS 2022.pdf"
+        - LFS PPTX: "503-Development/LFS/Labour-Force-Survey-2022-Development-Economics.pptx"
+        - LFS Concepts: "503-Development/LFS/Concwpts and Definitions.pdf"
+        - LFS QLFS 2022: "503-Development/LFS/QLFS 2022.pdf"
+        - LFS raw data: "503-Development/503/data-reports/Labour-Force-Survey-2022-23.pdf"
+        - Trade DOCX: "503-Development/2nd tuto/External Trade_BD.docx"
+        - Trade PDF: "503-Development/2nd tuto/External Trade_BD(1).pdf"
+        - GED Outlook: "503-Development/2nd tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf"
+      - 🎓 Lectures:
+        - L1-6: "503-Development/503/lectures/Development L(1-6).pdf"
+        - L7-10: "503-Development/503/lectures/Development lectures L07 - L10.pdf"
+        - L11 Gender Budgeting: "503-Development/503/lectures/L-11 Gender Budgeting .pdf"
+        - 1st tutorial (climate): "503-Development/503/lectures/503-1st tutorial classnote (climate change & PA).pdf"
+        - Preston curve PPTX: "503-Development/503/lectures/preston curve.pptx"
+        - Women in Economics PPT: "503-Development/503/lectures/Women in Economics-Basic Understanding [Autosaved].ppt"
+        - Sohan vai LFS notes: "503-Development/503/lectures/Sohan vai note Labor force survey, 503.pdf"
+        - Climate Change (Bengali): "503-Development/503/lectures/জলবায়ু-পরিবর্তন.pdf"
+      - 🌍 Climate:
+        - Paris Agreement (English): "503-Development/english_paris_agreement.pdf"
+        - Paris Agreement (tuto): "503-Development/503/tutorial 2/paris_agreement_english_.pdf"
+        - CC-Basic PPTX: "503-Development/CC-Basic.pptx"
+        - L12-14 slides: "503-Development/development (L 12-14).pdf"
+      - 📋 Tutorial 2:
+        - Class 1 PPTX: "503-Development/503/tutorial 2/C-503_M1_Class_1.pptx"
+        - Class 1 PDF: "503-Development/503/tutorial 2/C-503_M1_Class_1.pptx.pdf"
+        - Class 2 PPTX: "503-Development/503/tutorial 2/C-503_M1_Class_2.pptx"
+        - Class 2 PDF: "503-Development/503/tutorial 2/C-503_M1_Class_2.pptx.pdf"
+      - 🧪 Exams:
+        - Nilormi Mam imp sheet: "503-Development/503 development nilormi mam imp sheet.pdf"
+        - Question solve(503): "503-Development/503/exams/Question solve(503).pdf"
     - 🏛️ Political Economy 512:
       - Modernization Theory: 512-Political-Economy/modernization theory and its Critics .pdf
       - Washington Consensus: "512-Political-Economy/babb_kentikelenis_ washington consensus.pdf"

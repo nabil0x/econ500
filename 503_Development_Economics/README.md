@@ -1,49 +1,252 @@
 # 📘 ECON 503 — Development Economics
 
 > **Focus:** Theories and empirical evidence on economic development, with emphasis on Bangladesh
-> **Tutorial Questions:** 2nd tutorial (Naila Kabeer, patriarchy, women's agency; Venezuela collapse) | 3rd tutorial (Macro overview, Trade challenges, Iran oil strategy) | Source: MainQ.pdf (Pages 5, 9)
-> **📖 Answers:** [`answers-development.md`](./answers-development.md) — 21 solved questions covering all tutorials + Batch 47 & 48
+> **Tutorial Sources:** MainQ.pdf Pages 5 (2nd Tutorial), 9 (3rd Tutorial)
+> **Exam Sources:** Batch 47 (MSc 2022) — Theories & Policy Debates · Batch 48 (MSc 2023) — Econometric Methods
 
 ---
 
-## Topics
+## 🧭 Quick Navigation
 
-| # | Topic | Basics | Full Notes | Key Exam Questions |
-|---|-------|--------|------------|-------------------|
-| 1 | Naila Kabeer | [Basics](./naila-kabeer/basics.md) | [Full Notes](./naila-kabeer/README.md) | "Why patriarchy is classical in Bangladesh? Indicators of outlier? Changes in agency?" |
-| 2 | Venezuela | [Basics](./venezuela/basics.md) | [Full Notes](./venezuela/README.md) | "Venezuela is a lesson on governance and diversification — explain" |
-| 3 | Labour Force Survey | [Basics](./labour-force-survey/basics.md) | [Full Notes](./labour-force-survey/README.md) | Definitions, key statistics, sectoral composition |
-| 4 | Bangladesh Trade | [Basics](./bangladesh-trade/basics.md) | [Full Notes](./bangladesh-trade/README.md) | Trade structure, tariff issues, FTA strategy |
+| Section | What You'll Find |
+|---------|-----------------|
+| [📖 Answer Bank](#-answer-bank-21-solved-questions) | All 21 solved answers with topic tags |
+| [📋 Master Questions](./master-questions.md) | 45+ questions indexed by source |
+| [📄 Source PDFs Reference](#-source-pdfs-reference) | Every PDF organized by topic |
+| [🎯 Batch Finals](#-msc-final-examination-questions) | Past exam questions with answer links |
+| [🔗 Cross-Course Connections](#cross-course-connections) | Links to Political Economy 512 |
 
 ---
 
+## 📚 Four Tutorial Topics
+
+| # | Topic | Tutorial Qs | Answers | Source PDFs |
+|---|-------|------------|---------|-------------|
+| **1** | [Naila Kabeer →](./naila-kabeer/README.md) | 2nd Tuto Q1–Q2 | [Q1](./answers/01-positive-outlier.md) · [Q2](./answers/02-classical-patriarchy-agency.md) | [LSE paper](./Naila%20kabeer/LSE-016-Kabeer_final.pdf) · [Ch.1](./Naila%20kabeer/Naila%20Kabeer%20chapter%201%20Unravelling%20the%20paradox.pdf) · [Book](./Naila%20kabeer/Negotiating%20patriarchy%20(1).pdf) |
+| **2** | [Venezuela →](./venezuela/README.md) | 2nd Tuto Q4 | [Q4](./answers/04-venezuela-crisis.md) | [PPTX](./venezuela/Venezuella%20presentation.pptx) · [Notes](./venezuela/2nd%20tuto%20venezuela.txt) |
+| **3** | [Labour Force Survey →](./labour-force-survey/README.md) | 2nd Tuto Q3 | [Q3](./answers/03-labour-force-underutilization.md) | [Report](./LFS/LFS%202022.pdf) · [PPTX](./LFS/Labour-Force-Survey-2022-Development-Economics.pptx) · [Concepts](./LFS/Concwpts%20and%20Definitions.pdf) |
+| **4** | [Bangladesh Trade →](./bangladesh-trade/README.md) | 3rd Tuto Q1–Q2 | [Q5](./answers/05-bangladesh-macro-overview.md) · [Q6](./answers/06-external-trade-challenges.md) | [Trade DOCX](./2nd%20tuto/External%20Trade_BD.docx) · [GED Outlook](./2nd%20tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf) |
+
+**Also:** [Iran oil strategy →](./venezuela/README.md) (3rd Tuto Q3 — [Answer Q7](./answers/07-iran-oil-strategy.md), source: [Iran PPTX](./Iran%20Ppt%20(1).pptx))
+
 ---
 
-## 📋 MainQ — Tutorial Questions
+## 📖 Answer Bank — 21 Solved Questions
 
-### 2nd Tutorial (Page 5 of MainQ.pdf)
+> **One master file:** [`answers-development.md`](./answers-development.md) with all 21 answers
+> **Individual files:** Each answer also lives in [`answers/`](./answers/) for focused study
 
-**Question 1:** How do you explain Bangladesh's status as a 'positive outlier' in cross-country comparisons of social progress compared to countries with similar income levels? *(Related: [Naila Kabeer](./naila-kabeer/README.md) — Bangladesh paradox)*
+### Section 1 — 2nd Tutorial (Kabeer, LFS, Venezuela)
 
-**Question 2:**
-(i) What is Classical Patriarchy?
-(ii) What are the different forms of women's agency?
-(iii) Explain the evolution of women's agency in Bangladesh's development trajectory. *(Related: [Naila Kabeer](./naila-kabeer/README.md) — patriarchal bargains)*
+| Q# | Topic | Question | Answer | Marks |
+|----|-------|----------|--------|-------|
+| Q1 | Kabeer | Bangladesh as positive outlier — explain the paradox | [`01`](./answers/01-positive-outlier.md) | 20 |
+| Q2 | Kabeer | Classical patriarchy, forms of agency, evolution in BD | [`02`](./answers/02-classical-patriarchy-agency.md) | 20 |
+| Q3 | LFS | Persons in employment, LU1–LU4, own-use production, NEET | [`03`](./answers/03-labour-force-underutilization.md) | 20 |
+| Q4 | Venezuela | Oil dependency, governance structure, collapse dynamics | [`04`](./answers/04-venezuela-crisis.md) | 20 |
 
-**Question 3:**
-(A) What is meant by 'Persons in Employment' and 'Labor Underutilization'? Use UN definitions.
-(B) Are persons in own-use production work (e.g., subsistence farming, unpaid domestic work) considered 'employed'? Justify.
-(C) What is the proportion of unemployed youth (aged 15-29) in total unemployment? Explain the NEET situation. *(Related: [LFS](./labour-force-survey/README.md) — employment definitions)*
+### Section 2 — 3rd Tutorial (Macro, Trade, Iran)
 
-**Question 4:** From Venezuela's experience as an 'Oil Rich Country', explain their investment and governance structure. How does it explain their current economic and social crisis? *(Related: [Venezuela](./venezuela/README.md))*
+| Q# | Topic | Question | Answer | Marks |
+|----|-------|----------|--------|-------|
+| Q5 | Trade/Macro | Bangladesh macro overview for foreign audience | [`05`](./answers/05-bangladesh-macro-overview.md) | 5+15 |
+| Q6 | Trade | 7 structural challenges of external trade | [`06`](./answers/06-external-trade-challenges.md) | 15 |
+| Q7 | Iran | Iran's oil strategy, sanctions, crisis transmission | [`07`](./answers/07-iran-oil-strategy.md) | 10+10 |
 
-### 3rd Tutorial (Page 9 of MainQ.pdf)
+### Section 3 — Batch 47 (MSc 2022): Theories & Policy Debates
 
-**Question 1:** If you were to present Bangladesh's macro-economic scenario to a foreign audience, which indicators would you use and why? How would you present a brief macro-economic overview? (5+15 marks) *(Related: [Bangladesh Trade](./bangladesh-trade/README.md), [LFS](./labour-force-survey/README.md))*
+| Q# | Topic | Question | Answer | Marks |
+|----|-------|----------|--------|-------|
+| Q8 | Dependence | Neocolonial Dependence Model | [`08`](./answers/08-neocolonial-dependence.md) | 7 |
+| Q9 | Neoclassical | Neoclassical counterrevolution | [`09`](./answers/09-neoclassical-counterrevolution.md) | 7 |
+| Q10 | Dualism | Dualistic Development Thesis | [`10`](./answers/10-dualistic-development.md) | 7 |
+| Q11 | False Paradigm | False Paradigm Model critique | [`11`](./answers/11-false-paradigm-model.md) | 7 |
+| Q12 | Gender | Does growth ensure gender equity? | [`12`](./answers/12-growth-gender-equity.md) | 7 |
+| Q13 | Gender | Feminization of agriculture in Bangladesh | [`13`](./answers/13-feminization-agriculture.md) | 7 |
+| Q14 | Growth | Convergence theory & Baumol critique | [`14`](./answers/14-convergence-theory.md) | 5+9 |
+| Q15 | IMF | IMF conditionality — objectives, benefits, drawbacks | [`15`](./answers/15-imf-conditionality.md) | 7+7 |
+| Q16 | Population | Population growth & economic development nexus | [`16`](./answers/16-population-growth.md) | 7+7 |
+| Q17 | Concepts | Comprador Group & Unpaid employment (short notes) | [`17`](./answers/17-comprador-unpaid-employment.md) | 7 |
+| Q18 | Health | Life expectancy cross-country comparison | [`18`](./answers/18-life-expectancy.md) | 7 |
 
-**Question 2:** Briefly unveil the key challenges of external trade in Bangladesh amidst the current dynamic landscape. *(Related: [Bangladesh Trade](./bangladesh-trade/README.md))*
+### Section 4 — Batch 48 (MSc 2023): Econometric Methods
 
-**Question 3:** How did Iran strategize its oil dependency and use of energy resources over decades amidst global challenges? How did the crises demonstrate pressure on economic and social outcomes? (10+10 marks) *(Compare: [Venezuela](./venezuela/README.md) — oil dependency comparisons)*
+| Q# | Topic | Question | Answer | Marks |
+|----|-------|----------|--------|-------|
+| Q19 | Endogeneity | Endogeneity, IV, Quantile Regression, CCA | [`19`](./answers/19-endogeneity-IV.md) | 16 |
+| Q20 | Logit/Probit | Logit, probit, multinomial logit interpretation | [`20`](./answers/20-logit-probit.md) | 14 |
+| Q21 | Time Series | Cointegration, ARDL, unit root tests | [`21`](./answers/21-cointegration.md) | 14 |
+
+---
+
+## 📄 Source PDFs Reference
+
+### Textbooks (in `503/books/`)
+
+| Book | File | Used In |
+|------|------|---------|
+| **Todaro & Smith** — Economic Development | [`503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf`](./503/books/-Michael_Todaro,_Stephen_Smith-_Economic_Developme(b-ok.cc).pdf) | All topics |
+| **Debraj Ray** — Development Economics | [`503/books/Development Economics (Debraj Ray) (Z-Library).pdf`](./503/books/Development%20Economics%20(Debraj%20Ray)%20(Z-Library).pdf) | All topics |
+| **Amartya Sen** — Poverty and Famines | [`503/books/Poverty-and-famines│Amartya-Sen│1981.pdf`](./503/books/Poverty-and-famines│Amartya-Sen│1981.pdf) | Famine & entitlement |
+
+### By Topic
+
+| Topic | Source PDFs / PPTXs |
+|-------|-------------------|
+| **Naila Kabeer** | [LSE paper](./Naila%20kabeer/LSE-016-Kabeer_final.pdf) · [Ch.1](./Naila%20kabeer/Naila%20Kabeer%20chapter%201%20Unravelling%20the%20paradox.pdf) · [Negotiating Patriarchy](./Naila%20kabeer/Negotiating%20patriarchy%20(1).pdf) · [2nd tutorial combined PDF](./503%202nd%20tutorial%20Naila%20kabeer%20and%20Venezuela.pdf) |
+| **Venezuela** | [PPTX](./venezuela/Venezuella%20presentation.pptx) · [Tutorial notes](./venezuela/2nd%20tuto%20venezuela.txt) |
+| **Labour Force Survey** | [Full report](./LFS/LFS%202022.pdf) · [PPTX](./LFS/Labour-Force-Survey-2022-Development-Economics.pptx) · [Concepts & Definitions](./LFS/Concwpts%20and%20Definitions.pdf) · [QLFS 2022](./LFS/QLFS%202022.pdf) · [Data report](../extracted-content/503_Development_Economics/LFS/labour-force-survey-2022-23.md) · [Raw data](./503/data-reports/Labour-Force-Survey-2022-23.pdf) |
+| **Bangladesh Trade** | [External Trade BD (DOCX)](./2nd%20tuto/External%20Trade_BD.docx) · [Same as PDF](./2nd%20tuto/External%20Trade_BD(1).pdf) · [GED Outlook Jan 2026](./2nd%20tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf) |
+| **Iran** | [Iran PPTX](./Iran%20Ppt%20(1).pptx) |
+| **Climate & Paris Agreement** | [Paris Agreement (English)](./english_paris_agreement.pdf) · [Paris Agreement (tuto PDF)](./503/tutorial%202/paris_agreement_english_.pdf) · [CC-Basic PPTX](./CC-Basic.pptx) · [Lecture slides](../extracted-content/503_Development_Economics/development-l-12-14.md) · [Climate Change (Bengali)](./503/lectures/%E0%A6%9C%E0%A6%B2%E0%A6%AC%E0%A6%BE%E0%A7%9F%E0%A7%81-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%A8.pdf) |
+| **Course Lectures** | [L1-6](./503/lectures/Development%20L(1-6).pdf) · [L7-10](./503/lectures/Development%20lectures%20L07%20-%20L10.pdf) · [L11 Gender Budgeting](./503/lectures/L-11%20Gender%20Budgeting%20.pdf) · [Preston curve](./503/lectures/preston%20curve.pptx) · [Women in Economics](./503/lectures/Women%20in%20Economics-Basic%20Understanding%20%5BAutosaved%5D.ppt) · [1st tutorial (climate)](./503/lectures/503-1st%20tutorial%20classnote%20(climate%20change%20&%20PA).pdf) · [Sohan vai — LFS notes](./503/lectures/Sohan%20vai%20note%20Labor%20force%20survey%2C%20503.pdf) |
+| **Tutorial 2 Slides** | [Class 1 PPTX](./503/tutorial%202/C-503_M1_Class_1.pptx) · [Class 1 PDF](./503/tutorial%202/C-503_M1_Class_1.pptx.pdf) · [Class 2 PPTX](./503/tutorial%202/C-503_M1_Class_2.pptx) · [Class 2 PDF](./503/tutorial%202/C-503_M1_Class_2.pptx.pdf) |
+| **Question Banks** | [Batch 47 Final](../question-banks/batch-finals/batch-47/dev-503.md) · [Batch 48 Final](../question-banks/batch-finals/batch-48/dev-503.md) · [Question solve(503).pdf](./503/exams/Question%20solve(503).pdf) |
+| **Nilormi Mam Sheet** | [Important sheet PDF](./503%20development%20nilormi%20mam%20imp%20sheet.pdf) |
+
+### Extracted Content
+
+> [📄 Full extracted-text index →](../extracted-content/503_Development_Economics/README.md) — 39 markdown files extracted from PDFs
+
+---
+
+## 📋 Tutorial Questions
+
+### 2nd Tutorial (MainQ.pdf, Page 5)
+
+**Question 1 (20 marks)** — Bangladesh as Positive Outlier
+> How do you explain Bangladesh's status as a 'positive outlier' in cross-country comparisons of social progress compared to countries with similar income levels?
+> **→ [Answer Q1](./answers/01-positive-outlier.md) | 📖 [Naila Kabeer notes](./naila-kabeer/README.md) | 📄 [LSE paper](./Naila%20kabeer/LSE-016-Kabeer_final.pdf)**
+
+**Question 2 (20 marks)** — Patriarchy & Agency
+> (i) What is Classical Patriarchy? (ii) What are the different forms of women's agency? (iii) Explain the evolution of women's agency in Bangladesh's development trajectory.
+> **→ [Answer Q2](./answers/02-classical-patriarchy-agency.md) | 📖 [Naila Kabeer notes](./naila-kabeer/README.md) | 📄 [Ch.1 PDF](./Naila%20kabeer/Naila%20Kabeer%20chapter%201%20Unravelling%20the%20paradox.pdf)**
+
+**Question 3 (20 marks)** — LFS Definitions & NEET
+> (A) What is meant by 'Persons in Employment' and 'Labor Underutilization'? Use UN definitions. (B) Are persons in own-use production work considered 'employed'? Justify. (C) What is youth unemployment share and NEET situation?
+> **→ [Answer Q3](./answers/03-labour-force-underutilization.md) | 📖 [LFS notes](./labour-force-survey/README.md) | 📄 [LFS 2022 report](./LFS/LFS%202022.pdf)**
+
+**Question 4 (20 marks)** — Venezuela Crisis
+> From Venezuela's experience as an 'Oil Rich Country', explain their investment and governance structure. How does it explain their current economic and social crisis?
+> **→ [Answer Q4](./answers/04-venezuela-crisis.md) | 📖 [Venezuela notes](./venezuela/README.md) | 📄 [Venezuela PPTX](./venezuela/Venezuella%20presentation.pptx)**
+
+### 3rd Tutorial (MainQ.pdf, Page 9)
+
+**Question 1 (5+15 marks)** — Bangladesh Macro Overview
+> If you were to present Bangladesh's macro-economic scenario to a foreign audience, which indicators would you use and why? How would you present a brief macro-economic overview?
+> **→ [Answer Q5](./answers/05-bangladesh-macro-overview.md) | 📖 [Bangladesh Trade notes](./bangladesh-trade/README.md) · [LFS notes](./labour-force-survey/README.md)**
+
+**Question 2 (15 marks)** — External Trade Challenges
+> Briefly unveil the key challenges of external trade in Bangladesh amidst the current dynamic landscape.
+> **→ [Answer Q6](./answers/06-external-trade-challenges.md) | 📖 [Bangladesh Trade notes](./bangladesh-trade/README.md) | 📄 [Trade DOCX](./2nd%20tuto/External%20Trade_BD.docx)**
+
+**Question 3 (10+10 marks)** — Iran Oil Strategy
+> How did Iran strategize its oil dependency and use of energy resources over decades amidst global challenges? How did the crises demonstrate pressure on economic and social outcomes?
+> **→ [Answer Q7](./answers/07-iran-oil-strategy.md) | (Compare: [Venezuela notes](./venezuela/README.md)) | 📄 [Iran PPTX](./Iran%20Ppt%20(1).pptx)**
+
+---
+
+## 🎯 MSc Final Examination Questions
+
+### Batch 47 (2022) — Theories & Policy Debates
+
+> **Exam:** M.Sc. Final 2022 | Full Marks: 70 | Answer any five questions | 4 Hours
+> **📄 Source:** [`dev-503.md`](../question-banks/batch-finals/batch-47/dev-503.md)
+
+#### Dependence vs Neoclassical Debate
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q1(A) | How does the Neocolonial Dependence Model explain underdevelopment? | [Q8](./answers/08-neocolonial-dependence.md) | 7 |
+| Q1(B) | How does neoclassical counterrevolution argue about underdevelopment? | [Q9](./answers/09-neoclassical-counterrevolution.md) | 7 |
+| Q2(A) | Key arguments of Dualistic Development Thesis | [Q10](./answers/10-dualistic-development.md) | 7 |
+| Q2(B) | False Paradigm Model — critique of structural models | [Q11](./answers/11-false-paradigm-model.md) | 7 |
+
+#### Gender & Development
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q3(A) | Does economic growth ensure gender equity? | [Q12](./answers/12-growth-gender-equity.md) | 7 |
+| Q3(B) | Feminization of agriculture in Bangladesh | [Q13](./answers/13-feminization-agriculture.md) | 7 |
+| Q7(A) | Growth, gender equality, and sustainable development | [Q12](./answers/12-growth-gender-equity.md) | 7 |
+| Q7(B) | Gender composition of Bangladesh's labour force | [Q13](./answers/13-feminization-agriculture.md) | 7 |
+
+#### Convergence & Growth
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q4(A) | Explain convergence theory | [Q14](./answers/14-convergence-theory.md) | 5 |
+| Q4(B) | Baumol's pitfalls and MRW solution | [Q14](./answers/14-convergence-theory.md) | 9 |
+
+#### IMF & International Institutions
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q5(A) | IMF conditionality — measurement and objectives | [Q15](./answers/15-imf-conditionality.md) | 7 |
+| Q5(B) | Benefits and drawbacks of IMF conditionality | [Q15](./answers/15-imf-conditionality.md) | 7 |
+
+#### Population & Development
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q6(A) | Why did world population grow fast after industrial revolution? | [Q16](./answers/16-population-growth.md) | 7 |
+| Q6(B) | Population growth and economic development nexus | [Q16](./answers/16-population-growth.md) | 7 |
+
+#### Short Notes & Comparative Development
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q8(A) | Comprador Group + Unpaid employment | [Q17](./answers/17-comprador-unpaid-employment.md) | 7 |
+| Q8(B) | Life expectancy — why some countries lag | [Q18](./answers/18-life-expectancy.md) | 7 |
+
+---
+
+### Batch 48 (2023) — Econometric Methods for Development
+
+> **Exam:** M.Sc. Final 2023 | Full Marks: 70 | Answer any five questions | 4 Hours
+> **📄 Source:** [`dev-503.md`](../question-banks/batch-finals/batch-48/dev-503.md)
+> **Note:** This exam focuses on econometric methods for development research.
+
+#### Endogeneity & Instrumental Variables
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q1(a) | What is endogeneity and how does it arise? | [Q19](./answers/19-endogeneity-IV.md) | 4 |
+| Q1(b) | Health endogenous in labour outcomes? IV solution | [Q19](./answers/19-endogeneity-IV.md) | 5 |
+| Q1(c) | OLS inadequacy + Quantile Regression | [Q19](./answers/19-endogeneity-IV.md) | 5 |
+| Q1(d) | Canonical Correlation Analysis (CCA) | [Q19](./answers/19-endogeneity-IV.md) | 2 |
+
+#### Logit, Probit & Multinomial Models
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q2(a) | Compare logit and probit | [Q20](./answers/20-logit-probit.md) | 4 |
+| Q2(b) | When is multinomial logit appropriate? | [Q20](./answers/20-logit-probit.md) | 2 |
+| Q2(c) | Interpret coefficients (logit, odds ratio, probit ME, multinomial) | [Q20](./answers/20-logit-probit.md) | 8 |
+
+#### Distributed Lag Models
+
+| Q | Question | Related Answer |
+|---|----------|---------------|
+| Q3(a)–Q4(c) | ARDL, Koyck, Almon, AE/PAM, IV, common factor | [Q19](./answers/19-endogeneity-IV.md) (IV part) + [Q21](./answers/21-cointegration.md) (time series context) |
+
+#### Stationarity & Unit Root Tests
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q5(a) | Stationarity definition & importance | [Q21](./answers/21-cointegration.md) | 3 |
+| Q5(b) | Unit root problem & Dickey-Fuller test | [Q21](./answers/21-cointegration.md) | 5 |
+| Q5(c) | ADF, PP, KPSS explained | [Q21](./answers/21-cointegration.md) | 6 |
+| Q6(a) | Structural breaks in unit root testing | [Q21](./answers/21-cointegration.md) | 3 |
+| Q6(b) | Zivot-Andrews test | [Q21](./answers/21-cointegration.md) | 4 |
+| Q6(c) | Cointegration definition & testing | [Q21](./answers/21-cointegration.md) | 4 |
+| Q6(d) | ARDL bounds vs Johansen | [Q21](./answers/21-cointegration.md) | 3 |
+
+#### Time Series Models & Panel Data
+
+| Q | Question | Answer | Marks |
+|---|----------|--------|-------|
+| Q7(a)–Q8(c) | ARIMA, Box-Jenkins, VAR, Granger causality, FE/RE | [Q21](./answers/21-cointegration.md) (panel/time series) | 2–5 each |
 
 ---
 
@@ -55,18 +258,26 @@
 | Bangladesh Trade (tariff regime) | [Washington Consensus](../512-Political-Economy/washington-consensus/README.md) | Trade liberalization policies and impacts |
 | LFS (employment data) | [Food Crisis](../512-Political-Economy/food-crisis/README.md) | Income distribution and consumption patterns |
 | LFS (agriculture employment 45%) | [Cash Crops](../512-Political-Economy/cash-crops/README.md) | Agriculture vs export-oriented development |
+| Naila Kabeer (agency framework) | [Dependency Theory](../512-Political-Economy/dependency-theory/README.md) | Structure vs agency debate |
+| Venezuela + Iran (resource curse) | [Cash Crops](../512-Political-Economy/cash-crops/README.md) | Export dependency framework |
 
 ---
 
-## Key Development Indicators (Bangladesh)
+## 📊 Key Development Indicators (Bangladesh)
 
 | Indicator | Value | Year |
 |-----------|-------|------|
-| LFPR | 61.2% | 2022 |
-| Unemployment | 3.53% | 2022 |
-| Agriculture employment | 45.4% | 2022 |
+| LFPR (overall) | 61.2% | 2022 |
+| LFPR (male / female) | 80% / 42.77% | 2022 |
+| Unemployment rate | 3.53% | 2022 |
+| Underemployment (LU1) | 4.01% (2.82M) | 2022 |
+| Agriculture employment share | 45.4% | 2022 |
+| Own-account workers | 50.6% | 2022 |
 | RMG export share | 86% | 2023 |
-| Trade-to-GDP | 33.8% | 2022 |
+| Trade-to-GDP ratio | 33.8% | 2022 |
+| Average tariff | 27% | 2023 |
+| Capital flight (annual) | ~$8.27B | 2009–2018 avg |
+| FDI-to-GDP | <1% | 2023 |
 | Fertility rate | 2.2 | 2011 |
 | Infant mortality (per 1000) | 37 | 2011 |
 | Female life expectancy | 70 yrs | 2011 |
@@ -81,141 +292,3 @@ Located in parent directories:
 - `../Development/LFS/` — PPTX, PDFs
 - `../Development/2nd tuto/` — Trade analysis DOCX, GED report PDF
 - `../Development/503 2nd tutorial...PDF`
-
----
-
-## 🎯 MSc Final Examination Questions
-
-> **Source:** [Batch 47 (2022)](../question-banks/batch-finals/batch-47/dev-503.md) and [Batch 48 (2023)](../question-banks/batch-finals/batch-48/dev-503.md) — MSc Final Exams, Jahangirnagar University
-> **Cross-links:** [Batch Finals Hub](../question-banks/batch-finals/README.md) | [Master Study Notes](../MASTER_STUDY_NOTES.md)
-
-### Batch 47 (2022) — Theories & Policy Debates
-
-**Exam:** M.Sc. Final 2022 | Full Marks: 70 | Answer any five questions | 4 Hours
-
-**Topic 1 — Dependence vs Neoclassical Debate**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q1(A) | How does the Neocolonial Dependence Model explain the existence and continuance of underdevelopment? (7) | Centre-periphery, surplus extraction, unequal exchange |
-| Q1(B) | Contrary to the claims of dependence theorists, how does the neoclassical counterrevolution argue about underdevelopment? (7) | Free markets, price distortions, bad policies |
-| Q2(A) | What are the key arguments embraced by the Dualistic Development Thesis? (7) | Modern vs traditional sector, structural dualism |
-| Q2(B) | How does the False Paradigm Model of International Dependence argue against structural models of economic development? (7) | Inappropriate Western models, context specificity |
-
-**Topic 2 — Gender & Development**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q3(A) | Does economic growth ensure gender equity? Explain your answer with empirical evidence. (7) | Growth-gender nexus, Kabeer's critique |
-| Q3(B) | Why do we think that "feminization of agriculture" in Bangladesh has taken place? (7) | Male out-migration, RMG, land fragmentation |
-| Q7(A) | How does economic growth influence gender equality? What are the impacts of gender inequality on sustainable economic development? (7) | Two-way causality, capabilities approach |
-| Q7(B) | Briefly explain the characteristics of gender composition prevailing among the current labour force in Bangladesh. (7) | LFPR gap, sectoral segregation, informal work |
-
-**Topic 3 — Convergence & Growth**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q4(A) | Explain the concept of "convergence theory". (5) | Absolute vs conditional convergence |
-| Q4(B) | What are the statistical pitfalls in Baumol's unconditional convergence theory? How were these addressed? (9) | Selection bias, measurement error, MRW approach |
-
-**Topic 4 — IMF & International Institutions**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q5(A) | How does IMF conditionality measure the impact of economic and social policies of recipient countries? What are the typical objectives behind these conditions? (7) | Performance criteria, structural benchmarks, policy targets |
-| Q5(B) | What are the potential benefits and drawbacks of IMF conditionality for recipient countries, particularly in terms of economic stability, growth, and social welfare? (7) | Moral hazard, sovereignty loss, social safety nets |
-
-**Topic 5 — Population & Development**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q6(A) | Why did the world population grow so fast after the industrial revolution? (7) | Mortality decline, fertility lag, demographic transition |
-| Q6(B) | What are the key components in the nexus of population growth and economic development? (7) | Dependency ratio, human capital, Malthus vs Boserup |
-
-**Topic 6 — Short Notes & Comparative Development**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q8(A) | Write short notes on: i) Comprador Group ii) Unpaid employment (7) | Dependent elite, informal/domestic labour |
-| Q8(B) | In terms of 'life expectancy', why are some countries lagging behind others with similar economic conditions? Explain with country experiences. (7) | Health systems, public goods, inequality, institutional quality |
-
-### Batch 48 (2023) — Econometric Methods for Development
-
-**Exam:** M.Sc. Final 2023 | Full Marks: 70 | Answer any five questions | 4 Hours
-> **Note:** This exam focuses on econometric methods for development research.
-
-**Topic 1 — Endogeneity & Instrumental Variables**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q1(a) | What is endogeneity in regression analysis, and how does it arise? (4) | Omitted variables, measurement error, simultaneity |
-| Q1(b) | Suppose you are estimating the effect of health on labor market outcomes. Explain how health could be endogenous. How can IV address this? (5) | Reverse causality, selection bias; valid instruments, exclusion restriction |
-| Q1(c) | Why might OLS be inadequate for capturing the health-income relationship? What is Quantile Regression? (5) | Mean effects vs distributional effects, heterogeneous returns |
-| Q1(d) | What is Canonical Correlation Analysis (CCA)? (2) | Cross-covariance between two variable sets |
-
-**Topic 2 — Logit, Probit & Multinomial Models**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q2(a) | Compare logit and probit models. Key similarities and differences? (4) | Logistic vs normal CDF, tails, interpretation |
-| Q2(b) | When is multinomial logit more appropriate than binary logit? (2) | Multiple unordered categories |
-| Q2(c) | Interpret: logit coef = 0.5, odds ratio = 1.7, probit marginal effect = 0.12, multinomial logit coef = 1.2. (8) | Log-odds, odds ratios, marginal effects, relative risk |
-
-**Topic 3 — Distributed Lag Models**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q3(a) | What are autoregressive and distributed lag models? (2) | ADL specification, lagged dependent/explanatory variables |
-| Q3(b) | What is the ad hoc approach? Limitations? (2) | Sequential testing, multicollinearity, loss of df |
-| Q3(c) | Describe the Koyck approach. Is it appropriate to convert a distributed lag model to an autoregressive model? (8) | Geometric lag, common factor restriction |
-| Q3(d) | Limitations of Adaptive Expectations and Partial Adjustment Models? (2) | Restrictive dynamics, serial correlation |
-| Q4(a) | How does IV overcome limitations in estimating Koyck/AE models? (2) | Lagged dependent variable endogeneity |
-| Q4(b) | Explain the Almon Polynomial Approach. How does it differ from Koyck? (8) | Flexible lag structure, polynomial constraints |
-| Q4(c) | What is common factor restriction in the Koyck model? (4) | Coefficient restrictions, testing validity |
-
-**Topic 4 — Stationarity & Unit Root Tests**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q5(a) | Define stationarity. Why is it important? (3) | Constant mean/variance, spurious regression |
-| Q5(b) | What is the unit root problem? How does DF test help? (5) | Random walk, tau statistic, critical values |
-| Q5(c) | Critically explain ADF, PP, and KPSS tests. (6) | Serial correlation correction, robust SE, null hypotheses differ |
-| Q6(a) | Why do structural breaks matter in unit root testing? (3) | Spurious non-rejection, power loss |
-| Q6(b) | What is the Zivot-Andrews test? Procedure? (4) | Endogenous break, one-break null |
-| Q6(c) | What is cointegration? How to test? (4) | Long-run equilibrium, Engle-Granger, Johansen |
-| Q6(d) | Why prefer ARDL bounds testing over Johansen? (3) | Mixed I(0)/I(1), small sample, single equation |
-
-**Topic 5 — Time Series Models & Panel Data**
-
-| Q | Question | Key Concepts |
-|---|----------|-------------|
-| Q7(a) | Write the ARIMA(2,1,1) equation and explain components. (2) | AR(2), differencing, MA(1) |
-| Q7(b) | How does Box-Jenkins methodology guide ARIMA estimation? (4) | Identification → estimation → diagnostic checking |
-| Q7(c) | How could a VAR model help understand inflation-unemployment dynamics? (4) | Endogenous system, impulse responses |
-| Q7(d) | Define Granger causality. How to test using VAR? (4) | Predictive content, F-tests, lag length |
-| Q8(a) | What are the advantages of panel data? (4) | Heterogeneity, more variation, dynamics |
-| Q8(b) | What is the Fixed Effect LSDV model? Limitations? (5) | Dummy variables, within transformation, time-invariant variables |
-| Q8(c) | What is the Random Effects model? How does it differ from FE? When is RE appropriate? (5) | GLS, Hausman test, uncorrelated effects assumption |
-
----
-
-## Key Concepts
-
-| Concept | Definition |
-|---------|------------|
-| **Neocolonial Dependence Model** | Underdevelopment persists because peripheral economies are structurally dependent on core capitalist countries through trade, investment, and technology |
-| **Dualistic Development Thesis** | The coexistence of a modern capitalist sector and a traditional subsistence sector within developing economies, with limited interaction between them |
-| **False Paradigm Model** | Western-trained economists apply inappropriate models to developing countries, leading to misguided policy advice |
-| **Convergence theory** | Poorer economies should grow faster than richer ones (absolute); conditional convergence includes steady-state determinants |
-| **IMF conditionality** | Policy reforms required as a condition for IMF loans — objectives include fiscal discipline, structural reform, and macroeconomic stability |
-| **Feminization of agriculture** | The increasing participation of women in agricultural work, often as a result of male out-migration and changing rural labour markets |
-| **Comprador Group** | A domestic elite that collaborates with foreign capital, benefiting from dependent economic relationships |
-| **Endogeneity** | When an explanatory variable correlates with the error term, causing biased and inconsistent OLS estimates |
-| **Instrumental Variables (IV)** | Method using external instruments to isolate exogenous variation and obtain consistent estimates in the presence of endogeneity |
-| **Logit / Probit** | Binary choice models using logistic (logit) or normal (probit) cumulative distribution functions |
-| **Koyck Transformation** | Converts an infinite distributed lag model into an autoregressive model with a geometric lag structure |
-| **Cointegration** | A long-run equilibrium relationship among non-stationary variables that move together over time |
-| **ARDL Bounds Testing** | An approach to test cointegration that works with mixed I(0)/I(1) variables and is efficient in small samples |
-| **Granger causality** | A time-series concept: X Granger-causes Y if past values of X improve predictions of Y beyond past Y alone |
-| **Fixed Effects (LSDV)** | Panel data method that controls for time-invariant unobserved heterogeneity using individual-specific intercepts |
-| **Random Effects** | Panel data method that assumes individual effects are uncorrelated with regressors, estimated via GLS |

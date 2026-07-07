@@ -1,8 +1,10 @@
 # Bangladesh External Trade — Structural Concerns
 
 > **Course:** Econ 503 — Development Economics
-> **Sources:** External Trade BD analysis (DOCX), GED Economic Outlook Jan 2026 (PDF)
-> **Cross-links:** [503 Home](../README.md) | [LFS Data](../labour-force-survey/README.md) | [RMG Sector](../../512-Political-Economy/rmg-sector/README.md) | [Washington Consensus](../../512-Political-Economy/washington-consensus/README.md)
+> **Tutorial:** 3rd Tutorial Q1–Q2
+> **✅ Answers:** [Q5: Macro overview](../answers/05-bangladesh-macro-overview.md) · [Q6: Trade challenges](../answers/06-external-trade-challenges.md)
+> **📄 Sources:** [Trade DOCX](../2nd%20tuto/External%20Trade_BD.docx) · [Trade PDF](../2nd%20tuto/External%20Trade_BD(1).pdf) · [GED Outlook Jan 2026](../2nd%20tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf)
+> **Cross-links:** [503 Home](../README.md) | [LFS Data](../labour-force-survey/README.md) | [RMG Sector](../../512-Political-Economy/rmg-sector/README.md) | [Washington Consensus](../../512-Political-Economy/washington-consensus/README.md) | [📖 Master Questions](../master-questions.md#section-b--3rd-tutorial-mainqpdf-page-9)
 
 ---
 

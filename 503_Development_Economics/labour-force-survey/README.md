@@ -1,8 +1,10 @@
 # Bangladesh Labour Force Survey 2022
 
 > **Course:** Econ 503 — Development Economics
-> **Sources:** LFS 2022 presentation (PPTX), LFS 2022 full report (PDF), Concepts & Definitions (PDF)
-> **Cross-links:** [503 Home](../README.md) | [Bangladesh Trade](../bangladesh-trade/README.md) | [Food Crisis](../../512-Political-Economy/food-crisis/README.md)
+> **Tutorial:** 2nd Tutorial Q3
+> **✅ Answers:** [Q3: LFS definitions & NEET](../answers/03-labour-force-underutilization.md)
+> **📄 Sources:** [Full report (PDF)](../LFS/LFS%202022.pdf) · [PPTX](../LFS/Labour-Force-Survey-2022-Development-Economics.pptx) · [Concepts & Definitions](../LFS/Concwpts%20and%20Definitions.pdf) · [QLFS 2022](../LFS/QLFS%202022.pdf) · [Raw data](../LFS/../503/data-reports/Labour-Force-Survey-2022-23.pdf)
+> **Cross-links:** [503 Home](../README.md) | [Bangladesh Trade](../bangladesh-trade/README.md) | [Food Crisis](../../512-Political-Economy/food-crisis/README.md) | [📖 Master Questions](../master-questions.md#a3--labour-force--underutilization)
 
 ---
 

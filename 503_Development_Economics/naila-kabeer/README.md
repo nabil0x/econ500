@@ -2,8 +2,9 @@
 
 > **Course:** Econ 503 — Development Economics
 > **Tutorial:** 2nd Tutorial (Questions 1 & 2)
-> **Sources:** Chapter 1 "Unravelling the Paradox" + LSE working paper + *Negotiating Patriarchy* (2024)
-> **Cross-links:** [503 Home](../README.md) | [LFS Data](../labour-force-survey/README.md)
+> **✅ Answers:** [Q1: Positive outlier](../answers/01-positive-outlier.md) · [Q2: Patriarchy & agency](../answers/02-classical-patriarchy-agency.md)
+> **📄 Sources:** [LSE paper](../Naila%20kabeer/LSE-016-Kabeer_final.pdf) · [Ch.1 PDF](../Naila%20kabeer/Naila%20Kabeer%20chapter%201%20Unravelling%20the%20paradox.pdf) · [Negotiating Patriarchy book](../Naila%20kabeer/Negotiating%20patriarchy%20(1).pdf)
+> **Cross-links:** [503 Home](../README.md) | [LFS Data](../labour-force-survey/README.md) | [📖 Master Questions](../master-questions.md#section-a--2nd-tutorial-mainqpdf-page-5) | [📖 Answer Bank](../answers-development.md#section-1--2nd-tutorial-naila-kabeer-patriarchy--womens-agency)
 
 ---
 

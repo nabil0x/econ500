@@ -1,9 +1,10 @@
 # Venezuela — Economic Collapse as a Lesson
 
 > **Course:** Econ 503 — Development Economics
-> **Tutorial:** 2nd Tutorial (Venezuela question)
-> **Sources:** Venezuela presentation (PPTX), tutorial notes
-> **Cross-links:** [503 Home](../README.md) | [Bangladesh Trade](../bangladesh-trade/README.md) | [Cash Crops](../../512-Political-Economy/cash-crops/README.md)
+> **Tutorial:** 2nd Tutorial Q4 + 3rd Tutorial Q3 (Iran comparison)
+> **✅ Answers:** [Q4: Venezuela crisis](../answers/04-venezuela-crisis.md) · [Q7: Iran oil strategy](../answers/07-iran-oil-strategy.md)
+> **📄 Sources:** [Venezuela PPTX](../venezuela/Venezuella%20presentation.pptx) · [Tutorial notes](../venezuela/2nd%20tuto%20venezuela.txt) · [Iran PPTX](../Iran%20Ppt%20(1).pptx)
+> **Cross-links:** [503 Home](../README.md) | [Bangladesh Trade](../bangladesh-trade/README.md) | [Cash Crops](../../512-Political-Economy/cash-crops/README.md) | [📖 Master Questions](../master-questions.md#a4--venezuela-crisis)
 
 ---
 

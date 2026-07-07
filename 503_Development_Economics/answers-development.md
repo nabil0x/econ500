@@ -7,6 +7,25 @@
 
 ---
 
+## Source PDFs Reference
+
+Each answer section links to its source PDFs. Quick index:
+
+| Section | Questions | Source PDFs |
+|---------|-----------|-------------|
+| **1 — 2nd Tutorial** (Kabeer, LFS, Venezuela) | Q1–Q4 | [Kabeer LSE paper](./Naila%20kabeer/LSE-016-Kabeer_final.pdf) · [Ch.1](./Naila%20kabeer/Naila%20Kabeer%20chapter%201%20Unravelling%20the%20paradox.pdf) · [Book](./Naila%20kabeer/Negotiating%20patriarchy%20(1).pdf) · [LFS report](./LFS/LFS%202022.pdf) · [LFS Concepts](./LFS/Concwpts%20and%20Definitions.pdf) · [LFS data](./503/data-reports/Labour-Force-Survey-2022-23.pdf) · [Venezuela PPTX](./venezuela/Venezuella%20presentation.pptx) |
+| **2 — 3rd Tutorial** (Macro, Trade, Iran) | Q5–Q7 | [Trade DOCX](./2nd%20tuto/External%20Trade_BD.docx) · [GED Outlook](./2nd%20tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf) · [Iran PPTX](./Iran%20Ppt%20(1).pptx) |
+| **3 — Batch 47** (Theories & Policy) | Q8–Q18 | [Batch 47 question file](../question-banks/batch-finals/batch-47/dev-503.md) |
+| **4 — Batch 48** (Econometric Methods) | Q19–Q21 | [Batch 48 question file](../question-banks/batch-finals/batch-48/dev-503.md) |
+
+> **📖 Full questions:** [`master-questions.md`](./master-questions.md) — 45+ questions indexed by source
+> **🏠 Course hub:** [`README.md`](./README.md) — topic→answer→PDF cross-reference tables
+
+---
+
+> **📄 Source PDFs for Section 1:** [Kabeer LSE paper](./Naila%20kabeer/LSE-016-Kabeer_final.pdf) · [Ch.1](./Naila%20kabeer/Naila%20Kabeer%20chapter%201%20Unravelling%20the%20paradox.pdf) · [Book](./Naila%20kabeer/Negotiating%20patriarchy%20(1).pdf) · [Venezuela PPTX](./venezuela/Venezuella%20presentation.pptx) · [LFS report](./LFS/LFS%202022.pdf) · [LFS Concepts](./LFS/Concwpts%20and%20Definitions.pdf)
+> **📖 Full questions:** [`master-questions.md`](./master-questions.md#section-a--2nd-tutorial-mainqpdf-page-5)
+
 # Section 1 — 2nd Tutorial: Naila Kabeer, Patriarchy & Women's Agency
 
 ---
@@ -195,6 +214,9 @@ Venezuela demonstrates that **export concentration amplifies vulnerability to ex
 
 ---
 
+> **📄 Source PDFs for Section 2:** [External Trade BD (DOCX)](./2nd%20tuto/External%20Trade_BD.docx) · [External Trade BD (PDF)](./2nd%20tuto/External%20Trade_BD(1).pdf) · [GED Outlook Jan 2026](./2nd%20tuto/Monthly-Economic-Update-and-Outlook-January-2026-by-GED.pdf) · [Iran PPTX](./Iran%20Ppt%20(1).pptx)
+> **📖 Full questions:** [`master-questions.md`](./master-questions.md#section-b--3rd-tutorial-mainqpdf-page-9)
+
 # Section 2 — 3rd Tutorial: Bangladesh Macroeconomics, Trade & Iran
 
 ---
@@ -342,6 +364,9 @@ Iran avoided Venezuela's total collapse because: (1) it maintained some economic
 > → *See also: Q4 (Venezuela — parallel case study); Bangladesh Trade notes (export dependency concept); 512-Political-Economy/cash-crops/README.md (dependency framework)*
 
 ---
+
+> **📄 Source:** [Batch 47 question file](../question-banks/batch-finals/batch-47/dev-503.md)
+> **📖 Full questions:** [`master-questions.md`](./master-questions.md#section-e--batch-47-msc-2022-final-examination)
 
 # Section 3 — Batch 47 (MSc 2022): Theories & Policy Debates
 
@@ -798,6 +823,9 @@ Life expectancy is not determined by income alone. Countries with similar GDP pe
 > → *See also: Q1 (Bangladesh as positive outlier — same logic applied to social indicators); Health Economics notes (health system determinants)*
 
 ---
+
+> **📄 Source:** [Batch 48 question file](../question-banks/batch-finals/batch-48/dev-503.md)
+> **📖 Full questions:** [`master-questions.md`](./master-questions.md#section-f--batch-48-msc-2023-final-examination)
 
 # Section 4 — Batch 48 (MSc 2023): Econometric Methods for Development
 
